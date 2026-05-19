@@ -333,6 +333,11 @@ async function extractContent(page) {
           if (!text) return '';
           if (href.startsWith('/')) href = BASE_URL + href;
           if (href.startsWith('#')) return `[${text}](${href})`;
+          // Unwrap construct.net/out?u=<encoded> redirect to the real destination
+          const redirectMatch = href.match(/^https?:\/\/(?:www\.)?construct\.net\/out\?u=([^&#]+)/i);
+          if (redirectMatch) {
+            try { href = decodeURIComponent(redirectMatch[1]); } catch { /* keep original */ }
+          }
           return `[${text}](${href})`;
         }
         case 'img': {
