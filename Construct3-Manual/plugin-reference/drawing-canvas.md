@@ -179,7 +179,7 @@ Draw dashed lines between the points of the current polygon, joining back to the
 Draw dashed lines between the points of the current polygon, joining back to the start point. The parameters are similar to the *Line* and *Dashed line* actions.
 
 **Fill poly**  
-Fill the current polygon area with a color. This supports both [convex](https://www.construct.net/out?u=https%3a%2f%2fen.wikipedia.org%2fwiki%2fConvex_polygon) and [concave](https://www.construct.net/out?u=https%3a%2f%2fen.wikipedia.org%2fwiki%2fConcave_polygon) polygons. However concave polygons are internally converted in to multiple convex polygons. This process can sometimes fail due to floating point precision issues in the geometric calculations, and result in a glitchy rendering. If you know the shape you are rendering is convex, check the *Convex* parameter, which will bypass the internal conversion; however this will not render correctly if the polygon is in fact concave.
+Fill the current polygon area with a color. This supports both [convex](https://en.wikipedia.org/wiki/Convex_polygon) and [concave](https://en.wikipedia.org/wiki/Concave_polygon) polygons. However concave polygons are internally converted in to multiple convex polygons. This process can sometimes fail due to floating point precision issues in the geometric calculations, and result in a glitchy rendering. If you know the shape you are rendering is convex, check the *Convex* parameter, which will bypass the internal conversion; however this will not render correctly if the polygon is in fact concave.
 
 > **Tip**  
 > Note that self-intersecting polygons are not supported and will not draw correctly.

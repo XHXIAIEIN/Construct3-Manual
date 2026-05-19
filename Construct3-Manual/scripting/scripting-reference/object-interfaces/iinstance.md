@@ -113,7 +113,7 @@ Return a boolean indicating if the instance has the specified tag (case insensit
 Pass multiple string arguments to check if the instance has all the specified tags (case insensitive), returning a boolean.
 
 **setAllTags(tags)**  
-Pass in any iterable of strings, such as an array or [Set](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fJavaScript%2fReference%2fGlobal_Objects%2fSet), to set the instance's current tags (replacing all existing tags).
+Pass in any iterable of strings, such as an array or [Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set), to set the instance's current tags (replacing all existing tags).
 
 **getAllTags()**  
 Return a Set with all the tags an instance has.

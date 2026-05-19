@@ -13,7 +13,7 @@ release: 476.3
 
 ---
 
-The **BBC micro:bit plugin** allows communicating with the [BBC micro:bit](https://www.construct.net/out?u=https%3a%2f%2fmicrobit.org%2f) single-board computer via Bluetooth.
+The **BBC micro:bit plugin** allows communicating with the [BBC micro:bit](https://microbit.org/) single-board computer via Bluetooth.
 
 ### Setup
 

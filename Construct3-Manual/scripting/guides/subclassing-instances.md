@@ -84,7 +84,7 @@ Note that here `ammo` is not an instance variable or anything else associated wi
 
 Since [IInstance](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/object-interfaces/iinstance) has a `runtime` property, within your class you can always use `this.runtime` to refer to the [runtime script interface](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/iruntime).
 
-You may also wish to make use of [private properties and methods](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fJavaScript%2fReference%2fClasses%2fPrivate_properties) to ensure some details remain internal to your class.
+You may also wish to make use of [private properties and methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/Private_properties) to ensure some details remain internal to your class.
 
 > **Tip**  
 > Over time as the Construct engine is improved, there are likely to be more properties and methods added to the base classes. Your derived class's properties and methods override any in base classes, so could potentially hide new APIs added in future. To avoid this causing problems, try to use as specific names as possible that only apply to your project, and avoid generic terms used elsewhere by Construct. If you want to be completely safe, use a different naming scheme for your own additions, such as beginning every property with an underscore. Also, name clashes will never occur with private properties or methods (starting with `#`), so it's a good idea to use those where you can.

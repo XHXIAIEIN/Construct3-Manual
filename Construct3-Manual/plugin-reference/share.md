@@ -17,7 +17,7 @@ The **Share** object can bring up the system share feature, allowing the user to
 
 ### Scripting
 
-This object has no script interface, because when using JavaScript or TypeScript coding you can use the browser built-in [Web Share API](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fAPI%2fWeb_Share_API).
+This object has no script interface, because when using JavaScript or TypeScript coding you can use the browser built-in [Web Share API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Share_API).
 
 ## Sharing files
 
@@ -49,7 +49,7 @@ Triggered if a share action is not successfully completed or an error otherwise 
 ## Share actions
 
 **Add file**  
-Attach a file to the next share using the contents of a [Binary Data](../plugin-reference/binary-data.md) object, with a given filename. This can be used multiple times before a *Share* action to attach multiple files to be shared, such as a series of screenshots. The type of the data must also be specified, which is normally `"image/png"` for a screenshot, or `"video/webm"` for a video, but can also be other types (see [MIME Types](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fHTTP%2fBasics_of_HTTP%2fMIME_types)). For more information see *Sharing files* above.
+Attach a file to the next share using the contents of a [Binary Data](../plugin-reference/binary-data.md) object, with a given filename. This can be used multiple times before a *Share* action to attach multiple files to be shared, such as a series of screenshots. The type of the data must also be specified, which is normally `"image/png"` for a screenshot, or `"video/webm"` for a video, but can also be other types (see [MIME Types](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types)). For more information see *Sharing files* above.
 
 **Share**  
 Use the system share feature to share some text via another app. *Text* is the text to share; *Title* is an optional title to use (which can be used for other fields, such as the subject of an email if shared to an email app); and *URL* is a link to share. All three fields are optional, but at least one must be provided. If *Is sharing files supported* is true and any *Add file* actions were used before this action, those files are attached to the share.
@@ -58,7 +58,7 @@ Use the system share feature to share some text via another app. *Text* is the t
 > To avoid annoying the user, browsers may only allow this action in a user input event, such as *On button clicked*, *On touch start*, etc. So to ensure sharing works, only use this action in a user input trigger.
 
 **Request app rating**  
-Display a dialog to the user requesting that they rate your application. Where available this uses the platform's built-in request app rating dialog, which has predefined text. On Android if this is not supported it falls back to using a custom system dialog, the content of which is defined by the parameters to the action. You should request review at an appropriate time, and infrequently, as so not to frustrate your users. For iOS see [Apple's guide on ratings](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.apple.com%2fdesign%2fhuman-interface-guidelines%2fios%2fsystem-capabilities%2fratings-and-reviews%2f), and for Android see the [Google Play In-App Review API guide](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.android.com%2fguide%2fplaycore%2fin-app-review).
+Display a dialog to the user requesting that they rate your application. Where available this uses the platform's built-in request app rating dialog, which has predefined text. On Android if this is not supported it falls back to using a custom system dialog, the content of which is defined by the parameters to the action. You should request review at an appropriate time, and infrequently, as so not to frustrate your users. For iOS see [Apple's guide on ratings](https://developer.apple.com/design/human-interface-guidelines/ios/system-capabilities/ratings-and-reviews/), and for Android see the [Google Play In-App Review API guide](https://developer.android.com/guide/playcore/in-app-review).
 
 > **Warning**  
 > This action is not guaranteed to show anything to the user. For the best user experience app stores limit how often the dialog is allowed to appear. Check the linked guides for more details.

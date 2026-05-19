@@ -13,7 +13,7 @@ release: 476.3
 
 ---
 
-The **Sine behavior** can adjust an object's properties (like its position, size or angle) back and forth according to an oscillating [sine wave](https://www.construct.net/out?u=http%3a%2f%2fen.wikipedia.org%2fwiki%2fFile%3aSimple_sine_wave.svg). This can be used to create interesting visual effects. Despite the name, alternative wave functions like 'Triangle' can also be selected to create different effects. A visualisation of the different wave types can be found on [Wikipedia](https://www.construct.net/out?u=http%3a%2f%2fen.wikipedia.org%2fwiki%2fFile%3aWaveforms.svg).
+The **Sine behavior** can adjust an object's properties (like its position, size or angle) back and forth according to an oscillating [sine wave](http://en.wikipedia.org/wiki/File:Simple_sine_wave.svg). This can be used to create interesting visual effects. Despite the name, alternative wave functions like 'Triangle' can also be selected to create different effects. A visualisation of the different wave types can be found on [Wikipedia](http://en.wikipedia.org/wiki/File:Waveforms.svg).
 
 [Click here to open an example of the Sine behavior](https://editor.construct.net/#open=sine-behavior-types), which demonstrates each type of movement the behavior can use.
 
@@ -38,7 +38,7 @@ The Sine behavior has the following modes:
 - **Value only** does not modify the object. It simply stores the oscillating value which can be accessed by the *Value* expression. This can be useful to create custom effects or modify any other object or behavior property based on the sine behavior.
 
 **Wave**  
-The wave function used to calculate the movement. For a visualisation see [this Wikipedia diagram](https://www.construct.net/out?u=http%3a%2f%2fen.wikipedia.org%2fwiki%2fFile%3aWaveforms.svg).
+The wave function used to calculate the movement. For a visualisation see [this Wikipedia diagram](http://en.wikipedia.org/wiki/File:Waveforms.svg).
 
 - **Sine:** the default smooth oscillating motion based on a sine wave.
 - **Triangle:** a linear back-and-forth motion.

@@ -17,7 +17,7 @@ The **Clipboard** object provides access to the system clipboard, such as copy a
 
 ### Scripting
 
-This object has no script interface, because when using JavaScript or TypeScript coding you can use the browser built-in [Clipboard API](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fAPI%2fClipboard_API).
+This object has no script interface, because when using JavaScript or TypeScript coding you can use the browser built-in [Clipboard API](https://developer.mozilla.org/en-US/docs/Web/API/Clipboard_API).
 
 ## Browser permissions
 
@@ -35,7 +35,7 @@ Triggered after a copy action fails. The user may not have granted permission or
 Triggered after a *Request paste text* action completes successfully. The text from the user's clipboard is available with the *PastedText* expression.
 
 **On paste binary**  
-Triggered after a *Request paste binary* action completes successfully, and the data in the user's clipboard matches the [MIME type](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fHTTP%2fBasics_of_HTTP%2fMIME_types) specified in the trigger (e.g. "image/png" for a PNG image). This allows using different triggers to receive different types of clipboard data. When this triggers, the pasted data is placed inside the chosen [Binary Data object](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/binary-data).
+Triggered after a *Request paste binary* action completes successfully, and the data in the user's clipboard matches the [MIME type](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types) specified in the trigger (e.g. "image/png" for a PNG image). This allows using different triggers to receive different types of clipboard data. When this triggers, the pasted data is placed inside the chosen [Binary Data object](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/binary-data).
 
 **On paste error**  
 Triggered after a paste action fails. The user may not have granted permission or the attempt may not have been in a user input trigger.
@@ -46,7 +46,7 @@ Triggered after a paste action fails. The user may not have granted permission o
 Copy a string of text to the user's clipboard. This may require permission from the browser. *On copy success* or *On copy error* will trigger afterwards depending on the result.
 
 **Copy binary**  
-Copy the contents of a [Binary Data object](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/binary-data) the user's clipboard. The [MIME type](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fHTTP%2fBasics_of_HTTP%2fMIME_types) of the data must also be specified, e.g. "image/png" for a PNG image, so other apps know whether they can paste the data. Copying may require permission from the browser. *On copy success* or *On copy error* will trigger afterwards depending on the result.
+Copy the contents of a [Binary Data object](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/binary-data) the user's clipboard. The [MIME type](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types) of the data must also be specified, e.g. "image/png" for a PNG image, so other apps know whether they can paste the data. Copying may require permission from the browser. *On copy success* or *On copy error* will trigger afterwards depending on the result.
 
 **Request paste text**  
 Request to read text from the user's current clipboard. This usually involves a permission prompt in browsers and may only be allowed in a user input trigger. If successful then *On paste text* will trigger and the pasted text will be available in the *PastedText* expression; otherwise *On paste error* will trigger.

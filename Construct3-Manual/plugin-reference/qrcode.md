@@ -13,7 +13,7 @@ release: 476.3
 
 ---
 
-The **QR code** object allows displaying a [QR code](https://www.construct.net/out?u=https%3a%2f%2fen.wikipedia.org%2fwiki%2fQR_code) in your project. This is a type of two-dimensional barcode that most modern mobile phones are able to conveniently scan, such as to open a URL without having to type it in.
+The **QR code** object allows displaying a [QR code](https://en.wikipedia.org/wiki/QR_code) in your project. This is a type of two-dimensional barcode that most modern mobile phones are able to conveniently scan, such as to open a URL without having to type it in.
 
 Note that QR codes have limits on how much data they can represent. If too much text is specified, the QR code may disappear or turn black. The nature of a QR code means it is best suited to short snippets of information such as web addresses.
 

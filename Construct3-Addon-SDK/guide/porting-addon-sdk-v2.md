@@ -112,7 +112,7 @@ While all previously documented properties and methods in SDK v1 are still suppo
 
 For example the SDK v1 instance method `GetDebuggerProperties()` is now named `_getDebuggerProperties()`, but otherwise works identically; `Trigger()` is now named `_trigger()` but otherwise works identically; and so on. Refer to the class links in the above table to review the full reference. Note also some features may now be in other base classes; for example the SDK v1 class `SDKInstanceBase` had a property `this._runtime`; the SDK v2 class `ISDKInstanceBase` does not define a property for the runtime, but it inherits from [IInstance](../../Construct3-Manual/scripting/scripting-reference/object-interfaces/iinstance.md), which defines the property `this.runtime`.
 
-For consistency, you will likely want to rename any other class methods to follow the new [camelCase](https://www.construct.net/out?u=https%3a%2f%2fen.wikipedia.org%2fwiki%2fCamel_case) naming convention. As per the [Addon SDK coding conventions](../../Construct3-Manual/scripting/scripting-reference/addon-sdk-interfaces.md), you may wish to use an underscore prefix to indicate methods which should not be called from the scripting feature, but cannot be made private.
+For consistency, you will likely want to rename any other class methods to follow the new [camelCase](https://en.wikipedia.org/wiki/Camel_case) naming convention. As per the [Addon SDK coding conventions](../../Construct3-Manual/scripting/scripting-reference/addon-sdk-interfaces.md), you may wish to use an underscore prefix to indicate methods which should not be called from the scripting feature, but cannot be made private.
 
 ### Step 6: update remaining code
 
@@ -140,16 +140,16 @@ The Addon SDK v2 now supports using JavaScript Modules (i.e. `import` and `expor
 
 ## Sample diffs
 
-On the [Construct Addon SDK GitHub repository](https://www.construct.net/out?u=https%3a%2f%2fgithub.com%2fScirra%2fConstruct-Addon-SDK), you can find commits that update the SDK samples from the Addon SDK v1 to the Addon SDK v2. The differences, or "diffs", in these commits can serve as a reference of what needs to be changed to update addons. With the sample addons the changes take in to above everything described above, including recommended changes. The following links display the diffs for the updates for each SDK sample.
+On the [Construct Addon SDK GitHub repository](https://github.com/Scirra/Construct-Addon-SDK), you can find commits that update the SDK samples from the Addon SDK v1 to the Addon SDK v2. The differences, or "diffs", in these commits can serve as a reference of what needs to be changed to update addons. With the sample addons the changes take in to above everything described above, including recommended changes. The following links display the diffs for the updates for each SDK sample.
 
-- [Update customImporterPlugin to addon SDK v2](https://www.construct.net/out?u=https%3a%2f%2fgithub.com%2fScirra%2fConstruct-Addon-SDK%2fcommit%2ffc47fb8a4701cbf24d9f14c25908693ab7918f0f)
-- [Update domElementPlugin to addon SDK v2](https://www.construct.net/out?u=https%3a%2f%2fgithub.com%2fScirra%2fConstruct-Addon-SDK%2fcommit%2f480156e2ab1b70da20e2b15b2eb19c056ebc918e)
-- [Update domMessagingPlugin to addon SDK v2](https://www.construct.net/out?u=https%3a%2f%2fgithub.com%2fScirra%2fConstruct-Addon-SDK%2fcommit%2f038925a1cbbc265a871f7cf57dfa8a69305f617c)
-- [Update drawingPlugin to addon SDK v2](https://www.construct.net/out?u=https%3a%2f%2fgithub.com%2fScirra%2fConstruct-Addon-SDK%2fcommit%2f8a4b12c034697ff8bf748fd7da49917c7354523e)
-- [Update editorTextPlugin to addon SDK v2](https://www.construct.net/out?u=https%3a%2f%2fgithub.com%2fScirra%2fConstruct-Addon-SDK%2fcommit%2f4a249722738e622fa550eb2efaddfd8251e4d09f)
-- [Update singleGlobalPlugin to addon SDK v2](https://www.construct.net/out?u=https%3a%2f%2fgithub.com%2fScirra%2fConstruct-Addon-SDK%2fcommit%2f09facf1e5e5226fab6dba36e551d88d1c254d979)
-- [Update wrapperExtensionPlugin to addon SDK v2](https://www.construct.net/out?u=https%3a%2f%2fgithub.com%2fScirra%2fConstruct-Addon-SDK%2fcommit%2f509f751d4bde981911d25840b5fb71a8eb114e32)
-- [Update sample behavior to addon SDK v2](https://www.construct.net/out?u=https%3a%2f%2fgithub.com%2fScirra%2fConstruct-Addon-SDK%2fcommit%2fc704b17e0d620b55b6d7f1d08416c64ffcce42ff)
+- [Update customImporterPlugin to addon SDK v2](https://github.com/Scirra/Construct-Addon-SDK/commit/fc47fb8a4701cbf24d9f14c25908693ab7918f0f)
+- [Update domElementPlugin to addon SDK v2](https://github.com/Scirra/Construct-Addon-SDK/commit/480156e2ab1b70da20e2b15b2eb19c056ebc918e)
+- [Update domMessagingPlugin to addon SDK v2](https://github.com/Scirra/Construct-Addon-SDK/commit/038925a1cbbc265a871f7cf57dfa8a69305f617c)
+- [Update drawingPlugin to addon SDK v2](https://github.com/Scirra/Construct-Addon-SDK/commit/8a4b12c034697ff8bf748fd7da49917c7354523e)
+- [Update editorTextPlugin to addon SDK v2](https://github.com/Scirra/Construct-Addon-SDK/commit/4a249722738e622fa550eb2efaddfd8251e4d09f)
+- [Update singleGlobalPlugin to addon SDK v2](https://github.com/Scirra/Construct-Addon-SDK/commit/09facf1e5e5226fab6dba36e551d88d1c254d979)
+- [Update wrapperExtensionPlugin to addon SDK v2](https://github.com/Scirra/Construct-Addon-SDK/commit/509f751d4bde981911d25840b5fb71a8eb114e32)
+- [Update sample behavior to addon SDK v2](https://github.com/Scirra/Construct-Addon-SDK/commit/c704b17e0d620b55b6d7f1d08416c64ffcce42ff)
 
 ## Publishing
 

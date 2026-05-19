@@ -75,7 +75,7 @@ Iterates over the instances that have been picked by the event's conditions. Thi
 Get an instance of this object class at the same index (IID) as the given instance. If there are fewer instances of this object class than the given instance's object class, the index is allowed to wrap around. This allows identifying the same instance that the event system would pair with the given instance.
 
 **callCustomAction(name, instances, ...params)**  
-Call one of this object class's custom actions in an event sheet by a case-insensitive string of its name. `instances` is an iterable (such as an array or [Set](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fJavaScript%2fReference%2fGlobal_Objects%2fSet)) of instances of the object class that will be picked when the custom action runs (since custom actions may run with multiple instances picked).
+Call one of this object class's custom actions in an event sheet by a case-insensitive string of its name. `instances` is an iterable (such as an array or [Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)) of instances of the object class that will be picked when the custom action runs (since custom actions may run with multiple instances picked).
 
 > **Tip**  
 > It is more efficient to call a custom action once with multiple instances picked, than to call the custom action repeatedly with one instance picked each time.

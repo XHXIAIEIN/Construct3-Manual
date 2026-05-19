@@ -112,10 +112,10 @@ Return the location of a collision polygon point on the current animation frame 
 > The first poly point is repeated again at the end (at the index `getPolyPointCount()`) since it makes it easier to iterate through each edge of the collision polygon.
 
 **setSolidCollisionFilter(isInclusive, tags)**  
-Enable or disable collisions with the Solid behavior according to tags. Specify `tags` using either a string of space-separated tag names, or any iterable of strings such as an array or [Set](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fJavaScript%2fReference%2fGlobal_Objects%2fSet). If `isInclusive` is true, collisions are only enabled with solids that match any of the given tags; if no tags are specified, collisions are disabled with all solids. If `isInclusive` is false, collisions are disabled with solids that match any of the given tags; if no tags are specified, collisions are enabled for all solids (the default).
+Enable or disable collisions with the Solid behavior according to tags. Specify `tags` using either a string of space-separated tag names, or any iterable of strings such as an array or [Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set). If `isInclusive` is true, collisions are only enabled with solids that match any of the given tags; if no tags are specified, collisions are disabled with all solids. If `isInclusive` is false, collisions are disabled with solids that match any of the given tags; if no tags are specified, collisions are enabled for all solids (the default).
 
 **async replaceCurrentAnimationFrame(blob)**  
-Replace the current animation frame image with the contents of a [Blob](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fAPI%2fBlob) representing an image file such as a PNG image. The blob can be locally generated or retrieved from a URL, for example:
+Replace the current animation frame image with the contents of a [Blob](https://developer.mozilla.org/en-US/docs/Web/API/Blob) representing an image file such as a PNG image. The blob can be locally generated or retrieved from a URL, for example:
 
 ```javascript
 // Loading an image from a URL

@@ -123,7 +123,7 @@ The current layer scale as a factor (i.e. 1 is unscaled). This is useful to ensu
 The current layer angle in radians.
 
 **uniform mediump float devicePixelRatio;**  
-The value of [devicePixelRatio](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fAPI%2fWindow%2fdevicePixelRatio) in the browser, which is the number of device pixels per CSS pixel. This may be necessary in some effects to handle high-DPI displays.
+The value of [devicePixelRatio](https://developer.mozilla.org/en-US/docs/Web/API/Window/devicePixelRatio) in the browser, which is the number of device pixels per CSS pixel. This may be necessary in some effects to handle high-DPI displays.
 
 **uniform mediump float zNear;**  
 The values of the project properties *Near distance* and *Far distance*, which represent the distance of the near and far planes from the camera position.

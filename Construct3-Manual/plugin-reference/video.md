@@ -32,7 +32,7 @@ Video files actually encompass multiple different sub-formats. These include:
 - **Video codec:** the codec used to compress video data, such as VP9, H.264 or AV1.
 - **Audio codec:** if the video has an audio track, then this is the codec used to compress audio data, such as Opus or AAC.
 
-Use a third-party tool to identify the container, video codec and audio codec used by a video file. For example [VLC media player](https://www.construct.net/out?u=https%3a%2f%2fwww.videolan.org%2f) provides codec information via the menu `Tools › Codec information` while playing a video.
+Use a third-party tool to identify the container, video codec and audio codec used by a video file. For example [VLC media player](https://www.videolan.org/) provides codec information via the menu `Tools › Codec information` while playing a video.
 
 ## Importing video
 

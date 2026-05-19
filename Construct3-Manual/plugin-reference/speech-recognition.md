@@ -22,7 +22,7 @@ Speech recognition may not be supported by all browsers or platforms. Use the *S
 
 ### Scripting
 
-This object has no script interface, because when using JavaScript or TypeScript coding you can use the browser built-in [Web Speech API](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fAPI%2fWeb_Speech_API).
+This object has no script interface, because when using JavaScript or TypeScript coding you can use the browser built-in [Web Speech API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API).
 
 ## On-device speech recognition
 

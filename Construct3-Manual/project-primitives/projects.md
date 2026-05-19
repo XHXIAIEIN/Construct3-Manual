@@ -186,7 +186,7 @@ Whether to render the project in 2D or 3D mode. Normally Construct determines th
 - **3D:** the project will render in 3D, with a depth buffer, which is necessary for correct rendering of 3D features.
 
 **Anisotropic filtering**  
-The [anisotripic filtering](https://www.construct.net/out?u=https%3a%2f%2fen.wikipedia.org%2fwiki%2fAnisotropic_filtering) mode to use for all images in the project. This improves the appearance of surfaces at an oblique angle to the camera, such as the sides of 3D shape objects. It also improves the quality of 2D objects that are resized to extreme aspect ratios. Normally this can just be left at *Auto*. However in some cases this can affect performance, so is customizable. The options are as follows:
+The [anisotripic filtering](https://en.wikipedia.org/wiki/Anisotropic_filtering) mode to use for all images in the project. This improves the appearance of surfaces at an oblique angle to the camera, such as the sides of 3D shape objects. It also improves the quality of 2D objects that are resized to extreme aspect ratios. Normally this can just be left at *Auto*. However in some cases this can affect performance, so is customizable. The options are as follows:
 
 - **Off:** do not use anisotropic filtering. This can degrade the rendering quality of 3D and some 2D features, but may slightly improve performance.
 - **Auto:** currently corresponds to 4x anisotropic filtering.

@@ -24,7 +24,7 @@ Local Storage works offline, since it stores data to the device itself. Differen
 
 ### Scripting
 
-When using JavaScript or TypeScript coding, you can use the [IStorage](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/interfaces/istorage) interface to access the same storage as Construct uses for this object (there is no dedicated script interface for the Local Storage plugin itself). Further, you can use the browser built-in storage APIs such as [IndexedDB](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fAPI%2fIndexedDB_API) for more advanced cases.
+When using JavaScript or TypeScript coding, you can use the [IStorage](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/interfaces/istorage) interface to access the same storage as Construct uses for this object (there is no dedicated script interface for the Local Storage plugin itself). Further, you can use the browser built-in storage APIs such as [IndexedDB](https://developer.mozilla.org/en-US/docs/Web/API/IndexedDB_API) for more advanced cases.
 
 ## Storage location on disk
 

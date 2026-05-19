@@ -173,7 +173,7 @@ The parameter type. Expressions can only use `"number"`, `"string"` or `"any"`. 
 - `"any"` — either a number or a string
 - `"boolean"` — a boolean parameter, displayed as a checkbox
 - `"combo"` — a dropdown list. Items must be specified with the `"items"` property.
-- `"combo-grouped"` — a dropdown list with grouped items (using [optgroup](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fHTML%2fElement%2foptgroup) elements). Item groups must be specified with the `"itemGroups"` property.
+- `"combo-grouped"` — a dropdown list with grouped items (using [optgroup](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/optgroup) elements). Item groups must be specified with the `"itemGroups"` property.
 - `"cmp"` — a dropdown list with comparison options like "equal to", "less than" etc.
 - `"object"` — an object picker. The types of plugin to show can be filtered using an optional `"allowedPluginIds"` property.
 - `"objectname"` — a string parameter which is interpreted as an object name

@@ -19,12 +19,12 @@ The `IInternationalizationObjectType` interface derives from [IObjectType](https
 
 ## Supported APIs
 
-Many features of the Internationalization plugin merely access the browser-provided [Intl](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fJavaScript%2fReference%2fGlobal_Objects%2fIntl) APIs, such as for formatting dates and times, identifying plural types, and so on. When writing code, you may as well access these APIs directly rather than through the script interface, so those APIs are not duplicated here. Instead the script interface only provides access to string lookups for translations.
+Many features of the Internationalization plugin merely access the browser-provided [Intl](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl) APIs, such as for formatting dates and times, identifying plural types, and so on. When writing code, you may as well access these APIs directly rather than through the script interface, so those APIs are not duplicated here. Instead the script interface only provides access to string lookups for translations.
 
 ## Internationalization APIs
 
 **locale**  
-Set or get a string representing the currently set locale as a [BCP 47 language tag](https://www.construct.net/out?u=https%3a%2f%2fen.wikipedia.org%2fwiki%2fIETF_language_tag), e.g. `"en-US"`.
+Set or get a string representing the currently set locale as a [BCP 47 language tag](https://en.wikipedia.org/wiki/IETF_language_tag), e.g. `"en-US"`.
 
 **addString(context, str)**  
 Add a localized string to the provided context in the localization data for the current locale.

@@ -72,7 +72,7 @@ async function OnBeforeProjectStart(runtime: IRuntime)
 }
 ```
 
-In many cases TypeScript can automatically infer types from existing code (see [Type inference](https://www.construct.net/out?u=https%3a%2f%2fwww.typescriptlang.org%2fdocs%2fhandbook%2ftype-inference.html)) so a type annotation is not always needed in every place in the code. However there are several places like function parameters that will need type annotations to be added. Familiarity with Construct's built-in class names is useful as they are sometimes needed as types, such as `IRuntime` above - all the class names are included in the [scripting reference](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference) section of the manual.
+In many cases TypeScript can automatically infer types from existing code (see [Type inference](https://www.typescriptlang.org/docs/handbook/type-inference.html)) so a type annotation is not always needed in every place in the code. However there are several places like function parameters that will need type annotations to be added. Familiarity with Construct's built-in class names is useful as they are sometimes needed as types, such as `IRuntime` above - all the class names are included in the [scripting reference](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference) section of the manual.
 
 ### Instance types
 
@@ -98,7 +98,7 @@ const playerInst = runtime.objects.Player.getFirstInstance()!;
 playerInst.x += 10; // OK
 ```
 
-This is known as the [non-null assertion operator](https://www.construct.net/out?u=https%3a%2f%2fwww.typescriptlang.org%2fdocs%2fhandbook%2f2%2feveryday-types.html%23non-null-assertion-operator-postfix-).
+This is known as the [non-null assertion operator](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#non-null-assertion-operator-postfix-).
 
 ### Subclassing
 
@@ -110,7 +110,7 @@ const inst = runtime.objects.Goblin.getFirstInstance()!;
 // the properties or methods of the custom GoblinInstance class
 ```
 
-To solve this, the methods available on `IObjectType` are in fact [generic](https://www.construct.net/out?u=https%3a%2f%2fwww.typescriptlang.org%2fdocs%2fhandbook%2f2%2fgenerics.html), so you can make them return the correct type. This means adding the `<Type>` generic syntax like so:
+To solve this, the methods available on `IObjectType` are in fact [generic](https://www.typescriptlang.org/docs/handbook/2/generics.html), so you can make them return the correct type. This means adding the `<Type>` generic syntax like so:
 
 ```javascript
 const inst = runtime.objects.Goblin.getFirstInstance<GoblinInstance>()!;
@@ -171,7 +171,7 @@ class MyClass {
 }
 ```
 
-Note JavaScript does allow class property definitions in a similar way, with the feature known as [class fields](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fJavaScript%2fReference%2fClasses%2fPublic_class_fields). Using this feature in JavaScript should make it easier to switch to TypeScript, as you can then just add type annotations to the existing class fields.
+Note JavaScript does allow class property definitions in a similar way, with the feature known as [class fields](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/Public_class_fields). Using this feature in JavaScript should make it easier to switch to TypeScript, as you can then just add type annotations to the existing class fields.
 
 ### Imports
 
@@ -181,7 +181,7 @@ Typically when importing other JavaScript files in your project, you'd write a r
 import Globals from "./globals.js";
 ```
 
-How do you write the import for TypeScript? You can actually leave it as is - even though the import ends with .js, TypeScript knows the file is really generated from the .ts file, and so everything just works. If you prefer, it also works if you change the .js extension to .ts (as Construct enables the option [rewriteRelativeImportExtensions](https://www.construct.net/out?u=https%3a%2f%2fwww.typescriptlang.org%2ftsconfig%2f%23rewriteRelativeImportExtensions)). Importing .ts files looks a little less surprising than importing a .js file in a TypeScript project, and so many of Construct's TypeScript examples import from .ts paths.
+How do you write the import for TypeScript? You can actually leave it as is - even though the import ends with .js, TypeScript knows the file is really generated from the .ts file, and so everything just works. If you prefer, it also works if you change the .js extension to .ts (as Construct enables the option [rewriteRelativeImportExtensions](https://www.typescriptlang.org/tsconfig/#rewriteRelativeImportExtensions)). Importing .ts files looks a little less surprising than importing a .js file in a TypeScript project, and so many of Construct's TypeScript examples import from .ts paths.
 
 ### Example
 

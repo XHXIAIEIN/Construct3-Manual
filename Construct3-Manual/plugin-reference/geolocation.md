@@ -20,7 +20,7 @@ The **Geolocation** object allows the user's current geographical location to be
 
 ### Scripting
 
-This object has no script interface, because when using JavaScript or TypeScript coding you can use the browser built-in [Geolocation API](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fAPI%2fGeolocation_API).
+This object has no script interface, because when using JavaScript or TypeScript coding you can use the browser built-in [Geolocation API](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API).
 
 ## Permission prompts
 

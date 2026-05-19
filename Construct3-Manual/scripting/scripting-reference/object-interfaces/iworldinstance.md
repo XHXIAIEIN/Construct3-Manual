@@ -124,19 +124,19 @@ The angle of the instance in radians. If this is changed, `angleDegrees` updates
 The angle of the instance in degrees. If this is changed, `angle` updates accordingly.
 
 **getBoundingBox(ignoreMesh = false)**  
-Return a [DOMRect](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fAPI%2fDOMRect), or for the 3D variant an [IAABB3D](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/interfaces/iaabb3d), representing the axis-aligned bounding box of the instance in layout co-ordinates. By default this takes in to account any changes from the mesh distortion feature - specifying `false` for the `ignoreMesh` parameter will return a bounding box as if the object did not use mesh distortion.
+Return a [DOMRect](https://developer.mozilla.org/en-US/docs/Web/API/DOMRect), or for the 3D variant an [IAABB3D](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/interfaces/iaabb3d), representing the axis-aligned bounding box of the instance in layout co-ordinates. By default this takes in to account any changes from the mesh distortion feature - specifying `false` for the `ignoreMesh` parameter will return a bounding box as if the object did not use mesh distortion.
 
 > **Tip**  
 > This returns a copy of the bounding box. The returned DOMRect or IAABB3D does not change if the instance changes, nor does changing the return value affect the instance.
 
 **getBoundingBox3d(ignoreMesh = false)**  
-Return a [DOMRect](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fAPI%2fDOMRect), or for the 3D variant an [IAABB3D](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/interfaces/iaabb3d), representing the axis-aligned bounding box of the instance in layout co-ordinates. By default this takes in to account any changes from the mesh distortion feature - specifying `false` for the `ignoreMesh` parameter will return a bounding box as if the object did not use mesh distortion.
+Return a [DOMRect](https://developer.mozilla.org/en-US/docs/Web/API/DOMRect), or for the 3D variant an [IAABB3D](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/interfaces/iaabb3d), representing the axis-aligned bounding box of the instance in layout co-ordinates. By default this takes in to account any changes from the mesh distortion feature - specifying `false` for the `ignoreMesh` parameter will return a bounding box as if the object did not use mesh distortion.
 
 > **Tip**  
 > This returns a copy of the bounding box. The returned DOMRect or IAABB3D does not change if the instance changes, nor does changing the return value affect the instance.
 
 **getBoundingQuad(ignoreMesh = false)**  
-Return a [DOMQuad](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fAPI%2fDOMQuad) representing the bounding quad of the instance in layout co-ordinates. This is always a rectangle, but unlike the bounding box can represent rotation. By default this takes in to account any changes from the mesh distortion feature - specifying `false` for the `ignoreMesh` parameter will return a bounding quad as if the object did not use mesh distortion.
+Return a [DOMQuad](https://developer.mozilla.org/en-US/docs/Web/API/DOMQuad) representing the bounding quad of the instance in layout co-ordinates. This is always a rectangle, but unlike the bounding box can represent rotation. By default this takes in to account any changes from the mesh distortion feature - specifying `false` for the `ignoreMesh` parameter will return a bounding quad as if the object did not use mesh distortion.
 
 > **Tip**  
 > This returns a copy of the bounding quad. The returned DOMQuad does not change if the instance changes, nor does changing the DOMQuad affect the instance.

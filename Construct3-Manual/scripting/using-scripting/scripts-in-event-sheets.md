@@ -41,7 +41,7 @@ Remember that the event sheet runs all events in top-to-bottom order every tick,
 
 ## Using 'await'
 
-Code written in either a script action or script block is actually run inside an [async function](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fJavaScript%2fReference%2fStatements%2fasync_function). This means your code can use the `await` keyword. For example you can await the result of a fetch over the network.
+Code written in either a script action or script block is actually run inside an [async function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/async_function). This means your code can use the `await` keyword. For example you can await the result of a fetch over the network.
 
 Note that the rest of the event sheet will continue to run while `await` waits for its result. In other words, `await` pauses the script execution and any actions after the code will immediately run. Then once the awaited promise resolves, any code after the `await` will then run - which will be *after* the following actions have run. You can change this using the System action *Wait for previous actions to complete*: this will wait for any code blocks before it to finish before running the following actions.
 

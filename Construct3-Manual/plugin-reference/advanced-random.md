@@ -16,7 +16,7 @@ release: 476.3
 
 ---
 
-The **Advanced Random** object provides expressions for advanced pseudo-random number generation (PRNG), including two- and three-dimensional noise functions like [Perlin noise](https://www.construct.net/out?u=https%3a%2f%2fen.wikipedia.org%2fwiki%2fPerlin_noise) (referred to as "classic noise" in the plugin). These are useful for [procedural generation](https://www.construct.net/out?u=https%3a%2f%2fen.wikipedia.org%2fwiki%2fProcedural_generation), such as providing an endless supply of interesting and unique level designs.
+The **Advanced Random** object provides expressions for advanced pseudo-random number generation (PRNG), including two- and three-dimensional noise functions like [Perlin noise](https://en.wikipedia.org/wiki/Perlin_noise) (referred to as "classic noise" in the plugin). These are useful for [procedural generation](https://en.wikipedia.org/wiki/Procedural_generation), such as providing an endless supply of interesting and unique level designs.
 
 It also provides seeded random functions, which provide the same pseudo-random number sequence when given the same seed. This can also be used to override the system random function (covering the *random()* expression, and any randomness used in behaviors) with a seeded random, which can provide deterministic random number generation for the whole runtime. By default the seed is always itself random, meaning random number generation is different between different runs of the game.
 

@@ -21,7 +21,7 @@ Currently the XML plugin is read-only. You can read data but not change any valu
 
 ### Scripting
 
-This object has no script interface, because when using JavaScript or TypeScript coding you can use the browser built-in APIs for [parsing and serializing XML](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fXML%2fParsing_and_serializing_XML).
+This object has no script interface, because when using JavaScript or TypeScript coding you can use the browser built-in APIs for [parsing and serializing XML](https://developer.mozilla.org/en-US/docs/Web/XML/Parsing_and_serializing_XML).
 
 ## Loading an XML document
 

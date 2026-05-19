@@ -38,7 +38,7 @@ Return an [SDK.Rect](https://www.construct.net/make-games/manuals/addon-sdk/refe
 Start asynchronously loading a texture for this image. This should only be used if `GetCachedWebGLTexture()` returned `null`. Returns a promise that resolves with a [IWebGLTexture](https://www.construct.net/make-games/manuals/addon-sdk/reference/graphics-interfaces/iwebgltexture) representing the loaded texture.
 
 **GetBlob()**  
-Return a [Blob](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fAPI%2fBlob) representing the current image content of the animation frame as a compressed image in PNG, WebP or AVIF format.
+Return a [Blob](https://developer.mozilla.org/en-US/docs/Web/API/Blob) representing the current image content of the animation frame as a compressed image in PNG, WebP or AVIF format.
 
 **ReplaceBlobAndDecode(blob)**  
 Replace the image content of the animation frame with the given blob. The blob will be decoded as an image and the previous content of the animation frame overwritten with the image content of the blob. This may also change the size of the frame. Returns a promise that resolves when the image content has been updated.

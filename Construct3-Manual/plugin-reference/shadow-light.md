@@ -36,7 +36,7 @@ The light can be set to have a radius. If the radius is 0, it acts like a point 
 
 Due to the shadow rendering algorithm, there are a couple of limitations:
 
-- The shadow casters can only use [convex collision polygons](https://www.construct.net/out?u=https%3a%2f%2fen.wikipedia.org%2fwiki%2fConvex_polygon). Shadows will not render correctly if they use concave polygons. If you need a concave shape, this can always be achieved by placing multiple shadow caster objects next to each other to compose a concave shape out of convex parts.
+- The shadow casters can only use [convex collision polygons](https://en.wikipedia.org/wiki/Convex_polygon). Shadows will not render correctly if they use concave polygons. If you need a concave shape, this can always be achieved by placing multiple shadow caster objects next to each other to compose a concave shape out of convex parts.
 - Antumbras (beyond where the umbra converges to a point) are not rendered. To avoid the umbra converging to a point on-screen, avoid using shadow casters smaller than the light radius. Stick to large shadow casters and a small light radius.
 - When using a light radius, avoid placing the light very close to or directly over a shadow caster. Shadows can fail to render correctly in these circumstances.
 

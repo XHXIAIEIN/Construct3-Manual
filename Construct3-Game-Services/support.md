@@ -13,7 +13,7 @@ release: 476.3
 
 ## Found a Bug?
 
-Please submit it to the official bug tracker at [https://github.com/Scirra/Construct.net-website-bugs](https://www.construct.net/out?u=https%3a%2f%2fgithub.com%2fScirra%2fConstruct.net-website-bugs).  Be sure to assign the "construct-game-services" label to any issue you create.
+Please submit it to the official bug tracker at [https://github.com/Scirra/Construct.net-website-bugs](https://github.com/Scirra/Construct.net-website-bugs).  Be sure to assign the "construct-game-services" label to any issue you create.
 
 
 ## Need Help?

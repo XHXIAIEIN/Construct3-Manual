@@ -85,70 +85,70 @@ Fired whenever any layout starts or ends. The *start* events fire before and aft
 > These events can use async handler functions, and the runtime will wait for them to finish before continuing.
 
 **"keydown"**  
-Fired when keys are pressed and release on the keyboard. These pass copies of a [KeyboardEvent](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fAPI%2fKeyboardEvent).
+Fired when keys are pressed and release on the keyboard. These pass copies of a [KeyboardEvent](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent).
 
 **"keyup"**  
-Fired when keys are pressed and release on the keyboard. These pass copies of a [KeyboardEvent](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fAPI%2fKeyboardEvent).
+Fired when keys are pressed and release on the keyboard. These pass copies of a [KeyboardEvent](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent).
 
 **"mousedown"**  
-Fired when mouse input is received. These pass copies of a [MouseEvent](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fAPI%2fMouseEvent).
+Fired when mouse input is received. These pass copies of a [MouseEvent](https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent).
 
 > **Tip**  
 > You can use pointer events like `"pointermove"` instead of mouse events to cover both mouse and touch input.
 
 **"mousemove"**  
-Fired when mouse input is received. These pass copies of a [MouseEvent](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fAPI%2fMouseEvent).
+Fired when mouse input is received. These pass copies of a [MouseEvent](https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent).
 
 > **Tip**  
 > You can use pointer events like `"pointermove"` instead of mouse events to cover both mouse and touch input.
 
 **"mouseup"**  
-Fired when mouse input is received. These pass copies of a [MouseEvent](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fAPI%2fMouseEvent).
+Fired when mouse input is received. These pass copies of a [MouseEvent](https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent).
 
 > **Tip**  
 > You can use pointer events like `"pointermove"` instead of mouse events to cover both mouse and touch input.
 
 **"dblclick"**  
-Fired when mouse input is received. These pass copies of a [MouseEvent](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fAPI%2fMouseEvent).
+Fired when mouse input is received. These pass copies of a [MouseEvent](https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent).
 
 > **Tip**  
 > You can use pointer events like `"pointermove"` instead of mouse events to cover both mouse and touch input.
 
 **"wheel"**  
-Fired when mouse wheel input is received. This passes a copy of a [WheelEvent](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fAPI%2fWheelEvent).
+Fired when mouse wheel input is received. This passes a copy of a [WheelEvent](https://developer.mozilla.org/en-US/docs/Web/API/WheelEvent).
 
 **"pointerdown"**  
-Fired when pointer input is received. This covers mouse, pen and touch input. These pass copies of a [PointerEvent](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fAPI%2fPointerEvent). Construct also adds a `lastButtons` property for `"mouse"` type pointers with the previous `buttons` state, which makes it easier to detect if different mouse buttons have been pressed or released in this event.
+Fired when pointer input is received. This covers mouse, pen and touch input. These pass copies of a [PointerEvent](https://developer.mozilla.org/en-US/docs/Web/API/PointerEvent). Construct also adds a `lastButtons` property for `"mouse"` type pointers with the previous `buttons` state, which makes it easier to detect if different mouse buttons have been pressed or released in this event.
 
 > **Tip**  
 > See also the [Tracking pointers example](https://editor.construct.net/#open=tracking-pointers) for a demonstration of how multiple simultaneous pointers can be tracked with JavaScript code.
 
 **"pointermove"**  
-Fired when pointer input is received. This covers mouse, pen and touch input. These pass copies of a [PointerEvent](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fAPI%2fPointerEvent). Construct also adds a `lastButtons` property for `"mouse"` type pointers with the previous `buttons` state, which makes it easier to detect if different mouse buttons have been pressed or released in this event.
+Fired when pointer input is received. This covers mouse, pen and touch input. These pass copies of a [PointerEvent](https://developer.mozilla.org/en-US/docs/Web/API/PointerEvent). Construct also adds a `lastButtons` property for `"mouse"` type pointers with the previous `buttons` state, which makes it easier to detect if different mouse buttons have been pressed or released in this event.
 
 > **Tip**  
 > See also the [Tracking pointers example](https://editor.construct.net/#open=tracking-pointers) for a demonstration of how multiple simultaneous pointers can be tracked with JavaScript code.
 
 **"pointerup"**  
-Fired when pointer input is received. This covers mouse, pen and touch input. These pass copies of a [PointerEvent](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fAPI%2fPointerEvent). Construct also adds a `lastButtons` property for `"mouse"` type pointers with the previous `buttons` state, which makes it easier to detect if different mouse buttons have been pressed or released in this event.
+Fired when pointer input is received. This covers mouse, pen and touch input. These pass copies of a [PointerEvent](https://developer.mozilla.org/en-US/docs/Web/API/PointerEvent). Construct also adds a `lastButtons` property for `"mouse"` type pointers with the previous `buttons` state, which makes it easier to detect if different mouse buttons have been pressed or released in this event.
 
 > **Tip**  
 > See also the [Tracking pointers example](https://editor.construct.net/#open=tracking-pointers) for a demonstration of how multiple simultaneous pointers can be tracked with JavaScript code.
 
 **"pointercancel"**  
-Fired when pointer input is received. This covers mouse, pen and touch input. These pass copies of a [PointerEvent](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fAPI%2fPointerEvent). Construct also adds a `lastButtons` property for `"mouse"` type pointers with the previous `buttons` state, which makes it easier to detect if different mouse buttons have been pressed or released in this event.
+Fired when pointer input is received. This covers mouse, pen and touch input. These pass copies of a [PointerEvent](https://developer.mozilla.org/en-US/docs/Web/API/PointerEvent). Construct also adds a `lastButtons` property for `"mouse"` type pointers with the previous `buttons` state, which makes it easier to detect if different mouse buttons have been pressed or released in this event.
 
 > **Tip**  
 > See also the [Tracking pointers example](https://editor.construct.net/#open=tracking-pointers) for a demonstration of how multiple simultaneous pointers can be tracked with JavaScript code.
 
 **"deviceorientation"**  
-Fired when device orientation or motion sensor input is received. These pass copies of a [DeviceOrientationEvent](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fAPI%2fDeviceOrientationEvent) or [DeviceMotionEvent](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fAPI%2fDeviceMotionEvent) respectively.
+Fired when device orientation or motion sensor input is received. These pass copies of a [DeviceOrientationEvent](https://developer.mozilla.org/en-US/docs/Web/API/DeviceOrientationEvent) or [DeviceMotionEvent](https://developer.mozilla.org/en-US/docs/Web/API/DeviceMotionEvent) respectively.
 
 > **Tip**  
 > These events require permission to be granted before they will fire. See the `requestPermission()` method in the [Touch script interface](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/plugin-interfaces/touch).
 
 **"devicemotion"**  
-Fired when device orientation or motion sensor input is received. These pass copies of a [DeviceOrientationEvent](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fAPI%2fDeviceOrientationEvent) or [DeviceMotionEvent](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fAPI%2fDeviceMotionEvent) respectively.
+Fired when device orientation or motion sensor input is received. These pass copies of a [DeviceOrientationEvent](https://developer.mozilla.org/en-US/docs/Web/API/DeviceOrientationEvent) or [DeviceMotionEvent](https://developer.mozilla.org/en-US/docs/Web/API/DeviceMotionEvent) respectively.
 
 > **Tip**  
 > These events require permission to be granted before they will fire. See the `requestPermission()` method in the [Touch script interface](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/plugin-interfaces/touch).
@@ -345,7 +345,7 @@ A timer-based estimate of the GPU usage over the past second, as a percentage in
 A read-only boolean indicating if the runtime is currently suspended. When suspended, the runtime stops ticking and drawing anything, and remains inactive. This is normally done to save resources while in the background, such as when a browser tab is in the background or the application window minimized. The `"suspend"` and `"resume"` events are fired when this property changes.
 
 **exportDate**  
-A read-only [Date](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fJavaScript%2fReference%2fGlobal_Objects%2fDate) object representing the time the project was exported from Construct. In preview mode, this is the time the preview was launched.
+A read-only [Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) object representing the time the project was exported from Construct. In preview mode, this is the time the preview was launched.
 
 **callFunction(name, ...params)**  
 Call a function in an event sheet, by a case-insensitive string of its name. Each parameter added after the name is passed to the function. There must be at least as many parameters provided as the function uses, although any additional parameters will be ignored. If the function has a return value, it will be returned from this method, else it returns `null`.
@@ -363,7 +363,7 @@ Returns a Promise that resolves when the given tag is signalled. It may be signa
 Return a random number in the range [0, 1). This is similar to `Math.random()`, but can produce a deterministic sequence of values if the [Advanced Random](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/advanced-random) object overrides the system random.
 
 **destroyMultiple(iterable)**  
-Destroys all instances in the iterable of [IInstance](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/object-interfaces/iinstance) (such as an array or [Set](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fJavaScript%2fReference%2fGlobal_Objects%2fSet) of instances). This is equivalent to a for-of loop calling `destroy()` on every instance; however it is significantly more efficient when destroying large numbers of instances, as the internal engine updates necessary after destroying an instance are only processed once rather than repeatedly.
+Destroys all instances in the iterable of [IInstance](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/object-interfaces/iinstance) (such as an array or [Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set) of instances). This is equivalent to a for-of loop calling `destroy()` on every instance; however it is significantly more efficient when destroying large numbers of instances, as the internal engine updates necessary after destroying an instance are only processed once rather than repeatedly.
 
 **sortZOrder(iterable, callback)**  
 Sort the relative Z order of all the [IWorldInstances](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/object-interfaces/iworldinstance) given by *iterable*, using a custom sort function as the *callback* which receives two *IWorldInstance* to compare as arguments. An example using a *myZOrder* instance variable for sorting a Sprite object's instances is given below.
@@ -374,19 +374,19 @@ runtime.sortZOrder(runtime.objects.Sprite.instances(),
 ```
 
 **saveCanvasImage(format, quality, areaRect)**  
-Take a screenshot of the current display canvas. All parameters are optional - if none are specified, the entire canvas is saved in PNG format. The `format` parameter is a string of the MIME type of the image format to use, e.g. "image/png". Where a lossy format is used like "image/jpeg", the `quality` parameter is a number from 0-1 for the compression quality. A subset of the canvas area can be saved (e.g. for saving a cropped image) by specifying a [DOMRect](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fAPI%2fDOMRect) for the `areaRect` parameter using units of device pixels. The method returns a Promise that resolves with a [Blob](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fAPI%2fBlob) of the resulting image.
+Take a screenshot of the current display canvas. All parameters are optional - if none are specified, the entire canvas is saved in PNG format. The `format` parameter is a string of the MIME type of the image format to use, e.g. "image/png". Where a lossy format is used like "image/jpeg", the `quality` parameter is a number from 0-1 for the compression quality. A subset of the canvas area can be saved (e.g. for saving a cropped image) by specifying a [DOMRect](https://developer.mozilla.org/en-US/docs/Web/API/DOMRect) for the `areaRect` parameter using units of device pixels. The method returns a Promise that resolves with a [Blob](https://developer.mozilla.org/en-US/docs/Web/API/Blob) of the resulting image.
 
 **invokeDownload(url, filename)**  
 Invoke a download of the resource at the given *url*, downloading with the given *filename*. Locally-generated content can be downloaded with this method using either a data URI or blob URL for *url*.
 
 **isInWorker**  
-A read-only boolean indicating if the runtime is currently running in the context of a Web Worker. This is controlled by the *Use worker* project property. In worker mode, a more limited set of browser APIs is available. See [Functions and classes available to Web Workers](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fAPI%2fWeb_Workers_API%2fFunctions_and_classes_available_to_workers).
+A read-only boolean indicating if the runtime is currently running in the context of a Web Worker. This is controlled by the *Use worker* project property. In worker mode, a more limited set of browser APIs is available. See [Functions and classes available to Web Workers](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Functions_and_classes_available_to_workers).
 
 **getHTMLLayer(index)**  
 Retrieve the HTML element used to contain all HTML content on a given HTML layer in the project. The index is the zero-based index of the HTML layer (not the Construct layer). This method can only be used in DOM mode - if the project property *Use worker* is *Yes* then calling this method will throw an exception. This method is useful to obtain a parent element in which to insert custom HTML content such that it appears layered according to one of Construct's HTML layers. For more information see [HTML layers](https://www.construct.net/make-games/manuals/construct-3/tips-and-guides/html-layers).
 
 **async alert(message)**  
-Show an alert message prompt using the [alert()](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fAPI%2fWindow%2falert) method. This is provided as a runtime method since it forwards the call to the DOM in worker mode. Note that unlike the standard browser `alert()` method, this is an async method - in worker mode it returns a promise that is resolved when the alert is closed, and execution in the worker will continue while the alert is showing. In DOM mode, the alert is blocking and will stop all execution while the alert is showing (but it still returns a promise that resolves when the alert is closed).
+Show an alert message prompt using the [alert()](https://developer.mozilla.org/en-US/docs/Web/API/Window/alert) method. This is provided as a runtime method since it forwards the call to the DOM in worker mode. Note that unlike the standard browser `alert()` method, this is an async method - in worker mode it returns a promise that is resolved when the alert is closed, and execution in the worker will continue while the alert is showing. In DOM mode, the alert is blocking and will stop all execution while the alert is showing (but it still returns a promise that resolves when the alert is closed).
 
 > **Tip**  
 > This method is also made available as a global `alert()` function in worker mode. This is to help make sure simple test code works as expected, even if the code is unintentionally run in the context of a Web Worker, where the browser `alert()` method is not normally available.

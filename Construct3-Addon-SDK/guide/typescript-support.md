@@ -14,17 +14,17 @@ release: 476.3
 
 ---
 
-The Addon SDK supports using [TypeScript](https://www.construct.net/out?u=https%3a%2f%2fwww.typescriptlang.org%2f) to develop plugins and behaviors. All the addon SDK samples have TypeScript support, with a .ts equivalent of every .js file, to help make it easy to get going with TypeScript. However using TypeScript is optional - if you prefer to stick to just JavaScript, then ignore or delete any .ts files in the addon SDK samples and just keep working with .js files.
+The Addon SDK supports using [TypeScript](https://www.typescriptlang.org/) to develop plugins and behaviors. All the addon SDK samples have TypeScript support, with a .ts equivalent of every .js file, to help make it easy to get going with TypeScript. However using TypeScript is optional - if you prefer to stick to just JavaScript, then ignore or delete any .ts files in the addon SDK samples and just keep working with .js files.
 
 Note this process is similar to [using TypeScript for Construct projects](https://www.construct.net/en/tutorials/using-typescript-construct-3003), but with some altered steps due to the fact that addons are not associated with a project.
 
 ## Installation
 
-To use TypeScript with the Addon SDK, you will need a TypeScript-compatible code editor. This guide uses [Visual Studio Code](https://www.construct.net/out?u=https%3a%2f%2fcode.visualstudio.com%2f), or VS Code for short.
+To use TypeScript with the Addon SDK, you will need a TypeScript-compatible code editor. This guide uses [Visual Studio Code](https://code.visualstudio.com/), or VS Code for short.
 
 Install VS Code using the link above if you don't already have it. You'll also need to install TypeScript support, which you can do by following these steps:
 
-1. Install [Node.js](https://www.construct.net/out?u=https%3a%2f%2fnodejs.org%2fen) if you don't already have it
+1. Install [Node.js](https://nodejs.org/en) if you don't already have it
 2. In a terminal, run the command `npm install -g typescript`
 
 You can check the TypeScript compiler, or `tsc` for short, is installed by running `tsc --version` in the terminal. It should print the version installed.
@@ -32,7 +32,7 @@ You can check the TypeScript compiler, or `tsc` for short, is installed by runni
 > **Warning**  
 > Modern versions of Windows use PowerShell for the terminal, and running some of the above commands could return an error like *tsc.ps1 cannot be loaded because running scripts is disabled on this system* due to the security restrictions set by default. To fix this, run the command `Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser` to allow permission to run the command, and then try the original command again.
 
-For more details see [TypeScript in Visual Studio Code](https://www.construct.net/out?u=https%3a%2f%2fcode.visualstudio.com%2fdocs%2flanguages%2ftypescript).
+For more details see [TypeScript in Visual Studio Code](https://code.visualstudio.com/docs/languages/typescript).
 
 ## Setting up the addon files
 

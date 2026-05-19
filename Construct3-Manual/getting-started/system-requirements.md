@@ -25,11 +25,11 @@ Note that if you purchase a subscription and work offline, you must start Constr
 
 Construct should run in any modern browser. This includes:
 
-- [Google Chrome](https://www.construct.net/out?u=https%3a%2f%2fwww.google.com%2fchrome) 87+
-- [Microsoft Edge](https://www.construct.net/out?u=https%3a%2f%2fwww.microsoft.com%2fwindows%2fmicrosoft-edge) 87+
-- Other browsers that use the Chrome browser engine (Chromium), such as [Opera](https://www.construct.net/out?u=https%3a%2f%2fwww.opera.com%2f) and [Yandex](https://www.construct.net/out?u=https%3a%2f%2fbrowser.yandex.com%2f), providing they are updated to Chromium 87+
-- [Firefox](https://www.construct.net/out?u=https%3a%2f%2fwww.mozilla.org%2ffirefox%2fnew%2f) 125+
-- [Safari](https://www.construct.net/out?u=https%3a%2f%2fwww.apple.com%2fsafari%2f) 15.4+
+- [Google Chrome](https://www.google.com/chrome) 87+
+- [Microsoft Edge](https://www.microsoft.com/windows/microsoft-edge) 87+
+- Other browsers that use the Chrome browser engine (Chromium), such as [Opera](https://www.opera.com/) and [Yandex](https://browser.yandex.com/), providing they are updated to Chromium 87+
+- [Firefox](https://www.mozilla.org/firefox/new/) 125+
+- [Safari](https://www.apple.com/safari/) 15.4+
 
 While these are the minimum supported versions, we strongly recommend ensuring your browser is up-to-date with the latest version.
 

@@ -27,7 +27,7 @@ To detect key press events, use the `"keyup"` and `"keydown"` events fired on th
 ## Keyboard APIs
 
 **isKeyDown(keyStringOrWhich)**  
-Return a boolean indicating if the specified keyboard key is currently being held down. The key can be specified either by its numeric code, corresponding to the [KeyboardEvent.which](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fAPI%2fKeyboardEvent%2fwhich) property, or a string identifying the physical key, corresponding to the [KeyboardEvent.code](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fAPI%2fKeyboardEvent%2fcode) property (see also [KeyboardEvent: code values](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fAPI%2fKeyboardEvent%2fcode%2fcode_values)).
+Return a boolean indicating if the specified keyboard key is currently being held down. The key can be specified either by its numeric code, corresponding to the [KeyboardEvent.which](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/which) property, or a string identifying the physical key, corresponding to the [KeyboardEvent.code](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/code) property (see also [KeyboardEvent: code values](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/code/code_values)).
 
 > **Tip**  
 > Using numeric codes is now deprecated, so it's recommended to use a string for the key instead.

@@ -47,7 +47,7 @@ You may wish to prepare artwork and audio in other software before importing to 
 
 ### Images
 
-Use **32-bit PNG** (Portable Network Graphics) while preparing images. Be sure to select 32-bit if you are given a choice; the 8-bit or lower versions may degrade quality. 32-bit PNGs are lossless and fully support alpha-channel transparency. Note some images such as Microsoft Paint do not support PNG transparency. Use may need to use a different editor instead, such as [Paint.NET](https://www.construct.net/out?u=https%3a%2f%2fwww.getpaint.net%2f) on Windows.
+Use **32-bit PNG** (Portable Network Graphics) while preparing images. Be sure to select 32-bit if you are given a choice; the 8-bit or lower versions may degrade quality. 32-bit PNGs are lossless and fully support alpha-channel transparency. Note some images such as Microsoft Paint do not support PNG transparency. Use may need to use a different editor instead, such as [Paint.NET](https://www.getpaint.net/) on Windows.
 
 You can choose different export formats like JPEG or WebP inside Construct to reduce the size of your finished project. However when importing you should still stick to 32-bit PNGs if possible, and leave Construct to recompress them when exporting. Construct does a lot of optimisation on export for you. It is unlikely that any third party tools or services will be able to beat Construct's existing lossless optimisations, unless they degrade the image quality. Remember there is no point optimising images before importing them to Construct since it stores them in projects as 32-bit PNGs with default compression settings; they are only optimised on export.
 

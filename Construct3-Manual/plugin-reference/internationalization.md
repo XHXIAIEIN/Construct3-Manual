@@ -28,11 +28,11 @@ See the [built-in example project](https://editor.construct.net/#open=internatio
 
 ### Scripting
 
-When using JavaScript or TypeScript coding, the string lookup features of this plugin can be accessed via the [Internationalization script interface](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/plugin-interfaces/internationalization). Note however many other features of this plugin merely access the browser-provided [Intl](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fJavaScript%2fReference%2fGlobal_Objects%2fIntl) APIs, so those are not duplicated in the script interface, as you can access them directly instead.
+When using JavaScript or TypeScript coding, the string lookup features of this plugin can be accessed via the [Internationalization script interface](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/plugin-interfaces/internationalization). Note however many other features of this plugin merely access the browser-provided [Intl](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl) APIs, so those are not duplicated in the script interface, as you can access them directly instead.
 
 ## Locales
 
-Locales - which specify a region, language or dialect - are specified using standardized [BCP 47 language tag](https://www.construct.net/out?u=https%3a%2f%2fen.wikipedia.org%2fwiki%2fIETF_language_tag), also known as just a *language tag*. For example `en-US` refers to US English, `en-GB` refers to British English, `pt-BR` refers to Brazilian Portuguese, and so on.
+Locales - which specify a region, language or dialect - are specified using standardized [BCP 47 language tag](https://en.wikipedia.org/wiki/IETF_language_tag), also known as just a *language tag*. For example `en-US` refers to US English, `en-GB` refers to British English, `pt-BR` refers to Brazilian Portuguese, and so on.
 
 ## The translation file
 
@@ -255,10 +255,10 @@ Format the passed in number as a decimal based on the current locale.
 Format the passed in number as a percent based on the current locale.
 
 **FormatNumberAsCurrency(Number, Currency, CurrencyDisplay)**  
-Format the passed in number as a currency in the current locale. The **currency** argument must be a valid 3 letter ISO currency code - [see this table for supported currencies](https://www.construct.net/out?u=https%3a%2f%2fen.wikipedia.org%2fwiki%2fISO_4217%23List_of_ISO_4217_currency_codes). If an unsupported currency is passed in, a warning will be printed to console indicating all the supported currencies. The **currencyDisplay** argument can be any of *"symbol"*, *"narrowSymbol"*, *"code"*, *"name"*. Using an unsupported value will default to *"symbol"*.
+Format the passed in number as a currency in the current locale. The **currency** argument must be a valid 3 letter ISO currency code - [see this table for supported currencies](https://en.wikipedia.org/wiki/ISO_4217#List_of_ISO_4217_currency_codes). If an unsupported currency is passed in, a warning will be printed to console indicating all the supported currencies. The **currencyDisplay** argument can be any of *"symbol"*, *"narrowSymbol"*, *"code"*, *"name"*. Using an unsupported value will default to *"symbol"*.
 
 **FormatNumberWithUnit(Number, Unit, UnitDisplay)**  
-Format the passed number as a unit in the current locale. The **unit** argument can take any of the values [defined in this table](https://www.construct.net/out?u=https%3a%2f%2ftc39.es%2fecma402%2f%23table-sanctioned-single-unit-identifiers). The **unitDisplay** argument can be any of *"long"*, *"short"* or *"narrow"*. Using an unsupported value will default to *"short"*.
+Format the passed number as a unit in the current locale. The **unit** argument can take any of the values [defined in this table](https://tc39.es/ecma402/#table-sanctioned-single-unit-identifiers). The **unitDisplay** argument can be any of *"long"*, *"short"* or *"narrow"*. Using an unsupported value will default to *"short"*.
 
 **RegionName(RegionLocale)**  
 Returns the region name of the passed in locale in the language of the current locale of the plugin.

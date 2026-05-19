@@ -33,7 +33,7 @@ When using JavaScript or TypeScript coding, the features of this object can be a
 ## Binary Data properties
 
 **Endian**  
-The default [endian](https://www.construct.net/out?u=https%3a%2f%2fen.wikipedia.org%2fwiki%2fEndianness) to use when reading and writing binary values.
+The default [endian](https://en.wikipedia.org/wiki/Endianness) to use when reading and writing binary values.
 
 ## Binary Data conditions
 
@@ -55,7 +55,7 @@ Fill a range of the buffer with copies of the same value. For example this can b
 > If you fill a value other than Int8 or Uint8, make sure the range size is a multiple of the size of the data type. For example if you fill with a Uint32 value, make sure the range is a multiple of 4 bytes. If the range is not a multiple, the end of the range will not be filled, e.g. filling a 5 byte range with a 4 byte value will only write the first 4 bytes and will not alter the last byte.
 
 **Set endian**  
-Change the [endian](https://www.construct.net/out?u=https%3a%2f%2fen.wikipedia.org%2fwiki%2fEndianness) used when reading and writing values.
+Change the [endian](https://en.wikipedia.org/wiki/Endianness) used when reading and writing values.
 
 **Set from Binary Data**  
 Set the contents of the Binary Data object to a copy of another Binary Data object. This changes the size of the buffer to be the same as the other object.
@@ -63,9 +63,9 @@ Set the contents of the Binary Data object to a copy of another Binary Data obje
 **Set from string**  
 Set the contents of the Binary Data object from the contents of a string, changing the size of the data buffer to fit it. The string may be provided in three formats:
 
-- **Text:** set the data to the provided text string encoded as [UTF-8](https://www.construct.net/out?u=https%3a%2f%2fen.wikipedia.org%2fwiki%2fUTF-8).
-- **Base64:** set the data by decoding the provided [base64](https://www.construct.net/out?u=https%3a%2f%2fen.wikipedia.org%2fwiki%2fBase64)-encoded string to binary.
-- **Hex:** set the data by decoding the provided [hexadecimal](https://www.construct.net/out?u=https%3a%2f%2fen.wikipedia.org%2fwiki%2fHexadecimal)-encoded string to binary.
+- **Text:** set the data to the provided text string encoded as [UTF-8](https://en.wikipedia.org/wiki/UTF-8).
+- **Base64:** set the data by decoding the provided [base64](https://en.wikipedia.org/wiki/Base64)-encoded string to binary.
+- **Hex:** set the data by decoding the provided [hexadecimal](https://en.wikipedia.org/wiki/Hexadecimal)-encoded string to binary.
 
 **Set length**  
 Set the size of the memory buffer in bytes. Note Binary Data initially has a zero sized buffer, so this must be used first before any reads or writes can complete. The existing data is preserved when changing the size; if the new size is smaller, data is truncated, and if the new size is larger, zero bytes are added.
@@ -74,13 +74,13 @@ Set the size of the memory buffer in bytes. Note Binary Data initially has a zer
 Write a value of a given data type at a byte offset in the memory buffer. The entire value must be within the bounds of the buffer, otherwise the write is ignored. For example a 4-byte Uint32 value cannot be written anywhere in a 3-byte buffer, because all four bytes must be inside the buffer.
 
 **Compress**  
-Use a compression algorithm to compress or decompress the data stored in the Binary Data object. The supported compression algorithms are [GZIP](https://www.construct.net/out?u=https%3a%2f%2fwww.rfc-editor.org%2frfc%2frfc1952) and [DEFLATE](https://www.construct.net/out?u=https%3a%2f%2fwww.rfc-editor.org%2frfc%2frfc1950). The same algorithm as used for compression must be used for decompression. Compression algorithms work by identifying and eliminating repeating patterns in data and can significantly shrink the amount of data. However the effectiveness depends on the size and type of data. Small amounts of data, or highly unpredictable data, generally does not compress well; large amounts of highly repetitive data generally compresses very well. See the [Compression example](https://editor.construct.net/#open=compression) for a demonstration.
+Use a compression algorithm to compress or decompress the data stored in the Binary Data object. The supported compression algorithms are [GZIP](https://www.rfc-editor.org/rfc/rfc1952) and [DEFLATE](https://www.rfc-editor.org/rfc/rfc1950). The same algorithm as used for compression must be used for decompression. Compression algorithms work by identifying and eliminating repeating patterns in data and can significantly shrink the amount of data. However the effectiveness depends on the size and type of data. Small amounts of data, or highly unpredictable data, generally does not compress well; large amounts of highly repetitive data generally compresses very well. See the [Compression example](https://editor.construct.net/#open=compression) for a demonstration.
 
 > **Tip**  
 > These actions are *asynchronous*, which means they can take a moment to complete while working in the background. Use the system action *Wait for previous actions to complete* before using any further actions to work with the resulting data.
 
 **Decompress**  
-Use a compression algorithm to compress or decompress the data stored in the Binary Data object. The supported compression algorithms are [GZIP](https://www.construct.net/out?u=https%3a%2f%2fwww.rfc-editor.org%2frfc%2frfc1952) and [DEFLATE](https://www.construct.net/out?u=https%3a%2f%2fwww.rfc-editor.org%2frfc%2frfc1950). The same algorithm as used for compression must be used for decompression. Compression algorithms work by identifying and eliminating repeating patterns in data and can significantly shrink the amount of data. However the effectiveness depends on the size and type of data. Small amounts of data, or highly unpredictable data, generally does not compress well; large amounts of highly repetitive data generally compresses very well. See the [Compression example](https://editor.construct.net/#open=compression) for a demonstration.
+Use a compression algorithm to compress or decompress the data stored in the Binary Data object. The supported compression algorithms are [GZIP](https://www.rfc-editor.org/rfc/rfc1952) and [DEFLATE](https://www.rfc-editor.org/rfc/rfc1950). The same algorithm as used for compression must be used for decompression. Compression algorithms work by identifying and eliminating repeating patterns in data and can significantly shrink the amount of data. However the effectiveness depends on the size and type of data. Small amounts of data, or highly unpredictable data, generally does not compress well; large amounts of highly repetitive data generally compresses very well. See the [Compression example](https://editor.construct.net/#open=compression) for a demonstration.
 
 > **Tip**  
 > These actions are *asynchronous*, which means they can take a moment to complete while working in the background. Use the system action *Wait for previous actions to complete* before using any further actions to work with the resulting data.
@@ -91,13 +91,13 @@ Use a compression algorithm to compress or decompress the data stored in the Bin
 Return the current length of the buffer in bytes.
 
 **GetBase64**  
-Return the entire contents of the data buffer encoded as a [base64](https://www.construct.net/out?u=https%3a%2f%2fen.wikipedia.org%2fwiki%2fBase64) string. This is useful when binary data must be stored in a text-based format like JSON.
+Return the entire contents of the data buffer encoded as a [base64](https://en.wikipedia.org/wiki/Base64) string. This is useful when binary data must be stored in a text-based format like JSON.
 
 > **Tip**  
 > Base64 data is larger and slower to process than the equivalent binary data. It is more efficient to avoid converting to base64 where possible. For example instead of posting an image to a server as a base64 string, the AJAX object is able to post a Binary Data object directly.
 
 **GetHex**  
-Return the entire contents of the data buffer encoded as a [hexadecimal](https://www.construct.net/out?u=https%3a%2f%2fen.wikipedia.org%2fwiki%2fHexadecimal) string. This always uses two hexadecimal digits per byte.
+Return the entire contents of the data buffer encoded as a [hexadecimal](https://en.wikipedia.org/wiki/Hexadecimal) string. This always uses two hexadecimal digits per byte.
 
 > **Tip**  
 > Base64 is a more efficient text representation of binary data. Hexadecimal is only generally used for relatively small amounts of data such as hashes.

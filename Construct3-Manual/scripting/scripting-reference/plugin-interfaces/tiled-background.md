@@ -84,7 +84,7 @@ When tile randomization is enabled, the percentage of the tile width or height w
 When tile randomization is enabled, the percentage of the tile width or height which will fade in to the adjacent tile, as a percentage in the range 0-1. The methods allow setting or getting both values at the same time.
 
 **async replaceImage(blob)**  
-Replace the current image with the contents of a [Blob](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fAPI%2fBlob) representing an image file such as a PNG image. The blob can be locally generated or retrieved from a URL, for example:
+Replace the current image with the contents of a [Blob](https://developer.mozilla.org/en-US/docs/Web/API/Blob) representing an image file such as a PNG image. The blob can be locally generated or retrieved from a URL, for example:
 
 ```javascript
 // Loading an image from a URL

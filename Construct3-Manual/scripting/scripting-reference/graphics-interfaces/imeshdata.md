@@ -28,19 +28,19 @@ Read-only numbers with the vertex and index count the mesh data was created with
 Read-only numbers with the vertex and index count the mesh data was created with.
 
 **positions**  
-A [Float32Array](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fJavaScript%2fReference%2fGlobal_Objects%2fFloat32Array) of vertex positions, with three components per vertex in X, Y, Z order (hence the length of this array is `3 * vertexCount`).
+A [Float32Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array) of vertex positions, with three components per vertex in X, Y, Z order (hence the length of this array is `3 * vertexCount`).
 
 **texCoords**  
-A [Float32Array](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fJavaScript%2fReference%2fGlobal_Objects%2fFloat32Array) of texture co-ordinates, with two components per vertex in X, Y order (hence the length of this array is `2 * vertexCount`).
+A [Float32Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array) of texture co-ordinates, with two components per vertex in X, Y order (hence the length of this array is `2 * vertexCount`).
 
 **colors**  
-A [Float16Array](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fJavaScript%2fReference%2fGlobal_Objects%2fFloat16Array) (where supported) or [Float32Array](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fJavaScript%2fReference%2fGlobal_Objects%2fFloat32Array) of vertex colors, with four components per vertex in R, G, B, A order (hence the length of this array is `4 * vertexCount`).
+A [Float16Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float16Array) (where supported) or [Float32Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Float32Array) of vertex colors, with four components per vertex in R, G, B, A order (hence the length of this array is `4 * vertexCount`).
 
 > **Tip**  
 > Note the use of Float16Array depends on hardware support, so the type may vary between devices even when the browser supports Float16Array.
 
 **indices**  
-A [Uint16Array](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fJavaScript%2fReference%2fGlobal_Objects%2fUint16Array) or [Uint32Array](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fJavaScript%2fReference%2fGlobal_Objects%2fUint32Array) of indices. Uint16Array is used when the vertex count fits within a 16-bit index, otherwise Uint32Array is used. Construct always uses indexed rendering, so this must be provided; if indices are not actually used, fill the buffer with incrementing numbers to render the provided vertices in order. As the index buffer specifies triangles, its length should be a multiple of three. Note that indices refer to the index of a vertex, rather than a direct index in to a data array like `positions`. For example a positions array with elements x1, y1, z1, x2, y2, z2 has six elements but defines two vertices, and so index 1 refers to the second vertex.
+A [Uint16Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint16Array) or [Uint32Array](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Uint32Array) of indices. Uint16Array is used when the vertex count fits within a 16-bit index, otherwise Uint32Array is used. Construct always uses indexed rendering, so this must be provided; if indices are not actually used, fill the buffer with incrementing numbers to render the provided vertices in order. As the index buffer specifies triangles, its length should be a multiple of three. Note that indices refer to the index of a vertex, rather than a direct index in to a data array like `positions`. For example a positions array with elements x1, y1, z1, x2, y2, z2 has six elements but defines two vertices, and so index 1 refers to the second vertex.
 
 **debugLabel**  
 A read-only string with the `debugLabel` option specified when creating the mesh data.

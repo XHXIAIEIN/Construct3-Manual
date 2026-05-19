@@ -18,7 +18,7 @@ For an example of the Date object, open the [Date & Time example](https://editor
 
 ### Scripting
 
-This object has no script interface, because when using JavaScript or TypeScript coding you can use the browser built-in [Date](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fJavaScript%2fReference%2fGlobal_Objects%2fDate) object.
+This object has no script interface, because when using JavaScript or TypeScript coding you can use the browser built-in [Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) object.
 
 ## Timestamps
 
@@ -77,7 +77,7 @@ Convert a timestamp to a localized string showing the corresponding time.
 Convert a timestamp to a string representation including both date and time in universal time.
 
 **Parse(dateString)**  
-Parse a date string into the corresponding numeric timestamp. For the supported string formats, refer to the [MDN documentation for Date.parse()](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fJavaScript%2fReference%2fGlobal_Objects%2fDate%2fparse%23Date_Time_String_Format), which is the underlying method used by this expression.
+Parse a date string into the corresponding numeric timestamp. For the supported string formats, refer to the [MDN documentation for Date.parse()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date/parse#Date_Time_String_Format), which is the underlying method used by this expression.
 
 **ToTimerHours(milliseconds)**  
 Convert milliseconds to the equivalent amount of hours as they would be shown in a timer.

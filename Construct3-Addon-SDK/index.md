@@ -24,7 +24,7 @@ Welcome to the Construct 3 Addon SDK documentation. The Addon SDK allows third-p
 
 ## Download
 
-The Addon SDK files are hosted on the [Construct Addon SDK GitHub repository](https://www.construct.net/out?u=https%3a%2f%2fgithub.com%2fScirra%2fConstruct-Addon-SDK). Follow the link, click the green *Code* button, and select *Download ZIP* to download a copy of the files.
+The Addon SDK files are hosted on the [Construct Addon SDK GitHub repository](https://github.com/Scirra/Construct-Addon-SDK). Follow the link, click the green *Code* button, and select *Download ZIP* to download a copy of the files.
 
 There are sample files for example custom plugins, behaviors, effects and themes. The files for an addon can be zipped and renamed [.c3addon](https://www.construct.net/make-games/manuals/addon-sdk/guide/c3addon-file) to directly test it in the Construct 3 editor, via the Addon Manager.
 
@@ -36,8 +36,8 @@ The plugin SDK includes a sample plugin using the Custom Importer API. The inclu
 
 ## TypeScript support
 
-The addon SDK has optional support for [TypeScript](https://www.construct.net/out?u=https%3a%2f%2fwww.typescriptlang.org%2f), allowing for static typing, better autocomplete, and a range of other benefits for addon development. To learn more see the section on [TypeScript support](https://www.construct.net/make-games/manuals/addon-sdk/guide/typescript-support).
+The addon SDK has optional support for [TypeScript](https://www.typescriptlang.org/), allowing for static typing, better autocomplete, and a range of other benefits for addon development. To learn more see the section on [TypeScript support](https://www.construct.net/make-games/manuals/addon-sdk/guide/typescript-support).
 
 ## Learning web technologies
 
-The Addon SDK documentation assumes you have a basic knowledge of JavaScript. A basic knowledge of HTML and CSS may also be useful. This documentation does not attempt to teach you these technologies. If you're just starting out, we recommend the [MDN web docs](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2f) as a good place to start. It provides thorough documentation on all aspects of the web platform, and also includes guides for learning web development.
+The Addon SDK documentation assumes you have a basic knowledge of JavaScript. A basic knowledge of HTML and CSS may also be useful. This documentation does not attempt to teach you these technologies. If you're just starting out, we recommend the [MDN web docs](https://developer.mozilla.org/) as a good place to start. It provides thorough documentation on all aspects of the web platform, and also includes guides for learning web development.

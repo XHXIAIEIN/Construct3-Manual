@@ -18,7 +18,7 @@ The `ISineBehaviorInstance` interface derives from [IBehaviorInstance](../../../
 Set or get the movement type of the behavior as a string, which must be one of `"horizontal"`, `"vertical"`, `"forwards-backwards"`, `"size"`, `"width"`, `"height"`, `"angle"`, `"opacity"`, `"z-elevation"` and `"value-only"`. For a full description of each, refer to the [Sine behavior manual entry](../../../behavior-reference/sine.md).
 
 **wave**  
-Set or get the wave function used to calculate the movement as a string, which must be one of `"sine"`, `"triangle"`, `"sawtooth"`, `"reverse-sawtooth"` and `"square"`. For a visualisation see [this Wikipedia diagram](https://www.construct.net/out?u=https%3a%2f%2fen.wikipedia.org%2fwiki%2fFile%3aWaveforms.svg).
+Set or get the wave function used to calculate the movement as a string, which must be one of `"sine"`, `"triangle"`, `"sawtooth"`, `"reverse-sawtooth"` and `"square"`. For a visualisation see [this Wikipedia diagram](https://en.wikipedia.org/wiki/File:Waveforms.svg).
 
 **period**  
 Set or get the duration, in seconds, of one complete back-and-forth cycle.

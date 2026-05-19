@@ -21,7 +21,7 @@ The **Cryptography** object can perform cryptographic operations such as encrypt
 
 ### Scripting
 
-This object has no script interface, because when using JavaScript or TypeScript coding you can use the browser built-in [Web Crypto API](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fAPI%2fWeb_Crypto_API).
+This object has no script interface, because when using JavaScript or TypeScript coding you can use the browser built-in [Web Crypto API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Crypto_API).
 
 ## Encryption does not guarantee security
 
@@ -42,7 +42,7 @@ Note that if you want to send data to a server securely, the best approach is to
 
 Since encrypted data is usually binary data that is not easily representible as text, the Cryptography object generally works with the [Binary Data object](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/binary-data) for both its input and output. However this does not preclude the ability to use text: after all, text is just another kind of binary data. You can store text in a Binary Data object with the *Set from text* action, and retrieve text from it with the *GetAllText* expression. Using these allows performing tasks like encrypting and decrypting text or hashing text.
 
-You can also reliably display and transmit binary data in a text format by encoding it as [Base64](https://www.construct.net/out?u=https%3a%2f%2fen.wikipedia.org%2fwiki%2fBase64) using both the *Set from base64* action and *GetBase64* expression.
+You can also reliably display and transmit binary data in a text format by encoding it as [Base64](https://en.wikipedia.org/wiki/Base64) using both the *Set from base64* action and *GetBase64* expression.
 
 ## Examples
 
@@ -104,7 +104,7 @@ Encrypt the contents of a given [Binary Data](https://www.construct.net/make-gam
 Decrypt the contents of a given [Binary Data](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/binary-data) object. Decryption will only succeed if the same password that was used to encrypt the data is provided. An optional tag can be specified to distinguish different decryption operations. When the data has finished being decrypted, *On decryption finished* triggers; if decryption fails, including due to having the wrong password, then *On decryption failed* will trigger instead.
 
 **Hash binary**  
-Compute a [cryptographic hash function](https://www.construct.net/out?u=https%3a%2f%2fen.wikipedia.org%2fwiki%2fCryptographic_hash_function) for the contents of a given [Binary Data](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/binary-data) object. Currently supported hash functions include SHA-256, SHA-384 and SHA-512 from the [SHA-2](https://www.construct.net/out?u=https%3a%2f%2fen.wikipedia.org%2fwiki%2fSHA-2) family of functions. An optional tag can be specified to distinguish different hasing operations. When the hashing completes, *On hash finished* will trigger and the resulting hash will be available as a hexadecimal string in the *Hash* expression.
+Compute a [cryptographic hash function](https://en.wikipedia.org/wiki/Cryptographic_hash_function) for the contents of a given [Binary Data](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/binary-data) object. Currently supported hash functions include SHA-256, SHA-384 and SHA-512 from the [SHA-2](https://en.wikipedia.org/wiki/SHA-2) family of functions. An optional tag can be specified to distinguish different hasing operations. When the hashing completes, *On hash finished* will trigger and the resulting hash will be available as a hexadecimal string in the *Hash* expression.
 
 ## Cryptography expressions
 
@@ -115,4 +115,4 @@ After *On hash finished* triggers, a hexadecimal string of the resulting hash. F
 In a trigger such as *On any decryption finished* or *On any hash finished*, this returns the associated tag of the action that resulted in the trigger.
 
 **RandomUUID**  
-Returns a random v4 [UUID](https://www.construct.net/out?u=https%3a%2f%2fen.wikipedia.org%2fwiki%2fUniversally_unique_identifier) as a string using a cryptographically secure random number generator, e.g. `36b8f84d-df4e-4d49-b662-bcde71a8764f`.
+Returns a random v4 [UUID](https://en.wikipedia.org/wiki/Universally_unique_identifier) as a string using a cryptographically secure random number generator, e.g. `36b8f84d-df4e-4d49-b662-bcde71a8764f`.

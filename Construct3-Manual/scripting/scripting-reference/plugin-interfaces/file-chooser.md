@@ -32,4 +32,4 @@ Acts as if the file chooser was clicked, which brings up the system file picker.
 Reset the control to its initial state with no selection, clearing any prior picked file.
 
 **getFiles()**  
-Return an array of [File](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fAPI%2fFile) objects representing the currently chosen files.
+Return an array of [File](https://developer.mozilla.org/en-US/docs/Web/API/File) objects representing the currently chosen files.

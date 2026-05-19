@@ -23,7 +23,7 @@ The **HTML Element** plugin allows you to include custom HTML content in your pr
 
 Construct creates a single HTML Element for each instance of the object, and sizes and positions the element to match the object's size and position in the project. Beyond that the content is entirely determined by the HTML you provide.
 
-This guide will not teach how HTML and CSS work. However there is lots of information on the web about them. For example take a look at the [HTML basics](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fLearn%2fGetting_started_with_the_web%2fHTML_basics) article on the MDN Web Docs.
+This guide will not teach how HTML and CSS work. However there is lots of information on the web about them. For example take a look at the [HTML basics](https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics) article on the MDN Web Docs.
 
 You can find several examples of using the HTML Element object in the Example Browser. Add the HTML Element plugin as a filter and the list will display projects using it.
 

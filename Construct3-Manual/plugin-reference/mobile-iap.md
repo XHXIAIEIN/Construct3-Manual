@@ -35,9 +35,9 @@ Consumable purchases can be bought multiple times by each user. A good use for t
 
 Before adding purchases to you game you will need to set up your application on Google Play and/or the App Store.
 
-To register an app on Google Play visit [https://play.google.com/apps/publish](https://www.construct.net/out?u=https%3a%2f%2fplay.google.com%2fapps%2fpublish). To enable in app purchases you will also need to setup a Google payments merchants account at [http://www.google.com/wallet/merchants.html](https://www.construct.net/out?u=http%3a%2f%2fwww.google.com%2fwallet%2fmerchants.html).
+To register an app on Google Play visit [https://play.google.com/apps/publish](https://play.google.com/apps/publish). To enable in app purchases you will also need to setup a Google payments merchants account at [http://www.google.com/wallet/merchants.html](http://www.google.com/wallet/merchants.html).
 
-To register an app on the App Store visit [https://itunesconnect.apple.com/login](https://www.construct.net/out?u=https%3a%2f%2fitunesconnect.apple.com%2flogin)
+To register an app on the App Store visit [https://itunesconnect.apple.com/login](https://itunesconnect.apple.com/login)
 
 ## Registration stage
 
@@ -93,7 +93,7 @@ On startup:
 ## IAP properties
 
 **Validator URL**  
-Optional URL of a receipt validation service to verify in-app purchases with. This is for advanced users to implement a server to ensure purchases are valid. The URL is passed to the underlying `cordova-plugin-purchase`; refer to the Cordova plugin documentation on [store.validator](https://www.construct.net/out?u=https%3a%2f%2fgithub.com%2fj3k0%2fcordova-plugin-purchase%2fblob%2fmaster%2fapi%2fclasses%2fCdvPurchase.Store.md%23validator) for technical details on how to set up or implement a validation service.
+Optional URL of a receipt validation service to verify in-app purchases with. This is for advanced users to implement a server to ensure purchases are valid. The URL is passed to the underlying `cordova-plugin-purchase`; refer to the Cordova plugin documentation on [store.validator](https://github.com/j3k0/cordova-plugin-purchase/blob/master/api/classes/CdvPurchase.Store.md#validator) for technical details on how to set up or implement a validation service.
 
 ## IAP conditions
 

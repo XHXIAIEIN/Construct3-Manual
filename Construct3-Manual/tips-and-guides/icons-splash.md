@@ -31,7 +31,7 @@ The icon size is automatically derived from the image size. For most platforms, 
 
 Currently this purpose is specific to installable web apps (Progressive Web Apps, or PWAs). All web exports from Construct are PWAs, and so in supported browsers can be installed, such as adding to the device home screen. The *App icon* purpose can be used for this case, but optionally you can also provide a *maskable* icon, where the outer 10% edges of the image may be cropped. This is used to give the system more flexibility in how to crop or shape the icon. As with app icons, you can also provide multiple maskable icons in different sizes.
 
-You can test maskable icons with [maskable.app](https://www.construct.net/out?u=https%3a%2f%2fmaskable.app%2f), and read more about them at the [web.dev page on maskable icons](https://www.construct.net/out?u=https%3a%2f%2fweb.dev%2fmaskable-icon%2f).
+You can test maskable icons with [maskable.app](https://maskable.app/), and read more about them at the [web.dev page on maskable icons](https://web.dev/maskable-icon/).
 
 ### Loading logo
 
@@ -41,7 +41,7 @@ For the loading logo to appear, the project *Loader style* property must be set 
 
 ### Adaptive foreground/background
 
-Currently these purposes are specific to Android exports, for specifying adaptive icons. Similar to maskable icons, these are special icons for Android that comprise of two layers, and may also be cropped by the system to adjust their appearance. For more information about how Android uses these icons, refer to the [Android developer documentation on adaptive icons](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.android.com%2fguide%2fpractices%2fui_guidelines%2ficon_design_adaptive).
+Currently these purposes are specific to Android exports, for specifying adaptive icons. Similar to maskable icons, these are special icons for Android that comprise of two layers, and may also be cropped by the system to adjust their appearance. For more information about how Android uses these icons, refer to the [Android developer documentation on adaptive icons](https://developer.android.com/guide/practices/ui_guidelines/icon_design_adaptive).
 
 To specify an adaptive icon, you need to add two icons with identical image sizes, e.g. both 256x256 pixels. Set one to use the *Adaptive background* purpose, and the other the *Adaptive foreground* purpose. Construct will export the icon pair as a single adaptive icon when exporting for Android.
 
@@ -55,11 +55,11 @@ When creating the splash screen, Construct will first create an image sized 2732
 
 ### Android splash icon
 
-This purpose is specific to Android exports. The image with this purpose is used on the splash screen when the app is first loaded. Note this image may be significantly cropped by Android. For guidance on the required image size and how Android crops it, refer to the official [Android design guidelines](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.android.com%2fdevelop%2fui%2fviews%2flaunch%2fsplash-screen%23splash_screen_dimensions).
+This purpose is specific to Android exports. The image with this purpose is used on the splash screen when the app is first loaded. Note this image may be significantly cropped by Android. For guidance on the required image size and how Android crops it, refer to the official [Android design guidelines](https://developer.android.com/develop/ui/views/launch/splash-screen#splash_screen_dimensions).
 
 ### Screenshot
 
-This purpose indicates that the given image is a screenshot of the project, suitable for using as a preview of what the project looks like. Currently this is only used for web exports in order to allow adding screenshots to a Progressive Web App (PWA) install prompt, which is also known as the [Richer install UI](https://www.construct.net/out?u=https%3a%2f%2fweb.dev%2fpatterns%2fweb-apps%2fricher-install-ui). When choosing the *Screenshot* purpose for an image, an additional two properties appear:
+This purpose indicates that the given image is a screenshot of the project, suitable for using as a preview of what the project looks like. Currently this is only used for web exports in order to allow adding screenshots to a Progressive Web App (PWA) install prompt, which is also known as the [Richer install UI](https://web.dev/patterns/web-apps/richer-install-ui). When choosing the *Screenshot* purpose for an image, an additional two properties appear:
 
 - **Label:** a brief description of the image, which may be used as a caption for the screenshot.
 - **Form factor:** indicates the type of the screenshot. Typically *Narrow* is used for mobile screenshots and *Wide* is used for desktop screenshots. It is recommended to add at least one *Narrow* and one *Wide* screenshot to ensure the richer install UI appears.
@@ -68,4 +68,4 @@ This purpose indicates that the given image is a screenshot of the project, suit
 
 Some platforms, particularly on mobile, require a range of icons and splash screens in a wide variety of sizes and formats. These formats can also change over time as system updates are released with new requirements.
 
-While Construct provides options to specify the basic icons and splashes, for full control you may wish to refer to the platform specific developer tools. For example when using Xcode, or exporting to Android Studio, you can use the developer IDEs to specify the full range of possible icons and splash screens. For more information about using these tools, refer to the official documentation at [Apple's Xcode documentation](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.apple.com%2fdocumentation%2fxcode%2f) and [Android Studio's documentation](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.android.com%2fstudio%2fintro). Note the *(none set)* icon purpose may be useful for bundling image files that you manually configure after export in these tools.
+While Construct provides options to specify the basic icons and splashes, for full control you may wish to refer to the platform specific developer tools. For example when using Xcode, or exporting to Android Studio, you can use the developer IDEs to specify the full range of possible icons and splash screens. For more information about using these tools, refer to the official documentation at [Apple's Xcode documentation](https://developer.apple.com/documentation/xcode/) and [Android Studio's documentation](https://developer.android.com/studio/intro). Note the *(none set)* icon purpose may be useful for bundling image files that you manually configure after export in these tools.

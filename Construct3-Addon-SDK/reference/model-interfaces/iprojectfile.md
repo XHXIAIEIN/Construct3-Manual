@@ -24,4 +24,4 @@ Return the full path to the project file, including any subfolders, separated by
 Return the [IProject](../../reference/model-interfaces/iproject.md) the project file belongs to.
 
 **GetBlob()**  
-Return a [Blob](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fAPI%2fBlob) representing the contents of the file. The standard web APIs for reading blobs can be used to access the content.
+Return a [Blob](https://developer.mozilla.org/en-US/docs/Web/API/Blob) representing the contents of the file. The standard web APIs for reading blobs can be used to access the content.

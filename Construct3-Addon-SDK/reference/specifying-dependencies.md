@@ -98,7 +98,7 @@ this._info.AddCordovaPluginReference({
 > **Warning**  
 > Cordova plugins that require variables will not compile if the variable is omitted from config.xml.
 
-See [Cordova plugin variables](https://www.construct.net/out?u=https%3a%2f%2fcordova.apache.org%2fdocs%2fen%2flatest%2fconfig_ref%2findex.html%23variable) for more information.
+See [Cordova plugin variables](https://cordova.apache.org/docs/en/latest/config_ref/index.html#variable) for more information.
 
 The options object uses the following properties.
 
@@ -117,7 +117,7 @@ Specify variables to be used with the Cordova plugin as an array of `[variableNa
 **plugin Optional**  
 Used to specify the plugin when using variables. Normally this should be set to `this`.
 
-Note for security reasons the Construct mobile app build service does not allow arbitrary Cordova plugins to be used. The build service uses an allowlist of allowed Cordova plugins. If you'd like a Cordova plugin to be added to the allowlist, please file an issue on the [Construct issue tracker](https://www.construct.net/out?u=https%3a%2f%2fgithub.com%2fScirra%2fConstruct-3-bugs%2fissues). Please note we cannot guarantee that Cordova plugins will be allowed, and approval is subject to a security review. Other build systems, including compiling with the Cordova CLI, do not impose this restriction.
+Note for security reasons the Construct mobile app build service does not allow arbitrary Cordova plugins to be used. The build service uses an allowlist of allowed Cordova plugins. If you'd like a Cordova plugin to be added to the allowlist, please file an issue on the [Construct issue tracker](https://github.com/Scirra/Construct-3-bugs/issues). Please note we cannot guarantee that Cordova plugins will be allowed, and approval is subject to a security review. Other build systems, including compiling with the Cordova CLI, do not impose this restriction.
 
 ## Cordova resource file dependencies
 
@@ -133,7 +133,7 @@ this._info.AddCordovaResourceFile({
 
 This will insert `<resource-file src="myfile.txt">` to the exported config.xml.
 
-More information about how resource files are used in Cordova can be found in the [Cordova documentation](https://www.construct.net/out?u=https%3a%2f%2fcordova.apache.org%2fdocs%2fen%2flatest%2f).
+More information about how resource files are used in Cordova can be found in the [Cordova documentation](https://cordova.apache.org/docs/en/latest/).
 
 The options object uses the following properties.
 

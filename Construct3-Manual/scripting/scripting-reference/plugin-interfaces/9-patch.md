@@ -42,7 +42,7 @@ Set or get the scale of the patches drawn inside the object, as a scale factor (
 Set or get the scale of the patches drawn inside the object, as a scale factor (e.g. 1 represents 100% scale).
 
 **async replaceImage(blob)**  
-Replace the current image with the contents of a [Blob](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fAPI%2fBlob) representing an image file such as a PNG image. The blob can be locally generated or retrieved from a URL, for example:
+Replace the current image with the contents of a [Blob](https://developer.mozilla.org/en-US/docs/Web/API/Blob) representing an image file such as a PNG image. The blob can be locally generated or retrieved from a URL, for example:
 
 ```javascript
 // Loading an image from a URL

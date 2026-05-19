@@ -74,7 +74,7 @@ Read-only numbers with the size of the main display canvas in device (physical d
 Read-only numbers with the size of the main display canvas in device (physical display) pixels. Unlike the CSS size, this size reflects the number of actual pixels used in the display.
 
 **devicePixelRatio**  
-Return the [devicePixelRatio](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fAPI%2fWindow%2fdevicePixelRatio) property.
+Return the [devicePixelRatio](https://developer.mozilla.org/en-US/docs/Web/API/Window/devicePixelRatio) property.
 
 > **Tip**  
 > This property can also be read in worker mode, which means it may be preferable to read this rather than the `devicePixelRatio` global.

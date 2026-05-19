@@ -34,7 +34,7 @@ The Multiplayer object supports a number of features to enable low-latency gamep
 - Compensation for poor quality connections with high latency, packet delay variation (PDV), and packet loss
 - Interpolation and extrapolation modes to ensure smooth in-game motion
 - Scirra-hosted signalling server to connect peers to each other
-- Scirra-hosted [TURN server](https://www.construct.net/out?u=https%3a%2f%2fen.wikipedia.org%2fwiki%2fTraversal_Using_Relays_around_NAT) to improve connectivity across some types of networks
+- Scirra-hosted [TURN server](https://en.wikipedia.org/wiki/Traversal_Using_Relays_around_NAT) to improve connectivity across some types of networks
 - Authoritative host model to prevent cheating, with local input prediction to hide input latency
 - LAN game support for near-zero latency gameplay, including support for mixed LAN/Internet games
 - Automatic data compression to save bandwidth

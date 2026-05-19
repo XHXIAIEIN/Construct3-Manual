@@ -25,7 +25,7 @@ The **Google Play** plugin allows you to integrate your game with **Google Play 
 
 ## Setting up Google Play Game Services
 
-Using Google Play Game Services requires that you have an account registered with the [Google Play Developer](https://www.construct.net/out?u=https%3a%2f%2fplay.google.com%2fapps%2fpublish%2f) service. There may be a small one-time registration fee if you need to sign up.
+Using Google Play Game Services requires that you have an account registered with the [Google Play Developer](https://play.google.com/apps/publish/) service. There may be a small one-time registration fee if you need to sign up.
 
 For each game that you wish to use Google Play Game Services for, find the **Play Games Services** section in the developer console and follow the steps to set it up.
 
@@ -57,7 +57,7 @@ When testing your project, your game will run from *https://preview.construct.ne
 
 To do this, in the Developer Console under *Game details*, find the header that says *API CONSOLE PROJECT* and follow the link to the API console project for your game. In the API console, select *APIs & auth*, then *Credentials*. Notice the *Javascript Origins* field contains only your final URL; this also needs to contain any preview URLs to be allowed access. Click **Edit settings**. Under *Authorized Javascript Origins*, make sure the final URL and the preview URL appear on separate lines, e.g.:
 
-[mywebsite.com](https://www.construct.net/out?u=https%3a%2f%2fwww.mywebsite.com%2f)
+[mywebsite.com](https://www.mywebsite.com/)
 
 [preview.construct.net](https://preview.construct.net/)
 

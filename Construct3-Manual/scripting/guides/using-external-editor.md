@@ -10,7 +10,7 @@ release: 476.3
 
 ---
 
-Construct provides its own built-in code editor based on [Monaco](https://www.construct.net/out?u=https%3a%2f%2fmicrosoft.github.io%2fmonaco-editor%2f) to help you conveniently write code in your project. However you may wish to use an external code editor, such as an industry-standard tool like [Visual Studio Code](https://www.construct.net/out?u=https%3a%2f%2fcode.visualstudio.com%2f) (aka VS Code). Construct has special features to help you use external editors, and this guide describes how they work.
+Construct provides its own built-in code editor based on [Monaco](https://microsoft.github.io/monaco-editor/) to help you conveniently write code in your project. However you may wish to use an external code editor, such as an industry-standard tool like [Visual Studio Code](https://code.visualstudio.com/) (aka VS Code). Construct has special features to help you use external editors, and this guide describes how they work.
 
 Using TypeScript requires some extra steps which are detailed below. However the basic setup is explained first, which works well for JavaScript projects.
 
@@ -47,8 +47,8 @@ To help you get started, this section describes the necessary steps to set up Ty
 
 With some external editors like VS Code, you may need to install TypeScript separately. You will only need to do this once to set up your code editor.
 
-1. First install [VS Code](https://www.construct.net/out?u=https%3a%2f%2fcode.visualstudio.com%2f) if you haven't installed it already
-2. Next, install [Node.js](https://www.construct.net/out?u=https%3a%2f%2fnodejs.org%2f) if you haven't installed it already
+1. First install [VS Code](https://code.visualstudio.com/) if you haven't installed it already
+2. Next, install [Node.js](https://nodejs.org/) if you haven't installed it already
 3. Then in a terminal run run the command `npm install -g typescript` to install TypeScript
 
 You can check the TypeScript compiler, or `tsc` for short, is installed by running `tsc --version` in the terminal. It should print the version installed.
@@ -56,7 +56,7 @@ You can check the TypeScript compiler, or `tsc` for short, is installed by runni
 > **Warning**  
 > Modern versions of Windows use PowerShell for the terminal, and running some of the above commands could return an error like *tsc.ps1 cannot be loaded because running scripts is disabled on this system* due to the security restrictions set by default. To fix this, run the command `Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser` to allow permission to run the command, and then try the original command again.
 
-For more details refer to [TypeScript in Visual Studio Code](https://www.construct.net/out?u=https%3a%2f%2fcode.visualstudio.com%2fdocs%2flanguages%2ftypescript) in VS Code's official documentation.
+For more details refer to [TypeScript in Visual Studio Code](https://code.visualstudio.com/docs/languages/typescript) in VS Code's official documentation.
 
 ### Setting up the Construct project
 

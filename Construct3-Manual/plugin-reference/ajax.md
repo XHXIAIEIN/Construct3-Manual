@@ -22,7 +22,7 @@ The **AJAX plugin** allows you to fetch the content of a URL, or post data to a 
 
 ### Scripting
 
-This object has no script interface, because when using JavaScript or TypeScript coding you can use the browser built-in [Fetch API](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fAPI%2fFetch_API) to make network requests.
+This object has no script interface, because when using JavaScript or TypeScript coding you can use the browser built-in [Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) to make network requests.
 
 ## How to make a request
 
@@ -48,7 +48,7 @@ If you want AJAX requests to your server to work from any domain, or in preview,
 
 `Access-Control-Allow-Origin: *`
 
-This will enable AJAX requests from any domain, but you should still be aware of the possible security implications of this. You may need to ensure this is set for all HTTP methods used, including GET, POST, and also OPTIONS since cross-domain requests sometimes use that method for "preflighted" requests. For more information on cross-domain requests see [HTTP access control (CORS) on MDN](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fHTTP%2fAccess_control_CORS).
+This will enable AJAX requests from any domain, but you should still be aware of the possible security implications of this. You may need to ensure this is set for all HTTP methods used, including GET, POST, and also OPTIONS since cross-domain requests sometimes use that method for "preflighted" requests. For more information on cross-domain requests see [HTTP access control (CORS) on MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS).
 
 > **Tip**  
 > In some cases the server you are accessing is beyond your control, and only sets `Access-Control-Allow-Origin` for GET requests. This can still fail the CORS check as the "preflighted" request uses the OPTIONS method. This is basically a misconfigured server, but you may be able to work around it by using the *Set upload progress enabled* action to disable upload progress before making your request. The reason this works is disabling upload progress allows the browser to handle it as a "simple request" that does not need to send a preflighted OPTIONS request.
@@ -125,10 +125,10 @@ Set a HTTP header on the next AJAX request that is made. After the next AJAX req
 Set the amount of time a request has to complete in seconds; if the timeout expires without the request completing successfully, it will instead fail and trigger *On error*. This action only affects subsequent requests, and does not affect any requests that have already started. If the timeout is set to -1 it restores the default browser timeout.
 
 **Set upload progress enabled**  
-Set whether tracking the progress of large upload requests is enabled for subsequent requests. This is enabled by default so the *On upload progress* trigger works. However tracking upload progress means that cross-domain requests send a "preflighted" request with the OPTIONS method, which can cause problems with some misconfigured servers. Disabling upload progress allows many kinds of cross-domain requests to be treated as "simple requests" and thus not need to send a "preflighted" request. For more information see [HTTP access control (CORS) on MDN](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fHTTP%2fAccess_control_CORS).
+Set whether tracking the progress of large upload requests is enabled for subsequent requests. This is enabled by default so the *On upload progress* trigger works. However tracking upload progress means that cross-domain requests send a "preflighted" request with the OPTIONS method, which can cause problems with some misconfigured servers. Disabling upload progress allows many kinds of cross-domain requests to be treated as "simple requests" and thus not need to send a "preflighted" request. For more information see [HTTP access control (CORS) on MDN](https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS).
 
 **Set with credentials**  
-Set the *with credentials* setting for the next AJAX request that is made. After the next AJAX request the setting will revert to its default (off), so it only takes effect once. When enabled, sending a request with credentials will cause cross-site requests to be made using credentials such as cookies and authorization headers. Internally this sets the `withCredentials` property of XMLHttpRequest. More details can be found at the [MDN withCredentials documentation](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fAPI%2fXMLHttpRequest%2fwithCredentials).
+Set the *with credentials* setting for the next AJAX request that is made. After the next AJAX request the setting will revert to its default (off), so it only takes effect once. When enabled, sending a request with credentials will cause cross-site requests to be made using credentials such as cookies and authorization headers. Internally this sets the `withCredentials` property of XMLHttpRequest. More details can be found at the [MDN withCredentials documentation](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/withCredentials).
 
 **Set response binary**  
 Use this action before a *Request* action to read the response in to a [Binary Data](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/binary-data) object instead of returning it as a string in the *LastData* expression. This allows for non-text resources like images to be fetched and processed directly.
@@ -142,7 +142,7 @@ The contents of the last response. This is set in the *On completed* trigger. No
 The HTTP status code of the last response, e.g. 200 for OK or 404 for Not Found. This is set in the *On completed* trigger.
 
 > **Tip**  
-> You can find a complete list of possible status codes and what they mean on the MDN page [HTTP response status codes](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fHTTP%2fStatus).
+> You can find a complete list of possible status codes and what they mean on the MDN page [HTTP response status codes](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status).
 
 **Progress**  
 Return the progress of the AJAX request in an *On progress* trigger. The progress is represented as a number from 0 to 1, e.g. 0.5 for half completed.

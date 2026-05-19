@@ -17,11 +17,11 @@ release: 476.3
 
 The **WebSocket** plugin is a simple wrapper around the standardised WebSocket protocol. It allows for low-overhead bi-directional communication in real-time. Since WebSockets are standards-based, it should be compatible with any standards-compliant WebSocket server.
 
-Using the WebSocket plugin requires a WebSocket server. Construct does not provide a server nor can the WebSocket plugin be used to make a server. If you don't already have a WebSocket server set up, you will need to create one yourself using a technology like [node.js](https://www.construct.net/out?u=https%3a%2f%2fnodejs.org%2f) with WebSocket support. This can be a significant undertaking and require server-side programming knowledge.
+Using the WebSocket plugin requires a WebSocket server. Construct does not provide a server nor can the WebSocket plugin be used to make a server. If you don't already have a WebSocket server set up, you will need to create one yourself using a technology like [node.js](https://nodejs.org/) with WebSocket support. This can be a significant undertaking and require server-side programming knowledge.
 
 ### Scripting
 
-This object has no script interface, because when using JavaScript or TypeScript coding you can use the browser built-in [WebSocket API](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fAPI%2fWebSocket).
+This object has no script interface, because when using JavaScript or TypeScript coding you can use the browser built-in [WebSocket API](https://developer.mozilla.org/en-US/docs/Web/API/WebSocket).
 
 ## Secure WebSockets and preview mode
 

@@ -25,7 +25,7 @@ release: 476.3
 
 The **Mobile Advert** plugin allows a game to use **Admob** Banner, Interstitial, Rewarded and Rewarded Interstitial adverts on **Android** and **iOS** exports.
 
-Web exports use [Google's Ad Placement API](https://www.construct.net/out?u=https%3a%2f%2fdevelopers.google.com%2fad-placement) to show Interstitial and Rewarded adverts.
+Web exports use [Google's Ad Placement API](https://developers.google.com/ad-placement) to show Interstitial and Rewarded adverts.
 
 > **Tip**  
 > **Admob** adverts can only be shown in **Android** or **iOS** exports. Adverts shown in local preview, remote preview, or with any export option other than Android or iOS will use **Google's Ad Placement API**.
@@ -50,22 +50,22 @@ Similar to rewarded adverts, but users aren’t required to opt in to view a rew
 
 Follow these steps to quickly get started with Admob on mobile exports:
 
-1. Create an Admob account - see: [Sign up for AdMob](https://www.construct.net/out?u=https%3a%2f%2fsupport.google.com%2fadmob%2fanswer%2f7356219)
-2. Create an **application** on your Admob account - see: [Set up an app in Admob](https://www.construct.net/out?u=https%3a%2f%2fsupport.google.com%2fadmob%2fanswer%2f2773509)
-3. Create **ad units** for your **application** - see: [Ad units](https://www.construct.net/out?u=https%3a%2f%2fsupport.google.com%2fadmob%2fanswer%2f6128738)
-4. Copy your application IDs and paste them to the Mobile Advert **Android Application ID** and **iOS Application ID** properties. [Finding your Application IDs](https://www.construct.net/out?u=https%3a%2f%2fsupport.google.com%2fadmob%2fanswer%2f7356431)
+1. Create an Admob account - see: [Sign up for AdMob](https://support.google.com/admob/answer/7356219)
+2. Create an **application** on your Admob account - see: [Set up an app in Admob](https://support.google.com/admob/answer/2773509)
+3. Create **ad units** for your **application** - see: [Ad units](https://support.google.com/admob/answer/6128738)
+4. Copy your application IDs and paste them to the Mobile Advert **Android Application ID** and **iOS Application ID** properties. [Finding your Application IDs](https://support.google.com/admob/answer/7356431)
 5. Submit your business and payment details to your AdMob account and wait for them to verify (which may take 24 hours). This must be done before ads can be served.
 
 ## Getting started with web adverts
 
 Follow these steps to quickly get started with adverts on web exports:
 
-1. Sign up for an [Adsense account](https://www.construct.net/out?u=https%3a%2f%2fwww.google.com%2fadsense%2fstart%2f)
+1. Sign up for an [Adsense account](https://www.google.com/adsense/start/)
 
  if you already don't have one
 
 2. You will need a website which is whitelisted to show these type of ads
-3. Fill in [this form](https://www.construct.net/out?u=https%3a%2f%2fdocs.google.com%2fforms%2fd%2fe%2f1FAIpQLSf428z96Boo4hJ2ygtgvEwekVsW5N6hcF7RiidyiXW79tbVAw%2fviewform) to indicate interest in using Google's Ad Placement API
+3. Fill in [this form](https://docs.google.com/forms/d/e/1FAIpQLSf428z96Boo4hJ2ygtgvEwekVsW5N6hcF7RiidyiXW79tbVAw/viewform) to indicate interest in using Google's Ad Placement API
 
 ### How do I get my site whitelisted?
 
@@ -89,17 +89,17 @@ In order for the **Show User Consent Dialog** action to show **GDPR** consent fo
 
 ### GDPR message
 
-Follow this guide to [Create a GDPR message](https://www.construct.net/out?u=https%3a%2f%2fsupport.google.com%2fadmob%2fanswer%2f10113207)
+Follow this guide to [Create a GDPR message](https://support.google.com/admob/answer/10113207)
 
 ### IDFA message
 
-Follow this guide to [Create an IDFA message](https://www.construct.net/out?u=https%3a%2f%2fsupport.google.com%2fadmob%2fanswer%2f10115331%3fhl%3den%26ref_topic%3d10078980)
+Follow this guide to [Create an IDFA message](https://support.google.com/admob/answer/10115331?hl=en&ref_topic=10078980)
 
 > **Tip**  
 > **IDFA** messages are not strictly necessary, but they can help in getting consent from the user by making the purpose of the dialog clearer.
 
 > **Tip**  
-> If you have an **IDFA** message set up and the application is opened by a device in the **EEA** or **UK**, the **App Tracking Transparency** dialog will be shown immediately after the **EU** consent form. This is how the underlying SDK works and it is mentioned in [Google's own quick start guide](https://www.construct.net/out?u=https%3a%2f%2fdevelopers.google.com%2fadmob%2fump%2fios%2fquick-start%23present_the_form_if_required).
+> If you have an **IDFA** message set up and the application is opened by a device in the **EEA** or **UK**, the **App Tracking Transparency** dialog will be shown immediately after the **EU** consent form. This is how the underlying SDK works and it is mentioned in [Google's own quick start guide](https://developers.google.com/admob/ump/ios/quick-start#present_the_form_if_required).
 > However, if you disable your **IDFA** message or don't have one at all, then the **App Tracking Transparency** dialog won't be shown automatically and you will be able to control when it appears by using the **Request IDFA** action.
 
 > **Tip**  
@@ -174,10 +174,10 @@ Screen width x 32/50/90
 Changes the displayed adverts units to testing adverts. Should be used during development. **(Mobile & Web exports)**
 
 **Android application ID**  
-The Admob application ID for the Android version of your game. This has the format "ca-app-pub-0000000000000000~0000000000". On Android this value is required, and your application will fail to start unless it is provided and correct. [Find your app ID](https://www.construct.net/out?u=https%3a%2f%2fsupport.google.com%2fadmob%2fanswer%2f7356431) **(Mobile exports only)**
+The Admob application ID for the Android version of your game. This has the format "ca-app-pub-0000000000000000~0000000000". On Android this value is required, and your application will fail to start unless it is provided and correct. [Find your app ID](https://support.google.com/admob/answer/7356431) **(Mobile exports only)**
 
 **iOS application ID**  
-The Admob application ID for the iOS version of your game. This has the format "ca-app-pub-0000000000000000~0000000000". On iOS this value is required, and your application will fail to start unless it is provided and correct. [Find your app ID](https://www.construct.net/out?u=https%3a%2f%2fsupport.google.com%2fadmob%2fanswer%2f7356431) **(Mobile exports only)**
+The Admob application ID for the iOS version of your game. This has the format "ca-app-pub-0000000000000000~0000000000". On iOS this value is required, and your application will fail to start unless it is provided and correct. [Find your app ID](https://support.google.com/admob/answer/7356431) **(Mobile exports only)**
 
 **Spoof location (debug)**  
 Fakes the device location to allow testing the user consent dialog in different scenarios. Testing mode must be enabled for this to work. **(Mobile exports only)**
@@ -186,7 +186,7 @@ Fakes the device location to allow testing the user consent dialog in different 
 Choose wether to show the consent form automatically on startup or not. This option doesn't do anything in web exports. **(Mobile exports only)**
 
 **Publisher ID**  
-Adsense publisher ID, found in your Adsense account. This is required if you intend to show adverts in a web export. [Find your publisher ID](https://www.construct.net/out?u=https%3a%2f%2fsupport.google.com%2fadsense%2fanswer%2f105516) **(Web exports only)**
+Adsense publisher ID, found in your Adsense account. This is required if you intend to show adverts in a web export. [Find your publisher ID](https://support.google.com/adsense/answer/105516) **(Web exports only)**
 
 > **Tip**  
 > ### Test Ads
@@ -202,7 +202,7 @@ Adsense publisher ID, found in your Adsense account. This is required if you int
 
 > **Tip**  
 > ### Ads in preview
-> When previewing a project the application will behave as a web export, so it will show test ads as if it was a web export. Additionally it will simulate [frequency capping](https://www.construct.net/out?u=https%3a%2f%2fsupport.google.com%2fgoogle-ads%2fanswer%2f117579), alternating between a valid ad request and an invalid ad request.
+> When previewing a project the application will behave as a web export, so it will show test ads as if it was a web export. Additionally it will simulate [frequency capping](https://support.google.com/google-ads/answer/117579), alternating between a valid ad request and an invalid ad request.
 
 ## Differences between mobile and web adverts
 

@@ -189,4 +189,4 @@ will result in the following content being included in the exported package.json
 }
 ```
 
-This can then be read by the wrapper extension using the IApplication method `GetPackageJsonContent()` and parsing it with a library like [json.hpp](https://www.construct.net/out?u=https%3a%2f%2fgithub.com%2fnlohmann%2fjson). This allows the wrapper extension to initialize early, before any web content is loaded, while still making use of settings specified in plugin properties.
+This can then be read by the wrapper extension using the IApplication method `GetPackageJsonContent()` and parsing it with a library like [json.hpp](https://github.com/nlohmann/json). This allows the wrapper extension to initialize early, before any web content is loaded, while still making use of settings specified in plugin properties.

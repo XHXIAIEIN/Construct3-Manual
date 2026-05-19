@@ -22,7 +22,7 @@ The Instant Games plugin allows you to create games that integrate with the **Fa
 
 ## Instant Games official documentation
 
-For information specifically relating to the Instant Games platform, please also refer to the official [Instant Games developer documentation](https://www.construct.net/out?u=https%3a%2f%2fdevelopers.facebook.com%2fdocs%2fgames%2finstant-games). Construct's Instant Games plugin handles many of the details for you, but the official documentation also includes useful information on setting up an app, managing web hosting and publishing, setting up ads, tips and best practices, additional ways to test the app, and more.
+For information specifically relating to the Instant Games platform, please also refer to the official [Instant Games developer documentation](https://developers.facebook.com/docs/games/instant-games). Construct's Instant Games plugin handles many of the details for you, but the official documentation also includes useful information on setting up an app, managing web hosting and publishing, setting up ads, tips and best practices, additional ways to test the app, and more.
 
 ## Exporting for Instant Games
 
@@ -31,7 +31,7 @@ Make sure you use the **Facebook Instant Games** export option when publishing a
 ## Instant Games properties
 
 **Navigation menu**  
-The type of the navigation menu used by Instant Games to display. This corresponds to the `navigation_menu_version` in the [bundle configuration](https://www.construct.net/out?u=https%3a%2f%2fdevelopers.facebook.com%2fdocs%2fgames%2finstant-games%2fsdk%2fbundle-config).
+The type of the navigation menu used by Instant Games to display. This corresponds to the `navigation_menu_version` in the [bundle configuration](https://developers.facebook.com/docs/games/instant-games/sdk/bundle-config).
 
 ## Instant Games conditions
 

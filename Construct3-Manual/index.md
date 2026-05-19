@@ -19,8 +19,8 @@ Construct also has links to the manual in various dialogs and menus to help you 
 
 ## Errata
 
-If you find a mistake or omission in the documentation, please file an issue on the [Construct issue tracker](https://www.construct.net/out?u=https%3a%2f%2fgithub.com%2fScirra%2fConstruct-bugs%2fissues) with a link to the relevant manual entry and an explanation of what you think is wrong. We'll take a look and make any necessary updates.
+If you find a mistake or omission in the documentation, please file an issue on the [Construct issue tracker](https://github.com/Scirra/Construct-bugs/issues) with a link to the relevant manual entry and an explanation of what you think is wrong. We'll take a look and make any necessary updates.
 
 ## Creative Commons license
 
-The Construct 3 manual is licensed under [Creative Commons BY-SA 3.0](https://www.construct.net/out?u=https%3a%2f%2fcreativecommons.org%2flicenses%2fby-sa%2f3.0%2f). You are free to copy, re-publish, adapt, modify or otherwise use the material in the manual, providing you correctly attribute its source.
+The Construct 3 manual is licensed under [Creative Commons BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/). You are free to copy, re-publish, adapt, modify or otherwise use the material in the manual, providing you correctly attribute its source.

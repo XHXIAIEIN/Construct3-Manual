@@ -26,7 +26,7 @@ When using JavaScript or TypeScript coding, the features of this object can be a
 
 ## Transparency
 
-Due to the way 3D rendering works, transparency may not work as expected in 3D shape objects. To correctly render 3D features, Construct must use a [depth buffer](https://www.construct.net/out?u=https%3a%2f%2fen.wikipedia.org%2fwiki%2fZ-buffering), but this only fully supports opaque surfaces. Therefore **3D shape objects will work best with opaque images.**
+Due to the way 3D rendering works, transparency may not work as expected in 3D shape objects. To correctly render 3D features, Construct must use a [depth buffer](https://en.wikipedia.org/wiki/Z-buffering), but this only fully supports opaque surfaces. Therefore **3D shape objects will work best with opaque images.**
 
 Making individual faces invisible works as expected, as this means the face skips drawing entirely, rather than drawing content that is assumed to be opaque.
 

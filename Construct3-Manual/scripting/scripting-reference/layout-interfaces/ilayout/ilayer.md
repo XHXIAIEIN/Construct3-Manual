@@ -145,7 +145,7 @@ A string of the layer's sampling mode, which is one of `"auto"`, `"nearest"`, `"
 A read-only string with the layer's active sampling mode. This is only different to `sampling` when the sampling mode is `"auto"`: in this case the active sampling mode is inherited from the layout or project setting.
 
 **getViewport()**  
-Return a [DOMRect](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fAPI%2fDOMRect) representing the bounds of the viewport on this layer in layout co-ordinates.
+Return a [DOMRect](https://developer.mozilla.org/en-US/docs/Web/API/DOMRect) representing the bounds of the viewport on this layer in layout co-ordinates.
 
 **isForceOwnTexture**  
 A boolean indicating the layer's *Force own texture* property. For more information see the property in the [Layers](https://www.construct.net/make-games/manuals/construct-3/project-primitives/layers) manual entry.

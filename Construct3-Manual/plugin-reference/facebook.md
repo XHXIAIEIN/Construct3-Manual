@@ -16,7 +16,7 @@ release: 476.3
 
 ---
 
-The **Facebook** object allows you to integrate your game with Facebook. It can be used in any web-hosted game, not just in Facebook games. For example, you could have a game running on your own server. The Facebook object still allows you to integrate with user's Facebook accounts even when the user is playing the game on your website. However, it is still necessary to submit the app to Facebook so you have an App ID. Apps can be submitted to Facebook via [Facebook Developers](https://www.construct.net/out?u=https%3a%2f%2fdevelopers.facebook.com%2f).
+The **Facebook** object allows you to integrate your game with Facebook. It can be used in any web-hosted game, not just in Facebook games. For example, you could have a game running on your own server. The Facebook object still allows you to integrate with user's Facebook accounts even when the user is playing the game on your website. However, it is still necessary to submit the app to Facebook so you have an App ID. Apps can be submitted to Facebook via [Facebook Developers](https://developers.facebook.com/).
 
 > **Warning**  
 > The Facebook plugin is **not compatible with Instant Games.** Use the [Instant Games](../plugin-reference/instant-games.md) plugin instead.
@@ -77,7 +77,7 @@ Triggers when the *Request user top score* action has successfully completed. Th
 ## Facebook actions
 
 **Log in**  
-Open a popup window requesting the user to log in. This can only be called in a user-input event, such as a key press, button push, mouse click or touch screen tap. The user may cancel at the log in screen so logging in is not guaranteed to be successful. You must provide a comma-separated list of permissions to request. Some features of the Facebook plugin depend on the user approving certain permissions. Do not request permissions that your application does not need. You can find documentation on the available permissions in the [Facebook developer's guide](https://www.construct.net/out?u=https%3a%2f%2fdevelopers.facebook.com%2fdocs%2ffacebook-login%2fpermissions).
+Open a popup window requesting the user to log in. This can only be called in a user-input event, such as a key press, button push, mouse click or touch screen tap. The user may cancel at the log in screen so logging in is not guaranteed to be successful. You must provide a comma-separated list of permissions to request. Some features of the Facebook plugin depend on the user approving certain permissions. Do not request permissions that your application does not need. You can find documentation on the available permissions in the [Facebook developer's guide](https://developers.facebook.com/docs/facebook-login/permissions).
 
 **Log out**  
 Log the current user out from Facebook.

@@ -24,7 +24,7 @@ When using JavaScript or TypeScript coding, the features of this behavior can be
 
 ## Collision polygon shape
 
-Objects with the *Shadow caster* behavior must use [convex collision polygons](https://www.construct.net/out?u=https%3a%2f%2fen.wikipedia.org%2fwiki%2fConvex_polygon). Shadows will not render correctly if they use concave polygons. If you need a concave shape, this can always be achieved by placing multiple shadow caster objects next to each other to compose a concave shape out of convex parts.
+Objects with the *Shadow caster* behavior must use [convex collision polygons](https://en.wikipedia.org/wiki/Convex_polygon). Shadows will not render correctly if they use concave polygons. If you need a concave shape, this can always be achieved by placing multiple shadow caster objects next to each other to compose a concave shape out of convex parts.
 
 ## Shadow caster properties
 

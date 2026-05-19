@@ -15,14 +15,14 @@ release: 476.3
 
 ---
 
-The **MIDI plugin** allows communicating with connected [MIDI](https://www.construct.net/out?u=https%3a%2f%2fen.wikipedia.org%2fwiki%2fMIDI) (Musical Instrument Digital Interface) devices via the [Web MIDI API](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fAPI%2fWeb_MIDI_API). Typically MIDI devices are digital musical instruments such as a MIDI piano keyboard or synthesizer. The MIDI plugin can both receive MIDI input from devices, such as detecting when notes are pressed, as well as send MIDI output to devices, such as to create an arpeggiator.
+The **MIDI plugin** allows communicating with connected [MIDI](https://en.wikipedia.org/wiki/MIDI) (Musical Instrument Digital Interface) devices via the [Web MIDI API](https://developer.mozilla.org/en-US/docs/Web/API/Web_MIDI_API). Typically MIDI devices are digital musical instruments such as a MIDI piano keyboard or synthesizer. The MIDI plugin can both receive MIDI input from devices, such as detecting when notes are pressed, as well as send MIDI output to devices, such as to create an arpeggiator.
 
 In order to use a MIDI device it will need to be connected to the device that the Construct project is running on. Some MIDI devices may require a special 5-pin MIDI cable, but others may be able to use another standard such as USB.
 
 You can find two examples of using the MIDI plugin in the [MIDI input](https://editor.construct.net/#open=midi-input) and [MIDI output](https://editor.construct.net/#open=midi-output) examples.
 
 > **Tip**  
-> Familiarity with the MIDI protocol may be useful when using MIDI. You can search the web for the full specification, but there's also a concise unofficial third-party reference [here](https://www.construct.net/out?u=http%3a%2f%2fmidi.teragonaudio.com%2ftech%2fmidispec.htm).
+> Familiarity with the MIDI protocol may be useful when using MIDI. You can search the web for the full specification, but there's also a concise unofficial third-party reference [here](http://midi.teragonaudio.com/tech/midispec.htm).
 
 > **Tip**  
 > As of February 2025, Safari does not support the Web MIDI API and so the MIDI plugin will not work in web exports loaded in Safari, or in macOS WKWebView exports. Use the *Is supported* condition to check if MIDI is supported on the current browser/platform.

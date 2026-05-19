@@ -110,34 +110,34 @@ Set and get the current Z component used for all 2D drawing commands that don't 
 Set and get the current Z component used for all 2D drawing commands that don't specify Z components, such as the `rect2()` and `quad3()`.
 
 **rect(rect)**  
-Draw a rectangle given by an [DOMRect](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fAPI%2fDOMRect).
+Draw a rectangle given by an [DOMRect](https://developer.mozilla.org/en-US/docs/Web/API/DOMRect).
 
 **rect2(left, top, right, bottom)**  
 Draw a rectangle by directly passing the left, top, right and bottom positions.
 
 **quad(quad)**  
-Draw a quad given by a [DOMQuad](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fAPI%2fDOMQuad).
+Draw a quad given by a [DOMQuad](https://developer.mozilla.org/en-US/docs/Web/API/DOMQuad).
 
 **quad2(tlx, tly, trx, try_, brx, bry, blx, bly)**  
 Draw a quad by directly passing the positions of each of the four points in the quad.
 
 **quad3(quad, rect)**  
-Draw a quad given by a [DOMQuad](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fAPI%2fDOMQuad), using a [DOMRect](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fAPI%2fDOMRect) for the source texture co-ordinates to draw from.
+Draw a quad given by a [DOMQuad](https://developer.mozilla.org/en-US/docs/Web/API/DOMQuad), using a [DOMRect](https://developer.mozilla.org/en-US/docs/Web/API/DOMRect) for the source texture co-ordinates to draw from.
 
 **quad4(quad, texQuad)**  
-Draw a quad given by an [DOMQuad](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fAPI%2fDOMQuad), using another `DOMQuad` for the source texture co-ordinates to draw from.
+Draw a quad given by an [DOMQuad](https://developer.mozilla.org/en-US/docs/Web/API/DOMQuad), using another `DOMQuad` for the source texture co-ordinates to draw from.
 
 **quad5(quad, texQuad, colorArr)**  
 As with `quad4`, but adds a `colorArr` parameter for per-vertex colors. This must be a Float32Array with 16 elements in the order r, g, b, a for the top-left, top-right, bottom-right and bottom-left vertices, in that order.
 
 **quad3D(tlx, tly, tlz, trx, try_, trz, brx, bry, brz, blx, bly, blz, rect)**  
-Draw a 3D quad, specifying all four points of the quad with X, Y and Z co-ordinates. The first method accepts texture co-ordinates via a [DOMRect](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fAPI%2fDOMRect) *rect*. The second method accepts texture co-ordinates via a [DOMQuad](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fAPI%2fDOMQuad) *texQuad*. The third is the same as the second, but adds a `colorArr` parameter for per-vertex colors. This must be a Float32Array with 16 elements in the order r, g, b, a for the top-left, top-right, bottom-right and bottom-left vertices, in that order.
+Draw a 3D quad, specifying all four points of the quad with X, Y and Z co-ordinates. The first method accepts texture co-ordinates via a [DOMRect](https://developer.mozilla.org/en-US/docs/Web/API/DOMRect) *rect*. The second method accepts texture co-ordinates via a [DOMQuad](https://developer.mozilla.org/en-US/docs/Web/API/DOMQuad) *texQuad*. The third is the same as the second, but adds a `colorArr` parameter for per-vertex colors. This must be a Float32Array with 16 elements in the order r, g, b, a for the top-left, top-right, bottom-right and bottom-left vertices, in that order.
 
 **quad3D2(tlx, tly, tlz, trx, try_, trz, brx, bry, brz, blx, bly, blz, texQuad)**  
-Draw a 3D quad, specifying all four points of the quad with X, Y and Z co-ordinates. The first method accepts texture co-ordinates via a [DOMRect](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fAPI%2fDOMRect) *rect*. The second method accepts texture co-ordinates via a [DOMQuad](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fAPI%2fDOMQuad) *texQuad*. The third is the same as the second, but adds a `colorArr` parameter for per-vertex colors. This must be a Float32Array with 16 elements in the order r, g, b, a for the top-left, top-right, bottom-right and bottom-left vertices, in that order.
+Draw a 3D quad, specifying all four points of the quad with X, Y and Z co-ordinates. The first method accepts texture co-ordinates via a [DOMRect](https://developer.mozilla.org/en-US/docs/Web/API/DOMRect) *rect*. The second method accepts texture co-ordinates via a [DOMQuad](https://developer.mozilla.org/en-US/docs/Web/API/DOMQuad) *texQuad*. The third is the same as the second, but adds a `colorArr` parameter for per-vertex colors. This must be a Float32Array with 16 elements in the order r, g, b, a for the top-left, top-right, bottom-right and bottom-left vertices, in that order.
 
 **quad3D3(tlx, tly, tlz, trx, try_, trz, brx, bry, brz, blx, bly, blz, texQuad, colorArr)**  
-Draw a 3D quad, specifying all four points of the quad with X, Y and Z co-ordinates. The first method accepts texture co-ordinates via a [DOMRect](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fAPI%2fDOMRect) *rect*. The second method accepts texture co-ordinates via a [DOMQuad](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fAPI%2fDOMQuad) *texQuad*. The third is the same as the second, but adds a `colorArr` parameter for per-vertex colors. This must be a Float32Array with 16 elements in the order r, g, b, a for the top-left, top-right, bottom-right and bottom-left vertices, in that order.
+Draw a 3D quad, specifying all four points of the quad with X, Y and Z co-ordinates. The first method accepts texture co-ordinates via a [DOMRect](https://developer.mozilla.org/en-US/docs/Web/API/DOMRect) *rect*. The second method accepts texture co-ordinates via a [DOMQuad](https://developer.mozilla.org/en-US/docs/Web/API/DOMQuad) *texQuad*. The third is the same as the second, but adds a `colorArr` parameter for per-vertex colors. This must be a Float32Array with 16 elements in the order r, g, b, a for the top-left, top-right, bottom-right and bottom-left vertices, in that order.
 
 **drawMesh(posArr, uvArr, indexArr, colorArr)**  
 Draw an array of textured triangles based on the given position, texture co-ordinate and index arrays, and an optional per-vertex color array. The `posArr` parameter must be a Float32Array of vertex positions in the sequence x, y, z (and therefore its size must be a multiple of 3). The `uvArr` parameter must be a Float32Array of texture co-ordinates in the sequence u, v (and therefore its size must be a multiple of 2). The `indexArr` parameter must be a Uint16Array of indices of vertices and texture co-ordinates, in the sequence i, j, k with each set defining a single triangle to be drawn (and therefore its size must be a multiple of 3). Note that indices refer to the index of a vertex, rather than a direct index in to either array, e.g. a position array with elements x1, y1, z1, x2, y2, z2 has six elements but defines two vertices, and so index 1 refers to the second vertex. If `colorArr` is specified, it must be a Float32Array of colors in the sequence r, g, b, a (and therefore its size must be a multiple of 4). These colors override the renderer's current color. If `colorArr` is not specified, it uses the renderer's current color for every vertex. For a code sample, see the section *Drawing meshes* below.
@@ -167,10 +167,10 @@ Draws a quad from the point (x1, y1) to (x2, y2) with the current line width, an
 Draws four lines along the edges of a given rectangle.
 
 **lineRect2(rect)**  
-Draws four lines along the edges of a given [DOMRect](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fAPI%2fDOMRect).
+Draws four lines along the edges of a given [DOMRect](https://developer.mozilla.org/en-US/docs/Web/API/DOMRect).
 
 **lineQuad(quad)**  
-Draws four lines along the edges of a given [DOMQuad](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fAPI%2fDOMQuad).
+Draws four lines along the edges of a given [DOMQuad](https://developer.mozilla.org/en-US/docs/Web/API/DOMQuad).
 
 **pushLineWidth(w)**  
 Set the current line width for line-drawing calls. This must be followed by a `popLineWidth()` call when finished to restore the previous line width.
@@ -228,7 +228,7 @@ Set the co-ordinate system to match the given [ILayer](https://www.construct.net
 
 ## Drawing meshes
 
-The `drawMesh()` method allows passing typed arrays with vertex, texture co-ordinate, index, and optionally color data, for rendering entire meshes. Note that the mesh drawn with this method uses the same renderer state (blend mode, fill mode, color and texture) for all triangles. To draw parts of the mesh with different renderer state, you will need to make multiple calls to `drawMesh()` with other calls to change state in between. You can create typed arrays over different ranges of the same ArrayBuffer to draw sections of a mesh - see the [MDN guide on TypedArray](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fJavaScript%2fReference%2fGlobal_Objects%2fTypedArray) for more details.
+The `drawMesh()` method allows passing typed arrays with vertex, texture co-ordinate, index, and optionally color data, for rendering entire meshes. Note that the mesh drawn with this method uses the same renderer state (blend mode, fill mode, color and texture) for all triangles. To draw parts of the mesh with different renderer state, you will need to make multiple calls to `drawMesh()` with other calls to change state in between. You can create typed arrays over different ranges of the same ArrayBuffer to draw sections of a mesh - see the [MDN guide on TypedArray](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray) for more details.
 
 One pitfall of the `drawMesh()` method is it will upload all the provided data to the GPU with every single call. This is acceptable for small meshes, but it quickly becomes inefficient for large meshes. In this case it is much more efficient to create the mesh data ahead of time with `createMeshData()`, fill it with the data that would have been passed to `drawMesh()`, and then draw it with `drawMeshData()` (which also supports drawing just a range of the mesh).
 

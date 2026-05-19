@@ -15,7 +15,7 @@ release: 476.3
 
 ---
 
-The **CSV** plugin supports reading and writing data in [comma-separated values](https://www.construct.net/out?u=https%3a%2f%2fen.wikipedia.org%2fwiki%2fComma-separated_values) (CSV) format, as well as other similar formats that use a different delimiter such as [tab-separated values](https://www.construct.net/out?u=https%3a%2f%2fen.wikipedia.org%2fwiki%2fTab-separated_values) (TSV).
+The **CSV** plugin supports reading and writing data in [comma-separated values](https://en.wikipedia.org/wiki/Comma-separated_values) (CSV) format, as well as other similar formats that use a different delimiter such as [tab-separated values](https://en.wikipedia.org/wiki/Tab-separated_values) (TSV).
 
 Delimiter-based formats like CSV and TSV are simple and easy to use, but are limited in their ability to represent more complex data. For more advanced uses consider using [JSON](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/json) instead.
 

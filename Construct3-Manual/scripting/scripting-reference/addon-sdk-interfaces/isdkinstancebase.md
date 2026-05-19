@@ -34,12 +34,12 @@ Add a callback to be run to handle a message posted from a DOM-side script. The 
 Add a callback to be run to handle a message posted from a DOM-side script. The handler is a string identifier. The callback receives the posted data as an argument. Note that if the caller in the DOM-side script originally used the `PostToRuntimeAsync` method, the callback may be an `async` function, and the return value is posted back to the DOM-side script. The `_addDOMMessageHandlers` variant accepts an array of `[handler, callback]` which is convenient when adding multiple handlers.
 
 **_postToDOM(handler, data)**  
-Post a message to a DOM-side script. The handler is a string identifier. The `data` must be [structurally clonable](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fAPI%2fWeb_Workers_API%2fStructured_clone_algorithm) (since it is posted down a MessageChannel).
+Post a message to a DOM-side script. The handler is a string identifier. The `data` must be [structurally clonable](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Structured_clone_algorithm) (since it is posted down a MessageChannel).
 
 The async method returns a promise that resolves with the DOM-side callback's return value. The non-async method does not return a value and the DOM-side callback's return value is discarded (i.e. a "fire and forget" message).
 
 **_postToDOMAsync(handler, data)**  
-Post a message to a DOM-side script. The handler is a string identifier. The `data` must be [structurally clonable](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fAPI%2fWeb_Workers_API%2fStructured_clone_algorithm) (since it is posted down a MessageChannel).
+Post a message to a DOM-side script. The handler is a string identifier. The `data` must be [structurally clonable](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API/Structured_clone_algorithm) (since it is posted down a MessageChannel).
 
 The async method returns a promise that resolves with the DOM-side callback's return value. The non-async method does not return a value and the DOM-side callback's return value is discarded (i.e. a "fire and forget" message).
 

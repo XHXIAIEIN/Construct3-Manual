@@ -13,7 +13,7 @@ release: 476.3
 
 ---
 
-The **Bluetooth object** allows communicating with nearby Bluetooth devices via the [Web Bluetooth API](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fAPI%2fWeb_Bluetooth_API).
+The **Bluetooth object** allows communicating with nearby Bluetooth devices via the [Web Bluetooth API](https://developer.mozilla.org/en-US/docs/Web/API/Web_Bluetooth_API).
 
 You can find a simple example of using the Bluetooth object in the [Bluetooth - device name](https://editor.construct.net/#open=bluetooth-device-name) example.
 
@@ -24,13 +24,13 @@ You can find a simple example of using the Bluetooth object in the [Bluetooth - 
 > In Chrome, it can be useful to visit `chrome://bluetooth-internals` which provides a debug view of Bluetooth devices. This also helps identifying which services and characteristics a device exposes.
 
 > **Tip**  
-> As of May 2022, the Bluetooth object is not supported in Android apps. This is because Google have not added support for the Web Bluetooth API in the Android WebView yet. (See [this issue](https://www.construct.net/out?u=https%3a%2f%2fbugs.chromium.org%2fp%2fchromium%2fissues%2fdetail%3fid%3d1100993) for updates). However it should work in the Chrome browser on Android.
+> As of May 2022, the Bluetooth object is not supported in Android apps. This is because Google have not added support for the Web Bluetooth API in the Android WebView yet. (See [this issue](https://bugs.chromium.org/p/chromium/issues/detail?id=1100993) for updates). However it should work in the Chrome browser on Android.
 
 ## Specifying services and characteristics
 
 When specifying services and characteristics in the Bluetooth object, there are a few ways of identifying them:
 
-- Use their standard e.g. `"heart_rate"` for the standard heart rate service. See the [standard service names](https://www.construct.net/out?u=https%3a%2f%2fwww.bluetooth.com%2fspecifications%2fgatt%2fservices%2f) and [standard characteristic names](https://www.construct.net/out?u=https%3a%2f%2fwww.bluetooth.com%2fspecifications%2fgatt%2fcharacteristics%2f). Note the prefixes are omitted, e.g. *org.bluetooth.characteristic.gap.device_name* is specified just as *gap.device_name* in the Bluetooth object.
+- Use their standard e.g. `"heart_rate"` for the standard heart rate service. See the [standard service names](https://www.bluetooth.com/specifications/gatt/services/) and [standard characteristic names](https://www.bluetooth.com/specifications/gatt/characteristics/). Note the prefixes are omitted, e.g. *org.bluetooth.characteristic.gap.device_name* is specified just as *gap.device_name* in the Bluetooth object.
 - Use their 16-bit hexadecimal IDs e.g. `"0x1802"`. These can also be found in the linked standard lists, or vendor-specific IDs used.
 - Use the full UUID, e.g. `"c48e6067-5295-48d3-8d5c-0395f61792b1"`. This is usually used to refer to a vendor specific characteristic or service.
 

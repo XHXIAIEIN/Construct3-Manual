@@ -24,7 +24,7 @@ Note **Java** is a completely different programming language to **JavaScript**. 
 
 ## JavaScript vs. TypeScript
 
-[TypeScript](https://www.construct.net/out?u=https%3a%2f%2fwww.typescriptlang.org%2f) is essentially an extension of JavaScript that adds static type features. Whereas JavaScript is a dynamic language that allows variables and properties to hold any data and change at any time, TypeScript uses type annotations to more strictly validate code. To illustrate the difference, here is a sample JavaScript function:
+[TypeScript](https://www.typescriptlang.org/) is essentially an extension of JavaScript that adds static type features. Whereas JavaScript is a dynamic language that allows variables and properties to hold any data and change at any time, TypeScript uses type annotations to more strictly validate code. To illustrate the difference, here is a sample JavaScript function:
 
 ```javascript
 function add(a, b)
@@ -64,7 +64,7 @@ JavaScript is often shortened to *JS* and normally uses files with the extension
 
 If you already know JavaScript, check out the [Construct for JavaScript developers quick start guide](https://www.construct.net/en/tutorials/construct-javascript-2866) for a summary of what you might need to know when working in Construct. If you already know TypeScript, you can also check out the [Construct for TypeScript developers quick start guide](https://www.construct.net/en/tutorials/construct-typescript-3210).
 
-If you'd also prefer to use an external code editor like [VS Code](https://www.construct.net/out?u=https%3a%2f%2fcode.visualstudio.com%2f), see [Using an external editor](https://www.construct.net/make-games/manuals/construct-3/scripting/guides/using-external-editor).
+If you'd also prefer to use an external code editor like [VS Code](https://code.visualstudio.com/), see [Using an external editor](https://www.construct.net/make-games/manuals/construct-3/scripting/guides/using-external-editor).
 
 ## Learning JavaScript
 
@@ -72,7 +72,7 @@ If you're interested in learning JavaScript from scratch using Construct, see ou
 
 JavaScript is one of the most popular languages in the world, and is widely used in the technology industry, especially in web development. As a result there are many more materials available across the web for teaching the JavaScript language. The tutorial series linked to above includes lots of links towards the end where you can continue learning more about JavaScript.
 
-This manual section focuses on the unique details of using JavaScript within Construct. We recommend the [MDN web docs](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fJavaScript) as a good reference to use for the JavaScript language itself. This manual links to it when referring to specific parts of the JavaScript programming language so you can learn more about it.
+This manual section focuses on the unique details of using JavaScript within Construct. We recommend the [MDN web docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript) as a good reference to use for the JavaScript language itself. This manual links to it when referring to specific parts of the JavaScript programming language so you can learn more about it.
 
 ### Introductory video
 
@@ -86,11 +86,11 @@ If you're interested in learning TypeScript from scratch using Construct, see ou
 
 As with JavaScript, TypeScript is one of the most popular languages in the world, and is widely used in the technology industry, especially in web development. The tutorial series linked to above also includes lots of links towards the end where you can continue learning more about TypeScript.
 
-The [official TypeScript website](https://www.construct.net/out?u=https%3a%2f%2fwww.typescriptlang.org%2f) provides lots of useful guides and information, including:
+The [official TypeScript website](https://www.typescriptlang.org/) provides lots of useful guides and information, including:
 
-- [TypeScript for the New Programmer](https://www.construct.net/out?u=https%3a%2f%2fwww.typescriptlang.org%2fdocs%2fhandbook%2ftypescript-from-scratch.html)
-- [TypeScript for JavaScript Programmers](https://www.construct.net/out?u=https%3a%2f%2fwww.typescriptlang.org%2fdocs%2fhandbook%2ftypescript-in-5-minutes.html)
-- [The TypeScript Handbook](https://www.construct.net/out?u=https%3a%2f%2fwww.typescriptlang.org%2fdocs%2fhandbook%2fintro.html)
+- [TypeScript for the New Programmer](https://www.typescriptlang.org/docs/handbook/typescript-from-scratch.html)
+- [TypeScript for JavaScript Programmers](https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html)
+- [The TypeScript Handbook](https://www.typescriptlang.org/docs/handbook/intro.html)
 
 See also the guide [Using TypeScript in Construct](https://www.construct.net/make-games/manuals/construct-3/scripting/guides/using-typescript).
 

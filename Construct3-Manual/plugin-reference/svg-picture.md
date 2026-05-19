@@ -15,7 +15,7 @@ release: 476.3
 
 ---
 
-The **SVG Picture** object can display a [Scalable Vector Graphics](https://www.construct.net/out?u=https%3a%2f%2fen.wikipedia.org%2fwiki%2fScalable_Vector_Graphics) (SVG) file in your project.
+The **SVG Picture** object can display a [Scalable Vector Graphics](https://en.wikipedia.org/wiki/Scalable_Vector_Graphics) (SVG) file in your project.
 
 SVG Picture currently does not support animations and only shows a static image.
 

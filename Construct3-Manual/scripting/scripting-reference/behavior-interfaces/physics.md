@@ -177,4 +177,4 @@ Return the position of a contact with another physics object, in layout co-ordin
 Return the position of a contact with another physics object, in layout co-ordinates, given by the zero-based index of the contact. The `getContact` variant returns `[x, y]`.
 
 **setCollisionFilter(isInclusive, tags)**  
-Change the current *Collision filter mode* and *Collision filter tags* properties. `isInclusive` is a boolean where true sets inclusive collision filter mode, and false sets exclusive collision filter mode. `tags` may be either a space-separated string of tags, or an iterable of strings such as an array or [Set](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fJavaScript%2fReference%2fGlobal_Objects%2fSet).
+Change the current *Collision filter mode* and *Collision filter tags* properties. `isInclusive` is a boolean where true sets inclusive collision filter mode, and false sets exclusive collision filter mode. `tags` may be either a space-separated string of tags, or an iterable of strings such as an array or [Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set).

@@ -32,7 +32,7 @@ These services are platform agnostic - you don't have to just use them in Constr
 > **Tip**  
 > CGS are currently in Beta.  You may experience service interuption and some outages as we learn about how CGS is being used and adjust our infastructure and address bugs as they come up.
 
-If you find a bug or issue, please submit it to the official bug tracker at [https://github.com/Scirra/Construct.net-website-bugs](https://www.construct.net/out?u=https%3a%2f%2fgithub.com%2fScirra%2fConstruct.net-website-bugs).
+If you find a bug or issue, please submit it to the official bug tracker at [https://github.com/Scirra/Construct.net-website-bugs](https://github.com/Scirra/Construct.net-website-bugs).
 
 ## Achievements Service
 
@@ -103,25 +103,25 @@ If you use the [Construct Services Plugin](../Construct3-Manual/plugin-reference
 
 ## .NET Class Library
 
-If you use .NET, you can install the [Construct Services class library](https://www.construct.net/out?u=https%3a%2f%2fgithub.com%2fScirra%2fConstruct-Services-DotNet-Class-Library) to use on your website or application.
+If you use .NET, you can install the [Construct Services class library](https://github.com/Scirra/Construct-Services-DotNet-Class-Library) to use on your website or application.
 
 The Construct.net website itself uses this library to run the [Construct Arcade](https://www.construct.net/free-online-games) leaderboards, so will be well maintained and new features added as and when they are released.
 
 ### Installation
 
-Using the [.NET Core command-line interface (CLI) tools](https://www.construct.net/out?u=https%3a%2f%2fdocs.microsoft.com%2fen-us%2fdotnet%2fcore%2ftools%2f):
+Using the [.NET Core command-line interface (CLI) tools](https://docs.microsoft.com/en-us/dotnet/core/tools/):
 
 ```none
 dotnet add package ConstructServices
 ```
 
-Using the [NuGet Command Line Interface (CLI)](https://www.construct.net/out?u=https%3a%2f%2fdocs.microsoft.com%2fen-us%2fnuget%2ftools%2fnuget-exe-cli-reference):
+Using the [NuGet Command Line Interface (CLI)](https://docs.microsoft.com/en-us/nuget/tools/nuget-exe-cli-reference):
 
 ```none
 nuget install ConstructServices
 ```
 
-Using the [Package Manager Console](https://www.construct.net/out?u=https%3a%2f%2fdocs.microsoft.com%2fen-us%2fnuget%2ftools%2fpackage-manager-console):
+Using the [Package Manager Console](https://docs.microsoft.com/en-us/nuget/tools/package-manager-console):
 
 ```none
 Install-Package ConstructServices

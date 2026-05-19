@@ -147,7 +147,7 @@ Fired when a message is received over the network. Note the order messages are r
 
 - `fromId`: the ID of the peer the message was sent by
 - `fromAlias`: the alias of the peer the message was sent by
-- `message`: the content of the message. This is either a string, JSON data, or an [ArrayBuffer](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fJavaScript%2fReference%2fGlobal_Objects%2fArrayBuffer) for binary content, depending on the type of the message sent.
+- `message`: the content of the message. This is either a string, JSON data, or an [ArrayBuffer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer) for binary content, depending on the type of the message sent.
 - `transmissionMode`: the transmission mode the message was sent with.
 
 **"kicked"**  
@@ -197,7 +197,7 @@ Return an array of `IMultiplayerPeer` representing every peer in the room, inclu
 Return a `IMultiplayerPeer` for a peer in the current room by their peer ID, or returns `null` if they don't exist. See also *Peer APIs* below.
 
 **sendPeerMessage(peerId, message, transmissionMode = "o")**  
-Send a message over the network to a peer in the same room identified by their peer ID. The message can be a string, an object for JSON transmission (which must be convertible to a string), or an [ArrayBuffer](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fJavaScript%2fReference%2fGlobal_Objects%2fArrayBuffer) for binary content. The transmission mode can be one of `"o"` for reliable ordered, `"r"` for reliable unordered, or `"u"` for unreliable (see the [Multiplayer object documentation](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/multiplayer) for more details about reliability modes). When received the `"message"` event will be fired.
+Send a message over the network to a peer in the same room identified by their peer ID. The message can be a string, an object for JSON transmission (which must be convertible to a string), or an [ArrayBuffer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer) for binary content. The transmission mode can be one of `"o"` for reliable ordered, `"r"` for reliable unordered, or `"u"` for unreliable (see the [Multiplayer object documentation](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/multiplayer) for more details about reliability modes). When received the `"message"` event will be fired.
 
 **hostBroadcastMessage(fromId, message, transmissionMode = "o")**  
 This is similar to `sendPeerMessage()` but can only be called by the host, and the provided message will be sent to every other peer in the room. `fromId` can optionally be set to another peer ID to make it appear that the message is from that peer, which is useful when relaying messages through the host; if left empty it will use the host ID.

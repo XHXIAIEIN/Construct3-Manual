@@ -79,7 +79,7 @@ Request a page of scores from a given leaderboard ID. This does not require auth
 
 - `resultsPerPage`: the number of results to fetch. The default is 20.
 - `page`: zero-based index of the page to fetch. The default is 0 to retrieve the first page.
-- `country`: an [ISO 3166-1 alpha-2](https://www.construct.net/out?u=https%3a%2f%2fen.wikipedia.org%2fwiki%2fISO_3166-1_alpha-2) country code filter can be provided, e.g. "US" to only return scores submitted in the United States of America.
+- `country`: an [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) country code filter can be provided, e.g. "US" to only return scores submitted in the United States of America.
 - `range`: a time range to filter results by, which if provided must be one of `"Daily"`, `"Weekly"`, `"Monthly"` or `"Yearly"`. For example using `"Daily"` will return today's scores. Weekly leaderboards run from Monday to Sunday. If this property is omitted it returns all scores (which is the default).
 - `rangeOffset`: an offset to return a prior time range when `range` is specified. For example specifying a `"Daily"` range with a `rangeOffset` of 1 will return yesterday's scores.
 - `culture`: a locale to use for returned values. By default it will use the leaderboard's default culture.
@@ -93,7 +93,7 @@ This method returns a Promise that resolves with the following object upon succe
   - `formattedScore`: a string with the score formatted according to the culture.
   - `rank`: a number representing the score rank.
   - `formattedRank`: a string with the rank formatted according to the culture.
-  - `country`: a string of the [ISO 3166-1 alpha-2](https://www.construct.net/out?u=https%3a%2f%2fen.wikipedia.org%2fwiki%2fISO_3166-1_alpha-2) country code the score was submitted from.
+  - `country`: a string of the [ISO 3166-1 alpha-2](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) country code the score was submitted from.
   - `playerId`: a string of the unique player ID who submitted the score.
   - `playerName`: a string of the player display name who submitted the score.
 
@@ -103,7 +103,7 @@ Create or replace the data for a cloud save key. The `opts` parameter is an obje
 - `key` (required): the storage key to save to.
 - `bucketId`: the bucket ID to save to. This can be omitted to use player private storage.
 - `name`: an optional name to associate with the data, such as a file name.
-- `data` (required): a string or [Blob](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fAPI%2fBlob) for the data to upload.
+- `data` (required): a string or [Blob](https://developer.mozilla.org/en-US/docs/Web/API/Blob) for the data to upload.
 
  The method returns a Promise that resolves when the operation has completed.
 

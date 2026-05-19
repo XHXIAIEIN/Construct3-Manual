@@ -12,7 +12,7 @@ release: 476.3
 
 The `IBinaryDataInstance` interface derives from [IInstance](../../../scripting/scripting-reference/object-interfaces/iinstance.md) to add APIs specific to the [Binary Data plugin](../../../plugin-reference/binary-data.md). This makes it possible to read and alter the binary data from scripts, which is often more convenient than trying to do so from events.
 
-Binary Data stores its data as an [ArrayBuffer](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fJavaScript%2fReference%2fGlobal_Objects%2fArrayBuffer), which cannot be directly modified. In JavaScript, data can be read and written to an ArrayBuffer using [typed arrays](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fJavaScript%2fTyped_arrays) or [DataView](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fJavaScript%2fReference%2fGlobal_Objects%2fDataView).
+Binary Data stores its data as an [ArrayBuffer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer), which cannot be directly modified. In JavaScript, data can be read and written to an ArrayBuffer using [typed arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays) or [DataView](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/DataView).
 
 ## Binary Data APIs
 

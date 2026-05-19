@@ -26,7 +26,7 @@ There are many ways to run a local web server, e.g. with a Chrome extension, or 
 
 Your local web server must host on *localhost*. Construct 3 will refuse to load addons from any other origin. You can host on any port, but it is recommended to use a port in the ephemeral port range 49152-65535.
 
-The local web server must serve all the addon files with [CORS](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fHTTP%2fAccess_control_CORS) (Cross-Origin Resource Sharing) enabled for Construct 3 to be able to load them, since it will be making a cross-domain request. In practice this means adding this HTTP header to the server response:
+The local web server must serve all the addon files with [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/Access_control_CORS) (Cross-Origin Resource Sharing) enabled for Construct 3 to be able to load them, since it will be making a cross-domain request. In practice this means adding this HTTP header to the server response:
 
 `Access-Control-Allow-Origin: *`
 

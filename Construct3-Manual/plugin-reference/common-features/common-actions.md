@@ -85,19 +85,19 @@ Remove this object from its parent if it has any, disconnecting it and no longer
 These actions are available for some plugins in the *Form controls* category, like Button and Text Input. These objects are HTML elements placed on top of the canvas.
 
 **Set attribute**  
-Add/set or remove an attribute on the HTML element for the form control. Attributes are part of the HTML standard and are documented on the [Mozilla Developer Network](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fHTML%2fAttributes).
+Add/set or remove an attribute on the HTML element for the form control. Attributes are part of the HTML standard and are documented on the [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes).
 
 > **Tip**  
 > Some attributes only need to exist to take effect and don't use a value. In this case, leave the value as an empty string.
 
 **Remove attribute**  
-Add/set or remove an attribute on the HTML element for the form control. Attributes are part of the HTML standard and are documented on the [Mozilla Developer Network](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fHTML%2fAttributes).
+Add/set or remove an attribute on the HTML element for the form control. Attributes are part of the HTML standard and are documented on the [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes).
 
 > **Tip**  
 > Some attributes only need to exist to take effect and don't use a value. In this case, leave the value as an empty string.
 
 **Set CSS style**  
-Set a CSS (Cascading Style Sheets) style on the HTML element for the form control. CSS is part of the HTML standard and is documented on the [Mozilla Developer Network](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fCSS%2fReference).
+Set a CSS (Cascading Style Sheets) style on the HTML element for the form control. CSS is part of the HTML standard and is documented on the [Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference).
 
 > **Tip**  
 > Note that if the object has the *Auto font size* property enabled, any changes to the *font-size* property will be overridden.

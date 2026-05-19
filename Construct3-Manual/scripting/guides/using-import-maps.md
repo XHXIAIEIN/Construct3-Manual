@@ -12,7 +12,7 @@ release: 476.3
 
 ---
 
-Construct allows using [import maps](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fHTML%2fElement%2fscript%2ftype%2fimportmap) to customize how you write `import` statements.
+Construct allows using [import maps](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script/type/importmap) to customize how you write `import` statements.
 
 Normally you must import a script by its file path, such as:
 

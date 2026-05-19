@@ -19,7 +19,7 @@ Key names in the Dictionary object are always case sensitive. This means the key
 
 ### Scripting
 
-When using JavaScript or TypeScript coding, the features of this object can be accessed via the [IDictionaryInstance script interface](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/plugin-interfaces/dictionary). (JavaScript and TypeScript have built-in support for [Map](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fJavaScript%2fReference%2fGlobal_Objects%2fMap) which is a similar data structure, but this allows interacting with data used in event sheets.)
+When using JavaScript or TypeScript coding, the features of this object can be accessed via the [IDictionaryInstance script interface](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/plugin-interfaces/dictionary). (JavaScript and TypeScript have built-in support for [Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map) which is a similar data structure, but this allows interacting with data used in event sheets.)
 
 ### Example
 

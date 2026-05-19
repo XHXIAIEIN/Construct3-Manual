@@ -19,7 +19,7 @@ There are three different ways to determine how ranks are displayed in your lead
 
 ## Rank
 
-This type will assign duplicate ranks if scores are equal.  Where duplicate ranks exist, the next ranks are skipped.  You can read more about this ranking method [here](https://www.construct.net/out?u=https%3a%2f%2flearn.microsoft.com%2fen-us%2fsql%2ft-sql%2ffunctions%2frank-transact-sql%3fview%3dsql-server-ver16).
+This type will assign duplicate ranks if scores are equal.  Where duplicate ranks exist, the next ranks are skipped.  You can read more about this ranking method [here](https://learn.microsoft.com/en-us/sql/t-sql/functions/rank-transact-sql?view=sql-server-ver16).
 
 ### Example Using Rank Type
 
@@ -32,7 +32,7 @@ This type will assign duplicate ranks if scores are equal.  Where duplicate rank
 
 ## Dense Rank
 
-This type will assign duplicate ranks if scores are equal.  Where duplicate ranks exist, the next ranks are **not** skipped.  You can read more about this ranking method [here](https://www.construct.net/out?u=https%3a%2f%2flearn.microsoft.com%2fen-us%2fsql%2ft-sql%2ffunctions%2fdense-rank-transact-sql%3fview%3dsql-server-ver16).
+This type will assign duplicate ranks if scores are equal.  Where duplicate ranks exist, the next ranks are **not** skipped.  You can read more about this ranking method [here](https://learn.microsoft.com/en-us/sql/t-sql/functions/dense-rank-transact-sql?view=sql-server-ver16).
 
 ### Example Using Dense Rank Type
 
@@ -45,7 +45,7 @@ This type will assign duplicate ranks if scores are equal.  Where duplicate rank
 
 ## Row Number
 
-This assigns a unique rank for each score.  You can read more about this ranking method [here](https://www.construct.net/out?u=https%3a%2f%2flearn.microsoft.com%2fen-us%2fsql%2ft-sql%2ffunctions%2frow-number-transact-sql%3fview%3dsql-server-ver16).
+This assigns a unique rank for each score.  You can read more about this ranking method [here](https://learn.microsoft.com/en-us/sql/t-sql/functions/row-number-transact-sql?view=sql-server-ver16).
 
 ### Example Using Row Number Type
 

@@ -45,7 +45,7 @@ An initial folder location can be specified using a string which may be one of t
 ## File System events
 
 **"drop"**  
-Fired when the user drags and drops files in to the window. The event object has the property `files` which has an array of [File](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fAPI%2fFile) objects representing the dropped files.
+Fired when the user drags and drops files in to the window. The event object has the property `files` which has an array of [File](https://developer.mozilla.org/en-US/docs/Web/API/File) objects representing the dropped files.
 
 ## File System APIs
 
@@ -102,7 +102,7 @@ Show a folder picker allowing the user to choose a folder on their local system.
 Write data to a previously chosen file. The `opts` parameter is an object which uses the following properties to specify options:
 
 - `pickerTag` (required): a string of the picker tag used to choose the file or folder.
-- `data` (required): a string or [ArrayBuffer](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fJavaScript%2fReference%2fGlobal_Objects%2fArrayBuffer) with the data to be written. Strings are written as text with UTF-8 encoding.
+- `data` (required): a string or [ArrayBuffer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer) with the data to be written. Strings are written as text with UTF-8 encoding.
 - `folderPath`: when the picker tag refers to a folder, the relative path to the file inside that folder, e.g. "subfolder/file.txt".
 - `mode`: a string of either `"overwrite"` or `"append"` for the file write mode. The default is to overwrite, replacing the entire file contents with the provided data. Append mode is only supported when writing text (passing a string for `data`).
 - `fileTag`: a file tag used by triggers in the event system.
@@ -113,7 +113,7 @@ Write data to a previously chosen file. The `opts` parameter is an object which 
 Read data from a previously chosen file. The `opts` parameter is an object which uses the following properties to specify options:
 
 - `pickerTag` (required): a string of the picker tag used to choose the file or folder.
-- `mode` (required): a string of either `"text"` or `"binary"` to specify the type of the data returned. In text mode the returned Promise will resolve with a string, and in binary mode it will resolve with an [ArrayBuffer](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fJavaScript%2fReference%2fGlobal_Objects%2fArrayBuffer).
+- `mode` (required): a string of either `"text"` or `"binary"` to specify the type of the data returned. In text mode the returned Promise will resolve with a string, and in binary mode it will resolve with an [ArrayBuffer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer).
 - `folderPath`: when the picker tag refers to a folder, the relative path to the file inside that folder, e.g. "subfolder/file.txt".
 - `fileTag`: a file tag used by triggers in the event system.
 

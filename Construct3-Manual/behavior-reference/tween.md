@@ -24,7 +24,7 @@ The **Tween behavior** animates the values of properties over time. For example 
 
 [Click here to open an example of the Tween behavior](https://editor.construct.net/#open=tweening).
 
-The term "tween" comes from the term "[Inbetweening](https://www.construct.net/out?u=https%3a%2f%2fen.wikipedia.org%2fwiki%2fInbetweening)", referring to generating intermediate frames in between two states.
+The term "tween" comes from the term "[Inbetweening](https://en.wikipedia.org/wiki/Inbetweening)", referring to generating intermediate frames in between two states.
 
 > **Tip**  
 > Tweening to a position moves objects over a fixed time. If you need to move objects to a position using a maximum speed with acceleration and deceleration, use the [Move To behavior](../behavior-reference/move.md) instead.

@@ -27,7 +27,7 @@ Construct project files typically use the .c3p file extension. Once you have ins
 
 ### Construct 3 in the Microsoft Store
 
-If you use Windows, you can also find [Construct 3 in the Microsoft Store](https://www.construct.net/out?u=https%3a%2f%2fwww.microsoft.com%2fstore%2fproductId%2f9NBZ6CP2P37P) and install it from there if you prefer.
+If you use Windows, you can also find [Construct 3 in the Microsoft Store](https://www.microsoft.com/store/productId/9NBZ6CP2P37P) and install it from there if you prefer.
 
 ## Work offline
 
@@ -42,4 +42,4 @@ It's more convenient to use Construct offline if you use the *Add to desktop/she
 
 Construct automatically stays up-to-date. It will notify you when there's a new version available, and when it's updated. Our website also provides a [list of all releases](https://www.construct.net/make-games/releases) with detailed information about changes in each update, and also provides links to run older versions in case there's a problem with an update. You can check which version of Construct you're currently using by opening Construct's main menu and selecting `About`.
 
-You can opt in to email notifications when updates become available in your [subscription preferences](https://www.construct.net/email-subscriptions). We also post news about updates on our [Facebook page](https://www.construct.net/out?u=https%3a%2f%2fwww.facebook.com%2fConstructTeam%2f) and [Twitter account](https://www.construct.net/out?u=https%3a%2f%2ftwitter.com%2fConstructTeam).
+You can opt in to email notifications when updates become available in your [subscription preferences](https://www.construct.net/email-subscriptions). We also post news about updates on our [Facebook page](https://www.facebook.com/ConstructTeam/) and [Twitter account](https://twitter.com/ConstructTeam).

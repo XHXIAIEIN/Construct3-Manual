@@ -20,16 +20,16 @@ On most modern platforms, assets can be directly retrieved as if over the networ
 A reference back to the [IRuntime](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/iruntime) script interface.
 
 **async fetchText(url)**  
-Retrieve the contents of a given URL as a string, JSON object, [Blob](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fAPI%2fBlob) or [ArrayBuffer](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fJavaScript%2fReference%2fGlobal_Objects%2fArrayBuffer). Returns a promise that resolves when the resource has been loaded.
+Retrieve the contents of a given URL as a string, JSON object, [Blob](https://developer.mozilla.org/en-US/docs/Web/API/Blob) or [ArrayBuffer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer). Returns a promise that resolves when the resource has been loaded.
 
 **async fetchJson(url)**  
-Retrieve the contents of a given URL as a string, JSON object, [Blob](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fAPI%2fBlob) or [ArrayBuffer](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fJavaScript%2fReference%2fGlobal_Objects%2fArrayBuffer). Returns a promise that resolves when the resource has been loaded.
+Retrieve the contents of a given URL as a string, JSON object, [Blob](https://developer.mozilla.org/en-US/docs/Web/API/Blob) or [ArrayBuffer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer). Returns a promise that resolves when the resource has been loaded.
 
 **async fetchBlob(url)**  
-Retrieve the contents of a given URL as a string, JSON object, [Blob](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fAPI%2fBlob) or [ArrayBuffer](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fJavaScript%2fReference%2fGlobal_Objects%2fArrayBuffer). Returns a promise that resolves when the resource has been loaded.
+Retrieve the contents of a given URL as a string, JSON object, [Blob](https://developer.mozilla.org/en-US/docs/Web/API/Blob) or [ArrayBuffer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer). Returns a promise that resolves when the resource has been loaded.
 
 **async fetchArrayBuffer(url)**  
-Retrieve the contents of a given URL as a string, JSON object, [Blob](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fAPI%2fBlob) or [ArrayBuffer](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fJavaScript%2fReference%2fGlobal_Objects%2fArrayBuffer). Returns a promise that resolves when the resource has been loaded.
+Retrieve the contents of a given URL as a string, JSON object, [Blob](https://developer.mozilla.org/en-US/docs/Web/API/Blob) or [ArrayBuffer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer). Returns a promise that resolves when the resource has been loaded.
 
 **async getProjectFileUrl(url)**  
 Retrieve a URL that can be fetched directly for a given resource. Returns a promise that resolves to a string with a URL that may be the same as the original URL, or a different URL (e.g. `blob:` URL) if direct fetching is not supported. This is intended for using with local files where the other fetch methods are not appropriate, such as assigning the `src` attribute of a video.
@@ -51,7 +51,7 @@ A read-only array with the list of project files in this project at the time of 
   Fetch and run the JavaScript files at the given URLs. This can load scripts in the *Files* folder of the Project Bar, none of which are automatically loaded by Construct. When loading multiple scripts, they will run in the order they are provided, e.g. `loadScripts("script1.js", "script2.js")`  will always run script1.js first and script2.js second. For best efficiency, try to load all the scripts you need in a single call, rather than repeated calls.
 
 **async compileWebAssembly(url)**  
-Fetch and compile a [WebAssembly.Module](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fJavaScript%2fReference%2fGlobal_Objects%2fWebAssembly%2fModule) from the given URL, which is typically a .wasm file. This uses streaming compilation where supported. Note this does not instantiate the module, which needs to be done before any calls can be made. Pass the module resulting from this call to [WebAssembly.instantiate()](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fJavaScript%2fReference%2fGlobal_Objects%2fWebAssembly%2finstantiate) to get a [WebAssembly.Instance](https://www.construct.net/out?u=https%3a%2f%2fdeveloper.mozilla.org%2fen-US%2fdocs%2fWeb%2fJavaScript%2fReference%2fGlobal_Objects%2fWebAssembly%2fInstance) from the module.
+Fetch and compile a [WebAssembly.Module](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Module) from the given URL, which is typically a .wasm file. This uses streaming compilation where supported. Note this does not instantiate the module, which needs to be done before any calls can be made. Pass the module resulting from this call to [WebAssembly.instantiate()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/instantiate) to get a [WebAssembly.Instance](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WebAssembly/Instance) from the module.
 
 **async loadStyleSheet(url)**  
 Fetch a stylesheet at the given URL and attach it to the current document, applying its styles. Returns a Promise that resolves when the stylesheet has been applied to the document.
