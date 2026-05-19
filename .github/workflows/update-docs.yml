@@ -47,10 +47,15 @@ jobs:
             });
             req.on('error', () => process.stdout.write('unknown'));
           ")
+          # Major-only label for branch naming (e.g. r476.4 -> r476), matching
+          # Scirra's CDN URL convention (editor.construct.net/r476/...).
+          MAJOR=$(echo "$LATEST" | cut -d. -f1)
           echo "current=$CURRENT"
           echo "latest=$LATEST"
+          echo "major=$MAJOR"
           echo "current=$CURRENT" >> $GITHUB_OUTPUT
           echo "latest=$LATEST" >> $GITHUB_OUTPUT
+          echo "major=$MAJOR" >> $GITHUB_OUTPUT
           if [ "$CURRENT" = "$LATEST" ]; then
             echo "changed=false" >> $GITHUB_OUTPUT
             echo "No update needed"
@@ -132,5 +137,5 @@ jobs:
             ${{ steps.check.outputs.current }} → ${{ steps.check.outputs.latest }}
 
             Auto-scraped from construct.net.
-          branch: docs-${{ steps.check.outputs.latest }}
+          branch: ${{ steps.check.outputs.major }}
           delete-branch: true
