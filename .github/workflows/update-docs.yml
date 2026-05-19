@@ -1,4 +1,5 @@
 name: Update Construct 3 Docs
+run-name: Update Construct 3 Docs · ${{ github.event_name }} #${{ github.run_number }}
 
 # Runs every Wednesday 10:00 UTC (after Scirra's typical Tuesday evening UK release)
 on:
@@ -47,50 +48,52 @@ jobs:
             });
             req.on('error', () => process.stdout.write('unknown'));
           ")
-          # Major-only label for branch naming (e.g. r476.4 -> r476), matching
-          # Scirra's CDN URL convention (editor.construct.net/r476/...).
-          MAJOR=$(echo "$LATEST" | cut -d. -f1)
+          # Branch slug: dots -> dashes (e.g. r476.4 -> r476-4) so branch names
+          # are clean and git-friendly while preserving the full version.
+          SLUG=$(echo "$LATEST" | tr . -)
           echo "current=$CURRENT"
           echo "latest=$LATEST"
-          echo "major=$MAJOR"
+          echo "slug=$SLUG"
           echo "current=$CURRENT" >> $GITHUB_OUTPUT
           echo "latest=$LATEST" >> $GITHUB_OUTPUT
-          echo "major=$MAJOR" >> $GITHUB_OUTPUT
+          echo "slug=$SLUG" >> $GITHUB_OUTPUT
           if [ "$CURRENT" = "$LATEST" ]; then
             echo "changed=false" >> $GITHUB_OUTPUT
+            echo "## $CURRENT (up to date)" >> $GITHUB_STEP_SUMMARY
             echo "No update needed"
           else
             echo "changed=true" >> $GITHUB_OUTPUT
+            echo "## $CURRENT → $LATEST" >> $GITHUB_STEP_SUMMARY
             echo "Update available: $CURRENT -> $LATEST"
           fi
 
-      - name: Install dependencies
+      - name: Install dependencies (${{ steps.check.outputs.latest }})
         if: steps.check.outputs.changed == 'true'
         run: cd .scripts && npm install
 
-      - name: Install Chrome + xvfb
+      - name: Install Chrome + xvfb (${{ steps.check.outputs.latest }})
         if: steps.check.outputs.changed == 'true'
         run: sudo apt-get update && sudo apt-get install -y xvfb google-chrome-stable
 
-      - name: Scrape Manual
+      - name: Scrape Manual (${{ steps.check.outputs.latest }})
         if: steps.check.outputs.changed == 'true'
         env:
           CHROME_PATH: /usr/bin/google-chrome-stable
         run: cd .scripts && xvfb-run --auto-servernum --server-args="-screen 0 1280x800x24" node autonomous-scraper.js manual --force
 
-      - name: Scrape Addon SDK
+      - name: Scrape Addon SDK (${{ steps.check.outputs.latest }})
         if: steps.check.outputs.changed == 'true'
         env:
           CHROME_PATH: /usr/bin/google-chrome-stable
         run: cd .scripts && xvfb-run --auto-servernum --server-args="-screen 0 1280x800x24" node autonomous-scraper.js addon-sdk --force
 
-      - name: Scrape Game Services
+      - name: Scrape Game Services (${{ steps.check.outputs.latest }})
         if: steps.check.outputs.changed == 'true'
         env:
           CHROME_PATH: /usr/bin/google-chrome-stable
         run: cd .scripts && xvfb-run --auto-servernum --server-args="-screen 0 1280x800x24" node autonomous-scraper.js game-services --force
 
-      - name: Update README
+      - name: Update README (${{ steps.check.outputs.latest }})
         if: steps.check.outputs.changed == 'true'
         run: |
           node -e "
@@ -126,7 +129,7 @@ jobs:
             console.log('Manual:', manual, 'SDK:', sdk, 'GS:', gs, 'Total:', total);
           "
 
-      - name: Create Pull Request
+      - name: Create Pull Request (${{ steps.check.outputs.latest }})
         if: steps.check.outputs.changed == 'true'
         uses: peter-evans/create-pull-request@v6
         with:
@@ -137,5 +140,5 @@ jobs:
             ${{ steps.check.outputs.current }} → ${{ steps.check.outputs.latest }}
 
             Auto-scraped from construct.net.
-          branch: ${{ steps.check.outputs.major }}
+          branch: ${{ steps.check.outputs.slug }}
           delete-branch: true
