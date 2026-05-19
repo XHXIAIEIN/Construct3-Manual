@@ -1,5 +1,5 @@
 name: Update Construct 3 Docs
-run-name: "${{ inputs.latest != '' && format('Update Construct 3 Docs · {0}', inputs.latest) || format('Check Construct 3 Docs · {0} #{1}', github.event_name, github.run_number) }}"
+run-name: "${{ inputs.latest != '' && format('Update Construct 3 Docs to {0}', inputs.latest) || format('Check Construct 3 Docs · {0} #{1}', github.event_name, github.run_number) }}"
 
 # Runs every Wednesday 10:00 UTC (after Scirra's typical Tuesday evening UK release)
 on:
