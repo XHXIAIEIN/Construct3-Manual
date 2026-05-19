@@ -1,19 +1,25 @@
 name: Update Construct 3 Docs
-run-name: Update Construct 3 Docs · ${{ github.event_name }} #${{ github.run_number }}
+run-name: ${{ inputs.latest != '' && format('Update Construct 3 Docs · {0}', inputs.latest) || format('Check Construct 3 Docs · {0} #{1}', github.event_name, github.run_number) }}
 
 # Runs every Wednesday 10:00 UTC (after Scirra's typical Tuesday evening UK release)
 on:
   schedule:
     - cron: '0 10 * * 3'
-  workflow_dispatch:  # manual trigger
+  workflow_dispatch:
+    inputs:
+      latest:
+        description: 'Version to update to (e.g. r476.4). Leave empty to auto-check.'
+        required: false
+        default: ''
 
 jobs:
-  check-and-update:
+  run:
     runs-on: ubuntu-latest
     timeout-minutes: 60
     permissions:
       contents: write
       pull-requests: write
+      actions: write  # to self-dispatch with a version label
 
     steps:
       - uses: actions/checkout@v4
@@ -22,8 +28,10 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Check for new version
-        id: check
+      - name: Determine target version
+        id: ver
+        env:
+          INPUT_LATEST: ${{ inputs.latest }}
         run: |
           CURRENT=$(node -e "
             const fs = require('fs');
@@ -33,68 +41,85 @@ jobs:
               process.stdout.write(v ? 'r' + v[1].trim() : 'unknown');
             } catch { process.stdout.write('unknown'); }
           ")
-          LATEST=$(node -e "
-            const https = require('https');
-            const req = https.get('https://editor.construct.net/versions.json', {
-              headers: { 'User-Agent': 'Mozilla/5.0' }
-            }, res => {
-              let d = '';
-              res.on('data', c => d += c);
-              res.on('end', () => {
-                const v = JSON.parse(d);
-                const s = v.find(x => x.branchName === 'Stable');
-                process.stdout.write(s ? s.releaseName : 'unknown');
+          # MODE=update when invoked with a version label; MODE=check otherwise.
+          if [ -n "$INPUT_LATEST" ]; then
+            LATEST="$INPUT_LATEST"
+            MODE="update"
+          else
+            LATEST=$(node -e "
+              const https = require('https');
+              const req = https.get('https://editor.construct.net/versions.json', {
+                headers: { 'User-Agent': 'Mozilla/5.0' }
+              }, res => {
+                let d = '';
+                res.on('data', c => d += c);
+                res.on('end', () => {
+                  const v = JSON.parse(d);
+                  const s = v.find(x => x.branchName === 'Stable');
+                  process.stdout.write(s ? s.releaseName : 'unknown');
+                });
               });
-            });
-            req.on('error', () => process.stdout.write('unknown'));
-          ")
-          # Branch slug: dots -> dashes (e.g. r476.4 -> r476-4) so branch names
-          # are clean and git-friendly while preserving the full version.
+              req.on('error', () => process.stdout.write('unknown'));
+            ")
+            MODE="check"
+          fi
+          # Slug: dots -> dashes so branch names like r476-4 stay git-friendly.
           SLUG=$(echo "$LATEST" | tr . -)
-          echo "current=$CURRENT"
-          echo "latest=$LATEST"
-          echo "slug=$SLUG"
+          if [ "$CURRENT" = "$LATEST" ]; then
+            CHANGED="false"
+          else
+            CHANGED="true"
+          fi
           echo "current=$CURRENT" >> $GITHUB_OUTPUT
           echo "latest=$LATEST" >> $GITHUB_OUTPUT
           echo "slug=$SLUG" >> $GITHUB_OUTPUT
-          if [ "$CURRENT" = "$LATEST" ]; then
-            echo "changed=false" >> $GITHUB_OUTPUT
-            echo "## $CURRENT (up to date)" >> $GITHUB_STEP_SUMMARY
-            echo "No update needed"
+          echo "changed=$CHANGED" >> $GITHUB_OUTPUT
+          echo "mode=$MODE" >> $GITHUB_OUTPUT
+          if [ "$CHANGED" = "true" ]; then
+            echo "## $CURRENT → $LATEST ($MODE)" >> $GITHUB_STEP_SUMMARY
           else
-            echo "changed=true" >> $GITHUB_OUTPUT
-            echo "## $CURRENT → $LATEST" >> $GITHUB_STEP_SUMMARY
-            echo "Update available: $CURRENT -> $LATEST"
+            echo "## $CURRENT (up to date)" >> $GITHUB_STEP_SUMMARY
           fi
+          echo "Current=$CURRENT  Latest=$LATEST  Mode=$MODE  Changed=$CHANGED"
 
-      - name: Install dependencies (${{ steps.check.outputs.latest }})
-        if: steps.check.outputs.changed == 'true'
+      # CHECK mode + new version: dispatch self with version label so the
+      # Actions list shows the version. This run exits as a no-op.
+      - name: Dispatch update run with version label
+        if: steps.ver.outputs.mode == 'check' && steps.ver.outputs.changed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh workflow run update-docs.yml -f latest='${{ steps.ver.outputs.latest }}'
+          echo "::notice::Dispatched update run with version label ${{ steps.ver.outputs.latest }}"
+
+      - name: Install dependencies (${{ steps.ver.outputs.latest }})
+        if: steps.ver.outputs.mode == 'update'
         run: cd .scripts && npm install
 
-      - name: Install Chrome + xvfb (${{ steps.check.outputs.latest }})
-        if: steps.check.outputs.changed == 'true'
+      - name: Install Chrome + xvfb (${{ steps.ver.outputs.latest }})
+        if: steps.ver.outputs.mode == 'update'
         run: sudo apt-get update && sudo apt-get install -y xvfb google-chrome-stable
 
-      - name: Scrape Manual (${{ steps.check.outputs.latest }})
-        if: steps.check.outputs.changed == 'true'
+      - name: Scrape Manual (${{ steps.ver.outputs.latest }})
+        if: steps.ver.outputs.mode == 'update'
         env:
           CHROME_PATH: /usr/bin/google-chrome-stable
         run: cd .scripts && xvfb-run --auto-servernum --server-args="-screen 0 1280x800x24" node autonomous-scraper.js manual --force
 
-      - name: Scrape Addon SDK (${{ steps.check.outputs.latest }})
-        if: steps.check.outputs.changed == 'true'
+      - name: Scrape Addon SDK (${{ steps.ver.outputs.latest }})
+        if: steps.ver.outputs.mode == 'update'
         env:
           CHROME_PATH: /usr/bin/google-chrome-stable
         run: cd .scripts && xvfb-run --auto-servernum --server-args="-screen 0 1280x800x24" node autonomous-scraper.js addon-sdk --force
 
-      - name: Scrape Game Services (${{ steps.check.outputs.latest }})
-        if: steps.check.outputs.changed == 'true'
+      - name: Scrape Game Services (${{ steps.ver.outputs.latest }})
+        if: steps.ver.outputs.mode == 'update'
         env:
           CHROME_PATH: /usr/bin/google-chrome-stable
         run: cd .scripts && xvfb-run --auto-servernum --server-args="-screen 0 1280x800x24" node autonomous-scraper.js game-services --force
 
-      - name: Update README (${{ steps.check.outputs.latest }})
-        if: steps.check.outputs.changed == 'true'
+      - name: Update README (${{ steps.ver.outputs.latest }})
+        if: steps.ver.outputs.mode == 'update'
         run: |
           node -e "
             const fs = require('fs');
@@ -114,7 +139,7 @@ jobs:
             const sdk = count('Construct3-Addon-SDK');
             const gs = count('Construct3-Game-Services');
             const total = manual + sdk + gs;
-            const latest = '${{ steps.check.outputs.latest }}';
+            const latest = '${{ steps.ver.outputs.latest }}';
             let readme = fs.readFileSync('README.md', 'utf8');
             readme = readme
               .replace(/release-r[\w.]+-blue/, 'release-' + latest + '-blue')
@@ -129,16 +154,16 @@ jobs:
             console.log('Manual:', manual, 'SDK:', sdk, 'GS:', gs, 'Total:', total);
           "
 
-      - name: Create Pull Request (${{ steps.check.outputs.latest }})
-        if: steps.check.outputs.changed == 'true'
+      - name: Create Pull Request (${{ steps.ver.outputs.latest }})
+        if: steps.ver.outputs.mode == 'update'
         uses: peter-evans/create-pull-request@v6
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          commit-message: "Update documentation to ${{ steps.check.outputs.latest }}"
-          title: "Update documentation to ${{ steps.check.outputs.latest }}"
+          commit-message: "Update documentation to ${{ steps.ver.outputs.latest }}"
+          title: "Update documentation to ${{ steps.ver.outputs.latest }}"
           body: |
-            ${{ steps.check.outputs.current }} → ${{ steps.check.outputs.latest }}
+            ${{ steps.ver.outputs.current }} → ${{ steps.ver.outputs.latest }}
 
             Auto-scraped from construct.net.
-          branch: ${{ steps.check.outputs.slug }}
+          branch: ${{ steps.ver.outputs.slug }}
           delete-branch: true
