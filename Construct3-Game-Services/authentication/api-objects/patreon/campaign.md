@@ -1,7 +1,7 @@
 ---
 title: "Campaign Object"
 source: "https://www.construct.net/en/game-services/manuals/game-services/authentication/api-objects/patreon/campaign"
-release: 476.3
+release: 487
 ---
 
 ## On this page

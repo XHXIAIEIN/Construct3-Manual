@@ -1,7 +1,7 @@
 ---
 title: "Get Buckets"
 source: "https://www.construct.net/en/game-services/manuals/game-services/cloud-save/api-end-points/buckets/get-buckets"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -72,7 +72,7 @@ If the request was successfull or not.
 **pagination** [`Pagination`](../../../common-objects/pagination-object.md)  
 If there are more buckets than can be displayed on one page of results, this pagination object can be used to help browse through other pages of results.
 
-**buckets** Array<[Bucket](../../../cloud-save/api-objects/game-buckets.md)>
+**buckets** [`Array<Bucket>`](../../../cloud-save/api-objects/game-buckets.md)  
 The buckets returned from the request.
 
 **formattingCulture** `string`  

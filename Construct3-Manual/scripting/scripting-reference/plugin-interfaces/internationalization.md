@@ -1,7 +1,7 @@
 ---
 title: "Internationalization script interface"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/scripting/scripting-reference/plugin-interfaces/internationalization"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -12,7 +12,7 @@ release: 476.3
 
 ---
 
-The `IInternationalizationObjectType` interface derives from [IObjectType](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/object-interfaces/iobjecttype) to add APIs specific to the [Internationalization plugin](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/internationalization).
+The `IInternationalizationObjectType` interface derives from [IObjectType](../../../scripting/scripting-reference/object-interfaces/iobjecttype.md) to add APIs specific to the [Internationalization plugin](../../../plugin-reference/internationalization.md).
 
 > **Tip**  
 > *Internationalization* is sometimes written as the shorthand *i18n*, referring to the fact the word starts with an I, ends with an N, and has 18 other letters in between.
@@ -57,10 +57,10 @@ Push or pop to the context stack. When a string is pushed, it is used as the bas
 Return an `I18NLookupContext` representing the given context. This provides a convenient way to look up several strings relative to that context. See the section below for more details.
 
 **lookup(context, ...args)**  
-Look up a string at the given context, and substitute placeholders with the following arguments. The context may be relative if a context has been pushed. The plural variant also makes use of the `count` argument to select the appropriate plural variant for the current locale. See the [Internationalization manual entry](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/internationalization) for more details on placeholders, relative contexts and pluralization.
+Look up a string at the given context, and substitute placeholders with the following arguments. The context may be relative if a context has been pushed. The plural variant also makes use of the `count` argument to select the appropriate plural variant for the current locale. See the [Internationalization manual entry](../../../plugin-reference/internationalization.md) for more details on placeholders, relative contexts and pluralization.
 
 **lookupPlural(context, count, ...args)**  
-Look up a string at the given context, and substitute placeholders with the following arguments. The context may be relative if a context has been pushed. The plural variant also makes use of the `count` argument to select the appropriate plural variant for the current locale. See the [Internationalization manual entry](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/internationalization) for more details on placeholders, relative contexts and pluralization.
+Look up a string at the given context, and substitute placeholders with the following arguments. The context may be relative if a context has been pushed. The plural variant also makes use of the `count` argument to select the appropriate plural variant for the current locale. See the [Internationalization manual entry](../../../plugin-reference/internationalization.md) for more details on placeholders, relative contexts and pluralization.
 
 ## I18NLookupContext
 

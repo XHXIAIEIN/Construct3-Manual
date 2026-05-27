@@ -1,7 +1,7 @@
 ---
 title: "Subclassing instances"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/scripting/guides/subclassing-instances"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -14,11 +14,11 @@ release: 476.3
 
 ---
 
-Construct uses the [IInstance](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/object-interfaces/iinstance) and [IWorldInstance](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/object-interfaces/iworldinstance) interfaces to provide access to instances. Many plugins provide derivatives of these to provide plugin-specific APIs. For example the Text plugin adds a `text` property with an `ITextInstance` class that derives from `IWorldInstance`. The [Plugin interfaces](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/plugin-interfaces) section covers these.
+Construct uses the [IInstance](../../scripting/scripting-reference/object-interfaces/iinstance.md) and [IWorldInstance](../../scripting/scripting-reference/object-interfaces/iworldinstance.md) interfaces to provide access to instances. Many plugins provide derivatives of these to provide plugin-specific APIs. For example the Text plugin adds a `text` property with an `ITextInstance` class that derives from `IWorldInstance`. The [Plugin interfaces](../../scripting/scripting-reference/plugin-interfaces.md) section covers these.
 
-However in your projects it is often desirable to have a further customised class to represent instances. For example all your Sprite instances will provide an [ISpriteInstance](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/plugin-interfaces/sprite) interface, but this is still a fairly generic class to represent many different aspects of your project, such as both the player and enemies. *Subclassing* allows you to use your own custom classes like `PlayerInstance` or `EnemyInstance` to represent different objects in your game. Then any time you ask Construct for instances, such as with [getAllInstances()](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/object-interfaces/iobjectclass), you'll get references to your custom classes instead of a generic `ISpriteInstance` or `IWorldInstance` class.
+However in your projects it is often desirable to have a further customised class to represent instances. For example all your Sprite instances will provide an [ISpriteInstance](../../scripting/scripting-reference/plugin-interfaces/sprite.md) interface, but this is still a fairly generic class to represent many different aspects of your project, such as both the player and enemies. *Subclassing* allows you to use your own custom classes like `PlayerInstance` or `EnemyInstance` to represent different objects in your game. Then any time you ask Construct for instances, such as with [getAllInstances()](../../scripting/scripting-reference/object-interfaces/iobjectclass.md), you'll get references to your custom classes instead of a generic `ISpriteInstance` or `IWorldInstance` class.
 
-To use subclassing, follow the steps provided here. The [Spell Caster code scripting example](https://editor.construct.net/#open=spell-caster-code-js) also demonstrates how to use this, with a custom `GoblinInstance` class to represent the enemy goblins in the game. A [TypeScript version](https://editor.construct.net/#open=spell-caster-code-ts) is also available. The code samples here use JavaScript, but subclassing works similarly in TypeScript with the necessary type annotations - see [TypeScript in Construct](https://www.construct.net/make-games/manuals/construct-3/scripting/using-scripting/typescript-construct).
+To use subclassing, follow the steps provided here. The [Spell Caster code scripting example](https://editor.construct.net/#open=spell-caster-code-js) also demonstrates how to use this, with a custom `GoblinInstance` class to represent the enemy goblins in the game. A [TypeScript version](https://editor.construct.net/#open=spell-caster-code-ts) is also available. The code samples here use JavaScript, but subclassing works similarly in TypeScript with the necessary type annotations - see [TypeScript in Construct](../../scripting/using-scripting/typescript-construct.md).
 
 ## Step 1: create your class
 
@@ -43,7 +43,7 @@ Often it is sensible to organize code by using a separate script file for the cl
 
 ## Step 2: set the instance class
 
-Next, use the [IObjectClass.setInstanceClass()](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/object-interfaces/iobjectclass) method to set your custom class. This must be done before any instances in the project are created, to make sure they all use the right class. Therefore this must be called in `runOnStartup`, which runs before the runtime has finished loading, so no instances exist yet.
+Next, use the [IObjectClass.setInstanceClass()](../../scripting/scripting-reference/object-interfaces/iobjectclass.md) method to set your custom class. This must be done before any instances in the project are created, to make sure they all use the right class. Therefore this must be called in `runOnStartup`, which runs before the runtime has finished loading, so no instances exist yet.
 
 ```javascript
 runOnStartup(async runtime =>
@@ -80,9 +80,9 @@ class PlayerInstance extends globalThis.InstanceType.Player
 Note that here `ammo` is not an instance variable or anything else associated with Construct's event system: it's just a normal JavaScript object property.
 
 > **Tip**  
-> When using TypeScript, you'll need to use class fields to declare the property type. See [TypeScript in Construct](https://www.construct.net/make-games/manuals/construct-3/scripting/using-scripting/typescript-construct) for more details.
+> When using TypeScript, you'll need to use class fields to declare the property type. See [TypeScript in Construct](../../scripting/using-scripting/typescript-construct.md) for more details.
 
-Since [IInstance](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/object-interfaces/iinstance) has a `runtime` property, within your class you can always use `this.runtime` to refer to the [runtime script interface](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/iruntime).
+Since [IInstance](../../scripting/scripting-reference/object-interfaces/iinstance.md) has a `runtime` property, within your class you can always use `this.runtime` to refer to the [runtime script interface](../../scripting/scripting-reference/iruntime.md).
 
 You may also wish to make use of [private properties and methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Classes/Private_properties) to ensure some details remain internal to your class.
 

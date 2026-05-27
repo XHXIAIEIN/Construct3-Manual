@@ -1,7 +1,7 @@
 ---
 title: "The Project Bar"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/interface/bars/project-bar"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -16,13 +16,13 @@ release: 476.3
 
 ---
 
-The **Project Bar** shows an overview of everything in your project. See [Project Structure](https://www.construct.net/make-games/manuals/construct-3/overview/project-structure) for a summary of the different elements that make up a project, or the manual section on [Project Primitives](https://www.construct.net/make-games/manuals/construct-3/project-primitives) for more detail.
+The **Project Bar** shows an overview of everything in your project. See [Project Structure](../../overview/project-structure.md) for a summary of the different elements that make up a project, or the manual section on [Project Primitives](../../project-primitives.md) for more detail.
 
 [![The Project Bar](https://construct-static.com/images/v1740/r/uploads/articleuploadobject/0/images/32872/project-bar_v300.png)](https://construct-static.com/images/v1740/uploads/articleuploadobject/0/images/32872/project-bar.png)The Project Bar
 
 If something in the project has changed, it is displayed in *italics*. When you save the project, everything reverts to normal text, indicating nothing has changed since the last save.
 
-To view the project properties, select the project item. This is the item at the top of the Project Bar with the name of the project. When you select it, the [Properties Bar](https://www.construct.net/make-games/manuals/construct-3/interface/properties-bar) displays properties affecting the whole project. You can also **right-click the project item** to show a list of options, particularly the `Tools` submenu.
+To view the project properties, select the project item. This is the item at the top of the Project Bar with the name of the project. When you select it, the [Properties Bar](../../interface/properties-bar.md) displays properties affecting the whole project. You can also **right-click the project item** to show a list of options, particularly the `Tools` submenu.
 
 ## Organising projects
 
@@ -32,7 +32,7 @@ You can hold **Control** or **Shift** to select multiple items and drag them in 
 
 ## Managing items in the project
 
-**Right-click** any item in the Project Bar to show a list of options. Most items can be renamed and deleted. Right-clicking a folder also has the option to add a new item to that folder, such as a new layout or event sheet. Objects are more commonly added in the [Layout View](https://www.construct.net/make-games/manuals/construct-3/interface/layout-view), but you can still add them from the Project Bar too.
+**Right-click** any item in the Project Bar to show a list of options. Most items can be renamed and deleted. Right-clicking a folder also has the option to add a new item to that folder, such as a new layout or event sheet. Objects are more commonly added in the [Layout View](../../interface/layout-view.md), but you can still add them from the Project Bar too.
 
 ## Deleting objects
 
@@ -46,12 +46,12 @@ Once you're done simply press <kbd>Escape</kbd> to clear the search and revert t
 
 ## Importing audio
 
-**Right-click** either the **Sound** or **Music** folders and select `Import sounds` or `Import music` to open the [Import Audio dialog](https://www.construct.net/make-games/manuals/construct-3/interface/dialogs/import-audio). This allows you to pick audio files from your computer and import them to the project. Construct will convert them to the necessary format to support all browsers. To play back audio in your game, make sure you add the [Audio object](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/audio) to the project. For more information see [Sounds & Music](../../project-primitives/sounds-and-music.md).
+**Right-click** either the **Sound** or **Music** folders and select `Import sounds` or `Import music` to open the [Import Audio dialog](../../interface/dialogs/import-audio.md). This allows you to pick audio files from your computer and import them to the project. Construct will convert them to the necessary format to support all browsers. To play back audio in your game, make sure you add the [Audio object](../../plugin-reference/audio.md) to the project. For more information see [Sounds & Music](../../project-primitives/sounds-and-music.md).
 
 ## Importing files
 
-You can import additional external files to the project, including web fonts. These can be categorised in to **Videos**, **Fonts**, **Icons** or the general-purpose **Files** folder. For more information, see [Project Files](https://www.construct.net/make-games/manuals/construct-3/project-primitives/files) and [Icons & splash](../../tips-and-guides/icons-splash.md).
+You can import additional external files to the project, including web fonts. These can be categorised in to **Videos**, **Fonts**, **Icons** or the general-purpose **Files** folder. For more information, see [Project Files](../../project-primitives/files.md) and [Icons & splash](../../tips-and-guides/icons-splash.md).
 
 ## Previewing files
 
-From the Project Bar, you can preview several kinds of files added to the project. Audio and video files can be played back. Web fonts can be previewed with a dialog showing some text using the font. SVG files can also be previewed. Other kinds of file can be viewed and edited using the [file editors](https://www.construct.net/make-games/manuals/construct-3/interface/file-editors)  `[Paid plans only]` .
+From the Project Bar, you can preview several kinds of files added to the project. Audio and video files can be played back. Web fonts can be previewed with a dialog showing some text using the font. SVG files can also be previewed. Other kinds of file can be viewed and edited using the [file editors](../../interface/file-editors.md)  `[Paid plans only]` .

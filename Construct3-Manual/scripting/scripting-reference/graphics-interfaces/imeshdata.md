@@ -1,7 +1,7 @@
 ---
 title: "IMeshData script interface"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/scripting/scripting-reference/graphics-interfaces/imeshdata"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -10,7 +10,7 @@ release: 476.3
 
 ---
 
-The `IMeshData` interface represents a series of long-lived vertex buffers for use with the [renderer](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/graphics-interfaces/irenderer-interface). It includes position, texture co-ordinate, color and index data. The data lives persistently on the GPU, ensuring it is a much more efficient way to draw complex meshes than the renderer `drawMesh()` method, which uploads all the provided data to the GPU with every call; in contrast the `drawMeshData()` method accepts an `IMeshData` and re-uses its content without having to upload any more data.
+The `IMeshData` interface represents a series of long-lived vertex buffers for use with the [renderer](../../../scripting/scripting-reference/graphics-interfaces/irenderer-interface.md). It includes position, texture co-ordinate, color and index data. The data lives persistently on the GPU, ensuring it is a much more efficient way to draw complex meshes than the renderer `drawMesh()` method, which uploads all the provided data to the GPU with every call; in contrast the `drawMeshData()` method accepts an `IMeshData` and re-uses its content without having to upload any more data.
 
 This interface is created using the renderer `createMeshData()` method. Once created the number of vertices or indices cannot be changed.
 

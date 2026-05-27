@@ -1,7 +1,7 @@
 ---
 title: "AJAX"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/ajax"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -18,7 +18,7 @@ release: 476.3
 
 ---
 
-The **AJAX plugin** allows you to fetch the content of a URL, or post data to a website. You can also use it to load [project files](https://www.construct.net/make-games/manuals/construct-3/project-primitives/files). Its name derives from "Asynchronous JavaScript and XML", a technique familiar to most web developers.
+The **AJAX plugin** allows you to fetch the content of a URL, or post data to a website. You can also use it to load [project files](../project-primitives/files.md). Its name derives from "Asynchronous JavaScript and XML", a technique familiar to most web developers.
 
 ### Scripting
 
@@ -32,7 +32,7 @@ The basic usage of the AJAX object consists of:
 2. A moment later after the request completes, *On completed* triggers.
 3. The *LastData* expression can be used to access the content of the response.
 
-The *tokenat* [system expression](https://www.construct.net/make-games/manuals/construct-3/system-reference/system-expressions) may be useful to split simple responses. Alternatively, you can read *LastData* in other formats by using other plugins, such as the [XML](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/xml) object, loading [Array](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/array) data, and so on.
+The *tokenat* [system expression](../system-reference/system-expressions.md) may be useful to split simple responses. Alternatively, you can read *LastData* in other formats by using other plugins, such as the [XML](../plugin-reference/xml.md) object, loading [Array](../plugin-reference/array.md) data, and so on.
 
 ## Tags
 
@@ -65,11 +65,11 @@ When exporting desktop applications with NW.js, the AJAX object can also load fi
 
 ## MIME types
 
-AJAX requests for files on your own server requires that your server has the [correct MIME types set up](https://www.construct.net/make-games/manuals/construct-3/tips-and-guides/mime-types).
+AJAX requests for files on your own server requires that your server has the [correct MIME types set up](../tips-and-guides/mime-types.md).
 
 ## Binary data
 
-The AJAX object can receive resources as binary, and also post binary data, using the [Binary Data](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/binary-data) object. This is also useful to fetch local resources like canvas snapshot URLs or video recording URLs, and load them in to a Binary Data object to do something else with them, like save it to storage or upload it to a server.
+The AJAX object can receive resources as binary, and also post binary data, using the [Binary Data](../plugin-reference/binary-data.md) object. This is also useful to fetch local resources like canvas snapshot URLs or video recording URLs, and load them in to a Binary Data object to do something else with them, like save it to storage or upload it to a server.
 
 To request a resource that is received as a binary, use it as follows:
 
@@ -81,7 +81,7 @@ To request a resource that is received as a binary, use it as follows:
 ## AJAX conditions
 
 **On completed**  
-Triggered when a request with the same tag has completed successfully. The *LastData* expression contains the response, unless the *Set response binary* action was used, in which case the selected [Binary Data](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/binary-data) object now contains the response.
+Triggered when a request with the same tag has completed successfully. The *LastData* expression contains the response, unless the *Set response binary* action was used, in which case the selected [Binary Data](../plugin-reference/binary-data.md) object now contains the response.
 
 **On any completed**  
 Triggered when any request has completed successfully. The *Tag* expression identifies the request, and *LastData* contains the response.
@@ -107,16 +107,16 @@ For long running uploads, *On upload progress* triggers periodically and updates
 In some cases you may wish to interpret the server's response with a different MIME type to the one the server indicates. For example a misconfigured server may return a text file with the wrong character set, and you want to force the response to be interpreted as UTF-8. In this case you could override the MIME type as `text/plain; charset=utf-8` to avoid garbling the text. This action only applies to the next AJAX request that is made, after which the MIME type will be set back to the default setting of accepting what the server response indicates.
 
 **Post to URL**  
-Send a request with data to a URL and retrieve the response. A tag is provided to match it up with the *On completed*, *On progress* and *On error* triggers. The *binary* variant can post the contents of a [Binary Data](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/binary-data) object to the server; otherwise a string is used. Construct does not automatically URL encode the string - use the *URLEncode* [system expression](https://www.construct.net/make-games/manuals/construct-3/system-reference/system-expressions) to ensure the data is in the correct format for posting. Note string data is in the same format as a query string, e.g. `"foo=1&bar=2"`. The method can also be specified: by default it is POST, but for some APIs you may need to change this to PUT, DELETE or another HTTP method.
+Send a request with data to a URL and retrieve the response. A tag is provided to match it up with the *On completed*, *On progress* and *On error* triggers. The *binary* variant can post the contents of a [Binary Data](../plugin-reference/binary-data.md) object to the server; otherwise a string is used. Construct does not automatically URL encode the string - use the *URLEncode* [system expression](../system-reference/system-expressions.md) to ensure the data is in the correct format for posting. Note string data is in the same format as a query string, e.g. `"foo=1&bar=2"`. The method can also be specified: by default it is POST, but for some APIs you may need to change this to PUT, DELETE or another HTTP method.
 
 **Post binary to URL**  
-Send a request with data to a URL and retrieve the response. A tag is provided to match it up with the *On completed*, *On progress* and *On error* triggers. The *binary* variant can post the contents of a [Binary Data](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/binary-data) object to the server; otherwise a string is used. Construct does not automatically URL encode the string - use the *URLEncode* [system expression](https://www.construct.net/make-games/manuals/construct-3/system-reference/system-expressions) to ensure the data is in the correct format for posting. Note string data is in the same format as a query string, e.g. `"foo=1&bar=2"`. The method can also be specified: by default it is POST, but for some APIs you may need to change this to PUT, DELETE or another HTTP method.
+Send a request with data to a URL and retrieve the response. A tag is provided to match it up with the *On completed*, *On progress* and *On error* triggers. The *binary* variant can post the contents of a [Binary Data](../plugin-reference/binary-data.md) object to the server; otherwise a string is used. Construct does not automatically URL encode the string - use the *URLEncode* [system expression](../system-reference/system-expressions.md) to ensure the data is in the correct format for posting. Note string data is in the same format as a query string, e.g. `"foo=1&bar=2"`. The method can also be specified: by default it is POST, but for some APIs you may need to change this to PUT, DELETE or another HTTP method.
 
 **Request URL**  
 Send a GET request to retrieve the contents of a URL. A tag is provided to match it up with the *On completed*, *On progress* and *On error* triggers.
 
 **Request project file**  
-Request the contents of a [project file](https://www.construct.net/make-games/manuals/construct-3/project-primitives/files). A tag is provided to match it up with the *On completed*, *On progress* and *On error* triggers.
+Request the contents of a [project file](../project-primitives/files.md). A tag is provided to match it up with the *On completed*, *On progress* and *On error* triggers.
 
 **Set request header**  
 Set a HTTP header on the next AJAX request that is made. After the next AJAX request all the headers set with this action are cleared again, so it only takes effect once.
@@ -131,7 +131,7 @@ Set whether tracking the progress of large upload requests is enabled for subseq
 Set the *with credentials* setting for the next AJAX request that is made. After the next AJAX request the setting will revert to its default (off), so it only takes effect once. When enabled, sending a request with credentials will cause cross-site requests to be made using credentials such as cookies and authorization headers. Internally this sets the `withCredentials` property of XMLHttpRequest. More details can be found at the [MDN withCredentials documentation](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/withCredentials).
 
 **Set response binary**  
-Use this action before a *Request* action to read the response in to a [Binary Data](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/binary-data) object instead of returning it as a string in the *LastData* expression. This allows for non-text resources like images to be fetched and processed directly.
+Use this action before a *Request* action to read the response in to a [Binary Data](../plugin-reference/binary-data.md) object instead of returning it as a string in the *LastData* expression. This allows for non-text resources like images to be fetched and processed directly.
 
 ## AJAX expressions
 

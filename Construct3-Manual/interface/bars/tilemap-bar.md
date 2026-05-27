@@ -1,7 +1,7 @@
 ---
 title: "The Tilemap bar"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/interface/bars/tilemap-bar"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -13,7 +13,7 @@ release: 476.3
 
 ---
 
-The **Tilemap Bar** allows editing tilemaps in the **Tilemap object** from the [Layout View](https://www.construct.net/make-games/manuals/construct-3/interface/layout-view). It provides a toolbar with various tools and options, and a view of the current tileset image.
+The **Tilemap Bar** allows editing tilemaps in the **Tilemap object** from the [Layout View](../../interface/layout-view.md). It provides a toolbar with various tools and options, and a view of the current tileset image.
 
 [![The Tilemap Bar](https://construct-static.com/images/v1740/r/uploads/articleuploadobject/0/images/130572/tilemap-manual-0_v210.png)](https://construct-static.com/images/v1740/uploads/articleuploadobject/0/images/130572/tilemap-manual-0.png)The Tilemap Bar
 
@@ -21,7 +21,7 @@ The **Tilemap Bar** allows editing tilemaps in the **Tilemap object** from the [
 
 To add a tilemap and start editing it, follow these steps:
 
-1. Add a [Tilemap object](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/tilemap) to the layout and make sure it is selected
+1. Add a [Tilemap object](../../plugin-reference/tilemap.md) to the layout and make sure it is selected
 2. Choose the Pencil or Rectangle tool from the Tilemap bar's toolbar
 3. Select a tile in the tileset showing in the Tilemap bar
 4. Click inside the Tilemap object to start drawing the selected tile
@@ -30,11 +30,11 @@ You can **hold shift** and **right-click** a tile in the Layout View to pick tha
 
 To stop editing the tilemap's tiles and return to normal layout editing, click the mouse cursor on the Tilemap bar's toolbar to restore normal layout view selection. This also allows you to move and resize the entire tilemap object.
 
-If you have multiple tilemap objects, only the selected tilemap is edited. It is often useful to layer tilemap objects directly on top of each other, in which case the tilemap to edit can be most easily selected using the [Z Order Bar](https://www.construct.net/make-games/manuals/construct-3/interface/bars/z-order-bar)  `[Paid plans only]`  or hiding/locking layers with the [Layers Bar](https://www.construct.net/make-games/manuals/construct-3/interface/bars/layers-bar).
+If you have multiple tilemap objects, only the selected tilemap is edited. It is often useful to layer tilemap objects directly on top of each other, in which case the tilemap to edit can be most easily selected using the [Z Order Bar](../../interface/bars/z-order-bar.md)  `[Paid plans only]`  or hiding/locking layers with the [Layers Bar](../../interface/bars/layers-bar.md).
 
 If you are dealing with small tiles, you can also zoom the tileset image using the toolbar buttons. You can also access some of these options via a menu when right-clicking inside the Tilemap Bar.
 
-There are a range of keyboard shortcuts that can be used when editing tilemaps. For more information, see the manual entry on [Keyboard shortcuts](https://www.construct.net/make-games/manuals/construct-3/interface/keyboard-shortcuts).
+There are a range of keyboard shortcuts that can be used when editing tilemaps. For more information, see the manual entry on [Keyboard shortcuts](../../interface/keyboard-shortcuts.md).
 
 If the bar is not visible anywhere in the UI, it can be opened by doing either of these:
 
@@ -66,7 +66,7 @@ Note you can also **drag-and-drop** individual .tmx files, image files, and .zip
 
 ## Editing tile collision polygons
 
-Each tile can have an individual collision polygon which is used when testing for collisions with the tilemap object. To edit a tile's collision polygon, **double-click the tile** in the Tilemap Bar. The [Animations Editor](https://www.construct.net/make-games/manuals/construct-3/interface/animations-editor) will open to edit that tile. You can use the **collision polygon tool** to edit the tile's collision polygon. While the tool is active, you can also right-click and choose **Toggle collision polygon** to disable collisions for that tile entirely, such as if it is for decorative purposes only.
+Each tile can have an individual collision polygon which is used when testing for collisions with the tilemap object. To edit a tile's collision polygon, **double-click the tile** in the Tilemap Bar. The [Animations Editor](../../interface/animations-editor.md) will open to edit that tile. You can use the **collision polygon tool** to edit the tile's collision polygon. While the tool is active, you can also right-click and choose **Toggle collision polygon** to disable collisions for that tile entirely, such as if it is for decorative purposes only.
 
 You can also use the image editing features of the Animations Editor to alter the image of the tile.
 
@@ -86,4 +86,4 @@ There are four context menu options to toggle the state of multiple collision po
 
 ## The Tilemap object
 
-For more information on how to use tilemaps, see the manual entry on the [Tilemap object](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/tilemap).
+For more information on how to use tilemaps, see the manual entry on the [Tilemap object](../../plugin-reference/tilemap.md).

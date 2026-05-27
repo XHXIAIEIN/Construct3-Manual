@@ -1,7 +1,7 @@
 ---
 title: "Game Bucket Object"
 source: "https://www.construct.net/en/game-services/manuals/game-services/cloud-save/api-objects/game-buckets"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -20,10 +20,10 @@ A Game Bucket is a container in your game for Cloud Save Blobs.  Each bucket has
 
 ```json
 {
-  "id": "f9a0ffc6-c882-42b6-9855-1abc43a5f2da",
+  "id": "4b0f5765-1e90-4705-a9a2-8bcbea8ac861",
   "accessMode": "PublicReadWrite",
   "allowRatings": true,
-  "created": "2026-04-05T08:32:13.8031444Z",
+  "created": "2026-05-27T08:36:34.6395021Z",
   "maxBlobs": 100,
   "maxBlobSizeBytes": 1048576,
   "maxBlobsPerPlayer": null,

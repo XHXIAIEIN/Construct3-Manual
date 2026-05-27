@@ -1,7 +1,7 @@
 ---
 title: "Script minification"
 source: "https://www.construct.net/en/make-games/manuals/addon-sdk/guide/script-minification"
-release: 476.3
+release: 487
 ---
 
 Projects exported with *Minify script* enabled will run all script through an advanced minifier. This includes "property mangling" (renaming object properties and methods) to achieve maximum compression, and increase the difficulty of reverse engineering.

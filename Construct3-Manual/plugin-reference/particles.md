@@ -1,7 +1,7 @@
 ---
 title: "Particles"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/particles"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -15,7 +15,7 @@ release: 476.3
 
 ---
 
-The **Particles** object can quickly create visual effects by creating and moving many small images independently. It is a versatile object capable of many different kinds of visual effects. There are several examples in the [Example Browser](https://www.construct.net/make-games/manuals/construct-3/overview/example-browser), ranging from fire to fountains; search for *Particles* to find them. The image below shows an example of one of the particle effects possible with the object.
+The **Particles** object can quickly create visual effects by creating and moving many small images independently. It is a versatile object capable of many different kinds of visual effects. There are several examples in the [Example Browser](../overview/example-browser.md), ranging from fire to fountains; search for *Particles* to find them. The image below shows an example of one of the particle effects possible with the object.
 
 [![An example of an effect produced by the Particles object](https://construct-static.com/images/v1740/r/uploads/articleuploadobject/0/images/1015/particles_v800.jpg)](https://construct-static.com/images/v1740/uploads/articleuploadobject/0/images/1015/particles.jpg)
 
@@ -27,15 +27,15 @@ The **Additive** blend mode works especially well with the Particles object. It 
 
 Colored effects can be created using colored particle images. Note that since the Additive effect brightens the background towards white, any objects using an Additive effect will not show up on a white background. The effect works best on dark backgrounds.
 
-For more information about blend modes and effects, see the manual section on [Effects](https://www.construct.net/make-games/manuals/construct-3/project-primitives/objects/effects).
+For more information about blend modes and effects, see the manual section on [Effects](../project-primitives/objects/effects.md).
 
 ### Scripting
 
-When using JavaScript or TypeScript coding, the features of this object can be accessed via the [IParticlesInstance script interface](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/plugin-interfaces/particles).
+When using JavaScript or TypeScript coding, the features of this object can be accessed via the [IParticlesInstance script interface](../scripting/scripting-reference/plugin-interfaces/particles.md).
 
 ## Particles in the Layout View
 
-The Particles object is represented in the [Layout View](https://www.construct.net/make-games/manuals/construct-3/interface/layout-view) by two red lines which represent the spray cone (the angle through which particles are fired), with the particle texture in the middle. The Particle object's origin is where particles are created from. An example is shown below on the left, with the effect at runtime on the right.
+The Particles object is represented in the [Layout View](../interface/layout-view.md) by two red lines which represent the spray cone (the angle through which particles are fired), with the particle texture in the middle. The Particle object's origin is where particles are created from. An example is shown below on the left, with the effect at runtime on the right.
 
 [![Particles objects in the layout view](https://construct-static.com/images/v1740/uploads/articleuploadobject/0/images/1017/particles-layoutview.png)](https://construct-static.com/images/v1740/uploads/articleuploadobject/0/images/1017/particles-layoutview.png)
 
@@ -47,7 +47,7 @@ The size of the particles object in the layout view is not important. The object
 
 ## How particle effects work
 
-The particle effect works similarly to using the [Bullet behavior](https://www.construct.net/make-games/manuals/construct-3/behavior-reference/bullet) on each particle. Initially particles are fired forwards at a given speed and at an angle within the spray cone. Each particle is then individually controlled with different alterations to its speed, angle, opacity and size during its lifetime. The fact particles move independently of the others is often what makes the visual effect interesting. The various properties of the Particles object control exactly how the particles change over time and what random alterations are made. It is worth spending some time changing parameters to see the effect they have for yourself.
+The particle effect works similarly to using the [Bullet behavior](../behavior-reference/bullet.md) on each particle. Initially particles are fired forwards at a given speed and at an angle within the spray cone. Each particle is then individually controlled with different alterations to its speed, angle, opacity and size during its lifetime. The fact particles move independently of the others is often what makes the visual effect interesting. The various properties of the Particles object control exactly how the particles change over time and what random alterations are made. It is worth spending some time changing parameters to see the effect they have for yourself.
 
 There are three different settings for when particles are destroyed, set by the **Destroy mode** property. The default *Fade to invisible* will fade each particle's opacity to zero over the *Timeout*, destroying the particle when it becomes invisible. *Timeout expired* will simply destroy the particle after an amount of time, without changing its opacity. *Particle stopped* will destroy the particle when its speed reaches zero, but you must take care to ensure particles slow down with a negative acceleration otherwise they will never be destroyed!
 
@@ -85,7 +85,7 @@ The Particles object can work in two modes:
 - **One-shot** will create a single blast of particles, the total number set by *Rate*. Once all particles have been destroyed, the Particles object then destroys itself. This is useful for one-off effects like explosions or impacts.
 
 **Image**  
-Click to open the [Animations editor](https://www.construct.net/make-games/manuals/construct-3/interface/animations-editor) to edit the particle image. Try a spot on a transparent background, or on a black background with the Additive effect. Note the image is not used if an object is set instead.
+Click to open the [Animations editor](../interface/animations-editor.md) to edit the particle image. Try a spot on a transparent background, or on a black background with the Additive effect. Note the image is not used if an object is set instead.
 
 **Object**  
 Create instances of an object for each particle instead of drawing the particle image. For more information see the section *Advanced particle effects* above. Note this mode is slower than using a particle image.
@@ -159,7 +159,7 @@ The time in seconds particles last for before being destroyed, depending on the 
 
 Most of the Particle object's actions and expressions just set or get the above properties. See the above properties for a reference. The other conditions, actions and expressions not relating to the above properties are documented below.
 
-For features in common to other objects, see [Common features](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/common-features).
+For features in common to other objects, see [Common features](../plugin-reference/common-features.md).
 
 ### Particle conditions
 

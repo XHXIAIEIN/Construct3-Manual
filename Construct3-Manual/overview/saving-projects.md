@@ -1,7 +1,7 @@
 ---
 title: "Saving projects"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/overview/saving-projects"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -27,7 +27,7 @@ Construct currently supports [Google Drive](https://www.google.com/drive), [Micr
 
 When you press **Save** with a Cloud Save project, Construct will save your project and upload it to your cloud storage account. The upload will continue in the background showing the upload status in the corner of the window, allowing you to continue working on your project. Note you cannot save again until the upload completes.
 
-Next time you use Construct, you can choose `Menu › Project › Cloud open` to find your project again. It'll also appear in the **Recent projects** section of the [Start Page](https://www.construct.net/make-games/manuals/construct-3/overview/start-page).
+Next time you use Construct, you can choose `Menu › Project › Cloud open` to find your project again. It'll also appear in the **Recent projects** section of the [Start Page](../overview/start-page.md).
 
 ## Download a copy
 
@@ -48,7 +48,7 @@ Where browsers support local files, they also allow the option to use project fo
 
 This option is good for very large projects, since saves are faster, as it only has to update the changed files in the folder, rather than generate an entire new .c3p file. It is also a good option to use with source control tools like GitHub, since you can track changes to individual text-based files - for a guide on that see the tutorial [How to collaborate on Construct projects with GitHub](https://www.construct.net/en/tutorials/collaborate-construct-2390).
 
-This option can also be useful if you work with lots of JavaScript or TypeScript files in a Construct project and want to use a separate code editor. See the guide on [Using an external editor](https://www.construct.net/make-games/manuals/construct-3/scripting/guides/using-external-editor) for more details.
+This option can also be useful if you work with lots of JavaScript or TypeScript files in a Construct project and want to use a separate code editor. See the guide on [Using an external editor](../scripting/guides/using-external-editor.md) for more details.
 
 > **Tip**  
 > Construct's .c3p files are actually just a zipped folder project, with the extension .zip replaced with .c3p. You can convert a .c3p file to a folder project by renaming .c3p to .zip and extracting it. Similarly you can convert a folder project to a .c3p by zipping it, and renaming .zip to .c3p.

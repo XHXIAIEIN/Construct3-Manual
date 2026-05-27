@@ -1,7 +1,7 @@
 ---
 title: "Follow behavior"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/behavior-reference/follow"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -21,7 +21,7 @@ You can find a number of examples using the Follow behavior in Construct's Examp
 
 ### Scripting
 
-When using JavaScript or TypeScript coding, the features of this behavior can be accessed via the [IFollowBehaviorInstance script interface](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/behavior-interfaces/follow).
+When using JavaScript or TypeScript coding, the features of this behavior can be accessed via the [IFollowBehaviorInstance script interface](../scripting/scripting-reference/behavior-interfaces/follow.md).
 
 ## Follow properties
 

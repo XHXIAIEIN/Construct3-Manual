@@ -1,7 +1,7 @@
 ---
 title: "Particles script interface"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/scripting/scripting-reference/plugin-interfaces/particles"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -10,7 +10,7 @@ release: 476.3
 
 ---
 
-The `IParticlesInstance` interface derives from [IWorldInstance](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/object-interfaces/iworldinstance) to add APIs specific to the [Particles plugin](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/particles).
+The `IParticlesInstance` interface derives from [IWorldInstance](../../../scripting/scripting-reference/object-interfaces/iworldinstance.md) to add APIs specific to the [Particles plugin](../../../plugin-reference/particles.md).
 
 ## Particles APIs
 
@@ -72,7 +72,7 @@ Set or get an amount of random change to each particle's opacity to apply during
 Set the time in seconds each particle can last before being destroyed when the *Destroy mode* is *Timeout*.
 
 **setParticleObjectClass(iObjectClass)**  
-Call with an [IObjectClass](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/object-interfaces/iobjectclass) to set the Particles object to spawn instances of that object class instead of drawing its own particles. Pass `null` to restore the default behavior of the Particles object drawing its own particles. For more information see *Advanced particle effects* in the [Particles manual entry](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/particles).
+Call with an [IObjectClass](../../../scripting/scripting-reference/object-interfaces/iobjectclass.md) to set the Particles object to spawn instances of that object class instead of drawing its own particles. Pass `null` to restore the default behavior of the Particles object drawing its own particles. For more information see *Advanced particle effects* in the [Particles manual entry](../../../plugin-reference/particles.md).
 
 **fastForward(time)**  
 Skip ahead the particle effect by a time in seconds. For example fast-forwarding by 3 seconds will cause the Particles object to instantly spawn, move and destroy particles as if 3 seconds had gone by. This is useful for making sure particle effects appear ready immediately, rather than taking a few seconds to move their particles out from the spawn point.

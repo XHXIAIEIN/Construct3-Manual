@@ -1,7 +1,7 @@
 ---
 title: "Line-of-sight behavior script interface"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/scripting/scripting-reference/behavior-interfaces/line-of-sight"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -29,7 +29,7 @@ Set or get the maximum distance in pixels that line-of-sight can reach. If an ob
 Set or get the angle in radians of the cone of view in which the object can have line-of-sight to other objects, relative to the current angle of the object.
 
 **addObstacle(iObjectClass)**  
-If the *Obstacles* property is *Custom*, adds the given [IObjectClass](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/object-interfaces/iobjectclass) as another kind of object to count as an obstruction to line-of-sight.
+If the *Obstacles* property is *Custom*, adds the given [IObjectClass](../../../scripting/scripting-reference/object-interfaces/iobjectclass.md) as another kind of object to count as an obstruction to line-of-sight.
 
 > **Tip**  
 > Note that while this is a method for the instance, it affects the entire behavior.

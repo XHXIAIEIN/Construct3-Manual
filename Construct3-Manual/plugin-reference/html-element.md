@@ -1,7 +1,7 @@
 ---
 title: "HTML Element"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/html-element"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -29,11 +29,11 @@ You can find several examples of using the HTML Element object in the Example Br
 
 ### Scripting
 
-When using JavaScript or TypeScript coding, the features of this object can be accessed via the [IHTMLElementInstance script interface](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/plugin-interfaces/html-element). This allows access in worker mode; when worker mode is disabled, you can also use all the browser standard DOM APIs.
+When using JavaScript or TypeScript coding, the features of this object can be accessed via the [IHTMLElementInstance script interface](../scripting/scripting-reference/plugin-interfaces/html-element.md). This allows access in worker mode; when worker mode is disabled, you can also use all the browser standard DOM APIs.
 
 ## Layering HTML objects
 
-As the name suggests, this object displays using a HTML element rather than drawing in to the canvas. This means its layering works differently to other objects. To learn more about how to layer HTML objects, see [HTML layers](https://www.construct.net/make-games/manuals/construct-3/tips-and-guides/html-layers).
+As the name suggests, this object displays using a HTML element rather than drawing in to the canvas. This means its layering works differently to other objects. To learn more about how to layer HTML objects, see [HTML layers](../tips-and-guides/html-layers.md).
 
 ## CSS styling
 

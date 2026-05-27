@@ -1,7 +1,7 @@
 ---
 title: "Comments"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/project-primitives/events/comments"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -15,7 +15,7 @@ Event **comments** are simply notes to help you remember how events work and wha
 
 [![A comment above an event](https://construct-static.com/images/v1740/r/uploads/articleuploadobject/0/images/942/event-comment_v600.png)](https://construct-static.com/images/v1740/uploads/articleuploadobject/0/images/942/event-comment.png)
 
-To add a comment, **right-click** on an event or an empty space in the event sheet and select `Add comment` or press the <kbd>Q</kbd> [keyboard shortcut](https://www.construct.net/make-games/manuals/construct-3/interface/keyboard-shortcuts). Comments can be edited by **double clicking** on them. You can make a comment with a line break by holding shift and pressing Enter.
+To add a comment, **right-click** on an event or an empty space in the event sheet and select `Add comment` or press the <kbd>Q</kbd> [keyboard shortcut](../../interface/keyboard-shortcuts.md). Comments can be edited by **double clicking** on them. You can make a comment with a line break by holding shift and pressing Enter.
 
 Comments can also be added in between actions. The <kbd>Q</kbd> keyboard shortcut will add an action comment if an action is selected. Alternatively you can right-click an existing action and select *Add comment*, or use the *Add...* menu next to the *Add action* link.
 

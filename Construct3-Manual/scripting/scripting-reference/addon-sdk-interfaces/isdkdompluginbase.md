@@ -1,7 +1,7 @@
 ---
 title: "ISDKDOMPluginBase addon SDK interface"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/scripting/scripting-reference/addon-sdk-interfaces/isdkdompluginbase"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -10,7 +10,7 @@ release: 476.3
 
 ---
 
-The `ISDKDOMPluginBase` interface is used in the runtime as a base class for DOM plugins (that create a HTML element) in the addon SDK. It derives from [ISDKPluginBase](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/addon-sdk-interfaces/isdkpluginbase).
+The `ISDKDOMPluginBase` interface is used in the runtime as a base class for DOM plugins (that create a HTML element) in the addon SDK. It derives from [ISDKPluginBase](../../../scripting/scripting-reference/addon-sdk-interfaces/isdkpluginbase.md).
 
 ## ISDKDOMPluginBase APIs
 

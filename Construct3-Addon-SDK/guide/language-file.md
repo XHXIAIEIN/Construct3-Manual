@@ -1,7 +1,7 @@
 ---
 title: "The language file"
 source: "https://www.construct.net/en/make-games/manuals/addon-sdk/guide/language-file"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -101,7 +101,7 @@ The addon SDK provides a JSON schema to help you write language files, as it pro
 
 ## Strings for properties/parameters
 
-For each [PluginProperty](https://www.construct.net/make-games/manuals/addon-sdk/reference/pluginproperty) your plugin uses, there must be a key with the property ID under `"properties"`. For effects, there must be a key with the parameter ID under a `"parameters"` instead, but it otherwise works the same. The required strings for each property are:
+For each [PluginProperty](../reference/pluginproperty.md) your plugin uses, there must be a key with the property ID under `"properties"`. For effects, there must be a key with the parameter ID under a `"parameters"` instead, but it otherwise works the same. The required strings for each property are:
 
 - `"name"` — the name of the property, which appears to the left of the field
 - `"desc"` — the property description, which appears in the footer of the Properties Bar
@@ -162,7 +162,7 @@ The `"link"` property type needs an extra `"link-text"` key to set the text of t
 
 ## Category names
 
-When [defining ACEs](https://www.construct.net/make-games/manuals/addon-sdk/guide/defining-aces), category IDs are used rather than category names. The `"aceCategories"` key defines the displayed name of each category. The following example displays all ACEs in the category ID `"customCategory"` as being in a section labelled `"My custom category"`.
+When [defining ACEs](../guide/defining-aces.md), category IDs are used rather than category names. The `"aceCategories"` key defines the displayed name of each category. The following example displays all ACEs in the category ID `"customCategory"` as being in a section labelled `"My custom category"`.
 
 ```javascript
 "aceCategories": {

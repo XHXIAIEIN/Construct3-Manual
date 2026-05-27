@@ -1,7 +1,7 @@
 ---
 title: "Projects"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/project-primitives/projects"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -16,13 +16,13 @@ release: 476.3
 
 ---
 
-A **project** is a complete game, app or animation made in Construct. Projects contain every element of your work, ranging from sprites to sound files. An overview of the project is shown in the [Project Bar](https://www.construct.net/make-games/manuals/construct-3/interface/bars/project-bar) where elements can be added, renamed, removed and arranged in to folders for organisation. See [Project structure](https://www.construct.net/make-games/manuals/construct-3/overview/project-structure) for a summary of the elements making up a project. The rest of this manual section goes in to more detail about each part of a project.
+A **project** is a complete game, app or animation made in Construct. Projects contain every element of your work, ranging from sprites to sound files. An overview of the project is shown in the [Project Bar](../interface/bars/project-bar.md) where elements can be added, renamed, removed and arranged in to folders for organisation. See [Project structure](../overview/project-structure.md) for a summary of the elements making up a project. The rest of this manual section goes in to more detail about each part of a project.
 
-Projects can be opened, closed and exported from the [main menu](https://www.construct.net/make-games/manuals/construct-3/interface/main-menu). See also [Saving and sharing projects](https://www.construct.net/make-games/manuals/construct-3/overview/saving-sharing-projects), [testing](https://www.construct.net/make-games/manuals/construct-3/overview/testing-projects) and [publishing](https://www.construct.net/make-games/manuals/construct-3/overview/publishing-projects). It is recommended to follow some [best practices](https://www.construct.net/make-games/manuals/construct-3/tips-and-guides/best-practices) while working on projects.
+Projects can be opened, closed and exported from the [main menu](../interface/main-menu.md). See also [Saving and sharing projects](../overview/saving-sharing-projects.md), [testing](../overview/testing-projects.md) and [publishing](../overview/publishing-projects.md). It is recommended to follow some [best practices](../tips-and-guides/best-practices.md) while working on projects.
 
 ## Project properties
 
-The properties for a project can be edited in the [Properties Bar](https://www.construct.net/make-games/manuals/construct-3/interface/bars/properties-bar) after selecting the name of the project in the Project Bar, or using the *Project properties* shortcut in Layout Properties.
+The properties for a project can be edited in the [Properties Bar](../interface/bars/properties-bar.md) after selecting the name of the project in the Project Bar, or using the *Project properties* shortcut in Layout Properties.
 
 The *Name*, *Author* and *Description* properties are used for some of the export options, so be sure to fill them out accurately for any important projects.
 
@@ -75,7 +75,7 @@ On some platforms, the theme color is used to tint the browser or OS color schem
 ## Startup
 
 **First layout**  
-Select which [layout](https://www.construct.net/make-games/manuals/construct-3/project-primitives/layouts) is the first to appear when the project is exported. When previewing in the editor usually a specific layout is previewed, selecting *Preview project* will also preview from this layout.
+Select which [layout](../project-primitives/layouts.md) is the first to appear when the project is exported. When previewing in the editor usually a specific layout is previewed, selecting *Preview project* will also preview from this layout.
 
 **Use loader layout**  
 Use *First layout* as a special layout which shows while the rest of the layout is loading. The *loadingprogress* system expression returns the current progress from 0 to 1 (e.g. 0.5 for half completed). For more information, see the tutorial [how to make a custom loading screen](https://www.construct.net/en/tutorials/loader-layouts-custom-loading-9).
@@ -89,7 +89,7 @@ Whether to download and decode sounds before the project starts. If enabled, the
 ## Display
 
 **Viewport size**  
-The size, in pixels, of the view area in a layout. A dashed line indicating the window size appears in the [Layout View](https://www.construct.net/make-games/manuals/construct-3/interface/layout-view). The viewport aspect ratio is also displayed underneath to help you easily identify which aspect ratio your project is using.
+The size, in pixels, of the view area in a layout. A dashed line indicating the window size appears in the [Layout View](../interface/layout-view.md). The viewport aspect ratio is also displayed underneath to help you easily identify which aspect ratio your project is using.
 
 **Viewport fit**  
 How to fit the viewport to the display on devices with non-rectangular screens (such as the iPhone X). The viewport is rectangular, and the default *Auto* will add borders around the screen to ensure the full viewport is visible. Using *Cover* will display the viewport covering the entire physical screen, but this can result in parts of the viewport being hidden on non-rectangular screens, such as if there are notches or rounded corners.
@@ -115,7 +115,7 @@ Choose how the Z axis is measured, which affects 3D content like Z elevation and
 - **Normalized**: the default camera position is 100 units above the layout. However this means the Z axis has a different scale to the X and Y axes. This mode is suitable for 2D content which uses simple 3D features like Z elevation.
 - **Regular** (default): the X, Y and Z axes all use the same scale. However this means the default camera position on the Z axis varies depending on the other project properties. This mode is more suitable for fully 3D content using the 3D Camera object.
 
-The properties of the [3D Camera object](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/3d-camera) reveal the Z axis scale and default camera Z position, which can be useful to refer to when altering this property.
+The properties of the [3D Camera object](../plugin-reference/3d-camera.md) reveal the Z axis scale and default camera Z position, which can be useful to refer to when altering this property.
 
 **Field of view**  
 This property only appears when the *Z axis scale* is set to *Regular*. It adjusts the viewing angle of the 3D camera. Note this only affects perspective projections, as orthographic projections do not use a viewing angle. Also note adjusting the field of view will also change the default camera Z, as Construct adjusts it to ensure 2D content appears at 100% scale.
@@ -129,7 +129,7 @@ When enabled, the runtime is hosted in a Web Worker, off the main thread (where 
 > You can check if the runtime is actually hosted in a Web Worker by checking the browser console in preview mode. On startup it logs some technical details, which will include either "Hosted in DOM" or "Hosted in worker", the latter indicating worker mode is in use.
 
 **Enable WebGPU**  
-Whether to enable the WebGPU renderer for this project. If disabled, WebGPU is not supported, or the project uses third-party effects that do not support WebGPU, then the WebGL renderer will be used instead. In most cases the WebGPU renderer should have better performance than the WebGL renderer. The renderer in use can be identified by the [Platform Info](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/platform-info) *Renderer* expression. The *Auto* setting means Construct will use the default, which is currently the WebGL renderer. Note the renderer used for the Construct editor (for Layout Views) is separately controlled in the [Settings dialog](https://www.construct.net/make-games/manuals/construct-3/interface/dialogs/settings).
+Whether to enable the WebGPU renderer for this project. If disabled, WebGPU is not supported, or the project uses third-party effects that do not support WebGPU, then the WebGL renderer will be used instead. In most cases the WebGPU renderer should have better performance than the WebGL renderer. The renderer in use can be identified by the [Platform Info](../plugin-reference/platform-info.md) *Renderer* expression. The *Auto* setting means Construct will use the default, which is currently the WebGL renderer. Note the renderer used for the Construct editor (for Layout Views) is separately controlled in the [Settings dialog](../interface/dialogs/settings.md).
 
 **Enable multitexturing**  
 This option only appears when WebGPU may be used (the *Enable WebGPU* property is not *No*). Normally when the renderer changes texture it has to issue new rendering commands which has a CPU overhead. Construct's WebGPU renderer supports *multitexturing*, which can move most texture swapping to the GPU; however that usually adds some per-pixel performance overhead that can affect fill rate. In other words, multi-texturing off will use more CPU time and less GPU time, whereas multi-texturing on will use less CPU time and more GPU time. The optimal setting depends on your project and whether it is bottlenecked more on CPU or GPU performance. The default mode *Auto* enables multitexturing on desktop devices as they tend to have more powerful GPUs, but disables it on mobile devices as they tend to have less powerful GPUs where fill rate is more important.
@@ -176,7 +176,7 @@ Adjusts the tradeoff between rendering quality and memory use when resizing imag
 
 - *Low quality*: mipmaps are disabled (reducing memory use), but downscaled sprites may appear blocky or pixellated. This mode is not recommended for most projects, since disabling mipmaps can reduce performance.
 - *Medium quality*: mipmaps are enabled. Downscaling sprites generally looks better.
-- *High quality*: mipmaps are enabled and the spritesheet after export pads out all images to power-of-two sizes. This can significantly increase memory use, but can resolve two minor rendering issues: light fringing that can sometimes occur along the borders of downscaled objects, or a quality change in the last frame of an animation. **Do not use this mode** unless a rendering artefact is specifically observed and selecting this mode can be observed to resolve it: the increased memory usage can be very significant, and is not a cost that should be added for no reason. For more information see [Memory usage](https://www.construct.net/make-games/manuals/construct-3/tips-and-guides/memory-usage).
+- *High quality*: mipmaps are enabled and the spritesheet after export pads out all images to power-of-two sizes. This can significantly increase memory use, but can resolve two minor rendering issues: light fringing that can sometimes occur along the borders of downscaled objects, or a quality change in the last frame of an animation. **Do not use this mode** unless a rendering artefact is specifically observed and selecting this mode can be observed to resolve it: the increased memory usage can be very significant, and is not a cost that should be added for no reason. For more information see [Memory usage](../tips-and-guides/memory-usage.md).
 
 **Rendering mode**  
 Whether to render the project in 2D or 3D mode. Normally Construct determines this automatically with the *Auto* setting. However if you only use 3D features dynamically, such as by altering 3D meshes at runtime, you may wish to opt in to 3D mode here. The options are as follows:
@@ -202,12 +202,12 @@ Set the distance of the near plane and far plane from the camera. Content closer
 The maximum spritesheet size in pixels Construct will use when grouping multiple images on to the same sheet. This adjusts the tradeoff between memory usage and performance: smaller sizes tend to reduce memory usage but can have reduced performance, whereas larger sizes tend to increase memory usage but improve performance. The special option *Disabled* will disable use of spritesheets completely, causing every single image used in the project to be exported as a separate image file. This can have a significant negative impact on the download size, loading time and runtime performance of the project, and in some cases large projects may crash due to running in to system limits on the number of images that can be loaded, so using some degree of spritesheeting is strongly recommended.
 
 **UID numbering**  
-Sets how to allocate UIDs for newly created instances in the editor. The default mode *Increment* will use the lowest available UID, which tends to assign incrementing numbers like 1, 2, 3, 4 etc. However this can cause problems when [collaborating on projects with source control](https://www.construct.net/make-games/manuals/construct-3/overview/collaborating-projects), as it's possible two people could separately create new instances which get assigned the same UID. The *Random* mode is designed to avoid such problems: all newly created instances are assigned a random number with at least six digits, e.g. 129740, 652945, etc. This means there is a negligible chance that two people create new instances with the same UID.
+Sets how to allocate UIDs for newly created instances in the editor. The default mode *Increment* will use the lowest available UID, which tends to assign incrementing numbers like 1, 2, 3, 4 etc. However this can cause problems when [collaborating on projects with source control](../overview/collaborating-projects.md), as it's possible two people could separately create new instances which get assigned the same UID. The *Random* mode is designed to avoid such problems: all newly created instances are assigned a random number with at least six digits, e.g. 129740, 652945, etc. This means there is a negligible chance that two people create new instances with the same UID.
 
 ## Editor
 
 **Preview effects**  
-Whether or not to display [effects](https://www.construct.net/make-games/manuals/construct-3/project-primitives/objects/effects) and blend modes in the [Layout View](https://www.construct.net/make-games/manuals/construct-3/interface/layout-view). If enabled, WebGL must also be enabled for the effects to appear. If disabled, WebGL effects are not rendered in the editor, and all objects are drawn as if they have the *Normal* blend mode.
+Whether or not to display [effects](../project-primitives/objects/effects.md) and blend modes in the [Layout View](../interface/layout-view.md). If enabled, WebGL must also be enabled for the effects to appear. If disabled, WebGL effects are not rendered in the editor, and all objects are drawn as if they have the *Normal* blend mode.
 
 **Pause on unfocus**  
 If enabled, the preview will pause when the browser window loses focus, e.g. when switching back to work in Construct. This can be useful for certain workflows, or to prevent the project distracting you as you work. If disabled the preview will continue to run even without focus, but note switching to another browser tab or minimising the preview window will still pause (as it does with published projects).

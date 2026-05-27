@@ -1,7 +1,7 @@
 ---
 title: "Pathfinding behavior"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/behavior-reference/pathfinding"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -21,7 +21,7 @@ The **Pathfinding behavior** uses the A* pathfinding algorithm to efficiently fi
 
 ### Scripting
 
-When using JavaScript or TypeScript coding, the features of this behavior can be accessed via the [IPathfindingBehaviorInstance script interface](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/behavior-interfaces/pathfinding).
+When using JavaScript or TypeScript coding, the features of this behavior can be accessed via the [IPathfindingBehaviorInstance script interface](../scripting/scripting-reference/behavior-interfaces/pathfinding.md).
 
 ## The pathfinding grid
 
@@ -74,7 +74,7 @@ The cell size, in pixels, of the grid of obstacles. See above for more details a
 The amount, in pixels, to expand the cell size by when testing for obstacles. See above for more details about how this is used.
 
 **Obstacles**  
-If *Solids*, the behavior will automatically mark cells touching objects with the [Solid behavior](https://www.construct.net/make-games/manuals/construct-3/behavior-reference/solid) as being obstacles. If *Custom*, you must define which objects are obstacles by using the *Add obstacle* action on startup.
+If *Solids*, the behavior will automatically mark cells touching objects with the [Solid behavior](../behavior-reference/solid.md) as being obstacles. If *Custom*, you must define which objects are obstacles by using the *Add obstacle* action on startup.
 
 > **Tip**  
 > Note this applies to all instances, since the obstacle map is shared. This setting cannot be used to affect individual instances differently.

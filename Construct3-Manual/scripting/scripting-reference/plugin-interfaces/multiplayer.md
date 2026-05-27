@@ -1,7 +1,7 @@
 ---
 title: "Multiplayer script interface"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/scripting/scripting-reference/plugin-interfaces/multiplayer"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -17,11 +17,11 @@ release: 476.3
 
 ---
 
-The `IMultiplayerObjectType` interface derives from [IObjectClass](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/object-interfaces/iobjectclass) to provide APIs specific to the [Multiplayer object](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/multiplayer).
+The `IMultiplayerObjectType` interface derives from [IObjectClass](../../../scripting/scripting-reference/object-interfaces/iobjectclass.md) to provide APIs specific to the [Multiplayer object](../../../plugin-reference/multiplayer.md).
 
 Note this class derives from the object class interface, not the instance interface. Typically it is accessed with `runtime.objects.Multiplayer`.
 
-Designing multiplayer games is a complex topic. There is more documentation about the way the Multiplayer object works in the [Multiplayer object manual entry](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/multiplayer). There is further learning material in the [Online multiplayer in Construct tutorial series](https://www.construct.net/en/courses/online-multiplayer-construct-12). This documentation covers only the scripting APIs to access the various multiplayer features Construct provides.
+Designing multiplayer games is a complex topic. There is more documentation about the way the Multiplayer object works in the [Multiplayer object manual entry](../../../plugin-reference/multiplayer.md). There is further learning material in the [Online multiplayer in Construct tutorial series](https://www.construct.net/en/courses/online-multiplayer-construct-12). This documentation covers only the scripting APIs to access the various multiplayer features Construct provides.
 
 ## API organisation
 
@@ -197,7 +197,7 @@ Return an array of `IMultiplayerPeer` representing every peer in the room, inclu
 Return a `IMultiplayerPeer` for a peer in the current room by their peer ID, or returns `null` if they don't exist. See also *Peer APIs* below.
 
 **sendPeerMessage(peerId, message, transmissionMode = "o")**  
-Send a message over the network to a peer in the same room identified by their peer ID. The message can be a string, an object for JSON transmission (which must be convertible to a string), or an [ArrayBuffer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer) for binary content. The transmission mode can be one of `"o"` for reliable ordered, `"r"` for reliable unordered, or `"u"` for unreliable (see the [Multiplayer object documentation](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/multiplayer) for more details about reliability modes). When received the `"message"` event will be fired.
+Send a message over the network to a peer in the same room identified by their peer ID. The message can be a string, an object for JSON transmission (which must be convertible to a string), or an [ArrayBuffer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer) for binary content. The transmission mode can be one of `"o"` for reliable ordered, `"r"` for reliable unordered, or `"u"` for unreliable (see the [Multiplayer object documentation](../../../plugin-reference/multiplayer.md) for more details about reliability modes). When received the `"message"` event will be fired.
 
 **hostBroadcastMessage(fromId, message, transmissionMode = "o")**  
 This is similar to `sendPeerMessage()` but can only be called by the host, and the provided message will be sent to every other peer in the room. `fromId` can optionally be set to another peer ID to make it appear that the message is from that peer, which is useful when relaying messages through the host; if left empty it will use the host ID.

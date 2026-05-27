@@ -1,7 +1,7 @@
 ---
 title: "Defining actions, conditions and expressions"
 source: "https://www.construct.net/en/make-games/manuals/addon-sdk/guide/defining-aces"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -225,4 +225,4 @@ Optional and only valid with the `"string"` type. Set to a globally unique ID an
 
 ## Language strings
 
-The aces.json file does not include any strings displayed in the editor UI. These are all kept in a separate language file to facilitate translation. Therefore to finish adding ACEs, the relevant UI strings like the list name and description must be added to the language file. See [The language file](https://www.construct.net/make-games/manuals/addon-sdk/guide/language-file) for more information.
+The aces.json file does not include any strings displayed in the editor UI. These are all kept in a separate language file to facilitate translation. Therefore to finish adding ACEs, the relevant UI strings like the list name and description must be added to the language file. See [The language file](../guide/language-file.md) for more information.

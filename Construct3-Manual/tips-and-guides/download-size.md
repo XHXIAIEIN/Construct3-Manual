@@ -1,7 +1,7 @@
 ---
 title: "Optimizing download size"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/tips-and-guides/download-size"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -71,7 +71,7 @@ Here is some other advice relating to reducing the download size or wait time fo
 
 When exporting your project, choosing the *Advanced* script minify option will produce the smallest possible JavaScript files. For large projects this will make a smaller difference than optimizing images, audio and video, but it will help achieve the smallest download size possible.
 
-If you write JavaScript code in your project, note you may need to make changes to use *Advanced* minify mode - see the [manual section on advanced minification](https://www.construct.net/make-games/manuals/construct-3/scripting/guides/advanced-minification). Alternatively *Simple* mode should always be safe, but won't reduce the JavaScript file size as much.
+If you write JavaScript code in your project, note you may need to make changes to use *Advanced* minify mode - see the [manual section on advanced minification](../scripting/guides/advanced-minification.md). Alternatively *Simple* mode should always be safe, but won't reduce the JavaScript file size as much.
 
 ### Use a loader layout on the web
 

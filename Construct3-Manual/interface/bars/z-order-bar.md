@@ -1,7 +1,7 @@
 ---
 title: "The Z Order Bar"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/interface/bars/z-order-bar"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -17,13 +17,13 @@ release: 476.3
 
 [![The Z Order Bar](https://construct-static.com/images/v1740/r/uploads/articleuploadobject/0/images/878/z-order-bar_v260.png)](https://construct-static.com/images/v1740/uploads/articleuploadobject/0/images/878/z-order-bar.png)The Z Order Bar
 
-To open the Z Order Bar, either right click in the [Layout View](https://www.construct.net/make-games/manuals/construct-3/interface/layout-view) and select `Z Order › Open Z Order bar...`, or tick the check at `Menu › View › Bars › Z Order`.
+To open the Z Order Bar, either right click in the [Layout View](../../interface/layout-view.md) and select `Z Order › Open Z Order bar...`, or tick the check at `Menu › View › Bars › Z Order`.
 
 ## The Z Order list
 
-Instances are listed in the Z Order bar in front-to-back order, i.e. instances at the **top** of the list appear at the **front**, and instances at the **bottom** of the list appear at the **back**. Instances are grouped by the [layer](https://www.construct.net/make-games/manuals/construct-3/project-primitives/layers) they belong to.
+Instances are listed in the Z Order bar in front-to-back order, i.e. instances at the **top** of the list appear at the **front**, and instances at the **bottom** of the list appear at the **back**. Instances are grouped by the [layer](../../project-primitives/layers.md) they belong to.
 
-If no objects are selected, the Z Order Bar displays all instances in the layout. If some instances are selected in the [Layout View](https://www.construct.net/make-games/manuals/construct-3/interface/layout-view), the list is filtered down to only those instances *and* any other instances overlapping them. This makes it convenient to see the relative Z order of a small area without having to take in to account the rest of the layout.
+If no objects are selected, the Z Order Bar displays all instances in the layout. If some instances are selected in the [Layout View](../../interface/layout-view.md), the list is filtered down to only those instances *and* any other instances overlapping them. This makes it convenient to see the relative Z order of a small area without having to take in to account the rest of the layout.
 
 ## Identifying instances
 
@@ -41,7 +41,7 @@ The context menu also has the option `Scroll selection into view`, which will ma
 
 To move an object in the Z Order - adjusting which other objects it appears in front or behind - **drag and drop it in the list**. You can also move objects to other layers this way. You can also select multiple objects by holding **Control** or **Shift** and drag them all as a block to another layer or location in the Z Order. When doing this, the relative order of the selection is also preserved.
 
-If you want to add, remove or reorder layers themselves, use the [Layers Bar](https://www.construct.net/make-games/manuals/construct-3/interface/bars/layers-bar) instead.
+If you want to add, remove or reorder layers themselves, use the [Layers Bar](../../interface/bars/layers-bar.md) instead.
 
 ## View options
 

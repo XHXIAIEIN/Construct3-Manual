@@ -1,7 +1,7 @@
 ---
 title: "Touch"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/touch"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -18,13 +18,13 @@ The **Touch** object detects input from touchscreen devices like phones and tabl
 
 The Touch object also provides input from the **accelerometer** (motion) and **inclinometer** (tilt/compass direction) if the device supports them. The user must grant permission for these before they can be used though; see the *Request permission* action for more details. Note also some low-end devices lack the necessary hardware to measure these values.
 
-It is [best](https://www.construct.net/make-games/manuals/construct-3/tips-and-guides/best-practices) to support touch input wherever possible. On the web many users browse on mobile devices with touch input only and no mouse or keyboard. If your project does not support touch controls, many users will be unable to play your project at all. For a guide on how to implement on-screen touch controls, see the tutorial on [Touch controls](https://www.construct.net/tutorials/touch-controls-detecting-13).
+It is [best](../tips-and-guides/best-practices.md) to support touch input wherever possible. On the web many users browse on mobile devices with touch input only and no mouse or keyboard. If your project does not support touch controls, many users will be unable to play your project at all. For a guide on how to implement on-screen touch controls, see the tutorial on [Touch controls](https://www.construct.net/tutorials/touch-controls-detecting-13).
 
-For a number of examples of using Touch input, search for Touch in the [Example Browser](https://www.construct.net/make-games/manuals/construct-3/overview/example-browser).
+For a number of examples of using Touch input, search for Touch in the [Example Browser](../overview/example-browser.md).
 
 ### Scripting
 
-When using JavaScript or TypeScript coding, the features of this object can be accessed via the [ITouchObjectType script interface](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/plugin-interfaces/touch).
+When using JavaScript or TypeScript coding, the features of this object can be accessed via the [ITouchObjectType script interface](../scripting/scripting-reference/plugin-interfaces/touch.md).
 
 ## Multi-touch
 

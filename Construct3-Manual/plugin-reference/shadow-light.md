@@ -1,7 +1,7 @@
 ---
 title: "Shadow light"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/shadow-light"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -16,15 +16,15 @@ release: 476.3
 
 ---
 
-The **Shadow light** object can render real-time shadows from other objects with the [Shadow caster](https://www.construct.net/make-games/manuals/construct-3/behavior-reference/shadow-caster) behavior.
+The **Shadow light** object can render real-time shadows from other objects with the [Shadow caster](../behavior-reference/shadow-caster.md) behavior.
 
-Construct comes with a number of examples of shadow-casting effects. Search for *Shadows* in the [Example Browser](https://www.construct.net/make-games/manuals/construct-3/overview/example-browser) to locate them.
+Construct comes with a number of examples of shadow-casting effects. Search for *Shadows* in the [Example Browser](../overview/example-browser.md) to locate them.
 
 [![Example of a shadow-casting effect](https://construct-static.com/images/v1740/uploads/articleuploadobject/0/images/1019/shadowexample.png)](https://construct-static.com/images/v1740/uploads/articleuploadobject/0/images/1019/shadowexample.png)Example of a shadow-casting effect
 
 ### Scripting
 
-When using JavaScript or TypeScript coding, the features of this object can be accessed via the [IShadowLightInstance script interface](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/plugin-interfaces/shadow-light).
+When using JavaScript or TypeScript coding, the features of this object can be accessed via the [IShadowLightInstance script interface](../scripting/scripting-reference/plugin-interfaces/shadow-light.md).
 
 ## Shadow rendering
 

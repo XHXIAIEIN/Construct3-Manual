@@ -1,7 +1,7 @@
 ---
 title: "Edit a Rank"
 source: "https://www.construct.net/en/game-services/manuals/game-services/xp/api-end-points/ranks/update-rank"
-release: 476.3
+release: 487
 ---
 
 ## On this page

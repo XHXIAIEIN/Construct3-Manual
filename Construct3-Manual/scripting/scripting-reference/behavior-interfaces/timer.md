@@ -1,7 +1,7 @@
 ---
 title: "Timer behavior script interface"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/scripting/scripting-reference/behavior-interfaces/timer"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -12,7 +12,7 @@ release: 476.3
 
 ---
 
-The `ITimerBehaviorInstance` interface derives from [IBehaviorInstance](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/object-interfaces/ibehaviorinstance) to add APIs specific to the [Timer behavior](https://www.construct.net/make-games/manuals/construct-3/behavior-reference/timer).
+The `ITimerBehaviorInstance` interface derives from [IBehaviorInstance](../../../scripting/scripting-reference/object-interfaces/ibehaviorinstance.md) to add APIs specific to the [Timer behavior](../../../behavior-reference/timer.md).
 
 ## Example
 
@@ -37,7 +37,7 @@ inst.behaviors.Timer.startTimer(2.5, "myOneOffTimer", "once");
 
 ## Timer behavior events
 
-See [behavior instance event](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/interfaces/behavior-instance-event) for standard behavior instance event object properties.
+See [behavior instance event](../../../scripting/scripting-reference/interfaces/behavior-instance-event.md) for standard behavior instance event object properties.
 
 **"timer"**  
 Fired when a timer period has elapsed. The event object has a `tag` property which is a string of the tag for the timer that has elapsed.

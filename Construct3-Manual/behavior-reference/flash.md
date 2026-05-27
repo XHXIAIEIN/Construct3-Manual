@@ -1,7 +1,7 @@
 ---
 title: "Flash behavior"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/behavior-reference/flash"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -17,7 +17,7 @@ Simply adding the Flash behavior to an object does not do anything. You must use
 
 ### Scripting
 
-When using JavaScript or TypeScript coding, the features of this behavior can be accessed via the [IFlashBehaviorInstance script interface](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/behavior-interfaces/flash).
+When using JavaScript or TypeScript coding, the features of this behavior can be accessed via the [IFlashBehaviorInstance script interface](../scripting/scripting-reference/behavior-interfaces/flash.md).
 
 ## Flash conditions
 

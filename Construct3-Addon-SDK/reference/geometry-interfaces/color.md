@@ -1,7 +1,7 @@
 ---
 title: "Color interface"
 source: "https://www.construct.net/en/make-games/manuals/addon-sdk/reference/geometry-interfaces/color"
-release: 476.3
+release: 487
 ---
 
 ## On this page

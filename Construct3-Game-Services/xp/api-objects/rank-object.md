@@ -1,7 +1,7 @@
 ---
 title: "Rank Object"
 source: "https://www.construct.net/en/game-services/manuals/game-services/xp/api-objects/rank-object"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -20,7 +20,7 @@ This object represents an XP rank.  Ranks are achieved when the player reaches t
 
 ```json
 {
-  "id": "9e52169d-05b5-4292-9396-1c60b3e8cad8",
+  "id": "5730c9c2-c4a5-4c47-95dd-30e627a8fb1b",
   "atXP": 100000,
   "logos": [
     { ... },
@@ -48,7 +48,7 @@ A unique ID for this rank.
 **atXP** `int64`  
 The amount of XP required to reach this rank.
 
-**logos** Array<[Picture](../../common-objects/picture-object.md)>
+**logos** [`Array<Picture>`](../../common-objects/picture-object.md)  
 If this rank has a logo, a list of [picture objects](../../common-objects/picture-object.md). Each picture object is the same logo, but provided in different sizes. Sizes available are based on widths, and the widths `16, 32, 64, 96, 128, 256, 512` will be shown here along with the original logo size if it doesn't match a width in this list.  Some sizes may not show if the width is less than the original logo width.
 
 **formattedAtXP** `string`  

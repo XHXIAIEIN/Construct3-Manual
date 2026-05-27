@@ -1,7 +1,7 @@
 ---
 title: "Performance tips"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/tips-and-guides/performance-tips"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -32,7 +32,7 @@ In the past, mobile devices used to have significantly worse performance to desk
 
 There is only one way to get a good answer about a performance question: **measure it.** If you don't measure it, or you guess, or you ask on the forum (so someone else guesses), you may get an inaccurate answer, and you may end up wasting your time trying to optimise something that makes no difference at all to performance. You must use measurements and be scientific about proving what makes a difference.
 
-The ultimate performance measurement is the **frames per second** (FPS). If the FPS rate is good, there is no need to optimise anything! Don't waste your time. If it's not good enough and your project is running slowly, the key measurements to look at are the CPU and GPU utilisation. You can find all these measurements in Construct's [debugger](https://www.construct.net/make-games/manuals/construct-3/interface/debugger)  `[Paid plans only]` .
+The ultimate performance measurement is the **frames per second** (FPS). If the FPS rate is good, there is no need to optimise anything! Don't waste your time. If it's not good enough and your project is running slowly, the key measurements to look at are the CPU and GPU utilisation. You can find all these measurements in Construct's [debugger](../interface/debugger.md)  `[Paid plans only]` .
 
 When the project is not under heavy performance load, the CPU and GPU utilisation measurements may be inaccurate, for reasons explained later. Because of this, the best way to test the performance of your project is to switch the project **framerate mode** to one of the **unlimited** modes. This will make the system run as fast as possible, and means your performance numbers will be more useful. This is particularly important if you are trying to make benchmarks to evaluate the performance of different features. If you want to test CPU performance, use the *Unlimited (ticks only)* mode as that avoids rendering frames faster than needed, and in this mode you will want to look at the **ticks per second** (TPS) measurement rather than frames per second. If you want to test GPU performance, use the *Unlimited (full frames)* mode, and then the frames per second (FPS) measurement is applicable. The following section explains more about choosing between testing CPU or GPU performance.
 
@@ -50,7 +50,7 @@ The following sections provide some tips about how to track down the cause of a 
 
 The CPU is generally responsible for everything except drawing graphics. Event sheets, JavaScript code, plugins, behaviors, and everything else apart from graphics tend to happen on the CPU.
 
-The best place to start looking to identify a CPU performance problem is the [CPU profiler](https://www.construct.net/make-games/manuals/construct-3/interface/debugger/profile-tab)  `[Paid plans only]`  in Construct's debugger. This can break down CPU time spent in different areas, including individual event groups in event sheets. If you see an item measuring a particularly high usage, that is generally the item to think about optimising. For example you may see a single event group using a substantial percentage of CPU time by itself. If you look at that event group you may then find it does something like repeat an event thousands of times; adjusting that to do less work could then solve the problem.
+The best place to start looking to identify a CPU performance problem is the [CPU profiler](../interface/debugger/profile-tab.md)  `[Paid plans only]`  in Construct's debugger. This can break down CPU time spent in different areas, including individual event groups in event sheets. If you see an item measuring a particularly high usage, that is generally the item to think about optimising. For example you may see a single event group using a substantial percentage of CPU time by itself. If you look at that event group you may then find it does something like repeat an event thousands of times; adjusting that to do less work could then solve the problem.
 
 Other times it may be less clear, such as time spent processing behaviors. Here are some general tips about the types of things that can cause high CPU usage. As before the way to check for these is to rely on measurements: try removing them, or significantly reducing their usage, and see what difference it makes to the measurements.
 
@@ -64,7 +64,7 @@ Other times it may be less clear, such as time spent processing behaviors. Here 
 
 The GPU is generally responsible solely for drawing graphics - that is, rendering your artwork to the screen, as well as any effects.
 
-The best place to start looking to identify a GPU performance problem is the [GPU profiler](https://www.construct.net/make-games/manuals/construct-3/interface/debugger/gpu-profile-tab)  `[Paid plans only]`  in Construct's debugger. This can break down GPU time spent on each layer in the project. If one layer is showing a high measurement, it is likely the graphics content on that layer that is responsible for the high GPU usage. For example you may see a layer using hundreds of objects all with effects showing a high measurement; removing the effects or reducing the object count could then solve the problem.
+The best place to start looking to identify a GPU performance problem is the [GPU profiler](../interface/debugger/gpu-profile-tab.md)  `[Paid plans only]`  in Construct's debugger. This can break down GPU time spent on each layer in the project. If one layer is showing a high measurement, it is likely the graphics content on that layer that is responsible for the high GPU usage. For example you may see a layer using hundreds of objects all with effects showing a high measurement; removing the effects or reducing the object count could then solve the problem.
 
 #### Fill rate
 
@@ -104,9 +104,9 @@ Remember the framerate (FPS) is the ultimate performance measurement: as long as
 
 ## Displaying performance at runtime
 
-While Construct's debugger displays key performance measurements, sometimes it's useful to show these in the project itself, such as for testing with [Remote Preview](https://www.construct.net/make-games/manuals/construct-3/overview/testing-projects)  `[Paid plans only]`  or in exported projects.
+While Construct's debugger displays key performance measurements, sometimes it's useful to show these in the project itself, such as for testing with [Remote Preview](../overview/testing-projects.md)  `[Paid plans only]`  or in exported projects.
 
-The following system and [Platform Info](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/platform-info) expressions provide basic performance measurements.
+The following system and [Platform Info](../plugin-reference/platform-info.md) expressions provide basic performance measurements.
 
 - **PlatformInfo.FramesPerSecond** - returns the current rendered frames per second rate. The maximum framerate depends on the display refresh rate, which is commonly 60; however this may be much higher in framerate mode *Unlimited (full frames)*.
 - **PlatformInfo.TicksPerSecond** - returns the current processed ticks per second rate (running the project logic). This is often the same as the frames per second rate, but not always - notably in framerate mode *Unlimited (ticks only)* the frames per second will match the display refresh rate, but the ticks per second may be significantly higher.

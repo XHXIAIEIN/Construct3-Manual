@@ -1,7 +1,7 @@
 ---
 title: "IRenderer script interface"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/scripting/scripting-reference/graphics-interfaces/irenderer-interface"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -15,7 +15,7 @@ release: 476.3
 
 The `IRenderer` script interface provides access to Construct's renderer in the runtime. The same interface can be used regardless of the underlying rendering technology (e.g. WebGL or WebGPU). The interface's methods provide high-level drawing commands implemented by Construct, so you don't need to handle low-level concerns like vertex buffers.
 
-`IRenderer` can be used both in project code, such as with the [ILayer](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/layout-interfaces/ilayout/ilayer) events `"beforedraw"` and `"afterdraw"`, and in the addon SDK for drawing plugins.
+`IRenderer` can be used both in project code, such as with the [ILayer](../../../scripting/scripting-reference/layout-interfaces/ilayout/ilayer.md) events `"beforedraw"` and `"afterdraw"`, and in the addon SDK for drawing plugins.
 
 ## Renderer state
 
@@ -149,10 +149,10 @@ Draw an array of textured triangles based on the given position, texture co-ordi
 > For large meshes, it is much more efficient to use the `createMeshData()` and `drawMeshData()` methods, as this allows data to remain on the GPU. With this method, all the provided data is uploaded to the GPU with every call, which can be very inefficient for large meshes. It is also necessary to use `createMeshData()` to draw a mesh with more than 64k vertices, as this method is limited to 16-bit indices.
 
 **createMeshData(vertexCount, indexCount, opts)**  
-Create an [IMeshData](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/graphics-interfaces/imeshdata) to represent mesh data on the GPU and efficiently draw it over multiple frames with `drawMeshData`. `vertexCount` and `indexCount` determines how many vertices and indices the mesh has. These values cannot be changed after creation - to resize a mesh, create a new one, copy data over (if necessary), and release the old one. `opts` is an optional object with additional parameters; currently this can specify an optional `debugLabel` property to specify a string label for debugging purposes. (In the WebGPU renderer, the debug label is also used on the underlying WebGPU objects.)
+Create an [IMeshData](../../../scripting/scripting-reference/graphics-interfaces/imeshdata.md) to represent mesh data on the GPU and efficiently draw it over multiple frames with `drawMeshData`. `vertexCount` and `indexCount` determines how many vertices and indices the mesh has. These values cannot be changed after creation - to resize a mesh, create a new one, copy data over (if necessary), and release the old one. `opts` is an optional object with additional parameters; currently this can specify an optional `debugLabel` property to specify a string label for debugging purposes. (In the WebGPU renderer, the debug label is also used on the underlying WebGPU objects.)
 
 **drawMeshData(meshData, indexOffset, indexCount)**  
-Draw a [IMeshData](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/graphics-interfaces/imeshdata) previously created with `createMeshData()`. If some buffers have been marked changed, the first time it is drawn the changed ranges of the buffers will also be uploaded to the GPU, and then the changed marking is unset. `indexOffset` and `indexCount` can optionally be specified to draw a reduced range of the index buffer; if used the count should be a multiple of 3 to specify complete triangles, and the offset should likely also be a multiple of 3 to avoid scrambling the triangle orders.
+Draw a [IMeshData](../../../scripting/scripting-reference/graphics-interfaces/imeshdata.md) previously created with `createMeshData()`. If some buffers have been marked changed, the first time it is drawn the changed ranges of the buffers will also be uploaded to the GPU, and then the changed marking is unset. `indexOffset` and `indexCount` can optionally be specified to draw a reduced range of the index buffer; if used the count should be a multiple of 3 to specify complete triangles, and the offset should likely also be a multiple of 3 to avoid scrambling the triangle orders.
 
 **convexPoly(pointsArray)**  
 Draw a convex polygon using the given array of points, in alternating X, Y order. Therefore the size of the array must be even, and must contain at least six elements (to define three points).
@@ -185,19 +185,19 @@ Set the current line cap for line-drawing calls. This must be followed by a `pop
 Set the current line cap for line-drawing calls. This must be followed by a `popLineCap()` call when finished to restore the previous line cap. The available line caps are `"butt"` and `"square"`.
 
 **setTexture(texture, sampling = "auto")**  
-Set the current texture to a given [ITexture](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/graphics-interfaces/itexture). The `sampling` parameter is optional and defaults to `"auto"`, which means the texture will be rendered with the `defaultSampling` mode the texture was created with. Otherwise it can be set to one of `"nearest"`, `"bilinear"` or `"trilinear"` to render the texture with a different sampling mode. To specify the sampling mode for an [IWorldInstance](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/object-interfaces/iworldinstance), pass its `activeSampling` property.
+Set the current texture to a given [ITexture](../../../scripting/scripting-reference/graphics-interfaces/itexture.md). The `sampling` parameter is optional and defaults to `"auto"`, which means the texture will be rendered with the `defaultSampling` mode the texture was created with. Otherwise it can be set to one of `"nearest"`, `"bilinear"` or `"trilinear"` to render the texture with a different sampling mode. To specify the sampling mode for an [IWorldInstance](../../../scripting/scripting-reference/object-interfaces/iworldinstance.md), pass its `activeSampling` property.
 
 **createStaticTexture(data, opts)**  
-Create an [ITexture](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/graphics-interfaces/itexture) with the content specified by `data`. This method is asynchronous and so returns a Promise that resolves with the created `ITexture`. The `data` parameter may be one of `HTMLImageElement`, `HTMLCanvasElement`, `OffscreenCanvas` or `ImageBitmap`. (Note that in worker mode, only `OffscreenCanvas` and `ImageBitmap` are available.) `opts` specifies options for the texture - see the section *Texture options* above for more details.
+Create an [ITexture](../../../scripting/scripting-reference/graphics-interfaces/itexture.md) with the content specified by `data`. This method is asynchronous and so returns a Promise that resolves with the created `ITexture`. The `data` parameter may be one of `HTMLImageElement`, `HTMLCanvasElement`, `OffscreenCanvas` or `ImageBitmap`. (Note that in worker mode, only `OffscreenCanvas` and `ImageBitmap` are available.) `opts` specifies options for the texture - see the section *Texture options* above for more details.
 
 > **Tip**  
 > Static textures do not support changing their content, and are optimized accordingly. If you want to be able to change the content of a texture, use `createDynamicTexture()`.
 
 **createDynamicTexture(width, height, opts)**  
-Create a new empty [ITexture](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/graphics-interfaces/itexture) for dynamic use, i.e. expecting the texture content to be replaced using `updateTexture()`. The size of the texture is given by `width` and `height` which must be positive integers. `opts` specifies options for the texture - see the section *Texture options* above for more details.
+Create a new empty [ITexture](../../../scripting/scripting-reference/graphics-interfaces/itexture.md) for dynamic use, i.e. expecting the texture content to be replaced using `updateTexture()`. The size of the texture is given by `width` and `height` which must be positive integers. `opts` specifies options for the texture - see the section *Texture options* above for more details.
 
 **updateTexture(data, texture, opts)**  
-Upload *data* as the new texture contents for the [ITexture](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/graphics-interfaces/itexture) *texture*. This can only be used for textures created with `createDynamicTexture()` and managed by your addon.
+Upload *data* as the new texture contents for the [ITexture](../../../scripting/scripting-reference/graphics-interfaces/itexture.md) *texture*. This can only be used for textures created with `createDynamicTexture()` and managed by your addon.
 
 *data* can be one of the following types: `HTMLImageElement`, `HTMLVideoElement`, `HTMLCanvasElement`, `ImageBitmap`, `OffscreenCanvas` or `ImageData`. Note in worker mode the DOM types cannot be used (`HTMLImageElement`, `HTMLVideoElement`, `HTMLCanvasElement`); in this case use `ImageBitmap` or `OffscreenCanvas` instead. This method cannot resize an existing texture, so the data must match the size the texture was created with; if the size needs to change, destroy and re-create the texture.
 
@@ -206,25 +206,25 @@ Upload *data* as the new texture contents for the [ITexture](https://www.constru
 - `premultiplyAlpha`: a boolean indicating whether to premultiply alpha of the image content specified by *data* (default true). Construct always renders using premultiplied alpha so this is normally necessary; however if the data is known to already be premultiplied, set this to false.
 
 **deleteTexture(texture)**  
-Delete an [ITexture](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/graphics-interfaces/itexture), releasing its resources. This can only be used for textures created with `createDynamicTexture()` and managed by your addon. Do not attempt to delete textures managed by the Construct engine.
+Delete an [ITexture](../../../scripting/scripting-reference/graphics-interfaces/itexture.md), releasing its resources. This can only be used for textures created with `createDynamicTexture()` and managed by your addon. Do not attempt to delete textures managed by the Construct engine.
 
 **async loadTextureForImageInfo(imageInfo, opts)**  
-For use with the addon SDK. Load a texture for a given [IImageInfo](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/object-interfaces/iimageinfo). Returns a promise that resolves with the loaded [ITexture](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/graphics-interfaces/itexture). `opts` specifies options for the texture - see the section *Texture options* above for more details.
+For use with the addon SDK. Load a texture for a given [IImageInfo](../../../scripting/scripting-reference/object-interfaces/iimageinfo.md). Returns a promise that resolves with the loaded [ITexture](../../../scripting/scripting-reference/graphics-interfaces/itexture.md). `opts` specifies options for the texture - see the section *Texture options* above for more details.
 
 **releaseTextureForImageInfo(imageInfo)**  
-For use with the addon SDK. Release a texture for a given [IImageInfo](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/object-interfaces/iimageinfo) that was previously loaded with `loadTextureForImageInfo()`.
+For use with the addon SDK. Release a texture for a given [IImageInfo](../../../scripting/scripting-reference/object-interfaces/iimageinfo.md) that was previously loaded with `loadTextureForImageInfo()`.
 
 **getTextureForImageInfo(imageInfo)**  
-For use with the addon SDK. Returns the existing [ITexture](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/graphics-interfaces/itexture) for a given [IImageInfo](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/object-interfaces/iimageinfo) that was previously loaded with `loadTextureForImageInfo()`, or returns `null` if no texture is loaded (or the texture is still asynchronously loading).
+For use with the addon SDK. Returns the existing [ITexture](../../../scripting/scripting-reference/graphics-interfaces/itexture.md) for a given [IImageInfo](../../../scripting/scripting-reference/object-interfaces/iimageinfo.md) that was previously loaded with `loadTextureForImageInfo()`, or returns `null` if no texture is loaded (or the texture is still asynchronously loading).
 
 **createRendererText()**  
-Return a new [IRendererText](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/graphics-interfaces/irenderertext) interface. This manages text wrapping, drawing text, and uploading the results to a WebGL texture.
+Return a new [IRendererText](../../../scripting/scripting-reference/graphics-interfaces/irenderertext.md) interface. This manages text wrapping, drawing text, and uploading the results to a WebGL texture.
 
 **setDeviceTransform()**  
 Set the co-ordinate system to be in device transform mode, which is in units of device pixels and relative to the screen. This can be useful for achieving pixel-perfect rendering.
 
 **setLayerTransform(layer)**  
-Set the co-ordinate system to match the given [ILayer](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/layout-interfaces/ilayout/ilayer). This is the default mode - this method is normally called after `setDeviceTransform()` to restore normal rendering.
+Set the co-ordinate system to match the given [ILayer](../../../scripting/scripting-reference/layout-interfaces/ilayout/ilayer.md). This is the default mode - this method is normally called after `setDeviceTransform()` to restore normal rendering.
 
 ## Drawing meshes
 

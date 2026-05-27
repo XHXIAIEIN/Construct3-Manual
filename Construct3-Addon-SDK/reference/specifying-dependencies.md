@@ -1,7 +1,7 @@
 ---
 title: "Specifying dependencies"
 source: "https://www.construct.net/en/make-games/manuals/addon-sdk/reference/specifying-dependencies"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -13,7 +13,7 @@ release: 476.3
 
 ---
 
-Plugins and behaviors can specify dependencies on additional files, or Cordova plugins for inclusion with the Cordova exporter. Dependencies are added using the `AddFileDependency(opts)` and `AddCordovaPluginReference(opts)` methods on both [IPluginInfo](https://www.construct.net/make-games/manuals/addon-sdk/reference/iplugininfo) and [IBehaviorInfo](https://www.construct.net/make-games/manuals/addon-sdk/reference/ibehaviorinfo). Remote scripts can also be added with `AddRemoteScriptDependency`, but this is not recommended.
+Plugins and behaviors can specify dependencies on additional files, or Cordova plugins for inclusion with the Cordova exporter. Dependencies are added using the `AddFileDependency(opts)` and `AddCordovaPluginReference(opts)` methods on both [IPluginInfo](../reference/iplugininfo.md) and [IBehaviorInfo](../reference/ibehaviorinfo.md). Remote scripts can also be added with `AddRemoteScriptDependency`, but this is not recommended.
 
 ## File dependencies
 
@@ -49,7 +49,7 @@ The options object uses the following properties.
 Name of the dependency file in the addon. This must be bundled with the addon; it cannot refer to a URL. It is recommended to bundle the script with your addon, but if you must use a URL, see the section *Remote script dependencies*. The file path is relative to the root (the location of addon.json).
 
 > **Tip**  
-> For developer mode addons, make sure the dependency file is also included in the `"file-list"` key. For more information see the section on *Developer mode addons* in [Addon metadata](https://www.construct.net/make-games/manuals/addon-sdk/guide/addon-metadata).
+> For developer mode addons, make sure the dependency file is also included in the `"file-list"` key. For more information see the section on *Developer mode addons* in [Addon metadata](../guide/addon-metadata.md).
 
 **type**  
 One of the types described above, e.g. `"external-dom-script"`.

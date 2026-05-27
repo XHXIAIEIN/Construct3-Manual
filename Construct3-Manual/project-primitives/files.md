@@ -1,7 +1,7 @@
 ---
 title: "Project files"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/project-primitives/files"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -15,9 +15,9 @@ release: 476.3
 
 ---
 
-Any external files can also be imported to your project via the [Project Bar](https://www.construct.net/make-games/manuals/construct-3/interface/bars/project-bar). This is useful for including any other resources your project might need, such as videos, additional images, JSON/XML/CSV/text data, HTML, CSS, documents, or other general files you might need in your project. Often project files are requested in events with the **AJAX** object, allowing data files to be read by the game.
+Any external files can also be imported to your project via the [Project Bar](../interface/bars/project-bar.md). This is useful for including any other resources your project might need, such as videos, additional images, JSON/XML/CSV/text data, HTML, CSS, documents, or other general files you might need in your project. Often project files are requested in events with the **AJAX** object, allowing data files to be read by the game.
 
-Project files (excluding [sounds and music](https://www.construct.net/make-games/manuals/construct-3/project-primitives/sounds-and-music)) can be categorised in to folders for **Videos**, **Fonts**, **Icons** (see [Icons & splash](../tips-and-guides/icons-splash.md)) and **Files** (for anything that does not belong to one of the other folders). Files can be imported by right-clicking one of the folders in the Project Bar and selecting the **Import** option. Note importing files copies them to the project.
+Project files (excluding [sounds and music](../project-primitives/sounds-and-music.md)) can be categorised in to folders for **Videos**, **Fonts**, **Icons** (see [Icons & splash](../tips-and-guides/icons-splash.md)) and **Files** (for anything that does not belong to one of the other folders). Files can be imported by right-clicking one of the folders in the Project Bar and selecting the **Import** option. Note importing files copies them to the project.
 
 ## Previewing files
 
@@ -26,14 +26,14 @@ Several kinds of files can be previewed simply by **double-clicking** their item
 - Like sounds and music, previewing a video file will play it in a video player.
 - Fonts preview in a dialog showing some sample text using the font.
 - SVG images are previewed in a resizable dialog that displays the image.
-- Other images than SVG can be opened in the [Animations Editor](https://www.construct.net/make-games/manuals/construct-3/interface/animations-editor) for viewing and editing. This is particularly useful with icon files.
-- Array, dictionary and text-based files can be viewed and edited in the [Array editor](https://www.construct.net/make-games/manuals/construct-3/interface/file-editors/array-editor), [Dictionary editor](https://www.construct.net/make-games/manuals/construct-3/interface/file-editors/dictionary-editor) and [Text editor](https://www.construct.net/make-games/manuals/construct-3/interface/file-editors/text-editor) respectively  `[Paid plans only]` .
+- Other images than SVG can be opened in the [Animations Editor](../interface/animations-editor.md) for viewing and editing. This is particularly useful with icon files.
+- Array, dictionary and text-based files can be viewed and edited in the [Array editor](../interface/file-editors/array-editor.md), [Dictionary editor](../interface/file-editors/dictionary-editor.md) and [Text editor](../interface/file-editors/text-editor.md) respectively  `[Paid plans only]` .
 
 Other text-based files, like HTML and CSS files, can also be edited with a built-in text editor by double-clicking them  `[Paid plans only]` .
 
 ## Using Web Fonts
 
-You can use any web font (.woff or .woff2) files imported to the Fonts folder in Text objects. For more information see the section on *Using web fonts* in the [Text object](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/text).
+You can use any web font (.woff or .woff2) files imported to the Fonts folder in Text objects. For more information see the section on *Using web fonts* in the [Text object](../plugin-reference/text.md).
 
 ## Adding new files
 
@@ -41,7 +41,7 @@ You can use any web font (.woff or .woff2) files imported to the Fonts folder in
 
 [![Adding a new project file](https://construct-static.com/images/v1740/r/uploads/articleuploadobject/0/images/917/new-project-file_v350.png)](https://construct-static.com/images/v1740/uploads/articleuploadobject/0/images/917/new-project-file.png)Adding a new project file
 
-Adding an **Array** adds a JSON file in a format that can be loaded by the Array object, and opens the [Array editor](https://www.construct.net/make-games/manuals/construct-3/interface/file-editors/array-editor). Adding a **Dictionary** adds a JSON file that can be loaded by the Dictionary object, and opens the [Dictionary editor](https://www.construct.net/make-games/manuals/construct-3/interface/file-editors/dictionary-editor). Each allows the data in the files to be edited in a visual editor. The other files open a [Text editor](https://www.construct.net/make-games/manuals/construct-3/interface/file-editors/text-editor) for editing the contents of the file. Once added, **double-click** the file in the Project Bar to re-open its editor.
+Adding an **Array** adds a JSON file in a format that can be loaded by the Array object, and opens the [Array editor](../interface/file-editors/array-editor.md). Adding a **Dictionary** adds a JSON file that can be loaded by the Dictionary object, and opens the [Dictionary editor](../interface/file-editors/dictionary-editor.md). Each allows the data in the files to be edited in a visual editor. The other files open a [Text editor](../interface/file-editors/text-editor.md) for editing the contents of the file. Once added, **double-click** the file in the Project Bar to re-open its editor.
 
 ## Adding HTML files
 
@@ -67,4 +67,4 @@ CSS files have a *Purpose* property in the Properties Bar. The default is *Style
 
 ## MIME types
 
-When publishing to the web, you must ensure the server hosting the project has the [correct MIME types set up](https://www.construct.net/make-games/manuals/construct-3/tips-and-guides/mime-types) for all the kinds of project file you use. Otherwise some project files may fail to load, or could be loaded with corrupted data.
+When publishing to the web, you must ensure the server hosting the project has the [correct MIME types set up](../tips-and-guides/mime-types.md) for all the kinds of project file you use. Otherwise some project files may fail to load, or could be loaded with corrupted data.

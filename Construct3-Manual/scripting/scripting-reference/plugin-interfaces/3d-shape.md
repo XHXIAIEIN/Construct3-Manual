@@ -1,7 +1,7 @@
 ---
 title: "3D shape script interface"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/scripting/scripting-reference/plugin-interfaces/3d-shape"
-release: 476.3
+release: 487
 ---
 
 ## On this page

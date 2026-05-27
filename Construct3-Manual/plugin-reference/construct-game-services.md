@@ -1,7 +1,7 @@
 ---
 title: "Construct Game Services plugin"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/construct-game-services"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -20,7 +20,7 @@ The **Construct Game Services** (CGS) plugin allows accessing game services host
 
 ### Scripting
 
-When using JavaScript or TypeScript coding, the features of this object can be accessed via the [ICGSObjectType  script interface](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/plugin-interfaces/construct-game-services).
+When using JavaScript or TypeScript coding, the features of this object can be accessed via the [ICGSObjectType  script interface](../scripting/scripting-reference/plugin-interfaces/construct-game-services.md).
 
 ## Authentication
 
@@ -108,10 +108,10 @@ Triggered after the cloud save *Create* actions with the corresponding bucket ID
 Triggered after the cloud save *Create* actions with the corresponding bucket ID and key, depending on the outcome of the operation.
 
 **On get success**  
-Triggered after the cloud save *Get* action with the corresponding bucket ID and key completes successfully. When the *Get* action *Type* is *text*, *On get success* triggers, and the downloaded data is provided by the *CloudSaveText* expression; when *Type* is *binary*, *On get binary success* triggers, and the downloaded data is placed in the specified [Binary Data](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/binary-data) object.
+Triggered after the cloud save *Get* action with the corresponding bucket ID and key completes successfully. When the *Get* action *Type* is *text*, *On get success* triggers, and the downloaded data is provided by the *CloudSaveText* expression; when *Type* is *binary*, *On get binary success* triggers, and the downloaded data is placed in the specified [Binary Data](../plugin-reference/binary-data.md) object.
 
 **On get binary success**  
-Triggered after the cloud save *Get* action with the corresponding bucket ID and key completes successfully. When the *Get* action *Type* is *text*, *On get success* triggers, and the downloaded data is provided by the *CloudSaveText* expression; when *Type* is *binary*, *On get binary success* triggers, and the downloaded data is placed in the specified [Binary Data](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/binary-data) object.
+Triggered after the cloud save *Get* action with the corresponding bucket ID and key completes successfully. When the *Get* action *Type* is *text*, *On get success* triggers, and the downloaded data is provided by the *CloudSaveText* expression; when *Type* is *binary*, *On get binary success* triggers, and the downloaded data is placed in the specified [Binary Data](../plugin-reference/binary-data.md) object.
 
 **On get error**  
 Triggered after the cloud save *Get* action with the corresponding bucket ID and key fails to complete. This could occur if the user went offline, or if a network error occured.
@@ -143,10 +143,10 @@ After *On sign in popup blocked* triggers, attempt to open the login popup windo
 Set the name of the currently signed in player. In some cases the player name is obtained from the authentication provider, but in others a generic name will be used, in which case the player will likely want to change their name for features like leaderboards. The current player name is provided by the *PlayerName* expression.
 
 **Create (binary)**  
-Create or replace the data for a key. A game bucket ID can optionally be provided, but if left empty it will use player private storage. The *text* variant uploads a string for the data, whereas the *binary* variant uploads the contents of a [Binary Data](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/binary-data) object. *On create success* or *On create error* will trigger depending on whether the upload completed successfully.
+Create or replace the data for a key. A game bucket ID can optionally be provided, but if left empty it will use player private storage. The *text* variant uploads a string for the data, whereas the *binary* variant uploads the contents of a [Binary Data](../plugin-reference/binary-data.md) object. *On create success* or *On create error* will trigger depending on whether the upload completed successfully.
 
 **Create (text)**  
-Create or replace the data for a key. A game bucket ID can optionally be provided, but if left empty it will use player private storage. The *text* variant uploads a string for the data, whereas the *binary* variant uploads the contents of a [Binary Data](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/binary-data) object. *On create success* or *On create error* will trigger depending on whether the upload completed successfully.
+Create or replace the data for a key. A game bucket ID can optionally be provided, but if left empty it will use player private storage. The *text* variant uploads a string for the data, whereas the *binary* variant uploads the contents of a [Binary Data](../plugin-reference/binary-data.md) object. *On create success* or *On create error* will trigger depending on whether the upload completed successfully.
 
 **Get**  
 Download the data previously uploaded for a key with one of the *Create* actions. A game bucket ID can optionally be provided, but if left empty it will use player private storage. If this fails, *On get error* will trigger. Otherwise when *Type* is *Text*, *On get success* will trigger, and the downloaded data will be in the *CloudSaveText* expression; when *Type* is *binary*, *On get binary success* will trigger, with the downloaded data stored in the specified Binary Data object.

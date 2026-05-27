@@ -1,7 +1,7 @@
 ---
 title: "Common conditions"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/common-features/common-conditions"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -18,7 +18,7 @@ release: 476.3
 
 ---
 
-The following conditions are common to several [plugins](https://www.construct.net/make-games/manuals/construct-3/project-primitives/objects/plugins).
+The following conditions are common to several [plugins](../../project-primitives/objects/plugins.md).
 
 ## Angle
 
@@ -107,10 +107,10 @@ True if the element is currently visible. Otherwise the element still exists and
 ## Instance variables
 
 **Compare instance variable**  
-Compare the current value of one of the object's number or text type [instance variables](https://www.construct.net/make-games/manuals/construct-3/project-primitives/objects/instance-variables).
+Compare the current value of one of the object's number or text type [instance variables](../../project-primitives/objects/instance-variables.md).
 
 **Is boolean instance variable set**  
-Test if one of the object's boolean [instance variables](https://www.construct.net/make-games/manuals/construct-3/project-primitives/objects/instance-variables) is set to *true*. Invert the condition to test if false.
+Test if one of the object's boolean [instance variables](../../project-primitives/objects/instance-variables.md) is set to *true*. Invert the condition to test if false.
 
 **Pick highest/lowest**  
 Pick instances according to which has the highest or the lowest instance variable value of all the instances. When *Pick all tied* is checked, multiple instances may be picked if they all share the same highest/lowest value. If it is unchecked, the condition will only ever pick a single instance even when there is a tie, in which case it will pick an arbitrary instance.
@@ -135,13 +135,13 @@ Pick the instance matching a given unique ID (UID) number.
 ## Size & Position
 
 **Compare width**  
-Compare the object's current size, in pixels. Note only 3D objects like [3D shape](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/3d-shape) have the option to compare depth, as 2D objects do not have a size on the Z axis.
+Compare the object's current size, in pixels. Note only 3D objects like [3D shape](../../plugin-reference/3d-shape.md) have the option to compare depth, as 2D objects do not have a size on the Z axis.
 
 **Compare height**  
-Compare the object's current size, in pixels. Note only 3D objects like [3D shape](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/3d-shape) have the option to compare depth, as 2D objects do not have a size on the Z axis.
+Compare the object's current size, in pixels. Note only 3D objects like [3D shape](../../plugin-reference/3d-shape.md) have the option to compare depth, as 2D objects do not have a size on the Z axis.
 
 **Compare depth**  
-Compare the object's current size, in pixels. Note only 3D objects like [3D shape](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/3d-shape) have the option to compare depth, as 2D objects do not have a size on the Z axis.
+Compare the object's current size, in pixels. Note only 3D objects like [3D shape](../../plugin-reference/3d-shape.md) have the option to compare depth, as 2D objects do not have a size on the Z axis.
 
 **Compare X**  
 Compare the object's current position in the layout, in pixels. Note that objects can be positioned between pixels, e.g. at (5.5, 10.33333). This means it's not usually a good idea to rely on an object being at an exact position.

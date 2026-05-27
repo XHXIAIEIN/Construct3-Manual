@@ -1,7 +1,7 @@
 ---
 title: "The Tilemap Brush Editor"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/interface/bars/tilemap-bar/tilemap-brush-editor"
-release: 476.3
+release: 487
 ---
 
 ## On this page

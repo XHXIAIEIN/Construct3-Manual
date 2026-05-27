@@ -1,7 +1,7 @@
 ---
 title: "List Channels"
 source: "https://www.construct.net/en/game-services/manuals/game-services/broadcasts/api-end-points/channels/list-channels"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -67,7 +67,7 @@ Successful responses always return a `HTTP 200` status code.
 **success** [`bool`](../../../data-types.md#internalH1Link4)  
 If the request was successfull or not.
 
-**channels** Array<[BroadcastChannel](../../../broadcasts/api-objects/broadcast-channel.md)>
+**channels** [`Array<BroadcastChannel>`](../../../broadcasts/api-objects/broadcast-channel.md)  
 The channels returned from the request.
 
 **formattingCulture** `string`  

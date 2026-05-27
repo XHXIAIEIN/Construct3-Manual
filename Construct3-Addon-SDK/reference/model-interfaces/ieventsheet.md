@@ -1,7 +1,7 @@
 ---
 title: "IEventSheet interface"
 source: "https://www.construct.net/en/make-games/manuals/addon-sdk/reference/model-interfaces/ieventsheet"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -18,10 +18,10 @@ The `IEventSheet` interface represents an event sheet in the project model.
 ## Methods
 
 **GetProject()**  
-Return the associated [IProject](https://www.construct.net/make-games/manuals/addon-sdk/reference/model-interfaces/iproject).
+Return the associated [IProject](../../reference/model-interfaces/iproject.md).
 
 **GetName()**  
 Return the name of the event sheet.
 
 **GetRoot()**  
-Return the root node of the event sheet. This is an [IEventParentRow](https://www.construct.net/make-games/manuals/addon-sdk/reference/model-interfaces/ieventparentrow) representing the top level of the event sheet.
+Return the root node of the event sheet. This is an [IEventParentRow](../../reference/model-interfaces/ieventparentrow.md) representing the top level of the event sheet.

@@ -1,7 +1,7 @@
 ---
 title: "Force Link Login Provider"
 source: "https://www.construct.net/en/game-services/manuals/game-services/authentication/api-end-points/login-providers/force-link"
-release: 476.3
+release: 487
 ---
 
 ## On this page

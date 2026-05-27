@@ -1,7 +1,7 @@
 ---
 title: "Button"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/button"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -19,11 +19,11 @@ The **Button** object creates a button control which the user can click to perfo
 
 ### Scripting
 
-When using JavaScript or TypeScript coding, the features of this object can be accessed via the [IButtonInstance script interface](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/plugin-interfaces/button).
+When using JavaScript or TypeScript coding, the features of this object can be accessed via the [IButtonInstance script interface](../scripting/scripting-reference/plugin-interfaces/button.md).
 
 ## Layering HTML objects
 
-This object displays using a HTML element rather than drawing in to the canvas. This means its layering works differently to other objects. To learn more about how to layer HTML objects, see [HTML layers](https://www.construct.net/make-games/manuals/construct-3/tips-and-guides/html-layers).
+This object displays using a HTML element rather than drawing in to the canvas. This means its layering works differently to other objects. To learn more about how to layer HTML objects, see [HTML layers](../tips-and-guides/html-layers.md).
 
 ## Styling buttons
 

@@ -1,7 +1,7 @@
 ---
 title: "Shadow Banned Scores"
 source: "https://www.construct.net/en/game-services/manuals/game-services/leaderboards/shadow-banned-scores"
-release: 476.3
+release: 487
 ---
 
 ## On this page

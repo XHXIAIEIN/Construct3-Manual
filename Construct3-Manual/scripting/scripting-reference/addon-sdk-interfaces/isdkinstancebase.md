@@ -1,7 +1,7 @@
 ---
 title: "ISDKInstanceBase addon SDK interface"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/scripting/scripting-reference/addon-sdk-interfaces/isdkinstancebase"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -11,7 +11,7 @@ release: 476.3
 
 ---
 
-The `ISDKInstanceBase` interface is used as a runtime base class for instances in the addon SDK. It derives from [IInstance](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/object-interfaces/iinstance).
+The `ISDKInstanceBase` interface is used as a runtime base class for instances in the addon SDK. It derives from [IInstance](../../../scripting/scripting-reference/object-interfaces/iinstance.md).
 
 ## ISDKInstanceBase APIs
 
@@ -65,7 +65,7 @@ Optional override that is called every tick just **before** events are run after
 Optional override that is called every tick just **after** events are run after `_setTicking2(true)` has been called.
 
 **_getDebuggerProperties()**  
-Override to return properties to display in the debugger. For more information see [runtime scripts](https://www.construct.net/make-games/manuals/addon-sdk/guide/runtime-scripts).
+Override to return properties to display in the debugger. For more information see [runtime scripts](../../../../Construct3-Addon-SDK/guide/runtime-scripts.md).
 
 **_saveToJson()**  
 Optional override to return a JSON object that represents the state of the instance for savegames.

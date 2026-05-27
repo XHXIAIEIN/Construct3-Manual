@@ -1,7 +1,7 @@
 ---
 title: "Emails in the CGS"
 source: "https://www.construct.net/en/game-services/manuals/game-services/emails"
-release: 476.3
+release: 487
 ---
 
 ## On this page

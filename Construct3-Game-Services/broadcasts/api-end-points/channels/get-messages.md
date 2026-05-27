@@ -1,7 +1,7 @@
 ---
 title: "Get Messages"
 source: "https://www.construct.net/en/game-services/manuals/game-services/broadcasts/api-end-points/channels/get-messages"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -77,7 +77,7 @@ Successful responses always return a `HTTP 200` status code.
 **success** [`bool`](../../../data-types.md#internalH1Link4)  
 If the request was successfull or not.
 
-**messages** Array<[BroadcastMessage](../../../broadcasts/api-objects/broadcast-message.md)>
+**messages** [`Array<BroadcastMessage>`](../../../broadcasts/api-objects/broadcast-message.md)  
 The messages returned from the request.
 
 **pagination** [`Pagination`](../../../common-objects/pagination-object.md)  

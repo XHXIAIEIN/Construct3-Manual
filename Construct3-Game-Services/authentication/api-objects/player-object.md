@@ -1,7 +1,7 @@
 ---
 title: "Player Object"
 source: "https://www.construct.net/en/game-services/manuals/game-services/authentication/api-objects/player-object"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -15,14 +15,14 @@ release: 476.3
 
 ```json
 {
-  "id": "b49397de-26e2-45f8-8249-7183d4bba4d9",
-  "created": "2026-04-05T08:32:13.5772629Z",
+  "id": "28ce96df-5207-4cc4-85d0-611cb24abb85",
+  "created": "2026-05-27T08:36:34.4476465Z",
   "playerName": "Chuckling Warrior",
   "avatars": [
     { ... },
     { ... }
   ],
-  "lastActive": "2026-04-05T08:32:13.5789164Z"
+  "lastActive": "2026-05-27T08:36:34.4496559Z"
 }
 ```
 
@@ -37,8 +37,8 @@ The date and time this player was first registered in the game.
 **playerName** `string`  
 The publicly facing player name for this player.
 
-**avatars** Array<[Picture](../../common-objects/picture-object.md)>
+**avatars** [`Array<Picture>`](../../common-objects/picture-object.md)  
 If player has an avatar, a list of [picture objects](../../common-objects/picture-object.md). Each picture object is the same avatar, but provided in different sizes. Sizes available are based on widths, and the widths `16, 32, 64, 96, 128, 256` will be shown here along with the original avatar size if it doesn't match a width in this list.  Some sizes may not show if the width is less than the original avatar width.
 
-**lastActive** [datetime?](../../data-types.md#internalH1Link0)  
+**lastActive** [`datetime?`](../../data-types.md#internalH1Link0)  
 The date and time UTC this player last interacted with these services.

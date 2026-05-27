@@ -1,7 +1,7 @@
 ---
 title: "Tilemap"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/tilemap"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -18,19 +18,19 @@ release: 476.3
 
 ---
 
-The **Tilemap** object allows tile-based projects to be designed more easily. The object's tilemap can also be edited in the [layout view](https://www.construct.net/make-games/manuals/construct-3/interface/layout-view) using the [Tilemap Bar](https://www.construct.net/make-games/manuals/construct-3/interface/bars/tilemap-bar).
+The **Tilemap** object allows tile-based projects to be designed more easily. The object's tilemap can also be edited in the [layout view](../interface/layout-view.md) using the [Tilemap Bar](../interface/bars/tilemap-bar.md).
 
 [![An example tilemap](https://construct-static.com/images/v1740/uploads/articleuploadobject/0/images/987/tilemap.png)](https://construct-static.com/images/v1740/uploads/articleuploadobject/0/images/987/tilemap.png)An example tilemap
 
 Tilemaps also have significant performance benefits over achieving the same results with other kinds of objects, such as arranging a grid of Sprites. The Tilemap object can optimise collision detection and rendering in a way that scales well even with extremely large Tilemap objects.
 
-For information about editing tilemaps in Construct, see the manual entry for the [Tilemap Bar](https://www.construct.net/make-games/manuals/construct-3/interface/bars/tilemap-bar).
+For information about editing tilemaps in Construct, see the manual entry for the [Tilemap Bar](../interface/bars/tilemap-bar.md).
 
-A useful behavior to use to move objects around on top of the Tilemap object is the [Tile movement behavior](https://www.construct.net/make-games/manuals/construct-3/behavior-reference/tile-movement).
+A useful behavior to use to move objects around on top of the Tilemap object is the [Tile movement behavior](../behavior-reference/tile-movement.md).
 
 ### Scripting
 
-When using JavaScript or TypeScript coding, the features of this object can be accessed via the [ITilemapInstance script interface](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/plugin-interfaces/tilemap).
+When using JavaScript or TypeScript coding, the features of this object can be accessed via the [ITilemapInstance script interface](../scripting/scripting-reference/plugin-interfaces/tilemap.md).
 
 ## Tilemap object image
 
@@ -146,7 +146,7 @@ Set tiles using a patch brush. This is similar to **Set tile with brush**, with 
 Like **Set tile with patch brush**, but allows you to specify the name of the brush using a string.
 
 **Load image from URL**  
-Load a new tilemap image from a given URL. It is not used until the image has finished downloading, and *On image URL loaded* triggers. Images loaded from different domains are subject to the same cross-domain restrictions as AJAX requests - for more information see the section on cross-domain in the [AJAX](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/ajax) object. Data URIs can also be passed as an image, e.g. from a canvas snapshot or camera image.
+Load a new tilemap image from a given URL. It is not used until the image has finished downloading, and *On image URL loaded* triggers. Images loaded from different domains are subject to the same cross-domain restrictions as AJAX requests - for more information see the section on cross-domain in the [AJAX](../plugin-reference/ajax.md) object. Data URIs can also be passed as an image, e.g. from a canvas snapshot or camera image.
 
 ## Tilemap expressions
 

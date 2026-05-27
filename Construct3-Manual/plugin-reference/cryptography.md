@@ -1,7 +1,7 @@
 ---
 title: "Cryptography"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/cryptography"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -40,7 +40,7 @@ Note that if you want to send data to a server securely, the best approach is to
 
 ## Processing text
 
-Since encrypted data is usually binary data that is not easily representible as text, the Cryptography object generally works with the [Binary Data object](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/binary-data) for both its input and output. However this does not preclude the ability to use text: after all, text is just another kind of binary data. You can store text in a Binary Data object with the *Set from text* action, and retrieve text from it with the *GetAllText* expression. Using these allows performing tasks like encrypting and decrypting text or hashing text.
+Since encrypted data is usually binary data that is not easily representible as text, the Cryptography object generally works with the [Binary Data object](../plugin-reference/binary-data.md) for both its input and output. However this does not preclude the ability to use text: after all, text is just another kind of binary data. You can store text in a Binary Data object with the *Set from text* action, and retrieve text from it with the *GetAllText* expression. Using these allows performing tasks like encrypting and decrypting text or hashing text.
 
 You can also reliably display and transmit binary data in a text format by encoding it as [Base64](https://en.wikipedia.org/wiki/Base64) using both the *Set from base64* action and *GetBase64* expression.
 
@@ -95,16 +95,16 @@ Triggered after a hash action when the operation completes. A tag can be specifi
 ## Cryptography actions
 
 **Encrypt binary**  
-Encrypt the contents of a given [Binary Data](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/binary-data) object. The same provided password must be specified to successfully decrypt the data. The *Iterations* parameter indicates how many times to repeat a hash function when generating an encryption key; higher values use more processing power and so slow down encryption and decryption, but make it harder to use a brute-force attack to decrypt the data. An optional tag can be specified to distinguish different encryption operations. When the data has finished being encrypted, *On encryption finished* triggers.
+Encrypt the contents of a given [Binary Data](../plugin-reference/binary-data.md) object. The same provided password must be specified to successfully decrypt the data. The *Iterations* parameter indicates how many times to repeat a hash function when generating an encryption key; higher values use more processing power and so slow down encryption and decryption, but make it harder to use a brute-force attack to decrypt the data. An optional tag can be specified to distinguish different encryption operations. When the data has finished being encrypted, *On encryption finished* triggers.
 
 > **Warning**  
 > Using encryption does not guarantee your project is secure. See the section *Encryption does not guarantee security* above.
 
 **Decrypt binary**  
-Decrypt the contents of a given [Binary Data](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/binary-data) object. Decryption will only succeed if the same password that was used to encrypt the data is provided. An optional tag can be specified to distinguish different decryption operations. When the data has finished being decrypted, *On decryption finished* triggers; if decryption fails, including due to having the wrong password, then *On decryption failed* will trigger instead.
+Decrypt the contents of a given [Binary Data](../plugin-reference/binary-data.md) object. Decryption will only succeed if the same password that was used to encrypt the data is provided. An optional tag can be specified to distinguish different decryption operations. When the data has finished being decrypted, *On decryption finished* triggers; if decryption fails, including due to having the wrong password, then *On decryption failed* will trigger instead.
 
 **Hash binary**  
-Compute a [cryptographic hash function](https://en.wikipedia.org/wiki/Cryptographic_hash_function) for the contents of a given [Binary Data](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/binary-data) object. Currently supported hash functions include SHA-256, SHA-384 and SHA-512 from the [SHA-2](https://en.wikipedia.org/wiki/SHA-2) family of functions. An optional tag can be specified to distinguish different hasing operations. When the hashing completes, *On hash finished* will trigger and the resulting hash will be available as a hexadecimal string in the *Hash* expression.
+Compute a [cryptographic hash function](https://en.wikipedia.org/wiki/Cryptographic_hash_function) for the contents of a given [Binary Data](../plugin-reference/binary-data.md) object. Currently supported hash functions include SHA-256, SHA-384 and SHA-512 from the [SHA-2](https://en.wikipedia.org/wiki/SHA-2) family of functions. An optional tag can be specified to distinguish different hasing operations. When the hashing completes, *On hash finished* will trigger and the resulting hash will be available as a hexadecimal string in the *Hash* expression.
 
 ## Cryptography expressions
 

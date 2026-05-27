@@ -1,7 +1,7 @@
 ---
 title: "AABB3D script interface"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/scripting/scripting-reference/interfaces/iaabb3d"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -10,7 +10,7 @@ release: 476.3
 
 ---
 
-The `IAABB3D` interface represents an **axis-aligned bounding box** in 3D. It contains a minimum and maximum extent on the X, Y and Z axes. It is returned by the [IWorldInstance](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/object-interfaces/iworldinstance) method `getBoundingBox3d()`.
+The `IAABB3D` interface represents an **axis-aligned bounding box** in 3D. It contains a minimum and maximum extent on the X, Y and Z axes. It is returned by the [IWorldInstance](../../../scripting/scripting-reference/object-interfaces/iworldinstance.md) method `getBoundingBox3d()`.
 
 ## AABB3D APIs
 

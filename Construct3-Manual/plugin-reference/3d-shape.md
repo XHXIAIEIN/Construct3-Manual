@@ -1,7 +1,7 @@
 ---
 title: "3D shape"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/3d-shape"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -22,7 +22,7 @@ You can learn more about 3D shape and how it works with other 3D features in the
 
 ### Scripting
 
-When using JavaScript or TypeScript coding, the features of this object can be accessed via the [I3DShapeInstance script interface](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/plugin-interfaces/3d-shape).
+When using JavaScript or TypeScript coding, the features of this object can be accessed via the [I3DShapeInstance script interface](../scripting/scripting-reference/plugin-interfaces/3d-shape.md).
 
 ## Transparency
 
@@ -66,11 +66,11 @@ Automatically hides faces of the shape that are pointing away from the camera. T
 Optionally choose a Sprite, Tiled Background or 9-Patch object to display instead of the 3D shape's own face images for a given face of the shape. An instance of the object must be placed in the same layout for this to work. The properties of this instance can also be used to control the appearance of the face on the 3D shape. This allows using animated face images (via Sprite), or varieties of tiled/repeating images for face images (via Tiled Background and 9-Patch).
 
 **Z tiling factor**  
-A scale factor to apply on the Z axis when showing a Tiled Background object as one of the faces. This should be set to 1 when the project Z axis scale is 'Regular'. This property exists only to adjust the tiling on the Z axis when the project Z axis scale is 'Normalized'. Both 'Normalized' mode and this property are now listed as [superseded features](https://www.construct.net/make-games/manuals/construct-3/tips-and-guides/superseded-features) and will be removed in future.
+A scale factor to apply on the Z axis when showing a Tiled Background object as one of the faces. This should be set to 1 when the project Z axis scale is 'Regular'. This property exists only to adjust the tiling on the Z axis when the project Z axis scale is 'Normalized'. Both 'Normalized' mode and this property are now listed as [superseded features](../tips-and-guides/superseded-features.md) and will be removed in future.
 
 ## 3D shape conditions
 
-For conditions in common to other objects, see [Common conditions](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/common-features/common-conditions).
+For conditions in common to other objects, see [Common conditions](../plugin-reference/common-features/common-conditions.md).
 
 **Compare shape**  
 Compare the current shape that is in use. This can be changed by the *Set shape* action.
@@ -80,7 +80,7 @@ Check if one of the six faces of the shape is currently set to visible. Note thi
 
 ## 3D shape actions
 
-For actions common to other objects, see [Common actions](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/common-features/common-actions).
+For actions common to other objects, see [Common actions](../plugin-reference/common-features/common-actions.md).
 
 **Set back face culling**  
 Change the *Back face culling* property. See above for more details.
@@ -108,7 +108,7 @@ Change the multiple used for tiling images along the Z axis of the object. See t
 
 ## 3D shape expressions
 
-For expressions common to other objects, see [common expressions](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/common-features/common-expressions).
+For expressions common to other objects, see [common expressions](../plugin-reference/common-features/common-expressions.md).
 
 **FaceImagePointCount(Face)**  
 Retrieve the 3D position of an image point on any of the 3D shape's faces. The face is a zero-based index of the face as shown in the image editor, i.e.:

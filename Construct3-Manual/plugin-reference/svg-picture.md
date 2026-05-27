@@ -1,7 +1,7 @@
 ---
 title: "SVG Picture"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/svg-picture"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -24,7 +24,7 @@ SVG Picture currently does not support animations and only shows a static image.
 
 ### Scripting
 
-When using JavaScript or TypeScript coding, the features of this object can be accessed via the [ISVGPictureInstance script interface](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/plugin-interfaces/svg-picture).
+When using JavaScript or TypeScript coding, the features of this object can be accessed via the [ISVGPictureInstance script interface](../scripting/scripting-reference/plugin-interfaces/svg-picture.md).
 
 ## Importing an SVG image
 
@@ -56,7 +56,7 @@ Choose the position of the origin of the object relative to its unrotated boundi
 
 ## SVG Picture conditions
 
-SVG Picture does not have any of its own conditions. For conditions in common to other objects, see [Common conditions](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/common-features/common-conditions).
+SVG Picture does not have any of its own conditions. For conditions in common to other objects, see [Common conditions](../plugin-reference/common-features/common-conditions.md).
 
 ## SVG Picture actions
 

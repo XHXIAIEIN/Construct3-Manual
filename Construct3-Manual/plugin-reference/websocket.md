@@ -1,7 +1,7 @@
 ---
 title: "WebSocket"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/websocket"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -31,7 +31,7 @@ On today's web, it is best practice to use secure connections for all services. 
 
 ## WebSockets and multiplayer games
 
-It may be tempting to use WebSockets to design real-time multiplayer games. Despite the fact they communicate in real-time, WebSockets are not a suitable choice for latency-sensitive real-time games. The underlying transport uses reliable transmission, meaning a single dropped packet can hold up all transmission until the packet is retransmitted successfully. For games with demanding real-time requirements, this can cause unplayable levels of latency. It is usually difficult to design around this without changing the transmission mode, which WebSockets do not support. Consider using the specially-designed [Multiplayer](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/multiplayer) plugin  `[Paid plans only]`  instead.
+It may be tempting to use WebSockets to design real-time multiplayer games. Despite the fact they communicate in real-time, WebSockets are not a suitable choice for latency-sensitive real-time games. The underlying transport uses reliable transmission, meaning a single dropped packet can hold up all transmission until the packet is retransmitted successfully. For games with demanding real-time requirements, this can cause unplayable levels of latency. It is usually difficult to design around this without changing the transmission mode, which WebSockets do not support. Consider using the specially-designed [Multiplayer](../plugin-reference/multiplayer.md) plugin  `[Paid plans only]`  instead.
 
 On the other hand, WebSockets should be suitable for games without such a demanding real-time requirement, like turn-based games. It should also be useful for application services, like chat rooms. Note this will still require you to create your own WebSocket server.
 
@@ -60,7 +60,7 @@ Triggered when an error occurs in the WebSocket connection. Use the *ErrorMsg* e
 Triggered when the connection is successfully established and the communication channel is now open.
 
 **On binary message**  
-Triggered when a binary message arrives from the server over an open connection. The specified [Binary Data](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/binary-data) object has the contents of the message written to it when the trigger fires, allowing access to the message content.
+Triggered when a binary message arrives from the server over an open connection. The specified [Binary Data](../plugin-reference/binary-data.md) object has the contents of the message written to it when the trigger fires, allowing access to the message content.
 
 **On text message**  
 Triggered when a text message arrives from the server over an open connection. Use the *MessageText* expression to retrieve the content of the message.
@@ -76,7 +76,7 @@ Connect to a WebSocket server. WebSocket server addresses typically start with *
 The *Protocol* parameter may be optionally set to a required sub-protocol (sent with the *Sec-WebSocket-Protocol* header in the WebSocket handshake). If the server does not indicate it supports the chosen sub-protocol, the connection will fail to be established. This can be used to prevent the client connecting to WebSocket servers that do not understand your application's specific messages.
 
 **Send binary**  
-Send the contents of a [Binary Data](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/binary-data) object as a binary message to the server. This is ignored if the connection is not currently open.
+Send the contents of a [Binary Data](../plugin-reference/binary-data.md) object as a binary message to the server. This is ignored if the connection is not currently open.
 
 **Send text**  
 Send a text string to the server. This is ignored if the connection is not currently open.

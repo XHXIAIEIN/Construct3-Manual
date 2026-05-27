@@ -1,7 +1,7 @@
 ---
 title: "IBehaviorType interface"
 source: "https://www.construct.net/en/make-games/manuals/addon-sdk/reference/object-interfaces/ibehaviortype"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -15,7 +15,7 @@ The `IBehaviorType` interface represents a behavior type in Construct. A behavio
 ## Methods
 
 **GetProject()**  
-Return the [IProject](https://www.construct.net/make-games/manuals/addon-sdk/reference/model-interfaces/iproject) representing the behavior type's associated project.
+Return the [IProject](../../reference/model-interfaces/iproject.md) representing the behavior type's associated project.
 
 **GetName()**  
 Returns a string of the behavior type name.

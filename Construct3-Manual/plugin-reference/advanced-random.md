@@ -1,7 +1,7 @@
 ---
 title: "Advanced random"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/advanced-random"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -24,7 +24,7 @@ It also provides seeded random functions, which provide the same pseudo-random n
 
 ### Scripting
 
-When using JavaScript or TypeScript coding, the features of this object can be accessed via the [IAdvancedRandomObjectType script interface](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/plugin-interfaces/advanced-random).
+When using JavaScript or TypeScript coding, the features of this object can be accessed via the [IAdvancedRandomObjectType script interface](../scripting/scripting-reference/plugin-interfaces/advanced-random.md).
 
 ## Gradients
 

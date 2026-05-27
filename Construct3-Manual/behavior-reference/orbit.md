@@ -1,7 +1,7 @@
 ---
 title: "Orbit behavior"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/behavior-reference/orbit"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -17,7 +17,7 @@ The **Orbit behavior** moves an object in a circle or ellipse around a point. Th
 
 ### Scripting
 
-When using JavaScript or TypeScript coding, the features of this behavior can be accessed via the [IOrbitBehaviorInstance script interface](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/behavior-interfaces/orbit).
+When using JavaScript or TypeScript coding, the features of this behavior can be accessed via the [IOrbitBehaviorInstance script interface](../scripting/scripting-reference/behavior-interfaces/orbit.md).
 
 ## Orbit properties
 

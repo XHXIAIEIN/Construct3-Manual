@@ -1,7 +1,7 @@
 ---
 title: "Using an external editor"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/scripting/guides/using-external-editor"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -16,7 +16,7 @@ Using TypeScript requires some extra steps which are detailed below. However the
 
 ### Step 1: save a folder project
 
-First of all, make sure you save your project to a folder. This means all your project files, including your script files, are saved as individual files within the project folder, rather than all contained within a .c3p file. For more information see the section on project folders in [Saving projects](https://www.construct.net/make-games/manuals/construct-3/overview/saving-projects).
+First of all, make sure you save your project to a folder. This means all your project files, including your script files, are saved as individual files within the project folder, rather than all contained within a .c3p file. For more information see the section on project folders in [Saving projects](../../overview/saving-projects.md).
 
 ### Step 2: enable auto-reload
 
@@ -86,4 +86,4 @@ Note that we recommend using the workflow described here, where you only have th
 
 If your Construct project has both a .ts and .js version of the same file, Construct gives precedence to the .js file. This should mean your external editor workflow keeps working as expected, but there's no reason to keep the .ts file in the project - Construct isn't actually using it at all, and so to avoid confusion, we would recommend not having it in your project. In particular this could be confusing if you try to edit the .ts file from within Construct: it would not change the .js file and so not affect the way your project works, and auto-reload mode would overwrite the file on the next preview, so your changes would be lost anyway.
 
-For more advice about TypeScript workflows, see [TypeScript in Construct](https://www.construct.net/make-games/manuals/construct-3/scripting/using-scripting/typescript-construct).
+For more advice about TypeScript workflows, see [TypeScript in Construct](../../scripting/using-scripting/typescript-construct.md).

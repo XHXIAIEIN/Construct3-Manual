@@ -1,16 +1,16 @@
 ---
 title: "Array editor"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/interface/file-editors/array-editor"
-release: 476.3
+release: 487
 ---
 
-`[Paid plans only]`  The **Array editor** allows editing an array data file for the [Array object](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/array). The data you enter can be loaded at runtime by loading the [project file](https://www.construct.net/make-games/manuals/construct-3/project-primitives/files) in to the Array object. It provides a visual way to set the initial data for an Array. The Array Editor appears when editing or adding an array data file (in JSON format) in the [Project Bar](https://www.construct.net/make-games/manuals/construct-3/interface/bars/project-bar).
+`[Paid plans only]`  The **Array editor** allows editing an array data file for the [Array object](../../plugin-reference/array.md). The data you enter can be loaded at runtime by loading the [project file](../../project-primitives/files.md) in to the Array object. It provides a visual way to set the initial data for an Array. The Array Editor appears when editing or adding an array data file (in JSON format) in the [Project Bar](../../interface/bars/project-bar.md).
 
 [![The Array Editor](https://construct-static.com/images/v1740/r/uploads/articleuploadobject/0/images/1064/array-editor_v750.png)](https://construct-static.com/images/v1740/uploads/articleuploadobject/0/images/1064/array-editor.png)The Array Editor
 
 ### Opening the Array Editor
 
-To open the Array Editor in a new project, start by adding a new *Array* file in the *Files* folder of the [Project Bar](https://www.construct.net/make-games/manuals/construct-3/interface/bars/project-bar). For more information, see [project files](https://www.construct.net/make-games/manuals/construct-3/project-primitives/files).
+To open the Array Editor in a new project, start by adding a new *Array* file in the *Files* folder of the [Project Bar](../../interface/bars/project-bar.md). For more information, see [project files](../../project-primitives/files.md).
 
 ### Editing arrays
 

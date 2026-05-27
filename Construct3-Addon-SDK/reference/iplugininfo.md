@@ -1,7 +1,7 @@
 ---
 title: "IPluginInfo interface"
 source: "https://www.construct.net/en/make-games/manuals/addon-sdk/reference/iplugininfo"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -123,19 +123,19 @@ Add common built-in sets of actions, conditions and expressions (ACEs) to the pl
 > **Note:** if adding common scene graph ACEs, your plugin must be prepared to handle being added in to a scene-graph hierarchy, and having its position, size and angle controlled automatically. It must also support all the properties modifiable by hierarchies, otherwise the scene graph feature may not work as expected.
 
 **SetProperties(propertiesArray)**  
-Set the available addon properties by passing an array of [PluginProperty](https://www.construct.net/make-games/manuals/addon-sdk/reference/pluginproperty). See [Configuring Plugins](https://www.construct.net/make-games/manuals/addon-sdk/guide/configuring-plugins) for more information.
+Set the available addon properties by passing an array of [PluginProperty](../reference/pluginproperty.md). See [Configuring Plugins](../guide/configuring-plugins.md) for more information.
 
 **AddCordovaPluginReference(opts)**  
-Add a dependency on a Cordova plugin, that will be included when using the Cordova exporter. For more information see [Specifying dependencies](https://www.construct.net/make-games/manuals/addon-sdk/reference/specifying-dependencies).
+Add a dependency on a Cordova plugin, that will be included when using the Cordova exporter. For more information see [Specifying dependencies](../reference/specifying-dependencies.md).
 
 **AddCordovaResourceFile(opts)**  
-Add a resource file to be included with Cordova exports. For more information see [Specifying dependencies](https://www.construct.net/make-games/manuals/addon-sdk/reference/specifying-dependencies).
+Add a resource file to be included with Cordova exports. For more information see [Specifying dependencies](../reference/specifying-dependencies.md).
 
 **AddFileDependency(opts)**  
-Add a dependency on another file included in the addon. For more information see [Specifying dependencies](https://www.construct.net/make-games/manuals/addon-sdk/reference/specifying-dependencies).
+Add a dependency on another file included in the addon. For more information see [Specifying dependencies](../reference/specifying-dependencies.md).
 
 **AddRemoteScriptDependency(url, type)**  
-Add a script dependency to a remote URL (on a different origin). By default it loads the URL as a "classic" script; the `type` parameter is optional and can be set to the string `"module"` to load the dependency as a module script instead. For more information see [Specifying dependencies](https://www.construct.net/make-games/manuals/addon-sdk/reference/specifying-dependencies).
+Add a script dependency to a remote URL (on a different origin). By default it loads the URL as a "classic" script; the `type` parameter is optional and can be set to the string `"module"` to load the dependency as a module script instead. For more information see [Specifying dependencies](../reference/specifying-dependencies.md).
 
 **SetGooglePlayServicesEnabled(enabled)**  
 Pass `true` to enable Google Play Services in Cordova Android exports. `<preference name="GradlePluginGoogleServicesEnabled" value="true" />` will be added in config.xml.
@@ -150,10 +150,10 @@ Pass an array of strings to set the list of runtime scripts the addon uses. The 
 Add a single runtime script path to the existing list of runtime scripts the addon uses, e.g. "c3runtime/additionalScript.js".
 
 **SetRuntimeModuleMainScript(path)**  
-Set the main script that the runtime loads as a module. When this method is called, Construct will only load that script, and it is expected that all your other scripts are imported in the main script. If this method is not called, Construct automatically generates a main script that imports every single runtime script - but note that makes it difficult to use modules properly. See [runtime scripts](https://www.construct.net/make-games/manuals/addon-sdk/guide/runtime-scripts) for more information.
+Set the main script that the runtime loads as a module. When this method is called, Construct will only load that script, and it is expected that all your other scripts are imported in the main script. If this method is not called, Construct automatically generates a main script that imports every single runtime script - but note that makes it difficult to use modules properly. See [runtime scripts](../guide/runtime-scripts.md) for more information.
 
 **SetDOMSideScripts(arr)**  
-Specify an array of script paths to load in the main document context rather than the runtime context. For more information see the section *DOM calls in the C3 runtime* in [Runtime scripts](https://www.construct.net/make-games/manuals/addon-sdk/guide/runtime-scripts).
+Specify an array of script paths to load in the main document context rather than the runtime context. For more information see the section *DOM calls in the C3 runtime* in [Runtime scripts](../guide/runtime-scripts.md).
 
 **SetScriptInterfaceNames(opts)**  
 Use this method to tell Construct the names of your script interface classes. This is necessary to generate the correct TypeScript definition files. `opts` is an object which allows specifying the names for the `instance`, `objectType` and `plugin` interface names as necessary, e.g.:
@@ -170,7 +170,7 @@ this._info.SetTypeScriptDefinitionFiles(["c3runtime/ISpriteInstance.d.ts"]);
 ```
 
 **SetWrapperExportProperties(componentId, propertyIds)**  
-For use with single-global plugins using [wrapper extensions](https://www.construct.net/make-games/manuals/addon-sdk/guide/wrapper-extensions). Specify an array of property IDs which will have their values exported to package.json under the key `"exported-properties"`. For example the following call:
+For use with single-global plugins using [wrapper extensions](../guide/wrapper-extensions.md). Specify an array of property IDs which will have their values exported to package.json under the key `"exported-properties"`. For example the following call:
 
 ```javascript
 this._info.SetWrapperExportProperties("my-component-id", ["first-property", "second-property"]);

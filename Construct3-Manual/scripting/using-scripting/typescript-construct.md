@@ -1,7 +1,7 @@
 ---
 title: "TypeScript in Construct"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/scripting/using-scripting/typescript-construct"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -19,13 +19,13 @@ There are a few details specific to using TypeScript in Construct. This section 
 
 ## TypeScript in the Construct editor
 
-If you are writing TypeScript code in Construct itself, you should only have TypeScript files (.ts) in your project. Construct will automatically compile these to JavaScript (.js) files for you behind the scenes, so you don't need to worry about having .js files in your project. The only times you'll see the JavaScript output of your TypeScript code is when [debugging](https://www.construct.net/make-games/manuals/construct-3/scripting/using-scripting/debugging-script) or after exporting your project.
+If you are writing TypeScript code in Construct itself, you should only have TypeScript files (.ts) in your project. Construct will automatically compile these to JavaScript (.js) files for you behind the scenes, so you don't need to worry about having .js files in your project. The only times you'll see the JavaScript output of your TypeScript code is when [debugging](../../scripting/using-scripting/debugging-script.md) or after exporting your project.
 
 If you do have both a .ts and a .js file with the same name in your project, Construct gives priority to the .js file. In other words it will ignore your .ts file and just use the contents of the .js file.
 
 ## Using an external editor
 
-If you [use an external editor](https://www.construct.net/make-games/manuals/construct-3/scripting/guides/using-external-editor) to write TypeScript code, you most likely want to keep the .ts files external, and only import the .js output files to your Construct project. This is because your external code editor will use its own version of TypeScript. Using two different versions of TypeScript is likely to cause awkward compatibility problems, so the best workflow is to let your external editor compile TypeScript to JavaScript, and then just use the .js files in Construct so it uses them as-is. You can set your code editor to automatically compile TypeScript to JavaScript when saving a file, and set Construct to auto-reload the script files on preview, so then you can have an easy workflow where saving a TypeScript file will automatically reflect the changes in the next Construct preview.
+If you [use an external editor](../../scripting/guides/using-external-editor.md) to write TypeScript code, you most likely want to keep the .ts files external, and only import the .js output files to your Construct project. This is because your external code editor will use its own version of TypeScript. Using two different versions of TypeScript is likely to cause awkward compatibility problems, so the best workflow is to let your external editor compile TypeScript to JavaScript, and then just use the .js files in Construct so it uses them as-is. You can set your code editor to automatically compile TypeScript to JavaScript when saving a file, and set Construct to auto-reload the script files on preview, so then you can have an easy workflow where saving a TypeScript file will automatically reflect the changes in the next Construct preview.
 
 Using an external editor also allows you to use a newer or different version of TypeScript to the one built in to Construct. Construct's built-in TypeScript version is logged to the browser console the first time a code editor is opened.
 
@@ -63,7 +63,7 @@ async function OnBeforeProjectStart(runtime)
 }
 ```
 
-TypeScript will identify the `runtime` parameter as an error, because it does not have a required type annotation. Construct's runtime interface type is [IRuntime](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/iruntime). So the parameter must be marked as having the type `IRuntime`, as shown below.
+TypeScript will identify the `runtime` parameter as an error, because it does not have a required type annotation. Construct's runtime interface type is [IRuntime](../../scripting/scripting-reference/iruntime.md). So the parameter must be marked as having the type `IRuntime`, as shown below.
 
 ```typescript
 async function OnBeforeProjectStart(runtime: IRuntime)
@@ -72,7 +72,7 @@ async function OnBeforeProjectStart(runtime: IRuntime)
 }
 ```
 
-In many cases TypeScript can automatically infer types from existing code (see [Type inference](https://www.typescriptlang.org/docs/handbook/type-inference.html)) so a type annotation is not always needed in every place in the code. However there are several places like function parameters that will need type annotations to be added. Familiarity with Construct's built-in class names is useful as they are sometimes needed as types, such as `IRuntime` above - all the class names are included in the [scripting reference](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference) section of the manual.
+In many cases TypeScript can automatically infer types from existing code (see [Type inference](https://www.typescriptlang.org/docs/handbook/type-inference.html)) so a type annotation is not always needed in every place in the code. However there are several places like function parameters that will need type annotations to be added. Familiarity with Construct's built-in class names is useful as they are sometimes needed as types, such as `IRuntime` above - all the class names are included in the [scripting reference](../../scripting/scripting-reference.md) section of the manual.
 
 ### Instance types
 
@@ -102,7 +102,7 @@ This is known as the [non-null assertion operator](https://www.typescriptlang.or
 
 ### Subclassing
 
-If your project uses [subclassing](https://www.construct.net/make-games/manuals/construct-3/scripting/guides/subclassing-instances) to customize the instance class for Construct objects, then you'll find some Construct APIs still return instances of the default type. For example instances of a Globin sprite object will be typed as the default *InstanceType.Goblin* instead of a custom *GoblinInstance* class, e.g.:
+If your project uses [subclassing](../../scripting/guides/subclassing-instances.md) to customize the instance class for Construct objects, then you'll find some Construct APIs still return instances of the default type. For example instances of a Globin sprite object will be typed as the default *InstanceType.Goblin* instead of a custom *GoblinInstance* class, e.g.:
 
 ```typescript
 const inst = runtime.objects.Goblin.getFirstInstance()!;

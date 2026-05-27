@@ -1,7 +1,7 @@
 ---
 title: "Testing addons in Developer Mode"
 source: "https://www.construct.net/en/make-games/manuals/addon-sdk/guide/using-developer-mode"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -18,7 +18,7 @@ While developing an addon, it is inconvenient to have to package and install a n
 
 ## Step 1: enable Developer Mode
 
-For these steps to work, you must first [enable Developer Mode](https://www.construct.net/make-games/manuals/addon-sdk/guide/enabling-developer-mode).
+For these steps to work, you must first [enable Developer Mode](../guide/enabling-developer-mode.md).
 
 ## Step 2: start a local web server
 
@@ -36,14 +36,14 @@ To do this you need to enable CORS if your web server provides a setting for tha
 
 You may also wish to review the caching headers to ensure your local server does not return old cached files. Disabling caching entirely will ensure Construct 3 always receives the latest files.
 
-Once the server is fully configured, simply host the contents of the [c3addon file](https://www.construct.net/make-games/manuals/addon-sdk/guide/c3addon-file) in a folder on your local web server. For example the URL *http://localhost:65432/myaddon/addon.json* should serve the addon.json file for your addon.
+Once the server is fully configured, simply host the contents of the [c3addon file](../guide/c3addon-file.md) in a folder on your local web server. For example the URL *http://localhost:65432/myaddon/addon.json* should serve the addon.json file for your addon.
 
 > **Tip**  
 > In modern browsers, `http://localhost` counts as a secure context even though it does not use HTTPS. Therefore you should not need to set up SSL/TLS for the local server.
 
 ## Step 3: update addon.json to include file list
 
-Normally when files are extracted from the zip-format .c3addon file, Construct 3 can obtain a file list from the zip. However when loading from a local web server, Construct 3 needs another way to identify all available files. So you must update addon.json to include a complete file list. For more information see the section *Developer mode addons* in [Addon metadata](https://www.construct.net/make-games/manuals/addon-sdk/guide/addon-metadata).
+Normally when files are extracted from the zip-format .c3addon file, Construct 3 can obtain a file list from the zip. However when loading from a local web server, Construct 3 needs another way to identify all available files. So you must update addon.json to include a complete file list. For more information see the section *Developer mode addons* in [Addon metadata](../guide/addon-metadata.md).
 
 The file list can be left in when distributing your .c3addon file — there's no need to later remove it.
 

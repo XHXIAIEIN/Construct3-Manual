@@ -1,7 +1,7 @@
 ---
 title: "Event variables"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/project-primitives/events/variables"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -13,17 +13,17 @@ release: 476.3
 
 ---
 
-                **Event variables** are number or text values which are either **global** to the whole project or **local** to a range of events. They are modified using the [Event Variable dialog](https://www.construct.net/make-games/manuals/construct-3/interface/dialogs/event-variable). To add an event variable, **right-click** on an event, another variable, or an empty space in the event sheet, and select `Add global variable` or `Add local variable`, or press the <kbd>V</kbd> [keyboard shortcut](https://www.construct.net/make-games/manuals/construct-3/interface/keyboard-shortcuts). Variables at the root level of the event sheet (not indented beneath anything else) become global variables, whereas variables in groups or sub-events become local variables.
+                **Event variables** are number or text values which are either **global** to the whole project or **local** to a range of events. They are modified using the [Event Variable dialog](../../interface/dialogs/event-variable.md). To add an event variable, **right-click** on an event, another variable, or an empty space in the event sheet, and select `Add global variable` or `Add local variable`, or press the <kbd>V</kbd> [keyboard shortcut](../../interface/keyboard-shortcuts.md). Variables at the root level of the event sheet (not indented beneath anything else) become global variables, whereas variables in groups or sub-events become local variables.
 
-Event variables are modified with the system actions in the *Global & local variables* category. They can be retrieved by simply using their name in [expressions](https://www.construct.net/make-games/manuals/construct-3/project-primitives/events/expressions).
+Event variables are modified with the system actions in the *Global & local variables* category. They can be retrieved by simply using their name in [expressions](../../project-primitives/events/expressions.md).
 
 ## Global variables
 
-Global variables show a globe icon. They are always at the top level of an event sheet - they are not [sub-events](https://www.construct.net/make-games/manuals/construct-3/project-primitives/events/sub-events) or inside any [groups](https://www.construct.net/make-games/manuals/construct-3/project-primitives/events/groups).
+Global variables show a globe icon. They are always at the top level of an event sheet - they are not [sub-events](../../project-primitives/events/sub-events.md) or inside any [groups](../../project-primitives/events/groups.md).
 
 [![A global variable](https://construct-static.com/images/v1740/r/uploads/articleuploadobject/0/images/944/global-variable_v320.png)](https://construct-static.com/images/v1740/uploads/articleuploadobject/0/images/944/global-variable.png)
 
-Global variables store their values between layouts. Events in any layout can access any global variable, even if it was created in a different event sheet that is not [included](https://www.construct.net/make-games/manuals/construct-3/project-primitives/events/includes).
+Global variables store their values between layouts. Events in any layout can access any global variable, even if it was created in a different event sheet that is not [included](../../project-primitives/events/includes.md).
 
 Global variables can be moved to another event sheet by cutting and pasting them. After being cut, references to the global variable will disappear because it has been removed; this is normal and nothing to worry about. When you paste the global variable, the references that disappeared will reappear again. Alternatively you can **right-click** the global variable and select `Move to event sheet...`.
 
@@ -53,4 +53,4 @@ Both global and local variables can be marked *constant*. This makes them read-o
 
 ## Finding references to variables
 
-`[Paid plans only]`  You can quickly see a list of all references to a global or local variable by **right-clicking** it and selecting `Find all references...`. This will open the [Find Results bar](https://www.construct.net/make-games/manuals/construct-3/interface/bars/find-results-bar) with a list of all places in the project the variable is used. This is also helpful for identifying if there are no references so the variable can be safely deleted.
+`[Paid plans only]`  You can quickly see a list of all references to a global or local variable by **right-clicking** it and selecting `Find all references...`. This will open the [Find Results bar](../../interface/bars/find-results-bar.md) with a list of all places in the project the variable is used. This is also helpful for identifying if there are no references so the variable can be safely deleted.

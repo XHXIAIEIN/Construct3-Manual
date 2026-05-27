@@ -1,7 +1,7 @@
 ---
 title: "Binary Data"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/binary-data"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -15,7 +15,7 @@ release: 476.3
 
 The **Binary Data plugin** allows raw access to an allocated section of memory (often referred to as a *buffer*). For example it could allocate 16 bytes of memory, and read and write anywhere in that buffer as individual bytes, 32-bit integers, floating point numbers, text, and so on.
 
-A comprehensive description of how binary data/computer memory storage works is out of the scope of this manual. However there is lots of information on the Internet that covers it, and most computer science or computing courses will also cover it. The Binary Data object is also useful even if you do not access its contents: it integrates with other plugins like [AJAX](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/ajax) and [Local Storage](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/local-storage), allowing binary data such as images to be stored or transferred in useful ways. Despite the name, Binary Data can also store text, using the *Set from text* action and *GetAllText* expression, which can be useful with other plugins such as Cryptography.
+A comprehensive description of how binary data/computer memory storage works is out of the scope of this manual. However there is lots of information on the Internet that covers it, and most computer science or computing courses will also cover it. The Binary Data object is also useful even if you do not access its contents: it integrates with other plugins like [AJAX](../plugin-reference/ajax.md) and [Local Storage](../plugin-reference/local-storage.md), allowing binary data such as images to be stored or transferred in useful ways. Despite the name, Binary Data can also store text, using the *Set from text* action and *GetAllText* expression, which can be useful with other plugins such as Cryptography.
 
 > **Tip**  
 > Construct expressions, like JavaScript, only use double-precision floating point numbers (Float64). When reading and writing other data types with Binary Data, they are converted to and from Float64 - no other types are used in expressions. Fortunately Float64 can store all other types losslessly.
@@ -28,7 +28,7 @@ A comprehensive description of how binary data/computer memory storage works is 
 
 ### Scripting
 
-When using JavaScript or TypeScript coding, the features of this object can be accessed via the [IBinaryDataInstance script interface](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/plugin-interfaces/binary-data). (JavaScript and TypeScript have support for binary data built-in, but this allows for interacting with binary data used in event sheets.)
+When using JavaScript or TypeScript coding, the features of this object can be accessed via the [IBinaryDataInstance script interface](../scripting/scripting-reference/plugin-interfaces/binary-data.md). (JavaScript and TypeScript have support for binary data built-in, but this allows for interacting with binary data used in event sheets.)
 
 ## Binary Data properties
 

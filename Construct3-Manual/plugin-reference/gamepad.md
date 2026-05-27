@@ -1,7 +1,7 @@
 ---
 title: "Gamepad"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/gamepad"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -39,7 +39,7 @@ To control behaviors with Gamepad input, use the *Simulate control* action. An e
 
 [![Events to control a behavior with a gamepad](https://construct-static.com/images/v1748/r/uploads/articleuploadobject/0/images/995/gamepad-controls_v600.png)](https://construct-static.com/images/v1748/uploads/articleuploadobject/0/images/995/gamepad-controls.png)
 
-For more information, see the section on *Custom controls* in the [Behavior reference](https://www.construct.net/make-games/manuals/construct-3/behavior-reference).
+For more information, see the section on *Custom controls* in the [Behavior reference](../behavior-reference.md).
 
 ## Multiple gamepads
 

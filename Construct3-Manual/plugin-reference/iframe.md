@@ -1,7 +1,7 @@
 ---
 title: "iframe"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/iframe"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -23,7 +23,7 @@ This object can also be used to show embedded content, such as YouTube videos. F
 
 ## Layering HTML objects
 
-This object displays using a HTML element rather than drawing in to the canvas. This means its layering works differently to other objects. To learn more about how to layer HTML objects, see [HTML layers](https://www.construct.net/make-games/manuals/construct-3/tips-and-guides/html-layers).
+This object displays using a HTML element rather than drawing in to the canvas. This means its layering works differently to other objects. To learn more about how to layer HTML objects, see [HTML layers](../tips-and-guides/html-layers.md).
 
 ## iframe properties
 
@@ -68,7 +68,7 @@ Load a string of HTML content in the iframe. This is similar to using the *HTML 
 **Navigate to URL**  
 Load a new URL in the iframe. If the iframe was previously displaying a string of HTML, it will switch to loading this URL instead.
 
-****
+****  
 
 ## iframe expressions
 

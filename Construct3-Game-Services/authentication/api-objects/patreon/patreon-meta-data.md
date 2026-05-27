@@ -1,7 +1,7 @@
 ---
 title: "Meta Data Object"
 source: "https://www.construct.net/en/game-services/manuals/game-services/authentication/api-objects/patreon/patreon-meta-data"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -26,5 +26,5 @@ This object is returned along with a player's Patreon login provider.  It contai
 
 ## Object Properties
 
-**memberships** Array<[PatreonMembership](../../../authentication/api-objects/patreon/membership.md)>
+**memberships** [`Array<PatreonMembership>`](../../../authentication/api-objects/patreon/membership.md)  
 The list of Patreon memberships this player belongs to.

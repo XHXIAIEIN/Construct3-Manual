@@ -1,7 +1,7 @@
 ---
 title: "Text script interface"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/scripting/scripting-reference/plugin-interfaces/text"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -81,13 +81,13 @@ Return a boolean indicating if there is text with a specific tag at the given po
 Look up the tag for a part of the text at a given position and return the tag if any, else return an empty string if no tag is specified. For example if the text has the BBcode `Hello [tag=mytag]world[/tag]`, then the tag at a position over the word "world" is "mytag", and the tag at a position over the word "Hello" is "".
 
 **getTagCount(tag)**  
-Get the number of fragments, and the size and position of each fragment by its zero-based index, for a given tag. Note that a single tag may be broken in to multiple fragments - see the section *Tagged range fragmentation* in the [Text object manual entry](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/text) for more details. The `getTagPositionAndSize()` method returns the position and size as an object with the properties `{x, y, width, height}`.
+Get the number of fragments, and the size and position of each fragment by its zero-based index, for a given tag. Note that a single tag may be broken in to multiple fragments - see the section *Tagged range fragmentation* in the [Text object manual entry](../../../plugin-reference/text.md) for more details. The `getTagPositionAndSize()` method returns the position and size as an object with the properties `{x, y, width, height}`.
 
 **getTagPositionAndSize(tag, index)**  
-Get the number of fragments, and the size and position of each fragment by its zero-based index, for a given tag. Note that a single tag may be broken in to multiple fragments - see the section *Tagged range fragmentation* in the [Text object manual entry](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/text) for more details. The `getTagPositionAndSize()` method returns the position and size as an object with the properties `{x, y, width, height}`.
+Get the number of fragments, and the size and position of each fragment by its zero-based index, for a given tag. Note that a single tag may be broken in to multiple fragments - see the section *Tagged range fragmentation* in the [Text object manual entry](../../../plugin-reference/text.md) for more details. The `getTagPositionAndSize()` method returns the position and size as an object with the properties `{x, y, width, height}`.
 
 **changeIconSet(objectClass)**  
-Changes the *Icon set* property, replacing the Sprite used for BBcode icons to the one specified by the given [IObjectClass](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/object-interfaces/iobjectclass) (which must be from a Sprite object). This can be used to change the set of icons displayed by the Text object. Note if the new Sprite object does not have the same number of animation frames, or the same animation frame tags, then some icons may disappear.
+Changes the *Icon set* property, replacing the Sprite used for BBcode icons to the one specified by the given [IObjectClass](../../../scripting/scripting-reference/object-interfaces/iobjectclass.md) (which must be from a Sprite object). This can be used to change the set of icons displayed by the Text object. Note if the new Sprite object does not have the same number of animation frames, or the same animation frame tags, then some icons may disappear.
 
 **async getAsHtmlString()**  
 Converts the contents of the Text object, including any icons, in to a string of HTML. This process is asynchronous so the method must be awaited. It resolves with a string of HTML code. The result is cached (and updates the *AsHTML* expression) so repeat calls will resolve with the same HTML string, until the Text object contents is modified, after which the next call will regenerate the HTML string again.

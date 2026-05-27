@@ -1,7 +1,7 @@
 ---
 title: "Text"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/text"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -19,11 +19,11 @@ release: 476.3
 
 The **Text** object can display text using a font in your project. Note that there are not many built-in fonts common to all computers. Instead you can import **web fonts** for use with the Text object.
 
-Note the Text object is used for displaying text only. Don't confuse it with the [Text input](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/text-input) object, which is a form control used for entering text in to.
+Note the Text object is used for displaying text only. Don't confuse it with the [Text input](../plugin-reference/text-input.md) object, which is a form control used for entering text in to.
 
 ### Scripting
 
-When using JavaScript or TypeScript coding, the features of this object can be accessed via the [ITextInstance script interface](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/plugin-interfaces/text).
+When using JavaScript or TypeScript coding, the features of this object can be accessed via the [ITextInstance script interface](../scripting/scripting-reference/plugin-interfaces/text.md).
 
 ## Using web fonts
 
@@ -37,9 +37,9 @@ Follow these steps to use a custom web font in the Text object.
 > Be sure to use WOFF or WOFF2 format fonts, as these are the only formats that work consistently across all platforms. If you use other formats like TTF or OTF, they may appear to work, but then stop working when you export your project to a different platform.
 
 2. Download the **.woff** or **.woff2** file for the web font.
-3. In the [Project Bar](https://www.construct.net/make-games/manuals/construct-3/interface/bars/project-bar), **right-click** the **Fonts** folder and select `Import fonts`.
-4. Import the .woff or .woff2 file you downloaded previously. This will add the web font file as a [project file](https://www.construct.net/make-games/manuals/construct-3/project-primitives/files).
-5. Select a Text object in the Layout View, and click the button next to the *Font* property in the [Properties Bar](https://www.construct.net/make-games/manuals/construct-3/interface/bars/properties-bar).
+3. In the [Project Bar](../interface/bars/project-bar.md), **right-click** the **Fonts** folder and select `Import fonts`.
+4. Import the .woff or .woff2 file you downloaded previously. This will add the web font file as a [project file](../project-primitives/files.md).
+5. Select a Text object in the Layout View, and click the button next to the *Font* property in the [Properties Bar](../interface/bars/properties-bar.md).
 6. In the Font Picker dialog, pick the web font you imported from the second drop-down list (under *Or pick a web font from this project*), and click OK.
 
 The Text object will now be displaying the custom web font in the Layout View. Since the web font is bundled with your project, it will be available on any platform.
@@ -50,7 +50,7 @@ Note: the Free Edition of Construct is limited to only importing one web font.
 
 The Text object does not display anything if its bounding rectangle is too small to fit a single letter of text. If text objects appear to go invisible, try resizing them larger.
 
-Different browsers render text in different ways. This means you should expect the appearance of the Text object to vary slightly across browsers. You should test your project in a range of browsers to ensure text objects display how you intend for all users. For more information see [Best practices](https://www.construct.net/make-games/manuals/construct-3/tips-and-guides/best-practices).
+Different browsers render text in different ways. This means you should expect the appearance of the Text object to vary slightly across browsers. You should test your project in a range of browsers to ensure text objects display how you intend for all users. For more information see [Best practices](../tips-and-guides/best-practices.md).
 
 ## Using BBCode
 
@@ -85,7 +85,7 @@ See the [Text formatting example](https://editor.construct.net/#open=text-format
 ## Tagged range fragmentation
 
 > **Tip**  
-> This section also applies to the [Sprite Font](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/sprite-font) object.
+> This section also applies to the [Sprite Font](../plugin-reference/sprite-font.md) object.
 
 As noted above, certain ranges of text can be tagged, e.g.:
 
@@ -163,11 +163,11 @@ Whether or not the object is shown (visible) or hidden (invisible) when the layo
 Choose the position of the origin of the object relative to its unrotated bounding rectangle.
 
 **Read aloud**  
-Check to indicate to screen readers that the contents of this text object ought to be read aloud when it appears or changes. By default text objects are not read out by screen readers as they are rendered in to a canvas, which is essentially a large image and so not accessible to screen readers. Further, Text objects are not all automatically read aloud as this can provide a poor screen reader experience, such as constantly reading out a changing score instead of more helpful information. Checking this option for important text objects improves the accessibility of projects to ensure the contents of text objects can be understood by people who cannot necessarily read them visually. The text object does not need to be on-screen, so a dedicated text object for screen readers with this option checked can also be used. See also the [Speech Synthesis](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/speech-synthesis) plugin which can be used for similar purposes.
+Check to indicate to screen readers that the contents of this text object ought to be read aloud when it appears or changes. By default text objects are not read out by screen readers as they are rendered in to a canvas, which is essentially a large image and so not accessible to screen readers. Further, Text objects are not all automatically read aloud as this can provide a poor screen reader experience, such as constantly reading out a changing score instead of more helpful information. Checking this option for important text objects improves the accessibility of projects to ensure the contents of text objects can be understood by people who cannot necessarily read them visually. The text object does not need to be on-screen, so a dedicated text object for screen readers with this option checked can also be used. See also the [Speech Synthesis](../plugin-reference/speech-synthesis.md) plugin which can be used for similar purposes.
 
 ## Text conditions
 
-For conditions common to other objects, see [common conditions](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/common-features/common-conditions).
+For conditions common to other objects, see [common conditions](../plugin-reference/common-features/common-conditions.md).
 
 **Compare text**  
 Test whether the text object is currently displaying a certain string of text. The comparison can be either case sensitive ("TEXT" is different to "text") or case insensitive ("TEXT" is considered the same as "text"). To test if the text object is not showing some text, invert the condition.
@@ -183,7 +183,7 @@ Triggered when text being written out using the *Typewriter text* action finishe
 
 ## Text actions
 
-For actions common to other objects, see [common actions](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/common-features/common-actions).
+For actions common to other objects, see [common actions](../plugin-reference/common-features/common-actions.md).
 
 **Set font color**  
 Set the color of the text. Use an expression in the form `rgb(red, green, blue)`.
@@ -219,7 +219,7 @@ By default Text objects use *Automatic* resolution mode, which means the resolut
 Add some text to the end of the current text. For example, if the text object contains *Hello* and has *World* appended, the text object then contains *HelloWorld*.
 
 **Set text**  
-Set the text the object is currently displaying. Use the **&** operator to combine text and numbers. For more information, see [expressions](https://www.construct.net/make-games/manuals/construct-3/project-primitives/events/expressions).
+Set the text the object is currently displaying. Use the **&** operator to combine text and numbers. For more information, see [expressions](../project-primitives/events/expressions.md).
 
 **Change icon set**  
 Changes the *Icon set* property, replacing the Sprite used for BBcode icons. This can be used to change the set of icons displayed by the Text object. Note if the new Sprite object does not have the same number of animation frames, or the same animation frame tags, then some icons may disappear.
@@ -234,11 +234,11 @@ Set the text over time by starting with an empty string and gradually adding cha
 If text is being written out with the *Typewriter text* action, force it to finish immediately.
 
 **Update HTML**  
-This action converts the contents of the Text object, including any icons, in to a string of HTML. This can then be displayed in the [HTML Element object](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/html-element). This action is *asynchronous*: it takes a moment complete, so you need to use it with the *Wait for previous actions to complete* system action before you can use the result in the *AsHTML* expression. See the [Text icons to HTML example](https://editor.construct.net/#open=text-icons-to-html) for a demonstration.
+This action converts the contents of the Text object, including any icons, in to a string of HTML. This can then be displayed in the [HTML Element object](../plugin-reference/html-element.md). This action is *asynchronous*: it takes a moment complete, so you need to use it with the *Wait for previous actions to complete* system action before you can use the result in the *AsHTML* expression. See the [Text icons to HTML example](https://editor.construct.net/#open=text-icons-to-html) for a demonstration.
 
 ## Text expressions
 
-For expressions common to other objects, see [common expressions](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/common-features/common-expressions).
+For expressions common to other objects, see [common expressions](../plugin-reference/common-features/common-expressions.md).
 
 **FaceName**  
 Return the corresponding object's properties. See *Text properties* above for more details.

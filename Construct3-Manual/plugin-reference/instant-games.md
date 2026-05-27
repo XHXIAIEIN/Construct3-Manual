@@ -1,7 +1,7 @@
 ---
 title: "Instant Games"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/instant-games"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -18,7 +18,7 @@ release: 476.3
 The Instant Games plugin allows you to create games that integrate with the **Facebook Instant Games** platform. These games can be played in Messenger, the Facebook news feed, and so on.
 
 > **Warning**  
-> Don't use the [Facebook plugin](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/facebook) in Instant Games. You cannot publish Instant Games using the Facebook API (the Instant Games API works separately). Only use the Instant Games plugin.
+> Don't use the [Facebook plugin](../plugin-reference/facebook.md) in Instant Games. You cannot publish Instant Games using the Facebook API (the Instant Games API works separately). Only use the Instant Games plugin.
 
 ## Instant Games official documentation
 

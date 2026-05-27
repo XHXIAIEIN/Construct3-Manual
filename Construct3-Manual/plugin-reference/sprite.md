@@ -1,7 +1,7 @@
 ---
 title: "Sprite"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/sprite"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -13,22 +13,22 @@ release: 476.3
 
 ---
 
-The **Sprite** object is an animatable image that appears in the project. It is one of the most important objects for most Construct projects. It is used to make most visual elements in a project, such as the player, enemies, projectiles, explosions and non-tiling scenery. (Tiled scenery is much better done with the [Tiled Background](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/tiled-background) object.)
+The **Sprite** object is an animatable image that appears in the project. It is one of the most important objects for most Construct projects. It is used to make most visual elements in a project, such as the player, enemies, projectiles, explosions and non-tiling scenery. (Tiled scenery is much better done with the [Tiled Background](../plugin-reference/tiled-background.md) object.)
 
-If a Sprite has a single animation with a single frame, it just shows an image without animating. However, multiple animations can be added to Sprite objects with the [Animations editor](https://www.construct.net/make-games/manuals/construct-3/interface/animations-editor).
+If a Sprite has a single animation with a single frame, it just shows an image without animating. However, multiple animations can be added to Sprite objects with the [Animations editor](../interface/animations-editor.md).
 
-All [instances](https://www.construct.net/make-games/manuals/construct-3/project-primitives/objects/instances) of Sprite objects share their animations. In other words, there is a single set of images comprising the animations which belongs to the [object type](https://www.construct.net/make-games/manuals/construct-3/project-primitives/objects/object-types), and these images are referenced by instances.
+All [instances](../project-primitives/objects/instances.md) of Sprite objects share their animations. In other words, there is a single set of images comprising the animations which belongs to the [object type](../project-primitives/objects/object-types.md), and these images are referenced by instances.
 
-Sprites can have effects applied. For more information, see [Effects](https://www.construct.net/make-games/manuals/construct-3/project-primitives/objects/effects).
+Sprites can have effects applied. For more information, see [Effects](../project-primitives/objects/effects.md).
 
 ### Scripting
 
-When using JavaScript or TypeScript coding, the features of this object can be accessed via the [ISpriteInstance script interface](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/plugin-interfaces/sprite).
+When using JavaScript or TypeScript coding, the features of this object can be accessed via the [ISpriteInstance script interface](../scripting/scripting-reference/plugin-interfaces/sprite.md).
 
 ## Sprite properties
 
 **Animations**  
-Click the *Edit* link to open the [Animations editor](https://www.construct.net/make-games/manuals/construct-3/interface/animations-editor) for the object. All instances of the object type share a single set of animations.
+Click the *Edit* link to open the [Animations editor](../interface/animations-editor.md) for the object. All instances of the object type share a single set of animations.
 
 **Size**  
 Click the *Make 1:1* link to size the selection at original size (100%). This makes the width and height of the object the same as its first animation frame image.
@@ -50,7 +50,7 @@ Enable to run a preview of the initial animation directly in the Layout View.
 
 ## Sprite conditions
 
-For conditions in common to other objects, see [Common conditions](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/common-features/common-conditions).
+For conditions in common to other objects, see [Common conditions](../plugin-reference/common-features/common-conditions.md).
 
 **Compare frame**  
 Compare the current animation frame number, which is a zero-based index (the first frame is 0).
@@ -90,7 +90,7 @@ Triggered when *Load image from URL* finishes downloading the image and is ready
 
 ## Sprite actions
 
-For actions common to other objects, see [Common actions](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/common-features/common-actions).
+For actions common to other objects, see [Common actions](../plugin-reference/common-features/common-actions.md).
 
 **Add/remove animation**  
 Add or remove an animation with the provided animation name. When adding a new animation, the animation name must be unique, and the new animation will have a single transparent frame sized 100x100. The last animation cannot be removed, as Sprite objects must have at least one animation.
@@ -132,10 +132,10 @@ If the current animation is stopped, start playing the animation again. Playback
 Stop the current animation from playing. The object will be left showing the current animation frame.
 
 **Spawn another object**  
-Create a new instance of a given object type. The new instance is created at the current object's position and also set to the same angle. The created object can be on any layer (chosen by its name or its zero-based number), and it can be positioned by an image point instead of the object's origin (chosen by its name or number). If a [Family](https://www.construct.net/make-games/manuals/construct-3/project-primitives/objects/families)  `[Paid plans only]`  is created, a random object type in the family is picked. Tick *Create hierarchy* when creating the root object in a hierarchy to automatically create the rest of the scene graph hierarchy with connections in place. Choose a valid *Template name* so the new instance is created based on the template rather than an arbitrary instance.
+Create a new instance of a given object type. The new instance is created at the current object's position and also set to the same angle. The created object can be on any layer (chosen by its name or its zero-based number), and it can be positioned by an image point instead of the object's origin (chosen by its name or number). If a [Family](../project-primitives/objects/families.md)  `[Paid plans only]`  is created, a random object type in the family is picked. Tick *Create hierarchy* when creating the root object in a hierarchy to automatically create the rest of the scene graph hierarchy with connections in place. Choose a valid *Template name* so the new instance is created based on the template rather than an arbitrary instance.
 
 > **Tip**  
-> See *Setting up a hierarchy* in the [Layout View manual entry](https://www.construct.net/make-games/manuals/construct-3/interface/layout-view) for more information about hierarchies.
+> See *Setting up a hierarchy* in the [Layout View manual entry](../interface/layout-view.md) for more information about hierarchies.
 
 > **Tip**  
 > When *Create hierarchy* is ticked, the additional objects created are also picked. This means subsequent actions for those objects will only affect the newly created ones.
@@ -148,7 +148,7 @@ Create a new instance of a given object type. The new instance is created at the
 Sets the width and height to a multiple of the object's original size, similar to zooming the object proportionally. For example, if the object is 50x100, *Set scale to 2* will set its size to 100x200, and *Set scale to 0.1* will set its size to 5x10.
 
 **Load image from URL**  
-Load an image from a given URL. The current animation frame will be replaced with the image. It is not shown until the image has finished downloading, and *On image URL loaded* triggers. Images loaded from different domains are subject to the same cross-domain restrictions as AJAX requests - for more information see the section on cross-domain in the [AJAX](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/ajax) object. Data URIs can also be passed as an image, e.g. from a canvas snapshot or webcam image. The *Size* parameter sets whether the Sprite object will be set to the image size when it loads, or whether to keep its current size and stretch the image.
+Load an image from a given URL. The current animation frame will be replaced with the image. It is not shown until the image has finished downloading, and *On image URL loaded* triggers. Images loaded from different domains are subject to the same cross-domain restrictions as AJAX requests - for more information see the section on cross-domain in the [AJAX](../plugin-reference/ajax.md) object. Data URIs can also be passed as an image, e.g. from a canvas snapshot or webcam image. The *Size* parameter sets whether the Sprite object will be set to the image size when it loads, or whether to keep its current size and stretch the image.
 
 > **Tip**  
 > Note that as all Sprite instances share the same set of animations and frames, loading an image will replace the image for all instances of the object type. If you want to dynamically load images for individual instances, try adding animation frames and loading a different image in to each frame.
@@ -157,11 +157,11 @@ Load an image from a given URL. The current animation frame will be replaced wit
 Enable or disable collisions for the object. Disabling collisions means no collision events will register for the object nor will any behaviors on the object register collisions with solids or jump-thrus. Disabling collisions does not improve performance unless there are some events or behaviors that test collisions.
 
 **Set solid collision filter**  
-Enable or disable collisions with the [Solid behavior](https://www.construct.net/make-games/manuals/construct-3/behavior-reference/solid) according to tags. Specify tags using a string of space-separated tag names. In *Inclusive* mode, collisions are only enabled with solids that match any of the given tags; if no tags are specified, collisions are disabled with all solids. In *Exclusive* mode, collisions are disabled with solids that match any of the given tags; if no tags are specified, collisions are enabled for all solids (the default).
+Enable or disable collisions with the [Solid behavior](../behavior-reference/solid.md) according to tags. Specify tags using a string of space-separated tag names. In *Inclusive* mode, collisions are only enabled with solids that match any of the given tags; if no tags are specified, collisions are disabled with all solids. In *Exclusive* mode, collisions are disabled with solids that match any of the given tags; if no tags are specified, collisions are enabled for all solids (the default).
 
 ## Sprite expressions
 
-For expressions common to other objects, see [common expressions](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/common-features/common-expressions).
+For expressions common to other objects, see [common expressions](../plugin-reference/common-features/common-expressions.md).
 
 **AnimationFrame**  
 The currently displaying zero-based animation frame number.

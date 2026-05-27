@@ -1,7 +1,7 @@
 ---
 title: "Get XP"
 source: "https://www.construct.net/en/game-services/manuals/game-services/xp/api-end-points/xp/get-xp"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -90,7 +90,7 @@ The next rank this player will unlock.
 **formattingCulture** `string`  
 If some return values are [culture specific](../../../culture.md), this property indicates what culture the values have been rendered as.
 
-**leaderboardScoreID** [guid?](../../../data-types.md#internalH1Link1)  
+**leaderboardScoreID** [`guid?`](../../../data-types.md#internalH1Link1)  
 This players current XP.
 
 ## Failure Response

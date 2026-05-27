@@ -1,7 +1,7 @@
 ---
 title: "AssetManager script interface"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/scripting/scripting-reference/interfaces/iassetmanager"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -17,7 +17,7 @@ On most modern platforms, assets can be directly retrieved as if over the networ
 ## AssetManager APIs
 
 **runtime**  
-A reference back to the [IRuntime](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/iruntime) script interface.
+A reference back to the [IRuntime](../../../scripting/scripting-reference/iruntime.md) script interface.
 
 **async fetchText(url)**  
 Retrieve the contents of a given URL as a string, JSON object, [Blob](https://developer.mozilla.org/en-US/docs/Web/API/Blob) or [ArrayBuffer](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ArrayBuffer). Returns a promise that resolves when the resource has been loaded.

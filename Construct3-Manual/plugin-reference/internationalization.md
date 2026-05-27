@@ -1,7 +1,7 @@
 ---
 title: "Internationalization"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/internationalization"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -28,7 +28,7 @@ See the [built-in example project](https://editor.construct.net/#open=internatio
 
 ### Scripting
 
-When using JavaScript or TypeScript coding, the string lookup features of this plugin can be accessed via the [Internationalization script interface](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/plugin-interfaces/internationalization). Note however many other features of this plugin merely access the browser-provided [Intl](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl) APIs, so those are not duplicated in the script interface, as you can access them directly instead.
+When using JavaScript or TypeScript coding, the string lookup features of this plugin can be accessed via the [Internationalization script interface](../scripting/scripting-reference/plugin-interfaces/internationalization.md). Note however many other features of this plugin merely access the browser-provided [Intl](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl) APIs, so those are not duplicated in the script interface, as you can access them directly instead.
 
 ## Locales
 

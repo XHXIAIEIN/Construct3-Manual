@@ -1,7 +1,7 @@
 ---
 title: "Edit Rating Dimension"
 source: "https://www.construct.net/en/game-services/manuals/game-services/cloud-save/api-end-points/ratings/edit-dimension"
-release: 476.3
+release: 487
 ---
 
 ## On this page

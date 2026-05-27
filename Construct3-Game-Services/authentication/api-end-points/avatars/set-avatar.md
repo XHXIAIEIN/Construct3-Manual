@@ -1,7 +1,7 @@
 ---
 title: "Set Player Avatar"
 source: "https://www.construct.net/en/game-services/manuals/game-services/authentication/api-end-points/avatars/set-avatar"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -87,7 +87,7 @@ Successful responses always return a `HTTP 200` status code.
 **success** [`bool`](../../../data-types.md#internalH1Link4)  
 If the request was successfull or not.
 
-**avatars** Array<[Picture](../../../common-objects/picture-object.md)>
+**avatars** [`Array<Picture>`](../../../common-objects/picture-object.md)  
 A list of [picture objects](../../../common-objects/picture-object.md) representing the players new avatar. Each picture object is the same avatar, but provided in different sizes. Sizes available are based on widths, and the widths `16, 32, 64, 96, 128, 256` will be shown here along with the original avatar size if it doesn't match a width in this list.  Some sizes may not show if the width is less than the original avatar width.
 
 **formattingCulture** `string`  

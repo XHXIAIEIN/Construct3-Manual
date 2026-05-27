@@ -1,7 +1,7 @@
 ---
 title: "Platform Info script interface"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/scripting/scripting-reference/interfaces/iplatforminfo"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -10,7 +10,7 @@ release: 476.3
 
 ---
 
-The `IPlatformInfo` interface provides access to Construct's detected platform details, such as the browser, operating system, and export type. It provides similar information to the [Platform info plugin](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/platform-info), but note that plugin does not need to be in the project to use this interface. It is typically accessed by the [IRuntime](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/iruntime) `platformInfo` property.
+The `IPlatformInfo` interface provides access to Construct's detected platform details, such as the browser, operating system, and export type. It provides similar information to the [Platform info plugin](../../../plugin-reference/platform-info.md), but note that plugin does not need to be in the project to use this interface. It is typically accessed by the [IRuntime](../../../scripting/scripting-reference/iruntime.md) `platformInfo` property.
 
 ```javascript
 // Example: log detected operating system to console on startup
@@ -26,7 +26,7 @@ runOnStartup(async runtime =>
 A read-only boolean indicating whether Construct detects the current device as "mobile".
 
 > **Warning**  
-> This detection may be unreliable. See the warning for the *Is on mobile* condition in the [Platform Info](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/platform-info) manual entry.
+> This detection may be unreliable. See the warning for the *Is on mobile* condition in the [Platform Info](../../../plugin-reference/platform-info.md) manual entry.
 
 **os**  
 A read-only string with the operating system Construct has detected, which is one of `"windows"`, `"macos"`, `"linux"`, `"chrome-os"`, `"android"`, `"ios"` or `"unknown"`.

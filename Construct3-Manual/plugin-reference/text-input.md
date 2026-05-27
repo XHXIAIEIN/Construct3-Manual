@@ -1,7 +1,7 @@
 ---
 title: "Text input"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/text-input"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -15,15 +15,15 @@ release: 476.3
 
 ---
 
-The **Text input** object is a form control providing a text field the user can type text in to. This is used for getting data from the user; don't confuse it with the [Text](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/text) object, which is for displaying text.
+The **Text input** object is a form control providing a text field the user can type text in to. This is used for getting data from the user; don't confuse it with the [Text](../plugin-reference/text.md) object, which is for displaying text.
 
 ### Scripting
 
-When using JavaScript or TypeScript coding, the features of this object can be accessed via the [ITextInputInstance script interface](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/plugin-interfaces/text-input).
+When using JavaScript or TypeScript coding, the features of this object can be accessed via the [ITextInputInstance script interface](../scripting/scripting-reference/plugin-interfaces/text-input.md).
 
 ## Layering HTML objects
 
-This object displays using a HTML element rather than drawing in to the canvas. This means its layering works differently to other objects. To learn more about how to layer HTML objects, see [HTML layers](https://www.construct.net/make-games/manuals/construct-3/tips-and-guides/html-layers).
+This object displays using a HTML element rather than drawing in to the canvas. This means its layering works differently to other objects. To learn more about how to layer HTML objects, see [HTML layers](../tips-and-guides/html-layers.md).
 
 ## Styling text inputs
 

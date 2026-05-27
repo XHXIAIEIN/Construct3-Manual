@@ -1,7 +1,7 @@
 ---
 title: "Addon metadata"
 source: "https://www.construct.net/en/make-games/manuals/addon-sdk/guide/addon-metadata"
-release: 476.3
+release: 487
 ---
 
 The metadata for your addon, specifying details like its ID and type, is defined by **addon.json**. An example is shown below.
@@ -81,7 +81,7 @@ A string of a brief description of what the addon does, displayed when prompting
 The minimum Construct version required to load your addon, e.g. "r399". If not specified, the addon will be allowed to be installed with any version of Construct. If specified and the user attempts to install the addon with a version lower than the minimum, then Construct will prevent installation and show a message indicating that a newer version of Construct must be used. If the user installs the addon with a newer version of Construct and then rolls back to an older version of Construct lower than the minimum, then Construct will refuse to load the addon (a message will be logged to the console) and the editor will act as if the addon is not installed.
 
 **supports-worker-mode**  
-A boolean indicating whether the addon supports Construct's worker mode, where the entire runtime is hosted in a [Web Worker](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API) instead of the main thread. This defaults to `true`. Providing the addon only uses APIs available in a Web Worker, then it is compatible; where access to the DOM is necessary, then a DOM script can be used to still access those features in worker mode - see [Runtime scripts](https://www.construct.net/make-games/manuals/addon-sdk/guide/runtime-scripts) for more details. Therefore it should be possible for every addon to support worker mode, and supporting it is strongly recommended as worker mode can bring performance benefits. This can be set to `false` to indicate that the addon does not yet support worker mode, which may be useful to expedite addon development or if the addon makes use of extremely complex DOM operations. This will cause worker mode "auto" to switch to DOM mode which may degrade the performance of the project. If the user attempts to switch worker mode to "Yes" in project using the addon, then Construct will show an error message highlighting the addon that does not support the mode, and prevent changing the setting.
+A boolean indicating whether the addon supports Construct's worker mode, where the entire runtime is hosted in a [Web Worker](https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API) instead of the main thread. This defaults to `true`. Providing the addon only uses APIs available in a Web Worker, then it is compatible; where access to the DOM is necessary, then a DOM script can be used to still access those features in worker mode - see [Runtime scripts](../guide/runtime-scripts.md) for more details. Therefore it should be possible for every addon to support worker mode, and supporting it is strongly recommended as worker mode can bring performance benefits. This can be set to `false` to indicate that the addon does not yet support worker mode, which may be useful to expedite addon development or if the addon makes use of extremely complex DOM operations. This will cause worker mode "auto" to switch to DOM mode which may degrade the performance of the project. If the user attempts to switch worker mode to "Yes" in project using the addon, then Construct will show an error message highlighting the addon that does not support the mode, and prevent changing the setting.
 
 **editor-scripts**  
 *For plugins and behaviors only.* An array of script files in the addon package to load in the editor. It is recommended to leave this at the default unless you have large editor dependency scripts, or if you want to minify your addon in to a single script. Note themes do not use editor scripts.
@@ -94,4 +94,4 @@ A boolean indicating whether the addon supports Construct's worker mode, where t
 
 ### Additional properties for effects
 
-When developing an effect addon, additional information about the effect is included in the addon.json file. For more information see [Configuring effects](https://www.construct.net/make-games/manuals/addon-sdk/guide/configuring-effects).
+When developing an effect addon, additional information about the effect is included in the addon.json file. For more information see [Configuring effects](../guide/configuring-effects.md).

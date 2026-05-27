@@ -1,7 +1,7 @@
 ---
 title: "Sprite script interface"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/scripting/scripting-reference/plugin-interfaces/sprite"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -14,7 +14,7 @@ release: 476.3
 
 The `ISpriteInstance` interface derives from [IWorldInstance](../../../scripting/scripting-reference/object-interfaces/iworldinstance.md) to add APIs specific to the [Sprite plugin](../../../plugin-reference/sprite.md).
 
-Sprite object types also define a `ISpriteObjectType` interface which derives from [IObjectClass](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/object-interfaces/iobjectclass) to add Sprite APIs that affect the object type, such as dynamic animations.
+Sprite object types also define a `ISpriteObjectType` interface which derives from [IObjectClass](../../../scripting/scripting-reference/object-interfaces/iobjectclass.md) to add Sprite APIs that affect the object type, such as dynamic animations.
 
 ## Sprite instance events
 
@@ -129,7 +129,7 @@ await spriteInst.replaceCurrentAnimationFrame(blob);
 These `ISpriteObjectType` APIs are available on the object type class, e.g. `runtime.objects.MySprite`, rather than instances. Note this means that any changes, such as to the animations or animation frames, will affect all instances.
 
 **getAnimation(name)**  
-Return an [IAnimation](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/object-interfaces/ianimation) representing the animation with the given name, or `null` if none exists.
+Return an [IAnimation](../../../scripting/scripting-reference/object-interfaces/ianimation.md) representing the animation with the given name, or `null` if none exists.
 
 **getAllAnimations()**  
 Return an array of `IAnimation` representing all animations that the Sprite object type has.
@@ -141,7 +141,7 @@ Add a new animation with the given name and return an `IAnimation` representing 
 Remove an animation with the given name. An exception will be thrown if an animation with the given name does not exist, or the specified animation is the last one, as Sprite objects must have at least one animation.
 
 **addAnimationFrame(animName, where)**  
-Add an animation frame to the animation with the specified name. The new frame will be transparent and sized 100x100. The `where` parameter must be either a number for a zero-based index of where to insert the frame, and can be -1 to add to the end, or a string of an animation frame tag to insert relative to. When adding an animation frame not at the end, it is inserted just before the given frame. The method returns an [IAnimationFrame](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/object-interfaces/ianimationframe) representing the added frame.
+Add an animation frame to the animation with the specified name. The new frame will be transparent and sized 100x100. The `where` parameter must be either a number for a zero-based index of where to insert the frame, and can be -1 to add to the end, or a string of an animation frame tag to insert relative to. When adding an animation frame not at the end, it is inserted just before the given frame. The method returns an [IAnimationFrame](../../../scripting/scripting-reference/object-interfaces/ianimationframe.md) representing the added frame.
 
 **removeAnimationFrame(animName, where)**  
 Remove an animation frame from the animation with the specified name. The last frame cannot be removed, as animations must have at least one frame. The `where` parameter must be either a number for a zero-based index of where to remove a frame, and can be -1 to remove from the end, or a string of an animation frame tag to remove.

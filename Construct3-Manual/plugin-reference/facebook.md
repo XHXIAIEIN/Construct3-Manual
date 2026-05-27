@@ -1,7 +1,7 @@
 ---
 title: "Facebook"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/facebook"
-release: 476.3
+release: 487
 ---
 
 ## On this page

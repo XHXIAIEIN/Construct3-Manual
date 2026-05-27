@@ -1,7 +1,7 @@
 ---
 title: "How events work"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/project-primitives/events/how-events-work"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -20,11 +20,11 @@ release: 476.3
 
 If you're new to Construct's events, this section will outline how they work. This is essential reading for beginners! You will be able to make much better and more reliable games with a thorough understanding of how events work.
 
-To learn how to add and edit events, see [Event Sheet View](https://www.construct.net/make-games/manuals/construct-3/interface/event-sheet-view).
+To learn how to add and edit events, see [Event Sheet View](../../interface/event-sheet-view.md).
 
 Events are designed to be easily readable and to intuitively "just work". However, they have specific, well-defined ways of working which is described here.
 
-Events work by **filtering** specific [instances](https://www.construct.net/make-games/manuals/construct-3/project-primitives/objects/instances) that meet some [conditions](https://www.construct.net/make-games/manuals/construct-3/project-primitives/events/conditions). The [actions](https://www.construct.net/make-games/manuals/construct-3/project-primitives/events/actions) then run for *those instances only*. For example, consider the following event:
+Events work by **filtering** specific [instances](../../project-primitives/objects/instances.md) that meet some [conditions](../../project-primitives/events/conditions.md). The [actions](../../project-primitives/events/actions.md) then run for *those instances only*. For example, consider the following event:
 
 [![A simple collision event](https://construct-static.com/images/v1740/r/uploads/articleuploadobject/0/images/934/howeventswork1_v650.png)](https://construct-static.com/images/v1740/uploads/articleuploadobject/0/images/934/howeventswork1.png)
 
@@ -60,7 +60,7 @@ Think of conditions as starting with all instances being picked, and progressive
 
 After an event ends, the next event begins from scratch. Its conditions will start picking from all instances again.
 
-On the other hand, [sub-events](https://www.construct.net/make-games/manuals/construct-3/project-primitives/events/sub-events) (which appear indented) **carry on from where its parent event left off**. A sub-event will further filter the instances left over by the event that came before it. If an event has two sub-events, they both pick from the same set of instances the parent left behind - the second sub-event is not affected by the first. In other words, events at the same indentation level always pick from the same set of instances, and events at a lower indentation level are always working with the instances handed down from above.
+On the other hand, [sub-events](../../project-primitives/events/sub-events.md) (which appear indented) **carry on from where its parent event left off**. A sub-event will further filter the instances left over by the event that came before it. If an event has two sub-events, they both pick from the same set of instances the parent left behind - the second sub-event is not affected by the first. In other words, events at the same indentation level always pick from the same set of instances, and events at a lower indentation level are always working with the instances handed down from above.
 
 ## The System object
 
@@ -94,7 +94,7 @@ Note that because OR blocks run if any condition is true, it's possible the even
 
 Also note normally you can only put one trigger in an event, but you can put multiple triggers in an 'Or' block, and the event will run if any of triggers run.
 
-You can combine the block types by using [sub-events](https://www.construct.net/make-games/manuals/construct-3/project-primitives/events/sub-events). This allows you to build up more advanced logic, such as an 'Or' block followed by an 'And' block.
+You can combine the block types by using [sub-events](../../project-primitives/events/sub-events.md). This allows you to build up more advanced logic, such as an 'Or' block followed by an 'And' block.
 
 ## Looping conditions
 
@@ -108,9 +108,9 @@ There can also be more conditions following the *Repeat* condition. These are te
 
 ## Families and containers
 
-Note families  `[Paid plans only]`  pick their instances entirely separately from any of the object types in the family. For more information, see the section *Picking families in events* in the manual entry on [Families](https://www.construct.net/make-games/manuals/construct-3/project-primitives/objects/families).
+Note families  `[Paid plans only]`  pick their instances entirely separately from any of the object types in the family. For more information, see the section *Picking families in events* in the manual entry on [Families](../../project-primitives/objects/families.md).
 
-Containers are an advanced feature that can also make groups of instances always be picked together. For more information see the manual entry on [Containers](https://www.construct.net/make-games/manuals/construct-3/project-primitives/objects/containers).
+Containers are an advanced feature that can also make groups of instances always be picked together. For more information see the manual entry on [Containers](../../project-primitives/objects/containers.md).
 
 ## Summary
 

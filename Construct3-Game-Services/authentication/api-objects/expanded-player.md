@@ -1,7 +1,7 @@
 ---
 title: "Expanded Player Object"
 source: "https://www.construct.net/en/game-services/manuals/game-services/authentication/api-objects/expanded-player"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -20,12 +20,12 @@ This object is only returned for some API end points that require your games sec
 
 ```json
 {
-  "id": "f4f03bbf-fefe-4b8c-853f-b8339b148b7d",
+  "id": "700ce0f0-10b3-41ac-9489-0e1daa094de0",
   "playerName": "Chuckling Warrior",
-  "created": "2026-04-05T08:32:13.5146354Z",
+  "created": "2026-05-27T08:36:34.3762063Z",
   "consecutiveDailySignIns": 6,
   "successfulSignIns": 121,
-  "lastSuccessfulSignIn": "2026-04-05T08:32:13.5163851Z",
+  "lastSuccessfulSignIn": "2026-05-27T08:36:34.3802225Z",
   "leaderboardScores": 3,
   "avatars": [
     { ... },
@@ -44,7 +44,7 @@ This object is only returned for some API end points that require your games sec
   "totalRatings": 5,
   "totalRatingsValue": 875,
   "averageRatingPercent": 68.6275,
-  "lastActive": "2026-04-05T08:32:13.524415Z",
+  "lastActive": "2026-05-27T08:36:34.4031532Z",
   "emailVerified": true,
   "preventAllEmails": true
 }
@@ -67,16 +67,16 @@ Total number of consecutive days this player has logged in for.
 **successfulSignIns** `int32`  
 Total number of times this player has signed into their account.
 
-**lastSuccessfulSignIn** [datetime?](../../data-types.md#internalH1Link0)  
+**lastSuccessfulSignIn** [`datetime?`](../../data-types.md#internalH1Link0)  
 Date and time of the last successful sign in for this player.
 
 **leaderboardScores** `int32`  
 Total number of leaderboard scores this player has.
 
-**avatars** Array<[Picture](../../common-objects/picture-object.md)>
+**avatars** [`Array<Picture>`](../../common-objects/picture-object.md)  
 If player has an avatar, a list of [picture objects](../../common-objects/picture-object.md). Each picture object is the same avatar, but provided in different sizes. Sizes available are based on widths, and the widths `16, 32, 64, 96, 128, 256` will be shown here along with the original avatar size if it doesn't match a width in this list.  Some sizes may not show if the width is less than the original avatar width.
 
-**loginProviders** Array<[PlayerLoginProvider](../../authentication/api-objects/player-login-provider.md)>
+**loginProviders** [`Array<PlayerLoginProvider>`](../../authentication/api-objects/player-login-provider.md)  
 List of player login provider objects currently assigned to this player.
 
 **totalBucketCloudSaves** `int32`  
@@ -106,7 +106,7 @@ The sum of all this players ratings.  The summed values are normalised to a rang
 **averageRatingPercent** `decimal`  
 The average rating this player casts expressed as a percentage 0-100.
 
-**lastActive** [datetime?](../../data-types.md#internalH1Link0)  
+**lastActive** [`datetime?`](../../data-types.md#internalH1Link0)  
 The date and time UTC this player last interacted with these services.
 
 **emailVerified** [`bool`](../../data-types.md#internalH1Link4)  

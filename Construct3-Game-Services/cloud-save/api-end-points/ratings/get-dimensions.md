@@ -1,7 +1,7 @@
 ---
 title: "Get Rating Dimensions"
 source: "https://www.construct.net/en/game-services/manuals/game-services/cloud-save/api-end-points/ratings/get-dimensions"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -64,7 +64,7 @@ Successful responses always return a `HTTP 200` status code.
 **success** [`bool`](../../../data-types.md#internalH1Link4)  
 If the request was successfull or not.
 
-**dimensions** Array<[RatingDimension](../../../ratings/api-objects/rating-dimension-object.md)>
+**dimensions** [`Array<RatingDimension>`](../../../ratings/api-objects/rating-dimension-object.md)  
 The returned dimensions from the request.
 
 **formattingCulture** `string`  

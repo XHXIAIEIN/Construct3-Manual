@@ -1,7 +1,7 @@
 ---
 title: "Expressions"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/project-primitives/events/expressions"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -15,7 +15,7 @@ release: 476.3
 
 ---
 
-In events, **expressions** are used to calculate sums or retrieve information from objects, such as a Sprite's X co-ordinate. Expressions are entered in to the [Parameters dialog](https://www.construct.net/make-games/manuals/construct-3/interface/dialogs/parameters) when adding or editing a [condition](https://www.construct.net/make-games/manuals/construct-3/project-primitives/events/conditions) or [action](https://www.construct.net/make-games/manuals/construct-3/project-primitives/events/actions) which has parameters. The [Expressions dictionary](https://www.construct.net/make-games/manuals/construct-3/interface/dialogs/expressions-dictionary) is also shown at the same time and provides a dictionary of all the system and object expressions available in a project.
+In events, **expressions** are used to calculate sums or retrieve information from objects, such as a Sprite's X co-ordinate. Expressions are entered in to the [Parameters dialog](../../interface/dialogs/parameters.md) when adding or editing a [condition](../../project-primitives/events/conditions.md) or [action](../../project-primitives/events/actions.md) which has parameters. The [Expressions dictionary](../../interface/dialogs/expressions-dictionary.md) is also shown at the same time and provides a dictionary of all the system and object expressions available in a project.
 
 Some examples of expressions, which can range from a simple number to a complex calculation, are given below:
 
@@ -43,7 +43,7 @@ You can use `&` to build strings out of mixed text and numbers, e.g. `"Your scor
 
 To add a line break to a string use the system expression **newline**, e.g. `"Hello" & newline & "world"`
 
-The **StringSub** [system expression](https://www.construct.net/make-games/manuals/construct-3/system-reference/system-expressions) is also useful for building strings. You can use it like this: `StringSub("Hi {0}, your score is {1}!", "Sam", 100)` which will produce the string **Hi Sam, your score is 100!**. The first string can use *placeholders* like `{0}`, `{1}`, `{2}` etc. and these are replaced by the following parameters. You can have as many placeholders as you like and they can appear anywhere in the first string, so long as the appropriate number of parameters follow on.
+The **StringSub** [system expression](../../system-reference/system-expressions.md) is also useful for building strings. You can use it like this: `StringSub("Hi {0}, your score is {1}!", "Sam", 100)` which will produce the string **Hi Sam, your score is 100!**. The first string can use *placeholders* like `{0}`, `{1}`, `{2}` etc. and these are replaced by the following parameters. You can have as many placeholders as you like and they can appear anywhere in the first string, so long as the appropriate number of parameters follow on.
 
 ## Operators
 
@@ -67,16 +67,16 @@ You can use the following operators in expressions:
 
 ## Object expressions
 
-Objects have their own expressions to retrieve information about the object. These are written in the form `Sprite.X` (the object name, a dot, then the expression name). The [Expressions dictionary](https://www.construct.net/make-games/manuals/construct-3/interface/dialogs/expressions-dictionary) lists all the available expressions in the project, and they are further documented in the reference section of the manual.
+Objects have their own expressions to retrieve information about the object. These are written in the form `Sprite.X` (the object name, a dot, then the expression name). The [Expressions dictionary](../../interface/dialogs/expressions-dictionary.md) lists all the available expressions in the project, and they are further documented in the reference section of the manual.
 
 The expression `Self` can be used as a short-cut to refer to the current object. For example, in an action for the *Player* object, `Self.X` refers to `Player.X`.
 
-You can add a zero-based object index to get expressions from different object instances. For example `Sprite(0).X` gets the first Sprite instance's X position, and `Sprite(1).X` gets the second instance's X position. For more information see index IDs (IIDs) in [instances](https://www.construct.net/make-games/manuals/construct-3/project-primitives/objects/instances). You can also pass another expression for the index. Negative numbers start from the opposite end, so `Sprite(-1).X` gets the last Sprite's X position.
+You can add a zero-based object index to get expressions from different object instances. For example `Sprite(0).X` gets the first Sprite instance's X position, and `Sprite(1).X` gets the second instance's X position. For more information see index IDs (IIDs) in [instances](../../project-primitives/objects/instances.md). You can also pass another expression for the index. Negative numbers start from the opposite end, so `Sprite(-1).X` gets the last Sprite's X position.
 
 ## Behavior expressions
 
-If an object has a [behavior](https://www.construct.net/make-games/manuals/construct-3/project-primitives/objects/behaviors) with its own expressions, they are written in the form `Object.Behavior.Expression`, e.g. `Sprite.8Direction.Speed`.
+If an object has a [behavior](../../project-primitives/objects/behaviors.md) with its own expressions, they are written in the form `Object.Behavior.Expression`, e.g. `Sprite.8Direction.Speed`.
 
 ## System expressions
 
-The built-in [system expressions](https://www.construct.net/make-games/manuals/construct-3/system-reference/system-expressions) are listed in the reference. These include some basic mathematical functions like `sqrt` (square root).
+The built-in [system expressions](../../system-reference/system-expressions.md) are listed in the reference. These include some basic mathematical functions like `sqrt` (square root).

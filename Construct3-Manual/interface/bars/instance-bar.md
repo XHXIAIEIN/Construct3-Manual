@@ -1,7 +1,7 @@
 ---
 title: "Instances Bar"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/interface/bars/instance-bar"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -19,7 +19,7 @@ release: 476.3
 
 The **Instances Bar** shows all the [instances](../../project-primitives/objects/instances.md) in the current [layout](../../project-primitives/layouts.md) at a glance, it can be very useful in large or busy layouts to quickly find specific instances.
 
-You can also use folders to group related instances together. [Hierarchies](../../interface/layout-view#internalH1Link4.md) are shown as a tree structure to quickly tell which instances are where in complex structures.
+You can also use folders to group related instances together. [Hierarchies](../../interface/layout-view.md#internalH1Link4) are shown as a tree structure to quickly tell which instances are where in complex structures.
 
 [![overview](https://construct-static.com/images/v1740/uploads/articleuploadobject/0/images/124586/overview.png)](https://construct-static.com/images/v1740/uploads/articleuploadobject/0/images/124586/overview.png)
 

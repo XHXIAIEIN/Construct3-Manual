@@ -1,7 +1,7 @@
 ---
 title: "SVG Picture script interface"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/scripting/scripting-reference/plugin-interfaces/svg-picture"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -10,7 +10,7 @@ release: 476.3
 
 ---
 
-The `ISVGPictureInstance` interface derives from [IWorldInstance](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/object-interfaces/iworldinstance) to add APIs specific to the [SVG Picture plugin](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/svg-picture).
+The `ISVGPictureInstance` interface derives from [IWorldInstance](../../../scripting/scripting-reference/object-interfaces/iworldinstance.md) to add APIs specific to the [SVG Picture plugin](../../../plugin-reference/svg-picture.md).
 
 ## SVG Picture APIs
 

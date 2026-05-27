@@ -1,7 +1,7 @@
 ---
 title: "Best practices"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/tips-and-guides/best-practices"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -22,7 +22,7 @@ release: 476.3
 
 Neither the hardware nor software in your computer is perfect. Computers fail and software can crash. Back up your projects to protect yourself from losing work. It is essential to also maintain off-site backups. If all your backups are in the same computer or saved to disks all in the same building, catastrophic events like fire, flood, theft, software/hardware failure, or cyber attacks/related malware like ransomware, can all cause you to lose all your work and backups together.
 
-[Cloud Save](../overview/saving-projects.md) is a good way to save your work where it is safe in case of disaster. However it is wise to keep secondary backups anyway, in case you lose access to your account, or the service has an outage or even shuts down. Keeping additional backups is particularly important when saving to local files or folders on your system. Construct can help you do this by automatically making backups. See the *Save & backup* section of the [Settings dialog](../interface/dialogs/settings#internalH1Link1.md). Check *Periodically back up active project*, and choose the location and backup interval. For example you could set up an automatic save to the same location as the project every 10 minutes, or select a local backup folder (where supported by the browser) to save backups to.
+[Cloud Save](../overview/saving-projects.md) is a good way to save your work where it is safe in case of disaster. However it is wise to keep secondary backups anyway, in case you lose access to your account, or the service has an outage or even shuts down. Keeping additional backups is particularly important when saving to local files or folders on your system. Construct can help you do this by automatically making backups. See the *Save & backup* section of the [Settings dialog](../interface/dialogs/settings.md#internalH1Link1). Check *Periodically back up active project*, and choose the location and backup interval. For example you could set up an automatic save to the same location as the project every 10 minutes, or select a local backup folder (where supported by the browser) to save backups to.
 
 > **Tip**  
 > Saving an extra copy to a local backup folder isn't a safe backup when using local file/folder saves: it's just another copy on the same system, and any disaster that renders the system inaccessible will cause you to lose both your work and its backups. It's best to use this option if you're already using Cloud Save (so there's a secondary copy on your system), or if the local folder is automatically copied to the cloud (such as a local Dropbox folder which will automatically upload all files in the folder to your cloud account).
@@ -31,7 +31,7 @@ The advice to back up regularly is not specific to Construct. It is vital to ado
 
 ## Test on multiple platforms, browsers and devices
 
-It is essential to test your project works as intended across a range of different systems. While Construct exports are based on the HTML5 standard  which in theory is implemented the same on all platforms, in practice there are variations between browsers and devices (e.g. in performance, features, text rendering, etc). You should install a range of browsers on every device you have available and test with them all to ensure your project will work well for everyone. [Remote Preview](https://www.construct.net/make-games/manuals/construct-3/overview/testing-and-publishing)  `[Paid plans only]`  can help with this, especially since you can get anyone in the world to help test with their devices. You may also need to make test exports to check how your project works as published, since app containers like Cordova (for Android and iOS) can have differences too.
+It is essential to test your project works as intended across a range of different systems. While Construct exports are based on the HTML5 standard  which in theory is implemented the same on all platforms, in practice there are variations between browsers and devices (e.g. in performance, features, text rendering, etc). You should install a range of browsers on every device you have available and test with them all to ensure your project will work well for everyone. [Remote Preview](../overview/testing-and-publishing.md)  `[Paid plans only]`  can help with this, especially since you can get anyone in the world to help test with their devices. You may also need to make test exports to check how your project works as published, since app containers like Cordova (for Android and iOS) can have differences too.
 
 ## Support touchscreen devices
 
@@ -39,7 +39,7 @@ Many users browse the web with touchscreen devices. Where applicable, you should
 
 ## Avoid superseded features
 
-Some features exist mainly for backwards compatibility reasons and should be avoided in new projects in favor of newer features that essentially replace them. See [Superseded features](https://www.construct.net/make-games/manuals/construct-3/tips-and-guides/superseded-features) for a list of such features to avoid.
+Some features exist mainly for backwards compatibility reasons and should be avoided in new projects in favor of newer features that essentially replace them. See [Superseded features](../tips-and-guides/superseded-features.md) for a list of such features to avoid.
 
 ## Recommended file formats
 
@@ -65,12 +65,12 @@ Use fonts in **WOFF** (Web Open Font Format) format wherever possible. Fonts in 
 
 ## Performance
 
-Many people worry about performance but just end up wasting their time. There is a specific way that you ought to approach performance questions and issues - see the guide on [Performance Tips](https://www.construct.net/make-games/manuals/construct-3/tips-and-guides/performance-tips) for more about that.
+Many people worry about performance but just end up wasting their time. There is a specific way that you ought to approach performance questions and issues - see the guide on [Performance Tips](../tips-and-guides/performance-tips.md) for more about that.
 
 ## Memory use
 
-Sometimes people accidentally create projects that waste large amounts of memory due to not understanding the way things like imags are handled in memory. See the guide on [Memory usage](https://www.construct.net/make-games/manuals/construct-3/tips-and-guides/memory-usage) for more about that.
+Sometimes people accidentally create projects that waste large amounts of memory due to not understanding the way things like imags are handled in memory. See the guide on [Memory usage](../tips-and-guides/memory-usage.md) for more about that.
 
 ## Download size
 
-It's a good idea to at least check your project's download size, and try to reduce the size of any particularly large files. This can be important for platforms that impose a file size limit, or for people who have slow connections. See the guide on [Download size](https://www.construct.net/make-games/manuals/construct-3/tips-and-guides/download-size) for more about that.
+It's a good idea to at least check your project's download size, and try to reduce the size of any particularly large files. This can be important for platforms that impose a file size limit, or for people who have slow connections. See the guide on [Download size](../tips-and-guides/download-size.md) for more about that.

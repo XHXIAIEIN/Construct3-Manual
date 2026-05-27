@@ -1,7 +1,7 @@
 ---
 title: "Shadow Light script interface"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/scripting/scripting-reference/plugin-interfaces/shadow-light"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -10,7 +10,7 @@ release: 476.3
 
 ---
 
-The `IShadowLightInstance` interface derives from [IWorldInstance](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/object-interfaces/iworldinstance) to add APIs specific to the [Shadow Light plugin](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/shadow-light).
+The `IShadowLightInstance` interface derives from [IWorldInstance](../../../scripting/scripting-reference/object-interfaces/iworldinstance.md) to add APIs specific to the [Shadow Light plugin](../../../plugin-reference/shadow-light.md).
 
 ## Shadow Light APIs
 

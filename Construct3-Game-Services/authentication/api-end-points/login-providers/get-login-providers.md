@@ -1,7 +1,7 @@
 ---
 title: "Get All Players Login Providers"
 source: "https://www.construct.net/en/game-services/manuals/game-services/authentication/api-end-points/login-providers/get-login-providers"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -59,7 +59,7 @@ Successful responses always return a `HTTP 200` status code.
 **success** [`bool`](../../../data-types.md#internalH1Link4)  
 If the request was successfull or not.
 
-**connectedProviders** Array<[PlayerLoginProvider](../../../authentication/api-objects/player-login-provider.md)>
+**connectedProviders** [`Array<PlayerLoginProvider>`](../../../authentication/api-objects/player-login-provider.md)  
 A list of login providers this player is able to sign in with.
 
 **formattingCulture** `string`  

@@ -1,7 +1,7 @@
 ---
 title: "IAnimationFrame interface"
 source: "https://www.construct.net/en/make-games/manuals/addon-sdk/reference/object-interfaces/ianimationframe"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -15,12 +15,12 @@ The `IAnimationFrame` interface represents an image for an object type. Despite 
 Note `IAnimationFrame` cannot be directly rendered. You must first create a texture from it.
 
 > **Tip**  
-> This interface provides methods for loading a texture, but you don't normally need to use them. Simply pass the `IAnimationFrame` to [IWorldInstanceBase](https://www.construct.net/make-games/manuals/addon-sdk/reference/base-classes/iworldinstancebase)'s `GetTexture()` method, which provides a default implementation using these methods.
+> This interface provides methods for loading a texture, but you don't normally need to use them. Simply pass the `IAnimationFrame` to [IWorldInstanceBase](../../reference/base-classes/iworldinstancebase.md)'s `GetTexture()` method, which provides a default implementation using these methods.
 
 ## Methods
 
 **GetObjectType()**  
-Return the associated [IObjectType](https://www.construct.net/make-games/manuals/addon-sdk/reference/object-interfaces/iobjecttype) interface.
+Return the associated [IObjectType](../../reference/object-interfaces/iobjecttype.md) interface.
 
 **GetWidth()**  
 Return the size of the image, in pixels.
@@ -29,13 +29,13 @@ Return the size of the image, in pixels.
 Return the size of the image, in pixels.
 
 **GetCachedWebGLTexture()**  
-Return an [IWebGLTexture](https://www.construct.net/make-games/manuals/addon-sdk/reference/graphics-interfaces/iwebgltexture) interface if the texture is already loaded, else `null`.
+Return an [IWebGLTexture](../../reference/graphics-interfaces/iwebgltexture.md) interface if the texture is already loaded, else `null`.
 
 **GetTexRect()**  
-Return an [SDK.Rect](https://www.construct.net/make-games/manuals/addon-sdk/reference/geometry-interfaces/rect) representing the texture co-ordinates of this image on the loaded texture. This can only be called if `GetCachedWebGLTexture()` returned a texture.
+Return an [SDK.Rect](../../reference/geometry-interfaces/rect.md) representing the texture co-ordinates of this image on the loaded texture. This can only be called if `GetCachedWebGLTexture()` returned a texture.
 
 **async LoadWebGLTexture()**  
-Start asynchronously loading a texture for this image. This should only be used if `GetCachedWebGLTexture()` returned `null`. Returns a promise that resolves with a [IWebGLTexture](https://www.construct.net/make-games/manuals/addon-sdk/reference/graphics-interfaces/iwebgltexture) representing the loaded texture.
+Start asynchronously loading a texture for this image. This should only be used if `GetCachedWebGLTexture()` returned `null`. Returns a promise that resolves with a [IWebGLTexture](../../reference/graphics-interfaces/iwebgltexture.md) representing the loaded texture.
 
 **GetBlob()**  
 Return a [Blob](https://developer.mozilla.org/en-US/docs/Web/API/Blob) representing the current image content of the animation frame as a compressed image in PNG, WebP or AVIF format.
@@ -62,13 +62,13 @@ Set and get the origin for this image. The origin is specified in texture co-ord
 Set and get the origin for this image. The origin is specified in texture co-ordinates, i.e. from 0 to 1. The default is 0.5, indicating the middle of the image.
 
 **GetImagePoints()**  
-Return an array of [IImagePoint](https://www.construct.net/make-games/manuals/addon-sdk/reference/object-interfaces/iimagepoint) representing the image points added to the image.
+Return an array of [IImagePoint](../../reference/object-interfaces/iimagepoint.md) representing the image points added to the image.
 
 **AddImagePoint(name, x, y)**  
-Add a new image point to the image with the specified name and position. As with the origin, image point positions are specified in texture co-ordinates, i.e. from 0 to 1. Returns an [IImagePoint](https://www.construct.net/make-games/manuals/addon-sdk/reference/object-interfaces/iimagepoint) representing the added image point.
+Add a new image point to the image with the specified name and position. As with the origin, image point positions are specified in texture co-ordinates, i.e. from 0 to 1. Returns an [IImagePoint](../../reference/object-interfaces/iimagepoint.md) representing the added image point.
 
 **GetCollisionPoly()**  
-Return the [ICollisionPoly](https://www.construct.net/make-games/manuals/addon-sdk/reference/object-interfaces/icollisionpoly) representing the image's collision polygon.
+Return the [ICollisionPoly](../../reference/object-interfaces/icollisionpoly.md) representing the image's collision polygon.
 
 **Delete()**  
 Immediately deletes this frame from its animation without any confirmation prompt. This cannot be undone.

@@ -1,7 +1,7 @@
 ---
 title: "Solid behavior"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/behavior-reference/solid"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -15,22 +15,22 @@ release: 476.3
 
 The **Solid behavior** makes other behaviors react to the object as if it were an impassable obstacle. Objects with this behavior are referred to as Solids. It affects the following behaviors:
 
-- [8 Direction](https://www.construct.net/make-games/manuals/construct-3/behavior-reference/8-direction), which is blocked by Solids
-- [Bullet](https://www.construct.net/make-games/manuals/construct-3/behavior-reference/bullet), which can optionally bounce off Solids
-- [Car](https://www.construct.net/make-games/manuals/construct-3/behavior-reference/car), which bounces off Solids
-- [Line-of-sight](https://www.construct.net/make-games/manuals/construct-3/behavior-reference/line-of-sight), which by default has line-of-sight obstructed by Solids
+- [8 Direction](../behavior-reference/8-direction.md), which is blocked by Solids
+- [Bullet](../behavior-reference/bullet.md), which can optionally bounce off Solids
+- [Car](../behavior-reference/car.md), which bounces off Solids
+- [Line-of-sight](../behavior-reference/line-of-sight.md), which by default has line-of-sight obstructed by Solids
 - [Move To](../behavior-reference/move.md), which can optionally stop on solids.
-- [Platform](https://www.construct.net/make-games/manuals/construct-3/behavior-reference/platform), which can land on Solids. Platform cannot jump on to solids from underneath - for this, use the [Jump-thru](https://www.construct.net/make-games/manuals/construct-3/behavior-reference/jump-thru) behavior.
-- [Pathfinding](https://www.construct.net/make-games/manuals/construct-3/behavior-reference/pathfinding), which by default uses solids as path obstacles.
+- [Platform](../behavior-reference/platform.md), which can land on Solids. Platform cannot jump on to solids from underneath - for this, use the [Jump-thru](../behavior-reference/jump-thru.md) behavior.
+- [Pathfinding](../behavior-reference/pathfinding.md), which by default uses solids as path obstacles.
 - [Tile movement](../behavior-reference/tile-movement.md), which is blocked by Solids
 
-Note that the [Physics](https://www.construct.net/make-games/manuals/construct-3/behavior-reference/physics) behavior is **not** affected by Solid objects. Instead, use the Physics behavior with *Immovable* enabled.
+Note that the [Physics](../behavior-reference/physics.md) behavior is **not** affected by Solid objects. Instead, use the Physics behavior with *Immovable* enabled.
 
-The Solid behavior is a fundamental attribute in Construct, and several other Construct features also interact with Solid objects. For example, the [Custom Movement](https://www.construct.net/make-games/manuals/construct-3/behavior-reference/custom-movement) behavior has actions to push the object out of solids.
+The Solid behavior is a fundamental attribute in Construct, and several other Construct features also interact with Solid objects. For example, the [Custom Movement](../behavior-reference/custom-movement.md) behavior has actions to push the object out of solids.
 
 ### Scripting
 
-When using JavaScript or TypeScript coding, the features of this behavior can be accessed via the [ISolidBehaviorInstance script interface](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/behavior-interfaces/solid).
+When using JavaScript or TypeScript coding, the features of this behavior can be accessed via the [ISolidBehaviorInstance script interface](../scripting/scripting-reference/behavior-interfaces/solid.md).
 
 ## Avoid crushing/trapping objects with Solids
 
@@ -44,7 +44,7 @@ It is only by moving (or re-enabling) Solids, or using *Set position*, that obje
 Set whether the behavior is initially enabled or disabled. If disabled, the object no longer acts as if it is solid, and objects will be able to pass through it.
 
 **Use instance tags**  
-Check to use the instance tags for the *Set solid collision filter* action instead of specifying tags separately in the Solid behavior's own *Tags* property. This is checked by default - the use of the Solid behavior's own *Tags* property exists only for backwards-compatibility reasons (see [Superseded features](https://www.construct.net/make-games/manuals/construct-3/tips-and-guides/superseded-features)).
+Check to use the instance tags for the *Set solid collision filter* action instead of specifying tags separately in the Solid behavior's own *Tags* property. This is checked by default - the use of the Solid behavior's own *Tags* property exists only for backwards-compatibility reasons (see [Superseded features](../tips-and-guides/superseded-features.md)).
 
 **Tags**  
 When *Use instance tags* is unchecked, a list of tags to apply to the Solid, separated by spaces. This property exists only for backwards-compatibility reasons - enabling *Use instance tags* is recommended instead.

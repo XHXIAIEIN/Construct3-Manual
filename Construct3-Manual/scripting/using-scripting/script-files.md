@@ -1,7 +1,7 @@
 ---
 title: "Script files"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/scripting/using-scripting/script-files"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -26,7 +26,7 @@ Once you add a script a code editor appears. The first script added will have so
 
 ## Execution of the main script
 
-Construct loads only the *main script* just after the Construct engine scripts run on startup. This is before any loading screen appears. It is a good place to write any initialization code and imports/exports the entire project will use. Since the Construct engine has still not yet initialized at this point, there is no `runtime` variable (representing the [runtime script interface](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/iruntime)) available at the top level. Instead Construct provides a special `runOnStartup` function that runs a callback once the runtime is ready, and provides the `runtime` variable as a parameter.
+Construct loads only the *main script* just after the Construct engine scripts run on startup. This is before any loading screen appears. It is a good place to write any initialization code and imports/exports the entire project will use. Since the Construct engine has still not yet initialized at this point, there is no `runtime` variable (representing the [runtime script interface](../../scripting/scripting-reference/iruntime.md)) available at the top level. Instead Construct provides a special `runOnStartup` function that runs a callback once the runtime is ready, and provides the `runtime` variable as a parameter.
 
 ```javascript
 runOnStartup(async runtime =>
@@ -100,12 +100,12 @@ You should place these script files in the **Files** folder of the Project Bar i
 
 Construct loads all script files as [modules](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules). Unlike legacy "classic" mode scripts, modules have their own top-level scope. This means things like a top-level function declaration is *not* available in other script files.
 
-Instead you can add imports to the script file with the purpose *Imports for events* which then become available for scripts in events. See the section *Using imports* in [Scripts in event sheets](https://www.construct.net/make-games/manuals/construct-3/scripting/using-scripting/scripts-in-event-sheets) for more details.
+Instead you can add imports to the script file with the purpose *Imports for events* which then become available for scripts in events. See the section *Using imports* in [Scripts in event sheets](../../scripting/using-scripting/scripts-in-event-sheets.md) for more details.
 
 Another option is to write globals as explicit properties of `globalThis`, e.g. `globalThis.myFunction = function () { ... }` and call it via `globalThis.myFunction()`, but using modules is preferable.
 
 ## Errors
 
-Unlike scripts in event sheets, errors arising from the top level of script files are not automatically handled by Construct. If an unhandled exception is thrown, the browser will halt any further execution of script in that file. Typically this causes the rest of your code to stop working, and is considered a crash. See the section [debugging scripts](https://www.construct.net/make-games/manuals/construct-3/scripting/using-scripting/debugging-script) to find out how to deal with such issues.
+Unlike scripts in event sheets, errors arising from the top level of script files are not automatically handled by Construct. If an unhandled exception is thrown, the browser will halt any further execution of script in that file. Typically this causes the rest of your code to stop working, and is considered a crash. See the section [debugging scripts](../../scripting/using-scripting/debugging-script.md) to find out how to deal with such issues.
 
 Note one difference is exceptions or rejections in a `runOnStartup` callback are automatically handled by Construct. The error will be logged to the browser console and the runtime will continue to start up and run the game - but note if an error occurred it may not run as expected.

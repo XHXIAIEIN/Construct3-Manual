@@ -1,7 +1,7 @@
 ---
 title: "Orbit behavior script interface"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/scripting/scripting-reference/behavior-interfaces/orbit"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -10,7 +10,7 @@ release: 476.3
 
 ---
 
-The `IOrbitBehaviorInstance` interface derives from [IBehaviorInstance](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/object-interfaces/ibehaviorinstance) to add APIs specific to the [Orbit behavior](https://www.construct.net/make-games/manuals/construct-3/behavior-reference/orbit).
+The `IOrbitBehaviorInstance` interface derives from [IBehaviorInstance](../../../scripting/scripting-reference/object-interfaces/ibehaviorinstance.md) to add APIs specific to the [Orbit behavior](../../../behavior-reference/orbit.md).
 
 ## Orbit behavior APIs
 
@@ -21,7 +21,7 @@ Set the position in the layout that the movement will orbit around.
 Return the current target position in the layout as a two-element array in the form `[x, y]`.
 
 **pin(iWorldInst)**  
-Pass an [IWorldInstance](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/object-interfaces/iworldinstance) to set the behavior to always orbit around that object's position.
+Pass an [IWorldInstance](../../../scripting/scripting-reference/object-interfaces/iworldinstance.md) to set the behavior to always orbit around that object's position.
 
 **speed**  
 Set or get the current rotation speed in radians per second.

@@ -1,7 +1,7 @@
 ---
 title: "3D Camera"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/3d-camera"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -21,7 +21,7 @@ You can learn more about 3D Camera and how it works with other 3D features in th
 
 ### Scripting
 
-When using JavaScript or TypeScript coding, the features of this object can be accessed via the [I3DCameraObjectType script interface](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/plugin-interfaces/3d-camera).
+When using JavaScript or TypeScript coding, the features of this object can be accessed via the [I3DCameraObjectType script interface](../scripting/scripting-reference/plugin-interfaces/3d-camera.md).
 
 ## Using a 3D Camera
 
@@ -31,7 +31,7 @@ The 3D Camera object will only apply to layers which have their **Rendering mode
 
 ## 3D Audio
 
-When moving the camera in 3D, it can be useful to play positioned sounds which will adjust playback to make them sound like they are coming from a position in 3D space. This can be done by setting the listener orientation in the [Audio object](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/audio), and playing positioned sounds either at objects (which will also use their Z elevation as the Z co-ordinate of the sound) or at a position which allows specifying the X, Y and Z co-ordinates of the sound.
+When moving the camera in 3D, it can be useful to play positioned sounds which will adjust playback to make them sound like they are coming from a position in 3D space. This can be done by setting the listener orientation in the [Audio object](../plugin-reference/audio.md), and playing positioned sounds either at objects (which will also use their Z elevation as the Z co-ordinate of the sound) or at a position which allows specifying the X, Y and Z co-ordinates of the sound.
 
 ## 3D Camera properties
 

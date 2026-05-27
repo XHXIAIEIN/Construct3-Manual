@@ -1,7 +1,7 @@
 ---
 title: "Breakpoints"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/project-primitives/events/breakpoints"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -14,7 +14,7 @@ release: 476.3
 
 ---
 
-`[Paid plans only]`  Breakpoints are an advanced feature that allow you to pause execution of the event sheet on a specific [event](https://www.construct.net/make-games/manuals/construct-3/project-primitives/events), [condition](https://www.construct.net/make-games/manuals/construct-3/project-primitives/events/conditions) or [action](https://www.construct.net/make-games/manuals/construct-3/project-primitives/events/actions) when running in the [debugger](https://www.construct.net/make-games/manuals/construct-3/interface/debugger). This can be a significant aid to debugging, since the full capabilities of the debugger can be used while stepping through events, conditions and actions one-by-one.
+`[Paid plans only]`  Breakpoints are an advanced feature that allow you to pause execution of the event sheet on a specific [event](../../project-primitives/events.md), [condition](../../project-primitives/events/conditions.md) or [action](../../project-primitives/events/actions.md) when running in the [debugger](../../interface/debugger.md). This can be a significant aid to debugging, since the full capabilities of the debugger can be used while stepping through events, conditions and actions one-by-one.
 
 ## Setting a breakpoint
 
@@ -28,7 +28,7 @@ When a breakpoint is set on an event, condition or action, a breakpoint icon app
 
 When running the debugger, the project will automatically pause *just before* it runs an event, condition or action with a breakpoint.
 
-For events, this means it pauses just before it tests the first condition. This means a top-level event with a breakpoint will pause every tick, since the event engine reaches it every tick to test its conditions. It is usually more useful to place event breakpoints on [sub-events](https://www.construct.net/make-games/manuals/construct-3/project-primitives/events/sub-events), since they will only pause when the parent events have been run. When paused on a breakpoint, the event has a dashed outline and the icon changes to an arrow.
+For events, this means it pauses just before it tests the first condition. This means a top-level event with a breakpoint will pause every tick, since the event engine reaches it every tick to test its conditions. It is usually more useful to place event breakpoints on [sub-events](../../project-primitives/events/sub-events.md), since they will only pause when the parent events have been run. When paused on a breakpoint, the event has a dashed outline and the icon changes to an arrow.
 
 [![An event stopped on a breakpoint](https://construct-static.com/images/v1740/r/uploads/articleuploadobject/0/images/947/breakpoints2_v600.png)](https://construct-static.com/images/v1740/uploads/articleuploadobject/0/images/947/breakpoints2.png)
 

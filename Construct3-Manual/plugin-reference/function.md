@@ -1,7 +1,7 @@
 ---
 title: "Function"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/function"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -47,7 +47,7 @@ It is often useful to split many parts of your events in to functions like this,
 
 When calling a function, you can also pass *parameters*. These are simply numbers or strings that are made available to the function. For example, the *CreateEnemy* function from the previous example could be modified to take two parameters: the X and the Y co-ordinates at which to create the enemy. This helps functions to be made more general purpose by using extra information from the action calling the function.
 
-To add a parameter to a function call, click the **Add parameter** link that appears in the [Parameters dialog](https://www.construct.net/make-games/manuals/construct-3/interface/dialogs/parameters) when editing the *Call function* action. This is a special link that only appears for this action in the Function object. Inside an *On function* event, you can then use the *Param* expression with the zero-based index of the parameter to retrieve the corresponding value.
+To add a parameter to a function call, click the **Add parameter** link that appears in the [Parameters dialog](../interface/dialogs/parameters.md) when editing the *Call function* action. This is a special link that only appears for this action in the Function object. Inside an *On function* event, you can then use the *Param* expression with the zero-based index of the parameter to retrieve the corresponding value.
 
 ## Advanced function features
 
@@ -70,7 +70,7 @@ If the event was called using the *Call function* action, the returned value is 
 
 ## JavaScript integration
 
-It is strongly recommended to use the [Addon SDK](https://www.construct.net/make-games/manuals/addon-sdk) to integrate JavaScript code with Construct. However it is possible to trigger a function in the Function object from JavaScript code using the following function:
+It is strongly recommended to use the [Addon SDK](../../Construct3-Addon-SDK/index.md) to integrate JavaScript code with Construct. However it is possible to trigger a function in the Function object from JavaScript code using the following function:
 
 ```javascript
 if (self.c2_callFunction)

@@ -1,7 +1,7 @@
 ---
 title: "8 Direction behavior"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/behavior-reference/8-direction"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -15,13 +15,13 @@ release: 476.3
 
 The **8 Direction behavior** allows an object to be moved up, down, left, right and on diagonals, controlled by the arrow keys by default. It is often useful for controlling the player in a top-down view game. It can also be set to 4 directions or simple up/down or left/right movement which is useful for paddles or sliders. [Click here to open an example of the 8-direction behavior](https://editor.construct.net/#open=8-direction-behavior).
 
-The 8 Direction behavior is blocked by any objects with the [Solid behavior](https://www.construct.net/make-games/manuals/construct-3/behavior-reference/solid).
+The 8 Direction behavior is blocked by any objects with the [Solid behavior](../behavior-reference/solid.md).
 
-To set up custom or automatic controls, see the [behavior reference summary](https://www.construct.net/make-games/manuals/construct-3/behavior-reference).
+To set up custom or automatic controls, see the [behavior reference summary](../behavior-reference.md).
 
 ### Scripting
 
-When using JavaScript or TypeScript coding, the features of this behavior can be accessed via the [I8DirectionBehaviorInstance script interface](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/behavior-interfaces/direction).
+When using JavaScript or TypeScript coding, the features of this behavior can be accessed via the [I8DirectionBehaviorInstance script interface](../scripting/scripting-reference/behavior-interfaces/direction.md).
 
 ## 8 Direction properties
 
@@ -44,7 +44,7 @@ Whether or not the movement should also affect the objects angle. *360 degree (s
 If disabled, the object will simply stop when it collides with a solid. If enabled, the object will be able to continue moving along angled solids when it collides with them, essentially 'slipping' or 'sliding' along them.
 
 **Default controls**  
-If enabled, movement is controlled by the arrow keys on the keyboard. Disable to set up custom controls using the *Simulate control* action. For more information see the [behavior reference summary](https://www.construct.net/make-games/manuals/construct-3/behavior-reference).
+If enabled, movement is controlled by the arrow keys on the keyboard. Disable to set up custom controls using the *Simulate control* action. For more information see the [behavior reference summary](../behavior-reference.md).
 
 **Enabled**  
 Whether the behavior is initially enabled or disabled. If disabled, it can be enabled at runtime using the *Set enabled* action.
@@ -99,7 +99,7 @@ Set the X and Y components of the movement, in pixels per second.
 Set the X and Y components of the movement, in pixels per second.
 
 **Simulate control**  
-Simulate one of the movement controls being held down. Useful when *Default controls* is disabled. See the [behavior reference summary](https://www.construct.net/make-games/manuals/construct-3/behavior-reference) for more information.
+Simulate one of the movement controls being held down. Useful when *Default controls* is disabled. See the [behavior reference summary](../behavior-reference.md) for more information.
 
 **Stop**  
 A shortcut for setting the speed to zero.

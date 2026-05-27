@@ -1,7 +1,7 @@
 ---
 title: "Common actions"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/common-features/common-actions"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -18,7 +18,7 @@ release: 476.3
 
 ---
 
-The following [actions](https://www.construct.net/make-games/manuals/construct-3/project-primitives/events/actions) are common to several plugins.
+The following [actions](../../project-primitives/events/actions.md) are common to several plugins.
 
 ## Angle
 
@@ -44,7 +44,7 @@ Set the object's angle to face a position in the layout.
 
 ## Appearance
 
-Not all objects support the actions relating to effects. For more information see [Effects](https://www.construct.net/make-games/manuals/construct-3/project-primitives/objects/effects).
+Not all objects support the actions relating to effects. For more information see [Effects](../../project-primitives/objects/effects.md).
 
 **Set blend mode**  
 Change the way the object blends with the background by altering the object's *Blend mode* property.
@@ -62,7 +62,7 @@ Change the value of one of the parameters for an effect added to the object. The
 Set the object's opacity (or 'semitransparency'), from 0 (transparent) to 100 (opaque).
 
 **Set sampling**  
-Set the object's sampling mode. For more information see the corresponding property in [object instances](https://www.construct.net/make-games/manuals/construct-3/project-primitives/objects/instances).
+Set the object's sampling mode. For more information see the corresponding property in [object instances](../../project-primitives/objects/instances.md).
 
 **Set visible**  
 Set the object visible or invisible (hidden). The *Toggle* option sets the opposite state, i.e. visible if the object is invisible and vice versa.
@@ -117,19 +117,19 @@ Set whether the HTML element is visible or hidden. The visibility can also be to
 ## Instance variables
 
 **Add to**  
-Modify a number [instance variable](https://www.construct.net/make-games/manuals/construct-3/project-primitives/objects/instance-variables).
+Modify a number [instance variable](../../project-primitives/objects/instance-variables.md).
 
 **Subtract from**  
-Modify a number [instance variable](https://www.construct.net/make-games/manuals/construct-3/project-primitives/objects/instance-variables).
+Modify a number [instance variable](../../project-primitives/objects/instance-variables.md).
 
 **Set**  
-Set a number or text [instance variable](https://www.construct.net/make-games/manuals/construct-3/project-primitives/objects/instance-variables).
+Set a number or text [instance variable](../../project-primitives/objects/instance-variables.md).
 
 **Set boolean**  
-Set a boolean [instance variable](https://www.construct.net/make-games/manuals/construct-3/project-primitives/objects/instance-variables), which can hold either a true or false value.
+Set a boolean [instance variable](../../project-primitives/objects/instance-variables.md), which can hold either a true or false value.
 
 **Toggle boolean**  
-Toggle a boolean [instance variable](https://www.construct.net/make-games/manuals/construct-3/project-primitives/objects/instance-variables), which flips it from true to false or vice versa.
+Toggle a boolean [instance variable](../../project-primitives/objects/instance-variables.md), which flips it from true to false or vice versa.
 
 ## Mesh distortion
 
@@ -167,19 +167,19 @@ Move the object a number of pixels at a given angle in degrees.
 Move the object a number of pixels forward at the object's current angle.
 
 **Set width**  
-Set the object's current size in pixels. Note only 3D objects like [3D shape](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/3d-shape) have the options to set depth or the 3D size, as 2D objects do not have a size on the Z axis.
+Set the object's current size in pixels. Note only 3D objects like [3D shape](../../plugin-reference/3d-shape.md) have the options to set depth or the 3D size, as 2D objects do not have a size on the Z axis.
 
 **Set height**  
-Set the object's current size in pixels. Note only 3D objects like [3D shape](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/3d-shape) have the options to set depth or the 3D size, as 2D objects do not have a size on the Z axis.
+Set the object's current size in pixels. Note only 3D objects like [3D shape](../../plugin-reference/3d-shape.md) have the options to set depth or the 3D size, as 2D objects do not have a size on the Z axis.
 
 **Set depth**  
-Set the object's current size in pixels. Note only 3D objects like [3D shape](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/3d-shape) have the options to set depth or the 3D size, as 2D objects do not have a size on the Z axis.
+Set the object's current size in pixels. Note only 3D objects like [3D shape](../../plugin-reference/3d-shape.md) have the options to set depth or the 3D size, as 2D objects do not have a size on the Z axis.
 
 **Set size**  
-Set the object's current size in pixels. Note only 3D objects like [3D shape](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/3d-shape) have the options to set depth or the 3D size, as 2D objects do not have a size on the Z axis.
+Set the object's current size in pixels. Note only 3D objects like [3D shape](../../plugin-reference/3d-shape.md) have the options to set depth or the 3D size, as 2D objects do not have a size on the Z axis.
 
 **Set size 3D**  
-Set the object's current size in pixels. Note only 3D objects like [3D shape](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/3d-shape) have the options to set depth or the 3D size, as 2D objects do not have a size on the Z axis.
+Set the object's current size in pixels. Note only 3D objects like [3D shape](../../plugin-reference/3d-shape.md) have the options to set depth or the 3D size, as 2D objects do not have a size on the Z axis.
 
 **Set X**  
 Set the object's current position in the layout, in pixels. The origin (0,0) is the top-left of the layout. The Y axis increments downwards and the Z axis increments towards the camera.

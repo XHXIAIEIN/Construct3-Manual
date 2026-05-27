@@ -1,7 +1,7 @@
 ---
 title: "ILayout interface"
 source: "https://www.construct.net/en/make-games/manuals/addon-sdk/reference/model-interfaces/ilayout"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -10,12 +10,12 @@ release: 476.3
 
 ---
 
-The `ILayout` interface represents a layout in the project model. Note that [ILayoutView](https://www.construct.net/make-games/manuals/addon-sdk/reference/ui-interfaces/ilayoutview) represents the editor view, but ILayout represents the layout in the project.
+The `ILayout` interface represents a layout in the project model. Note that [ILayoutView](../../reference/ui-interfaces/ilayoutview.md) represents the editor view, but ILayout represents the layout in the project.
 
 ## Methods
 
 **GetProject()**  
-Return the associated [IProject](https://www.construct.net/make-games/manuals/addon-sdk/reference/model-interfaces/iproject).
+Return the associated [IProject](../../reference/model-interfaces/iproject.md).
 
 **GetName()**  
 Return the name of the layout.
@@ -24,4 +24,4 @@ Return the name of the layout.
 Return an array of [ILayer](../../reference/model-interfaces/ilayer.md) representing all the layers on this layout.
 
 **GetEventSheet()**  
-Return the [IEventSheet](https://www.construct.net/make-games/manuals/addon-sdk/reference/model-interfaces/ieventsheet) assigned for this layout. Note that layouts do not have to have an event sheet assigned, so this can return `null`.
+Return the [IEventSheet](../../reference/model-interfaces/ieventsheet.md) assigned for this layout. Note that layouts do not have to have an event sheet assigned, so this can return `null`.

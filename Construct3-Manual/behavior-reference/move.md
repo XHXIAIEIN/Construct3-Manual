@@ -1,7 +1,7 @@
 ---
 title: "Move To"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/behavior-reference/move"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -22,7 +22,7 @@ The **Move To behavior** moves an object to a position at a maximum speed with a
 
 ### Scripting
 
-When using JavaScript or TypeScript coding, the features of this behavior can be accessed via the [IMoveToBehaviorInstance script interface](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/behavior-interfaces/move).
+When using JavaScript or TypeScript coding, the features of this behavior can be accessed via the [IMoveToBehaviorInstance script interface](../scripting/scripting-reference/behavior-interfaces/move.md).
 
 ## Move To properties
 

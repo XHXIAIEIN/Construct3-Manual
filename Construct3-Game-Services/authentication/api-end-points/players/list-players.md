@@ -1,7 +1,7 @@
 ---
 title: "List Players"
 source: "https://www.construct.net/en/game-services/manuals/game-services/authentication/api-end-points/players/list-players"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -80,7 +80,7 @@ If the request was successfull or not.
 **pagination** [`Pagination`](../../../common-objects/pagination-object.md)  
 If there are more players returned than can be shown in one page of results, the pagination object can help you browse through the other pages of results.
 
-**players** Array<[ExpandedPlayer](../../../authentication/api-objects/expanded-player.md)>
+**players** [`Array<ExpandedPlayer>`](../../../authentication/api-objects/expanded-player.md)  
 The players returned on this page of results for the query.
 
 **formattingCulture** `string`  

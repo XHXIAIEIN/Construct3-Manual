@@ -1,7 +1,7 @@
 ---
 title: "Jump-thru behavior"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/behavior-reference/jump-thru"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -12,7 +12,7 @@ release: 476.3
 
 ---
 
-The **Jump-thru behavior** allows the [Platform behavior](https://www.construct.net/make-games/manuals/construct-3/behavior-reference/platform) to stand on the object, and jump on to it from underneath. This differs from the [Solid behavior](https://www.construct.net/make-games/manuals/construct-3/behavior-reference/solid), which the Platform behavior can stand on, but not jump on to from underneath. The image below illustrates the difference.
+The **Jump-thru behavior** allows the [Platform behavior](../behavior-reference/platform.md) to stand on the object, and jump on to it from underneath. This differs from the [Solid behavior](../behavior-reference/solid.md), which the Platform behavior can stand on, but not jump on to from underneath. The image below illustrates the difference.
 
 Note the Jump-thru behavior **does not support slopes**. Any slopes in your game should use the Solid behavior instead.
 
@@ -20,7 +20,7 @@ Note the Jump-thru behavior **does not support slopes**. Any slopes in your game
 
 ### Scripting
 
-When using JavaScript or TypeScript coding, the features of this behavior can be accessed via the [IJumpthruBehaviorInstance script interface](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/behavior-interfaces/jump-thru).
+When using JavaScript or TypeScript coding, the features of this behavior can be accessed via the [IJumpthruBehaviorInstance script interface](../scripting/scripting-reference/behavior-interfaces/jump-thru.md).
 
 ## Jump-thru properties
 

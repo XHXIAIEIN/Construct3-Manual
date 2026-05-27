@@ -1,7 +1,7 @@
 ---
 title: "File System script interface"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/scripting/scripting-reference/plugin-interfaces/file-system"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -12,7 +12,7 @@ release: 476.3
 
 ---
 
-The `IFileSystemObjectType` interface derives from [IObjectClass](../../../scripting/scripting-reference/object-interfaces/iobjectclass.md) to add APIs specific to the [File System plugin](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/filesystem). Refer to the plugin documentation for details about permissions and known folders.
+The `IFileSystemObjectType` interface derives from [IObjectClass](../../../scripting/scripting-reference/object-interfaces/iobjectclass.md) to add APIs specific to the [File System plugin](../../../plugin-reference/filesystem.md). Refer to the plugin documentation for details about permissions and known folders.
 
 Note this class derives from the object class interface, not the instance interface. Typically it is used through `runtime.objects.FileSystem`.
 

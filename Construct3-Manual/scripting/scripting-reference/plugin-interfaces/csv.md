@@ -1,7 +1,7 @@
 ---
 title: "CSV script interface"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/scripting/scripting-reference/plugin-interfaces/csv"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -10,7 +10,7 @@ release: 476.3
 
 ---
 
-The `ICSVObjectType` interface provides APIs specific to the [CSV plugin](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/csv). This allows reading and writing CSV data (and other delimiter-based formats like TSV) from JavaScript code.
+The `ICSVObjectType` interface provides APIs specific to the [CSV plugin](../../../plugin-reference/csv.md). This allows reading and writing CSV data (and other delimiter-based formats like TSV) from JavaScript code.
 
 The script interface uses JavaScript data types directly and so does not need to use an Array object for storage, which is necessary when using CSV in event sheets.
 

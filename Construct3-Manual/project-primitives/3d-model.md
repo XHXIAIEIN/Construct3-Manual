@@ -1,7 +1,7 @@
 ---
 title: "3D Model"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/project-primitives/3d-model"
-release: 476.3
+release: 487
 ---
 
 ## On this page

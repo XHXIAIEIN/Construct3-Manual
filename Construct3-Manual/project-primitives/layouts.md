@@ -1,7 +1,7 @@
 ---
 title: "Layouts"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/project-primitives/layouts"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -12,29 +12,29 @@ release: 476.3
 
 ---
 
-A **layout** is a pre-arranged set of objects. It can represent a game level, menu or title screen, or a scene in an animation. In other tools layouts may be referred to as *scenes*, *rooms*, *frames* or *stages*. They can be added, renamed and deleted from the [Project Bar](https://www.construct.net/make-games/manuals/construct-3/interface/bars/project-bar). Layouts are edited with the [Layout View](https://www.construct.net/make-games/manuals/construct-3/interface/layout-view). Every layout has an associated [event sheet](https://www.construct.net/make-games/manuals/construct-3/project-primitives/events/event-sheets) which defines how the layout works.
+A **layout** is a pre-arranged set of objects. It can represent a game level, menu or title screen, or a scene in an animation. In other tools layouts may be referred to as *scenes*, *rooms*, *frames* or *stages*. They can be added, renamed and deleted from the [Project Bar](../interface/bars/project-bar.md). Layouts are edited with the [Layout View](../interface/layout-view.md). Every layout has an associated [event sheet](../project-primitives/events/event-sheets.md) which defines how the layout works.
 
-Layouts contain a stack of [layers](https://www.construct.net/make-games/manuals/construct-3/project-primitives/layers). A layout must have at least one layer. Objects that appear on the screen do not belong directly to a layout - they belong to one of the layers in the layout.
+Layouts contain a tree of [layers](../project-primitives/layers.md). A layout must have at least one layer. Objects that appear on the screen do not belong directly to a layout - they belong to one of the layers in the layout.
 
-Layouts do not have a background color. To set a background color, make the bottom layer opaque and set its background color. This can be done in the [Layers Bar](https://www.construct.net/make-games/manuals/construct-3/interface/bars/layers-bar).
+Layouts do not have a background color. To set a background color, make the bottom layer opaque and set its background color. This can be done in the [Layers Bar](../interface/bars/layers-bar.md).
 
-Layouts can also have [effects](https://www.construct.net/make-games/manuals/construct-3/project-primitives/objects/effects) applied, which affects all content appearing in the display.
+Layouts can also have [effects](../project-primitives/objects/effects.md) applied, which affects all content appearing in the display.
 
 ## Adding and removing layouts
 
-To add a layout, right-click a layout folder (such as the root level *Layouts*) in the [Project Bar](https://www.construct.net/make-games/manuals/construct-3/interface/bars/project-bar) and select **Add layout**.
+To add a layout, right-click a layout folder (such as the root level *Layouts*) in the [Project Bar](../interface/bars/project-bar.md) and select **Add layout**.
 
 To rename or remove a layout, right-click the layout itself in the Project Bar and select **Rename** or **Delete**.
 
 ## Layout properties
 
-The properties for a layout can be edited in the [Properties Bar](https://www.construct.net/make-games/manuals/construct-3/interface/bars/properties-bar) after clicking a space in the layout or selecting the name of the layout in the Project Bar.
+The properties for a layout can be edited in the [Properties Bar](../interface/bars/properties-bar.md) after clicking a space in the layout or selecting the name of the layout in the Project Bar.
 
 **Name**  
 The name of this layout.
 
 **Event sheet**  
-The associated event sheet that defines how this layout works. Event sheets can be shared between layouts using [includes](https://www.construct.net/make-games/manuals/construct-3/project-primitives/events/includes) if you have a lot of similar events between layouts.
+The associated event sheet that defines how this layout works. Event sheets can be shared between layouts using [includes](../project-primitives/events/includes.md) if you have a lot of similar events between layouts.
 
 **Size**  
 The size, in pixels, of the layout area. If *Unbounded scrolling* is enabled, this still affects how much of the layout area is shown in the Layout View.
@@ -52,7 +52,7 @@ Set the projection used for rendering 3D features. The default *Perspective* pro
 When using 3D features such as Z elevation and the 3D shape object with perspective, this specifies where the vanishing point is relative to the viewport area. (This setting does not apply with an orthographic projection, as there is no perspective.) The default is 50%, 50% meaning the middle of the viewport. Consequently as things move in to the distance, they will also move towards the middle of the screen. Altering this will adjust the perspective such that objects moving in to the distance move to a vanishing point elsewhere on the screen. For example setting the vanishing point to 0%, 0% moves the vanishing point to the top-left corner of the screen. This can be used to adapt the 3D perspective to the style of your project. To learn more see the tutorial [Using 3D in Construct](https://www.construct.net/en/tutorials/using-3d-construct-2746).
 
 **Effects**  
-Add and edit [effects](https://www.construct.net/make-games/manuals/construct-3/project-primitives/objects/effects) that apply to the whole layout.
+Add and edit [effects](../project-primitives/objects/effects.md) that apply to the whole layout.
 
 ## Editor properties
 
@@ -62,16 +62,19 @@ These properties only affect how the layout works in the editor, and don't chang
 The size in pixels of extra padding space around the actual layout area that you can scroll around in. Some padding is often useful for conveniently editing the edges of the layout area.
 
 **Show grid**  
-Whether to display a grid in the Layout View.
+Whether to display a 2D grid in the Layout View. Note as this is a 2D feature it only displays a grid using the grid width and height on the Z=0 plane - it does not draw anything for the Z axis.
 
 **Snap to grid**  
-Whether to snap all object placements and sizes to the grid in the Layout View.
+Whether to snap all object placements and sizes to the grid in the Layout View. Note if this is enabled then it overrides the *Pixel snapping* setting; if disabled then snapping may still occur if *Pixel snapping* is enabled.
 
 **Grid size**  
 The size of the grid in pixels. This is only used if *Show grid* or *Snap to grid* is enabled.
 
 **Grid offset**  
-By default the grid is aligned with the top and left edge of the layout area. Adding an offset shifts the grid horizontally or vertically so it is offset from the edges of the layout.
+By default the grid is aligned with the top left edge of the layout area. Adding an offset shifts the grid along each axis so it is offset from the edges of the layout.
+
+**Pixel snapping**  
+Enabling this option is equivalent to enabling *Snap to grid* with the size 1x1x1, ensuring objects are never placed at fractional positions. This only takes effect when *Snap to grid* is disabled - when *Snap to grid* is enabled then the snapping is done according to the grid size instead. This can be a useful option for pixel art style projects to ensure fractional positions are never used while being able to preserve the grid size.
 
 **Show collision polygons**  
 Display outlines of object's collision polygons in the Layout View. This can help arrange objects with regards to how they collide, rather than just how they appear.
@@ -86,4 +89,4 @@ Enable to display all layers other than the active layer at a reduced opacity. T
 Display arrows over scene graph hierarchies pointing from parents to children. See *Setting up a hierarchy* in the [Layout View manual entry](../interface/layout-view.md) for more details.
 
 **Project properties**  
-A shortcut to view the [project's properties](https://www.construct.net/make-games/manuals/construct-3/project-primitives/projects).
+A shortcut to view the [project's properties](../project-primitives/projects.md).
