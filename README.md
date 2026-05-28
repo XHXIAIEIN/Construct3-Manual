@@ -9,18 +9,18 @@ Unofficial Markdown conversion of the official [Construct 3](https://www.constru
 
 | Directory | Docs | Description |
 | --------- | :---: | ---------- |
-346 Plugins, behaviors, events, scripting, publishing |
-63 Custom plugins, behaviors, effects, themes |
-173 Leaderboards, achievements, cloud saves, authentication, broadcasts, XP, ratings |
-582 | |
+| [Manual](Construct3-Manual/index.md) | 346 | Plugins, behaviors, events, scripting, publishing |
+| [Addon SDK](Construct3-Addon-SDK/index.md) | 63 | Custom plugins, behaviors, effects, themes |
+| [Game Services](Construct3-Game-Services/index.md) | 173 | Leaderboards, achievements, cloud saves, authentication |
+| **Total** | **582** | |
 
 ## Source
 
 | Content | Release | URL |
 | --- | :---: | --- |
-r487 <https://www.construct.net/en/make-games/manuals/construct-3> |
-r487 <https://www.construct.net/en/make-games/manuals/addon-sdk> |
-r487 <https://www.construct.net/en/game-services/manuals/game-services> |
+| Construct 3 Manual | r487 | <https://www.construct.net/en/make-games/manuals/construct-3> |
+| Addon SDK | r487 | <https://www.construct.net/en/make-games/manuals/addon-sdk> |
+| Game Services | r487 | <https://www.construct.net/en/game-services/manuals/game-services> |
 
 ## Recommended Reading
 
