@@ -159,8 +159,8 @@ jobs:
         uses: peter-evans/create-pull-request@v6
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          commit-message: "Update documentation to ${{ steps.ver.outputs.latest }}"
-          title: "Update documentation to ${{ steps.ver.outputs.latest }}"
+          commit-message: "Update to ${{ steps.ver.outputs.latest }}"
+          title: "Update to ${{ steps.ver.outputs.latest }}"
           body: |
             ${{ steps.ver.outputs.current }} → ${{ steps.ver.outputs.latest }}
 
