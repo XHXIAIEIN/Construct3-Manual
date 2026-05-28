@@ -1,7 +1,7 @@
 ---
 title: "Get Newest Scores"
 source: "https://www.construct.net/en/game-services/manuals/game-services/leaderboards/api-end-points/scores/get-newest-scores"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -81,7 +81,7 @@ If the request was successfull or not.
 **pagination** [`Pagination`](../../../common-objects/pagination-object.md)  
 A pagination object helpful for navigating other pages of results.
 
-**scores** Array<[Score](../../../leaderboards/api-objects/score.md)>
+**scores** [`Array<Score>`](../../../leaderboards/api-objects/score.md)  
 The list of score objects returned from the request.
 
 **formattingCulture** `string`  

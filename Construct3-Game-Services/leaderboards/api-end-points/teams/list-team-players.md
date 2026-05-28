@@ -1,7 +1,7 @@
 ---
 title: "List Players on a Team"
 source: "https://www.construct.net/en/game-services/manuals/game-services/leaderboards/api-end-points/teams/list-team-players"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -82,7 +82,7 @@ If the request was successfull or not.
 **pagination** [`Pagination`](../../../common-objects/pagination-object.md)  
 A pagination object helpful for navigating other pages of results.
 
-**players** Array<[TeamPlayer](../../../leaderboards/api-objects/team-player.md)>
+**players** [`Array<TeamPlayer>`](../../../leaderboards/api-objects/team-player.md)  
 The list of players returned in the request.
 
 **team** [`ExpandedTeam`](../../../leaderboards/api-objects/expanded-team.md)  

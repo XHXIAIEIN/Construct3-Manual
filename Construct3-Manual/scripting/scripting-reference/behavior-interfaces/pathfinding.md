@@ -1,7 +1,7 @@
 ---
 title: "Pathfinding behavior script interface"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/scripting/scripting-reference/behavior-interfaces/pathfinding"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -84,11 +84,11 @@ Return the position of a node in the path that was found, in layout co-ordinates
 **getNodeAt(i)**  
 Return the position of a node in the path that was found, in layout co-ordinates, using the zero-based index of the node. This is only available after a path has been successfully found. The `getNodeAt()` variant returns `[x, y]`.
 
-***nodes()**
+***nodes()**  
 Iterates all nodes in the path that was found. This returns the same information as `getNodeAt()` but as a generator, yielding values of the form `[x, y]`.
 
 **directMovementMode**  
-Set or get a string of one of `"none"`, `"to-destination"` or `"anywhere-along-path"` reflecting the direct movement mode. For more information about the effect of each mode, see the *Direct movement* property in the [Pathfinding behavior manual entry](https://www.construct.net/make-games/manuals/construct-3/behavior-reference/pathfinding).
+Set or get a string of one of `"none"`, `"to-destination"` or `"anywhere-along-path"` reflecting the direct movement mode. For more information about the effect of each mode, see the *Direct movement* property in the [Pathfinding behavior manual entry](../../../behavior-reference/pathfinding.md).
 
 **isEnabled**  
 A boolean indicating if the behavior is enabled. If disabled, the behavior no longer has any effect on the object.
@@ -128,7 +128,7 @@ As with *regenerateMap()*, but only the specified area is updated. This is usual
 As with *regenerateMap()*, but only the specified area is updated. This is usually considerably faster than regenerating the entire map. However as with regenerating the entire obstacle map, changes only take effect after the returned promise resolves. *regenerateRegion()* takes a rectangle in layout co-ordinates to regenerate. *regenerateObjectRegion()* similarly regenerates the rectangle in the layout given by the bounding boxes of the instances of an [IObjectClass](../../../scripting/scripting-reference/object-interfaces/iobjectclass.md). Note this can cover multiple rectangles if there are multiple instances.
 
 **startPathGroup(baseCost = 1, cellSpread = 1, maxWorkers = 1)**  
-Start and end a *path group*, which can be used to spread out the paths found inside the group. For more information refer to the corresponding *Start path group* and *End path group* actions in the [Pathfinding behavior manual entry](https://www.construct.net/make-games/manuals/construct-3/behavior-reference/pathfinding).
+Start and end a *path group*, which can be used to spread out the paths found inside the group. For more information refer to the corresponding *Start path group* and *End path group* actions in the [Pathfinding behavior manual entry](../../../behavior-reference/pathfinding.md).
 
 **endPathGroup()**  
-Start and end a *path group*, which can be used to spread out the paths found inside the group. For more information refer to the corresponding *Start path group* and *End path group* actions in the [Pathfinding behavior manual entry](https://www.construct.net/make-games/manuals/construct-3/behavior-reference/pathfinding).
+Start and end a *path group*, which can be used to spread out the paths found inside the group. For more information refer to the corresponding *Start path group* and *End path group* actions in the [Pathfinding behavior manual entry](../../../behavior-reference/pathfinding.md).

@@ -1,7 +1,7 @@
 ---
 title: "IBehaviorInstance interface"
 source: "https://www.construct.net/en/make-games/manuals/addon-sdk/reference/object-interfaces/ibehaviorinstance"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -15,7 +15,7 @@ The `IBehaviorInstance` interface represents a behavior instance in Construct.
 ## Methods
 
 **GetProject()**  
-Return the [IProject](https://www.construct.net/make-games/manuals/addon-sdk/reference/model-interfaces/iproject) representing the behavior instance's associated project.
+Return the [IProject](../../reference/model-interfaces/iproject.md) representing the behavior instance's associated project.
 
 **GetObjectInstance()**  
 Returns an [IObjectInstance](../../reference/object-interfaces/iobjectinstance.md) or [IWorldInstance](../../reference/object-interfaces/iworldinstance.md) (depending on the type of object) of the object instance associated with this behavior instance.

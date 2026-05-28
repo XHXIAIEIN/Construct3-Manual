@@ -1,7 +1,7 @@
 ---
 title: "ISDKBehaviorInstanceBase addon SDK interface"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/scripting/scripting-reference/addon-sdk-interfaces/isdkbehaviorinstancebase"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -10,7 +10,7 @@ release: 476.3
 
 ---
 
-The `ISDKBehaviorInstanceBase` interface is used as a runtime base class for behavior instances in the addon SDK. It derives from [IBehaviorInstance](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/object-interfaces/ibehaviorinstance).
+The `ISDKBehaviorInstanceBase` interface is used as a runtime base class for behavior instances in the addon SDK. It derives from [IBehaviorInstance](../../../scripting/scripting-reference/object-interfaces/ibehaviorinstance.md).
 
 ## ISDKBehaviorInstanceBase APIs
 
@@ -57,7 +57,7 @@ Optional override that is called every tick just **after** events are run after 
 Optional override that is called every tick just after all other behaviors have had their `_tick()` methods called. This allows behaviors to observe the state applied by other behavior's ticking. Note you should use `_tick()` rather than `_postTick()` where possible, since it is not possible to reliably observe the state applied by other behavior's post-ticking.
 
 **_getDebuggerProperties()**  
-Override to return properties to display in the debugger. For more information see [runtime scripts](https://www.construct.net/make-games/manuals/addon-sdk/guide/runtime-scripts).
+Override to return properties to display in the debugger. For more information see [runtime scripts](../../../../Construct3-Addon-SDK/guide/runtime-scripts.md).
 
 **_saveToJson()**  
 Optional override to return a JSON object that represents the state of the behavior instance for savegames.

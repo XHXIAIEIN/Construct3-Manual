@@ -1,7 +1,7 @@
 ---
 title: "Addon SDK script interfaces"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/scripting/scripting-reference/addon-sdk-interfaces"
-release: 476.3
+release: 487
 ---
 
 ## On this page

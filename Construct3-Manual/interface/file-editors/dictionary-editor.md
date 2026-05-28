@@ -1,7 +1,7 @@
 ---
 title: "Dictionary editor"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/interface/file-editors/dictionary-editor"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -10,13 +10,13 @@ release: 476.3
 
 ---
 
-`[Paid plans only]`  The **Dictionary editor** allows editing a dictionary data file for the [Dictionary object](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/dictionary). The data you enter can be loaded at runtime by loading the [project file](https://www.construct.net/make-games/manuals/construct-3/project-primitives/files) in to the Dictionary object. It provides a visual way to set the initial data for a Dictionary. The Dictionary Editor appears when editing or adding an dictionary data file (in JSON format) in the [Project Bar](https://www.construct.net/make-games/manuals/construct-3/interface/bars/project-bar).
+`[Paid plans only]`  The **Dictionary editor** allows editing a dictionary data file for the [Dictionary object](../../plugin-reference/dictionary.md). The data you enter can be loaded at runtime by loading the [project file](../../project-primitives/files.md) in to the Dictionary object. It provides a visual way to set the initial data for a Dictionary. The Dictionary Editor appears when editing or adding an dictionary data file (in JSON format) in the [Project Bar](../../interface/bars/project-bar.md).
 
 [![The Dictionary Editor](https://construct-static.com/images/v1740/r/uploads/articleuploadobject/0/images/932/dictionary-editor_v700.png)](https://construct-static.com/images/v1740/uploads/articleuploadobject/0/images/932/dictionary-editor.png)The Dictionary Editor
 
 ### Opening the Dictionary Editor
 
-To open the Dictionary Editor in a new project, start by adding a new *Dictionary* file in the *Files* folder of the [Project Bar](https://www.construct.net/make-games/manuals/construct-3/interface/bars/project-bar). For more information, see [project files](https://www.construct.net/make-games/manuals/construct-3/project-primitives/files).
+To open the Dictionary Editor in a new project, start by adding a new *Dictionary* file in the *Files* folder of the [Project Bar](../../interface/bars/project-bar.md). For more information, see [project files](../../project-primitives/files.md).
 
 ### Editing dictionaries
 

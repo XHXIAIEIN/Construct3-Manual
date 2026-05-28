@@ -1,7 +1,7 @@
 ---
 title: "Slider bar"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/slider-bar"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -20,11 +20,11 @@ The **Slider bar** object provides a simple form control allowing the user to pi
 
 ### Scripting
 
-When using JavaScript or TypeScript coding, the features of this object can be accessed via the [ISliderBarInstance script interface](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/plugin-interfaces/slider-bar).
+When using JavaScript or TypeScript coding, the features of this object can be accessed via the [ISliderBarInstance script interface](../scripting/scripting-reference/plugin-interfaces/slider-bar.md).
 
 ## Layering HTML objects
 
-This object displays using a HTML element rather than drawing in to the canvas. This means its layering works differently to other objects. To learn more about how to layer HTML objects, see [HTML layers](https://www.construct.net/make-games/manuals/construct-3/tips-and-guides/html-layers).
+This object displays using a HTML element rather than drawing in to the canvas. This means its layering works differently to other objects. To learn more about how to layer HTML objects, see [HTML layers](../tips-and-guides/html-layers.md).
 
 ## Slider bar properties
 

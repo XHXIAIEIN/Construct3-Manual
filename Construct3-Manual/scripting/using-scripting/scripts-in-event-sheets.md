@@ -1,7 +1,7 @@
 ---
 title: "Scripts in event sheets"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/scripting/using-scripting/scripts-in-event-sheets"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -65,7 +65,7 @@ Note that ***Imports for events* scripts are language-specific.** If you add a J
 
 ## Using the runtime interface
 
-All scripts in the event sheet can access a special `runtime` variable which refers to the [runtime script interface](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/iruntime). This provides functions and properties that lets your code access and control Construct's runtime. This also includes ways to closely integrate code and events, such as iterating the instances picked by the current event.
+All scripts in the event sheet can access a special `runtime` variable which refers to the [runtime script interface](../../scripting/scripting-reference/iruntime.md). This provides functions and properties that lets your code access and control Construct's runtime. This also includes ways to closely integrate code and events, such as iterating the instances picked by the current event.
 
 A very simple example is shown below, which can be used to show a dialog box with the project name in it.
 
@@ -75,15 +75,15 @@ alert(runtime.projectName);
 
 ## Accessing local variables
 
-A useful way to pass values between scripts and the event sheet is to use [local variables](https://www.construct.net/make-games/manuals/construct-3/project-primitives/events/variables) in the event sheet. These can be accessed by both script actions and script blocks using the variable name `localVars`. This is set to an object with a property for each local variable in scope. The available local variables are the same as are available to a *Set value* action in the same place. This includes any parameters for event sheet functions.
+A useful way to pass values between scripts and the event sheet is to use [local variables](../../project-primitives/events/variables.md) in the event sheet. These can be accessed by both script actions and script blocks using the variable name `localVars`. This is set to an object with a property for each local variable in scope. The available local variables are the same as are available to a *Set value* action in the same place. This includes any parameters for event sheet functions.
 
 For example a script in an event group with a local variable named *temp* can access the local variable using `localVars.temp`. A useful pattern is to use an action to set a local variable to an expression, and then read from it in a following script action. Alternatively a script could calculate a value and assign it to a local variable, to subsequently be used in the event sheet. It could also be used both ways at once, both reading the variable and then assigning it. See also the [Integrating events with script](https://editor.construct.net/#open=integrating-events-with-script) example which shows one of the ways this can be used.
 
-Note that `localVars` excludes global variables, which are available via [runtime.globalVars](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/iruntime) instead. `localVars` is also unique to scripts in the event sheet - script files cannot access it, because they do not have a scope in the event sheet.
+Note that `localVars` excludes global variables, which are available via [runtime.globalVars](../../scripting/scripting-reference/iruntime.md) instead. `localVars` is also unique to scripts in the event sheet - script files cannot access it, because they do not have a scope in the event sheet.
 
 > **Tip**  
 > In some cases, event variables may have names that aren't valid JavaScript/TypeScript identifiers. In this case you can use the string property syntax, e.g. `localVars["temp"]`.
 
 ## Errors
 
-Any exceptions, or rejected promises, arising from a script in an event sheet will be caught by the Construct engine and logged to the console with information about where the error came from. This means unhandled exceptions or rejections will not crash the game (since browsers stop running scripts if they encounter an unhandled error). However you should keep an eye on the browser console to check for any unexpected errors. For more information see the section on [debugging script](https://www.construct.net/make-games/manuals/construct-3/scripting/using-scripting/debugging-script).
+Any exceptions, or rejected promises, arising from a script in an event sheet will be caught by the Construct engine and logged to the console with information about where the error came from. This means unhandled exceptions or rejections will not crash the game (since browsers stop running scripts if they encounter an unhandled error). However you should keep an eye on the browser console to check for any unexpected errors. For more information see the section on [debugging script](../../scripting/using-scripting/debugging-script.md).

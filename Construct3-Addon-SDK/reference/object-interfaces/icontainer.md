@@ -1,7 +1,7 @@
 ---
 title: "IContainer interface"
 source: "https://www.construct.net/en/make-games/manuals/addon-sdk/reference/object-interfaces/icontainer"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -15,7 +15,7 @@ The `IContainer` interface represents a container in Construct, which is a group
 ## Methods
 
 **GetMembers()**  
-Return an array of [IObjectType](https://www.construct.net/make-games/manuals/addon-sdk/reference/object-interfaces/iobjecttype) representing the object types in the container. Containers always have at least two members.
+Return an array of [IObjectType](../../reference/object-interfaces/iobjecttype.md) representing the object types in the container. Containers always have at least two members.
 
 **SetSelectMode(m)**  
 Set or get the select mode of the container, corresponding to the *Select mode* property in Construct. Allowed modes are `"normal"`, `"all"` and `"wrap"`.

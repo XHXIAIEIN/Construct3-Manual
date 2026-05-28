@@ -1,7 +1,7 @@
 ---
 title: "Score Object"
 source: "https://www.construct.net/en/game-services/manuals/game-services/leaderboards/api-objects/score"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -15,21 +15,21 @@ release: 476.3
 
 ```json
 {
-  "scoreID": "6163d3df-cace-485f-87e2-6c685b03895d",
+  "scoreID": "d815e6f5-5e67-48a2-8816-150714ebbd54",
   "rank": 1611,
   "ordinal": "th",
   "formattedRank": "1,611th",
   "formattedScore": "78,563,114",
   "score": 78563114,
   "country": "GB",
-  "date": "2026-04-05T08:32:13.9851977Z",
-  "formattedDate": "Pbbq8",
+  "date": "2026-05-27T08:36:34.8192712Z",
+  "formattedDate": "PozeX",
   "updates": 0,
   "countryRank": 477,
   "countryOrdinal": "th",
   "formattedCountryRank": "477th",
   "player": { ... },
-  "teamID": "8cf88532-4285-4792-bd4d-da57bfced446",
+  "teamID": "2b4925ab-80f2-414f-9ef9-dd5e7d3eb3bc",
   "teamName": "Red Team",
   "scoreHistory": { ... },
   "tier": {
@@ -88,7 +88,7 @@ The global country rank of this score rendered using the requested locale. This 
 **player** [`Player`](../../authentication/api-objects/player-object.md)  
 The player this score belongs to.
 
-**teamID** [guid?](../../data-types.md#internalH1Link1)  
+**teamID** [`guid?`](../../data-types.md#internalH1Link1)  
 The unique ID of the team this player belongs to if they have been assigned to a team.
 
 **teamName** `string`  

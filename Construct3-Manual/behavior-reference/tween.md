@@ -1,7 +1,7 @@
 ---
 title: "Tween"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/behavior-reference/tween"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -31,7 +31,7 @@ The term "tween" comes from the term "[Inbetweening](https://en.wikipedia.org/wi
 
 ### Scripting
 
-When using JavaScript or TypeScript coding, the features of this behavior can be accessed via the [ITweenBehaviorInstance script interface](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/behavior-interfaces/tween).
+When using JavaScript or TypeScript coding, the features of this behavior can be accessed via the [ITweenBehaviorInstance script interface](../scripting/scripting-reference/behavior-interfaces/tween.md).
 
 ## Tween types
 

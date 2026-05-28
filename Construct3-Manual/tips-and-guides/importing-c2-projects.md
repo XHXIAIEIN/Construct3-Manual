@@ -1,7 +1,7 @@
 ---
 title: "Importing Construct 2 projects"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/tips-and-guides/importing-c2-projects"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -29,7 +29,7 @@ Construct 3 originally inherited all of Construct 2's features. Over the years s
 - The Function plugin has been replaced with a **built-in functions** feature
 - Construct 3 now exports projects with a proper **"folder" file structure**, preserving subfolders and filename case, instead of the legacy "flat" mode which exported everything in the root folder with a lowercased name.
 
-You may need to update an imported C2 project to take in to account these changes. For more information, see the [deprecated features](https://www.construct.net/make-games/manuals/construct-3/tips-and-guides/deprecated-features) section. The rest of this guide also includes details about other compatibility differences.
+You may need to update an imported C2 project to take in to account these changes. For more information, see the [deprecated features](../tips-and-guides/deprecated-features.md) section. The rest of this guide also includes details about other compatibility differences.
 
 ## Compatibility differences
 

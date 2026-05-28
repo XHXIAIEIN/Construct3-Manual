@@ -1,7 +1,7 @@
 ---
 title: "Node"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/project-primitives/flowcharts/flowchart-node"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -11,7 +11,7 @@ release: 476.3
 
 ---
 
-The node is the main component of a [flowchart](../../project-primitives/flowcharts/flowchart.md). It represents a state the flowchart can get into and can hold arbitrary data in the form of [outputs](../../project-primitives/flowcharts/flowchart-node-output.md), similar to having a small amount of [Dictionary](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/dictionary) data in each node.
+The node is the main component of a [flowchart](../../project-primitives/flowcharts/flowchart.md). It represents a state the flowchart can get into and can hold arbitrary data in the form of [outputs](../../project-primitives/flowcharts/flowchart-node-output.md), similar to having a small amount of [Dictionary](../../plugin-reference/dictionary.md) data in each node.
 
 The information a node holds can be queried at runtime using the [Flowchart Controller](../../plugin-reference/flowchart-controller.md) plugin.
 

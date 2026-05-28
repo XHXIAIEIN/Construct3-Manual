@@ -1,7 +1,7 @@
 ---
 title: "Mouse"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/mouse"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -16,7 +16,7 @@ The **Mouse** object allows projects to respond to mouse input.
 
 When designing your project, you cannot assume everyone has a mouse. Many users browse the web with touch-screen devices that have no mouse. Therefore if your project uses exclusively mouse or keyboard control, it may be impossible to use on touch devices. See the [Touch controls](https://www.construct.net/tutorials/touch-controls-detecting-13) tutorial for an alternative control system.
 
-If you only use left clicks, consider instead using the [Touch](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/touch) object with *Use Mouse Input* enabled. This will allow your project to work on touchscreen devices without any further changes.
+If you only use left clicks, consider instead using the [Touch](../plugin-reference/touch.md) object with *Use Mouse Input* enabled. This will allow your project to work on touchscreen devices without any further changes.
 
 ### Mouse hardware buttons
 
@@ -24,7 +24,7 @@ Most modern mouse hardware has three buttons: left, middle and right. The middle
 
 ### Scripting
 
-When using JavaScript or TypeScript coding, the features of this object can be accessed via the [IMouseObjectType script interface](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/plugin-interfaces/mouse).
+When using JavaScript or TypeScript coding, the features of this object can be accessed via the [IMouseObjectType script interface](../scripting/scripting-reference/plugin-interfaces/mouse.md).
 
 ## Mouse conditions
 
@@ -76,7 +76,7 @@ Triggered if an error occurs attempting to use pointer lock, such as attempting 
 ## Mouse actions
 
 **Set cursor from sprite**  
-Set the cursor image from a [Sprite](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/sprite) object. This is preferable to setting a sprite to the mouse co-ordinates, because the input lag is significantly lower. Various limitations apply: the sprite image is used as it appears in the image editor, not taking in to account size or rotation in the layout; the image cannot be too large (64x64 is usually the limit); the cursor may not be applied close to the edges of the browser window; and support varies depending on browser and OS.
+Set the cursor image from a [Sprite](../plugin-reference/sprite.md) object. This is preferable to setting a sprite to the mouse co-ordinates, because the input lag is significantly lower. Various limitations apply: the sprite image is used as it appears in the image editor, not taking in to account size or rotation in the layout; the image cannot be too large (64x64 is usually the limit); the cursor may not be applied close to the edges of the browser window; and support varies depending on browser and OS.
 
 **Set cursor style**  
 Set the type of mouse cursor showing. The cursor can be hidden completely by choosing *None*.

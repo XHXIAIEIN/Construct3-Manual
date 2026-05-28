@@ -1,7 +1,7 @@
 ---
 title: "Dictionary"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/dictionary"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -19,7 +19,7 @@ Key names in the Dictionary object are always case sensitive. This means the key
 
 ### Scripting
 
-When using JavaScript or TypeScript coding, the features of this object can be accessed via the [IDictionaryInstance script interface](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/plugin-interfaces/dictionary). (JavaScript and TypeScript have built-in support for [Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map) which is a similar data structure, but this allows interacting with data used in event sheets.)
+When using JavaScript or TypeScript coding, the features of this object can be accessed via the [IDictionaryInstance script interface](../scripting/scripting-reference/plugin-interfaces/dictionary.md). (JavaScript and TypeScript have built-in support for [Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map) which is a similar data structure, but this allows interacting with data used in event sheets.)
 
 ### Example
 
@@ -38,7 +38,7 @@ Dictionaries are very efficient at retrieving values. Even if you have a diction
 
 ## Designing dictionaries
 
-You can use Construct's [Dictionary Editor](https://www.construct.net/make-games/manuals/construct-3/interface/file-editors/dictionary-editor)  `[Paid plans only]`  to set the initial contents of a dictionary. You can create a new dictionary data file as a [project file](https://www.construct.net/make-games/manuals/construct-3/project-primitives/files) from the [Project Bar](https://www.construct.net/make-games/manuals/construct-3/interface/bars/project-bar). At runtime you can load the project file with the [AJAX](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/ajax) object and use the Dictionary's *Load* action to read the data file from the AJAX's *LastData* expression.
+You can use Construct's [Dictionary Editor](../interface/file-editors/dictionary-editor.md)  `[Paid plans only]`  to set the initial contents of a dictionary. You can create a new dictionary data file as a [project file](../project-primitives/files.md) from the [Project Bar](../interface/bars/project-bar.md). At runtime you can load the project file with the [AJAX](../plugin-reference/ajax.md) object and use the Dictionary's *Load* action to read the data file from the AJAX's *LastData* expression.
 
 ## Dictionary conditions
 

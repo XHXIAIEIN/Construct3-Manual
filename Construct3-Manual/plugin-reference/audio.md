@@ -1,7 +1,7 @@
 ---
 title: "Audio"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/audio"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -22,13 +22,13 @@ release: 476.3
 
 ---
 
-The **Audio** object plays back audio files that have been imported to the project. The Audio object must be added to each project that needs to use audio playback. Audio files can be imported to a project by right-clicking the **Sounds** or **Music** folders in the [Project Bar](https://www.construct.net/make-games/manuals/construct-3/interface/bars/project-bar) and selecting `Import sounds` or `Import Music`, which brings up the [Import Audio dialog](https://www.construct.net/make-games/manuals/construct-3/interface/dialogs/import-audio). See the relevant manual sections for more information on the steps involved to import audio files.
+The **Audio** object plays back audio files that have been imported to the project. The Audio object must be added to each project that needs to use audio playback. Audio files can be imported to a project by right-clicking the **Sounds** or **Music** folders in the [Project Bar](../interface/bars/project-bar.md) and selecting `Import sounds` or `Import Music`, which brings up the [Import Audio dialog](../interface/dialogs/import-audio.md). See the relevant manual sections for more information on the steps involved to import audio files.
 
-Construct comes with several examples of the Audio plugin; search for *Audio* in the [Example Browser](https://www.construct.net/make-games/manuals/construct-3/overview/example-browser) to find them.
+Construct comes with several examples of the Audio plugin; search for *Audio* in the [Example Browser](../overview/example-browser.md) to find them.
 
 ### Scripting
 
-When using JavaScript or TypeScript coding, this object can be accessed via the [IAudioObjectType script interface](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/plugin-interfaces/audio). This mainly provides access to the underlying Web Audio API context.
+When using JavaScript or TypeScript coding, this object can be accessed via the [IAudioObjectType script interface](../scripting/scripting-reference/plugin-interfaces/audio.md). This mainly provides access to the underlying Web Audio API context.
 
 ## Categorise audio files correctly
 
@@ -36,7 +36,7 @@ It is important to organise audio files appropriately, because audio files in th
 
 ## Preloading sounds
 
-The **Preload sounds** [project property](https://www.construct.net/make-games/manuals/construct-3/project-primitives/projects) determines whether sounds (excluding music) are loaded while the loading bar is showing. Preloading sounds means there is more to load before the project can start, and memory use is higher due to having all sounds loaded, but all sound effects can play immediately once it starts. If sounds are not preloaded, the project starts sooner since it did not need to load any sounds, but sounds will be loaded on-demand during the project. In other words, nothing is loaded until a *Play* action starts playing an audio file. Then it starts loading and will play when ready. This also helps minimise memory usage since unused audio is never loaded. However, it can introduce a delay before audio plays for the first time. The delay on first play is a one-off, because after the first play the sound is already loaded and can be played immediately if played a second time.
+The **Preload sounds** [project property](../project-primitives/projects.md) determines whether sounds (excluding music) are loaded while the loading bar is showing. Preloading sounds means there is more to load before the project can start, and memory use is higher due to having all sounds loaded, but all sound effects can play immediately once it starts. If sounds are not preloaded, the project starts sooner since it did not need to load any sounds, but sounds will be loaded on-demand during the project. In other words, nothing is loaded until a *Play* action starts playing an audio file. Then it starts loading and will play when ready. This also helps minimise memory usage since unused audio is never loaded. However, it can introduce a delay before audio plays for the first time. The delay on first play is a one-off, because after the first play the sound is already loaded and can be played immediately if played a second time.
 
 If *Preload sounds* is disabled, the *Preload* action can be used to start loading an audio file without actually playing it. This can be done on *Start of layout* to start downloading a few important sound effects so there is no delay when they are played for the first time. The *Unload* actions can also be used to remove a loaded sound from memory. This allows you to manually manage which sounds are loaded in to memory, which is important if you have a large library of sound effects which would use a lot of memory if they were all preloaded.
 
@@ -188,7 +188,7 @@ Stop all currently playing sounds.
 
 ## Audio effects actions
 
-A selection of well-known audio effects can be added using the *Add effect* actions. Each tag has its own effect chain, and multiple effects can be added to a tag. All audio played with the given tag is then processed by the effect chain. This can be used to create environmental effects and other creative audio features. Audio signal processing is a complex topic and somewhat out of the scope of this manual, so it will not be detailed exhaustively here. Anyone with light experience in audio recording or production should already be familiar with all the effects available. For interactive examples, search for *Audio* in the [Example Browser](https://www.construct.net/make-games/manuals/construct-3/overview/example-browser). A brief summary of each effect is provided below.
+A selection of well-known audio effects can be added using the *Add effect* actions. Each tag has its own effect chain, and multiple effects can be added to a tag. All audio played with the given tag is then processed by the effect chain. This can be used to create environmental effects and other creative audio features. Audio signal processing is a complex topic and somewhat out of the scope of this manual, so it will not be detailed exhaustively here. Anyone with light experience in audio recording or production should already be familiar with all the effects available. For interactive examples, search for *Audio* in the [Example Browser](../overview/example-browser.md). A brief summary of each effect is provided below.
 
 - **Analyser:** doesn't change the audio, but can report back frequency domain data
 - **Compressor:** automatically boost or reduce volume to even out the overall volume level
@@ -234,7 +234,7 @@ As per the *Play at object* action, but the sound does not move. It is just play
 Set the object that positioned sounds are calculated relative to. Typically this is set to the object representing the player on *Start of Layout*.
 
 **Set listener orientation**  
-By default the listener is oriented for a 2D game. However when using [3D Camera](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/3d-camera) to move the view in 3D, it is also useful to change the listener orientation to match that of the camera for positioned sounds to play back correctly in 3D space. The listener orientation is specified using two vectors: a forwards vector (the direction the listener is facing in), and an up vector (which determines the orientation along the forwards vector). These can usually be set to the *LookVectorX/Y/Z* and *UpX/Y/Z* expressions of the 3D Camera object.
+By default the listener is oriented for a 2D game. However when using [3D Camera](../plugin-reference/3d-camera.md) to move the view in 3D, it is also useful to change the listener orientation to match that of the camera for positioned sounds to play back correctly in 3D space. The listener orientation is specified using two vectors: a forwards vector (the direction the listener is facing in), and an up vector (which determines the orientation along the forwards vector). These can usually be set to the *LookVectorX/Y/Z* and *UpX/Y/Z* expressions of the 3D Camera object.
 
 **Set listener Z**  
 Set the *Listener Z* property of the audio object, which affects the calculation of positioned sounds.

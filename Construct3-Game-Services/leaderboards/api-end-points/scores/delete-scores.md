@@ -1,7 +1,7 @@
 ---
 title: "Delete Scores"
 source: "https://www.construct.net/en/game-services/manuals/game-services/leaderboards/api-end-points/scores/delete-scores"
-release: 476.3
+release: 487
 ---
 
 ## On this page

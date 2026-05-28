@@ -1,7 +1,7 @@
 ---
 title: "IAnimation script interface"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/scripting/scripting-reference/object-interfaces/ianimation"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -38,5 +38,5 @@ A read-only number of frames in this animation.
 **getFrames()**  
 Return an array of [IAnimationFrame](../../../scripting/scripting-reference/object-interfaces/ianimationframe.md) representing all the frames in this animation in sequence.
 
-***frames()**
+***frames()**  
 Iterates all [IAnimationFrame](../../../scripting/scripting-reference/object-interfaces/ianimationframe.md) in this animation in sequence.

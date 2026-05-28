@@ -1,7 +1,7 @@
 ---
 title: "List"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/list"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -21,11 +21,11 @@ The **List** object creates either a **dropdown list** or **list box** form cont
 
 ### Scripting
 
-When using JavaScript or TypeScript coding, the features of this object can be accessed via the [IListInstance script interface](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/plugin-interfaces/list).
+When using JavaScript or TypeScript coding, the features of this object can be accessed via the [IListInstance script interface](../scripting/scripting-reference/plugin-interfaces/list.md).
 
 ## Layering HTML objects
 
-This object displays using a HTML element rather than drawing in to the canvas. This means its layering works differently to other objects. To learn more about how to layer HTML objects, see [HTML layers](https://www.construct.net/make-games/manuals/construct-3/tips-and-guides/html-layers).
+This object displays using a HTML element rather than drawing in to the canvas. This means its layering works differently to other objects. To learn more about how to layer HTML objects, see [HTML layers](../tips-and-guides/html-layers.md).
 
 ## Styling lists
 

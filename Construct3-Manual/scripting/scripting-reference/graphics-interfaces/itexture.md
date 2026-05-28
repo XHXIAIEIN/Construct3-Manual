@@ -1,7 +1,7 @@
 ---
 title: "ITexture script interface"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/scripting/scripting-reference/graphics-interfaces/itexture"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -10,7 +10,7 @@ release: 476.3
 
 ---
 
-The `ITexture` interface represents a texture for use with the [renderer](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/graphics-interfaces/irenderer-interface).
+The `ITexture` interface represents a texture for use with the [renderer](../../../scripting/scripting-reference/graphics-interfaces/irenderer-interface.md).
 
 This interface cannot be directly constructed. It is only available through other APIs.
 

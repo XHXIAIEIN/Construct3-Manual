@@ -1,7 +1,7 @@
 ---
 title: "Asset Browser"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/interface/bars/asset-browser-bar"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -79,7 +79,7 @@ Clicking on the settings button in the toolbar brings up a dialog for adjusting 
 Toggle this setting and the animation frame for each of the created object types will be tagged with the name of the corresponding asset.
 
 **Tag new frames with asset name when importing as single object type**  
-Toggle this setting and each animation frame of the created object type will be tagged with the corresponding asset's name. This option will not apply when importing an animated format, such as **.gif** or **.apng**, because the extracted images don't have a name. In the case of importing a zip file which has a **c3-import-setting.json** file used by the [Animations Editor for bulk importing](../../interface/animations-editor#internalH1Link7.md), any tag names in that file will be preferred over asset names.
+Toggle this setting and each animation frame of the created object type will be tagged with the corresponding asset's name. This option will not apply when importing an animated format, such as **.gif** or **.apng**, because the extracted images don't have a name. In the case of importing a zip file which has a **c3-import-setting.json** file used by the [Animations Editor for bulk importing](../../interface/animations-editor.md#internalH1Link7), any tag names in that file will be preferred over asset names.
 
 ## Browsing assets in the local file system
 

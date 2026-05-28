@@ -1,7 +1,7 @@
 ---
 title: "9-patch"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/9-patch"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -13,7 +13,7 @@ release: 476.3
 
 ---
 
-The **9-patch plugin** allows an image to be resized by stretching or tiling the edges, corners and fill separately. It is useful for conveniently making resizable windows or user interface elements that can take any size and still appear correctly. The image below demonstrates how a 9-patch looks compared to a [Sprite](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/sprite) object, which just stretches its entire image.
+The **9-patch plugin** allows an image to be resized by stretching or tiling the edges, corners and fill separately. It is useful for conveniently making resizable windows or user interface elements that can take any size and still appear correctly. The image below demonstrates how a 9-patch looks compared to a [Sprite](../plugin-reference/sprite.md) object, which just stretches its entire image.
 
 [![Example of 9-patch scaling](https://construct-static.com/images/v1740/uploads/articleuploadobject/0/images/983/9patch-demo.png)](https://construct-static.com/images/v1740/uploads/articleuploadobject/0/images/983/9patch-demo.png)Example of 9-patch scaling
 
@@ -27,11 +27,11 @@ The edge and fill sections can be stretched or tiled independently, allowing for
 
 When resized very small, the bottom-right patches will be drawn on top of the top-left patches. This can be useful for representing things like progress bars with special artwork at the end of the bar. Note however that 9-patch objects do not support being mirrored or flipped, so the width and height should not be negative.
 
-For an interactive demo of the 9-patch plugin, see the 9-patch example in the [Example Browser](https://www.construct.net/make-games/manuals/construct-3/overview/example-browser).
+For an interactive demo of the 9-patch plugin, see the 9-patch example in the [Example Browser](../overview/example-browser.md).
 
 ### Scripting
 
-When using JavaScript or TypeScript coding, the features of this object can be accessed via the [I9PatchInstance script interface](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/plugin-interfaces/9-patch).
+When using JavaScript or TypeScript coding, the features of this object can be accessed via the [I9PatchInstance script interface](../scripting/scripting-reference/plugin-interfaces/9-patch.md).
 
 ## 9-patch properties
 
@@ -103,7 +103,7 @@ Set the corresponding margin properties - see the section above for more details
 > Be sure to wait for *Load image from URL* to finish using the *Wait for previous actions to complete* system action before setting margins. If you try to set margins without waiting for the image load to complete, then it will still be using the shared patch images, and setting the margins will still affect all instances.
 
 **Load image from URL**  
-Load an image from a given URL. It is not shown until the image has finished downloading. Images loaded from different domains are subject to the same cross-domain restrictions as AJAX requests - for more information see the section on cross-domain in the [AJAX](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/ajax) object. Data or blob URIs can also be passed as an image, e.g. from a canvas snapshot or camera image. Once this action has finished, the *Set margins* action can be used to set new margins for the loaded image, but note that to avoid affecting other instances, the image load must have first completed successfully (either triggering *On image URL loaded* or after using *Wait for previous actions to complete*).
+Load an image from a given URL. It is not shown until the image has finished downloading. Images loaded from different domains are subject to the same cross-domain restrictions as AJAX requests - for more information see the section on cross-domain in the [AJAX](../plugin-reference/ajax.md) object. Data or blob URIs can also be passed as an image, e.g. from a canvas snapshot or camera image. Once this action has finished, the *Set margins* action can be used to set new margins for the loaded image, but note that to avoid affecting other instances, the image load must have first completed successfully (either triggering *On image URL loaded* or after using *Wait for previous actions to complete*).
 
 ## 9-patch expressions
 

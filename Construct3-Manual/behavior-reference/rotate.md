@@ -1,7 +1,7 @@
 ---
 title: "Rotate behavior"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/behavior-reference/rotate"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -17,7 +17,7 @@ The **Rotate behavior** makes an object spin.
 
 ### Scripting
 
-When using JavaScript or TypeScript coding, the features of this behavior can be accessed via the [IRotateBehaviorInstance script interface](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/behavior-interfaces/rotate).
+When using JavaScript or TypeScript coding, the features of this behavior can be accessed via the [IRotateBehaviorInstance script interface](../scripting/scripting-reference/behavior-interfaces/rotate.md).
 
 ## Rotate properties
 

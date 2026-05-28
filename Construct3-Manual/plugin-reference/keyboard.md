@@ -1,7 +1,7 @@
 ---
 title: "Keyboard"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/keyboard"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -19,7 +19,7 @@ The **Keyboard** object allows projects to respond to keyboard input.
 
 ### Scripting
 
-When using JavaScript or TypeScript coding, the features of this object can be accessed via the [IKeyboardObjectType script interface](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/plugin-interfaces/keyboard).
+When using JavaScript or TypeScript coding, the features of this object can be accessed via the [IKeyboardObjectType script interface](../scripting/scripting-reference/plugin-interfaces/keyboard.md).
 
 ## About keyboards
 
@@ -82,7 +82,7 @@ As per *Is key down*, *On key pressed* and *On key released*, but is able to ide
 ## Keyboard actions
 
 **Lock keyboard**  
-Request to lock the keyboard so key presses are always received by the project, rather than the browser/application (such as to activating browser keyboard shortcuts). For example if WASD controls are used to move an object, and the Control key is also used for another purpose, it is easy to accidentally press Ctrl+W, which is a keyboard shortcut to close the current browser tab. If the WASD keys are locked, then Ctrl+W will act as a normal keyboard input to the project and not activate the browser shortcut. The keys to lock are specified by a string of key names separated by commas, e.g. "KeyW,KeyA,KeyS,KeyD" for the WASD keys - a full list of key names can be found [on this MDN page](https://developer.mozilla.org/en-US/docs/Web/API/UI_Events/Keyboard_event_code_values). Pass an empty string to request to lock all keys. Requesting to lock the keyboard may show a permission prompt to the user, as it is a security-sensitive feature. Further, it only works in fullscreen mode, i.e. after using *Request fullscreen* in the [Browser plugin](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/browser). If keyboard lock is successfully enabled, *On keyboard locked* triggers; otherwise *On keyboard lock error* triggers.
+Request to lock the keyboard so key presses are always received by the project, rather than the browser/application (such as to activating browser keyboard shortcuts). For example if WASD controls are used to move an object, and the Control key is also used for another purpose, it is easy to accidentally press Ctrl+W, which is a keyboard shortcut to close the current browser tab. If the WASD keys are locked, then Ctrl+W will act as a normal keyboard input to the project and not activate the browser shortcut. The keys to lock are specified by a string of key names separated by commas, e.g. "KeyW,KeyA,KeyS,KeyD" for the WASD keys - a full list of key names can be found [on this MDN page](https://developer.mozilla.org/en-US/docs/Web/API/UI_Events/Keyboard_event_code_values). Pass an empty string to request to lock all keys. Requesting to lock the keyboard may show a permission prompt to the user, as it is a security-sensitive feature. Further, it only works in fullscreen mode, i.e. after using *Request fullscreen* in the [Browser plugin](../plugin-reference/browser.md). If keyboard lock is successfully enabled, *On keyboard locked* triggers; otherwise *On keyboard lock error* triggers.
 
 > **Tip**  
 > The condition *Is keyboard lock supported* checks if this action is supported by the current browser/platform.

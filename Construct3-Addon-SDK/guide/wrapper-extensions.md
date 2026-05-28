@@ -1,7 +1,7 @@
 ---
 title: "Wrapper extensions"
 source: "https://www.construct.net/en/make-games/manuals/addon-sdk/guide/wrapper-extensions"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -70,7 +70,7 @@ SendWebMessage("message-id", {
 In this case the second parameter is a small amount of JSON data that is passed to the JavaScript message handler. The keys must be strings, and the values may only be boolean, number (`double` type to match JavaScript's number type), or string. (Strings in the C++ SDK must be `std::string` or C-style `char*` in UTF-8 encoding.)
 
 > **Tip**  
-> **Note:** when reading JavaScript object properties sent from C++, be sure to use the minify-proof string syntax (e.g. `result["sampleString1"]`), as these properties come from an external source and so should not be changed by the minifier. See [Script minification](https://www.construct.net/make-games/manuals/addon-sdk/guide/script-minification) for more details.
+> **Note:** when reading JavaScript object properties sent from C++, be sure to use the minify-proof string syntax (e.g. `result["sampleString1"]`), as these properties come from an external source and so should not be changed by the minifier. See [Script minification](../guide/script-minification.md) for more details.
 
 Wrapper extensions receive all messages from JavaScript to the same `HandleWebMessage()` method. That method receives a string of the message ID, and it's up to the wrapper extension to examine that string and respond appropriately depending on the kind of message. The recommended architecture is to use that method solely to distinguish the kind of message, unpack parameters, and then call a dedicated handler method.
 
@@ -94,7 +94,7 @@ The provided JSON data works the same as with `SendWebMessage()`, and is used as
 
 ## Exporting properties to package.json
 
-A Construct plugin that uses a wrapper extension can make use of the [IPluginInfo](https://www.construct.net/make-games/manuals/addon-sdk/reference/iplugininfo) method `SetWrapperExportProperties()` to export the values of some plugin properties to the exported package.json file. The wrapper extension can then parse the contents of package.json on startup and find the values of these properties before any web content has loaded at all. This can be useful for loading SDKs with plugin properties specifying initialization details (like an app ID or API key) before anything else loads, which some SDKs recommend.
+A Construct plugin that uses a wrapper extension can make use of the [IPluginInfo](../reference/iplugininfo.md) method `SetWrapperExportProperties()` to export the values of some plugin properties to the exported package.json file. The wrapper extension can then parse the contents of package.json on startup and find the values of these properties before any web content has loaded at all. This can be useful for loading SDKs with plugin properties specifying initialization details (like an app ID or API key) before anything else loads, which some SDKs recommend.
 
 ## Suggested architecture
 

@@ -1,7 +1,7 @@
 ---
 title: "ILang interface"
 source: "https://www.construct.net/en/make-games/manuals/addon-sdk/reference/misc-interfaces/ilang"
-release: 476.3
+release: 487
 ---
 
 ## On this page

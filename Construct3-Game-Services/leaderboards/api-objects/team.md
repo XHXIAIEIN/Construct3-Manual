@@ -1,7 +1,7 @@
 ---
 title: "Team Object"
 source: "https://www.construct.net/en/game-services/manuals/game-services/leaderboards/api-objects/team"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -15,7 +15,7 @@ release: 476.3
 
 ```json
 {
-  "teamID": "dfde08c6-bae6-4702-9561-972c216779a8",
+  "teamID": "dfcafadd-e0a2-462f-8c8d-bbe94c887966",
   "name": "Red Team"
 }
 ```

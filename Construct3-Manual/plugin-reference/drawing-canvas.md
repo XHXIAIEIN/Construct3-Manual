@@ -1,7 +1,7 @@
 ---
 title: "Drawing canvas"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/drawing-canvas"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -26,7 +26,7 @@ The **Drawing canvas** object provides a drawing surface that you can draw your 
 
 ### Scripting
 
-When using JavaScript or TypeScript coding, the features of this object can be accessed via the [IDrawingCanvasInstance script interface](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/plugin-interfaces/drawing-canvas).
+When using JavaScript or TypeScript coding, the features of this object can be accessed via the [IDrawingCanvasInstance script interface](../scripting/scripting-reference/plugin-interfaces/drawing-canvas.md).
 
 ## Colors
 

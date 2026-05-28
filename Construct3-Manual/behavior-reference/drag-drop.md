@@ -1,7 +1,7 @@
 ---
 title: "Drag & Drop behavior"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/behavior-reference/drag-drop"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -19,7 +19,7 @@ An object starts dragging when a mouse click or touch falls inside the object's 
 
 ### Scripting
 
-When using JavaScript or TypeScript coding, the features of this behavior can be accessed via the [IDragDropBehaviorInstance script interface](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/behavior-interfaces/drag-drop).
+When using JavaScript or TypeScript coding, the features of this behavior can be accessed via the [IDragDropBehaviorInstance script interface](../scripting/scripting-reference/behavior-interfaces/drag-drop.md).
 
 ## Drag & Drop properties
 

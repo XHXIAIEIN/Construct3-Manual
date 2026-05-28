@@ -1,7 +1,7 @@
 ---
 title: "Follow behavior script interface"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/scripting/scripting-reference/behavior-interfaces/follow"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -10,7 +10,7 @@ release: 476.3
 
 ---
 
-The `IFollowBehaviorInstance` interface derives from [IBehaviorInstance](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/object-interfaces/ibehaviorinstance) to add APIs specific to the [Follow behavior](https://www.construct.net/make-games/manuals/construct-3/behavior-reference/8-follow).
+The `IFollowBehaviorInstance` interface derives from [IBehaviorInstance](../../../scripting/scripting-reference/object-interfaces/ibehaviorinstance.md) to add APIs specific to the [Follow behavior](../../../behavior-reference/8-follow.md).
 
 ### Built-in property strings
 
@@ -23,25 +23,25 @@ The following strings are used to refer to interpolation modes: `"step"`, `"line
 ## Follow behavior APIs
 
 **startFollowing(inst, fromCurrentPosition = false)**  
-Begin following the specified [IInstance](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/object-interfaces/iinstance). This starts recording the changes over time of the specified object, and after the delay period has passed, it will then start following the changes for the enabled properties. Until the delay has passed, `hasFollowData` will be false as there is not yet any data to follow. Alternatively the `fromCurrentPosition` parameter can be set to `true`, which allows immediate following. When enabled this creates an initial history entry based on the following object's current state in the past at the delay time. Therefore `hasFollowData` is immediately true and the object is able to immediately start updating. This has the effect of interpolating from the following object's starting position to the followed object's starting position over the delay time.
+Begin following the specified [IInstance](../../../scripting/scripting-reference/object-interfaces/iinstance.md). This starts recording the changes over time of the specified object, and after the delay period has passed, it will then start following the changes for the enabled properties. Until the delay has passed, `hasFollowData` will be false as there is not yet any data to follow. Alternatively the `fromCurrentPosition` parameter can be set to `true`, which allows immediate following. When enabled this creates an initial history entry based on the following object's current state in the past at the delay time. Therefore `hasFollowData` is immediately true and the object is able to immediately start updating. This has the effect of interpolating from the following object's starting position to the followed object's starting position over the delay time.
 
 **stopFollowing()**  
 Stops recording the history of a followed object. Any recorded history of the object that was followed is still preserved, and it will still continue following changes up until the time that this action was used.
 
 **followInstance**  
-A read-only reference to the [IInstance](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/object-interfaces/iinstance) being followed, or `null` if none.
+A read-only reference to the [IInstance](../../../scripting/scripting-reference/object-interfaces/iinstance.md) being followed, or `null` if none.
 
 **mode**  
 Set or get a string corresponding to the follow mode, which may be one of `"time"` or `"distance"`.
 
 **delay**  
-Set or get the corresponding behavior properties. See the [Follow behavior](https://www.construct.net/make-games/manuals/construct-3/behavior-reference/8-follow) manual entry for more details.
+Set or get the corresponding behavior properties. See the [Follow behavior](../../../behavior-reference/8-follow.md) manual entry for more details.
 
 **maxDelay**  
-Set or get the corresponding behavior properties. See the [Follow behavior](https://www.construct.net/make-games/manuals/construct-3/behavior-reference/8-follow) manual entry for more details.
+Set or get the corresponding behavior properties. See the [Follow behavior](../../../behavior-reference/8-follow.md) manual entry for more details.
 
 **historyRate**  
-Set or get the corresponding behavior properties. See the [Follow behavior](https://www.construct.net/make-games/manuals/construct-3/behavior-reference/8-follow) manual entry for more details.
+Set or get the corresponding behavior properties. See the [Follow behavior](../../../behavior-reference/8-follow.md) manual entry for more details.
 
 **clearHistory()**  
 Erases any recorded history about the object being followed. This will cause `hasFollowData` to become false and stop updating the object until enough data has been collected again. This is useful for resetting the behavior.

@@ -1,7 +1,7 @@
 ---
 title: "Construct release channels"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/tips-and-guides/release-channels"
-release: 476.3
+release: 487
 ---
 
 ## On this page

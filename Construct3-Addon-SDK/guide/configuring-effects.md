@@ -1,7 +1,7 @@
 ---
 title: "Configuring effects"
 source: "https://www.construct.net/en/make-games/manuals/addon-sdk/guide/configuring-effects"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -11,13 +11,13 @@ release: 476.3
 
 ---
 
-The main configuration for an effect is set by additional effect-specific properties in [addon.json](https://www.construct.net/make-games/manuals/addon-sdk/guide/addon-metadata). The additional properties used by effects are listed below.
+The main configuration for an effect is set by additional effect-specific properties in [addon.json](../guide/addon-metadata.md). The additional properties used by effects are listed below.
 
 **category**  
 The category the effect should appear in. This must be one of `"3d"`, `"blend"`, `"color"`, `"distortion"`, `"mask"`, `"normal-mapping"`, `"tiling"`, `"other"`.
 
 **supported-renderers**  
-An array of strings indicating the supported renderers for this effect. By default (if omitted) it is `["webgl"]`. The string `"webgl2"` can be added to support a WebGL 2 variant of the effect - see the section on [WebGL shaders](https://www.construct.net/make-games/manuals/addon-sdk/guide/configuring-effects/webgl-shaders) for more details. The string `"webgpu"` can be added to support the WebGPU renderer with a shader written in WGSL - see the section on [WebGPU shaders](https://www.construct.net/make-games/manuals/addon-sdk/guide/configuring-effects/webgpu-shaders) for more details.
+An array of strings indicating the supported renderers for this effect. By default (if omitted) it is `["webgl"]`. The string `"webgl2"` can be added to support a WebGL 2 variant of the effect - see the section on [WebGL shaders](../guide/configuring-effects/webgl-shaders.md) for more details. The string `"webgpu"` can be added to support the WebGPU renderer with a shader written in WGSL - see the section on [WebGPU shaders](../guide/configuring-effects/webgpu-shaders.md) for more details.
 
 **blends-background**  
 Boolean indicating whether the effect blends with the background. Objects and layers can use effects that blend with the background, but layouts cannot.
@@ -78,6 +78,6 @@ Set to `true` so the property can be supported by timelines.
 
 Construct supports rendering with both WebGL and the newer WebGPU. However these technologies use different shader languages: WebGL uses GLSL, and WebGPU uses WGSL. To support both renderers your effect will need to provide both a GLSL and WGSL shader which both render equivalently.
 
-For more details on writing shaders, see [WebGL shaders](https://www.construct.net/make-games/manuals/addon-sdk/guide/configuring-effects/webgl-shaders) for GLSL-specific information, and see [WebGPU shaders](https://www.construct.net/make-games/manuals/addon-sdk/guide/configuring-effects/webgpu-shaders) for WGSL-specific information.
+For more details on writing shaders, see [WebGL shaders](../guide/configuring-effects/webgl-shaders.md) for GLSL-specific information, and see [WebGPU shaders](../guide/configuring-effects/webgpu-shaders.md) for WGSL-specific information.
 
 You should test your shader works with both renderers. Change the *Enable WebGPU* setting in the *Advanced* section of Project Properties to test both renderers. You can also change the *Enable WebGPU in editor* setting in Construct's Settings dialog to test both renderers with the editor's rendering in the Layout View.

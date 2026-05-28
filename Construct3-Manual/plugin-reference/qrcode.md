@@ -1,7 +1,7 @@
 ---
 title: "QR code"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/qrcode"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -32,7 +32,7 @@ Whether the object is initially visible in the layout at runtime.
 
 ## QR code conditions
 
-The QR code object does not have any of its own conditions. However see [Common conditions](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/common-features/common-conditions) for features shared with other objects.
+The QR code object does not have any of its own conditions. However see [Common conditions](../plugin-reference/common-features/common-conditions.md) for features shared with other objects.
 
 ## QR code actions
 
@@ -44,4 +44,4 @@ Change the correction level of the QR code. See the *Correction level* property 
 
 ## QR code expressions
 
-The QR code object does not have any of its own expressions. However see [Common expressions](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/common-features/common-expressions) for features shared with other objects.
+The QR code object does not have any of its own expressions. However see [Common expressions](../plugin-reference/common-features/common-expressions.md) for features shared with other objects.

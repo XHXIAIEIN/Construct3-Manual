@@ -1,7 +1,7 @@
 ---
 title: "Get Cloud Saves"
 source: "https://www.construct.net/en/game-services/manuals/game-services/cloud-save/api-end-points/buckets/get-cloud-saves"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -108,7 +108,7 @@ If the request was successfull or not.
 **pagination** [`Pagination`](../../../common-objects/pagination-object.md)  
 Pagination object to assist with browsing through other pages of cloud save blobs.
 
-**blobs** Array<[Blob](../../../cloud-save/api-objects/blob.md)>
+**blobs** [`Array<Blob>`](../../../cloud-save/api-objects/blob.md)  
 The cloud save blobs returned on this page of results.
 
 **formattingCulture** `string`  

@@ -1,7 +1,7 @@
 ---
 title: "Collaborating on projects"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/overview/collaborating-projects"
-release: 476.3
+release: 487
 ---
 
 Currently Construct does not support any real-time online collaboration, due to the extreme technical complexity of the feature. However you can use existing source control tools like **Git** and **SVN** to manage collaborative changes by a team working on the same project.
@@ -11,6 +11,6 @@ Source control tools were designed for programmers, but they work well with Cons
 > **Tip**  
 > When using source control, be sure to configure the tool to ignore `.uistate.json` files. These are only used to restore the user interface (UI) state for individual team members, and aren't meant to be shared. These files are also optional and can be deleted at any time (although Construct's user interface will revert to defaults in places). Leaving these files out of source control will make sure each team member's user interface remains as they prefer, and avoids having to submit unnecessary changes.
 
-It's also advisable to change the *UID numbering* [project property](https://www.construct.net/make-games/manuals/construct-3/project-primitives/projects) to *Random* when collaborating on projects. This changes UIDs assigned in the editor from incrementing (e.g. 1, 2, 3, 4...) to random (e.g. 582953, 295630...). This helps avoid potential problems that may arise when two people working on the same project create two different instances which each get assigned the same UID.
+It's also advisable to change the *UID numbering* [project property](../project-primitives/projects.md) to *Random* when collaborating on projects. This changes UIDs assigned in the editor from incrementing (e.g. 1, 2, 3, 4...) to random (e.g. 582953, 295630...). This helps avoid potential problems that may arise when two people working on the same project create two different instances which each get assigned the same UID.
 
 Web services like GitHub also exist to simplify setting up and running source control, and these too can be used with Construct folder projects. For a guide on how to set up working on a Construct project on GitHub, see the tutorial [How to collaborate on Construct projects with GitHub](https://www.construct.net/en/tutorials/collaborate-construct-2390).

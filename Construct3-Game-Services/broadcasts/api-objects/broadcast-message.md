@@ -1,7 +1,7 @@
 ---
 title: "Message Object"
 source: "https://www.construct.net/en/game-services/manuals/game-services/broadcasts/api-objects/broadcast-message"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -22,8 +22,8 @@ This object can be rated by players.  Read about [how ratings work](../../rating
 
 ```json
 {
-  "id": "75437bf4-a6f7-4b92-bec6-381052b79cd8",
-  "channelID": "7ae7cc19-7dd9-4f80-8ae7-e725bd382867",
+  "id": "7bb0b68c-7f19-4593-ab5c-f64c29c3c02a",
+  "channelID": "21d985cd-eb77-4e05-9589-e153bcfca779",
   "date": "2025-09-22T14:30:02.437",
   "formattedDate": "9/22/2025 2:30:02 PM",
   "title": "New October features and news from the team.",
@@ -70,7 +70,7 @@ The date and time this message was published, formatted to the specified [reques
 The title of this message.
 
 **text** `string`  
-The content of the message.  Messages can be any form of text, plain, HTML or marked up with BB code.  This property is only returned if you are retrieving the message from the [get message](../../.md##b.GetMessage##) end point, otherwise the excerpt property will be returned.
+The content of the message.  Messages can be any form of text, plain, HTML or marked up with BB code.  This property is only returned if you are retrieving the message from the [get message](index.md##b.GetMessage##) end point, otherwise the excerpt property will be returned.
 
 **textLength** `int32`  
 The length of the returned text in characters.
@@ -99,7 +99,7 @@ How many times the message text or title has been modified since it was first pu
 **formattedUpdates** `string`  
 How many times the message text or title has been modified since it was first published, formatted to the specified [requested culture](../../culture.md).
 
-**lastUpdate** [datetime?](../../data-types.md#internalH1Link0)  
+**lastUpdate** [`datetime?`](../../data-types.md#internalH1Link0)  
 The date and time the message text or title was last updated.
 
 **formattedLastUpdate** `string`  

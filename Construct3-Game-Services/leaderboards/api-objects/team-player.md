@@ -1,7 +1,7 @@
 ---
 title: "Team Player Object"
 source: "https://www.construct.net/en/game-services/manuals/game-services/leaderboards/api-objects/team-player"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -15,8 +15,8 @@ release: 476.3
 
 ```json
 {
-  "currentScore": 51,
-  "formattedScore": "5iFMV",
+  "currentScore": 33,
+  "formattedScore": "UUxMv",
   "player": { ... }
 }
 ```

@@ -1,7 +1,7 @@
 ---
 title: "9-patch script interface"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/scripting/scripting-reference/plugin-interfaces/9-patch"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -10,7 +10,7 @@ release: 476.3
 
 ---
 
-The `I9PatchInstance` interface derives from [IWorldInstance](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/object-interfaces/iworldinstance) to add APIs specific to the [9-patch plugin](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/9-patch).
+The `I9PatchInstance` interface derives from [IWorldInstance](../../../scripting/scripting-reference/object-interfaces/iworldinstance.md) to add APIs specific to the [9-patch plugin](../../../plugin-reference/9-patch.md).
 
 ## 9-patch APIs
 

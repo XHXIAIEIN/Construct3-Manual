@@ -1,7 +1,7 @@
 ---
 title: "Drawing canvas script interface"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/scripting/scripting-reference/plugin-interfaces/drawing-canvas"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -22,7 +22,7 @@ See the [Drawing Canvas: Generate Image](https://editor.construct.net/#open=draw
 
 ## Drawing co-ordinates
 
-The co-ordinate system used in drawing APIs work the same as they do for actions. For more information refer to the [Drawing Canvas object documentation](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/drawing-canvas).
+The co-ordinate system used in drawing APIs work the same as they do for actions. For more information refer to the [Drawing Canvas object documentation](../../../plugin-reference/drawing-canvas.md).
 
 ## Colors in drawing methods
 
@@ -94,16 +94,16 @@ With `fillPoly()` the polygon must provide at least three points, and may be [co
 Set the blend mode used for draw operations on to the canvas. This is different to the blend used to draw the canvas itself to the layout. The blend mode is specified as a string and must be one of `"normal"`, `"additive"`, `"copy"`, `"destination-over"`, `"source-in"`, `"destination-in"`, `"source-out"`, `"destination-out"`, `"source-atop"` or `"destination-atop"`.
 
 **async pasteInstances(instancesArr, includeEffects = true)**  
-Draw a list of instances that are currently overlapping the canvas at their current positions, given as an array of [IWorldInstance](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/object-interfaces/iworldinstance). By default objects are drawn exactly as they appear, taking in to account any effects added to them; set `includeEffects` to `false` to draw without effects, as if all the object's effects were disabled. Note that the drawing actually happens at the end of the tick, and so this method is `async` so it can be awaited to ensure the paste has completed.
+Draw a list of instances that are currently overlapping the canvas at their current positions, given as an array of [IWorldInstance](../../../scripting/scripting-reference/object-interfaces/iworldinstance.md). By default objects are drawn exactly as they appear, taking in to account any effects added to them; set `includeEffects` to `false` to draw without effects, as if all the object's effects were disabled. Note that the drawing actually happens at the end of the tick, and so this method is `async` so it can be awaited to ensure the paste has completed.
 
 > **Tip**  
 > Note if an object is destroyed immediately after pasting without waiting for completion, it will not be drawn, as it will be destroyed before it gets to be drawn.
 
 **setFixedResolutionMode(fixedWidth, fixedHeight)**  
-Switch between fixed and auto resolution modes. For more information refer to the [Drawing Canvas object documentation](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/drawing-canvas).
+Switch between fixed and auto resolution modes. For more information refer to the [Drawing Canvas object documentation](../../../plugin-reference/drawing-canvas.md).
 
 **setAutoResolutionMode()**  
-Switch between fixed and auto resolution modes. For more information refer to the [Drawing Canvas object documentation](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/drawing-canvas).
+Switch between fixed and auto resolution modes. For more information refer to the [Drawing Canvas object documentation](../../../plugin-reference/drawing-canvas.md).
 
 **surfaceDeviceWidth**  
 Read-only values representing the size of the Drawing Canvas rendering surface in device pixels. The method returns both values at the same time.
@@ -115,7 +115,7 @@ Read-only values representing the size of the Drawing Canvas rendering surface i
 Read-only values representing the size of the Drawing Canvas rendering surface in device pixels. The method returns both values at the same time.
 
 **pixelScale**  
-A read-only value with the size of a single canvas pixel in object co-ordinates. See the section *Co-ordinate systems* in the [Drawing Canvas object documentation](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/drawing-canvas) for more information.
+A read-only value with the size of a single canvas pixel in object co-ordinates. See the section *Co-ordinate systems* in the [Drawing Canvas object documentation](../../../plugin-reference/drawing-canvas.md) for more information.
 
 **async getImagePixelData()**  
 Takes a snapshot of the drawing canvas pixel state on the GPU, and reads it back to the CPU asynchronously. Resolves with an [ImageData](https://developer.mozilla.org/en-US/docs/Web/API/ImageData) representing the pixel data. Note this uses unpremultiplied alpha, whereas the surface on the GPU is premultiplied, so technically this is lossy.

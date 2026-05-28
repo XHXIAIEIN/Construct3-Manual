@@ -1,7 +1,7 @@
 ---
 title: "IBehaviorInstance script interface"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/scripting/scripting-reference/object-interfaces/ibehaviorinstance"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -48,7 +48,7 @@ A reference to the [IInstance](../../../scripting/scripting-reference/object-int
 A reference to the [IBehavior](../../../scripting/scripting-reference/object-interfaces/ibehavior.md) representing the kind of behavior, e.g. Solid or Physics.
 
 **behaviorType**  
-A reference to the [IBehaviorType](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/object-interfaces/ibehaviortype) the behavior instance belongs to.
+A reference to the [IBehaviorType](../../../scripting/scripting-reference/object-interfaces/ibehaviortype.md) the behavior instance belongs to.
 
 **runtime**  
 A reference back to the [IRuntime interface](../../../scripting/scripting-reference/iruntime.md).

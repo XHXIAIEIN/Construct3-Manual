@@ -1,7 +1,7 @@
 ---
 title: "Browser"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/browser"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -144,7 +144,7 @@ Load a Cascading Style Sheet (CSS) from a URL and applies its styles to the docu
 Set a CSS style on the style attribute of some HTML elements in the document, based on a CSS property name and a string for its value. Setting the value to an empty string will remove the property from the style attribute. The element to change the style for is set by a CSS selector, e.g. `".myclass"` will mean to update the CSS style of an element with the class *myclass*; if the *Type* is set to *all*, it will update the style of all elements matching the selector.
 
 > **Tip**  
-> This is useful for setting document-wide CSS variables that can be used with other HTML features like form controls or [HTML Element](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/html-element).
+> This is useful for setting document-wide CSS variables that can be used with other HTML features like form controls or [HTML Element](../plugin-reference/html-element.md).
 
 > **Tip**  
 > This action is asynchronous because in worker mode the document cannot be accessed directly. When the action finishes, the change has been made to the document.
@@ -222,7 +222,7 @@ Request that the browser enter fullscreen mode. Note the browser may refuse this
 > **Tip**  
 > In desktop exports (Windows, macOS and Linux), fullscreen requests are always allowed at any time.
 
- The fullscreen modes that can be entered correspond to the *Fullscreen mode* [project property](https://www.construct.net/make-games/manuals/construct-3/project-primitives/projects). *Navigation UI* where supported sets whether the browser should show browser elements such as back buttons or the address bar, or hide them (for a true fullscreen experience). Typically this setting only affects mobile browsers.
+ The fullscreen modes that can be entered correspond to the *Fullscreen mode* [project property](../project-primitives/projects.md). *Navigation UI* where supported sets whether the browser should show browser elements such as back buttons or the address bar, or hide them (for a true fullscreen experience). Typically this setting only affects mobile browsers.
 
 **Set window size**  
 Set the size and position of the main window. This is only applicable on desktop-style systems - mobile devices typically use fullscreen apps and therefore windows cannot be repositioned or resized.

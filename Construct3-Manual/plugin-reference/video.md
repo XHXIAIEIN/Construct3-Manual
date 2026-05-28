@@ -1,7 +1,7 @@
 ---
 title: "Video"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/video"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -38,9 +38,9 @@ Use a third-party tool to identify the container, video codec and audio codec us
 
 Be sure to import video files to the **Videos project folder**. If video files are added in any other project folder, e.g. *Files*, they may be exported to a different folder and fail to load.
 
-Due to the complexities of video compression and the patent-encumbrance of some codecs like H.264, Construct does not provide a video importer like it does with audio. You must encode your video files yourself, and then import them as [project files](https://www.construct.net/make-games/manuals/construct-3/project-primitives/files). WebM and its codecs VP8, VP9 and AV1 are open formats and you should be able to find free encoders. However H.264/H.265 encoders may involve a fee.
+Due to the complexities of video compression and the patent-encumbrance of some codecs like H.264, Construct does not provide a video importer like it does with audio. You must encode your video files yourself, and then import them as [project files](../project-primitives/files.md). WebM and its codecs VP8, VP9 and AV1 are open formats and you should be able to find free encoders. However H.264/H.265 encoders may involve a fee.
 
-When publishing a project using video playback to the web, be sure that your server has the [correct MIME types set up](https://www.construct.net/make-games/manuals/construct-3/tips-and-guides/mime-types) otherwise video playback may fail after export.
+When publishing a project using video playback to the web, be sure that your server has the [correct MIME types set up](../tips-and-guides/mime-types.md) otherwise video playback may fail after export.
 
 ## Playback restrictions
 

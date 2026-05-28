@@ -1,7 +1,7 @@
 ---
 title: "Construct Game Services script interface"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/scripting/scripting-reference/plugin-interfaces/construct-game-services"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -12,7 +12,7 @@ release: 476.3
 
 ---
 
-The `ICGSObjectType` interface derives from [IObjectType](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/object-interfaces/iobjecttype) to add APIs specific to the [Construct Game Services plugin](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/construct-game-services). Construct Game Services is also written as CGS for short.
+The `ICGSObjectType` interface derives from [IObjectType](../../../scripting/scripting-reference/object-interfaces/iobjecttype.md) to add APIs specific to the [Construct Game Services plugin](../../../plugin-reference/construct-game-services.md). Construct Game Services is also written as CGS for short.
 
 ## Using the REST APIs
 

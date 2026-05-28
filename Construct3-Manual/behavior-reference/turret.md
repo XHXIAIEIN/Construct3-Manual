@@ -1,7 +1,7 @@
 ---
 title: "Turret behavior"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/behavior-reference/turret"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -17,15 +17,15 @@ release: 476.3
 
 The **Turret behavior** can automatically detect objects within a certain range and rotate towards them. It optionally includes features to determine when to fire, as well as **predictive aim**.
 
-For examples of the Turret behavior, search for *Turret* in the [Example Browser](https://www.construct.net/make-games/manuals/construct-3/overview/example-browser).
+For examples of the Turret behavior, search for *Turret* in the [Example Browser](../overview/example-browser.md).
 
 ### Scripting
 
-When using JavaScript or TypeScript coding, the features of this behavior can be accessed via the [ITurretBehaviorInstance script interface](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/behavior-interfaces/turret).
+When using JavaScript or TypeScript coding, the features of this behavior can be accessed via the [ITurretBehaviorInstance script interface](../scripting/scripting-reference/behavior-interfaces/turret.md).
 
 ## How Turrets work
 
-Before a turret will target anything, you must use the *Add object to target* action so the object knows which objects to look for. Calling this once on the start of layout is sufficient. You can also give the turret a [Family](https://www.construct.net/make-games/manuals/construct-3/project-primitives/objects/families)  `[Paid plans only]`  to target, allowing it to easily target a collection of different objects.
+Before a turret will target anything, you must use the *Add object to target* action so the object knows which objects to look for. Calling this once on the start of layout is sufficient. You can also give the turret a [Family](../project-primitives/objects/families.md)  `[Paid plans only]`  to target, allowing it to easily target a collection of different objects.
 
 Once one of these objects enters the Turret's range (the distance between the objects is lower than the *Range* property), and the turret does not already have a target, then the turret acquires that object as a target. *On target acquired* is triggered, and if *Rotate* is enabled the object will start rotating towards the target. Once the turret is pointing in the direction of the target, *On shoot* will trigger at the frequency determined by the *Rate of fire* property. If you want the turret to fire upon the target, spawn a projectile in the *On shoot* event.
 
@@ -88,7 +88,7 @@ Triggered when the turret has no target, but acquires one as it enters range.
 Target a specific object if it is in range. If the object is out of range, the action is ignored. If in range, the turret will switch to targeting the given object, even if it already has a different target. Note if *Target mode* is *Nearest*, the turret may still immediately switch to a nearer target.
 
 **Add object to target**  
-Use on startup to tell the turret which objects it should target. Use a [Family](https://www.construct.net/make-games/manuals/construct-3/project-primitives/objects/families)  `[Paid plans only]`   to conveniently target a whole group of objects.
+Use on startup to tell the turret which objects it should target. Use a [Family](../project-primitives/objects/families.md)  `[Paid plans only]`   to conveniently target a whole group of objects.
 
 **Clear targets**  
 Remove all targets added using the *Add object to target* action. The turret will no longer target any objects at all.
@@ -132,4 +132,4 @@ Retrieve the corresponding properties. For more information, see *Turret propert
 Retrieve the corresponding properties. For more information, see *Turret properties*.
 
 **TargetUID**  
-Get the UID of the currently targeted object, if any. For more information about UIDs, see [instances](https://www.construct.net/make-games/manuals/construct-3/project-primitives/objects/instances).
+Get the UID of the currently targeted object, if any. For more information about UIDs, see [instances](../project-primitives/objects/instances.md).

@@ -1,7 +1,7 @@
 ---
 title: "Persisting browser storage"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/tips-and-guides/persisting-browser-storage"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -61,7 +61,7 @@ If your system is running out of disk space, sometimes browsers respond by start
 
 As described above, requesting persistent storage may help avoid this - the browser should start by erasing other website's data first. However if the system runs out of storage space repeatedly, it may end up deleting Construct's saved data anyway.
 
-Construct's [Storage Cleanup dialog](https://www.construct.net/make-games/manuals/construct-3/interface/dialogs/storage-cleanup) can help free up space used by Construct without having to clear everything like your settings and login. Sometimes things like saved exported projects, downloaded example projects, and some export options, can end up using a lot of data. So if you are running low on disk space, try using that dialog to reduce the storage space Construct is using. You can also try general-purpose methods to save on disk space, such as using any system storage cleanup tool, uninstalling unused apps, deleting unnecessary files, and so on.
+Construct's [Storage Cleanup dialog](../interface/dialogs/storage-cleanup.md) can help free up space used by Construct without having to clear everything like your settings and login. Sometimes things like saved exported projects, downloaded example projects, and some export options, can end up using a lot of data. So if you are running low on disk space, try using that dialog to reduce the storage space Construct is using. You can also try general-purpose methods to save on disk space, such as using any system storage cleanup tool, uninstalling unused apps, deleting unnecessary files, and so on.
 
 ## Try another browser
 

@@ -1,7 +1,7 @@
 ---
 title: "Custom Movement behavior"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/behavior-reference/custom-movement"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -88,7 +88,7 @@ Accelerate the movement towards an angle or position.
 Accelerate the movement towards an angle or position.
 
 **Push out solid**  
-Only valid when the behavior is currently overlapping an object with the [solid behavior](https://www.construct.net/make-games/manuals/construct-3/behavior-reference/solid). Automatically move the object until it is no longer overlapping the solid. This has no effect if the object is not currently overlapping a solid. The following techniques can be used:
+Only valid when the behavior is currently overlapping an object with the [solid behavior](../behavior-reference/solid.md). Automatically move the object until it is no longer overlapping the solid. This has no effect if the object is not currently overlapping a solid. The following techniques can be used:
 
 - **Opposite angle** reverses (or 'backtracks') the object from its current angle of motion until it is no longer overlapping.
 - **Nearest** moves the object in an eight-direction spiral out one pixel at a time until it is no longer overlapping. The aim is for the object to end up in the nearest free space, but since only eight directions are used it will be an approximation.

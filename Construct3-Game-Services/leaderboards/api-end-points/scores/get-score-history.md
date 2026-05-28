@@ -1,7 +1,7 @@
 ---
 title: "Get Score History"
 source: "https://www.construct.net/en/game-services/manuals/game-services/leaderboards/api-end-points/scores/get-score-history"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -55,7 +55,7 @@ Successful responses always return a `HTTP 200` status code.
 ```json
 {
   "success": true,
-  "scoreID": "f602f12a-3b93-4cee-9292-a9b8fa729538",
+  "scoreID": "51649679-f382-4367-9096-d566b3dc776f",
   "player": { ... },
   "scoreHistory": [
     { ... },
@@ -77,7 +77,7 @@ The ID of the score the history is being returned on.
 **player** [`Player`](../../../authentication/api-objects/player-object.md)  
 The player this score belongs to.
 
-**scoreHistory** Array<[ScoreHistory](../../../leaderboards/api-objects/score-history.md)>
+**scoreHistory** [`Array<ScoreHistory>`](../../../leaderboards/api-objects/score-history.md)  
 The list of score history records for this score.
 
 **country** `string`  

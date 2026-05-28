@@ -1,7 +1,7 @@
 ---
 title: "List script interface"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/scripting/scripting-reference/plugin-interfaces/list"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -11,7 +11,7 @@ release: 476.3
 
 ---
 
-The `IListInstance` interface derives from [IDOMInstance](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/object-interfaces/idominstance) to add APIs specific to the [List plugin](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/list).
+The `IListInstance` interface derives from [IDOMInstance](../../../scripting/scripting-reference/object-interfaces/idominstance.md) to add APIs specific to the [List plugin](../../../plugin-reference/list.md).
 
 ## List events
 

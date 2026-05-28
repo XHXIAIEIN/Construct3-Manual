@@ -1,7 +1,7 @@
 ---
 title: "The Properties Bar"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/interface/bars/properties-bar"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -17,20 +17,20 @@ The **Properties Bar** is an essential of the interface. It displays a list of a
 
 [![The Properties Bar](https://construct-static.com/images/v1740/r/uploads/articleuploadobject/0/images/860/properties-bar_v350.png)](https://construct-static.com/images/v1740/uploads/articleuploadobject/0/images/860/properties-bar.png)The Properties Bar
 
-There are too many properties in Construct to list here. Instead, properties for different parts of the project are documented in the relevant manual section. For example, layout properties are described in the manual entry [Layouts](https://www.construct.net/make-games/manuals/construct-3/project-primitives/layouts).
+There are too many properties in Construct to list here. Instead, properties for different parts of the project are documented in the relevant manual section. For example, layout properties are described in the manual entry [Layouts](../../project-primitives/layouts.md).
 
 Properties are organised in to **categories** which can be expanded and collapsed. There are many kinds of properties, including number fields, text fields, dropdown lists and clickable links. The property name appears in the left column, and the editable value appears in the right column.
 
-Whenever something in the project is clicked or selected, its properties display in the Properties Bar. For example, selecting objects in the [Layout View](https://www.construct.net/make-games/manuals/construct-3/interface/layout-view) or clicking items in the [Project Bar](https://www.construct.net/make-games/manuals/construct-3/interface/bars/project-bar) shows the relevant properties in the Properties Bar.
+Whenever something in the project is clicked or selected, its properties display in the Properties Bar. For example, selecting objects in the [Layout View](../../interface/layout-view.md) or clicking items in the [Project Bar](../../interface/bars/project-bar.md) shows the relevant properties in the Properties Bar.
 
 ## Things with properties
 
 Some of the most important parts of the project with properties that you'll regularly modify are:
 
-- [Projects](https://www.construct.net/make-games/manuals/construct-3/project-primitives/projects)
-- [Layouts](https://www.construct.net/make-games/manuals/construct-3/project-primitives/layouts)
-- [Layers](https://www.construct.net/make-games/manuals/construct-3/project-primitives/layers)
-- [Object instances](https://www.construct.net/make-games/manuals/construct-3/project-primitives/objects/instances)
+- [Projects](../../project-primitives/projects.md)
+- [Layouts](../../project-primitives/layouts.md)
+- [Layers](../../project-primitives/layers.md)
+- [Object instances](../../project-primitives/objects/instances.md)
 
 Many plugins, behaviors and effects have their own properties as well. See the Reference section of the manual for information on those.
 
@@ -44,7 +44,7 @@ All properties also have a *description* which provide additional information ab
 
 ## Typing calculations
 
-In number values, you can type calculations like `1920 / 2` and press enter to set the value to the result of the calculation (960). The syntax used is the same as [expressions](https://www.construct.net/make-games/manuals/construct-3/project-primitives/events/expressions) used in events. You can also use some basic [system expressions](https://www.construct.net/make-games/manuals/construct-3/system-reference/system-expressions) like `sqrt(64)`.
+In number values, you can type calculations like `1920 / 2` and press enter to set the value to the result of the calculation (960). The syntax used is the same as [expressions](../../project-primitives/events/expressions.md) used in events. You can also use some basic [system expressions](../../system-reference/system-expressions.md) like `sqrt(64)`.
 
 ## Dragging values
 

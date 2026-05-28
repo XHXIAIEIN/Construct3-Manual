@@ -1,7 +1,7 @@
 ---
 title: "Cloud Save Blob Object"
 source: "https://www.construct.net/en/game-services/manuals/game-services/cloud-save/api-objects/blob"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -17,11 +17,11 @@ This object can be rated by players.  Read about [how ratings work](../../rating
 
 ```json
 {
-  "id": "db5e1cec-e01f-4752-b23d-e488b9c86232",
+  "id": "24a3baa9-4c03-43fc-a9b1-e89200c32135",
   "key": "savegame.1",
   "bucket": { ... },
   "player": { ... },
-  "created": "2026-04-05T08:32:13.7574289Z",
+  "created": "2026-05-27T08:36:34.6072059Z",
   "sizeBytes": 1024,
   "downloadURL": "https://cloudsave.construct.net/download...",
   "ratingStatus": { ... },
@@ -29,7 +29,7 @@ This object can be rated by players.  Read about [how ratings work](../../rating
     { ... },
     { ... }
   ],
-  "pictureSizeBytes": 1,
+  "pictureSizeBytes": 67,
   "name": "My save game"
 }
 ```
@@ -60,7 +60,7 @@ The URL to download the cloud save blob from.
 **ratingStatus** [`RatingStatus`](../../ratings/api-objects/rating-status-object.md)  
 The [rating status](../../ratings/api-objects/rating-status-object.md) of this object.
 
-**pictures** Array<[Picture](../../common-objects/picture-object.md)>
+**pictures** [`Array<Picture>`](../../common-objects/picture-object.md)  
 If this cloud save object has an associated picture, an array of [picture objects](../../common-objects/picture-object.md) will be returned here. Each picture object is the same associated picture, but in different available sizes. Sizes available are based on widths, and the widths 16, 32, 64, 128, 256, 512, 1024 and 2048 will be shown here along with the original picture size if it is different to this predetermined list. Some widths may not show if the original picture width is smaller than any of the available widths.
 
 **pictureSizeBytes** `int64?`  

@@ -1,7 +1,7 @@
 ---
 title: "Assign a Player to a Team"
 source: "https://www.construct.net/en/game-services/manuals/game-services/leaderboards/api-end-points/teams/assign-player"
-release: 476.3
+release: 487
 ---
 
 ## On this page

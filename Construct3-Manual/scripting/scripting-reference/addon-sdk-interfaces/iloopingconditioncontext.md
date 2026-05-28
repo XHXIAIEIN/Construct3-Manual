@@ -1,7 +1,7 @@
 ---
 title: "ILoopingConditionContext addon SDK interface"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/scripting/scripting-reference/addon-sdk-interfaces/iloopingconditioncontext"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -10,7 +10,7 @@ release: 476.3
 
 ---
 
-The `ILoopingConditionContext` interface is used to implement looping conditions. It is created by the [ISDKUtils](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/addon-sdk-interfaces/isdkutils) method `createLoopingConditionContext()`.
+The `ILoopingConditionContext` interface is used to implement looping conditions. It is created by the [ISDKUtils](../../../scripting/scripting-reference/addon-sdk-interfaces/isdkutils.md) method `createLoopingConditionContext()`.
 
 ## ILoopingConditionContext APIs
 

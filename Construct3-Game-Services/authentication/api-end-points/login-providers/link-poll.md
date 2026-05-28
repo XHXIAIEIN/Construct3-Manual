@@ -1,7 +1,7 @@
 ---
 title: "Link Polling"
 source: "https://www.construct.net/en/game-services/manuals/game-services/authentication/api-end-points/login-providers/link-poll"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -57,9 +57,9 @@ Successful responses always return a `HTTP 200` status code.
 {
   "success": true,
   "linked": false,
-  "forceCode": "2f0d44ab-1d7a-45da-861d-d916cfa9e005",
+  "forceCode": "2cb9035a-f817-45a6-9853-f0006e5a371f",
   "forceURL": "https://...",
-  "forceCodeExpiryMins": 44,
+  "forceCodeExpiryMins": 56,
   "formattingCulture": "en-us"
 }
 ```
@@ -72,7 +72,7 @@ If the request was successfull or not.
 **linked** [`bool`](../../../data-types.md#internalH1Link4)  
 Returns true if the link was sucessful.  This will always return false until the user completes the sign in with the login provider.
 
-**forceCode** [guid?](../../../data-types.md#internalH1Link1)  
+**forceCode** [`guid?`](../../../data-types.md#internalH1Link1)  
 A one use code to [force link](../../../authentication/api-end-points/login-providers/force-link.md) the login provider to the players account.
 
 **forceURL** `url (string)`  

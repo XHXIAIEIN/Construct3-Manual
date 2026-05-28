@@ -1,7 +1,7 @@
 ---
 title: "Tile movement"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/behavior-reference/tile-movement"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -17,13 +17,13 @@ The **Tile movement behavior** allows an object to be moved up, down, left and r
 
 The Tile movement aligns the object's origin with the grid. To ensure the object appears in the correct alignment with a visible grid, ensure the object size is the size of the cell, and place the origin in the top-left corner. Often it's easiest to make this object invisible, and place the player sprite on top so that it can keep its own size and origin, as is done in [this example of the Tile movement behavior](https://editor.construct.net/#open=template-tile-based-game).
 
-The Tile movement behavior is blocked by any objects with the [Solid behavior](https://www.construct.net/make-games/manuals/construct-3/behavior-reference/solid).
+The Tile movement behavior is blocked by any objects with the [Solid behavior](../behavior-reference/solid.md).
 
-To set up custom or automatic controls, see the [behavior reference summary](https://www.construct.net/make-games/manuals/construct-3/behavior-reference).
+To set up custom or automatic controls, see the [behavior reference summary](../behavior-reference.md).
 
 ### Scripting
 
-When using JavaScript or TypeScript coding, the features of this behavior can be accessed via the [ITileMovementBehaviourInstance script interface](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/behavior-interfaces/tile-movement).
+When using JavaScript or TypeScript coding, the features of this behavior can be accessed via the [ITileMovementBehaviourInstance script interface](../scripting/scripting-reference/behavior-interfaces/tile-movement.md).
 
 ## Tile movement properties
 
@@ -49,7 +49,7 @@ The speed of the movement on each axis, in pixels per second.
 Whether the behavior is initially enabled or disabled. If disabled, it can be enabled at runtime using the *Set enabled* action.
 
 **Default controls**  
-If enabled, movement is controlled by the arrow keys on the keyboard. Disable to set up custom controls using the *Simulate control* action. For more information see the [behavior reference summary](https://www.construct.net/make-games/manuals/construct-3/behavior-reference).
+If enabled, movement is controlled by the arrow keys on the keyboard. Disable to set up custom controls using the *Simulate control* action. For more information see the [behavior reference summary](../behavior-reference.md).
 
 **Isometric**  
 Check to enable an isometric grid movement, along diagonals. In this mode the "up" direction is towards the top-right. The default is unchecked, using a cartesian grid with horizontal and vertical movement.
@@ -92,7 +92,7 @@ Set whether input is being ignored. If input is ignored, pressing any of the con
 Specify new values for the *Speed X* and *Speed Y* properties.
 
 **Simulate control**  
-Simulate one of the movement controls being held down. Useful when *Default controls* is disabled. See the [behavior reference summary](https://www.construct.net/make-games/manuals/construct-3/behavior-reference) for more information.
+Simulate one of the movement controls being held down. Useful when *Default controls* is disabled. See the [behavior reference summary](../behavior-reference.md) for more information.
 
 ## Tile movement expressions
 

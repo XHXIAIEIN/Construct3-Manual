@@ -1,7 +1,7 @@
 ---
 title: "Keyboard shortcuts"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/interface/keyboard-shortcuts"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -56,9 +56,9 @@ Note that on macOS the **Command key** <kbd>⌘</kbd> is used instead of **Contr
 
 <kbd>F5</kbd> Preview current layout
 
-<kbd>Shift</kbd> + <kbd>F4</kbd> [Debug](https://www.construct.net/make-games/manuals/construct-3/interface/debugger) from first layout
+<kbd>Shift</kbd> + <kbd>F4</kbd> [Debug](../interface/debugger.md) from first layout
 
-<kbd>Shift</kbd> + <kbd>F5</kbd> [Debug](https://www.construct.net/make-games/manuals/construct-3/interface/debugger) current layout
+<kbd>Shift</kbd> + <kbd>F5</kbd> [Debug](../interface/debugger.md) current layout
 
 <kbd>Alt</kbd> + **Preview** button to start an additional preview
 
@@ -98,7 +98,7 @@ Note that on macOS the **Command key** <kbd>⌘</kbd> is used instead of **Contr
 
 ## Layout view
 
-See also: [Layout View](https://www.construct.net/make-games/manuals/construct-3/interface/layout-view)
+See also: [Layout View](../interface/layout-view.md)
 
 <kbd>Ctrl</kbd> + **Mouse Wheel Up** or <kbd>Ctrl</kbd> + <kbd>+</kbd> Zoom in
 
@@ -121,7 +121,7 @@ Hold <kbd>Shift</kbd> to increase the zoom rate.
 
 **Hold** <kbd>Shift</kbd> while rotating objects to lock to 5 degree increments
 
-**Hold** <kbd>Shift</kbd> while dragging objects for axis-lock (move along diagonals only)
+**Hold** <kbd>Shift</kbd> while dragging objects for axis-lock (move along diagonals only)  
 
 **Hold** <kbd>Tab</kbd> and **click a selected object** to select the next object underneath in the Z order
 
@@ -151,7 +151,7 @@ To paste objects in-place (so they paste at their original positions, instead of
 
 <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd> Stop all Live Previews  `[Paid plans only]`
 
-When editing tilemaps using the [Tilemap Bar](https://www.construct.net/make-games/manuals/construct-3/interface/bars/tilemap-bar):
+When editing tilemaps using the [Tilemap Bar](../interface/bars/tilemap-bar.md):
 
 <kbd>1</kbd> - <kbd>6</kbd> Switch current tool
 
@@ -171,13 +171,13 @@ When editing tilemaps using the [Tilemap Bar](https://www.construct.net/make-gam
 
 <kbd>Ctrl or Alt Gr</kbd> + <kbd>]</kbd> Use the **modify existing hierarchy** option on the current selection of templates and/or replicas
 
-When editing timelines using the [Timeline Bar](https://www.construct.net/make-games/manuals/construct-3/interface/bars/timeline-bar):
+When editing timelines using the [Timeline Bar](../interface/bars/timeline-bar.md):
 
 Hold <kbd>Ctrl</kbd> when dragging a cubic bezier anchor point to also modify the adjacent anchor point if there is any.
 
 ## Event Sheet View
 
-See also: [Event Sheet View](https://www.construct.net/make-games/manuals/construct-3/interface/event-sheet-view)
+See also: [Event Sheet View](../interface/event-sheet-view.md)
 
 <kbd>Ctrl</kbd> + <kbd>+</kbd> Increase text size
 
@@ -251,7 +251,7 @@ In the Parameters Dialog, press <kbd>F4</kbd> to toggle the Expressions Dictiona
 
 ## Animations Editor
 
-See also: [Animations Editor](https://www.construct.net/make-games/manuals/construct-3/interface/animations-editor)
+See also: [Animations Editor](../interface/animations-editor.md)
 
 <kbd>B</kbd> Brush tool
 

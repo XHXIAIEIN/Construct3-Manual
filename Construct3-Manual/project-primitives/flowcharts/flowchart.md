@@ -1,7 +1,7 @@
 ---
 title: "Flowchart"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/project-primitives/flowcharts/flowchart"
-release: 476.3
+release: 487
 ---
 
 ## On this page

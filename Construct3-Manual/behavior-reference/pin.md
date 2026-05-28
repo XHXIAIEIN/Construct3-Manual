@@ -1,7 +1,7 @@
 ---
 title: "Pin behavior"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/behavior-reference/pin"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -13,12 +13,12 @@ release: 476.3
 
 ---
 
-The **Pin behavior** positions an object at a relative distance and angle to another object, giving the impression it has been "pinned" to the object. It can also pin other properties like the size. For examples, search for *Pin* in the [Start Page](https://www.construct.net/make-games/manuals/construct-3/overview/start-page).
+The **Pin behavior** positions an object at a relative distance and angle to another object, giving the impression it has been "pinned" to the object. It can also pin other properties like the size. For examples, search for *Pin* in the [Start Page](../overview/start-page.md).
 
 Simply adding the Pin behavior to an object does not do anything. You must use the *Pin* action to pin the object to another object.
 
 > **Tip**  
-> The hierarchies feature is a modern built-in replacement for the Pin behavior. Consider using the [Add child](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/common-features/common-actions) action to connect objects together instead. This has better support for connecting chains of objects together, provides conditions that can pick instances across the hierarchy, and also allows hierarchies to be set up in the Layout View. See also [Superseded features](https://www.construct.net/make-games/manuals/construct-3/tips-and-guides/superseded-features).
+> The hierarchies feature is a modern built-in replacement for the Pin behavior. Consider using the [Add child](../plugin-reference/common-features/common-actions.md) action to connect objects together instead. This has better support for connecting chains of objects together, provides conditions that can pick instances across the hierarchy, and also allows hierarchies to be set up in the Layout View. See also [Superseded features](../tips-and-guides/superseded-features.md).
 
 ## Pin properties
 
@@ -65,4 +65,4 @@ Unpin the object, so it is no longer being positioned by the Pin behavior.
 ## Pin expressions
 
 **PinnedUID**  
-Get the UID of the object currently pinned to, or -1 if not pinned. For more information on UIDs, see [instances](https://www.construct.net/make-games/manuals/construct-3/project-primitives/objects/instances).
+Get the UID of the object currently pinned to, or -1 if not pinned. For more information on UIDs, see [instances](../project-primitives/objects/instances.md).

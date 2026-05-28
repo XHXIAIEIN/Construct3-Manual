@@ -1,7 +1,7 @@
 ---
 title: "Testing projects"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/overview/testing-projects"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -37,7 +37,7 @@ In the main toolbar, there is a dropdown arrow next to the Preview button that s
 
 ### Debug layout
 
-This runs the current layout in a special **debug** mode. The debugger is a special development tool which helps you inspect the state of the project (such as the value of expressions and variables). It also provides diagnostic tools such as advancing the game frame-by-frame, changing values, destroying objects, setting breakpoints in events, and more. This can bring invaluable insight to how your project is working, particularly if you run in to a problem. For more information see the manual section on the [Debugger](https://www.construct.net/make-games/manuals/construct-3/interface/debugger).
+This runs the current layout in a special **debug** mode. The debugger is a special development tool which helps you inspect the state of the project (such as the value of expressions and variables). It also provides diagnostic tools such as advancing the game frame-by-frame, changing values, destroying objects, setting breakpoints in events, and more. This can bring invaluable insight to how your project is working, particularly if you run in to a problem. For more information see the manual section on the [Debugger](../interface/debugger.md).
 
 ### Preview project
 

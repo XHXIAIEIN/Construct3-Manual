@@ -1,7 +1,7 @@
 ---
 title: "Timeline track folder"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/project-primitives/timelines/track-folder"
-release: 476.3
+release: 487
 ---
 
 ## On this page

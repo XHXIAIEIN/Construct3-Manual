@@ -1,7 +1,7 @@
 ---
 title: "Delete Picture"
 source: "https://www.construct.net/en/game-services/manuals/game-services/cloud-save/api-end-points/cloud-saves/delete-picture"
-release: 476.3
+release: 487
 ---
 
 ## On this page

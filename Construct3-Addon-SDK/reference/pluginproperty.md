@@ -1,7 +1,7 @@
 ---
 title: "PluginProperty class"
 source: "https://www.construct.net/en/make-games/manuals/addon-sdk/reference/pluginproperty"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -11,9 +11,9 @@ release: 476.3
 
 ---
 
-PluginProperty defines a single property for an addon that will appear in the Properties Bar. Typically an array of PluginProperty is passed to `this._info.SetProperties()`. See [Configuring Plugins](https://www.construct.net/make-games/manuals/addon-sdk/guide/configuring-plugins) for more information. Note that despite the name, PluginProperty is also used to define properties for behaviors.
+PluginProperty defines a single property for an addon that will appear in the Properties Bar. Typically an array of PluginProperty is passed to `this._info.SetProperties()`. See [Configuring Plugins](../guide/configuring-plugins.md) for more information. Note that despite the name, PluginProperty is also used to define properties for behaviors.
 
-Note properties do not directly define any strings that appear in the editor UI. These are defined in [The Language File](https://www.construct.net/make-games/manuals/addon-sdk/guide/language-file).
+Note properties do not directly define any strings that appear in the editor UI. These are defined in [The Language File](../guide/language-file.md).
 
 ## Constructor
 

@@ -1,7 +1,7 @@
 ---
 title: "Multiplayer"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/multiplayer"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -23,7 +23,7 @@ The **Multiplayer object** provides features to develop real-time online multipl
 
 ### Scripting
 
-When using JavaScript or TypeScript coding, the features of this object can be accessed via the [IMultiplayerObjectType script interface](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/plugin-interfaces/multiplayer).
+When using JavaScript or TypeScript coding, the features of this object can be accessed via the [IMultiplayerObjectType script interface](../scripting/scripting-reference/plugin-interfaces/multiplayer.md).
 
 ## Multiplayer features
 
@@ -56,7 +56,7 @@ The four introductory tutorials are:
 3. [Multiplayer tutorial 3: pong](https://www.construct.net/en/tutorials/multiplayer-tutorial-3-pong-626)
 4. [Multiplayer tutorial 4: real-time game](https://www.construct.net/en/tutorials/multiplayer-tutorial-3-real-time-game-598)
 
-You can also find examples of the Multiplayer features by searching for *Multiplayer* in the [Start Page](https://www.construct.net/make-games/manuals/construct-3/overview/start-page).
+You can also find examples of the Multiplayer features by searching for *Multiplayer* in the [Start Page](../overview/start-page.md).
 
 ## Signalling and hosting
 
@@ -90,7 +90,7 @@ The host is authoritative for both gameplay data and its settings. If you change
 
 ## Binary transfers
 
-The Multiplayer object supports sending binary messages by transmitting the contents of a [Binary Data](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/binary-data) object. However due to the underlying networking technologies, a single binary message cannot be too large (common limits are in the range 64 KB - 256 KB), which poses a problem if you want to send a larger file to another peer.
+The Multiplayer object supports sending binary messages by transmitting the contents of a [Binary Data](../plugin-reference/binary-data.md) object. However due to the underlying networking technologies, a single binary message cannot be too large (common limits are in the range 64 KB - 256 KB), which poses a problem if you want to send a larger file to another peer.
 
 The Multiplayer object provides a **Binary transfer** feature to help send larger amounts of data. See the [Multiplayer file transfer example](https://editor.construct.net/#open=multiplayer-binary-transfer) for a demonstration of how it works. When making a binary transfer, the process works like this:
 
@@ -105,10 +105,10 @@ As noted in the section above, peers only connect to the host and so direct comm
 ## Multiplayer conditions
 
 **On (binary transfer) complete**  
-Triggered on the receiving end of a binary transfer when the transfer has completed. The full transferred data is then available in the chosen [Binary Data](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/binary-data) object. The *On complete* trigger fires only for the specified transfer tag, whereas the *any* variant trigger fires for any transfer (with the tag available in the *Tag* expression).
+Triggered on the receiving end of a binary transfer when the transfer has completed. The full transferred data is then available in the chosen [Binary Data](../plugin-reference/binary-data.md) object. The *On complete* trigger fires only for the specified transfer tag, whereas the *any* variant trigger fires for any transfer (with the tag available in the *Tag* expression).
 
 **On any (binary transfer) complete**  
-Triggered on the receiving end of a binary transfer when the transfer has completed. The full transferred data is then available in the chosen [Binary Data](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/binary-data) object. The *On complete* trigger fires only for the specified transfer tag, whereas the *any* variant trigger fires for any transfer (with the tag available in the *Tag* expression).
+Triggered on the receiving end of a binary transfer when the transfer has completed. The full transferred data is then available in the chosen [Binary Data](../plugin-reference/binary-data.md) object. The *On complete* trigger fires only for the specified transfer tag, whereas the *any* variant trigger fires for any transfer (with the tag available in the *Tag* expression).
 
 **On (binary transfer) event**  
 These triggers fire at various stages of a binary transfer, either for a transfer with a specific tag, or for any transfer (with the tag available in the *Tag* expression). The types of events are:
@@ -151,7 +151,7 @@ Triggered when a peer is disconnected from the host. This trigger works the same
 Triggered when a message sent with a specific tag is received. The *Message*, *FromID* and *FromAlias* expressions can be used to retrieve information about the received message. The order messages are received, or whether a sent message is received at all, depends on the reliability mode chosen when the message was originally sent.
 
 **On peer binary message**  
-As with *On peer message*, but triggered when receiving a binary message sent with the *Send binary message* action. The received data is stored in the chosen [Binary Data](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/binary-data) object. Note that binary messages do not have tags, but this data can be included in the transmitted binary data.
+As with *On peer message*, but triggered when receiving a binary message sent with the *Send binary message* action. The received data is stored in the chosen [Binary Data](../plugin-reference/binary-data.md) object. Note that binary messages do not have tags, but this data can be included in the transmitted binary data.
 
 **Is ready for input**  
 True when a peer is ready to send input to the host. This means *On client update* has triggered at least once, or is about to trigger. Do not allow players using input prediction to move or act before this condition is true or *On client update* has triggered: doing so will simply cause an input prediction error since the host is not yet ready to receive input.
@@ -195,7 +195,7 @@ Triggered after the *Request room list* action when the room list has been succe
 ## Multiplayer actions
 
 **Transfer peer binary**  
-Begin a binary data transfer to a peer identified by their peer ID. The data to send is in a specified [Binary Data](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/binary-data) object. An optional tag, filename and MIME type may be specified which the receiver can also use. For more details see the section on *Binary transfers* above.
+Begin a binary data transfer to a peer identified by their peer ID. The data to send is in a specified [Binary Data](../plugin-reference/binary-data.md) object. An optional tag, filename and MIME type may be specified which the receiver can also use. For more details see the section on *Binary transfers* above.
 
 **Cancel binary transfer**  
 Cancel a currently in progress binary transfer specified by the peer ID it is being sent to and the tag of the transfer. Both the sender and receiver will fire the *cancelled* event and no further data will be transmitted.
@@ -213,7 +213,7 @@ Disconnect from the room. If the room host, all players are kicked; otherwise th
 Send a message to a specific peer with a given reliability mode. Peers can only message the host (and the *Peer ID* field must be left empty), but the host can send a message to any peer. Message tags can be used to identify messages for different purposes, such as "chat" or "gameplay-event". The message must be a text string, but could also be JSON data such as from an Array or Dictionary *AsJSON* expression; however be sure to avoid wasting bandwidth. The order messages arrive, or whether it is guaranteed to arrive at all, depends on the reliability mode.
 
 **Send binary message**  
-As with *Send message*, but the data to be sent is specified by a [Binary Data](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/binary-data) object. Binary messages do not use a tag, although this data can be incorporated in the transmitted data.
+As with *Send message*, but the data to be sent is specified by a [Binary Data](../plugin-reference/binary-data.md) object. Binary messages do not use a tag, although this data can be incorporated in the transmitted data.
 
 > **Tip**  
 > The underlying networking technologies usually impose a limit on the maximum size of binary data that can be transmitted in a single message. Commonly this is in the range 64 KB - 256 KB (although this limit applies after automatic data compression, so sometimes larger messages may be allowed if they compress to within the allowed size). To send larger amounts of data such as for file transfers, use the binary transfer feature instead.

@@ -1,7 +1,7 @@
 ---
 title: "Physics"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/behavior-reference/physics"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -14,7 +14,7 @@ release: 476.3
 
 ---
 
-The **Physics behavior** simulates realistic object physics. It is powered by Box2D. Construct comes with several examples demonstrating what the Physics behavior can do; filter by the *Physics* behavior in the [Example Browser](https://www.construct.net/make-games/manuals/construct-3/overview/example-browser) to find them.
+The **Physics behavior** simulates realistic object physics. It is powered by Box2D. Construct comes with several examples demonstrating what the Physics behavior can do; filter by the *Physics* behavior in the [Example Browser](../overview/example-browser.md) to find them.
 
 The Physics behavior is relatively complex. The following tutorials are recommended to gain a basic understanding of how to use the Physics behavior and some important points to know before beginning to use it:
 
@@ -25,7 +25,7 @@ This manual section will not repeat the information in these tutorials. Instead 
 
 ### Scripting
 
-When using JavaScript or TypeScript coding, the features of this behavior can be accessed via the [IPhysicsBehaviorInstance script interface](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/behavior-interfaces/physics).
+When using JavaScript or TypeScript coding, the features of this behavior can be accessed via the [IPhysicsBehaviorInstance script interface](../scripting/scripting-reference/behavior-interfaces/physics.md).
 
 ## Using Physics in Construct
 
@@ -43,7 +43,7 @@ If enabled, simulate the object having infinite mass. Its density is ignored and
 **Collision mask**  
 How to handle physics collisions for this object. The options are:
 
-- **Use collision polygon** uses the object's collision polygon from the [Animations editor](https://www.construct.net/make-games/manuals/construct-3/interface/animations-editor) for physics collisions. If it doesn't have a collision polygon it will use the object's bounding box.
+- **Use collision polygon** uses the object's collision polygon from the [Animations editor](../interface/animations-editor.md) for physics collisions. If it doesn't have a collision polygon it will use the object's bounding box.
 - **Bounding box** ignores the object's collision polygon if any, and for the purposes of Physics collisions considers the object to be a rectangle.
 - **Circle** ignores the object's collision polygon if any, and for the purposes of Physics collisions considers the object to be a circle. This allows objects to smoothly roll along (like for example barrels). This is especially useful since object's collision polygons is made out of straight lines, so a smooth circle cannot be created that way.
 

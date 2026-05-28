@@ -1,7 +1,7 @@
 ---
 title: "ISDKDOMInstanceBase addon SDK interface"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/scripting/scripting-reference/addon-sdk-interfaces/isdkdominstancebase"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -10,7 +10,7 @@ release: 476.3
 
 ---
 
-The `ISDKDOMInstanceBase` interface is used as a runtime base class for DOM instances (which create a HTML element) in the addon SDK. It derives from [ISDKWorldInstanceBase](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/addon-sdk-interfaces/isdkworldinstancebase).
+The `ISDKDOMInstanceBase` interface is used as a runtime base class for DOM instances (which create a HTML element) in the addon SDK. It derives from [ISDKWorldInstanceBase](../../../scripting/scripting-reference/addon-sdk-interfaces/isdkworldinstancebase.md).
 
 ## ISDKDOMInstanceBase APIs
 

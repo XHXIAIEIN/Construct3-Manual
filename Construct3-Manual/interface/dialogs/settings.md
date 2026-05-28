@@ -1,7 +1,7 @@
 ---
 title: "The Settings dialog"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/interface/dialogs/settings"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -18,7 +18,7 @@ release: 476.3
 
 ---
 
-The **Settings dialog** allows you to change various settings for the Construct 3 editor. It can be opened via the [main menu](https://www.construct.net/make-games/manuals/construct-3/interface/main-menu).
+The **Settings dialog** allows you to change various settings for the Construct 3 editor. It can be opened via the [main menu](../../interface/main-menu.md).
 
 ## User interface
 
@@ -26,7 +26,7 @@ The **Settings dialog** allows you to change various settings for the Construct 
 Select the language for the editor interface. Construct 3 must be reloaded after changing this.
 
 **UI mode**  
-Whether to use a desktop interface, a [mobile interface](https://www.construct.net/make-games/manuals/construct-3/getting-started/on-mobile), or automatically decide which to use (the default). This can be useful to force tablets with a mouse and keyboard attached in to desktop mode. Construct 3 must be reloaded after changing this.
+Whether to use a desktop interface, a [mobile interface](../../getting-started/on-mobile.md), or automatically decide which to use (the default). This can be useful to force tablets with a mouse and keyboard attached in to desktop mode. Construct 3 must be reloaded after changing this.
 
 **Use simplified user interface**  
 Hide advanced options from the user interface. This is intended to provide a simpler interface for purposes such as classroom teaching with young students. For more information about using this mode, see the tutorial [Using the simplified user interface](https://www.construct.net/tutorials/using-the-simplified-user-interface-24).
@@ -35,7 +35,7 @@ Hide advanced options from the user interface. This is intended to provide a sim
 When unchecked, both the Example Browser and all methods of opening it will be hidden. To bring back the Example Browser, check this setting again and then reopen the Example Browser (e.g. via `Menu › View › Example browser`).
 
 **Theme**  
-Change the style of the editor interface to a different theme. A couple of alternative themes are built-in. It's also possible to install [third-party themes](https://www.construct.net/make-games/manuals/construct-3/tips-and-guides/installing-third-party-addons). Construct 3 must be reloaded after changing this.
+Change the style of the editor interface to a different theme. A couple of alternative themes are built-in. It's also possible to install [third-party themes](../../tips-and-guides/installing-third-party-addons.md). Construct 3 must be reloaded after changing this.
 
 **Enable UI animations**  
 Enable animations in the user interface (UI), such as when opening menus, dialogs and so on. If disabled then these actions will happen instantaneously without any kind of transition.
@@ -62,7 +62,7 @@ If *Use default icon color* is disabled, this allows you to choose a custom colo
 Click to enable features designed to help when using multiple displays, including remembering the position of windows across monitors. This may not be shown if the browser does not support multi-monitor features. When the button is clicked, you may see a permission prompt - be sure to allow permission for the multi-monitor features to take effect.
 
 **Reset user interface**  
-Click to reset the size and position of all [bars](https://www.construct.net/make-games/manuals/construct-3/interface/bars) and dialogs to their defaults. Construct must be reloaded after doing this.
+Click to reset the size and position of all [bars](../../interface/bars.md) and dialogs to their defaults. Construct must be reloaded after doing this.
 
 ## Text / code editor
 
@@ -135,7 +135,7 @@ Opt-in to see notifications about new beta releases. Beta releases are more freq
 > Note if you save a project in a newer release of Construct 3, such as a beta release ahead of a stable release, that project cannot be opened in the older release. You may wish to back up your projects before using a beta release.
 
 **Check for updates for installed addons**  
-Enable automatically checking if any updates are available for installed addons via the [Addons section of the website](https://www.construct.net/en/make-games/addons). If enabled updates are checked for when the editor starts up, and will show a notification if updates are found; updates can then be installed via the [Addon Manager](https://www.construct.net/make-games/manuals/construct-3/interface/dialogs/addon-manager).
+Enable automatically checking if any updates are available for installed addons via the [Addons section of the website](https://www.construct.net/en/make-games/addons). If enabled updates are checked for when the editor starts up, and will show a notification if updates are found; updates can then be installed via the [Addon Manager](../../interface/dialogs/addon-manager.md).
 
 ## Preview
 
@@ -151,7 +151,7 @@ Choose one of the following ways for previewing projects:
 ## Start page
 
 **Show the Start Page on startup**  
-Whether to show the [Start Page](https://www.construct.net/make-games/manuals/construct-3/overview/start-page) when Construct starts up.
+Whether to show the [Start Page](../../overview/start-page.md) when Construct starts up.
 
 **Hide the Start Page when opening a project**  
 If enabled, then the Start Page will automatically be closed when you open a project or example.
@@ -162,7 +162,7 @@ When there is a major new update or an active promotion, Construct may show an o
 ## Event sheets
 
 **Hide 'Add action' links**  
-Hide the row beneath actions in the [Event Sheet View](https://www.construct.net/make-games/manuals/construct-3/interface/event-sheet-view) that contains the *Add action* link. This can save vertical space in the Event Sheet View making it easier to read events, but makes it slightly less convenient to edit events. Actions can still be added even when the *Add action* links are hidden using context menus or keyboard shortcuts. Also events with no actions still show an *Add action* link, since it does not take up any extra space.
+Hide the row beneath actions in the [Event Sheet View](../../interface/event-sheet-view.md) that contains the *Add action* link. This can save vertical space in the Event Sheet View making it easier to read events, but makes it slightly less convenient to edit events. Actions can still be added even when the *Add action* links are hidden using context menus or keyboard shortcuts. Also events with no actions still show an *Add action* link, since it does not take up any extra space.
 
 **Translate expressions**  
 This only applies if you have changed Construct's language to something other than English. For compatibility reasons, expressions in the event sheet must still be written in English, even when the interface is showing a different language. By default Construct translates expressions so you can read and autocomplete them in the same language; however they must still be written in English. Uncheck this setting to keep displaying expressions in English even when the interface is in a different language, which means they appear the same way they are written. This may be particularly useful for bilingual users who also know English.

@@ -1,7 +1,7 @@
 ---
 title: "MIDI plugin"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/midi"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -96,7 +96,7 @@ Triggered if an error occurs when accessing a MIDI device. With the *any* varian
 Compare an aspect of a MIDI message such as the note number or velocity.
 
 **On any binary message**  
-Triggered when any MIDI message is received from any device. The raw binary data of the MIDI message is stored in a specified [Binary Data object](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/binary-data). The associated MIDI device can be identified by expressions like *CurrentDeviceID*. Using the binary data will require knowledge of the MIDI specification - for example a three-byte message in hexadecimal notation 0x90 0x3C 0x40 refers to Note On, MIDI channel 0, note 60 (middle C), velocity 64.
+Triggered when any MIDI message is received from any device. The raw binary data of the MIDI message is stored in a specified [Binary Data object](../plugin-reference/binary-data.md). The associated MIDI device can be identified by expressions like *CurrentDeviceID*. Using the binary data will require knowledge of the MIDI specification - for example a three-byte message in hexadecimal notation 0x90 0x3C 0x40 refers to Note On, MIDI channel 0, note 60 (middle C), velocity 64.
 
 **On any message**  
 Triggered when a MIDI message of a specific type, e.g. Note On, is received from any MIDI device. The associated MIDI device can be identified by expressions like *CurrentDeviceID*. Details about the message can be compared with *Compare parameter* or retrieved via expressions.
@@ -119,7 +119,7 @@ Close a MIDI device specified by its device ID and type (input/output). The devi
 This action will cause the next *Send* action to actually send the message after a given delay in seconds. This can be used to schedule messages to be sent with higher accuracy than ticks in Construct, which typically run approximately every 16ms (for a 60 Hz display).
 
 **Send binary message**  
-Send raw binary data as a MIDI message to an output device ID. The ID may be left as an empty string to send a message to the last opened MIDI output device. The message contents is taken from a chosen [Binary Data object](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/binary-data). Using the binary data will require knowledge of the MIDI specification - for example a three-byte message in hexadecimal notation 0x90 0x3C 0x40 refers to Note On, MIDI channel 0, note 60 (middle C), velocity 64.
+Send raw binary data as a MIDI message to an output device ID. The ID may be left as an empty string to send a message to the last opened MIDI output device. The message contents is taken from a chosen [Binary Data object](../plugin-reference/binary-data.md). Using the binary data will require knowledge of the MIDI specification - for example a three-byte message in hexadecimal notation 0x90 0x3C 0x40 refers to Note On, MIDI channel 0, note 60 (middle C), velocity 64.
 
 **Send control change message**  
 Send a MIDI Control Change message to an output device ID. The ID may be left as an empty string to send a message to the last opened MIDI output device. Refer to the MIDI specification for possible controller numbers; a common one to use is controller number 1 to refer to the modulation wheel (coarse). The controller value is a number in the range 0-127.

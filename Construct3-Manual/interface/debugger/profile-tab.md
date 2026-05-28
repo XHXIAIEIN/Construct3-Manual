@@ -1,7 +1,7 @@
 ---
 title: "The debugger 'CPU profiler' tab"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/interface/debugger/profile-tab"
-release: 476.3
+release: 487
 ---
 
 `[Paid plans only]`  The **CPU profiler** tab provides a more detailed breakdown of the estimated CPU usage. The project must be running continuously for the profiler to be able to collect and display information. It then displays a breakdown of the estimated CPU time spent in each part of the project logic. It updates once a second and the values shown are for the previous second only.
@@ -13,7 +13,7 @@ It must be noted that the overall CPU usage is an estimate to begin with, and al
 > **Tip**  
 > CPU measurements can be unreliable, especially when the system is largely idle. Most modern devices deliberately slow down the CPU if not fully loaded in order to save power. This means work takes longer to get done, and these measurements will misleadingly return a higher measurement, since it's based on timing how long the work takes. It will generally only be reliable in the device's maximum performance mode, i.e. under full load.
 
-Despite the above caveats, the profiler can be used to identify "hot spots" which would be good candidates to attempt to optimise first if there is a performance problem. For more performance advice, see [Performance Tips](https://www.construct.net/make-games/manuals/construct-3/tips-and-guides/performance-tips). Note that optimisation is often not necessary and is a waste of time if the project is already running fast enough. For a deeper discussion of the subject, see the blog post [Optimisation: don't waste your time](https://www.construct.net/en/blogs/construct-official-blog-1/optimisation-dont-waste-time-768).
+Despite the above caveats, the profiler can be used to identify "hot spots" which would be good candidates to attempt to optimise first if there is a performance problem. For more performance advice, see [Performance Tips](../../tips-and-guides/performance-tips.md). Note that optimisation is often not necessary and is a waste of time if the project is already running fast enough. For a deeper discussion of the subject, see the blog post [Optimisation: don't waste your time](https://www.construct.net/en/blogs/construct-official-blog-1/optimisation-dont-waste-time-768).
 
 ### Profiler breakdown
 

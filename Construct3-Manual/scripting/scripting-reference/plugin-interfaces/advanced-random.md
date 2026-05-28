@@ -1,7 +1,7 @@
 ---
 title: "Advanced Random script interface"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/scripting/scripting-reference/plugin-interfaces/advanced-random"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -10,7 +10,7 @@ release: 476.3
 
 ---
 
-The `IAdvancedRandomObjectType` interface derives from [IObjectClass](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/object-interfaces/iobjectclass) to add APIs specific to the [Advanced Random plugin](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/advanced-random).
+The `IAdvancedRandomObjectType` interface derives from [IObjectClass](../../../scripting/scripting-reference/object-interfaces/iobjectclass.md) to add APIs specific to the [Advanced Random plugin](../../../plugin-reference/advanced-random.md).
 
 Note this class derives from the object class interface, not the instance interface. Typically it is used through `runtime.objects.AdvancedRandom`.
 

@@ -1,7 +1,7 @@
 ---
 title: "IAnimation interface"
 source: "https://www.construct.net/en/make-games/manuals/addon-sdk/reference/object-interfaces/ianimation"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -18,10 +18,10 @@ The `IAnimation` interface represents an animation within an animated object typ
 Return a string of the animation name.
 
 **GetObjectType()**  
-Return the [IObjectType](https://www.construct.net/make-games/manuals/addon-sdk/reference/object-interfaces/iobjecttype) that this animation belongs to.
+Return the [IObjectType](../../reference/object-interfaces/iobjecttype.md) that this animation belongs to.
 
 **GetFrames()**  
-Return an array of [IAnimationFrame](https://www.construct.net/make-games/manuals/addon-sdk/reference/object-interfaces/ianimationframe) representing the frames in this animation.
+Return an array of [IAnimationFrame](../../reference/object-interfaces/ianimationframe.md) representing the frames in this animation.
 
 **AddFrame(blob, width, height)**  
 Add a new animation frame to the animation. All the parameters are optional. There are four overloads of this method:
@@ -31,7 +31,7 @@ Add a new animation frame to the animation. All the parameters are optional. The
 3. Blob passed with size: use the blob as the animation frame image file and use the provided size (which must be correct) to skip having to decompress the image to find its size
 4. No blob passed but size provided: use the size for the empty animation frame
 
- The method returns a promise that resolves with the added [IAnimationFrame](https://www.construct.net/make-games/manuals/addon-sdk/reference/object-interfaces/ianimationframe).
+ The method returns a promise that resolves with the added [IAnimationFrame](../../reference/object-interfaces/ianimationframe.md).
 
 **SetSpeed(s)**  
 Set and get the animation speed in animation frames per second.

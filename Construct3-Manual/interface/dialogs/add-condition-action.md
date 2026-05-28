@@ -1,7 +1,7 @@
 ---
 title: "Add condition/action dialog"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/interface/dialogs/add-condition-action"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -12,11 +12,11 @@ release: 476.3
 
 ---
 
-The **Add Condition dialog** and **Add Action dialog** are very similar so they are both documented here. These dialogs allow you to add or edit a [condition](https://www.construct.net/make-games/manuals/construct-3/project-primitives/events/conditions) or [action](https://www.construct.net/make-games/manuals/construct-3/project-primitives/events/actions) in an [event sheet](https://www.construct.net/make-games/manuals/construct-3/project-primitives/events/event-sheets).
+The **Add Condition dialog** and **Add Action dialog** are very similar so they are both documented here. These dialogs allow you to add or edit a [condition](../../project-primitives/events/conditions.md) or [action](../../project-primitives/events/actions.md) in an [event sheet](../../project-primitives/events/event-sheets.md).
 
 Adding a condition or action takes three steps:
 
-1. **Choose the [object type](https://www.construct.net/make-games/manuals/construct-3/project-primitives/objects/object-types)** that has the condition or action
+1. **Choose the [object type](../../project-primitives/objects/object-types.md)** that has the condition or action
 2. **Choose the condition or action** in that object type
 3. **Enter parameters**, if any, such as the X and Y co-ordinate for *Set Position*.
 
@@ -24,7 +24,7 @@ The **Next** and **Back** buttons can be used to move forwards and backwards thr
 
 ## Step 1: Choose the object
 
-In this step a list of all the object types in the project is shown. The **System object** (which represents built-in features) always appears first, and the rest of the objects are listed in alphabetical order. If object types are arranged in to subfolders  `[Paid plans only]`  in the [Project Bar](https://www.construct.net/make-games/manuals/construct-3/interface/bars/project-bar), then folders also appear in this dialog.
+In this step a list of all the object types in the project is shown. The **System object** (which represents built-in features) always appears first, and the rest of the objects are listed in alphabetical order. If object types are arranged in to subfolders  `[Paid plans only]`  in the [Project Bar](../../interface/bars/project-bar.md), then folders also appear in this dialog.
 
 [![Picking an object in the condition/action dialog](https://construct-static.com/images/v1740/r/uploads/articleuploadobject/0/images/951/acdialog-step1_v700.png)](https://construct-static.com/images/v1740/uploads/articleuploadobject/0/images/951/acdialog-step1.png)
 
@@ -42,12 +42,12 @@ Some conditions and actions are very commonly used, such as *Start of layout* or
 
 **Double-click** a condition or action to choose it. As before, typing in the **search box** can help quickly locate a condition or action in the list.
 
-For more information on each condition or action, see the reference section of the manual. If the chosen object has any [behaviors](https://www.construct.net/make-games/manuals/construct-3/project-primitives/objects/behaviors), they may add extra conditions and actions in to the dialog as well.
+For more information on each condition or action, see the reference section of the manual. If the chosen object has any [behaviors](../../project-primitives/objects/behaviors.md), they may add extra conditions and actions in to the dialog as well.
 
 Some conditions and actions require **parameters**. For example, the *Set position* action for a Sprite requires the X and Y co-ordinates to be entered. This is done in the Parameters dialog in the next step. However, some conditions and actions do not use any parameters, such as the *Destroy* action. In this case once the condition or action is chosen the process is complete.
 
-[Functions](https://www.construct.net/make-games/manuals/construct-3/project-primitives/events/functions) and [custom actions](https://www.construct.net/make-games/manuals/construct-3/project-primitives/events/custom-actions) both provide ways to add your own items to the list of available actions.
+[Functions](../../project-primitives/events/functions.md) and [custom actions](../../project-primitives/events/custom-actions.md) both provide ways to add your own items to the list of available actions.
 
 ## Step 3: Enter parameters
 
-If the chosen condition or action requires parameters, the **Parameters dialog** appears for the parameters to be entered in to. For more information, see the manual entry for the [Parameters dialog](https://www.construct.net/make-games/manuals/construct-3/interface/dialogs/parameters).
+If the chosen condition or action requires parameters, the **Parameters dialog** appears for the parameters to be entered in to. For more information, see the manual entry for the [Parameters dialog](../../interface/dialogs/parameters.md).

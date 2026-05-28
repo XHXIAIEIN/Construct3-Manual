@@ -1,14 +1,14 @@
 ---
 title: "The Parameters dialog"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/interface/dialogs/parameters"
-release: 476.3
+release: 487
 ---
 
-The **Parameters dialog** appears after the [Add condition/action dialog](https://www.construct.net/make-games/manuals/construct-3/interface/dialogs/add-condition-action), or when editing a [condition](https://www.construct.net/make-games/manuals/construct-3/project-primitives/events/conditions) or [action](https://www.construct.net/make-games/manuals/construct-3/project-primitives/events/actions). It allows you to enter *parameters* such as the X and Y co-ordinate for the Sprite object's *Set Position* action (shown below). It does not appear for conditions or actions which do not use any parameters, such as the *Destroy* action. [Expressions](https://www.construct.net/make-games/manuals/construct-3/project-primitives/events/expressions) can be entered for many parameters, which can be anything from a simple value to a sophisticated mathematical calculation.
+The **Parameters dialog** appears after the [Add condition/action dialog](../../interface/dialogs/add-condition-action.md), or when editing a [condition](../../project-primitives/events/conditions.md) or [action](../../project-primitives/events/actions.md). It allows you to enter *parameters* such as the X and Y co-ordinate for the Sprite object's *Set Position* action (shown below). It does not appear for conditions or actions which do not use any parameters, such as the *Destroy* action. [Expressions](../../project-primitives/events/expressions.md) can be entered for many parameters, which can be anything from a simple value to a sophisticated mathematical calculation.
 
 The parameters that are displayed depend on the condition or action that was selected. To find out more about what to enter for each field, check the related documentation in the [Plugin reference](../../plugin-reference.md), [Behavior reference](../../behavior-reference.md) or [System reference](../../system-reference.md).
 
-The [Expressions dictionary](https://www.construct.net/make-games/manuals/construct-3/interface/dialogs/expressions-dictionary) appears next to the Parameters dialog providing a list of all the expressions you can enter. By default the Expressions panel is faded out unless you hover the mouse over it. It can also be hidden or shown by clicking the *Find expressions* link or by pressing <kbd>F4</kbd>. Note on small screens if there is no room to display the Expressions dictionary without overlapping the Parameters dialog, then it is hidden by default.
+The [Expressions dictionary](../../interface/dialogs/expressions-dictionary.md) appears next to the Parameters dialog providing a list of all the expressions you can enter. By default the Expressions panel is faded out unless you hover the mouse over it. It can also be hidden or shown by clicking the *Find expressions* link or by pressing <kbd>F4</kbd>. Note on small screens if there is no room to display the Expressions dictionary without overlapping the Parameters dialog, then it is hidden by default.
 
 [![The Parameters dialog](https://construct-static.com/images/v1740/r/uploads/articleuploadobject/0/images/963/parameters-dialog_v600.png)](https://construct-static.com/images/v1740/uploads/articleuploadobject/0/images/963/parameters-dialog.png)
 

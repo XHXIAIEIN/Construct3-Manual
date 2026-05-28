@@ -1,7 +1,7 @@
 ---
 title: "Line-of-sight behavior"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/behavior-reference/line-of-sight"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -19,7 +19,7 @@ Line-of-sight can also perform *Raycasting*. Normal line-of-sight checks there a
 
 ### Scripting
 
-When using JavaScript or TypeScript coding, the features of this behavior can be accessed via the [ILOSBehaviorInstance script interface](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/behavior-interfaces/line-of-sight).
+When using JavaScript or TypeScript coding, the features of this behavior can be accessed via the [ILOSBehaviorInstance script interface](../scripting/scripting-reference/behavior-interfaces/line-of-sight.md).
 
 ## Line-of-sight properties
 

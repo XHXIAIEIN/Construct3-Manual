@@ -1,7 +1,7 @@
 ---
 title: "Rating Aggregate Object"
 source: "https://www.construct.net/en/game-services/manuals/game-services/ratings/api-objects/rating-aggregate-object"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -67,7 +67,7 @@ The language the title and description are written in.
 **responseLanguage** [`Language`](../../common-objects/language.md)  
 The language this dimension is returned in - this will differ from original language if the request asks for content to be returned in a different language and the plan supports translations.
 
-**lastRating** [datetime?](../../data-types.md#internalH1Link0)  
+**lastRating** [`datetime?`](../../data-types.md#internalH1Link0)  
 The date a player last cast a rating.
 
 **formattedLastRating** `string`  

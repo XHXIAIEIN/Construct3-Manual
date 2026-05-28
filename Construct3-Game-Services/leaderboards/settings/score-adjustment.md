@@ -1,7 +1,7 @@
 ---
 title: "Score Adjustment"
 source: "https://www.construct.net/en/game-services/manuals/game-services/leaderboards/settings/score-adjustment"
-release: 476.3
+release: 487
 ---
 
 ## On this page

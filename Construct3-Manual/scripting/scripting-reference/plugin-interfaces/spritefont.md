@@ -1,7 +1,7 @@
 ---
 title: "SpriteFont script interface"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/scripting/scripting-reference/plugin-interfaces/spritefont"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -57,7 +57,7 @@ Return a boolean indicating if there is text with a specific tag at the given po
 Look up the tag for a part of the text at a given position and return the tag if any, else return an empty string if no tag is specified. For example if the text has the BBcode `Hello [tag=mytag]world[/tag]`, then the tag at a position over the word "world" is "mytag", and the tag at a position over the word "Hello" is "".
 
 **getTagCount(tag)**  
-Get the number of fragments, and the size and position of each fragment by its zero-based index, for a given tag. Note that a single tag may be broken in to multiple fragments - see the section *Tagged range fragmentation* in the [Text object manual entry](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/text) for more details (which applies equally to SpriteFonts). The `getTagPositionAndSize()` method returns the position and size as an object with the properties `{x, y, width, height}`.
+Get the number of fragments, and the size and position of each fragment by its zero-based index, for a given tag. Note that a single tag may be broken in to multiple fragments - see the section *Tagged range fragmentation* in the [Text object manual entry](../../../plugin-reference/text.md) for more details (which applies equally to SpriteFonts). The `getTagPositionAndSize()` method returns the position and size as an object with the properties `{x, y, width, height}`.
 
 **getTagPositionAndSize(tag, index)**  
-Get the number of fragments, and the size and position of each fragment by its zero-based index, for a given tag. Note that a single tag may be broken in to multiple fragments - see the section *Tagged range fragmentation* in the [Text object manual entry](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/text) for more details (which applies equally to SpriteFonts). The `getTagPositionAndSize()` method returns the position and size as an object with the properties `{x, y, width, height}`.
+Get the number of fragments, and the size and position of each fragment by its zero-based index, for a given tag. Note that a single tag may be broken in to multiple fragments - see the section *Tagged range fragmentation* in the [Text object manual entry](../../../plugin-reference/text.md) for more details (which applies equally to SpriteFonts). The `getTagPositionAndSize()` method returns the position and size as an object with the properties `{x, y, width, height}`.

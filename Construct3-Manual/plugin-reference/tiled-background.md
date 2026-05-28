@@ -1,7 +1,7 @@
 ---
 title: "Tiled Background"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/tiled-background"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -22,13 +22,13 @@ This pattern can be achieved with a single Tiled Background object, and it is mu
 
 Tiled Backgrounds cannot have a collision polygon. They always collide according to their bounding rectangle.
 
-Tiled Backgrounds can have effects applied. For more information, see [Effects](https://www.construct.net/make-games/manuals/construct-3/project-primitives/objects/effects).
+Tiled Backgrounds can have effects applied. For more information, see [Effects](../project-primitives/objects/effects.md).
 
-If you wish to have a tile-based project where each tile can be different, consider using a [Tilemap](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/tilemap) object instead.
+If you wish to have a tile-based project where each tile can be different, consider using a [Tilemap](../plugin-reference/tilemap.md) object instead.
 
 ### Scripting
 
-When using JavaScript or TypeScript coding, the features of this object can be accessed via the [ITiledBackgroundInstance script interface](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/plugin-interfaces/tiled-background).
+When using JavaScript or TypeScript coding, the features of this object can be accessed via the [ITiledBackgroundInstance script interface](../scripting/scripting-reference/plugin-interfaces/tiled-background.md).
 
 ## Tile randomization
 
@@ -39,7 +39,7 @@ If you tile a small image, or zoom out, then the repetitive appearance can becom
 ## Tiled Background properties
 
 **Image**  
-Click the *Edit* link to edit the Tiled Background's image in the [Animations Editor](https://www.construct.net/make-games/manuals/construct-3/interface/animations-editor).
+Click the *Edit* link to edit the Tiled Background's image in the [Animations Editor](../interface/animations-editor.md).
 
 **Initially visibile**  
 Choose whether the object is shown (visible) or hidden (invisible) when the layout starts.
@@ -88,7 +88,7 @@ When using tile randomization, adjust the area over which tiles will blend in to
 
 ## Tiled Background conditions
 
-For conditions in common to other objects, see [Common conditions](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/common-features/common-conditions).
+For conditions in common to other objects, see [Common conditions](../plugin-reference/common-features/common-conditions.md).
 
 **Is tile randomization enabled**  
 True if tile randomization is currently enabled. See the *Enable tile randomization* property for more details.
@@ -101,7 +101,7 @@ Triggered when *Load image from URL* finishes downloading the image and is ready
 
 ## Tiled Background actions
 
-For actions common to other objects, see [Common actions](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/common-features/common-actions).
+For actions common to other objects, see [Common actions](../plugin-reference/common-features/common-actions.md).
 
 **Set image angle**  
 Change the *Image angle* property, rotating the displayed Tiled Background image by a number of degrees.
@@ -137,11 +137,11 @@ When tile randomization is enabled, set the relevant tile randomization properti
 When tile randomization is enabled, set the relevant tile randomization properties. See the corresponding properties above for more details.
 
 **Load image from URL**  
-Load an image from a given URL. It is not shown until the image has finished downloading, and *On image URL loaded* triggers. Images loaded from different domains are subject to the same cross-domain restrictions as AJAX requests - for more information see the section on cross-domain in the [AJAX](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/ajax) object. Data URIs can also be passed as an image, e.g. from a canvas snapshot or camera image.
+Load an image from a given URL. It is not shown until the image has finished downloading, and *On image URL loaded* triggers. Images loaded from different domains are subject to the same cross-domain restrictions as AJAX requests - for more information see the section on cross-domain in the [AJAX](../plugin-reference/ajax.md) object. Data URIs can also be passed as an image, e.g. from a canvas snapshot or camera image.
 
 ## Tiled Background expressions
 
-For expressions common to other objects, see [common expressions](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/common-features/common-expressions).
+For expressions common to other objects, see [common expressions](../plugin-reference/common-features/common-expressions.md).
 
 **ImageWidth**  
 The original dimensions of the tiled background's current image in pixels. Since tiled backgrounds can be extended over large areas causing the normal Width and Height expressions to return different values, these can be used to get the original size of the source image regardless of the object size.

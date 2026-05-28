@@ -1,7 +1,7 @@
 ---
 title: "Keyboard script interface"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/scripting/scripting-reference/plugin-interfaces/keyboard"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -22,7 +22,7 @@ See the [Simple keyboard movement](https://editor.construct.net/#open=simple-key
 
 ## Events
 
-To detect key press events, use the `"keyup"` and `"keydown"` events fired on the [Runtime script interface](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/iruntime).
+To detect key press events, use the `"keyup"` and `"keydown"` events fired on the [Runtime script interface](../../../scripting/scripting-reference/iruntime.md).
 
 ## Keyboard APIs
 

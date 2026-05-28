@@ -1,7 +1,7 @@
 ---
 title: "The Construct Game Services"
 source: "https://www.construct.net/en/game-services/manuals/game-services"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -12,7 +12,8 @@ release: 476.3
 - [Broadcasts Service](#cloud-save-service)
 - [Cloud Save Service](#leaderboards-service)
 - [Leaderboards Service](#translations-service)
-- [Translations Service](#xp-service)
+- [Translations Service](#triggers-service)
+- [Triggers Service](#xp-service)
 - [XP Service](#construct-3-plugin)
 - [Construct 3 Plugin](#construct-arcade)
 - [Construct Arcade](#net-class-library)
@@ -25,12 +26,12 @@ release: 476.3
 
 Welcome!  The Construct Game Services (CGS) are a suite of services designed to help you add advanced and more interactive features into your games without needing your own servers or backend.  The services are designed to be flexible and modular, so you can use as many or as few as you need.
 
-Implementation of the CGS into your game/application can significantly increase player retention and stickyness as well as providing valuable insights into how your game/application is being used.
+Implementation of the CGS into your game/application can significantly increase player retention and stickiness as well as providing valuable insights into how your game/application is being used.
 
 These services are platform agnostic - you don't have to just use them in Construct 3, you can use them with any other game engine.  You can even use them for non-game applications, for example the Leaderboard Service could be used in business sales team to track employee performance.  You can be as creative as you want and if you're using it for something outside the box we'd love to hear/see what you're building!
 
 > **Tip**  
-> CGS are currently in Beta.  You may experience service interuption and some outages as we learn about how CGS is being used and adjust our infastructure and address bugs as they come up.
+> CGS are currently in Beta.  You may experience service interruption and some outages as we learn about how CGS is being used and adjust our infrastructure and address bugs as they come up.
 
 If you find a bug or issue, please submit it to the official bug tracker at [https://github.com/Scirra/Construct.net-website-bugs](https://github.com/Scirra/Construct.net-website-bugs).
 
@@ -84,6 +85,10 @@ CGS leaderboards boast a large array of advanced features built in:
 ## Translations Service
 
 Translate various translatable properties from other services into multiple languages.  Supported target languages for translations are **AR**, **BG**, **CS**, **DA**, **DE**, **EL**, **EN-GB**, **EN-US**, **ES**, **ES-419**, **ET**, **FI**, **FR**, **HE**, **HU**, **ID**, **IT**, **JA**, **KO**, **LT**, **LV**, **NB**, **NL**, **PL**, **PT-BR**, **PT-PT**, **RO**, **RU**, **SK**, **SL**, **SV**, **TH**, **TR**, **UK**, **VI**, **ZH-HANS** and **ZH-HANT**.
+
+## Triggers Service
+
+The Triggers service allows you to specify a set of conditions, when they are checked and then the actions to take if the conditions are met.  This allows for creative/complex scenarios to be constructed that otherwise would be difficult to implement.
 
 ## XP Service
 

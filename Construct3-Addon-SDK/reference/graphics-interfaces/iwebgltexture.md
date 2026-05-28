@@ -1,7 +1,7 @@
 ---
 title: "IWebGLTexture interface"
 source: "https://www.construct.net/en/make-games/manuals/addon-sdk/reference/graphics-interfaces/iwebgltexture"
-release: 476.3
+release: 487
 ---
 
 ## On this page

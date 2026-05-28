@@ -1,7 +1,7 @@
 ---
 title: "Array"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/array"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -20,7 +20,7 @@ The **Array** object stores lists of values (numbers or text). It is analogous t
 
 ### Scripting
 
-When using JavaScript or TypeScript coding, the features of this object can be accessed via the [IArrayInstance script interface](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/plugin-interfaces/array). (JavaScript and TypeScript have built-in support for arrays, but this allows interacting with an array used in event sheets.)
+When using JavaScript or TypeScript coding, the features of this object can be accessed via the [IArrayInstance script interface](../scripting/scripting-reference/plugin-interfaces/array.md). (JavaScript and TypeScript have built-in support for arrays, but this allows interacting with an array used in event sheets.)
 
 ## About Arrays
 
@@ -34,7 +34,7 @@ Arrays do not automatically resize. If you access a value outside the array boun
 
 ## Designing arrays
 
-You can use Construct's [Array Editor](https://www.construct.net/make-games/manuals/construct-3/interface/file-editors/array-editor)  `[Paid plans only]`  to set the initial contents of an array. You can create a new array data file as a [project file](https://www.construct.net/make-games/manuals/construct-3/project-primitives/files) from the [Project Bar](https://www.construct.net/make-games/manuals/construct-3/interface/bars/project-bar). At runtime you can load the project file with the [AJAX](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/ajax) object and use the Array's *Load* action to read the data file from the AJAX's *LastData* expression.
+You can use Construct's [Array Editor](../interface/file-editors/array-editor.md)  `[Paid plans only]`  to set the initial contents of an array. You can create a new array data file as a [project file](../project-primitives/files.md) from the [Project Bar](../interface/bars/project-bar.md). At runtime you can load the project file with the [AJAX](../plugin-reference/ajax.md) object and use the Array's *Load* action to read the data file from the AJAX's *LastData* expression.
 
 ## Manipulating arrays
 
@@ -84,7 +84,7 @@ Compare the size of one of the array dimensions, which is the number of elements
 A repeating condition that runs once for each element in the array. This therefore runs *width x height x depth* times.
 
 **Compare current value**  
-Only valid in a *For each element* loop, either as a following condition or in a [sub-event](https://www.construct.net/make-games/manuals/construct-3/project-primitives/events/sub-events). This compares the current value being iterated in the loop.
+Only valid in a *For each element* loop, either as a following condition or in a [sub-event](../project-primitives/events/sub-events.md). This compares the current value being iterated in the loop.
 
 **Contains value**  
 Searches the entire array to check if any of the elements contains the given value. For example, you can use this to test if the string *"sword"* is stored anywhere in the array.
@@ -149,7 +149,7 @@ Sorts the order of elements on an axis in ascending order. There are a variety o
 Sets the array to a one-dimensional list of items based on splitting a string by a certain character. For example splitting the string `"1,2,3"` with the separator `","` and type *Auto* will set the array size to 3 x 1 x 1 with the numbers *1*, *2* and *3*. The *Type* parameter determines whether values are read as strings or numbers. The default mode *Auto* will set values as numbers if the token looks like a number, and a string if not. Setting the type to *String* or *Number* will ensure all values are consistently set as the given data type. The array can be converted back to a string with the *JoinString* expression.
 
 > **Tip**  
-> Splitting string can work for simple cases but has limitations. For example it's not possible for the separator to appear inside values, and it is not possible to explicitly specify the data type of values. To handle more complex cases, use a more robust data format like [JSON](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/json).
+> Splitting string can work for simple cases but has limitations. For example it's not possible for the separator to appear inside values, and it is not possible to explicitly specify the data type of values. To handle more complex cases, use a more robust data format like [JSON](../plugin-reference/json.md).
 
 ## Array expressions
 

@@ -1,7 +1,7 @@
 ---
 title: "IBehavior script interface"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/scripting/scripting-reference/object-interfaces/ibehavior"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -15,7 +15,7 @@ The `IBehavior` interface represents a kind of behavior, such as Solid, Physics 
 ## IBehavior APIs
 
 **runtime**  
-A reference back to the [IRuntime](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/iruntime) interface.
+A reference back to the [IRuntime](../../../scripting/scripting-reference/iruntime.md) interface.
 
 **id**  
 A read-only string with a unique identifier for this behavior as specified by the behavior developer.

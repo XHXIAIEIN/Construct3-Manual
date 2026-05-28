@@ -1,7 +1,7 @@
 ---
 title: "Anchor behavior"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/behavior-reference/anchor"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -16,15 +16,15 @@ release: 476.3
 
 The **Anchor behavior** is useful for automatically positioning objects relative to the viewport. This is useful for [supporting multiple screen sizes](https://www.construct.net/en/tutorials/supporting-multiple-screen-17).
 
-Objects using the Anchor behavior should also be placed on a [layer](https://www.construct.net/make-games/manuals/construct-3/project-primitives/layers) with its parallax set to 0% x 0%. Otherwise as the game scrolls the objects may "lag" behind the screen.
+Objects using the Anchor behavior should also be placed on a [layer](../project-primitives/layers.md) with its parallax set to 0% x 0%. Otherwise as the game scrolls the objects may "lag" behind the screen.
 
 ### Scripting
 
-When using JavaScript or TypeScript coding, the features of this behavior can be accessed via the [IAnchorBehaviorInstance script interface](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/behavior-interfaces/anchor).
+When using JavaScript or TypeScript coding, the features of this behavior can be accessed via the [IAnchorBehaviorInstance script interface](../scripting/scripting-reference/behavior-interfaces/anchor.md).
 
 ## Positioning objects relative to the viewport
 
-In the top-left of the [Layout View](https://www.construct.net/make-games/manuals/construct-3/interface/layout-view), a dotted outline represents the viewport. Anchored objects should be positioned inside the dotted viewport area, as shown below.
+In the top-left of the [Layout View](../interface/layout-view.md), a dotted outline represents the viewport. Anchored objects should be positioned inside the dotted viewport area, as shown below.
 
 [![Positioning anchored objects in the layout](https://construct-static.com/images/v1740/r/uploads/articleuploadobject/0/images/972/anchor-layout_v550.png)](https://construct-static.com/images/v1740/uploads/articleuploadobject/0/images/972/anchor-layout.png)Positioning anchored objects in the layout
 

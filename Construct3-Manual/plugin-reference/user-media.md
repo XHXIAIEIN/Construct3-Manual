@@ -1,7 +1,7 @@
 ---
 title: "User Media"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/user-media"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -17,13 +17,13 @@ The **User Media** object allows retrieving camera or microphone input from a us
 
 For security reasons, most browsers will prompt the user for permission before allowing user media input, and will display clear notifications that the media device is currently being used, such as a recording icon in the system tray or tab icon.
 
-The User Media object has [common features](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/common-features), including the ability to have [effects](https://www.construct.net/make-games/manuals/construct-3/project-primitives/objects/effects) applied for video feeds.
+The User Media object has [common features](../plugin-reference/common-features.md), including the ability to have [effects](../project-primitives/objects/effects.md) applied for video feeds.
 
-For several examples of what the User Media object can do, search for *User Media* in the [Start Page](https://www.construct.net/make-games/manuals/construct-3/overview/start-page).
+For several examples of what the User Media object can do, search for *User Media* in the [Start Page](../overview/start-page.md).
 
 ## In the layout
 
-The User Media object appears as a rectangle in the [layout view](https://www.construct.net/make-games/manuals/construct-3/interface/layout-view), represented by a red cross with its icon in the middle. This represents where the video feed will be displayed in the layout. If you don't need video input, place the User Media object outside the layout.
+The User Media object appears as a rectangle in the [layout view](../interface/layout-view.md), represented by a red cross with its icon in the middle. This represents where the video feed will be displayed in the layout. If you don't need video input, place the User Media object outside the layout.
 
 ## User Media conditions
 
@@ -48,7 +48,7 @@ Request a list of media sources that can be used with the *Request camera* or *R
 Show a security prompt to the user requesting that they give the application permission to use camera input. Either *On media request approved* or *On media request declined* will trigger depending on their decision. If approved, the User Media object in the layout will start displaying a video feed from the user's camera device. The specific camera source to use can be chosen with the *Source* parameter, if media source listing is supported and a media source list has been requested. Otherwise the *Preferred direction* setting can be used to select the user-facing (front/selfie) or environment-facing (back) camera if the device has two, which is common on mobile devices. If the preferred width/height are not zero, the nearest supported resolution that the input device supports will be picked. Microphone input can also be optionally included, with a given microphone source (see *Request microphone*), which is useful in case you want to use [Game recorder](../plugin-reference/game-recorder.md) to record the user's camera and include audio.
 
 **Request microphone**  
-Show a security prompt to the user requesting that they give the application permission to use microphone input. *On media request approved* or *On media request declined* will trigger depending on their decision. The [Audio](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/audio) object must also be in the project for this to be useful. A tag is given for the microphone input, and the audio input from the microphone is routed the same way as playing a sound with that tag. This means you can assign effects from the Audio object to the microphone input by adding the effects to the same tag assigned to the microphone. A useful combination is to add an analyser effect then a mute effect to microphone input. This prevents the user hearing their own voice, but allows peak, RMS and spectrum monitoring with the analyser. The specific microphone input to use can be chosen with the *Source* parameter, if media source listing is supported and a media source list has been requested; otherwise the default microphone input is used.
+Show a security prompt to the user requesting that they give the application permission to use microphone input. *On media request approved* or *On media request declined* will trigger depending on their decision. The [Audio](../plugin-reference/audio.md) object must also be in the project for this to be useful. A tag is given for the microphone input, and the audio input from the microphone is routed the same way as playing a sound with that tag. This means you can assign effects from the Audio object to the microphone input by adding the effects to the same tag assigned to the microphone. A useful combination is to add an analyser effect then a mute effect to microphone input. This prevents the user hearing their own voice, but allows peak, RMS and spectrum monitoring with the analyser. The specific microphone input to use can be chosen with the *Source* parameter, if media source listing is supported and a media source list has been requested; otherwise the default microphone input is used.
 
 **Snapshot**  
 If the user has approved a camera request and the User Media object is showing a video feed, then snapshots the current frame. The still image is available after *On snapshot ready* triggers in the *SnapshotURL* expression. The image can be loaded in to a Sprite or Tiled Background object using the *Load image from URL* action and passing *SnapshotURL*, or downloaded using the Browser object's *Invoke download* action. This action optionally takes parameters allowing you to specify the compression format, which is useful if you intend to upload or save the image and a smaller file size would be advantageous.

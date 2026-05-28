@@ -1,7 +1,7 @@
 ---
 title: "Memory usage"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/tips-and-guides/memory-usage"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -16,7 +16,7 @@ Managing the amount of memory used is important to ensure a wide range of device
 
 ## Images
 
-Usually object images (including sprite animations) are the most memory-consuming part of a project. For this reason Construct estimates the peak memory use from images and displays it in the *Project Statistics* dialog. (Right click the project name in the [Project Bar](https://www.construct.net/make-games/manuals/construct-3/interface/bars/project-bar) and select `Tools › View project statistics` to view the dialog.) You should check this from time-to-time while developing your project, but it should only be regarded as an estimate. The debugger can also show the image memory usage during runtime, but note that it can vary depending on what is happening in your game. Remember this measurement is only for images, so your project will need at least that much memory to run.
+Usually object images (including sprite animations) are the most memory-consuming part of a project. For this reason Construct estimates the peak memory use from images and displays it in the *Project Statistics* dialog. (Right click the project name in the [Project Bar](../interface/bars/project-bar.md) and select `Tools › View project statistics` to view the dialog.) You should check this from time-to-time while developing your project, but it should only be regarded as an estimate. The debugger can also show the image memory usage during runtime, but note that it can vary depending on what is happening in your game. Remember this measurement is only for images, so your project will need at least that much memory to run.
 
 Some tips to ensure the image memory usage remains reasonable are:
 

@@ -1,7 +1,7 @@
 ---
 title: "Timer behavior"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/behavior-reference/timer"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -17,7 +17,7 @@ The **Timer behavior** triggers its *On timer* condition regularly or once after
 
 ### Scripting
 
-When using JavaScript or TypeScript coding, the features of this behavior can be accessed via the [ITimerBehaviorInstance script interface](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/behavior-interfaces/timer).
+When using JavaScript or TypeScript coding, the features of this behavior can be accessed via the [ITimerBehaviorInstance script interface](../scripting/scripting-reference/behavior-interfaces/timer.md).
 
 ## Tags
 

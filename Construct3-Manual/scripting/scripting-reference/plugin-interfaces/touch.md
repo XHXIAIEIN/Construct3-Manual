@@ -1,7 +1,7 @@
 ---
 title: "Touch script interface"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/scripting/scripting-reference/plugin-interfaces/touch"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -22,7 +22,7 @@ The [Tracking pointers](https://editor.construct.net/#open=tracking-pointers) ex
 
 ## Events
 
-To detect touch input events, use the events fired on the [Runtime script interface](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/iruntime), such as `"pointerdown"`. There are also `"deviceorientation"` and `"devicemotion"` events which can be used to detect device movement.
+To detect touch input events, use the events fired on the [Runtime script interface](../../../scripting/scripting-reference/iruntime.md), such as `"pointerdown"`. There are also `"deviceorientation"` and `"devicemotion"` events which can be used to detect device movement.
 
 ## Touch APIs
 

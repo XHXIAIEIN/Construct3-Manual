@@ -1,7 +1,7 @@
 ---
 title: "Common expressions"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/common-features/common-expressions"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -17,7 +17,7 @@ release: 476.3
 
 ---
 
-The following [expressions](https://www.construct.net/make-games/manuals/construct-3/project-primitives/events/expressions) are common to several plugins.
+The following [expressions](../../project-primitives/events/expressions.md) are common to several plugins.
 
 ## Angle
 
@@ -52,7 +52,7 @@ The unique ID (UID) of this object's parent in the hierarchy. If this object has
 Save the object state to a string of data in JSON format, and return it. This can be downloaded or otherwise stored, and later the state of the object restored using the *Set from JSON* action.
 
 **Count**  
-The number of [instances](https://www.construct.net/make-games/manuals/construct-3/project-primitives/objects/instances) of the [object type](https://www.construct.net/make-games/manuals/construct-3/project-primitives/objects/object-types).
+The number of [instances](../../project-primitives/objects/instances.md) of the [object type](../../project-primitives/objects/object-types.md).
 
 **PickedCount**  
 The number of instances meeting the event's conditions. For example, if the event has the condition "Mouse is over Sprite", *Sprite.PickedCount* will return the number of Sprite instances that the mouse is over.
@@ -61,10 +61,10 @@ The number of instances meeting the event's conditions. For example, if the even
 The name of the object type for the given object. For example *Sprite.ObjectTypeName* will return "Sprite". When used as a family expression, this returns the name of the actual object type, never the name of the family itself.
 
 **IID**  
-Return the instance's index ID (IID). See [instances](https://www.construct.net/make-games/manuals/construct-3/project-primitives/objects/instances).
+Return the instance's index ID (IID). See [instances](../../project-primitives/objects/instances.md).
 
 **UID**  
-Return the instance's unique ID (UID). See [instances](https://www.construct.net/make-games/manuals/construct-3/project-primitives/objects/instances).
+Return the instance's unique ID (UID). See [instances](../../project-primitives/objects/instances.md).
 
 **Tags**  
 Get all the current instance tags as a space-string.
@@ -105,13 +105,13 @@ Return the layout co-ordinates of the mid-point of the object's axis-aligned bou
 Return the layout co-ordinates of the mid-point of the object's axis-aligned bounding box. This is not necessarily the same position as the object origin, such as if the origin is not exactly in the middle.
 
 **Width**  
-Return the size of the object in pixels. Note only 3D objects like [3D shape](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/3d-shape) have a *Depth* expression, as 2D objects do not have a size on the Z axis.
+Return the size of the object in pixels. Note only 3D objects like [3D shape](../../plugin-reference/3d-shape.md) have a *Depth* expression, as 2D objects do not have a size on the Z axis.
 
 **Height**  
-Return the size of the object in pixels. Note only 3D objects like [3D shape](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/3d-shape) have a *Depth* expression, as 2D objects do not have a size on the Z axis.
+Return the size of the object in pixels. Note only 3D objects like [3D shape](../../plugin-reference/3d-shape.md) have a *Depth* expression, as 2D objects do not have a size on the Z axis.
 
 **Depth**  
-Return the size of the object in pixels. Note only 3D objects like [3D shape](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/3d-shape) have a *Depth* expression, as 2D objects do not have a size on the Z axis.
+Return the size of the object in pixels. Note only 3D objects like [3D shape](../../plugin-reference/3d-shape.md) have a *Depth* expression, as 2D objects do not have a size on the Z axis.
 
 **ImagePointX(nameOrNumber)**  
 Return the position of one of the object's image points from its currently displaying animation frame in layout co-ordinates. Either the image point's name or its number can be passed. Note that when using a number, 0 refers to the origin, so the first image point is number 1.

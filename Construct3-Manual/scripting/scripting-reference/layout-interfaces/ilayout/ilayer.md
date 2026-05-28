@@ -1,7 +1,7 @@
 ---
 title: "Layer script interface"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/scripting/scripting-reference/layout-interfaces/ilayout/ilayer"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -25,7 +25,7 @@ The following events can be listened for using the `addEventListener` method.
 **"beforedraw"**  
 Fired when the layer is drawn, allowing custom drawing code to draw on this layer. As Construct uses a back-to-front renderer, content drawn in the `"beforedraw"` event will appear underneath other content on the layer, and content drawn in the `"afterdraw"` event will appear on top of other content on the layer. The event object has the following properties:
 
-- `renderer`: the [IRenderer](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/graphics-interfaces/irenderer-interface) script interface with which you can draw content.
+- `renderer`: the [IRenderer](../../../../scripting/scripting-reference/graphics-interfaces/irenderer-interface.md) script interface with which you can draw content.
 - `layer`: the `ILayer` of the layer being drawn.
 
 > **Tip**  
@@ -34,7 +34,7 @@ Fired when the layer is drawn, allowing custom drawing code to draw on this laye
 **"afterdraw"**  
 Fired when the layer is drawn, allowing custom drawing code to draw on this layer. As Construct uses a back-to-front renderer, content drawn in the `"beforedraw"` event will appear underneath other content on the layer, and content drawn in the `"afterdraw"` event will appear on top of other content on the layer. The event object has the following properties:
 
-- `renderer`: the [IRenderer](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/graphics-interfaces/irenderer-interface) script interface with which you can draw content.
+- `renderer`: the [IRenderer](../../../../scripting/scripting-reference/graphics-interfaces/irenderer-interface.md) script interface with which you can draw content.
 - `layer`: the `ILayer` of the layer being drawn.
 
 > **Tip**  
@@ -43,7 +43,7 @@ Fired when the layer is drawn, allowing custom drawing code to draw on this laye
 ## Layer APIs
 
 **runtime**  
-A reference back to the [IRuntime](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/iruntime) interface.
+A reference back to the [IRuntime](../../../../scripting/scripting-reference/iruntime.md) interface.
 
 **name**  
 A read-only string of the layer name.
@@ -63,13 +63,13 @@ The [ILayout interface](../../../../scripting/scripting-reference/layout-interfa
 **parentLayer**  
 A reference to the layer's parent `ILayer` if it is a sub-layer, else `null` if it is a top-level layer.
 
-***parentLayers()**
+***parentLayers()**  
 Iterates all the layer's parent layers, moving up towards the top of the hierarchy.
 
-***subLayers()**
+***subLayers()**  
 Iterates the layer's own sub-layers in increasing Z order. This does not iterate any sub-layers at lower levels in the hierarchy.
 
-***allSubLayers()**
+***allSubLayers()**  
 Iterates the layer's sub-layers and further sub-layers beneath those recursively, in increasing Z order.
 
 **isInteractive**  
@@ -97,7 +97,7 @@ A boolean indicating if the layer background is transparent. When transparent, t
 Set or get the background color of a layer as an array with 3 elements specifying the red, green and blue components with values in the 0-1 range. Note this is ignored if the layer is transparent.
 
 **isHTMLElementsLayer**  
-A boolean indicating if this layer acts as a HTML layer. For more information see [HTML layers](https://www.construct.net/make-games/manuals/construct-3/tips-and-guides/html-layers).
+A boolean indicating if this layer acts as a HTML layer. For more information see [HTML layers](../../../../tips-and-guides/html-layers.md).
 
 **scrollX**  
 Independently scroll a layer, regardless of where the layout is scrolled to. By default layers all follow the layout scroll position. Upon setting a layer's scroll position, the layer will stop following the layout scroll position, and remain scrolled at the position specified. The `restoreScrollPosition()` method reverts the layer to the default mode where it follows the layout scroll position. When not independently scrolling a layer, the `scrollX` and `scrollY` getters return the layout scroll position.
@@ -148,10 +148,10 @@ A read-only string with the layer's active sampling mode. This is only different
 Return a [DOMRect](https://developer.mozilla.org/en-US/docs/Web/API/DOMRect) representing the bounds of the viewport on this layer in layout co-ordinates.
 
 **isForceOwnTexture**  
-A boolean indicating the layer's *Force own texture* property. For more information see the property in the [Layers](https://www.construct.net/make-games/manuals/construct-3/project-primitives/layers) manual entry.
+A boolean indicating the layer's *Force own texture* property. For more information see the property in the [Layers](../../../../project-primitives/layers.md) manual entry.
 
 **blendMode**  
-A string indicating the blend mode of the layer, controlling how it draws over the other layers behind it. The allowed strings are the same as accepted by the [IRenderer](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/graphics-interfaces/irenderer-interface) method `setBlendMode()`.
+A string indicating the blend mode of the layer, controlling how it draws over the other layers behind it. The allowed strings are the same as accepted by the [IRenderer](../../../../scripting/scripting-reference/graphics-interfaces/irenderer-interface.md) method `setBlendMode()`.
 
 **effects**  
 An array of [IEffectInstance](../../../../scripting/scripting-reference/object-interfaces/ieffectinstance.md) representing the effect parameters of the effects on this layer.

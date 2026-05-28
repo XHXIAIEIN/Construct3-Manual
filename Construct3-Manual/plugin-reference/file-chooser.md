@@ -1,7 +1,7 @@
 ---
 title: "File chooser"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/file-chooser"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -21,17 +21,17 @@ The appearance of the file chooser button varies depending on the platform. Seve
 
 ### Scripting
 
-When using JavaScript or TypeScript coding, the features of this object can be accessed via the [IFileChooserInstance script interface](https://www.construct.net/make-games/manuals/construct-3/scripting/scripting-reference/plugin-interfaces/file-chooser).
+When using JavaScript or TypeScript coding, the features of this object can be accessed via the [IFileChooserInstance script interface](../scripting/scripting-reference/plugin-interfaces/file-chooser.md).
 
 ## Layering HTML objects
 
-This object displays using a HTML element rather than drawing in to the canvas. This means its layering works differently to other objects. To learn more about how to layer HTML objects, see [HTML layers](https://www.construct.net/make-games/manuals/construct-3/tips-and-guides/html-layers).
+This object displays using a HTML element rather than drawing in to the canvas. This means its layering works differently to other objects. To learn more about how to layer HTML objects, see [HTML layers](../tips-and-guides/html-layers.md).
 
 ## Using files
 
 Once a file has been selected, it can be accessed using a URL. While many URLs reference web resources on the Internet, the File Chooser plugin returns a special URL that refers to the local file. This URL typically starts with "blob:" (since the browser's term for an arbitrary set of data is a "blob") followed by some kind of unique ID. By accessing this URL the local file is accessed, without using any Internet connection, so this also works offline.
 
-The file URL can be used like any other URL. For example, it can be requested by the [AJAX](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/ajax) object to load its contents as text, or passed to the Sprite object's *Load image from URL* action to display it.
+The file URL can be used like any other URL. For example, it can be requested by the [AJAX](../plugin-reference/ajax.md) object to load its contents as text, or passed to the Sprite object's *Load image from URL* action to display it.
 
 ## File Chooser properties
 

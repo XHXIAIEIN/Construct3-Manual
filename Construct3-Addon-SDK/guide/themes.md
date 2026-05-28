@@ -1,7 +1,7 @@
 ---
 title: "Theme addons"
 source: "https://www.construct.net/en/make-games/manuals/addon-sdk/guide/themes"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -13,9 +13,9 @@ release: 476.3
 
 Construct 3 allows theme addons, which simply add some custom stylesheets to the document. This allows a great deal of flexibility in customising the appearance of the Construct 3 editor. Any features of CSS can be used to alter the UI appearance. You can use browser developer tools to identify the classes and DOM structure used in the editor, and override the styles Construct 3 applies by default in your own stylesheet.
 
-Themes are based on the same [.c3addon file](https://www.construct.net/make-games/manuals/addon-sdk/guide/c3addon-file) that plugins and behaviors use, although with fewer necessary files. As you can see in the theme SDK download, all you need are **lang/en-US.json**, **addon.json**, an icon, and a stylesheet. Note your [addon metadata](https://www.construct.net/make-games/manuals/addon-sdk/guide/addon-metadata) must also contain a list of `stylesheets` — this is just a list of the CSS files to add to the document when your theme is applied.
+Themes are based on the same [.c3addon file](../guide/c3addon-file.md) that plugins and behaviors use, although with fewer necessary files. As you can see in the theme SDK download, all you need are **lang/en-US.json**, **addon.json**, an icon, and a stylesheet. Note your [addon metadata](../guide/addon-metadata.md) must also contain a list of `stylesheets` — this is just a list of the CSS files to add to the document when your theme is applied.
 
-As with other kinds of addon, you can [test themes as developer addons](https://www.construct.net/make-games/manuals/addon-sdk/guide/using-developer-mode) for quicker development.
+As with other kinds of addon, you can [test themes as developer addons](../guide/using-developer-mode.md) for quicker development.
 
 ## Tips for developing themes
 

@@ -1,7 +1,7 @@
 ---
 title: "Effects"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/project-primitives/objects/effects"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -12,11 +12,11 @@ release: 476.3
 
 ---
 
-                **Effects** change the visual appearance of objects. They can be added with the **Effects dialog**. Effects can also be added to [layers](https://www.construct.net/make-games/manuals/construct-3/project-primitives/layers) and [layouts](https://www.construct.net/make-games/manuals/construct-3/project-primitives/layouts), although effects which blend with the background cannot be used on layouts. Effects are also sometimes referred to as *shaders* or *shader effects*, since this refers to the underlying technology. Below is an example of the Water effect on an image.
+                **Effects** change the visual appearance of objects. They can be added with the **Effects dialog**. Effects can also be added to [layers](../../project-primitives/layers.md) and [layouts](../../project-primitives/layouts.md), although effects which blend with the background cannot be used on layouts. Effects are also sometimes referred to as *shaders* or *shader effects*, since this refers to the underlying technology. Below is an example of the Water effect on an image.
 
 [![An example of the Water effect](https://construct-static.com/images/v1740/r/uploads/articleuploadobject/0/images/918/effects_v800.jpg)](https://construct-static.com/images/v1740/uploads/articleuploadobject/0/images/918/effects.jpg)An example of the Water effect
 
-Construct provides a library of over 80 effects. Adding effects also displays them in the [Layout View](https://www.construct.net/make-games/manuals/construct-3/interface/layout-view) if *Preview effects* is enabled in [project properties](https://www.construct.net/make-games/manuals/construct-3/project-primitives/projects). A number of examples of effects are also provided in Construct's examples which you can find by searching for *Effects* in the [Start Page](https://www.construct.net/make-games/manuals/construct-3/overview/start-page).
+Construct provides a library of over 80 effects. Adding effects also displays them in the [Layout View](../../interface/layout-view.md) if *Preview effects* is enabled in [project properties](../../project-primitives/projects.md). A number of examples of effects are also provided in Construct's examples which you can find by searching for *Effects* in the [Start Page](../../overview/start-page.md).
 
 Multiple effects can be applied to a single object, layer or layout. In this case the effects are chained. The result of the first effect is processed by the second effect, then the result of that is processed by the third effect, and so on.
 
@@ -37,7 +37,7 @@ If multiple effects are used, the blend mode is applied only to the last effect.
 
 ## Changing effects at runtime
 
-Objects supporting effects provide common actions to enable or disable effects, or set an effect parameter. This allows you to switch effects or adjust effect parameters at runtime, allowing for greater possibilities and creative uses. To enable or disable layout or layer effects, or change their parameters, use the relevant [system actions](https://www.construct.net/make-games/manuals/construct-3/system-reference/system-actions).
+Objects supporting effects provide common actions to enable or disable effects, or set an effect parameter. This allows you to switch effects or adjust effect parameters at runtime, allowing for greater possibilities and creative uses. To enable or disable layout or layer effects, or change their parameters, use the relevant [system actions](../../system-reference/system-actions.md).
 
 ## Performance
 
@@ -47,4 +47,4 @@ Creating many instances of an object using effects can be very inefficient, sinc
 
 Never use effects to process a static effect on an object. For example, do not use the *Grayscale* effect to make an object always appear grayscale. Instead apply the grayscale effect in an image editor and import a grayscale image to the object, without using any effects. This has the same visual result, and avoids performance-degrading effect processing. Effects like *Grayscale* should only be used for transitions or making objects only occasionally appear grayscale.
 
-For more information, see the manual section on [performance tips](https://www.construct.net/make-games/manuals/construct-3/tips-and-guides/performance-tips).
+For more information, see the manual section on [performance tips](../../tips-and-guides/performance-tips.md).

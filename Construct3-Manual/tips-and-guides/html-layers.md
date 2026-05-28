@@ -1,7 +1,7 @@
 ---
 title: "HTML layers"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/tips-and-guides/html-layers"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -15,7 +15,7 @@ release: 476.3
 
 ---
 
-Construct supports integrating HTML content with your project. This includes the [HTML Element](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/html-element) object, as well as other plugins in the *HTML elements* category, such as [Button](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/button) and [Text Input](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/text-input). Layering HTML objects works differently to other kinds of objects. In particular, to have other Construct objects appear on top of HTML objects, it is necessary to use **HTML layers**. This guide explains how HTML layers work.
+Construct supports integrating HTML content with your project. This includes the [HTML Element](../plugin-reference/html-element.md) object, as well as other plugins in the *HTML elements* category, such as [Button](../plugin-reference/button.md) and [Text Input](../plugin-reference/text-input.md). Layering HTML objects works differently to other kinds of objects. In particular, to have other Construct objects appear on top of HTML objects, it is necessary to use **HTML layers**. This guide explains how HTML layers work.
 
 Using HTML layers is useful for better integration of HTML content in your project. For example if you want to use HTML for part of your project's user interface, but then have some decoration like a Particle effect appear on top of the user interface, then it is necessary to use HTML layers to get the Particle effect to appear on top of the HTML content.
 
@@ -34,7 +34,7 @@ With this arrangement, it is not possible for the Sprite object to appear on top
 
 ## HTML layers
 
-It is possible to have canvas objects render on top of HTML objects by making use of Construct's *HTML layers* feature. Checking the *HTML elements layer* property of a [layer](https://www.construct.net/make-games/manuals/construct-3/project-primitives/layers) will turn that layer in to a HTML layer, and indicate this status in the [Layers Bar](https://www.construct.net/make-games/manuals/construct-3/interface/bars/layers-bar) with a special tag icon. Then content on other layers above it will appear on top of HTML objects on that layer.
+It is possible to have canvas objects render on top of HTML objects by making use of Construct's *HTML layers* feature. Checking the *HTML elements layer* property of a [layer](../project-primitives/layers.md) will turn that layer in to a HTML layer, and indicate this status in the [Layers Bar](../interface/bars/layers-bar.md) with a special tag icon. Then content on other layers above it will appear on top of HTML objects on that layer.
 
 This works by creating an additional `<canvas>` element per HTML layer. For example consider the following arrangement of layers:
 
@@ -91,8 +91,8 @@ When using effects, note they can only process content on the same canvas. This 
 
 As illustrated, for each layer which you make a HTML layer, an additional canvas element is created at the size of the viewport. This comes with a performance overhead. It will impact two aspects of performance:
 
-1. Each canvas must be copied to the display every frame. This has the effect of drawing a viewport-sized surface, much like a *Force own texture* layer. This uses up the GPU fill rate (see [Performance Tips](https://www.construct.net/make-games/manuals/construct-3/tips-and-guides/performance-tips) for more details about fill rate). In some cases the compositing process may require more than one copy, making it potentially two or three times as costly as a *Force own texture* layer.
-2. Each canvas must be allocated in memory, which will use at least as much memory as a viewport-sized image. For example a 1920x1080 size canvas will require at least 8 MB of memory (see [Memory usage](https://www.construct.net/make-games/manuals/construct-3/tips-and-guides/memory-usage) for more details). In some cases the compositing process may require more than one surface, making it potentially use two or three times as much memory.
+1. Each canvas must be copied to the display every frame. This has the effect of drawing a viewport-sized surface, much like a *Force own texture* layer. This uses up the GPU fill rate (see [Performance Tips](../tips-and-guides/performance-tips.md) for more details about fill rate). In some cases the compositing process may require more than one copy, making it potentially two or three times as costly as a *Force own texture* layer.
+2. Each canvas must be allocated in memory, which will use at least as much memory as a viewport-sized image. For example a 1920x1080 size canvas will require at least 8 MB of memory (see [Memory usage](../tips-and-guides/memory-usage.md) for more details). In some cases the compositing process may require more than one surface, making it potentially use two or three times as much memory.
 
 For this reason, avoid using too many HTML layers. Try to use the minimum necessary number of HTML layers to achieve the layering you need for your project.
 

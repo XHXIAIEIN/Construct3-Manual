@@ -1,7 +1,7 @@
 ---
 title: "System expressions"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/system-reference/system-expressions"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -19,9 +19,9 @@ release: 476.3
 
 ---
 
-This section outlines the expressions in the built-in System object in Construct. Many are common mathematical operations, and they can be listed with descriptions in the [Expressions dictionary](https://www.construct.net/make-games/manuals/construct-3/interface/dialogs/expressions-dictionary), but they are included here for completeness.
+This section outlines the expressions in the built-in System object in Construct. Many are common mathematical operations, and they can be listed with descriptions in the [Expressions dictionary](../interface/dialogs/expressions-dictionary.md), but they are included here for completeness.
 
-This section does not list the operators or syntax that can be used in expressions - just the expressions specific to the System object. For more general information on how to use expressions in Construct, see [Expressions](https://www.construct.net/make-games/manuals/construct-3/project-primitives/events/expressions).
+This section does not list the operators or syntax that can be used in expressions - just the expressions specific to the System object. For more general information on how to use expressions in Construct, see [Expressions](../project-primitives/events/expressions.md).
 
 ## Display
 
@@ -39,37 +39,37 @@ In expressions where a layer is required, either its name (as a string) or index
 Calculate the layout co-ordinates underneath a position in canvas CSS co-ordinates for a given layer.
 
 > **Tip**  
-> The [3D Camera plugin](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/3d-camera) also provides expressions with the same name that work in 3D.
+> The [3D Camera plugin](../plugin-reference/3d-camera.md) also provides expressions with the same name that work in 3D.
 
 **CanvasToLayerY(layer, x, y)**  
 Calculate the layout co-ordinates underneath a position in canvas CSS co-ordinates for a given layer.
 
 > **Tip**  
-> The [3D Camera plugin](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/3d-camera) also provides expressions with the same name that work in 3D.
+> The [3D Camera plugin](../plugin-reference/3d-camera.md) also provides expressions with the same name that work in 3D.
 
 **LayerToCanvasX(layer, x, y)**  
 Calculate the canvas CSS co-ordinates above a position in layout co-ordinates for a given layer.
 
 > **Tip**  
-> The [3D Camera plugin](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/3d-camera) also provides expressions with the same name that work in 3D.
+> The [3D Camera plugin](../plugin-reference/3d-camera.md) also provides expressions with the same name that work in 3D.
 
 **LayerToCanvasY(layer, x, y)**  
 Calculate the canvas CSS co-ordinates above a position in layout co-ordinates for a given layer.
 
 > **Tip**  
-> The [3D Camera plugin](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/3d-camera) also provides expressions with the same name that work in 3D.
+> The [3D Camera plugin](../plugin-reference/3d-camera.md) also provides expressions with the same name that work in 3D.
 
 **LayerToLayerX(fromLayer, toLayer, x, y)**  
 Calculate the position on a second layer (*toLayer*) that corresponds to a position given on a first layer (*fromLayer*). This is a shorthand for converting a layer position to canvas CSS co-ordinates, and then back to a position on a different layer.
 
 > **Tip**  
-> The [3D Camera plugin](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/3d-camera) also provides expressions with the same name that work in 3D.
+> The [3D Camera plugin](../plugin-reference/3d-camera.md) also provides expressions with the same name that work in 3D.
 
 **LayerToLayerY(fromLayer, toLayer, x, y)**  
 Calculate the position on a second layer (*toLayer*) that corresponds to a position given on a first layer (*fromLayer*). This is a shorthand for converting a layer position to canvas CSS co-ordinates, and then back to a position on a different layer.
 
 > **Tip**  
-> The [3D Camera plugin](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/3d-camera) also provides expressions with the same name that work in 3D.
+> The [3D Camera plugin](../plugin-reference/3d-camera.md) also provides expressions with the same name that work in 3D.
 
 **LayerAngle(layer)**  
 Get the angle, in degrees, of a layer.
@@ -93,10 +93,10 @@ Get the current scale of the layer, not including the overall layout scale.
 Get the current scale rate of the layer, which defines how quickly it scales (if at all).
 
 **LayerScrollX(layer)**  
-Get the current scroll position of a specific layer. Note this is always the same as the layout scroll position (given by the *ScrollX* and *ScrollY* system expressions) unless a layer was independently scrolled using the *Set layer scroll* [system action](https://www.construct.net/make-games/manuals/construct-3/system-reference/system-actions).
+Get the current scroll position of a specific layer. Note this is always the same as the layout scroll position (given by the *ScrollX* and *ScrollY* system expressions) unless a layer was independently scrolled using the *Set layer scroll* [system action](../system-reference/system-actions.md).
 
 **LayerScrollY(layer)**  
-Get the current scroll position of a specific layer. Note this is always the same as the layout scroll position (given by the *ScrollX* and *ScrollY* system expressions) unless a layer was independently scrolled using the *Set layer scroll* [system action](https://www.construct.net/make-games/manuals/construct-3/system-reference/system-actions).
+Get the current scroll position of a specific layer. Note this is always the same as the layout scroll position (given by the *ScrollX* and *ScrollY* system expressions) unless a layer was independently scrolled using the *Set layer scroll* [system action](../system-reference/system-actions.md).
 
 **LayerZElevation(layer)**  
 Get the current elevation of the layer on the Z axis.
@@ -105,25 +105,25 @@ Get the current elevation of the layer on the Z axis.
 Return the viewport boundaries in layout co-ordinates of a given layer. Not all layers have the same viewport if they are parallaxed, scaled or rotated separately.
 
 > **Tip**  
-> The [3D Camera plugin](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/3d-camera) also provides viewport expressions that work in 3D.
+> The [3D Camera plugin](../plugin-reference/3d-camera.md) also provides viewport expressions that work in 3D.
 
 **ViewportLeft(layer)**  
 Return the viewport boundaries in layout co-ordinates of a given layer. Not all layers have the same viewport if they are parallaxed, scaled or rotated separately.
 
 > **Tip**  
-> The [3D Camera plugin](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/3d-camera) also provides viewport expressions that work in 3D.
+> The [3D Camera plugin](../plugin-reference/3d-camera.md) also provides viewport expressions that work in 3D.
 
 **ViewportRight(layer)**  
 Return the viewport boundaries in layout co-ordinates of a given layer. Not all layers have the same viewport if they are parallaxed, scaled or rotated separately.
 
 > **Tip**  
-> The [3D Camera plugin](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/3d-camera) also provides viewport expressions that work in 3D.
+> The [3D Camera plugin](../plugin-reference/3d-camera.md) also provides viewport expressions that work in 3D.
 
 **ViewportTop(layer)**  
 Return the viewport boundaries in layout co-ordinates of a given layer. Not all layers have the same viewport if they are parallaxed, scaled or rotated separately.
 
 > **Tip**  
-> The [3D Camera plugin](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/3d-camera) also provides viewport expressions that work in 3D.
+> The [3D Camera plugin](../plugin-reference/3d-camera.md) also provides viewport expressions that work in 3D.
 
 **ViewportMidX(layer)**  
 Return the mid-point of the viewport area in layout co-ordinates for a given layer.
@@ -164,10 +164,10 @@ Get the current position the view is centered on.
 Get the current position the view is centered on.
 
 **VanishingPointX**  
-Get the current vanishing point in the layout, where the range 0-100 represents the viewport. For more information refer to the *Vanishing point* [layout property](https://www.construct.net/make-games/manuals/construct-3/project-primitives/layouts).
+Get the current vanishing point in the layout, where the range 0-100 represents the viewport. For more information refer to the *Vanishing point* [layout property](../project-primitives/layouts.md).
 
 **VanishingPointY**  
-Get the current vanishing point in the layout, where the range 0-100 represents the viewport. For more information refer to the *Vanishing point* [layout property](https://www.construct.net/make-games/manuals/construct-3/project-primitives/layouts).
+Get the current vanishing point in the layout, where the range 0-100 represents the viewport. For more information refer to the *Vanishing point* [layout property](../project-primitives/layouts.md).
 
 ## Math
 
@@ -211,7 +211,7 @@ These expressions are simply ordinary math functions like you find on calculator
 
 **max(a, b [, c...])**, **min(a, b [, c...])** Calculate maximum or minimum of the given numbers. Any number of parameters can be used as long as there are at least two.
 
-**pi** The mathematical constant pi (3.14159...)
+**pi** The mathematical constant pi (3.14159...)  
 
 **qarp(a, b, c, x)** Quadratic interpolation through *a*, *b* and *c* by *x*. Calculates *lerp(lerp(a, b, x), lerp(b, c, x), x)*.
 
@@ -337,7 +337,7 @@ Substitute placeholders of the form `{n}` in the given string. This expression a
 Return the Nth token from *src*, splitting the string by *separator*. For example, `tokenat("apples|oranges|bananas", 1, "|")` returns *oranges*.
 
 > **Tip**  
-> Use the [Array](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/array) object's *Split string* action for more flexibility. To better handle more complex data, use a more robust data format like [JSON](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/json).
+> Use the [Array](../plugin-reference/array.md) object's *Split string* action for more flexibility. To better handle more complex data, use a more robust data format like [JSON](../plugin-reference/json.md).
 
 **tokencount(src, separator)**  
 Count how many tokens occur in *src* using *separator*. For example, `tokencount("apples|oranges|bananas", "|")` returns 3.
@@ -369,7 +369,7 @@ The percentage of the last second that was spent in logic, such as running event
 Delta-time in seconds. See [Delta-time and framerate independence](https://www.construct.net/en/tutorials/delta-time-framerate-2).
 
 **fps**  
-How many frames per second (FPS) the project is rendering. The most common display refresh rate is 60 Hz, so typically an efficiently designed project will render at 60 FPS. Note however if nothing is changing on-screen, then nothing is rendered, and so the FPS measurement may fall to 0 or display a lower result; this does not indicate poor performance, only that fewer frames are necessary to render. The *TicksPerSecond* expression of the [Platform Info](https://www.construct.net/make-games/manuals/construct-3/plugin-reference/platform-info) object indicates how frequently the engine is stepping, which may be different to the frames rendered per second.
+How many frames per second (FPS) the project is rendering. The most common display refresh rate is 60 Hz, so typically an efficiently designed project will render at 60 FPS. Note however if nothing is changing on-screen, then nothing is rendered, and so the FPS measurement may fall to 0 or display a lower result; this does not indicate poor performance, only that fewer frames are necessary to render. The *TicksPerSecond* expression of the [Platform Info](../plugin-reference/platform-info.md) object indicates how frequently the engine is stepping, which may be different to the frames rendered per second.
 
 **GPUUtilisation**  
 The percentage of the last second that was spent rendering graphics. This represents how busy the graphics processing unit (GPU) is, which is useful for performance measurements. This measurement is based on timers so should be treated as an approximation. The GPU utilisation is only affected by the amount of rendering work to be done, such as the number of objects visible on-screen, and also increases if the window size is larger. Note this measurement is only available on certain systems. If it is not supported, it will return NaN (a special value representing Not A Number) to indicate there is no value available.

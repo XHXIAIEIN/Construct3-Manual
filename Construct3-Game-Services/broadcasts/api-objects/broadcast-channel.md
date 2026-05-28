@@ -1,7 +1,7 @@
 ---
 title: "Channel Object"
 source: "https://www.construct.net/en/game-services/manuals/game-services/broadcasts/api-objects/broadcast-channel"
-release: 476.3
+release: 487
 ---
 
 ## On this page
@@ -20,7 +20,7 @@ You can have multiple Broadcast Channels, and each Channel can contain multiple 
 
 ```json
 {
-  "id": "f22e9395-c063-423f-8644-c7a5e2d8e03b",
+  "id": "2cfd9a96-4c5c-4c43-b5b0-baa51b093f75",
   "name": "Game Updates & News",
   "description": "The latest updates and news from Space Blaster dev team!",
   "created": "2025-09-22T14:30:02.437",
@@ -73,7 +73,7 @@ The total number of broadcast messages currently available in this channel.
 **formattedBroadcasts** `string`  
 The total number of broadcast messages currently available in this channel, formatted to the specified [requested culture](../../culture.md).
 
-**lastBroadcast** [datetime?](../../data-types.md#internalH1Link0)  
+**lastBroadcast** [`datetime?`](../../data-types.md#internalH1Link0)  
 The date and time of the last broadcast published to this channel.
 
 **formattedLastBroadcast** `string`  
@@ -88,7 +88,7 @@ Indicates if this channel contains any unread messages by the current requester.
 **dimensionlessMaxRatingValue** [`uint8`](../../data-types.md#internalH1Link2)  
 If ratings are allowed for messages in this channel, this property shows what the maximum rating value for dimensionless ratings is.  The minuimum allowed rating value is always `0`.
 
-**ratingDimensions** Dictionary<string, [`RatingDimension`](../../ratings/api-objects/rating-dimension-object.md)>
+**ratingDimensions** [`Dictionary<string, RatingDimension>`](../../ratings/api-objects/rating-dimension-object.md)  
 If ratings are allowed for messages in this channel, this property shows all available [rating dimensions](../../ratings/api-objects/rating-dimension-object.md) that can be rated.
 
 **originalLanguage** [`Language`](../../common-objects/language.md)  
