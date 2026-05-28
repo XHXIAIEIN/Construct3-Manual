@@ -143,13 +143,13 @@ jobs:
             let readme = fs.readFileSync('README.md', 'utf8');
             readme = readme
               .replace(/release-r[\w.]+-blue/, 'release-' + latest + '-blue')
-              .replace(/(\| \[Manual\][^|]+\| )\d+( \|)/, '$1' + manual + '$2')
-              .replace(/(\| \[Addon SDK\][^|]+\| )\d+( \|)/, '$1' + sdk + '$2')
-              .replace(/(\| \[Game Services\][^|]+\| )\d+( \|)/, '$1' + gs + '$2')
-              .replace(/(\| \*\*Total\*\* \| \*\*)\d+(\*\*)/, '$1' + total + '$2')
-              .replace(/(\| Construct 3 Manual \| )r[\w.]+( \|)/, '$1' + latest + '$2')
-              .replace(/(\| Addon SDK \| )r[\w.]+( \|)/, '$1' + latest + '$2')
-              .replace(/(\| Game Services \| )r[\w.]+( \|)/, '$1' + latest + '$2');
+              .replace(/(\| \[Manual\][^|]+\| )\d+( \|)/, '\$1' + manual + '\$2')
+              .replace(/(\| \[Addon SDK\][^|]+\| )\d+( \|)/, '\$1' + sdk + '\$2')
+              .replace(/(\| \[Game Services\][^|]+\| )\d+( \|)/, '\$1' + gs + '\$2')
+              .replace(/(\| \*\*Total\*\* \| \*\*)\d+(\*\*)/, '\$1' + total + '\$2')
+              .replace(/(\| Construct 3 Manual \| )r[\w.]+( \|)/, '\$1' + latest + '\$2')
+              .replace(/(\| Addon SDK \| )r[\w.]+( \|)/, '\$1' + latest + '\$2')
+              .replace(/(\| Game Services \| )r[\w.]+( \|)/, '\$1' + latest + '\$2');
             fs.writeFileSync('README.md', readme);
             console.log('Manual:', manual, 'SDK:', sdk, 'GS:', gs, 'Total:', total);
           "
