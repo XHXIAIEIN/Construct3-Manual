@@ -1,7 +1,7 @@
 ---
 title: "IImagePoint interface"
 source: "https://www.construct.net/en/make-games/manuals/addon-sdk/reference/object-interfaces/iimagepoint"
-release: 487
+release: 487.2
 ---
 
 ## On this page

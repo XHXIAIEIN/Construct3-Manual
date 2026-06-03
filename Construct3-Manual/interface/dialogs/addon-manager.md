@@ -1,7 +1,7 @@
 ---
 title: "The Addon Manager"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/interface/dialogs/addon-manager"
-release: 487
+release: 487.2
 ---
 
 The **Addon Manager** shows a detailed list of all addons (plugins, behaviors, effects and themes) available in Construct 3. It can be opened via `Menu › View › Addon Manager`.

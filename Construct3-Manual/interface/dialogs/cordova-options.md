@@ -1,7 +1,7 @@
 ---
 title: "Cordova options"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/interface/dialogs/cordova-options"
-release: 487
+release: 487.2
 ---
 
 `[Paid plans only]`  The **Cordova options** dialog is used to change settings for an **Android** or **iOS** export, both of which are built with Cordova.

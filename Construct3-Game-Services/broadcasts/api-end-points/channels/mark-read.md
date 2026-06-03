@@ -1,7 +1,7 @@
 ---
 title: "Mark All Messages As Read"
 source: "https://www.construct.net/en/game-services/manuals/game-services/broadcasts/api-end-points/channels/mark-read"
-release: 487
+release: 487.2
 ---
 
 ## On this page

@@ -1,7 +1,7 @@
 ---
 title: "List Channels"
 source: "https://www.construct.net/en/game-services/manuals/game-services/broadcasts/api-end-points/channels/list-channels"
-release: 487
+release: 487.2
 ---
 
 ## On this page

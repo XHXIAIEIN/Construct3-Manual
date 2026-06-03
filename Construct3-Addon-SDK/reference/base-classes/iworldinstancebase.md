@@ -1,7 +1,7 @@
 ---
 title: "IWorldInstanceBase interface"
 source: "https://www.construct.net/en/make-games/manuals/addon-sdk/reference/base-classes/iworldinstancebase"
-release: 487
+release: 487.2
 ---
 
 ## On this page
@@ -16,8 +16,8 @@ The `IWorldInstanceBase` interface is used as the base class for instances in th
 
 ## Methods
 
-**OnPlacedInLayout()**  
-Optional override called when an instance is explicitly placed in the layout by the user. This is the right time to set any additional defaults such as the initial size or origin.
+**OnPlacedInLayout(iLayoutView)**  
+Optional override called when an instance is explicitly placed in the layout by the user. This is the right time to set any additional defaults such as the initial size or origin. A reference to the current [ILayoutView](../../reference/ui-interfaces/ilayoutview.md) the instance was placed in is also provided.
 
 **Draw(iRenderer, iDrawParams)**  
 Called when Construct wants the instance to draw itself in the Layout View. `iRenderer` is an [IWebGLRenderer](../../reference/graphics-interfaces/iwebglrenderer.md) interface, used for issuing draw commands. `iDrawParams` is an [IDrawParams](../../reference/graphics-interfaces/idrawparams.md) interface, used for providing additional information to the draw call.
@@ -32,16 +32,16 @@ When a texture has successfully loaded, returns an [SDK.Rect](../../reference/ge
 Returns true to indicate texture loading failed. Plugins typically switch the placeholder to a red color in this circumstance.
 
 **IsOriginalSizeKnown()**  
-Optional overrides to specify the "original size" of the instance. Typically if a plugin supports this, it is the size of the image. This enables percentage size options in the Properties Bar. The default implementation returns `false` from `IsOriginalSizeKnown()`, disabling the feature. To enable it, return `true` from `IsOriginalSizeKnown()`, and return the original size in the `GetOriginalWidth()` and `GetOriginalHeight()` methods.
+Optional overrides to specify the "original size" of the instance. Typically if a plugin supports this, it is the size of the image. This enables percentage size options in the Properties Bar. The default implementation returns `false` from `IsOriginalSizeKnown()`, disabling the feature. To enable it, return `true` from `IsOriginalSizeKnown()`, and return the original size in the `GetOriginalSize()` method by returning an array with the form `[width, height, depth]`. For 2D content, return zero for the depth.
 
-**GetOriginalWidth()**  
-Optional overrides to specify the "original size" of the instance. Typically if a plugin supports this, it is the size of the image. This enables percentage size options in the Properties Bar. The default implementation returns `false` from `IsOriginalSizeKnown()`, disabling the feature. To enable it, return `true` from `IsOriginalSizeKnown()`, and return the original size in the `GetOriginalWidth()` and `GetOriginalHeight()` methods.
-
-**GetOriginalHeight()**  
-Optional overrides to specify the "original size" of the instance. Typically if a plugin supports this, it is the size of the image. This enables percentage size options in the Properties Bar. The default implementation returns `false` from `IsOriginalSizeKnown()`, disabling the feature. To enable it, return `true` from `IsOriginalSizeKnown()`, and return the original size in the `GetOriginalWidth()` and `GetOriginalHeight()` methods.
+**GetOriginalSize()**  
+Optional overrides to specify the "original size" of the instance. Typically if a plugin supports this, it is the size of the image. This enables percentage size options in the Properties Bar. The default implementation returns `false` from `IsOriginalSizeKnown()`, disabling the feature. To enable it, return `true` from `IsOriginalSizeKnown()`, and return the original size in the `GetOriginalSize()` method by returning an array with the form `[width, height, depth]`. For 2D content, return zero for the depth.
 
 **HasDoubleTapHandler()**  
 Optional override which is called when the user double-clicks or double-taps an instance in the Layout View. This also enables an *Edit* option in the context menu, which also calls the double-tap handler. Typically plugins with an image use this handler to edit the image. The default implementation returns `false` from `HasDoubleTapHandler()`, disabling the feature. To enable it, return `true` from `HasDoubleTapHandler()` and then override `OnDoubleTap()` to perform a task.
 
 **OnDoubleTap()**  
 Optional override which is called when the user double-clicks or double-taps an instance in the Layout View. This also enables an *Edit* option in the context menu, which also calls the double-tap handler. Typically plugins with an image use this handler to edit the image. The default implementation returns `false` from `HasDoubleTapHandler()`, disabling the feature. To enable it, return `true` from `HasDoubleTapHandler()` and then override `OnDoubleTap()` to perform a task.
+
+**RendersToOwnZPlane()**  
+An optional override to indicate if the instance renders to its own Z plane. This plane is at the base of the object for 3D objects with a depth, e.g. the *back* face of the 3D shape object. Typically all 2D content renders to its own Z plane and so should return `true`, which is the default when the method is not overridden. 3D content such as a 3D model that does not render to its own Z plane should return `false`. The result of this method is used to help mitigate Z-fighting.

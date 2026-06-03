@@ -1,7 +1,7 @@
 ---
 title: "Rate Message"
 source: "https://www.construct.net/en/game-services/manuals/game-services/broadcasts/api-end-points/ratings/rate-message"
-release: 487
+release: 487.2
 ---
 
 ## On this page

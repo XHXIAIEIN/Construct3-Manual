@@ -1,7 +1,7 @@
 ---
 title: "API Keys"
 source: "https://www.construct.net/en/game-services/manuals/game-services/games/api-keys"
-release: 487
+release: 487.2
 ---
 
 ## On this page

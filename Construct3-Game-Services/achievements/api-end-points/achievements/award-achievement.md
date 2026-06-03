@@ -1,7 +1,7 @@
 ---
 title: "Award Achievements"
 source: "https://www.construct.net/en/game-services/manuals/game-services/achievements/api-end-points/achievements/award-achievement"
-release: 487
+release: 487.2
 ---
 
 ## On this page

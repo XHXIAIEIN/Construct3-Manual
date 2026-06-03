@@ -1,7 +1,7 @@
 ---
 title: "Rating Status Object"
 source: "https://www.construct.net/en/game-services/manuals/game-services/ratings/api-objects/rating-status-object"
-release: 487
+release: 487.2
 ---
 
 ## On this page

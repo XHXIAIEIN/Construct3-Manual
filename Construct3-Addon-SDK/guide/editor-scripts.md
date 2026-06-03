@@ -1,7 +1,7 @@
 ---
 title: "Editor scripts"
 source: "https://www.construct.net/en/make-games/manuals/addon-sdk/guide/editor-scripts"
-release: 487
+release: 487.2
 ---
 
 ## On this page

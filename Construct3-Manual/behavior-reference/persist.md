@@ -1,7 +1,7 @@
 ---
 title: "Persist behavior"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/behavior-reference/persist"
-release: 487
+release: 487.2
 ---
 
 The **Persist behavior** makes the object remember its state when going to a different layout, then coming back. If a layout has objects with the Persist behavior, it is also referred to as a *persistent layout*. For an interactive example of its use, [click here to open the *Persistent Layouts* example.](https://editor.construct.net/#open=persistent-layouts)

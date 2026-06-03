@@ -1,7 +1,7 @@
 ---
 title: "Object types"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/project-primitives/objects/object-types"
-release: 487
+release: 487.2
 ---
 
                 **Object types** are a central part of game design in Construct. Object types define a 'class' of an object. For example, *TrollEnemy* and *OgreEnemy* could be different object types of the Sprite [plugin](../../project-primitives/objects/plugins.md). They have different animations and events can be applied separately to make them look and act differently, despite the fact they are both Sprite objects.

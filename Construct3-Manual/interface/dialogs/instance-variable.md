@@ -1,7 +1,7 @@
 ---
 title: "Add/edit instance variable dialog"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/interface/dialogs/instance-variable"
-release: 487
+release: 487.2
 ---
 
 The **Add/Edit Instance Variable dialog** allows you to set the name, type and initial value for an [instance variable](../../project-primitives/objects/instance-variables.md) in an [object type](../../project-primitives/objects/object-types.md) or [family](../../project-primitives/objects/families.md).

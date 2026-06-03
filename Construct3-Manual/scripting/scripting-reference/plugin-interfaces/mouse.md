@@ -1,7 +1,7 @@
 ---
 title: "Mouse script interface"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/scripting/scripting-reference/plugin-interfaces/mouse"
-release: 487
+release: 487.2
 ---
 
 ## On this page
@@ -24,7 +24,16 @@ The [Tracking pointers](https://editor.construct.net/#open=tracking-pointers) ex
 
 ## Events
 
-To detect mouse button events, use the events fired on the [Runtime script interface](../../../scripting/scripting-reference/iruntime.md), such as `"mousedown"` or `"pointerdown"`.
+To detect mouse button events, use the events fired on the [Runtime script interface](../../../scripting/scripting-reference/iruntime.md), such as `"mousedown"` or `"pointerdown"`. Some additional Mouse-specific events are also available.
+
+**"movement"**  
+Fired when the mouse cursor moves. The event object has properties `movementX` and `movementY` indicating the amount of movement. This is often used with pointer lock.
+
+**"pointerlockchange"**  
+Fired when the state of pointer lock changes, or if an error occurs attempting to obtain pointer lock.
+
+**"pointerlockerror"**  
+Fired when the state of pointer lock changes, or if an error occurs attempting to obtain pointer lock.
 
 ## Mouse APIs
 
@@ -49,3 +58,12 @@ Set the appearance of the mouse cursor to the current image of an [IObjectClass]
 ```javascript
 runtime.mouse.setCursorObjectClass(runtime.objects.Sprite);
 ```
+
+**hasPointerLock**  
+A read-only boolean indicating if pointer lock is currently active.
+
+**requestPointerLock(opts)**  
+Normally in DOM mode code can call the browser [requestPointerLock](https://developer.mozilla.org/en-US/docs/Web/API/Element/requestPointerLock) method directly. However in worker mode and desktop exports, the browser method is unavailable or does not work. This method can be used to request pointer lock in these additional situations. Much like the browser API, `opts` is optional and can be an object with the property `unadjustedMovement` set to `true` to request that the system does not adjust the mouse movement values during pointer lock. The events `"pointerlockchange"` or `"pointerlockerror"` will be fired after this call depending on the outcome of the request.
+
+**releasePointerLock()**  
+When pointer lock is active, release the pointer lock restoring normal mouse cursor operation.

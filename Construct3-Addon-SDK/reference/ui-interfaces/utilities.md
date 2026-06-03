@@ -1,7 +1,7 @@
 ---
 title: "Util interface"
 source: "https://www.construct.net/en/make-games/manuals/addon-sdk/reference/ui-interfaces/utilities"
-release: 487
+release: 487.2
 ---
 
 ## On this page

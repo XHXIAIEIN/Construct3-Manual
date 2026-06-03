@@ -1,7 +1,7 @@
 ---
 title: "List Players"
 source: "https://www.construct.net/en/game-services/manuals/game-services/authentication/api-end-points/players/list-players"
-release: 487
+release: 487.2
 ---
 
 ## On this page

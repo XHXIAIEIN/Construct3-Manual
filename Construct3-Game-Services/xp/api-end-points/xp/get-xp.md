@@ -1,7 +1,7 @@
 ---
 title: "Get XP"
 source: "https://www.construct.net/en/game-services/manuals/game-services/xp/api-end-points/xp/get-xp"
-release: 487
+release: 487.2
 ---
 
 ## On this page

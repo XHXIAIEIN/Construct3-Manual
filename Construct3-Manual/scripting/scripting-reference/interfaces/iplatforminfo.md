@@ -1,7 +1,7 @@
 ---
 title: "Platform Info script interface"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/scripting/scripting-reference/interfaces/iplatforminfo"
-release: 487
+release: 487.2
 ---
 
 ## On this page
@@ -50,7 +50,7 @@ A read-only string with the browser engine Construct has detected, which is one 
 A read-only string indicating the export option used to export the project, which is one of `"preview"` (when previewing prior to export), `"html5"`, `"scirra-arcade"`, `"cordova-android"`, `"cordova-ios"`, `"windows-webview2"`, `"macos-wkwebview"`, `"linux-cef"`, `"xbox-uwp-webview2"`, `"instant-games"` or `"playable-ad"`.
 
 **renderer**  
-A read-only string indicating the graphics rendering technology in use. This can be `"webgl1"`, `"webgl2"` or `"webgpu"`. It can also have a `-software` suffix if a "major performance caveat" is detected, which normally indicates slower software rendering, typically due to unreliable GPU drivers. For example, software-rendered WebGL 1 support would return `"webgl1-software"`.
+A read-only string indicating the graphics rendering technology in use. This can be `"webgl1"`, `"webgl2"` or `"webgpu"`. It can also have a `-software` suffix if a "major performance caveat" is detected, which normally indicates slower software rendering, typically due to unreliable GPU drivers. For example, software-rendered WebGL 1 support would return `"webgl1-software"`. The WebGPU renderer can also have a `-compatibility` suffix to indicate it is rendering with WebGPU in compatibility mode (supporting older hardware with legacy graphics APIs), e.g. `"webgpu-compatibility"`.
 
 **rendererDetail**  
 A read-only string describing system-specific detail about the graphics hardware in use. This typically describes the GPU manufacturer and model name, and sometimes some hardware capabilities.

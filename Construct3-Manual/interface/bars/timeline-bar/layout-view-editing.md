@@ -1,7 +1,7 @@
 ---
 title: "Layout view editing"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/interface/bars/timeline-bar/layout-view-editing"
-release: 487
+release: 487.2
 ---
 
 When edit mode is on, the [Layout View](../../../interface/layout-view.md) will show handles indicating the path an [instance](../../../project-primitives/objects/instances.md) will take as the [timeline](../../../project-primitives/timelines/timeline.md) is played. The handles are only shown for **X** and **Y** properties, as those are the only that can really show any form of useful visual feedback. The handles can be used to update the path of the corresponding instance.

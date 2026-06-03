@@ -1,7 +1,7 @@
 ---
 title: "Collaborating on projects"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/overview/collaborating-projects"
-release: 487
+release: 487.2
 ---
 
 Currently Construct does not support any real-time online collaboration, due to the extreme technical complexity of the feature. However you can use existing source control tools like **Git** and **SVN** to manage collaborative changes by a team working on the same project.

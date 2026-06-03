@@ -1,7 +1,7 @@
 ---
 title: "IBehaviorType script interface"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/scripting/scripting-reference/object-interfaces/ibehaviortype"
-release: 487
+release: 487.2
 ---
 
 ## On this page

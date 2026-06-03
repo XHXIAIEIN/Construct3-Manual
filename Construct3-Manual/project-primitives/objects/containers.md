@@ -1,7 +1,7 @@
 ---
 title: "Containers"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/project-primitives/objects/containers"
-release: 487
+release: 487.2
 ---
 
 ## On this page

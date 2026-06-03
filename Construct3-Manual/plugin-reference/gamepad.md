@@ -1,19 +1,19 @@
 ---
 title: "Gamepad"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/gamepad"
-release: 487
+release: 487.2
 ---
 
 ## On this page
 
-- [Gamepad support and Steam](#gamepad-support-and-steam)
-- [Key mapping](#key-mapping)
-- [Controlling behaviors with Gamepad](#controlling-behaviors-with-gamepad)
-- [Multiple gamepads](#multiple-gamepads)
-- [Gamepad properties](#gamepad-properties)
-- [Gamepad conditions](#gamepad-conditions)
-- [Gamepad actions](#gamepad-actions)
-- [Gamepad expressions](#gamepad-expressions)
+- [Gamepad support and Steam](#scripting)
+- [Key mapping](#gamepad-support-and-steam)
+- [Controlling behaviors with Gamepad](#key-mapping)
+- [Multiple gamepads](#controlling-behaviors-with-gamepad)
+- [Gamepad properties](#multiple-gamepads)
+- [Gamepad conditions](#gamepad-properties)
+- [Gamepad actions](#gamepad-conditions)
+- [Gamepad expressions](#gamepad-actions)
 
 ---
 
@@ -24,6 +24,10 @@ Unfortunately whether or not a specific device is supported depends on a lot of 
 Some mobile devices also support gamepad input, either by special hardware accessories, or by connecting a gamepad via a cable or wirelessly.
 
 To prevent allowing websites to track you by your available controllers, most browsers supporting Gamepad input will report that there are no controllers connected until a button is pressed on one of the devices.
+
+### Scripting
+
+When using JavaScript or TypeScript coding, the browser [Gamepad API](https://developer.mozilla.org/en-US/docs/Web/API/Gamepad_API) can be accessed directly, but only in DOM mode. In worker mode you can still receive gamepad input via the [IGamepadObjectType script interface](../scripting/scripting-reference/plugin-interfaces/gamepad.md).
 
 ## Gamepad support and Steam
 
@@ -37,7 +41,7 @@ Different controllers have different button layouts, or the buttons have differe
 
 To control behaviors with Gamepad input, use the *Simulate control* action. An example is shown below for controlling a Platform behavior with the left analog stick and A to jump.
 
-[![Events to control a behavior with a gamepad](https://construct-static.com/images/v1748/r/uploads/articleuploadobject/0/images/995/gamepad-controls_v600.png)](https://construct-static.com/images/v1748/uploads/articleuploadobject/0/images/995/gamepad-controls.png)
+[![Events to control a behavior with a gamepad](https://construct-static.com/images/v1767/r/uploads/articleuploadobject/0/images/995/gamepad-controls_v600.png)](https://construct-static.com/images/v1767/uploads/articleuploadobject/0/images/995/gamepad-controls.png)
 
 For more information, see the section on *Custom controls* in the [Behavior reference](../behavior-reference.md).
 

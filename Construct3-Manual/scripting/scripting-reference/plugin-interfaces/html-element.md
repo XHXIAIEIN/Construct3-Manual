@@ -1,7 +1,7 @@
 ---
 title: "HTML Element script interface"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/scripting/scripting-reference/plugin-interfaces/html-element"
-release: 487
+release: 487.2
 ---
 
 ## On this page

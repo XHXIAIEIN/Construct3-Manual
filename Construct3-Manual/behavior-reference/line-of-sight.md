@@ -1,7 +1,7 @@
 ---
 title: "Line-of-sight behavior"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/behavior-reference/line-of-sight"
-release: 487
+release: 487.2
 ---
 
 ## On this page

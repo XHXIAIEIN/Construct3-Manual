@@ -1,7 +1,7 @@
 ---
 title: "3D Model"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/3d-model"
-release: 487
+release: 487.2
 ---
 
 ## On this page
@@ -80,6 +80,9 @@ The initial animation progress.
 **Enable collisions**  
 If the instance should collide or not.
 
+**Back face culling**  
+Enable or disable back face culling.
+
 **Bounding box**  
 An editor only property to display the bounding box of the 3D model.
 
@@ -120,6 +123,9 @@ Checks if a mesh exists in the model.
 **Enable collisions**  
 Checks if collisions are enabled.
 
+**Is back face culling enabled**  
+Checks if back face culling is enabled.
+
 ## 3D model actions
 
 For actions common to other objects, see [Common actions](../plugin-reference/common-features/common-actions.md).
@@ -145,6 +151,9 @@ Set the progress of the current animation using a value in the range **[0 - 1]**
 **Set transform**  
 Change the transformation values of the model. **"Transform X"**, **"Transform Y"**, **"Transform Z"** correspond to each axis. Use the **"Operation"** parameter to choose which operation to do on the values, either *Set*, *Add*, *Subtract*, *Multiply * or *Divide*. Use the **"Type"** parameter to choose which transformation to affect, either *Offset*, *Rotation* or *Scale*.
 
+**Set quaternion**  
+Change the rotation of the **3D model** providing the **"X"**, **"Y"**, **"Z"** and **"W"** components of a quaternion.
+
 **Play**  
 Start playing the specified animation and use the **"Progress"** parameter to choose where the animation should start from, using a value in the range **[0 - 1]**
 
@@ -162,6 +171,9 @@ Change the render mode of the model. Either *"hierarchy"* or *"isolate"*.
 
 **Set collisions enabled**  
 Change the collision state.
+
+**Set back face culling**  
+Change the state of back face culling.
 
 ## 3D model expressions
 
@@ -229,3 +241,15 @@ The scale in the Y axis. This is compounded with the scale of the corresponding 
 
 **ScaleZ**  
 The scale in the Z axis. This is compounded with the scale of the corresponding instance.
+
+**QuaternionX**  
+Get the rotation quaternion X component.
+
+**QuaternionY**  
+Get the rotation quaternion Y component.
+
+**QuaternionZ**  
+Get the rotation quaternion Z component.
+
+**QuaternionW**  
+Get the rotation quaternion W component.

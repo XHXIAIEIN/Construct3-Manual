@@ -1,6 +1,6 @@
 # Construct 3 Documentation (Markdown)
 
-[![Release](https://img.shields.io/badge/release-r487-blue)](https://www.construct.net/en/make-games/releases)
+[![Release](https://img.shields.io/badge/release-r487.2-blue)](https://www.construct.net/en/make-games/releases)
 [![License](https://img.shields.io/badge/license-CC%20BY--SA%203.0-green)](https://creativecommons.org/licenses/by-sa/3.0/)
 
 Unofficial Markdown conversion of the official [Construct 3](https://www.construct.net/en/make-games/games-editor) documentation for easy reading, searching, and AI-assisted development.
@@ -9,18 +9,18 @@ Unofficial Markdown conversion of the official [Construct 3](https://www.constru
 
 | Directory | Docs | Description |
 | --------- | :---: | ---------- |
-| [Manual](Construct3-Manual/index.md) | 346 | Plugins, behaviors, events, scripting, publishing |
-| [Addon SDK](Construct3-Addon-SDK/index.md) | 63 | Custom plugins, behaviors, effects, themes |
-| [Game Services](Construct3-Game-Services/index.md) | 173 | Leaderboards, achievements, cloud saves, authentication |
-| **Total** | **582** | |
+| [Manual](Construct3-Manual/index.md) | 349 | Plugins, behaviors, events, scripting, publishing |
+| [Addon SDK](Construct3-Addon-SDK/index.md) | 64 | Custom plugins, behaviors, effects, themes |
+| [Game Services](Construct3-Game-Services/index.md) | 174 | Leaderboards, achievements, cloud saves, authentication |
+| **Total** | **587** | |
 
 ## Source
 
 | Content | Release | URL |
 | --- | :---: | --- |
-| Construct 3 Manual | r487 | <https://www.construct.net/en/make-games/manuals/construct-3> |
-| Addon SDK | r487 | <https://www.construct.net/en/make-games/manuals/addon-sdk> |
-| Game Services | r487 | <https://www.construct.net/en/game-services/manuals/game-services> |
+| Construct 3 Manual | r487.2 | <https://www.construct.net/en/make-games/manuals/construct-3> |
+| Addon SDK | r487.2 | <https://www.construct.net/en/make-games/manuals/addon-sdk> |
+| Game Services | r487.2 | <https://www.construct.net/en/game-services/manuals/game-services> |
 
 ## Recommended Reading
 

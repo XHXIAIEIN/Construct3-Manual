@@ -1,7 +1,7 @@
 ---
 title: "Rating Concepts"
 source: "https://www.construct.net/en/game-services/manuals/game-services/ratings/concepts"
-release: 487
+release: 487.2
 ---
 
 ## On this page

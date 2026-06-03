@@ -1,7 +1,7 @@
 ---
 title: "Leaderboard Team Settings"
 source: "https://www.construct.net/en/game-services/manuals/game-services/leaderboards/settings/teams"
-release: 487
+release: 487.2
 ---
 
 ## On this page

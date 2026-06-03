@@ -1,7 +1,7 @@
 ---
 title: "Message Object"
 source: "https://www.construct.net/en/game-services/manuals/game-services/broadcasts/api-objects/broadcast-message"
-release: 487
+release: 487.2
 ---
 
 ## On this page
@@ -22,8 +22,8 @@ This object can be rated by players.  Read about [how ratings work](../../rating
 
 ```json
 {
-  "id": "7bb0b68c-7f19-4593-ab5c-f64c29c3c02a",
-  "channelID": "21d985cd-eb77-4e05-9589-e153bcfca779",
+  "id": "c256b742-ace5-4884-9ba3-aba37556cb00",
+  "channelID": "713b55de-9917-4429-878e-7dd2560b6338",
   "date": "2025-09-22T14:30:02.437",
   "formattedDate": "9/22/2025 2:30:02 PM",
   "title": "New October features and news from the team.",

@@ -1,7 +1,7 @@
 ---
 title: "ISDKDOMInstanceBase addon SDK interface"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/scripting/scripting-reference/addon-sdk-interfaces/isdkdominstancebase"
-release: 487
+release: 487.2
 ---
 
 ## On this page

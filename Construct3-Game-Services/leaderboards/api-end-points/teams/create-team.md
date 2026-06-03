@@ -1,7 +1,7 @@
 ---
 title: "Create a Team"
 source: "https://www.construct.net/en/game-services/manuals/game-services/leaderboards/api-end-points/teams/create-team"
-release: 487
+release: 487.2
 ---
 
 ## On this page

@@ -1,7 +1,7 @@
 ---
 title: "The Expressions Dictionary"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/interface/dialogs/expressions-dictionary"
-release: 487
+release: 487.2
 ---
 
 The **Expressions Dictionary** lists all the expressions available in your project. This saves you having to remember them or look them up elsewhere. It is shown floating next to the [Parameters dialog](../../interface/dialogs/parameters.md). It can be hidden or shown by clicking the **Find expressions** link on the Parameters dialog or by pressing <kbd>F4</kbd>. By default it is semitransparent so it does not distract you while entering parameters. However on small screens if there is no room to display it without overlapping the Parameters dialog, then it is hidden by default.

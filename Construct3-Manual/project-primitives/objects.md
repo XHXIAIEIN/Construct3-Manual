@@ -1,7 +1,7 @@
 ---
 title: "Objects"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/project-primitives/objects"
-release: 487
+release: 487.2
 ---
 
 In Construct **objects** perform most of the useful work in a project. Most of the things you see in a Construct project are represented by objects, and there are also hidden objects for other purposes (e.g. audio playback).

@@ -1,7 +1,7 @@
 ---
 title: "8 Direction behavior"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/behavior-reference/8-direction"
-release: 487
+release: 487.2
 ---
 
 ## On this page

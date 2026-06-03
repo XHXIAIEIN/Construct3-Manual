@@ -1,7 +1,7 @@
 ---
 title: "IWebGLRenderer interface"
 source: "https://www.construct.net/en/make-games/manuals/addon-sdk/reference/graphics-interfaces/iwebglrenderer"
-release: 487
+release: 487.2
 ---
 
 ## On this page
@@ -27,7 +27,12 @@ Since IWebGLRenderer is based on WebGL, it also uses a persistent rendering stat
 3. A color set by `SetColor()` or `SetColorRgba()`. The alpha component of the color is used as the opacity in texture fill mode.
 4. A texture set by `SetTexture()`. This is only used in texture fill mode.
 
-Therefore a `Draw()` method should begin by specifying the blend mode, the fill mode, the color, and the texture (if texture fill mode is used), before continuing to draw. The renderer efficiently discards redundant calls, so if the state does not actually change then these calls have minimal performance overhead.
+There are two other states that are more applicable to 3D content:
+
+- The face culling mode, set by `SetCullFaceMode()`
+- The front face winding that is also used by the face culling mode, set by `SetFrontFaceWinding()`
+
+A `Draw()` method should begin by specifying the blend mode, the fill mode, the color, and the texture (if texture fill mode is used), before continuing to draw. The renderer efficiently discards redundant calls, so if the state does not actually change then these calls have minimal performance overhead.
 
 Once all state is set up, quads can be issued using one of the `Rect()` or `Quad()` method overloads. These methods draw using the currently set state.
 
@@ -63,6 +68,36 @@ Set and get the current Z component used for all 2D drawing commands that don't 
 **GetCurrentZ()**  
 Set and get the current Z component used for all 2D drawing commands that don't specify Z components, such as the `Rect2()` and `Quad3()`.
 
+**SetCullFaceMode(mode)**  
+Set or get the face culling mode, which may be one of the following strings:
+
+- `"none"`: all faces are rendered
+- `"back"`: back faces are culled
+- `"front"`: front faces are culled
+
+Whether a face counts as front or back depends on the front face winding (see `SetFrontFaceWinding()`). The default mode is `"none"`.
+
+> **Tip**  
+> Note that mirrored or flipped sprites are in fact showing a back face, which is why Construct defaults to `"none"`.
+
+**GetCullFaceMode()**  
+Set or get the face culling mode, which may be one of the following strings:
+
+- `"none"`: all faces are rendered
+- `"back"`: back faces are culled
+- `"front"`: front faces are culled
+
+Whether a face counts as front or back depends on the front face winding (see `SetFrontFaceWinding()`). The default mode is `"none"`.
+
+> **Tip**  
+> Note that mirrored or flipped sprites are in fact showing a back face, which is why Construct defaults to `"none"`.
+
+**SetFrontFaceWinding(mode)**  
+Set or get the front face winding, which is used to determine whether a triangle is front facing or back facing depending on the order ("winding") of the vertices. This is used by the cull face mode (see `SetCullFaceMode()`). The mode may be either the string `"cw"` for clockwise winding, or `"ccw"` for counter-clockwise winding. The default mode is `"cw"`, because most content that Construct renders itself uses clockwise winding.
+
+**GetFrontFaceWinding()**  
+Set or get the front face winding, which is used to determine whether a triangle is front facing or back facing depending on the order ("winding") of the vertices. This is used by the cull face mode (see `SetCullFaceMode()`). The mode may be either the string `"cw"` for clockwise winding, or `"ccw"` for counter-clockwise winding. The default mode is `"cw"`, because most content that Construct renders itself uses clockwise winding.
+
 **ResetColor()**  
 Set the current color to (1, 1, 1, 1).
 
@@ -92,6 +127,12 @@ Draw a 3D quad, specifying all four points of the quad with X, Y and Z co-ordina
 
 **DrawMesh(posArr, uvArr, indexArr, colorArr)**  
 Draw an array of textured triangles based on the given position, texture co-ordinate and index arrays, and an optional per-vertex color array. For more details refer to the documentation for the [IRenderer](../../../Construct3-Manual/scripting/scripting-reference/graphics-interfaces/irenderer-interface.md) `drawMesh()` method, which works the same (albeit with different casing on the method name).
+
+**CreateMeshData(vertexCount, indexCount, opts)**  
+Create an [IMeshData](../../reference/graphics-interfaces/imeshdata.md) to represent mesh data on the GPU and efficiently draw it over multiple frames with `DrawMeshData`. `vertexCount` and `indexCount` determines how many vertices and indices the mesh has. These values cannot be changed after creation - to resize a mesh, create a new one, copy data over (if necessary), and release the old one. `opts` is an optional object with additional parameters; currently this can specify an optional `debugLabel` property to specify a string label for debugging purposes. (In the WebGPU renderer, the debug label is also used on the underlying WebGPU objects.)
+
+**DrawMeshData(meshData, indexOffset, indexCount)**  
+Draw a [IMeshData](../../reference/graphics-interfaces/imeshdata.md) previously created with `CreateMeshData()`. If some buffers have been marked changed, the first time it is drawn the changed ranges of the buffers will also be uploaded to the GPU, and then the changed marking is unset. `indexOffset` and `indexCount` can optionally be specified to draw a reduced range of the index buffer; if used the count should be a multiple of 3 to specify complete triangles, and the offset should likely also be a multiple of 3 to avoid scrambling the triangle orders.
 
 **ConvexPoly(pointsArray)**  
 Draw a convex polygon using the given array of points, in alternating X, Y order. Therefore the size of the array must be even, and must contain at least six elements (to define three points).

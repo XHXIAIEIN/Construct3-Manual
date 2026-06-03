@@ -1,7 +1,7 @@
 ---
 title: "List Players on a Team"
 source: "https://www.construct.net/en/game-services/manuals/game-services/leaderboards/api-end-points/teams/list-team-players"
-release: 487
+release: 487.2
 ---
 
 ## On this page

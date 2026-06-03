@@ -1,7 +1,7 @@
 ---
 title: "Meta Data Object"
 source: "https://www.construct.net/en/game-services/manuals/game-services/authentication/api-objects/patreon/patreon-meta-data"
-release: 487
+release: 487.2
 ---
 
 ## On this page

@@ -1,7 +1,7 @@
 ---
 title: "IInstanceBase interface"
 source: "https://www.construct.net/en/make-games/manuals/addon-sdk/reference/base-classes/iinstancebase"
-release: 487
+release: 487.2
 ---
 
 ## On this page

@@ -1,7 +1,7 @@
 ---
 title: "IWorldInstance interface"
 source: "https://www.construct.net/en/make-games/manuals/addon-sdk/reference/object-interfaces/iworldinstance"
-release: 487
+release: 487.2
 ---
 
 ## On this page
@@ -121,3 +121,6 @@ Set or get a string of the instance's sampling mode, which is one of `"auto"`, `
 
 **GetActiveSampling()**  
 Get a string of the instance's active sampling mode. This is only different to `GetSampling()` when the sampling mode is `"auto"`: in this case the active sampling mode is inherited from the project, layout, layer, or hierarchy. This is the sampling mode with which this instance will be rendered.
+
+**SetMustMitigateZFighting()**  
+Specify that the instance must use Z-fighting mitigations, even when it is not rendered coplanar with another object. This can be necessary if an object renders coplanar content itself, such as a SpriteFont with overlapping characters. This method is intended for use with the addon SDK with the addon's own instances.

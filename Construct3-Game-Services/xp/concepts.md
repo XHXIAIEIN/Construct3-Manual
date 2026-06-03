@@ -1,7 +1,7 @@
 ---
 title: "XP Concepts"
 source: "https://www.construct.net/en/game-services/manuals/game-services/xp/concepts"
-release: 487
+release: 487.2
 ---
 
 ## On this page
