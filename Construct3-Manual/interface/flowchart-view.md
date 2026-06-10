@@ -1,7 +1,7 @@
 ---
 title: "The Flowchart View"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/interface/flowchart-view"
-release: 487
+release: 487.3
 ---
 
 ## On this page

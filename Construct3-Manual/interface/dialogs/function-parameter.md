@@ -1,7 +1,7 @@
 ---
 title: "Add/edit function parameter dialog"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/interface/dialogs/function-parameter"
-release: 487
+release: 487.3
 ---
 
 The **Add/Edit Function Parameter dialog** allows you to change the details of a [function](../../project-primitives/events/functions.md) parameter. Since function parameters work similarly to [local variables](../../project-primitives/events/variables.md), the dialog is also similar to the [Add/edit event variable dialog](../../interface/dialogs/event-variable.md).

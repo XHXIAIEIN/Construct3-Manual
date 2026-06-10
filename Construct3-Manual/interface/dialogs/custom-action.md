@@ -1,7 +1,7 @@
 ---
 title: "Add/edit custom action dialog"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/interface/dialogs/custom-action"
-release: 487
+release: 487.3
 ---
 
 The add/edit function dialog appears when adding or editing a [custom action](../../project-primitives/events/custom-actions.md).

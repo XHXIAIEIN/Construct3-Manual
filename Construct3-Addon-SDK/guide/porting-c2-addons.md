@@ -1,7 +1,7 @@
 ---
 title: "Porting Construct 2 plugins/behaviors"
 source: "https://www.construct.net/en/make-games/manuals/addon-sdk/guide/porting-c2-addons"
-release: 487
+release: 487.3
 ---
 
 To port a Construct 2 plugin or behavior to Construct 3, use the following checklist.

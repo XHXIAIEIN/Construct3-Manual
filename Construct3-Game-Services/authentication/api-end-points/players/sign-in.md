@@ -1,7 +1,7 @@
 ---
 title: "Sign In"
 source: "https://www.construct.net/en/game-services/manuals/game-services/authentication/api-end-points/players/sign-in"
-release: 487
+release: 487.3
 ---
 
 ## On this page
@@ -62,7 +62,7 @@ Successful responses always return a `HTTP 200` status code.
 ```json
 {
   "success": true,
-  "pollToken": "392c84c2-0ec3-49e7-9fe3-c97dfaaa84e9",
+  "pollToken": "13d57b8c-b842-42c5-85f2-0e126ef44467",
   "redirectToURL": "https://...",
   "formattingCulture": "en-us"
 }

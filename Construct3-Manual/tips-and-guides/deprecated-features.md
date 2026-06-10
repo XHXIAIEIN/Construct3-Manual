@@ -1,7 +1,7 @@
 ---
 title: "Deprecated features"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/tips-and-guides/deprecated-features"
-release: 487
+release: 487.3
 ---
 
 ## On this page
@@ -35,6 +35,9 @@ In 2022 Construct added an option to set the Z axis scale to 'Regular', which fi
 ### Updating projects to 'Regular' mode
 
 As of r487, in many cases Construct will automatically update 2D projects to use Z axis scale 'Regular'. It does this when it detects there is no use of the Z axis and so the project should continue to work exactly the same. A notification still appears when Construct does this to make sure you're aware it happened.
+
+> **Tip**  
+> If after seeing this notification or following the steps below, you notice some things aren't rendering correctly and the Layout View has a highly constrained zoom level, check your project's *Far distance* property. This defaults to 10000 for new projects, but if it was changed to be lower, it may not be high enough for 'Regular' mode, as in that mode the camera is usually further away from the content in the layout.
 
 Where Construct cannot automatically update the project, you may see a deprecation warning, and you will have to manually make changes. To convert your project, follow these steps.
 

@@ -1,7 +1,7 @@
 ---
 title: "3D model"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/scripting/scripting-reference/plugin-interfaces/3d-model"
-release: 487
+release: 487.3
 ---
 
 ## On this page
@@ -38,8 +38,20 @@ returns the progress of the current animation. When set it updates the progress 
 **isPlaying**  
 returns the playing state of the current animation. Setting will resume playback or stop it.
 
+**isLooping**  
+sets or gets the current looping state of all animations in the model.
+
 **meshRenderMode**  
 returns or changes the current render mode. It accepts these values: `"hierarchy"` to draw the enabled meshes as they where authored in the model file and `"isolate"` to draw the enabled meshes as if they where the only ones in the model file.
+
+**backfaceCulling**  
+returns or changes the current state of back face culling.
+
+**onAnimationFinished**  
+if set this callback executes when an animation finishes, it has one string argument which is the name of the animation that finished playing.
+
+**onAnimationLooped**  
+if set this callback executes when an animation loops, it has one string argument which is the name of the animation that loopped.
 
 **offsetX**  
 return or set the current offset of the 3D model in relation to the position of the corresponding [instance](../../../project-primitives/objects/instances.md).
@@ -68,6 +80,15 @@ return or set the current scale of the 3D model. These values are compounded wit
 **scaleZ**  
 return or set the current scale of the 3D model. These values are compounded with the scale of the corresponding instance.
 
+**originX**  
+return or set the current transformation origin of the 3D model, using `"left"`, `"middle"` or `"right"` as valid values on the **X** axis, `"top"`, `"middle"` or `"bottom"` as valid values on the **Y** axis and `"back"`, `"middle"` or `"front"` as valid values on the **Z** axis.
+
+**originY**  
+return or set the current transformation origin of the 3D model, using `"left"`, `"middle"` or `"right"` as valid values on the **X** axis, `"top"`, `"middle"` or `"bottom"` as valid values on the **Y** axis and `"back"`, `"middle"` or `"front"` as valid values on the **Z** axis.
+
+**originZ**  
+return or set the current transformation origin of the 3D model, using `"left"`, `"middle"` or `"right"` as valid values on the **X** axis, `"top"`, `"middle"` or `"bottom"` as valid values on the **Y** axis and `"back"`, `"middle"` or `"front"` as valid values on the **Z** axis.
+
 **setTransform(x, y, z, type)**  
 These methods are used to apply changes on the three axes of a 3D model. `"x"` `"y"` and `"z"` are the main values that will be applied and `"type"` refers to the properties that will be affected, can be either *"offset"* *"rotation"* or *"scale"*.
 
@@ -82,6 +103,12 @@ These methods are used to apply changes on the three axes of a 3D model. `"x"` `
 
 **divTransform(x, y, z, type)**  
 These methods are used to apply changes on the three axes of a 3D model. `"x"` `"y"` and `"z"` are the main values that will be applied and `"type"` refers to the properties that will be affected, can be either *"offset"* *"rotation"* or *"scale"*.
+
+**setQuaternion(x, y, z, w)**  
+Use this method to set the `"x"` `"y"` `"z"` and `"w"` components of the rotation quaternion of a 3D model.
+
+**getQuaternion()**  
+Returns an object with `"x"` `"y"` `"z"` and `"w"` properties representing the rotation quaternion of a 3D model. This object is not the real quaternion used by plugin instances, use **setQuaternion** to write the values when needed.
 
 **animationDuration(animation)**  
 returns the duration in seconds of the provided animation.

@@ -1,7 +1,7 @@
 ---
 title: "Video recorder"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/video-recorder"
-release: 487
+release: 487.3
 ---
 
 ## On this page
@@ -52,6 +52,9 @@ Start recording a video of the user's entire screen. This only works when the *I
 
 **Start User Media recording**  
 Start recording video and/or audio from a [User Media](../plugin-reference/user-media.md) object's input. *On media request approved* must trigger before this can be used.
+
+**Set recording paused**  
+Pause or resume an active recording. A paused recording stops adding video frames or audio, and begins again when resumed. The resulting recording will appear to have a cut while the recording was paused.
 
 **Stop recording**  
 Stop any active recording. When the video has finished encoding, *On recording ready* will trigger so the video can be downloaded.

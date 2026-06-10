@@ -1,7 +1,7 @@
 ---
 title: "Publishing projects"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/overview/publishing-projects"
-release: 487
+release: 487.3
 ---
 
 To publish a project, use the `Menu › Project › Export` option. Construct allows you to export to a range of platforms, such as the web (HTML5), Android and iOS (via Cordova), and desktop apps (via Windows/macOS/Linux wrappers). Each platform has an accompanying tutorial to guide you through how the exporter works and covering any exporter-specific settings. Note in some cases fees may be involved, such as for developer subscriptions to allow uploading to app stores, or for hosting web content if you don't already have a server.

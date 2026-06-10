@@ -1,7 +1,7 @@
 ---
 title: "Link Login Provider"
 source: "https://www.construct.net/en/game-services/manuals/game-services/authentication/api-end-points/login-providers/link-login-provider"
-release: 487
+release: 487.3
 ---
 
 ## On this page
@@ -53,7 +53,7 @@ Successful responses always return a `HTTP 200` status code.
 ```json
 {
   "success": true,
-  "pollToken": "2ef541e9-4c73-4e9f-8062-dde836eecc83",
+  "pollToken": "550a651a-947b-4f72-991e-019bd31674b0",
   "redirectToURL": "https://...",
   "formattingCulture": "en-us"
 }

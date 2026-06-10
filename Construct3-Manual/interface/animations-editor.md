@@ -1,7 +1,7 @@
 ---
 title: "The Animations Editor"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/interface/animations-editor"
-release: 487
+release: 487.3
 ---
 
 ## On this page
@@ -12,10 +12,10 @@ release: 487
 - [Frames pane](#downloading-palettes-as-a-file)
 - [Animations and properties panes](#loading-palettes-from-a-file)
 - [Image points pane](#pasting-colors)
-- [Drag-and-drop](#top-toolbar-image-tools)
-- [Bulk importing](#side-toolbar-drawing-tools)
-- [Color palette file format](#frames-pane)
-- [Miscellaneous settings](#3d-textures)
+- [Drag-and-drop](#color-palettes-in-project-folders)
+- [Bulk importing](#top-toolbar-image-tools)
+- [Color palette file format](#side-toolbar-drawing-tools)
+- [Miscellaneous settings](#frames-pane)
 
 ---
 
@@ -23,7 +23,7 @@ Construct has a fully-featured built-in image and animations editor, used to cre
 
 To open this editor, **double-click** an object with an image or animations in the [Layout View](../interface/layout-view.md) or [Project Bar](../interface/bars/project-bar.md).
 
-[![The Animations Editor](https://construct-static.com/images/v1750/r/uploads/articleuploadobject/0/images/142161/new-bitmap-image_v800.png)](https://construct-static.com/images/v1750/uploads/articleuploadobject/0/images/142161/new-bitmap-image.png)The Animations Editor
+[![The Animations Editor](https://construct-static.com/images/v1769/r/uploads/articleuploadobject/0/images/142161/new-bitmap-image_v800.png)](https://construct-static.com/images/v1769/uploads/articleuploadobject/0/images/142161/new-bitmap-image.png)The Animations Editor
 
 Note each pane in the Animation Editor can be resized by dragging the borders, similar to how you can with the main Construct interface. This lets you customise the layout of the Animation Editor.
 
@@ -65,6 +65,10 @@ You can paste text specifying a color in to any of the color inputs to set the o
 - Hex as either `#ffffff` or `ffffff`
 
 Color components can be in the range **0% - 100%** or **0 - 255**. Alpha components should be between **0 and 1**.
+
+### Color palettes in project folders
+
+Palettes are saved to independent JSON files under the `"palettes"` folder so they can be ignored or kept when working with source control.
 
 ## Top toolbar: image tools
 
@@ -167,7 +171,7 @@ Selecting an animation also switches which frames are showing in the frames pane
 
 When you select the **Image points** tool in the image editor, the left pane switches to a list of image points for the current animation frame.
 
-[![imgpts](https://construct-static.com/images/v1750/uploads/articleuploadobject/0/images/6978/imgpts.png)](https://construct-static.com/images/v1750/uploads/articleuploadobject/0/images/6978/imgpts.png)
+[![imgpts](https://construct-static.com/images/v1769/uploads/articleuploadobject/0/images/6978/imgpts.png)](https://construct-static.com/images/v1769/uploads/articleuploadobject/0/images/6978/imgpts.png)
 
 The **Origin** is a special kind of image point defining the center of the object, or its point of rotation. It has a different icon to denote it. The term *image point* usually means "image points including the origin". Image points have a **zero based index**, and the first image point (number 0) is always the origin. The origin cannot be renamed.
 

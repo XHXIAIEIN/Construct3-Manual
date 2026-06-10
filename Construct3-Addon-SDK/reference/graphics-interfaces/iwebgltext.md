@@ -1,7 +1,7 @@
 ---
 title: "IWebGLText interface"
 source: "https://www.construct.net/en/make-games/manuals/addon-sdk/reference/graphics-interfaces/iwebgltext"
-release: 487
+release: 487.3
 ---
 
 ## On this page

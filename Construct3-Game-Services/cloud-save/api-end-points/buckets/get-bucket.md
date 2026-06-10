@@ -1,7 +1,7 @@
 ---
 title: "Get a Bucket"
 source: "https://www.construct.net/en/game-services/manuals/game-services/cloud-save/api-end-points/buckets/get-bucket"
-release: 487
+release: 487.3
 ---
 
 ## On this page

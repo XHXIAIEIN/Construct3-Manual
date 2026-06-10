@@ -1,7 +1,7 @@
 ---
 title: "Runtime script interface"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/scripting/scripting-reference/iruntime"
-release: 487
+release: 487.3
 ---
 
 ## On this page
@@ -170,6 +170,12 @@ Fired when the savegame system saves or loads the state of the game. The `saveDa
 
 > **Tip**  
 > These events can use async handler functions, and the runtime will wait for them to finish before continuing.
+
+**"savecomplete"**  
+Fired when the savegame system has completed saving or loading the state of the game. The `jsonString` property of the event object is a string with the full content of the saved/loaded data.
+
+**"loadcomplete"**  
+Fired when the savegame system has completed saving or loading the state of the game. The `jsonString` property of the event object is a string with the full content of the saved/loaded data.
 
 **"instancecreate"**  
 Fired whenever any new instance is created. The event object has an `instance` property referring to the [IInstance](../../scripting/scripting-reference/object-interfaces/iinstance.md) (or derivative) that was created.
@@ -346,6 +352,18 @@ A read-only boolean indicating if the runtime is currently suspended. When suspe
 
 **exportDate**  
 A read-only [Date](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date) object representing the time the project was exported from Construct. In preview mode, this is the time the preview was launched.
+
+**saveToSlot(slotName)**  
+Save or load the full state of the project. The *slot* variants automatically save to/load from the browser local storage using `slotName` to identify the save. The *JSONString* variants save to/load from a string representing the full state of the project, which can be useful to store the data elsewhere (e.g. to upload/download save data from a cloud service). All the methods return a Promise that resolves with a string representing the full state of the project.
+
+**saveToJSONString()**  
+Save or load the full state of the project. The *slot* variants automatically save to/load from the browser local storage using `slotName` to identify the save. The *JSONString* variants save to/load from a string representing the full state of the project, which can be useful to store the data elsewhere (e.g. to upload/download save data from a cloud service). All the methods return a Promise that resolves with a string representing the full state of the project.
+
+**loadFromSlot(slotName)**  
+Save or load the full state of the project. The *slot* variants automatically save to/load from the browser local storage using `slotName` to identify the save. The *JSONString* variants save to/load from a string representing the full state of the project, which can be useful to store the data elsewhere (e.g. to upload/download save data from a cloud service). All the methods return a Promise that resolves with a string representing the full state of the project.
+
+**loadFromJSONString()**  
+Save or load the full state of the project. The *slot* variants automatically save to/load from the browser local storage using `slotName` to identify the save. The *JSONString* variants save to/load from a string representing the full state of the project, which can be useful to store the data elsewhere (e.g. to upload/download save data from a cloud service). All the methods return a Promise that resolves with a string representing the full state of the project.
 
 **callFunction(name, ...params)**  
 Call a function in an event sheet, by a case-insensitive string of its name. Each parameter added after the name is passed to the function. There must be at least as many parameters provided as the function uses, although any additional parameters will be ignored. If the function has a return value, it will be returned from this method, else it returns `null`.

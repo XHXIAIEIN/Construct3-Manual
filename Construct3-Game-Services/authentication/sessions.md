@@ -1,7 +1,7 @@
 ---
 title: "Player Sessions"
 source: "https://www.construct.net/en/game-services/manuals/game-services/authentication/sessions"
-release: 487
+release: 487.3
 ---
 
 ## On this page

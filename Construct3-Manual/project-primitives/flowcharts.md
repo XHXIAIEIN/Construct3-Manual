@@ -1,7 +1,7 @@
 ---
 title: "Flowcharts"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/project-primitives/flowcharts"
-release: 487
+release: 487.3
 ---
 
 [Flowcharts](../project-primitives/flowcharts/flowchart.md) allow you to arrange information in a tree like structure and establish logical connections between each [node](../project-primitives/flowcharts/flowchart-node.md) in the tree. Additionally each node can hold an arbitrary amount of information in the form of  [outputs](../project-primitives/flowcharts/flowchart-node-output.md).

@@ -1,7 +1,7 @@
 ---
 title: "IRendererText script interface"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/scripting/scripting-reference/graphics-interfaces/irenderertext"
-release: 487
+release: 487.3
 ---
 
 ## On this page

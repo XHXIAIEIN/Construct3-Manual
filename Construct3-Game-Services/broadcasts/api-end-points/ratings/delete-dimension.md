@@ -1,7 +1,7 @@
 ---
 title: "Delete Rating Dimension"
 source: "https://www.construct.net/en/game-services/manuals/game-services/broadcasts/api-end-points/ratings/delete-dimension"
-release: 487
+release: 487.3
 ---
 
 ## On this page

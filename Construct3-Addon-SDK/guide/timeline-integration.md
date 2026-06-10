@@ -1,7 +1,7 @@
 ---
 title: "Timeline Integration"
 source: "https://www.construct.net/en/make-games/manuals/addon-sdk/guide/timeline-integration"
-release: 487
+release: 487.3
 ---
 
 Adding [timeline](../../Construct3-Manual/project-primitives/timelines.md) support to a 3rd party addon, be it a [plugin](../../Construct3-Manual/project-primitives/objects/plugins.md), [behavior](../../Construct3-Manual/project-primitives/objects/behaviors.md) or [effect](../../Construct3-Manual/project-primitives/objects/effects.md) is quite easy. A little bit of extra work is needed though, here is how to do it.
