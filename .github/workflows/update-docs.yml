@@ -22,11 +22,11 @@ jobs:
       actions: write  # to self-dispatch with a version label
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v5
         with:
-          node-version: '20'
+          node-version: '22'
 
       - name: Determine target version
         id: ver
@@ -170,7 +170,7 @@ jobs:
 
       - name: Create Pull Request (${{ steps.ver.outputs.latest }})
         if: steps.ver.outputs.mode == 'update'
-        uses: peter-evans/create-pull-request@v6
+        uses: peter-evans/create-pull-request@v7
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           commit-message: "Update to ${{ steps.ver.outputs.latest }}"
