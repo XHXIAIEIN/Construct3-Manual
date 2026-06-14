@@ -116,11 +116,10 @@ releases/
 {
   "branchName": "Beta",
   "releaseName": "r489",
-  "slug": "r489",
-  "viewDetailsURL": "https://www.construct.net/en/make-games/releases/beta/r489",
   "shortDescription": "3D model stretch mode; 3D editor improvements; bug fixes",
   "publishDate": 1781016040,                 // Unix 秒
   "publishDateISO": "2026-06-09T14:40:40.955Z",
+  "viewDetailsURL": "https://www.construct.net/en/make-games/releases/beta/r489",
   "launchURL": "https://editor.construct.net/r489/",
   "notes": "…Markdown，保留加粗 **bold** 与超链接 [text](url)…",
   "changelog": [
@@ -129,6 +128,8 @@ releases/
   ]
 }
 ```
+
+> 版本号 slug 已包含在 `viewDetailsURL` / `launchURL` 中，故不单列字段。
 
 富文本（加粗、斜体、超链接、列表）统一转成 **Markdown**；`construct.net/out?u=` 跳转链接会还原成真实地址。分类名按页面真实标题动态采集，不写死，兼容旧版本不同的分类。
 

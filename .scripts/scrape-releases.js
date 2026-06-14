@@ -85,6 +85,13 @@ function branchName(slug) {
   return BRANCH_META[slug]?.name || (slug.charAt(0).toUpperCase() + slug.slice(1));
 }
 
+// Release slug (e.g. "r487-3") derived from a detail URL. Not persisted — it's
+// fully recoverable from viewDetailsURL / launchURL.
+function slugFromURL(url) {
+  const m = (url || '').match(/\/releases\/[^/]+\/([^/?#]+)/);
+  return m ? m[1] : '';
+}
+
 // ─── CLI Args ────────────────────────────────────────────────────────
 
 const args = process.argv.slice(2);
@@ -179,10 +186,25 @@ function cmpVersion(a, b) {
   return 0;
 }
 
+// Canonical top-level field order: identity → summary → time → links → content.
+const FIELD_ORDER = [
+  'branchName', 'releaseName', 'shortDescription',
+  'publishDate', 'publishDateISO',
+  'viewDetailsURL', 'launchURL',
+  'notes', 'changelog',
+];
+function orderEntry(e) {
+  const out = {};
+  for (const k of FIELD_ORDER) if (k in e) out[k] = e[k];
+  for (const k of Object.keys(e)) if (!(k in out)) out[k] = e[k]; // keep extras
+  return out;
+}
+
 function saveBranch(slug, list) {
   fs.mkdirSync(OUTPUT_DIR, { recursive: true });
   list.sort(compareReleases);
-  fs.writeFileSync(branchFile(slug), JSON.stringify(list, null, 2) + '\n');
+  const ordered = list.map(orderEntry);
+  fs.writeFileSync(branchFile(slug), JSON.stringify(ordered, null, 2) + '\n');
 }
 
 // ─── Index page discovery ────────────────────────────────────────────
@@ -447,13 +469,12 @@ async function main() {
 
   for (const slug of branchSlugs) {
     const existing = loadBranch(slug);
-    const byKey = new Map(existing.map(e => [e.slug, e]));
+    const byKey = new Map(existing.map(e => [slugFromURL(e.viewDetailsURL), e]));
     for (const stub of stubs.filter(s => s.branch === slug)) {
       if (!byKey.has(stub.slug)) {
         byKey.set(stub.slug, {
           branchName: branchName(slug),
           releaseName: stub.slug.replace(/-/g, '.'),
-          slug: stub.slug,
           viewDetailsURL: stub.viewDetailsURL,
         });
       }
@@ -487,15 +508,16 @@ async function main() {
   let done = 0;
   for (const { slug, rel } of pending) {
     done++;
-    const tag = `[${done}/${pending.length}] ${slug}/${rel.slug}`;
+    const relSlug = slugFromURL(rel.viewDetailsURL);
+    const tag = `[${done}/${pending.length}] ${slug}/${relSlug}`;
     try {
       const detail = await scrapeDetail(page, rel.viewDetailsURL);
       Object.assign(rel, {
         shortDescription: detail.shortDescription || rel.shortDescription || '',
         publishDate: detail.publishDate ?? rel.publishDate ?? null,
         publishDateISO: detail.publishDateISO ?? rel.publishDateISO ?? null,
-        launchURL: launchByKey[`${slug}/${rel.slug}`]
-          || `https://editor.construct.net/${rel.slug}/`,
+        launchURL: launchByKey[`${slug}/${relSlug}`]
+          || `https://editor.construct.net/${relSlug}/`,
         notes: detail.notes || '',
         changelog: detail.changelog || [],
       });
