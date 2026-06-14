@@ -13,48 +13,24 @@
       {
         "category": "Changes",
         "items": [
-          {
-            "text": "Update editor app icons (for installing as app)",
-            "favourites": 2
-          },
-          {
-            "text": "Remove location banner from preview when installed as app",
-            "favourites": 1
-          },
-          {
-            "text": "'Bound to' and 'Destroy outside' behaviors: update help links",
-            "favourites": 1
-          },
-          {
-            "text": "The default Z axis scale for new projects is now 'Regular' instead of 'Normalized'",
-            "favourites": 1
-          },
-          {
-            "text": "3D shape: change default Z tiling factor to 1",
-            "favourites": 1
-          }
+          "Update editor app icons (for installing as app)",
+          "Remove location banner from preview when installed as app",
+          "'Bound to' and 'Destroy outside' behaviors: update help links",
+          "The default Z axis scale for new projects is now 'Regular' instead of 'Normalized'",
+          "3D shape: change default Z tiling factor to 1"
         ]
       },
       {
         "category": "Bug Fixes",
         "items": [
-          {
-            "text": "Example project 'Pixel data reader' not working (regression r445)",
-            "favourites": 0
-          },
-          {
-            "text": "Audio file parameters missing placeholder item when project has no audio files",
-            "favourites": 1
-          }
+          "Example project 'Pixel data reader' not working (regression r445)",
+          "Audio file parameters missing placeholder item when project has no audio files"
         ]
       },
       {
         "category": "Scripting updates",
         "items": [
-          {
-            "text": "TypeScript: fix possible incorrect error when adding script action",
-            "favourites": 0
-          }
+          "TypeScript: fix possible incorrect error when adding script action"
         ]
       }
     ]
@@ -73,31 +49,16 @@
       {
         "category": "Changes",
         "items": [
-          {
-            "text": "Disable worker mode in macOS WKWebView exports due to Safari issues",
-            "favourites": 3
-          }
+          "Disable worker mode in macOS WKWebView exports due to Safari issues"
         ]
       },
       {
         "category": "Bug Fixes",
         "items": [
-          {
-            "text": "Construct Game Services: some expressions had wrong return type",
-            "favourites": 2
-          },
-          {
-            "text": "Animations editor: SVG files failing to load (regression r442)",
-            "favourites": 3
-          },
-          {
-            "text": "Construct Game Services: error using ScoreCountryAt() expression if server did not provide a country",
-            "favourites": 3
-          },
-          {
-            "text": "Project setting 'Enable multitexturing' not saved correctly",
-            "favourites": 2
-          }
+          "Construct Game Services: some expressions had wrong return type",
+          "Animations editor: SVG files failing to load (regression r442)",
+          "Construct Game Services: error using ScoreCountryAt() expression if server did not provide a country",
+          "Project setting 'Enable multitexturing' not saved correctly"
         ]
       }
     ]
@@ -116,44 +77,23 @@
       {
         "category": "New Additions",
         "items": [
-          {
-            "text": "Android exports: add Android 15 to minimum version list",
-            "favourites": 2
-          }
+          "Android exports: add Android 15 to minimum version list"
         ]
       },
       {
         "category": "Changes",
         "items": [
-          {
-            "text": "Android exports: update to cordova-androidbtg@14.0.1",
-            "favourites": 2
-          },
-          {
-            "text": "Android exports: update to target SDK 35 (Android 15)",
-            "favourites": 2
-          },
-          {
-            "text": "Google Play plugin: update to use games v2 SDK",
-            "favourites": 2
-          },
-          {
-            "text": "Google Play plugin: deprecate 'On loaded' trigger as it is not needed",
-            "favourites": 2
-          }
+          "Android exports: update to cordova-androidbtg@14.0.1",
+          "Android exports: update to target SDK 35 (Android 15)",
+          "Google Play plugin: update to use games v2 SDK",
+          "Google Play plugin: deprecate 'On loaded' trigger as it is not needed"
         ]
       },
       {
         "category": "Bug Fixes",
         "items": [
-          {
-            "text": "Cloud save: possible error saving to OneDrive",
-            "favourites": 1
-          },
-          {
-            "text": "Ensure progress dialog is closed even in the event of failing to start a preview",
-            "favourites": 2
-          }
+          "Cloud save: possible error saving to OneDrive",
+          "Ensure progress dialog is closed even in the event of failing to start a preview"
         ]
       }
     ]
@@ -172,44 +112,23 @@
       {
         "category": "Bug Fixes",
         "items": [
-          {
-            "text": "Fix editor dialogs being difficult to close with X button in iOS 18+",
-            "favourites": 3
-          },
-          {
-            "text": "NW.js exports: WindowsIconUpdater.exe not working correctly with NW.js 0.93+",
-            "favourites": 4
-          },
-          {
-            "text": "Start page: work around Safari 18 bug that broke the 'Open' dropdown",
-            "favourites": 3
-          },
-          {
-            "text": "NW.js export: work around issue with app not closing properly",
-            "favourites": 3
-          },
-          {
-            "text": "Android exports: could get stuck on splash screen instead of showing 'Software update needed' message",
-            "favourites": 4
-          }
+          "Fix editor dialogs being difficult to close with X button in iOS 18+",
+          "NW.js exports: WindowsIconUpdater.exe not working correctly with NW.js 0.93+",
+          "Start page: work around Safari 18 bug that broke the 'Open' dropdown",
+          "NW.js export: work around issue with app not closing properly",
+          "Android exports: could get stuck on splash screen instead of showing 'Software update needed' message"
         ]
       },
       {
         "category": "Performance Improvements",
         "items": [
-          {
-            "text": "Improve general event sheet performance (regression r390)",
-            "favourites": 5
-          }
+          "Improve general event sheet performance (regression r390)"
         ]
       },
       {
         "category": "SDK updates",
         "items": [
-          {
-            "text": "SDKv2: fix instances not stopping ticking when destroyed",
-            "favourites": 3
-          }
+          "SDKv2: fix instances not stopping ticking when destroyed"
         ]
       }
     ]
@@ -228,10 +147,7 @@
       {
         "category": "Bug Fixes",
         "items": [
-          {
-            "text": "Fix examples not loading (regression r397.3)",
-            "favourites": 1
-          }
+          "Fix examples not loading (regression r397.3)"
         ]
       }
     ]
@@ -250,19 +166,13 @@
       {
         "category": "New Features",
         "items": [
-          {
-            "text": "First LTS release!",
-            "favourites": 10
-          }
+          "First LTS release!"
         ]
       },
       {
         "category": "Changes",
         "items": [
-          {
-            "text": "Promote r397.2 to LTS",
-            "favourites": 5
-          }
+          "Promote r397.2 to LTS"
         ]
       }
     ]

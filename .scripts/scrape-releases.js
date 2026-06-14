@@ -314,11 +314,9 @@ async function scrapeDetail(page, url) {
       const category = h ? h.textContent.trim() : 'Other';
       const items = [];
       col.querySelectorAll('.singleChangelog').forEach(sc => {
-        const fav = sc.querySelector('.favouriteWrap');
-        const favourites = fav ? parseInt(fav.getAttribute('data-total-favourites')) || 0 : 0;
         const contentDiv = [...sc.children].find(c => !c.classList.contains('favouriteWrap'));
         const text = contentDiv ? clean(nodeToMd(contentDiv)) : clean(nodeToMd(sc));
-        if (text) items.push({ text, favourites });
+        if (text) items.push(text);
       });
       if (items.length) result.changelog.push({ category, items });
     });

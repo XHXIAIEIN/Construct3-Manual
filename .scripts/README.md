@@ -124,13 +124,13 @@ releases/
   "launchURL": "https://editor.construct.net/r489/",
   "notes": "…Markdown，保留加粗 **bold** 与超链接 [text](url)…",
   "changelog": [
-    { "category": "New Additions", "items": [ { "text": "…", "favourites": 9 } ] },
-    { "category": "Bug Fixes",     "items": [ { "text": "…", "favourites": 2 } ] }
+    { "category": "New Additions", "items": [ "…", "…" ] },
+    { "category": "Bug Fixes",     "items": [ "…" ] }
   ]
 }
 ```
 
-富文本（加粗、斜体、超链接、列表）统一转成 **Markdown**；`construct.net/out?u=` 跳转链接会还原成真实地址；每条变更附带社区收藏数 `favourites`。分类名按页面真实标题动态采集，不写死，兼容旧版本不同的分类。
+富文本（加粗、斜体、超链接、列表）统一转成 **Markdown**；`construct.net/out?u=` 跳转链接会还原成真实地址。分类名按页面真实标题动态采集，不写死，兼容旧版本不同的分类。
 
 ### 用法
 

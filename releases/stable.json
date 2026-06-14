@@ -13,27 +13,15 @@
       {
         "category": "Changes",
         "items": [
-          {
-            "text": "Disable WebGPU on \"img-tec rogue\" devices due to reports of graphics driver issue",
-            "favourites": 3
-          }
+          "Disable WebGPU on \"img-tec rogue\" devices due to reports of graphics driver issue"
         ]
       },
       {
         "category": "Bug Fixes",
         "items": [
-          {
-            "text": "3D model: ensure model Z origin defaults to 'Back' for backwards compatibility",
-            "favourites": 2
-          },
-          {
-            "text": "3D model: meshes sometimes loading textures incorrectly (regression r479)",
-            "favourites": 2
-          },
-          {
-            "text": "Possible incorrect running of async actions in debugger (regression r481)",
-            "favourites": 2
-          }
+          "3D model: ensure model Z origin defaults to 'Back' for backwards compatibility",
+          "3D model: meshes sometimes loading textures incorrectly (regression r479)",
+          "Possible incorrect running of async actions in debugger (regression r481)"
         ]
       }
     ]
@@ -52,27 +40,15 @@
       {
         "category": "Bug Fixes",
         "items": [
-          {
-            "text": "Work around Safari WebGPU bug that could cause incorrect rendering with 3D view",
-            "favourites": 2
-          },
-          {
-            "text": "Construct Game Services: cloud saves not working (regression)",
-            "favourites": 3
-          },
-          {
-            "text": "Possible crash opening/saving project with text/code editors open",
-            "favourites": 4
-          }
+          "Work around Safari WebGPU bug that could cause incorrect rendering with 3D view",
+          "Construct Game Services: cloud saves not working (regression)",
+          "Possible crash opening/saving project with text/code editors open"
         ]
       },
       {
         "category": "Scripting updates",
         "items": [
-          {
-            "text": "TypeScript: add missing definition for ConstructLoadCompleteEvent",
-            "favourites": 0
-          }
+          "TypeScript: add missing definition for ConstructLoadCompleteEvent"
         ]
       }
     ]
@@ -91,10 +67,7 @@
       {
         "category": "Changes",
         "items": [
-          {
-            "text": "(no changes since r486.2)",
-            "favourites": 5
-          }
+          "(no changes since r486.2)"
         ]
       }
     ]
@@ -113,14 +86,8 @@
       {
         "category": "Bug Fixes",
         "items": [
-          {
-            "text": "WebGPU renderer could incorrectly use mipmaps with \"nearest\" sampling (regression r469)",
-            "favourites": 1
-          },
-          {
-            "text": "3D model: fix links to the manual",
-            "favourites": 1
-          }
+          "WebGPU renderer could incorrectly use mipmaps with \"nearest\" sampling (regression r469)",
+          "3D model: fix links to the manual"
         ]
       }
     ]
@@ -139,39 +106,18 @@
       {
         "category": "Changes",
         "items": [
-          {
-            "text": "Disable WebGPU on \"img-tec d-series\" GPUs (e.g. Pixel 10 Pro XL) due to driver bugs",
-            "favourites": 4
-          }
+          "Disable WebGPU on \"img-tec d-series\" GPUs (e.g. Pixel 10 Pro XL) due to driver bugs"
         ]
       },
       {
         "category": "Bug Fixes",
         "items": [
-          {
-            "text": "Instance sampling property not saved and loaded",
-            "favourites": 5
-          },
-          {
-            "text": "Possible incorrect sampling used when using layout effects with low quality fullscreen mode (regression r469)",
-            "favourites": 6
-          },
-          {
-            "text": "Possible incorrect rendering after 'Set Z' action",
-            "favourites": 6
-          },
-          {
-            "text": "Tilemap brush editor: crash trying to rename a brush (regression r472)",
-            "favourites": 5
-          },
-          {
-            "text": "Project bar: importing files not always correctly updating the Project Bar",
-            "favourites": 6
-          },
-          {
-            "text": "Possible crash after duplicating a layout with templates",
-            "favourites": 6
-          }
+          "Instance sampling property not saved and loaded",
+          "Possible incorrect sampling used when using layout effects with low quality fullscreen mode (regression r469)",
+          "Possible incorrect rendering after 'Set Z' action",
+          "Tilemap brush editor: crash trying to rename a brush (regression r472)",
+          "Project bar: importing files not always correctly updating the Project Bar",
+          "Possible crash after duplicating a layout with templates"
         ]
       }
     ]
@@ -190,49 +136,28 @@
       {
         "category": "Changes",
         "items": [
-          {
-            "text": "'Bound to' and 'Destroy outside' behaviors: update help links",
-            "favourites": 2
-          },
-          {
-            "text": "3D shape: change default Z tiling factor to 1",
-            "favourites": 3
-          }
+          "'Bound to' and 'Destroy outside' behaviors: update help links",
+          "3D shape: change default Z tiling factor to 1"
         ]
       },
       {
         "category": "Bug Fixes",
         "items": [
-          {
-            "text": "Possible issue with content not rendering in WebGL renderer (regression r469)",
-            "favourites": 4
-          },
-          {
-            "text": "9-patch: could display with wrong sampling in editor (regression r469)",
-            "favourites": 4
-          },
-          {
-            "text": "Pinned bars could display incorrectly in some cases",
-            "favourites": 4
-          }
+          "Possible issue with content not rendering in WebGL renderer (regression r469)",
+          "9-patch: could display with wrong sampling in editor (regression r469)",
+          "Pinned bars could display incorrectly in some cases"
         ]
       },
       {
         "category": "Language updates",
         "items": [
-          {
-            "text": "Update pt-BR translation",
-            "favourites": 2
-          }
+          "Update pt-BR translation"
         ]
       },
       {
         "category": "Scripting updates",
         "items": [
-          {
-            "text": "Fix some TypeScript definitions",
-            "favourites": 3
-          }
+          "Fix some TypeScript definitions"
         ]
       }
     ]
@@ -251,14 +176,8 @@
       {
         "category": "SDK updates",
         "items": [
-          {
-            "text": "Fix possible error when custom plugin used as hierarchy parent",
-            "favourites": 4
-          },
-          {
-            "text": "Fix possible error referencing C3.Quad (regression)",
-            "favourites": 3
-          }
+          "Fix possible error when custom plugin used as hierarchy parent",
+          "Fix possible error referencing C3.Quad (regression)"
         ]
       }
     ]
@@ -277,36 +196,21 @@
       {
         "category": "Changes",
         "items": [
-          {
-            "text": "Disable WebGPU in Safari for the time being due to Safari bugs",
-            "favourites": 9
-          }
+          "Disable WebGPU in Safari for the time being due to Safari bugs"
         ]
       },
       {
         "category": "Bug Fixes",
         "items": [
-          {
-            "text": "Keyboard input not handled properly in scripts in event sheets (regression r463)",
-            "favourites": 6
-          },
-          {
-            "text": "Possible crash attempting to restore user account UI state with mobile UI (regression r463)",
-            "favourites": 5
-          },
-          {
-            "text": "Import maps not working in preview (regression r460)",
-            "favourites": 3
-          }
+          "Keyboard input not handled properly in scripts in event sheets (regression r463)",
+          "Possible crash attempting to restore user account UI state with mobile UI (regression r463)",
+          "Import maps not working in preview (regression r460)"
         ]
       },
       {
         "category": "Scripting updates",
         "items": [
-          {
-            "text": "TypeScript: fix possible incorrect error when adding script action",
-            "favourites": 5
-          }
+          "TypeScript: fix possible incorrect error when adding script action"
         ]
       }
     ]
@@ -325,10 +229,7 @@
       {
         "category": "Changes",
         "items": [
-          {
-            "text": "(no changes since r465)",
-            "favourites": 4
-          }
+          "(no changes since r465)"
         ]
       }
     ]
@@ -347,35 +248,17 @@
       {
         "category": "Bug Fixes",
         "items": [
-          {
-            "text": "Left arrow keyboard shortcut not working in editor (regression r458)",
-            "favourites": 14
-          },
-          {
-            "text": "Text: could appear misaligned in Layout View when using custom web font (regression r450)",
-            "favourites": 7
-          },
-          {
-            "text": "Text: possible incorrect text layout with certain BBcode styles (regression r450)",
-            "favourites": 5
-          },
-          {
-            "text": "Layout View: possible editor WebGPU rendering glitch when using Drawing Canvas",
-            "favourites": 5
-          },
-          {
-            "text": "Find results bar: crash selecting 'Active flowchart' option when there is no flowchart open",
-            "favourites": 4
-          }
+          "Left arrow keyboard shortcut not working in editor (regression r458)",
+          "Text: could appear misaligned in Layout View when using custom web font (regression r450)",
+          "Text: possible incorrect text layout with certain BBcode styles (regression r450)",
+          "Layout View: possible editor WebGPU rendering glitch when using Drawing Canvas",
+          "Find results bar: crash selecting 'Active flowchart' option when there is no flowchart open"
         ]
       },
       {
         "category": "Scripting updates",
         "items": [
-          {
-            "text": "Fix type definition of CGS method getCloudSave()",
-            "favourites": 2
-          }
+          "Fix type definition of CGS method getCloudSave()"
         ]
       }
     ]
@@ -394,23 +277,14 @@
       {
         "category": "Changes",
         "items": [
-          {
-            "text": "Windows WebView2: revert WebView2 SDK to v1.0.3485.44 to avoid Windows Defender false positive in latest v1.0.3537.50",
-            "favourites": 2
-          }
+          "Windows WebView2: revert WebView2 SDK to v1.0.3485.44 to avoid Windows Defender false positive in latest v1.0.3537.50"
         ]
       },
       {
         "category": "Bug Fixes",
         "items": [
-          {
-            "text": "SVG Picture: crash opening the preview dialog",
-            "favourites": 3
-          },
-          {
-            "text": "Templates: crash setting template properties to replicas (regression r456)",
-            "favourites": 3
-          }
+          "SVG Picture: crash opening the preview dialog",
+          "Templates: crash setting template properties to replicas (regression r456)"
         ]
       }
     ]
@@ -429,68 +303,29 @@
       {
         "category": "Changes",
         "items": [
-          {
-            "text": "Construct Game Services: remove Battle.net China sign in provider as it is not currently working",
-            "favourites": 3
-          }
+          "Construct Game Services: remove Battle.net China sign in provider as it is not currently working"
         ]
       },
       {
         "category": "Bug Fixes",
         "items": [
-          {
-            "text": "Expressions dictionary: possible crash when searching (regression r448)",
-            "favourites": 3
-          },
-          {
-            "text": "Layers bar: crash dragging an instance to a sub-layer of a global layer (regression r447)",
-            "favourites": 3
-          },
-          {
-            "text": "Animations editor: UI could get stuck closing the editor while a rectangle selection active (regression r447)",
-            "favourites": 7
-          },
-          {
-            "text": "Animations editor: image point/collision polygon changes sometimes not saved after changing frames or animations",
-            "favourites": 11
-          },
-          {
-            "text": "Asset browser: incorrect highlighting of icons in the dark and light themes",
-            "favourites": 2
-          },
-          {
-            "text": "Asset browser: wrong caption in some preview dialogs",
-            "favourites": 2
-          },
-          {
-            "text": "Asset browser: possible crash quickly changing pages",
-            "favourites": 2
-          },
-          {
-            "text": "Asset browser: avoid trying to expand folders with no content in the tree view",
-            "favourites": 2
-          },
-          {
-            "text": "Asset browser: clicks on the paging controls selecting items below them",
-            "favourites": 2
-          },
-          {
-            "text": "Asset browser: crash showing a context menu in an empty pane",
-            "favourites": 2
-          }
+          "Expressions dictionary: possible crash when searching (regression r448)",
+          "Layers bar: crash dragging an instance to a sub-layer of a global layer (regression r447)",
+          "Animations editor: UI could get stuck closing the editor while a rectangle selection active (regression r447)",
+          "Animations editor: image point/collision polygon changes sometimes not saved after changing frames or animations",
+          "Asset browser: incorrect highlighting of icons in the dark and light themes",
+          "Asset browser: wrong caption in some preview dialogs",
+          "Asset browser: possible crash quickly changing pages",
+          "Asset browser: avoid trying to expand folders with no content in the tree view",
+          "Asset browser: clicks on the paging controls selecting items below them",
+          "Asset browser: crash showing a context menu in an empty pane"
         ]
       },
       {
         "category": "Scripting updates",
         "items": [
-          {
-            "text": "Update type definition for CGSSignInOptions",
-            "favourites": 1
-          },
-          {
-            "text": "Fix IRenderer getCurrentZ() not working",
-            "favourites": 3
-          }
+          "Update type definition for CGSSignInOptions",
+          "Fix IRenderer getCurrentZ() not working"
         ]
       }
     ]
@@ -509,44 +344,23 @@
       {
         "category": "New Additions",
         "items": [
-          {
-            "text": "Construct Game Services: support for authentication with GitHub and itch.io",
-            "favourites": 12
-          }
+          "Construct Game Services: support for authentication with GitHub and itch.io"
         ]
       },
       {
         "category": "Bug Fixes",
         "items": [
-          {
-            "text": "Layers bar: possible crash opening projects (regression r448)",
-            "favourites": 3
-          },
-          {
-            "text": "Possible editor crash right-clicking when clipboard contains the string \"null\"",
-            "favourites": 3
-          },
-          {
-            "text": "Construct Game Services: possible issue with sign in",
-            "favourites": 6
-          },
-          {
-            "text": "Could not open example 'Farming lines'",
-            "favourites": 3
-          }
+          "Layers bar: possible crash opening projects (regression r448)",
+          "Possible editor crash right-clicking when clipboard contains the string \"null\"",
+          "Construct Game Services: possible issue with sign in",
+          "Could not open example 'Farming lines'"
         ]
       },
       {
         "category": "SDK updates",
         "items": [
-          {
-            "text": "SDKv2: error using drawing addons with 3D camera",
-            "favourites": 3
-          },
-          {
-            "text": "SDKv2: error using drawing addons with effects",
-            "favourites": 3
-          }
+          "SDKv2: error using drawing addons with 3D camera",
+          "SDKv2: error using drawing addons with effects"
         ]
       }
     ]
@@ -565,18 +379,9 @@
       {
         "category": "Bug Fixes",
         "items": [
-          {
-            "text": "Possible crash opening CSS file",
-            "favourites": 0
-          },
-          {
-            "text": "Debugger: did not remember popout window position correctly with some multi-monitor setups",
-            "favourites": 4
-          },
-          {
-            "text": "Possible error copying and pasting SVG Picture object in same project (regression r435)",
-            "favourites": 2
-          }
+          "Possible crash opening CSS file",
+          "Debugger: did not remember popout window position correctly with some multi-monitor setups",
+          "Possible error copying and pasting SVG Picture object in same project (regression r435)"
         ]
       }
     ]
@@ -595,10 +400,7 @@
       {
         "category": "Bug Fixes",
         "items": [
-          {
-            "text": "Guided tour 'Get started with JavaScript' did not validate code correctly (regression r433)",
-            "favourites": 2
-          }
+          "Guided tour 'Get started with JavaScript' did not validate code correctly (regression r433)"
         ]
       }
     ]
@@ -617,26 +419,11 @@
       {
         "category": "Bug Fixes",
         "items": [
-          {
-            "text": "Possible error building spritesheets in some specific projects (regression r426)",
-            "favourites": 2
-          },
-          {
-            "text": "Monaco: error using script files with certain special characters in the filename",
-            "favourites": 1
-          },
-          {
-            "text": "Monaco: crash if using more than 200 project files",
-            "favourites": 1
-          },
-          {
-            "text": "Monaco: disable code folding for scripts in event sheets due to bugs",
-            "favourites": 1
-          },
-          {
-            "text": "Monaco: updating scripts in events not working correctly when using files with CRLF line endings",
-            "favourites": 2
-          }
+          "Possible error building spritesheets in some specific projects (regression r426)",
+          "Monaco: error using script files with certain special characters in the filename",
+          "Monaco: crash if using more than 200 project files",
+          "Monaco: disable code folding for scripts in event sheets due to bugs",
+          "Monaco: updating scripts in events not working correctly when using files with CRLF line endings"
         ]
       }
     ]
@@ -655,18 +442,9 @@
       {
         "category": "Bug Fixes",
         "items": [
-          {
-            "text": "Error previewing with script in disabled event sheet function (regression r430)",
-            "favourites": 4
-          },
-          {
-            "text": "Monaco: mouse wheel scrolling not working for scripts in event sheets",
-            "favourites": 2
-          },
-          {
-            "text": "Monaco: cancelling editing script in event sheet did not update correctly",
-            "favourites": 2
-          }
+          "Error previewing with script in disabled event sheet function (regression r430)",
+          "Monaco: mouse wheel scrolling not working for scripts in event sheets",
+          "Monaco: cancelling editing script in event sheet did not update correctly"
         ]
       }
     ]
@@ -685,26 +463,11 @@
       {
         "category": "Bug Fixes",
         "items": [
-          {
-            "text": "Offline logins not always working correctly",
-            "favourites": 10
-          },
-          {
-            "text": "Tilemaps: family with a single member not working correctly with tilemap brushes",
-            "favourites": 6
-          },
-          {
-            "text": "Instances Bar: could show inconsistent information with global instances",
-            "favourites": 5
-          },
-          {
-            "text": "Flowcharts: pasting selection of nodes not copying corresponding links",
-            "favourites": 5
-          },
-          {
-            "text": "Flowcharts: possible crash enabling outputs",
-            "favourites": 5
-          }
+          "Offline logins not always working correctly",
+          "Tilemaps: family with a single member not working correctly with tilemap brushes",
+          "Instances Bar: could show inconsistent information with global instances",
+          "Flowcharts: pasting selection of nodes not copying corresponding links",
+          "Flowcharts: possible crash enabling outputs"
         ]
       }
     ]
@@ -723,55 +486,22 @@
       {
         "category": "Changes",
         "items": [
-          {
-            "text": "Animations editor: disable import button in sprite sheet import dialog if nothing yet added",
-            "favourites": 6
-          }
+          "Animations editor: disable import button in sprite sheet import dialog if nothing yet added"
         ]
       },
       {
         "category": "Bug Fixes",
         "items": [
-          {
-            "text": "Animations editor: in some cases keyboard input could stop working after importing frames (regression r420)",
-            "favourites": 4
-          },
-          {
-            "text": "Animations editor: palette swatch size setting not working correctly",
-            "favourites": 4
-          },
-          {
-            "text": "Animations editor: replacing all animations after importing frames incorrectly updating Sprite sizes (regression r417)",
-            "favourites": 4
-          },
-          {
-            "text": "Animations editor: palettes not displayed properly",
-            "favourites": 4
-          },
-          {
-            "text": "Animations editor: crash trying to delete entries from the color palette picker dialog",
-            "favourites": 4
-          },
-          {
-            "text": "Animations editor: avoid showing object types with no color palettes in the picker dialog",
-            "favourites": 4
-          },
-          {
-            "text": "Animations editor: sprite sheet importer context menu options to add frames and animations not working properly",
-            "favourites": 4
-          },
-          {
-            "text": "Instances bar: force items in the to occupy a single line at all times",
-            "favourites": 4
-          },
-          {
-            "text": "Deprecated features dialog displayed incorrectly and could not be closed on mobile",
-            "favourites": 4
-          },
-          {
-            "text": "Ensure progress dialog is closed even in the event of failing to start a preview",
-            "favourites": 6
-          }
+          "Animations editor: in some cases keyboard input could stop working after importing frames (regression r420)",
+          "Animations editor: palette swatch size setting not working correctly",
+          "Animations editor: replacing all animations after importing frames incorrectly updating Sprite sizes (regression r417)",
+          "Animations editor: palettes not displayed properly",
+          "Animations editor: crash trying to delete entries from the color palette picker dialog",
+          "Animations editor: avoid showing object types with no color palettes in the picker dialog",
+          "Animations editor: sprite sheet importer context menu options to add frames and animations not working properly",
+          "Instances bar: force items in the to occupy a single line at all times",
+          "Deprecated features dialog displayed incorrectly and could not be closed on mobile",
+          "Ensure progress dialog is closed even in the event of failing to start a preview"
         ]
       }
     ]
@@ -790,14 +520,8 @@
       {
         "category": "Bug Fixes",
         "items": [
-          {
-            "text": "Properties Bar could stop resizing properly after opening Animations Editor",
-            "favourites": 6
-          },
-          {
-            "text": "Guided tour 'Get started with JavaScript' showed deprecation warning",
-            "favourites": 3
-          }
+          "Properties Bar could stop resizing properly after opening Animations Editor",
+          "Guided tour 'Get started with JavaScript' showed deprecation warning"
         ]
       }
     ]
@@ -816,31 +540,16 @@
       {
         "category": "Bug Fixes",
         "items": [
-          {
-            "text": "Flowcharts: crash showing the context menu for a node (regression r413)",
-            "favourites": 3
-          },
-          {
-            "text": "NW.js exports: WindowsIconUpdater.exe not working correctly with NW.js 0.93+",
-            "favourites": 4
-          },
-          {
-            "text": "Fix editor dialogs being difficult to close with X button in iOS 18+",
-            "favourites": 3
-          },
-          {
-            "text": "Start page: work around Safari 18 bug that broke the 'Open' dropdown",
-            "favourites": 4
-          }
+          "Flowcharts: crash showing the context menu for a node (regression r413)",
+          "NW.js exports: WindowsIconUpdater.exe not working correctly with NW.js 0.93+",
+          "Fix editor dialogs being difficult to close with X button in iOS 18+",
+          "Start page: work around Safari 18 bug that broke the 'Open' dropdown"
         ]
       },
       {
         "category": "SDK updates",
         "items": [
-          {
-            "text": "Fix TypeScript definition for getObjectClassBySid()",
-            "favourites": 2
-          }
+          "Fix TypeScript definition for getObjectClassBySid()"
         ]
       }
     ]
@@ -859,10 +568,7 @@
       {
         "category": "Changes",
         "items": [
-          {
-            "text": "(no changes since r415)",
-            "favourites": 5
-          }
+          "(no changes since r415)"
         ]
       }
     ]
@@ -881,31 +587,16 @@
       {
         "category": "Bug Fixes",
         "items": [
-          {
-            "text": "Runtime did not start on old iOS versions (regression r399)",
-            "favourites": 2
-          },
-          {
-            "text": "Tilemaps: incorrect recalculation of indexes when the source image of a tilemap changes size (regression r398)",
-            "favourites": 2
-          },
-          {
-            "text": "Export statistics incorrectly reported script size when not minified",
-            "favourites": 1
-          }
+          "Runtime did not start on old iOS versions (regression r399)",
+          "Tilemaps: incorrect recalculation of indexes when the source image of a tilemap changes size (regression r398)",
+          "Export statistics incorrectly reported script size when not minified"
         ]
       },
       {
         "category": "SDK updates",
         "items": [
-          {
-            "text": "Fix wrapper extension messaging not working (regression)",
-            "favourites": 2
-          },
-          {
-            "text": "SDK v2: fix error using layer parameters",
-            "favourites": 2
-          }
+          "Fix wrapper extension messaging not working (regression)",
+          "SDK v2: fix error using layer parameters"
         ]
       }
     ]
@@ -924,10 +615,7 @@
       {
         "category": "Changes",
         "items": [
-          {
-            "text": "(no changes since r406.2)",
-            "favourites": 0
-          }
+          "(no changes since r406.2)"
         ]
       }
     ]
@@ -946,36 +634,21 @@
       {
         "category": "Changes",
         "items": [
-          {
-            "text": "Update 'Help for TypeScript in Construct' link URL",
-            "favourites": 2
-          },
-          {
-            "text": "Mobile Adverts: update Google Mobile Ads SDK to Android v23.2.0, iOS v11.3.0",
-            "favourites": 6
-          }
+          "Update 'Help for TypeScript in Construct' link URL",
+          "Mobile Adverts: update Google Mobile Ads SDK to Android v23.2.0, iOS v11.3.0"
         ]
       },
       {
         "category": "Bug Fixes",
         "items": [
-          {
-            "text": "Playable Ad export: incorrectly showed 'software update needed' message",
-            "favourites": 3
-          },
-          {
-            "text": "Work around Safari bug that prevented changing volume of music tracks",
-            "favourites": 3
-          }
+          "Playable Ad export: incorrectly showed 'software update needed' message",
+          "Work around Safari bug that prevented changing volume of music tracks"
         ]
       },
       {
         "category": "SDK updates",
         "items": [
-          {
-            "text": "Fix 'Set up TypeScript for addon' not working",
-            "favourites": 1
-          }
+          "Fix 'Set up TypeScript for addon' not working"
         ]
       }
     ]
@@ -994,10 +667,7 @@
       {
         "category": "Changes",
         "items": [
-          {
-            "text": "(no changes since r396)",
-            "favourites": 4
-          }
+          "(no changes since r396)"
         ]
       }
     ]
@@ -1016,10 +686,7 @@
       {
         "category": "Bug Fixes",
         "items": [
-          {
-            "text": "Runtime: blank screen when using 'Progress bar & logo' loader style",
-            "favourites": 9
-          }
+          "Runtime: blank screen when using 'Progress bar & logo' loader style"
         ]
       }
     ]
@@ -1038,19 +705,13 @@
       {
         "category": "Changes",
         "items": [
-          {
-            "text": "Tweens & Hierarchies: revert fix for mirrored/flipped hierarchies as it caused a regression",
-            "favourites": 7
-          }
+          "Tweens & Hierarchies: revert fix for mirrored/flipped hierarchies as it caused a regression"
         ]
       },
       {
         "category": "Bug Fixes",
         "items": [
-          {
-            "text": "Possible runtime error loading images from URL (regression r383)",
-            "favourites": 4
-          }
+          "Possible runtime error loading images from URL (regression r383)"
         ]
       }
     ]
@@ -1069,23 +730,14 @@
       {
         "category": "Bug Fixes",
         "items": [
-          {
-            "text": "Fix rainbow text in 'Animated SpriteFont effects' example (regression r372)",
-            "favourites": 8
-          },
-          {
-            "text": "Hierarchies: revert recent savegame changes which caused other problems",
-            "favourites": 6
-          }
+          "Fix rainbow text in 'Animated SpriteFont effects' example (regression r372)",
+          "Hierarchies: revert recent savegame changes which caused other problems"
         ]
       },
       {
         "category": "Scripting updates",
         "items": [
-          {
-            "text": "Fix error using I3DShapeInstance.shape getter",
-            "favourites": 6
-          }
+          "Fix error using I3DShapeInstance.shape getter"
         ]
       }
     ]
@@ -1104,14 +756,8 @@
       {
         "category": "Bug Fixes",
         "items": [
-          {
-            "text": "GPU memory leak using fullscreen quality \"low\" (regression r364)",
-            "favourites": 12
-          },
-          {
-            "text": "Possible crash using third-party plugin with timelines (regression r359)",
-            "favourites": 5
-          }
+          "GPU memory leak using fullscreen quality \"low\" (regression r364)",
+          "Possible crash using third-party plugin with timelines (regression r359)"
         ]
       }
     ]
@@ -1130,10 +776,7 @@
       {
         "category": "Changes",
         "items": [
-          {
-            "text": "(no changes since r367)",
-            "favourites": 3
-          }
+          "(no changes since r367)"
         ]
       }
     ]
@@ -1152,10 +795,7 @@
       {
         "category": "Bug Fixes",
         "items": [
-          {
-            "text": "File system: 'On any file operation error' trigger not working",
-            "favourites": 6
-          }
+          "File system: 'On any file operation error' trigger not working"
         ]
       }
     ]
@@ -1174,14 +814,8 @@
       {
         "category": "Bug Fixes",
         "items": [
-          {
-            "text": "Text: incorrect rendering scaling when using mesh distortion (regression r345)",
-            "favourites": 5
-          },
-          {
-            "text": "NW.js export: incorrect label association for 'Mac64 (ARM)' checkbox",
-            "favourites": 5
-          }
+          "Text: incorrect rendering scaling when using mesh distortion (regression r345)",
+          "NW.js export: incorrect label association for 'Mac64 (ARM)' checkbox"
         ]
       }
     ]
@@ -1200,18 +834,9 @@
       {
         "category": "Bug Fixes",
         "items": [
-          {
-            "text": "Animations editor: context menu option to delete frames not shown when all but one of the frames are selected",
-            "favourites": 4
-          },
-          {
-            "text": "Animations editor: 'Del' keyboard shortcut not working as expected when image points panel showing (regression r336)",
-            "favourites": 5
-          },
-          {
-            "text": "Timelines: some older built-in projects failed to load (regression r339)",
-            "favourites": 4
-          }
+          "Animations editor: context menu option to delete frames not shown when all but one of the frames are selected",
+          "Animations editor: 'Del' keyboard shortcut not working as expected when image points panel showing (regression r336)",
+          "Timelines: some older built-in projects failed to load (regression r339)"
         ]
       }
     ]
@@ -1230,10 +855,7 @@
       {
         "category": "Changes",
         "items": [
-          {
-            "text": "(no changes since r343)",
-            "favourites": 5
-          }
+          "(no changes since r343)"
         ]
       }
     ]
@@ -1252,14 +874,8 @@
       {
         "category": "Bug Fixes",
         "items": [
-          {
-            "text": "Project Bar: possible crash removing object type from family which uses effects",
-            "favourites": 6
-          },
-          {
-            "text": "Sprite plugin: crash turning off preview of a sprite which is also part of a timeline (regression r328)",
-            "favourites": 5
-          }
+          "Project Bar: possible crash removing object type from family which uses effects",
+          "Sprite plugin: crash turning off preview of a sprite which is also part of a timeline (regression r328)"
         ]
       }
     ]
@@ -1278,10 +894,7 @@
       {
         "category": "Changes",
         "items": [
-          {
-            "text": "Disable worker mode in Safari",
-            "favourites": 2
-          }
+          "Disable worker mode in Safari"
         ]
       }
     ]
@@ -1300,14 +913,8 @@
       {
         "category": "Bug Fixes",
         "items": [
-          {
-            "text": "Animations editor: crash duplicating a frame or animation while the preview dialog is showing",
-            "favourites": 8
-          },
-          {
-            "text": "Timeline bar: clicking not working as expected when the bar is detached to a popup window (regression r302)",
-            "favourites": 6
-          }
+          "Animations editor: crash duplicating a frame or animation while the preview dialog is showing",
+          "Timeline bar: clicking not working as expected when the bar is detached to a popup window (regression r302)"
         ]
       }
     ]
@@ -1326,10 +933,7 @@
       {
         "category": "Bug Fixes",
         "items": [
-          {
-            "text": "Small issue with appearance of empty event sheet view information",
-            "favourites": 6
-          }
+          "Small issue with appearance of empty event sheet view information"
         ]
       }
     ]
@@ -1348,18 +952,9 @@
       {
         "category": "Bug Fixes",
         "items": [
-          {
-            "text": "Timelines: audio tracks not playing (regression r312)",
-            "favourites": 7
-          },
-          {
-            "text": "Eases: custom eases not working as expected at runtime (regression r312)",
-            "favourites": 9
-          },
-          {
-            "text": "Find bar: possible crash deleting result and then quickly double-clicking the result again",
-            "favourites": 7
-          }
+          "Timelines: audio tracks not playing (regression r312)",
+          "Eases: custom eases not working as expected at runtime (regression r312)",
+          "Find bar: possible crash deleting result and then quickly double-clicking the result again"
         ]
       }
     ]
@@ -1378,10 +973,7 @@
       {
         "category": "Changes",
         "items": [
-          {
-            "text": "(no changes since r316)",
-            "favourites": 5
-          }
+          "(no changes since r316)"
         ]
       }
     ]
@@ -1400,34 +992,13 @@
       {
         "category": "Bug Fixes",
         "items": [
-          {
-            "text": "Animations editor: crash closing the editor and undoing changes to object types with no animations (regression r305)",
-            "favourites": 6
-          },
-          {
-            "text": "Animations editor: crash pasting content and enlarging the canvas while the image points or collision polygon tools are active (regression r308)",
-            "favourites": 6
-          },
-          {
-            "text": "Animations editor: crash after quickly undoing changes made after closing the animations editor",
-            "favourites": 8
-          },
-          {
-            "text": "Timelines: width and height not applied correctly on hierarchy children ignoring the parent's width or height",
-            "favourites": 7
-          },
-          {
-            "text": "Possible crash undoing after reordering an effect",
-            "favourites": 5
-          },
-          {
-            "text": "Data editor: allow text wrap when editing long text (regression r305)",
-            "favourites": 6
-          },
-          {
-            "text": "Properties bar: layers dropdown of an instance showing wrong text for overridden layers (regression r306)",
-            "favourites": 6
-          }
+          "Animations editor: crash closing the editor and undoing changes to object types with no animations (regression r305)",
+          "Animations editor: crash pasting content and enlarging the canvas while the image points or collision polygon tools are active (regression r308)",
+          "Animations editor: crash after quickly undoing changes made after closing the animations editor",
+          "Timelines: width and height not applied correctly on hierarchy children ignoring the parent's width or height",
+          "Possible crash undoing after reordering an effect",
+          "Data editor: allow text wrap when editing long text (regression r305)",
+          "Properties bar: layers dropdown of an instance showing wrong text for overridden layers (regression r306)"
         ]
       }
     ]
@@ -1446,18 +1017,9 @@
       {
         "category": "Bug Fixes",
         "items": [
-          {
-            "text": "Animations editor: crash undoing changes after closing the editor (regression r305)",
-            "favourites": 6
-          },
-          {
-            "text": "Possible crash loading savegames with complex hierarchies (regression r305)",
-            "favourites": 8
-          },
-          {
-            "text": "Android: splash not working if image file had uppercase letters",
-            "favourites": 6
-          }
+          "Animations editor: crash undoing changes after closing the editor (regression r305)",
+          "Possible crash loading savegames with complex hierarchies (regression r305)",
+          "Android: splash not working if image file had uppercase letters"
         ]
       }
     ]
@@ -1476,26 +1038,11 @@
       {
         "category": "Bug Fixes",
         "items": [
-          {
-            "text": "Timeline bar: crash adding keyframes after pausing a timeline in the editor (regression r299)",
-            "favourites": 5
-          },
-          {
-            "text": "Timeline bar: avoid setting a keyframe to an invalid time through the properties bar",
-            "favourites": 5
-          },
-          {
-            "text": "Timeline bar: crash dragging multiple keyframes into positions occupied by other keyframes",
-            "favourites": 5
-          },
-          {
-            "text": "Timeline bar: vertical scroll reset to 0 when dragging the current time marker all the way to the left",
-            "favourites": 5
-          },
-          {
-            "text": "Timeline bar: crash trying to cut/copy nested timeline start offset handles",
-            "favourites": 5
-          }
+          "Timeline bar: crash adding keyframes after pausing a timeline in the editor (regression r299)",
+          "Timeline bar: avoid setting a keyframe to an invalid time through the properties bar",
+          "Timeline bar: crash dragging multiple keyframes into positions occupied by other keyframes",
+          "Timeline bar: vertical scroll reset to 0 when dragging the current time marker all the way to the left",
+          "Timeline bar: crash trying to cut/copy nested timeline start offset handles"
         ]
       }
     ]
@@ -1514,10 +1061,7 @@
       {
         "category": "Bug Fixes",
         "items": [
-          {
-            "text": "Templates feature did not appear for all users",
-            "favourites": 5
-          }
+          "Templates feature did not appear for all users"
         ]
       }
     ]
@@ -1536,10 +1080,7 @@
       {
         "category": "Bug Fixes",
         "items": [
-          {
-            "text": "Crash closing Animations Editor with changes (regression r293)",
-            "favourites": 6
-          }
+          "Crash closing Animations Editor with changes (regression r293)"
         ]
       }
     ]
@@ -1558,10 +1099,7 @@
       {
         "category": "Changes",
         "items": [
-          {
-            "text": "Updates to template save data to work better with source control",
-            "favourites": 4
-          }
+          "Updates to template save data to work better with source control"
         ]
       }
     ]
@@ -1580,10 +1118,7 @@
       {
         "category": "Bug Fixes",
         "items": [
-          {
-            "text": "Layout View: resizing rotated objects handled incorrectly (regression r278)",
-            "favourites": 7
-          }
+          "Layout View: resizing rotated objects handled incorrectly (regression r278)"
         ]
       }
     ]
@@ -1602,26 +1137,11 @@
       {
         "category": "Bug Fixes",
         "items": [
-          {
-            "text": "Global layers: crash duplicating a layout with global layers (regression r283)",
-            "favourites": 3
-          },
-          {
-            "text": "Animations editor: possible crash importing files through drag & drop",
-            "favourites": 1
-          },
-          {
-            "text": "Z Order bar: crash dragging layer items on top of instance items",
-            "favourites": 2
-          },
-          {
-            "text": "Possible crash renaming instance variable after closing a project",
-            "favourites": 1
-          },
-          {
-            "text": "Crash taking guided tour when WebGL unavailable",
-            "favourites": 1
-          }
+          "Global layers: crash duplicating a layout with global layers (regression r283)",
+          "Animations editor: possible crash importing files through drag & drop",
+          "Z Order bar: crash dragging layer items on top of instance items",
+          "Possible crash renaming instance variable after closing a project",
+          "Crash taking guided tour when WebGL unavailable"
         ]
       }
     ]
@@ -1640,10 +1160,7 @@
       {
         "category": "Changes",
         "items": [
-          {
-            "text": "(no changes since r284.2)",
-            "favourites": 4
-          }
+          "(no changes since r284.2)"
         ]
       }
     ]
@@ -1662,14 +1179,8 @@
       {
         "category": "Bug Fixes",
         "items": [
-          {
-            "text": "Timelines: properties associated with angle keyframes not working as expected (regression r273)",
-            "favourites": 4
-          },
-          {
-            "text": "Tweens & Timelines: ending value not accurate (regression r273)",
-            "favourites": 6
-          }
+          "Timelines: properties associated with angle keyframes not working as expected (regression r273)",
+          "Tweens & Timelines: ending value not accurate (regression r273)"
         ]
       }
     ]
@@ -1688,14 +1199,8 @@
       {
         "category": "Bug Fixes",
         "items": [
-          {
-            "text": "Event sheet view: toggling OR block/bookmark/breakpoint also affected all sub-events (regression r273)",
-            "favourites": 9
-          },
-          {
-            "text": "Tweens & Timelines: runtime crash using custom eases (regression r273)",
-            "favourites": 6
-          }
+          "Event sheet view: toggling OR block/bookmark/breakpoint also affected all sub-events (regression r273)",
+          "Tweens & Timelines: runtime crash using custom eases (regression r273)"
         ]
       }
     ]
@@ -1714,14 +1219,8 @@
       {
         "category": "Bug Fixes",
         "items": [
-          {
-            "text": "Timeline bar: crash setting a hierarchy while a timeline with a value track is being shown",
-            "favourites": 6
-          },
-          {
-            "text": "'Sphere' effect accidentally flipped content upside-down",
-            "favourites": 7
-          }
+          "Timeline bar: crash setting a hierarchy while a timeline with a value track is being shown",
+          "'Sphere' effect accidentally flipped content upside-down"
         ]
       }
     ]
@@ -1740,14 +1239,8 @@
       {
         "category": "Bug Fixes",
         "items": [
-          {
-            "text": "Offline support not working (regression r253)",
-            "favourites": 5
-          },
-          {
-            "text": "Timelines: copying and pasting timelines not working as expected (regression r258)",
-            "favourites": 5
-          }
+          "Offline support not working (regression r253)",
+          "Timelines: copying and pasting timelines not working as expected (regression r258)"
         ]
       }
     ]
@@ -1766,19 +1259,13 @@
       {
         "category": "Changes",
         "items": [
-          {
-            "text": "3D shape: update help link to point to [manual entry](https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/3d-shape)",
-            "favourites": 5
-          }
+          "3D shape: update help link to point to [manual entry](https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/3d-shape)"
         ]
       },
       {
         "category": "Bug Fixes",
         "items": [
-          {
-            "text": "Tweens & Timelines: possible runtime crash animating scale properties",
-            "favourites": 5
-          }
+          "Tweens & Timelines: possible runtime crash animating scale properties"
         ]
       }
     ]
@@ -1797,10 +1284,7 @@
       {
         "category": "Bug Fixes",
         "items": [
-          {
-            "text": "Browser: opening URL in new window not working (regression r250)",
-            "favourites": 6
-          }
+          "Browser: opening URL in new window not working (regression r250)"
         ]
       }
     ]
@@ -1819,10 +1303,7 @@
       {
         "category": "Changes",
         "items": [
-          {
-            "text": "Scirra Arcade plugin is now hidden (since it does not work on new Arcade)",
-            "favourites": 9
-          }
+          "Scirra Arcade plugin is now hidden (since it does not work on new Arcade)"
         ]
       }
     ]
@@ -1841,19 +1322,13 @@
       {
         "category": "Changes",
         "items": [
-          {
-            "text": "Remove Google Drive outage notification prompt",
-            "favourites": 9
-          }
+          "Remove Google Drive outage notification prompt"
         ]
       },
       {
         "category": "Bug Fixes",
         "items": [
-          {
-            "text": "Possible crash dragging text in editor (regression)",
-            "favourites": 7
-          }
+          "Possible crash dragging text in editor (regression)"
         ]
       }
     ]
@@ -1872,23 +1347,14 @@
       {
         "category": "New Additions",
         "items": [
-          {
-            "text": "Google Drive outage notification prompt",
-            "favourites": 10
-          }
+          "Google Drive outage notification prompt"
         ]
       },
       {
         "category": "Bug Fixes",
         "items": [
-          {
-            "text": "iOS exports not working if using both legacy file: protocol and module scripts",
-            "favourites": 6
-          },
-          {
-            "text": "Crash using 'Show collision polygons' with SVG Picture (regression r228)",
-            "favourites": 5
-          }
+          "iOS exports not working if using both legacy file: protocol and module scripts",
+          "Crash using 'Show collision polygons' with SVG Picture (regression r228)"
         ]
       }
     ]
@@ -1907,10 +1373,7 @@
       {
         "category": "Bug Fixes",
         "items": [
-          {
-            "text": "Issue with Google Drive cloud saves",
-            "favourites": 11
-          }
+          "Issue with Google Drive cloud saves"
         ]
       }
     ]
@@ -1929,14 +1392,8 @@
       {
         "category": "Bug Fixes",
         "items": [
-          {
-            "text": "Revert speculative fix for iOS viewport sizing in r233",
-            "favourites": 4
-          },
-          {
-            "text": "Work around Chrome bug seeking videos in preview",
-            "favourites": 5
-          }
+          "Revert speculative fix for iOS viewport sizing in r233",
+          "Work around Chrome bug seeking videos in preview"
         ]
       }
     ]
@@ -1955,19 +1412,13 @@
       {
         "category": "New Features",
         "items": [
-          {
-            "text": "Local file/folder saves now enabled by default",
-            "favourites": 20
-          }
+          "Local file/folder saves now enabled by default"
         ]
       },
       {
         "category": "Bug Fixes",
         "items": [
-          {
-            "text": "Animations editor: editor blocked when pressing escape while focus is on a text input",
-            "favourites": 12
-          }
+          "Animations editor: editor blocked when pressing escape while focus is on a text input"
         ]
       }
     ]
@@ -1986,18 +1437,9 @@
       {
         "category": "Bug Fixes",
         "items": [
-          {
-            "text": "Project bar: incorrectly handled moving selection with arrow keys with search active",
-            "favourites": 6
-          },
-          {
-            "text": "Project bar: cut/copy/paste keyboard shortcuts affected selection when search field active",
-            "favourites": 11
-          },
-          {
-            "text": "Tilemap: erasing tiles not working (regression in r217)",
-            "favourites": 10
-          }
+          "Project bar: incorrectly handled moving selection with arrow keys with search active",
+          "Project bar: cut/copy/paste keyboard shortcuts affected selection when search field active",
+          "Tilemap: erasing tiles not working (regression in r217)"
         ]
       }
     ]
@@ -2016,10 +1458,7 @@
       {
         "category": "Bug Fixes",
         "items": [
-          {
-            "text": "Work around Closure Compiler bug breaking audio playback in some exports",
-            "favourites": 7
-          }
+          "Work around Closure Compiler bug breaking audio playback in some exports"
         ]
       }
     ]
@@ -2038,10 +1477,7 @@
       {
         "category": "Changes",
         "items": [
-          {
-            "text": "Update Android splash screen configuration",
-            "favourites": 13
-          }
+          "Update Android splash screen configuration"
         ]
       }
     ]
@@ -2060,39 +1496,18 @@
       {
         "category": "Changes",
         "items": [
-          {
-            "text": "Android: restore 'Key password' field (now optional) when signing with existing keystore",
-            "favourites": 6
-          },
-          {
-            "text": "Android: keystore default validity is now 25 years as per latest Play Store requirements",
-            "favourites": 7
-          },
-          {
-            "text": "Dropped support for Safari 11 in editor, since it is missing features that the editor now requires",
-            "favourites": 6
-          }
+          "Android: restore 'Key password' field (now optional) when signing with existing keystore",
+          "Android: keystore default validity is now 25 years as per latest Play Store requirements",
+          "Dropped support for Safari 11 in editor, since it is missing features that the editor now requires"
         ]
       },
       {
         "category": "Bug Fixes",
         "items": [
-          {
-            "text": "Animations editor: input not handled properly in numeric inputs",
-            "favourites": 7
-          },
-          {
-            "text": "Animations editor: possible crash undoing deletions of image points",
-            "favourites": 9
-          },
-          {
-            "text": "OneDrive: error renaming files (regression r199)",
-            "favourites": 7
-          },
-          {
-            "text": "Wrong tooltip on some editor tabs",
-            "favourites": 6
-          }
+          "Animations editor: input not handled properly in numeric inputs",
+          "Animations editor: possible crash undoing deletions of image points",
+          "OneDrive: error renaming files (regression r199)",
+          "Wrong tooltip on some editor tabs"
         ]
       }
     ]
@@ -2111,14 +1526,8 @@
       {
         "category": "Bug Fixes",
         "items": [
-          {
-            "text": "Animations editor: could not use all num pad keys in some fields",
-            "favourites": 9
-          },
-          {
-            "text": "Safari: possible error stopping audio",
-            "favourites": 8
-          }
+          "Animations editor: could not use all num pad keys in some fields",
+          "Safari: possible error stopping audio"
         ]
       }
     ]
@@ -2137,14 +1546,8 @@
       {
         "category": "Bug Fixes",
         "items": [
-          {
-            "text": "Android: 'Hide status bar' option not working (regression in r195)",
-            "favourites": 9
-          },
-          {
-            "text": "Console error loading some layouts (regression in r192)",
-            "favourites": 4
-          }
+          "Android: 'Hide status bar' option not working (regression in r195)",
+          "Console error loading some layouts (regression in r192)"
         ]
       }
     ]
@@ -2163,10 +1566,7 @@
       {
         "category": "Changes",
         "items": [
-          {
-            "text": "(no changes since r196.2)",
-            "favourites": 5
-          }
+          "(no changes since r196.2)"
         ]
       }
     ]
@@ -2185,18 +1585,9 @@
       {
         "category": "Bug Fixes",
         "items": [
-          {
-            "text": "Possible crash opening C2 runtime project with the Properties Bar closed",
-            "favourites": 5
-          },
-          {
-            "text": "Possible crash using default save location \"Save as\" after local file/folder saves disabled",
-            "favourites": 6
-          },
-          {
-            "text": "Possible crash opening project with invalid UI state files",
-            "favourites": 5
-          }
+          "Possible crash opening C2 runtime project with the Properties Bar closed",
+          "Possible crash using default save location \"Save as\" after local file/folder saves disabled",
+          "Possible crash opening project with invalid UI state files"
         ]
       }
     ]
@@ -2215,27 +1606,15 @@
       {
         "category": "Changes",
         "items": [
-          {
-            "text": "Disable WebGL 2 on Android devices using Chrome/WebView 74 or older, since they may still be affected by old bugs that were since fixed",
-            "favourites": 6
-          }
+          "Disable WebGL 2 on Android devices using Chrome/WebView 74 or older, since they may still be affected by old bugs that were since fixed"
         ]
       },
       {
         "category": "Bug Fixes",
         "items": [
-          {
-            "text": "Toolbars: spinners changing value when only hovering over arrow controls (regression in r183)",
-            "favourites": 5
-          },
-          {
-            "text": "Timeline Bar: crash when making changes to multiple keyframes at the same time",
-            "favourites": 5
-          },
-          {
-            "text": "Animations Editor: toolbar elements not losing focus after clicking elsewhere in the editor (regression in r179)",
-            "favourites": 5
-          }
+          "Toolbars: spinners changing value when only hovering over arrow controls (regression in r183)",
+          "Timeline Bar: crash when making changes to multiple keyframes at the same time",
+          "Animations Editor: toolbar elements not losing focus after clicking elsewhere in the editor (regression in r179)"
         ]
       }
     ]
@@ -2254,14 +1633,8 @@
       {
         "category": "Bug Fixes",
         "items": [
-          {
-            "text": "Possible crash involving balloon tips",
-            "favourites": 4
-          },
-          {
-            "text": "Possible crash on startup with low storage quota",
-            "favourites": 5
-          }
+          "Possible crash involving balloon tips",
+          "Possible crash on startup with low storage quota"
         ]
       }
     ]
@@ -2280,10 +1653,7 @@
       {
         "category": "Bug Fixes",
         "items": [
-          {
-            "text": "Crash docking/undocking editor bars in Chrome 80+",
-            "favourites": 9
-          }
+          "Crash docking/undocking editor bars in Chrome 80+"
         ]
       }
     ]
@@ -2302,35 +1672,17 @@
       {
         "category": "New Additions",
         "items": [
-          {
-            "text": "Tilemap Brush Editor: links to documentation",
-            "favourites": 8
-          }
+          "Tilemap Brush Editor: links to documentation"
         ]
       },
       {
         "category": "Bug Fixes",
         "items": [
-          {
-            "text": "Tilemap Brush Editor: the assigned tiles pane did not update properly for \"Auto 47\" brushes",
-            "favourites": 3
-          },
-          {
-            "text": "Possible crash using Animation Editor in certain circumstances",
-            "favourites": 5
-          },
-          {
-            "text": "Possible crash using touch input in Tilemap Bar",
-            "favourites": 4
-          },
-          {
-            "text": "Cloud save: possible crash closing file list dialog",
-            "favourites": 3
-          },
-          {
-            "text": "Crash importing multiple audio files (regression since r171.3)",
-            "favourites": 3
-          }
+          "Tilemap Brush Editor: the assigned tiles pane did not update properly for \"Auto 47\" brushes",
+          "Possible crash using Animation Editor in certain circumstances",
+          "Possible crash using touch input in Tilemap Bar",
+          "Cloud save: possible crash closing file list dialog",
+          "Crash importing multiple audio files (regression since r171.3)"
         ]
       }
     ]
@@ -2349,10 +1701,7 @@
       {
         "category": "Changes",
         "items": [
-          {
-            "text": "(no changes since r181.2)",
-            "favourites": 8
-          }
+          "(no changes since r181.2)"
         ]
       }
     ]
@@ -2371,10 +1720,7 @@
       {
         "category": "Bug Fixes",
         "items": [
-          {
-            "text": "Possible crash opening projects using timelines",
-            "favourites": 9
-          }
+          "Possible crash opening projects using timelines"
         ]
       }
     ]
@@ -2393,26 +1739,11 @@
       {
         "category": "Bug Fixes",
         "items": [
-          {
-            "text": "Android: apps could fail to resume after several minutes away",
-            "favourites": 7
-          },
-          {
-            "text": "Projects using timelines could in some cases fail to open",
-            "favourites": 5
-          },
-          {
-            "text": "Editor menus not working correctly on mobile",
-            "favourites": 6
-          },
-          {
-            "text": "Android export: typo in the 'Write external storage' permission",
-            "favourites": 5
-          },
-          {
-            "text": "Crash using some toolbar buttons in Firefox 60 ESR",
-            "favourites": 2
-          }
+          "Android: apps could fail to resume after several minutes away",
+          "Projects using timelines could in some cases fail to open",
+          "Editor menus not working correctly on mobile",
+          "Android export: typo in the 'Write external storage' permission",
+          "Crash using some toolbar buttons in Firefox 60 ESR"
         ]
       }
     ]
@@ -2431,23 +1762,14 @@
       {
         "category": "Changes",
         "items": [
-          {
-            "text": "Updated login dialog to try to make sure logins can be remembered",
-            "favourites": 8
-          }
+          "Updated login dialog to try to make sure logins can be remembered"
         ]
       },
       {
         "category": "Bug Fixes",
         "items": [
-          {
-            "text": "Event sheet view: adding a function could sometimes incorrectly disable the return type dropdown",
-            "favourites": 7
-          },
-          {
-            "text": "Event sheet view: possible crash entering invalid function expression",
-            "favourites": 6
-          }
+          "Event sheet view: adding a function could sometimes incorrectly disable the return type dropdown",
+          "Event sheet view: possible crash entering invalid function expression"
         ]
       }
     ]
@@ -2466,23 +1788,14 @@
       {
         "category": "Changes",
         "items": [
-          {
-            "text": "Disabled worker mode on Chrome OS to work around a crash",
-            "favourites": 6
-          }
+          "Disabled worker mode on Chrome OS to work around a crash"
         ]
       },
       {
         "category": "Bug Fixes",
         "items": [
-          {
-            "text": "Possible crash changing layouts while tweens active",
-            "favourites": 7
-          },
-          {
-            "text": "Tweening angles could sometimes end with wrong value",
-            "favourites": 8
-          }
+          "Possible crash changing layouts while tweens active",
+          "Tweening angles could sometimes end with wrong value"
         ]
       }
     ]
@@ -2501,30 +1814,12 @@
       {
         "category": "Bug Fixes",
         "items": [
-          {
-            "text": "Physics behavior not working after export in non-Chrome browsers when worker mode enabled (regression in r154)",
-            "favourites": 6
-          },
-          {
-            "text": "Error exporting when using a non-English language with missing translations",
-            "favourites": 3
-          },
-          {
-            "text": "Tween Behavior: Crash tweening the color property of text plugin instances",
-            "favourites": 4
-          },
-          {
-            "text": "Timelines: Timelines not playing after changing layouts",
-            "favourites": 4
-          },
-          {
-            "text": "Android: unintended device vibration when tapping and holding (regression in r161)",
-            "favourites": 7
-          },
-          {
-            "text": "iframe: crash using some actions immediately after object created (regression in r158)",
-            "favourites": 6
-          }
+          "Physics behavior not working after export in non-Chrome browsers when worker mode enabled (regression in r154)",
+          "Error exporting when using a non-English language with missing translations",
+          "Tween Behavior: Crash tweening the color property of text plugin instances",
+          "Timelines: Timelines not playing after changing layouts",
+          "Android: unintended device vibration when tapping and holding (regression in r161)",
+          "iframe: crash using some actions immediately after object created (regression in r158)"
         ]
       }
     ]
@@ -2543,14 +1838,8 @@
       {
         "category": "Bug Fixes",
         "items": [
-          {
-            "text": "'Find all references' results could incorrectly show as disabled",
-            "favourites": 8
-          },
-          {
-            "text": "Drawing Canvas: possible crash in worker mode",
-            "favourites": 6
-          }
+          "'Find all references' results could incorrectly show as disabled",
+          "Drawing Canvas: possible crash in worker mode"
         ]
       }
     ]
@@ -2569,14 +1858,8 @@
       {
         "category": "Bug Fixes",
         "items": [
-          {
-            "text": "Text editor: crash minifying/beautifying JSON",
-            "favourites": 4
-          },
-          {
-            "text": "Typo in local variable dialog caption",
-            "favourites": 4
-          }
+          "Text editor: crash minifying/beautifying JSON",
+          "Typo in local variable dialog caption"
         ]
       }
     ]
@@ -2595,36 +1878,21 @@
       {
         "category": "New Additions",
         "items": [
-          {
-            "text": "Manual links for timelines in editor (note the manual content is not yet ready but should be available soon)",
-            "favourites": 6
-          }
+          "Manual links for timelines in editor (note the manual content is not yet ready but should be available soon)"
         ]
       },
       {
         "category": "Changes",
         "items": [
-          {
-            "text": "Updated 'Taking screenshots' example to include sharing the file (note currently only works in Chrome 75+ on Android or in mobile apps)",
-            "favourites": 5
-          }
+          "Updated 'Taking screenshots' example to include sharing the file (note currently only works in Chrome 75+ on Android or in mobile apps)"
         ]
       },
       {
         "category": "Bug Fixes",
         "items": [
-          {
-            "text": "Possible crash deleting object type that was in container",
-            "favourites": 5
-          },
-          {
-            "text": "Crash closing a project while editors open in popup windows",
-            "favourites": 6
-          },
-          {
-            "text": "Could not edit function parameters by pressing Enter",
-            "favourites": 6
-          }
+          "Possible crash deleting object type that was in container",
+          "Crash closing a project while editors open in popup windows",
+          "Could not edit function parameters by pressing Enter"
         ]
       }
     ]
@@ -2643,14 +1911,8 @@
       {
         "category": "Bug Fixes",
         "items": [
-          {
-            "text": "Tween Behaviour: Possible runtime crash (regression in r141.3)",
-            "favourites": 2
-          },
-          {
-            "text": "Tween Behaviour: Slowdown when repeatedly stopping tweens (regression in r141.3)",
-            "favourites": 2
-          }
+          "Tween Behaviour: Possible runtime crash (regression in r141.3)",
+          "Tween Behaviour: Slowdown when repeatedly stopping tweens (regression in r141.3)"
         ]
       }
     ]
@@ -2669,10 +1931,7 @@
       {
         "category": "Changes",
         "items": [
-          {
-            "text": "(no changes since r141.3)",
-            "favourites": 4
-          }
+          "(no changes since r141.3)"
         ]
       }
     ]
@@ -2691,14 +1950,8 @@
       {
         "category": "Bug Fixes",
         "items": [
-          {
-            "text": "Animations editor: could open with wrong scroll position when UI animations disabled",
-            "favourites": 9
-          },
-          {
-            "text": "Animations editor: could not draw lines from outside canvas",
-            "favourites": 10
-          }
+          "Animations editor: could open with wrong scroll position when UI animations disabled",
+          "Animations editor: could not draw lines from outside canvas"
         ]
       }
     ]
@@ -2717,14 +1970,8 @@
       {
         "category": "Bug Fixes",
         "items": [
-          {
-            "text": "C3 runtime: possible error updating Multiplayer peers",
-            "favourites": 15
-          },
-          {
-            "text": "Possible crash using selections in Data Editor",
-            "favourites": 8
-          }
+          "C3 runtime: possible error updating Multiplayer peers",
+          "Possible crash using selections in Data Editor"
         ]
       }
     ]
@@ -2743,10 +1990,7 @@
       {
         "category": "Changes",
         "items": [
-          {
-            "text": "(no changes since r119)",
-            "favourites": 6
-          }
+          "(no changes since r119)"
         ]
       }
     ]
@@ -2765,10 +2009,7 @@
       {
         "category": "Changes",
         "items": [
-          {
-            "text": "Disabled WebGL 2 on Android in C2 runtime",
-            "favourites": 2
-          }
+          "Disabled WebGL 2 on Android in C2 runtime"
         ]
       }
     ]
@@ -2787,10 +2028,7 @@
       {
         "category": "Changes",
         "items": [
-          {
-            "text": "(no changes since r103)",
-            "favourites": 4
-          }
+          "(no changes since r103)"
         ]
       }
     ]
@@ -2809,10 +2047,7 @@
       {
         "category": "Changes",
         "items": [
-          {
-            "text": "(no changes since r97)",
-            "favourites": 2
-          }
+          "(no changes since r97)"
         ]
       }
     ]
@@ -2831,14 +2066,8 @@
       {
         "category": "Bug Fixes",
         "items": [
-          {
-            "text": "Possible error on startup referencing PersistantMap",
-            "favourites": 3
-          },
-          {
-            "text": "Sprite: incorrect layout initial frame updates when deleting frames in the Animations Editor",
-            "favourites": 4
-          }
+          "Possible error on startup referencing PersistantMap",
+          "Sprite: incorrect layout initial frame updates when deleting frames in the Animations Editor"
         ]
       }
     ]
@@ -2857,14 +2086,8 @@
       {
         "category": "Bug Fixes",
         "items": [
-          {
-            "text": "Desktop build: could hang when closing",
-            "favourites": 5
-          },
-          {
-            "text": "Desktop build: animations editor crash when opening standalone images and individual tiles",
-            "favourites": 2
-          }
+          "Desktop build: could hang when closing",
+          "Desktop build: animations editor crash when opening standalone images and individual tiles"
         ]
       }
     ]
@@ -2883,10 +2106,7 @@
       {
         "category": "Changes",
         "items": [
-          {
-            "text": "(no changes since r88.3)",
-            "favourites": 3
-          }
+          "(no changes since r88.3)"
         ]
       }
     ]
@@ -2905,10 +2125,7 @@
       {
         "category": "Changes",
         "items": [
-          {
-            "text": "(no changes since [r84](https://www.construct.net/make-games/releases/beta/r84))",
-            "favourites": 2
-          }
+          "(no changes since [r84](https://www.construct.net/make-games/releases/beta/r84))"
         ]
       }
     ]
@@ -2927,10 +2144,7 @@
       {
         "category": "New Features",
         "items": [
-          {
-            "text": "Our first stable release!",
-            "favourites": 21
-          }
+          "Our first stable release!"
         ]
       }
     ]
