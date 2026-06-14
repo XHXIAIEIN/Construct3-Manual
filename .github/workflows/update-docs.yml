@@ -126,6 +126,12 @@ jobs:
           CHROME_PATH: /usr/bin/google-chrome-stable
         run: cd .scripts && xvfb-run --auto-servernum --server-args="-screen 0 1280x800x24" node scrape-releases.js
 
+      # Re-add trailing spaces for soft line breaks the scraper strips off
+      # bold-only lines in plugin/behavior/system ACE references.
+      - name: Fix markdown trailing spaces (${{ steps.ver.outputs.latest }})
+        if: steps.ver.outputs.mode == 'update'
+        run: python3 .scripts/fix-trailing-spaces.py
+
       - name: Update README (${{ steps.ver.outputs.latest }})
         if: steps.ver.outputs.mode == 'update'
         run: |
@@ -150,7 +156,7 @@ jobs:
             const latest = '${{ steps.ver.outputs.latest }}';
             let readme = fs.readFileSync('README.md', 'utf8');
             readme = readme
-              .replace(/release-r[\w.]+-blue/, 'release-' + latest + '-blue')
+              .replace(/release-r[\w.]+-green/, 'release-' + latest + '-green')
               .replace(/(\| \[Manual\][^|]+\| )\d+( \|)/, '\$1' + manual + '\$2')
               .replace(/(\| \[Addon SDK\][^|]+\| )\d+( \|)/, '\$1' + sdk + '\$2')
               .replace(/(\| \[Game Services\][^|]+\| )\d+( \|)/, '\$1' + gs + '\$2')
