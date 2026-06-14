@@ -1,7 +1,7 @@
 # Construct 3 Documentation (Markdown)
 
-[![Release](https://img.shields.io/badge/release-r487-blue)](https://www.construct.net/en/make-games/releases)
-[![License](https://img.shields.io/badge/license-CC%20BY--SA%203.0-green)](https://creativecommons.org/licenses/by-sa/3.0/)
+[![Release](https://img.shields.io/badge/release-r487-green)](https://www.construct.net/en/make-games/releases)
+[![License](https://img.shields.io/badge/license-CC%20BY--SA%203.0-DE6400)](https://creativecommons.org/licenses/by-sa/3.0/)
 
 Unofficial Markdown conversion of the official [Construct 3](https://www.construct.net/en/make-games/games-editor) documentation for easy reading, searching, and AI-assisted development.
 

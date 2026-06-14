@@ -22,11 +22,11 @@ jobs:
       actions: write  # to self-dispatch with a version label
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v5
         with:
-          node-version: '20'
+          node-version: '22'
 
       - name: Determine target version
         id: ver
@@ -118,6 +118,20 @@ jobs:
           CHROME_PATH: /usr/bin/google-chrome-stable
         run: cd .scripts && xvfb-run --auto-servernum --server-args="-screen 0 1280x800x24" node autonomous-scraper.js game-services --force
 
+      # Incremental: skips releases already present in releases/*.json, so this
+      # only fetches detail pages for versions added since the last run.
+      - name: Scrape release changelog (${{ steps.ver.outputs.latest }})
+        if: steps.ver.outputs.mode == 'update'
+        env:
+          CHROME_PATH: /usr/bin/google-chrome-stable
+        run: cd .scripts && xvfb-run --auto-servernum --server-args="-screen 0 1280x800x24" node scrape-releases.js
+
+      # Re-add trailing spaces for soft line breaks the scraper strips off
+      # bold-only lines in plugin/behavior/system ACE references.
+      - name: Fix markdown trailing spaces (${{ steps.ver.outputs.latest }})
+        if: steps.ver.outputs.mode == 'update'
+        run: python3 .scripts/fix-trailing-spaces.py
+
       - name: Update README (${{ steps.ver.outputs.latest }})
         if: steps.ver.outputs.mode == 'update'
         run: |
@@ -142,7 +156,7 @@ jobs:
             const latest = '${{ steps.ver.outputs.latest }}';
             let readme = fs.readFileSync('README.md', 'utf8');
             readme = readme
-              .replace(/release-r[\w.]+-blue/, 'release-' + latest + '-blue')
+              .replace(/release-r[\w.]+-green/, 'release-' + latest + '-green')
               .replace(/(\| \[Manual\][^|]+\| )\d+( \|)/, '\$1' + manual + '\$2')
               .replace(/(\| \[Addon SDK\][^|]+\| )\d+( \|)/, '\$1' + sdk + '\$2')
               .replace(/(\| \[Game Services\][^|]+\| )\d+( \|)/, '\$1' + gs + '\$2')
@@ -156,7 +170,7 @@ jobs:
 
       - name: Create Pull Request (${{ steps.ver.outputs.latest }})
         if: steps.ver.outputs.mode == 'update'
-        uses: peter-evans/create-pull-request@v6
+        uses: peter-evans/create-pull-request@v7
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           commit-message: "Update to ${{ steps.ver.outputs.latest }}"

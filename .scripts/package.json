@@ -7,6 +7,8 @@
     "scrape:manual": "node autonomous-scraper.js manual --force",
     "scrape:sdk": "node autonomous-scraper.js addon-sdk --force",
     "scrape:game-services": "node autonomous-scraper.js game-services --force",
+    "scrape:releases": "node scrape-releases.js",
+    "scrape:releases:connect": "node scrape-releases.js --autoConnect --beta",
     "regenerate": "node regenerate.js"
   },
   "dependencies": {
