@@ -1,7 +1,7 @@
 ---
 title: "Channel Object"
 source: "https://www.construct.net/en/game-services/manuals/game-services/broadcasts/api-objects/broadcast-channel"
-release: 487
+release: 487.3
 ---
 
 ## On this page
@@ -20,15 +20,11 @@ You can have multiple Broadcast Channels, and each Channel can contain multiple 
 
 ```json
 {
-  "id": "2cfd9a96-4c5c-4c43-b5b0-baa51b093f75",
+  "id": "9d4645c6-77f1-41da-aa77-a3070bb9072f",
   "name": "Game Updates & News",
   "description": "The latest updates and news from Space Blaster dev team!",
   "created": "2025-09-22T14:30:02.437",
   "formattedCreated": "9/22/2025 2:30:02 PM",
-  "responseLanguage": {
-    "iso": "EN",
-    "englishName": "English"
-  },
   "broadcasts": 23,
   "formattedBroadcasts": "23",
   "lastBroadcast": "2025-09-24T14:30:02.437",
@@ -43,7 +39,12 @@ You can have multiple Broadcast Channels, and each Channel can contain multiple 
   "originalLanguage": {
     "iso": "EN",
     "englishName": "English"
-  }
+  },
+  "responseLanguage": {
+    "iso": "EN",
+    "englishName": "English"
+  },
+  "discordWebhookIDs": { ... }
 }
 ```
 
@@ -63,9 +64,6 @@ The date and time this channel was first created.
 
 **formattedCreated** `string`  
 The date and time this channel was first created, formatted to the specified [requested culture](../../culture.md).
-
-**responseLanguage** [`Language`](../../common-objects/language.md)  
-The language the channels properties are returned in - this will differ from original language if the request asks for content to be returned in a different language and the plan supports translations.
 
 **broadcasts** `int32`  
 The total number of broadcast messages currently available in this channel.
@@ -93,3 +91,9 @@ If ratings are allowed for messages in this channel, this property shows all ava
 
 **originalLanguage** [`Language`](../../common-objects/language.md)  
 The language this channels properties (name and description) are written in.
+
+**responseLanguage** [`Language`](../../common-objects/language.md)  
+The language the channels properties are returned in - this will differ from original language if the request asks for content to be returned in a different language and the plan supports translations.
+
+**discordWebhookIDs** `UNKNOWN`  
+ID's of any Discord Webhooks currently attached to this channel to relay newly published broadcast messages.

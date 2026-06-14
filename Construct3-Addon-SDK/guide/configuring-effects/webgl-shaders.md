@@ -1,14 +1,15 @@
 ---
 title: "WebGL shaders"
 source: "https://www.construct.net/en/make-games/manuals/addon-sdk/guide/configuring-effects/webgl-shaders"
-release: 487
+release: 487.3
 ---
 
 ## On this page
 
 - [Adding a WebGL 2 shader variant](#adding-a-webgl-2-shader-variant)
-- [Shader uniforms](#providing-a-webgl-2-shader-variant)
-- [Useful shader calculations](#writing-webgl-2-shaders)
+- [Shader varyings](#providing-a-webgl-2-shader-variant)
+- [Shader uniforms](#writing-webgl-2-shaders)
+- [Useful shader calculations](#using-webgl-1-extensions)
 
 ---
 
@@ -67,6 +68,16 @@ Note Construct currently doesn't support any way to provide an alternative WebGL
 ### Testing
 
 The Construct editor provides a setting to force the editor and preview to run with WebGL 1. This can help you test your shader variants with both WebGL 1 and WebGL 2 (assuming your device supports WebGL 2). Note this option exists for shader testing only - exported projects will continue to use WebGL 2 when available regardless of the editor setting.
+
+## Shader varyings
+
+These are the available `varying` (in WebGL 1 terminology) variables that are passed from the vertex shader and interpolated across fragments.
+
+**varying mediump vec2 vTex;**  
+The current texture co-ordinate to sample the foreground texture at.
+
+**varying highp vec3 vWorldPos;**  
+The current world position. It can be useful for identifying the 3D position of the current fragment.
 
 ## Shader uniforms
 

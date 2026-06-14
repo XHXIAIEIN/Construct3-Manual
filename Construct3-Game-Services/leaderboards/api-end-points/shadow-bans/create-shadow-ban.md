@@ -1,7 +1,7 @@
 ---
 title: "Shadow-ban a Player or IP"
 source: "https://www.construct.net/en/game-services/manuals/game-services/leaderboards/api-end-points/shadow-bans/create-shadow-ban"
-release: 487
+release: 487.3
 ---
 
 ## On this page

@@ -1,7 +1,7 @@
 ---
 title: "Storage Cleanup dialog"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/interface/dialogs/storage-cleanup"
-release: 487
+release: 487.3
 ---
 
 The **Storage Cleanup dialog** is a tool that helps you to free up storage space on the local device. If you run out of available storage space, it can cause errors to appear and may stop some features of Construct working correctly. This tool provides a way to help solve the problem if that happens. In some cases Construct will recommend you use this dialog to free up more space if it detects a storage problem that may have been caused by lack of free space.

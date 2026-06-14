@@ -1,7 +1,7 @@
 ---
 title: "Refresh a Session"
 source: "https://www.construct.net/en/game-services/manuals/game-services/authentication/api-end-points/sessions/refresh-session"
-release: 487
+release: 487.3
 ---
 
 ## On this page

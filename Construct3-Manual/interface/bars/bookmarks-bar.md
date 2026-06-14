@@ -1,7 +1,7 @@
 ---
 title: "The Bookmarks Bar"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/interface/bars/bookmarks-bar"
-release: 487
+release: 487.3
 ---
 
 `[Paid plans only]`  The **Bookmarks Bar** shows an overview of all the bookmarks in the project. Bookmarks are a way of marking and quickly moving between events in the [Event Sheet View](../../interface/event-sheet-view.md).

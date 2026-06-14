@@ -1,7 +1,7 @@
 ---
 title: "Dictionary editor"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/interface/file-editors/dictionary-editor"
-release: 487
+release: 487.3
 ---
 
 ## On this page

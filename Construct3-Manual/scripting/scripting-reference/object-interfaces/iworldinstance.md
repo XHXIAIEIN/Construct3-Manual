@@ -1,7 +1,7 @@
 ---
 title: "WorldInstance script interface"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/scripting/scripting-reference/object-interfaces/iworldinstance"
-release: 487
+release: 487.3
 ---
 
 ## On this page
@@ -163,7 +163,7 @@ A string of the instance's sampling mode, which is one of `"auto"`, `"nearest"`,
 A read-only string with the instance's active sampling mode. This is only different to `sampling` when the sampling mode is `"auto"`: in this case the active sampling mode is inherited from the project, layout, layer, or hierarchy. This is the sampling mode with which this instance will be rendered.
 
 **effects**  
-An array of [IEffectInstance](../../../scripting/scripting-reference/object-interfaces/ieffectinstance.md) representing the effect parameters for each effect on the instance.
+An array of [IEffectInstance](../../../scripting/scripting-reference/object-interfaces/ieffectinstance.md) representing the effect parameters for each effect on the instance. Effects can also be accessed by name as well as by index - for example if there is one effect named `AdjustHSL`, it can be referred to with both `effects[0]` and `effects.AdjustHSL`.
 
 ## Z order APIs
 
@@ -203,8 +203,8 @@ Test if this instance overlaps any instance with the [Solid behavior](../../../b
 
 ## Mesh distortion APIs
 
-**createMesh(hsize, vsize)**  
-Create a mesh for deforming the appearance of the object with the given number of mesh points horizontally and vertically. The minimum size is 2.
+**createMesh(hsize, vsize, copyFromOldMesh = false)**  
+Create a mesh for deforming the appearance of the object with the given number of mesh points horizontally and vertically. The minimum size is 2 on each axis. If there is an existing mesh, by default all mesh points are reset when the mesh size changes. To preserve the existing mesh points when resizing an existing mesh, pass `true` for `copyFromOldMesh.`
 
 **releaseMesh()**  
 Releases any mesh that has been created, reverting back to default rendering of the object with no mesh distortion. Ignored if no mesh created.

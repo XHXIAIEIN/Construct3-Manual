@@ -1,7 +1,7 @@
 ---
 title: "The Tilemap bar"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/interface/bars/tilemap-bar"
-release: 487
+release: 487.3
 ---
 
 ## On this page
@@ -9,13 +9,14 @@ release: 487
 - [Basic usage](#basic-usage)
 - [Toolbar tools](#toolbar-tools)
 - [Editing tile collision polygons](#editing-tile-collision-polygons)
-- [The Tilemap object](#bulk-editing)
+- [Tilemap brushes in project folders](#bulk-editing)
+- [The Tilemap object](#tilemap-brushes-in-project-folders)
 
 ---
 
 The **Tilemap Bar** allows editing tilemaps in the **Tilemap object** from the [Layout View](../../interface/layout-view.md). It provides a toolbar with various tools and options, and a view of the current tileset image.
 
-[![The Tilemap Bar](https://construct-static.com/images/v1740/r/uploads/articleuploadobject/0/images/130572/tilemap-manual-0_v210.png)](https://construct-static.com/images/v1740/uploads/articleuploadobject/0/images/130572/tilemap-manual-0.png)The Tilemap Bar
+[![The Tilemap Bar](https://construct-static.com/images/v1769/r/uploads/articleuploadobject/0/images/130572/tilemap-manual-0_v210.png)](https://construct-static.com/images/v1769/uploads/articleuploadobject/0/images/130572/tilemap-manual-0.png)The Tilemap Bar
 
 ## Basic usage
 
@@ -83,6 +84,10 @@ There are four context menu options to toggle the state of multiple collision po
 
 > **Tip**  
 > Using the **Select tool** will highlight the individual tiles in the **Tilemap Bar**, so it is easy to toggle the collision polygon state of a group of related tiles after making a selection in the tilemap instance.
+
+## Tilemap brushes in project folders
+
+Tilemap brushes are saved to independent JSON files under the `"tilemapBrushes"` folder so they can be ignored or kept when working with source control.
 
 ## The Tilemap object
 

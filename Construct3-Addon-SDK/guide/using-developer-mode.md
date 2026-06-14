@@ -1,7 +1,7 @@
 ---
 title: "Testing addons in Developer Mode"
 source: "https://www.construct.net/en/make-games/manuals/addon-sdk/guide/using-developer-mode"
-release: 487
+release: 487.3
 ---
 
 ## On this page

@@ -1,7 +1,7 @@
 ---
 title: "Update an Achievement"
 source: "https://www.construct.net/en/game-services/manuals/game-services/achievements/api-end-points/achievements/update-achievement"
-release: 487
+release: 487.3
 ---
 
 ## On this page

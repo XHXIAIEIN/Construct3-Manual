@@ -1,7 +1,7 @@
 ---
 title: "Instances Bar"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/interface/bars/instance-bar"
-release: 487
+release: 487.3
 ---
 
 ## On this page
@@ -14,6 +14,7 @@ release: 487
 - [Global Layers](#instances)
 - [Searching](#icons)
 - [Drag & Drop](#locking-and-visibility)
+- [UI state in project folders](#global-layers)
 
 ---
 
@@ -21,7 +22,7 @@ The **Instances Bar** shows all the [instances](../../project-primitives/objects
 
 You can also use folders to group related instances together. [Hierarchies](../../interface/layout-view.md#internalH1Link4) are shown as a tree structure to quickly tell which instances are where in complex structures.
 
-[![overview](https://construct-static.com/images/v1740/uploads/articleuploadobject/0/images/124586/overview.png)](https://construct-static.com/images/v1740/uploads/articleuploadobject/0/images/124586/overview.png)
+[![overview](https://construct-static.com/images/v1769/uploads/articleuploadobject/0/images/124586/overview.png)](https://construct-static.com/images/v1769/uploads/articleuploadobject/0/images/124586/overview.png)
 
 To open the Instances Bar tick the check at `Menu › View › Bars › Instances Bar`.
 
@@ -29,7 +30,7 @@ To open the Instances Bar tick the check at `Menu › View › Bars › Instance
 
 To add a folder right-click anywhere in the bar and choose the appropriate option from the context menu.
 
-[![instancesbar context menu 1](https://construct-static.com/images/v1740/uploads/articleuploadobject/0/images/121772/instancesbar-context-menu-1.png)](https://construct-static.com/images/v1740/uploads/articleuploadobject/0/images/121772/instancesbar-context-menu-1.png)
+[![instancesbar context menu 1](https://construct-static.com/images/v1769/uploads/articleuploadobject/0/images/121772/instancesbar-context-menu-1.png)](https://construct-static.com/images/v1769/uploads/articleuploadobject/0/images/121772/instancesbar-context-menu-1.png)
 
 Once a folder is created you can drag & drop instances in and out of them by dragging the items in the bar.
 
@@ -46,7 +47,7 @@ Hierarchies can be set directly in the bar by dragging and dropping items on top
 
 | Hierarchy in the Instances bar | Hierarchy in the Layout View |
 | --- | --- |
-| [![hierarchy overview 1](https://construct-static.com/images/v1740/uploads/articleuploadobject/0/images/124593/hierarchy-overview-1.png)](https://construct-static.com/images/v1740/uploads/articleuploadobject/0/images/124593/hierarchy-overview-1.png) | [![instancesbar 2](https://construct-static.com/images/v1740/uploads/articleuploadobject/0/images/121774/instancesbar-2.png)](https://construct-static.com/images/v1740/uploads/articleuploadobject/0/images/121774/instancesbar-2.png) |
+| [![hierarchy overview 1](https://construct-static.com/images/v1769/uploads/articleuploadobject/0/images/124593/hierarchy-overview-1.png)](https://construct-static.com/images/v1769/uploads/articleuploadobject/0/images/124593/hierarchy-overview-1.png) | [![instancesbar 2](https://construct-static.com/images/v1769/uploads/articleuploadobject/0/images/121774/instancesbar-2.png)](https://construct-static.com/images/v1769/uploads/articleuploadobject/0/images/121774/instancesbar-2.png) |
 
 ## Context menu options
 
@@ -54,7 +55,7 @@ Hierarchies can be set directly in the bar by dragging and dropping items on top
 
 These options are shown with any context menu in the bar.
 
-[![instancesbar context menu 0](https://construct-static.com/images/v1740/uploads/articleuploadobject/0/images/121775/instancesbar-context-menu-0.png)](https://construct-static.com/images/v1740/uploads/articleuploadobject/0/images/121775/instancesbar-context-menu-0.png)
+[![instancesbar context menu 0](https://construct-static.com/images/v1769/uploads/articleuploadobject/0/images/121775/instancesbar-context-menu-0.png)](https://construct-static.com/images/v1769/uploads/articleuploadobject/0/images/121775/instancesbar-context-menu-0.png)
 
 - **Add folder:** adds a new folder.
 - **Expand / Collapse: ** expand or collapse all items with nested content.
@@ -77,13 +78,13 @@ These options are shown with any context menu in the bar.
 > **Tip**  
 > Clicking the lower part of the bar also shows this menu.
 
-    [![instancesbar 3](https://construct-static.com/images/v1740/uploads/articleuploadobject/0/images/121777/instancesbar-3.png)](https://construct-static.com/images/v1740/uploads/articleuploadobject/0/images/121777/instancesbar-3.png)
+    [![instancesbar 3](https://construct-static.com/images/v1769/uploads/articleuploadobject/0/images/121777/instancesbar-3.png)](https://construct-static.com/images/v1769/uploads/articleuploadobject/0/images/121777/instancesbar-3.png)
 
 ### Folder
 
 These options are shown when showing a context menu for a folder.
 
-[![folder context menu](https://construct-static.com/images/v1740/uploads/articleuploadobject/0/images/124579/folder-context-menu.png)](https://construct-static.com/images/v1740/uploads/articleuploadobject/0/images/124579/folder-context-menu.png)
+[![folder context menu](https://construct-static.com/images/v1769/uploads/articleuploadobject/0/images/124579/folder-context-menu.png)](https://construct-static.com/images/v1769/uploads/articleuploadobject/0/images/124579/folder-context-menu.png)
 
 - **Rename:** rename the selected folder.
 - **Delete:** delete the selected folders.
@@ -93,7 +94,7 @@ These options are shown when showing a context menu for a folder.
 
 These options are shown when showing a context menu for an instance or group of instances. Some are equivalent to the context menu options with the same names found on context menus of the Layout View.
 
-[![instance context menu](https://construct-static.com/images/v1740/uploads/articleuploadobject/0/images/124581/instance-context-menu.png)](https://construct-static.com/images/v1740/uploads/articleuploadobject/0/images/124581/instance-context-menu.png)
+[![instance context menu](https://construct-static.com/images/v1769/uploads/articleuploadobject/0/images/124581/instance-context-menu.png)](https://construct-static.com/images/v1769/uploads/articleuploadobject/0/images/124581/instance-context-menu.png)
 
 - **Timeline:** shown for all instances as long as there is a timeline in the [project](../../project-primitives/projects.md). Will have different options depending on how the instance relates to the current timeline. This is the same as the equivalent Layout View context menu option.
 - **Tilemap:** only shown for Tilemap plugin instances. This is the same as the equivalent Layout View context menu option.
@@ -124,7 +125,7 @@ Depending on what **Show more information for** option is selected, additional i
 
 The **layer visibility checkbox** and **layer lock icon** are shown at all times to change the corresponding visibility and locked states of each instance individually at any time.
 
-[![icons overview](https://construct-static.com/images/v1740/uploads/articleuploadobject/0/images/124594/icons-overview.png)](https://construct-static.com/images/v1740/uploads/articleuploadobject/0/images/124594/icons-overview.png)
+[![icons overview](https://construct-static.com/images/v1769/uploads/articleuploadobject/0/images/124594/icons-overview.png)](https://construct-static.com/images/v1769/uploads/articleuploadobject/0/images/124594/icons-overview.png)
 
 ## Locking and Visibility
 
@@ -139,7 +140,7 @@ When a layout is showing instances that are coming from a global layer a few uni
 
 In the image below you can see the special **Global instances** folder and a **Layout** item showing which instances are coming from a global layer.
 
-[![global layers overview](https://construct-static.com/images/v1740/uploads/articleuploadobject/0/images/124590/global-layers-overview.png)](https://construct-static.com/images/v1740/uploads/articleuploadobject/0/images/124590/global-layers-overview.png)
+[![global layers overview](https://construct-static.com/images/v1769/uploads/articleuploadobject/0/images/124590/global-layers-overview.png)](https://construct-static.com/images/v1769/uploads/articleuploadobject/0/images/124590/global-layers-overview.png)
 
 In that example the current layout is **OtherLayout** and the bar is showing that some instances shown are coming from a global layer in the **Game** layout. At the bottom you can see the **Layers & Layouts** option is toggled so all instances are showing which layer they belong too.
 
@@ -149,7 +150,7 @@ Instances highlighted in red are shown in the bar because they belong to the **G
 
 | Instances from a global layer | Instances not in any global layer |
 | --- | --- |
-| [![global layers overview 0](https://construct-static.com/images/v1740/uploads/articleuploadobject/0/images/124591/global-layers-overview-0.png)](https://construct-static.com/images/v1740/uploads/articleuploadobject/0/images/124591/global-layers-overview-0.png) | [![global layers overview 1](https://construct-static.com/images/v1740/uploads/articleuploadobject/0/images/124592/global-layers-overview-1.png)](https://construct-static.com/images/v1740/uploads/articleuploadobject/0/images/124592/global-layers-overview-1.png) |
+| [![global layers overview 0](https://construct-static.com/images/v1769/uploads/articleuploadobject/0/images/124591/global-layers-overview-0.png)](https://construct-static.com/images/v1769/uploads/articleuploadobject/0/images/124591/global-layers-overview-0.png) | [![global layers overview 1](https://construct-static.com/images/v1769/uploads/articleuploadobject/0/images/124592/global-layers-overview-1.png)](https://construct-static.com/images/v1769/uploads/articleuploadobject/0/images/124592/global-layers-overview-1.png) |
 
 ## Searching
 
@@ -170,3 +171,7 @@ As mentioned earlier it is possible to drag & drop instances within the bar to a
 It is also possible to drag instances from the bar into the Layout View, which will create clones of the dragged instances in the dropped position.
 
 Dragging instances from the Layout View into the Instances Bar has the same effect as dragging the corresponding items within the Instances bar.
+
+## UI state in project folders
+
+The UI state for the Instance Bar is saved to independent JSON files for each Layout under the `"layouts/uistate"` folder so they can be ignored or kept when working with source control.

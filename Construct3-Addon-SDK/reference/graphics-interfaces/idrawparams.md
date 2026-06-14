@@ -1,7 +1,7 @@
 ---
 title: "IDrawParams interface"
 source: "https://www.construct.net/en/make-games/manuals/addon-sdk/reference/graphics-interfaces/idrawparams"
-release: 487
+release: 487.3
 ---
 
 ## On this page

@@ -1,7 +1,7 @@
 ---
 title: "Actions"
 source: "https://www.construct.net/en/game-services/manuals/game-services/triggers/actions"
-release: 487
+release: 487.3
 ---
 
 ## On this page
@@ -23,3 +23,6 @@ Awards or progresses an achievement for a player.  For progressive achievements,
 
 **Remove Achievement**  
 Unawards or un-progresses an achievement for a player.  For progressive achievements, a progressive value to deduct must be specified.
+
+**Publish Discord Message**  
+Publish a message to a Discord webhook

@@ -1,7 +1,7 @@
 ---
 title: "Construct's interface"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/overview/the-interface"
-release: 487
+release: 487.3
 ---
 
 ## On this page

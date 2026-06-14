@@ -1,7 +1,7 @@
 ---
 title: "Layout script interface"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/scripting/scripting-reference/layout-interfaces/ilayout"
-release: 487
+release: 487.3
 ---
 
 ## On this page
@@ -125,7 +125,7 @@ Set or get the *Vanishing point* [layout property](../../../project-primitives/l
 Set or get the *Vanishing point* [layout property](../../../project-primitives/layouts.md), with each component in the range 0-1. The getter returns an array with two elements in the form `[vpX, vpY]`.
 
 **effects**  
-An array of [IEffectInstance](../../../scripting/scripting-reference/object-interfaces/ieffectinstance.md) representing the effect parameters of the effects on this layout.
+An array of [IEffectInstance](../../../scripting/scripting-reference/object-interfaces/ieffectinstance.md) representing the effect parameters of the effects on this layout. Effects can also be accessed by name as well as by index - for example if there is one effect named `AdjustHSL`, it can be referred to with both `effects[0]` and `effects.AdjustHSL`.
 
 ## Layer APIs
 

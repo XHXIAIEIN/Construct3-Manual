@@ -1,7 +1,7 @@
 ---
 title: "Message Object"
 source: "https://www.construct.net/en/game-services/manuals/game-services/broadcasts/api-objects/broadcast-message"
-release: 487
+release: 487.3
 ---
 
 ## On this page
@@ -22,8 +22,8 @@ This object can be rated by players.  Read about [how ratings work](../../rating
 
 ```json
 {
-  "id": "7bb0b68c-7f19-4593-ab5c-f64c29c3c02a",
-  "channelID": "21d985cd-eb77-4e05-9589-e153bcfca779",
+  "id": "2942dc72-fd82-446c-916c-e3e2021a2338",
+  "channelID": "d0c0eebc-0c90-4692-a339-6ad0177b194d",
   "date": "2025-09-22T14:30:02.437",
   "formattedDate": "9/22/2025 2:30:02 PM",
   "title": "New October features and news from the team.",
@@ -48,7 +48,11 @@ This object can be rated by players.  Read about [how ratings work](../../rating
     "iso": "EN",
     "englishName": "English"
   },
-  "ratingStatus": { ... }
+  "ratingStatus": { ... },
+  "hostedBroadcastURLs": [
+    { ... },
+    { ... }
+  ]
 }
 ```
 
@@ -116,3 +120,6 @@ The language this message is returned in - this will differ from original langua
 
 **ratingStatus** [`RatingStatus`](../../ratings/api-objects/rating-status-object.md)  
 The [rating status](../../ratings/api-objects/rating-status-object.md) of this object.
+
+**hostedBroadcastURLs** [`Array<HostedBroadcastURL>`](../../broadcasts/api-objects/broadcast-message-hosted.md)  
+The list of available [hosted message URLs](../../broadcasts/api-objects/broadcast-message-hosted.md) for this message.

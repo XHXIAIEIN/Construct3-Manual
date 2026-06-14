@@ -1,7 +1,7 @@
 ---
 title: "Bonus Object"
 source: "https://www.construct.net/en/game-services/manuals/game-services/xp/api-objects/bonus-object"
-release: 487
+release: 487.3
 ---
 
 ## On this page
@@ -20,11 +20,11 @@ This object represents an bonus for a period of time.  A bonus has a modifier (e
 
 ```json
 {
-  "id": "c19af426-ad35-444d-b65e-8d7f46c05450",
-  "startDate": "2026-05-27T08:36:35.0760027Z",
-  "formattedStartDate": "g9NNB",
-  "endDate": "2026-05-27T08:36:35.0774646Z",
-  "formattedEndDate": "g9NNB",
+  "id": "dfb5cdcb-2c7d-4098-b17c-d01ccc8b979b",
+  "startDate": "2026-06-14T05:30:30.3037475Z",
+  "formattedStartDate": "87qUA",
+  "endDate": "2026-06-14T05:30:30.3037475Z",
+  "formattedEndDate": "uOCkO",
   "title": "Double XP weekend!",
   "description": "This weekend only, earn 2x XP!  Let's go!",
   "modifier": 2,

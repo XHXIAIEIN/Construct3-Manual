@@ -1,7 +1,7 @@
 ---
 title: "Expressions"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/project-primitives/events/expressions"
-release: 487
+release: 487.3
 ---
 
 ## On this page

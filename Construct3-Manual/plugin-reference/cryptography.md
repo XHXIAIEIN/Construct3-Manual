@@ -1,7 +1,7 @@
 ---
 title: "Cryptography"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/cryptography"
-release: 487
+release: 487.3
 ---
 
 ## On this page

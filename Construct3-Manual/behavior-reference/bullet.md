@@ -1,7 +1,7 @@
 ---
 title: "Bullet behavior"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/behavior-reference/bullet"
-release: 487
+release: 487.3
 ---
 
 ## On this page
@@ -14,7 +14,7 @@ release: 487
 
 ---
 
-The **Bullet behavior** simply moves an object forwards at an angle. However, it provides extra options like gravity and bouncing that allow it to also be used like a bouncing ball. Like the name suggests it is ideal for projectiles like bullets, but it is also useful for automatically controlling other types of objects like enemies which move forwards continuously.
+The **Bullet behavior** moves an object forwards at an angle. However, it provides extra options like gravity and bouncing that allow it to also be used like a bouncing ball. Like the name suggests it is ideal for projectiles like bullets, but it is also useful for automatically controlling other types of objects like enemies which move forwards continuously.
 
 For two examples of the Bullet behavior see the [Bouncing balls](https://editor.construct.net/#open=bouncing-balls) and [Bouncing bullets](https://editor.construct.net/#open=bouncing-bullets) examples in the [Example Browser](../overview/example-browser.md).
 
@@ -90,10 +90,16 @@ Simply changes the counter returned by the *DistanceTravelled* expression. The c
 Enable or disable the movement. If disabled, the behavior will stop moving the bullet, but will remember the current speed, acceleration etc. if enabled again.
 
 **Set gravity**  
-Set the acceleration caused by gravity, in pixels per second per second.
+Set the acceleration caused by gravity, in pixels per second per second. When a gravity vector has been specified, this sets the magnitude of the vector.
+
+**Set gravity vector 3D**  
+Set the direction of gravity with a 3D vector. By default gravity accelerates downwards on the Y axis (with a vector of 0, 1, 0). The provided vector is automatically normalized, so its magnitude does not matter - instead the *Set gravity* action is used to specify the magnitude of gravity.
 
 **Set speed**  
 Set the bullet's current movement speed, in pixels per second.
+
+**Set vector 3D**  
+Set the bullet's current movement speed and direction using a 3D vector, with a speed in pixels per second on each axis. The magnitude of the vector is the overall speed, which can also be adjusted using the *Set speed* action.
 
 **Stop stepping**  
 When *Step* is enabled, prevent the object advancing any further. This is usually done when a collision is detected with *Is overlapping*. Note that destroying the object also automatically stops stepping. For more information, see *Stepping bullets* above.
@@ -112,5 +118,23 @@ Return the total distance the bullet has moved since creation, in pixels. This d
 **Gravity**  
 Return the currently set gravity property, in pixels per second per second.
 
+**GravityVectorX**  
+The current vector specifying the direction of gravity in 3D. This vector is normalized so it has a unit length, which may also mean these expressions differ from the values specified by the *Set gravity vector 3D* action.
+
+**GravityVectorY**  
+The current vector specifying the direction of gravity in 3D. This vector is normalized so it has a unit length, which may also mean these expressions differ from the values specified by the *Set gravity vector 3D* action.
+
+**GravityVectorZ**  
+The current vector specifying the direction of gravity in 3D. This vector is normalized so it has a unit length, which may also mean these expressions differ from the values specified by the *Set gravity vector 3D* action.
+
 **Speed**  
-Get the bullet's current movement speed in pixels per second.
+Get the bullet's current movement speed in pixels per second. This is also the magnitude of the current motion vector.
+
+**VectorX**  
+The current vector of motion in 3D, with speeds in pixels per second on each axis. The overall magnitude of the vector is the speed.
+
+**VectorY**  
+The current vector of motion in 3D, with speeds in pixels per second on each axis. The overall magnitude of the vector is the speed.
+
+**VectorZ**  
+The current vector of motion in 3D, with speeds in pixels per second on each axis. The overall magnitude of the vector is the speed.

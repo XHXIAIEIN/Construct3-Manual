@@ -1,7 +1,7 @@
 ---
 title: "The Project Bar"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/interface/bars/project-bar"
-release: 487
+release: 487.3
 ---
 
 ## On this page
@@ -12,13 +12,14 @@ release: 487
 - [Searching the Project Bar](#searching-the-project-bar)
 - [Importing audio](#importing-audio)
 - [Importing files](#importing-files)
+- [Importing 3D model files](#importing-3d-model-files)
 - [Previewing files](#previewing-files)
 
 ---
 
 The **Project Bar** shows an overview of everything in your project. See [Project Structure](../../overview/project-structure.md) for a summary of the different elements that make up a project, or the manual section on [Project Primitives](../../project-primitives.md) for more detail.
 
-[![The Project Bar](https://construct-static.com/images/v1740/r/uploads/articleuploadobject/0/images/32872/project-bar_v300.png)](https://construct-static.com/images/v1740/uploads/articleuploadobject/0/images/32872/project-bar.png)The Project Bar
+[![The Project Bar](https://construct-static.com/images/v1769/r/uploads/articleuploadobject/0/images/32872/project-bar_v300.png)](https://construct-static.com/images/v1769/uploads/articleuploadobject/0/images/32872/project-bar.png)The Project Bar
 
 If something in the project has changed, it is displayed in *italics*. When you save the project, everything reverts to normal text, indicating nothing has changed since the last save.
 
@@ -51,6 +52,10 @@ Once you're done simply press <kbd>Escape</kbd> to clear the search and revert t
 ## Importing files
 
 You can import additional external files to the project, including web fonts. These can be categorised in to **Videos**, **Fonts**, **Icons** or the general-purpose **Files** folder. For more information, see [Project Files](../../project-primitives/files.md) and [Icons & splash](../../tips-and-guides/icons-splash.md).
+
+## Importing 3D model files
+
+Check the [3D model primitive](../../project-primitives/3d-model.md) manual entry for more details about all the methods to import 3D models.
 
 ## Previewing files
 
