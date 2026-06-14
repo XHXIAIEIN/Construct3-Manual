@@ -1,0 +1,270 @@
+[
+  {
+    "branchName": "LTS",
+    "releaseName": "r449.4",
+    "slug": "r449-4",
+    "viewDetailsURL": "https://www.construct.net/en/make-games/releases/lts/r449-4",
+    "shortDescription": "Maintenance update",
+    "publishDate": 1775036376,
+    "publishDateISO": "2026-04-01T09:39:36.535Z",
+    "launchURL": "https://editor.construct.net/r449-4/",
+    "notes": "This is a maintenance update for the current r449 LTS release to bring a few key bug fixes and updates that have already been proven in newer Construct releases. This includes updates to installing Construct as an app: much like the beta and stable channels, the LTS channel now has an updated icon to differentiate it from the other channels, and it also now hides the location banner in preview. As the Z axis scale 'Normalized' is now deprecated, we've also backported a change to set the default to 'Regular' in the LTS release as well, in order to minimize future disruption.\n\nAs a reminder, the r449 LTS release is scheduled to be supported until the end of 2026, with a new LTS release coming out around June/July this year. As ever you can also find all the latest updates in the stable or beta releases which have been updated numerous times since the r449 LTS release.",
+    "changelog": [
+      {
+        "category": "Changes",
+        "items": [
+          {
+            "text": "Update editor app icons (for installing as app)",
+            "favourites": 2
+          },
+          {
+            "text": "Remove location banner from preview when installed as app",
+            "favourites": 1
+          },
+          {
+            "text": "'Bound to' and 'Destroy outside' behaviors: update help links",
+            "favourites": 1
+          },
+          {
+            "text": "The default Z axis scale for new projects is now 'Regular' instead of 'Normalized'",
+            "favourites": 1
+          },
+          {
+            "text": "3D shape: change default Z tiling factor to 1",
+            "favourites": 1
+          }
+        ]
+      },
+      {
+        "category": "Bug Fixes",
+        "items": [
+          {
+            "text": "Example project 'Pixel data reader' not working (regression r445)",
+            "favourites": 0
+          },
+          {
+            "text": "Audio file parameters missing placeholder item when project has no audio files",
+            "favourites": 1
+          }
+        ]
+      },
+      {
+        "category": "Scripting updates",
+        "items": [
+          {
+            "text": "TypeScript: fix possible incorrect error when adding script action",
+            "favourites": 0
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "branchName": "LTS",
+    "releaseName": "r449.3",
+    "slug": "r449-3",
+    "viewDetailsURL": "https://www.construct.net/en/make-games/releases/lts/r449-3",
+    "shortDescription": "Promoting r449 to LTS",
+    "publishDate": 1760543001,
+    "publishDateISO": "2025-10-15T15:43:21.290Z",
+    "launchURL": "https://editor.construct.net/r449-3/",
+    "notes": "This is our new annual **Long Term Support (LTS)** release of Construct, based off the stable release r449, with a couple of additional fixes included in this update. This LTS release will be supported with essential bug fixes and maintenance up until the end of 2026. Support for the previous r397 LTS release is only scheduled to last until the end of 2025, so only a couple months of support is remaining. Beyond that the last r397 LTS release will remain available, but not receive any further updates, so further use will be at your own risk. Therefore we would encourage any r397 LTS users to start planning to update to r449 LTS. Learn more about release channels and the support schedule in the [Construct release channels](https://www.construct.net/en/make-games/manuals/construct-3/tips-and-guides/release-channels) manual entry.\n\nThe r450 release is a major compatibility milestone, retiring support for the following features:\n\n• Legacy (SDK v1) third-party plugins and behaviors (r450+ only supports SDK v2)\n\n• The NW.js exporter (r450+ only supports the Windows WebView2, macOS WKWebView, and Linux CEF exporters)\n\n• Support for exporting to Windows 32-bit (x86) and Linux ARM 32-bit\n\n• The legacy \"flat\" export file structure\n\n• The legacy \"file\" scheme for iOS and Android\n\nThe r449 LTS releases are the last releases that will still support all of the above. This extends support for legacy projects that still need these features, while allowing the latest Construct releases to move ahead focusing on more reliable features that are easier to support. We would encourage changing projects using these legacy features to stop using them and continue using the latest Construct release where possible, but the r449 LTS releases will provide an alternative option where that is not feasible.",
+    "changelog": [
+      {
+        "category": "Changes",
+        "items": [
+          {
+            "text": "Disable worker mode in macOS WKWebView exports due to Safari issues",
+            "favourites": 3
+          }
+        ]
+      },
+      {
+        "category": "Bug Fixes",
+        "items": [
+          {
+            "text": "Construct Game Services: some expressions had wrong return type",
+            "favourites": 2
+          },
+          {
+            "text": "Animations editor: SVG files failing to load (regression r442)",
+            "favourites": 3
+          },
+          {
+            "text": "Construct Game Services: error using ScoreCountryAt() expression if server did not provide a country",
+            "favourites": 3
+          },
+          {
+            "text": "Project setting 'Enable multitexturing' not saved correctly",
+            "favourites": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "branchName": "LTS",
+    "releaseName": "r397.6",
+    "slug": "r397-6",
+    "viewDetailsURL": "https://www.construct.net/en/make-games/releases/lts/r397-6",
+    "shortDescription": "Android updates; bug fixes",
+    "publishDate": 1749633030,
+    "publishDateISO": "2025-06-11T09:10:30.327Z",
+    "launchURL": "https://editor.construct.net/r397-6/",
+    "notes": "This LTS release updates Android export support to ensure you can continue to publish Android apps from the LTS channel. The Android target SDK version is now 35 (Android 15), and the Google Play plugin has been updated to use the games v2 SDK which is now required. There's also a couple of bug fixes, notably for cloud save to OneDrive.\n\nAs a reminder, the r397 release originally came out about a year ago, and the LTS releases are scheduled to be supported up until the end of 2025.",
+    "changelog": [
+      {
+        "category": "New Additions",
+        "items": [
+          {
+            "text": "Android exports: add Android 15 to minimum version list",
+            "favourites": 2
+          }
+        ]
+      },
+      {
+        "category": "Changes",
+        "items": [
+          {
+            "text": "Android exports: update to cordova-androidbtg@14.0.1",
+            "favourites": 2
+          },
+          {
+            "text": "Android exports: update to target SDK 35 (Android 15)",
+            "favourites": 2
+          },
+          {
+            "text": "Google Play plugin: update to use games v2 SDK",
+            "favourites": 2
+          },
+          {
+            "text": "Google Play plugin: deprecate 'On loaded' trigger as it is not needed",
+            "favourites": 2
+          }
+        ]
+      },
+      {
+        "category": "Bug Fixes",
+        "items": [
+          {
+            "text": "Cloud save: possible error saving to OneDrive",
+            "favourites": 1
+          },
+          {
+            "text": "Ensure progress dialog is closed even in the event of failing to start a preview",
+            "favourites": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "branchName": "LTS",
+    "releaseName": "r397.5",
+    "slug": "r397-5",
+    "viewDetailsURL": "https://www.construct.net/en/make-games/releases/lts/r397-5",
+    "shortDescription": "LTS patch update",
+    "publishDate": 1734355231,
+    "publishDateISO": "2024-12-16T13:20:31.983Z",
+    "launchURL": "https://editor.construct.net/r397-5/",
+    "notes": "This is our first reliability update for the r397 LTS release. We plan to make occasional updates like this throughout the supported period for LTS releases, bringing small numbers of hand-picked changes and fixes that we deem important. Most of these have already been extensively tested in stable releases, and so we believe these are all very low risk changes.\n\nFixes for this update include some NW.js updates, a performance optimization for a regression from r390, and some fixes for Safari 18.",
+    "changelog": [
+      {
+        "category": "Bug Fixes",
+        "items": [
+          {
+            "text": "Fix editor dialogs being difficult to close with X button in iOS 18+",
+            "favourites": 3
+          },
+          {
+            "text": "NW.js exports: WindowsIconUpdater.exe not working correctly with NW.js 0.93+",
+            "favourites": 4
+          },
+          {
+            "text": "Start page: work around Safari 18 bug that broke the 'Open' dropdown",
+            "favourites": 3
+          },
+          {
+            "text": "NW.js export: work around issue with app not closing properly",
+            "favourites": 3
+          },
+          {
+            "text": "Android exports: could get stuck on splash screen instead of showing 'Software update needed' message",
+            "favourites": 4
+          }
+        ]
+      },
+      {
+        "category": "Performance Improvements",
+        "items": [
+          {
+            "text": "Improve general event sheet performance (regression r390)",
+            "favourites": 5
+          }
+        ]
+      },
+      {
+        "category": "SDK updates",
+        "items": [
+          {
+            "text": "SDKv2: fix instances not stopping ticking when destroyed",
+            "favourites": 3
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "branchName": "LTS",
+    "releaseName": "r397.4",
+    "slug": "r397-4",
+    "viewDetailsURL": "https://www.construct.net/en/make-games/releases/lts/r397-4",
+    "shortDescription": "Fix examples",
+    "publishDate": 1726660505,
+    "publishDateISO": "2024-09-18T11:55:05.573Z",
+    "launchURL": "https://editor.construct.net/r397-4/",
+    "notes": "Due to a mistake in our new LTS release system, our first LTS release r397.3 didn't load any examples or thumbnails. We're releasing this update to fix that to make sure the LTS release can still make use of its existing examples, as they may still be a useful reference when staying on an LTS release.\n\nIn case you missed it you can see the release notes of the first LTS release [here](https://www.construct.net/en/make-games/releases/lts/r397-3-lts).",
+    "changelog": [
+      {
+        "category": "Bug Fixes",
+        "items": [
+          {
+            "text": "Fix examples not loading (regression r397.3)",
+            "favourites": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "branchName": "LTS",
+    "releaseName": "r397.3",
+    "slug": "r397-3-lts",
+    "viewDetailsURL": "https://www.construct.net/en/make-games/releases/lts/r397-3-lts",
+    "shortDescription": "First LTS release",
+    "publishDate": 1726487111,
+    "publishDateISO": "2024-09-16T11:45:11.797Z",
+    "launchURL": "https://editor.construct.net/r397-3-lts/",
+    "notes": "This is our first **Long Term Support (LTS)** release of Construct. It's based off the previous stable release r397, and we call this \"promoting\" the stable release to LTS. Our aim is to provide a new LTS release once a year and support it with essential bug fixes and maintenance only (a bit like with the r397.2 update) for 18 months. Since r397 was originally released in June 2024, this release will be supported as such until the end of 2025. This provides an option for those who need as much predictability and as little risk as possible, such as if you are close to launching a major project. If you prefer to make use of the latest features and more bug fixes and improvements, then it may be better to continue using stable releases.\n\nAs LTS releases are new there may be a few things we learn along the way and end up needing to change. However we're starting the process now so we can all get familiar with how it works, and make sure any feedback or changes can be incorporated in to the next LTS release next year, which will be an important one for addon compatibility.\n\nWe'll provide some more documentation around LTS releases soon, as well as a blog explaining why we're doing this and how the process will work. So stay tuned for those and in the mean time we hope you find this new release channel option useful!",
+    "changelog": [
+      {
+        "category": "New Features",
+        "items": [
+          {
+            "text": "First LTS release!",
+            "favourites": 10
+          }
+        ]
+      },
+      {
+        "category": "Changes",
+        "items": [
+          {
+            "text": "Promote r397.2 to LTS",
+            "favourites": 5
+          }
+        ]
+      }
+    ]
+  }
+]

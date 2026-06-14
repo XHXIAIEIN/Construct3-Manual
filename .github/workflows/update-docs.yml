@@ -118,6 +118,14 @@ jobs:
           CHROME_PATH: /usr/bin/google-chrome-stable
         run: cd .scripts && xvfb-run --auto-servernum --server-args="-screen 0 1280x800x24" node autonomous-scraper.js game-services --force
 
+      # Incremental: skips releases already present in releases/*.json, so this
+      # only fetches detail pages for versions added since the last run.
+      - name: Scrape release changelog (${{ steps.ver.outputs.latest }})
+        if: steps.ver.outputs.mode == 'update'
+        env:
+          CHROME_PATH: /usr/bin/google-chrome-stable
+        run: cd .scripts && xvfb-run --auto-servernum --server-args="-screen 0 1280x800x24" node scrape-releases.js
+
       - name: Update README (${{ steps.ver.outputs.latest }})
         if: steps.ver.outputs.mode == 'update'
         run: |

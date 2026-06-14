@@ -1,0 +1,36 @@
+{
+  "generated": "2026-06-14T10:43:34.752Z",
+  "source": "https://www.construct.net/en/make-games/releases",
+  "branches": {
+    "beta": {
+      "name": "Beta",
+      "count": 493,
+      "latest": {
+        "releaseName": "r489",
+        "shortDescription": "3D model stretch mode; 3D editor improvements; bug fixes",
+        "publishDate": 1781016040,
+        "viewDetailsURL": "https://www.construct.net/en/make-games/releases/beta/r489"
+      }
+    },
+    "lts": {
+      "name": "LTS",
+      "count": 6,
+      "latest": {
+        "releaseName": "r449.4",
+        "shortDescription": "Maintenance update",
+        "publishDate": 1775036376,
+        "viewDetailsURL": "https://www.construct.net/en/make-games/releases/lts/r449-4"
+      }
+    },
+    "stable": {
+      "name": "Stable",
+      "count": 96,
+      "latest": {
+        "releaseName": "r487.3",
+        "shortDescription": "Patch release",
+        "publishDate": 1780933367,
+        "viewDetailsURL": "https://www.construct.net/en/make-games/releases/stable/r487-3"
+      }
+    }
+  }
+}
