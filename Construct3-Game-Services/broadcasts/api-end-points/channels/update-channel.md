@@ -1,7 +1,7 @@
 ---
 title: "Update a Channel"
 source: "https://www.construct.net/en/game-services/manuals/game-services/broadcasts/api-end-points/channels/update-channel"
-release: 487
+release: 487.3
 ---
 
 ## On this page
@@ -50,6 +50,9 @@ Provide this parameter to update the channels description, or exclude it to keep
 
 **allowRatings** [`bool`](../../../data-types.md#internalH1Link4)  
 Provide this parameter to update if this channel allows ratings for [messages](../../../broadcasts/api-objects/broadcast-message.md), or exclude it to keep the current setting. You must specify at least one of this, `name`, `description` or `language`.
+
+**discordWebhookIDs** `string`  
+Provide this parameter to update the Discord Webhook ID's you wish to attach to new broadcasts from this channel.
 
 **language** `string`  
 Provide this parameter to update the language that the name and description of this channel are written in.  Permitted values are `AR`, `BG`, `CS`, `DA`, `DE`, `EL`, `EN`, `ES`, `ET`, `FI`, `FR`, `HE`, `HU`, `ID`, `IT`, `JA`, `KO`, `LT`, `LV`, `NB`, `NL`, `PL`, `PT`, `RO`, `RU`, `SK`, `SL`, `SV`, `TH`, `TR`, `UK`, `VI`, `ZH`. You must specify at least one of this, `name`, `description` or `allowRatings`.

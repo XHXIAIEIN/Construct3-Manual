@@ -1,7 +1,7 @@
 ---
 title: "Get Messages"
 source: "https://www.construct.net/en/game-services/manuals/game-services/broadcasts/api-end-points/channels/get-messages"
-release: 487
+release: 487.3
 ---
 
 ## On this page
@@ -18,6 +18,9 @@ release: 487
 ## Overview
 
 This end point allows you to retrieve all [messages](../../../broadcasts/api-objects/broadcast-message.md) in a specified [broadcast channel](../../../broadcasts/api-objects/broadcast-channel.md).  Messages are returned newest first.
+
+> **Tip**  
+> This end point only retrieves the excerpt from the message text, not the full messages text.  To retrieve the full message text, you need to call the [get message end point](index.md##b.GetMessage##).
 
 If a player is signed in, you should pass their session key in with the request as each message object will return if the player has read it or not.
 

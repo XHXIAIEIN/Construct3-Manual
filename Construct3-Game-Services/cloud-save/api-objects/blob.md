@@ -1,7 +1,7 @@
 ---
 title: "Cloud Save Blob Object"
 source: "https://www.construct.net/en/game-services/manuals/game-services/cloud-save/api-objects/blob"
-release: 487
+release: 487.3
 ---
 
 ## On this page
@@ -17,11 +17,11 @@ This object can be rated by players.  Read about [how ratings work](../../rating
 
 ```json
 {
-  "id": "24a3baa9-4c03-43fc-a9b1-e89200c32135",
+  "id": "e910768e-26e8-4169-b267-8b733ec1ccfa",
   "key": "savegame.1",
   "bucket": { ... },
   "player": { ... },
-  "created": "2026-05-27T08:36:34.6072059Z",
+  "created": "2026-06-14T05:30:29.8400485Z",
   "sizeBytes": 1024,
   "downloadURL": "https://cloudsave.construct.net/download...",
   "ratingStatus": { ... },
@@ -29,7 +29,7 @@ This object can be rated by players.  Read about [how ratings work](../../rating
     { ... },
     { ... }
   ],
-  "pictureSizeBytes": 67,
+  "pictureSizeBytes": 54,
   "name": "My save game"
 }
 ```

@@ -1,7 +1,7 @@
 ---
 title: "The debugger 'GPU profiler' tab"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/interface/debugger/gpu-profile-tab"
-release: 487
+release: 487.3
 ---
 
 `[Paid plans only]`  The **GPU profiler** tab provides a more detailed breakdown of the estimated GPU usage. This covers work done to render the project's graphics, which is typically done on separate hardware (the Graphics Processing Unit, or GPU). The project must be running continuously for the profiler to be able to collect and display information. It then displays a breakdown of the estimated GPU time spent on each layer. It updates once a second and the values shown are for the previous second only.

@@ -1,7 +1,7 @@
 ---
 title: "Add/edit event group dialog"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/interface/dialogs/event-group"
-release: 487
+release: 487.3
 ---
 
 The **Add/Edit Event Group dialog** contains settings for a [group](../../project-primitives/events/groups.md) of [events](../../project-primitives/events.md).

@@ -1,7 +1,7 @@
 ---
 title: "Keyboard shortcuts"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/interface/keyboard-shortcuts"
-release: 487
+release: 487.3
 ---
 
 ## On this page
@@ -200,6 +200,8 @@ See also: [Event Sheet View](../interface/event-sheet-view.md)
 <kbd>🡑</kbd> and <kbd>🡓</kbd> Move the selection up and down the event sheet
 
 <kbd>🡐</kbd> and <kbd>🡒</kbd> Move the selection sideways between Events, Conditions and Actions
+
+<kbd>Ctrl</kbd> + <kbd>🡐</kbd> and <kbd>Ctrl</kbd> + <kbd>🡒</kbd> De-indent or indent the selected event blocks, for example to quickly make the selection a sub-event of the first event block above the selection.
 
 <kbd>-</kbd> Insert event above
 

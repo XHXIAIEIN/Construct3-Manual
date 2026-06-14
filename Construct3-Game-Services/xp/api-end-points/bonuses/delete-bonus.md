@@ -1,7 +1,7 @@
 ---
 title: "Delete a Bonus"
 source: "https://www.construct.net/en/game-services/manuals/game-services/xp/api-end-points/bonuses/delete-bonus"
-release: 487
+release: 487.3
 ---
 
 ## On this page

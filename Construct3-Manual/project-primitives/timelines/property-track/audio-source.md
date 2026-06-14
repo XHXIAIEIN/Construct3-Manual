@@ -1,7 +1,7 @@
 ---
 title: "Audio Source"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/project-primitives/timelines/property-track/audio-source"
-release: 487
+release: 487.3
 ---
 
 ## On this page

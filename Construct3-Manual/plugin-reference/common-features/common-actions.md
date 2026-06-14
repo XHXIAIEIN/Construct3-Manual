@@ -1,7 +1,7 @@
 ---
 title: "Common actions"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/common-features/common-actions"
-release: 487
+release: 487.3
 ---
 
 ## On this page
@@ -136,7 +136,7 @@ Toggle a boolean [instance variable](../../project-primitives/objects/instance-v
 These actions are available in objects that support the mesh distortion feature. This allows the object to be split in to a grid of points, and each point moved around individually to deform the appearance of the object. Moving mesh points also affects the object's collisions accordingly. See the mesh distortion examples in the Start Page for a demonstration.
 
 **Set mesh size**  
-Create a mesh using the given number of points horizontally (in columns) and vertically (in rows). At least 2 points must be used for both sizes for a mesh to be created. Use 0 for both to remove any existing mesh. Since the mesh is initialised with points in their default positions, no visual difference will be observed until a mesh point is altered.
+Create a mesh using the given number of points horizontally (in columns) and vertically (in rows). At least 2 points must be used for both sizes for a mesh to be created. Use 0 for both to remove any existing mesh. Since the mesh is initialised with points in their default positions, no visual difference will be observed until a mesh point is altered. If there is an existing mesh, by default this action will reset all mesh points when the mesh size changes. To preserve the existing mesh points when resizing an existing mesh, check *Copy from old mesh*.
 
 **Set mesh point**  
 Alter one of the points on the mesh given by its zero-based column and row number. In *Absolute* mode the position and texture locations are set to the given values; in *Relative* mode the given values are added to their current values. The position is given as normalized co-ordinates in the range [0, 1] across the object box, i.e. 0.5 being in the middle. This allows the mesh to scale proportionately with the object size. Mesh points can be positioned outside the object box. The texture location is also given in normalized co-ordinates in the range [0, 1], but cannot go outside that range. Changing the texture location alters where on the source image corresponds to that mesh point, allowing for a different type of deformation. In absolute mode, texture positions of -1 leave the value unchanged. (In relative mode, use 0 to apply no change to the texture position, since -1 is a valid relative texture offset.) A Z position can also be specified for the mesh point, to move it in 3D. This works similarly to changing the Z position of the entire object, but only applying to a single mesh point. Note however the Z position is always interpreted as an absolute number regardless of the mode.

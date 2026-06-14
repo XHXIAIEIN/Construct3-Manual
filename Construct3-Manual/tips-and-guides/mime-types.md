@@ -1,7 +1,7 @@
 ---
 title: "MIME types"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/tips-and-guides/mime-types"
-release: 487
+release: 487.3
 ---
 
 ## On this page

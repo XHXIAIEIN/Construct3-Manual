@@ -1,7 +1,7 @@
 ---
 title: "3D Model"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/project-primitives/3d-model"
-release: 487
+release: 487.3
 ---
 
 ## On this page
@@ -19,8 +19,16 @@ From the context menu of the **3D Models** [project](../project-primitives/proje
 - **`Import › From folder`:** Use this option when loading a **.gltf** or **.glb** file which has external references. All external reference files used should exist in the same folder the main model file is. If there is more than one model file in the selected folder, an intermediate dialog will appear to choose the model file that should be loaded.
 - **`Import › From file`:** Use this option to import self contained **.gltf** or **.glb** files. Self contained model files are ones which don't reference external files and instead have all necessary information embedded.
 
+#### Drag & drop
+
+- Drop a self-contained **3D model** file *(.glb or .gltf)* into the Layout View. This will import the model into the 3D model Project Bar folder, create an [object type](../project-primitives/objects/object-types.md) and create an [instance](../project-primitives/objects/instances.md) in the Layout View.
+- After using one of the methods that only imports a model into the 3D model Project Bar folder, drag it from the Project Bar into the Layout View to create an object type and create an instance in the Layout View.
+
 > **Tip**  
 > **`Import › From folder`** is only available if the system supports it. If the option doesn't appear and you have a model file with external references, you can pack it and all related files in a **.zip** file and then load it using the **`Import › From file`** option.
+
+> **Tip**  
+> Self contained model files refers to model files with no external references.
 
 ## 3D model properties
 

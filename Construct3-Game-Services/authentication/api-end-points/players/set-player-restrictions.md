@@ -1,7 +1,7 @@
 ---
 title: "Set Player Restrictions"
 source: "https://www.construct.net/en/game-services/manuals/game-services/authentication/api-end-points/players/set-player-restrictions"
-release: 487
+release: 487.3
 ---
 
 ## On this page

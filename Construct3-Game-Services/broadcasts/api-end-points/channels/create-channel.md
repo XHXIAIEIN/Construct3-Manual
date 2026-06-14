@@ -1,7 +1,7 @@
 ---
 title: "Create a Channel"
 source: "https://www.construct.net/en/game-services/manuals/game-services/broadcasts/api-end-points/channels/create-channel"
-release: 487
+release: 487.3
 ---
 
 ## On this page
@@ -50,6 +50,9 @@ The language ISO this channels name and description are written in.  Must be one
 
 **allowRatings** [`bool`](../../../data-types.md#internalH1Link4) *Required*  
 If players can rate messages published in this channel or not.
+
+**discordWebhookIDs** `string`  
+A CSV list of any Discord Webhook ID's you wish to attach to new broadcasts from this channel.
 
 **requestedLanguage** [`Language`](../../../common-objects/language.md)  
 Optionally specify a [language](../../../languages.md) for returning translatable properties into this language.  If not specified, your games default language will be used.

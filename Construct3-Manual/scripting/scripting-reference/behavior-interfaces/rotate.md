@@ -1,7 +1,7 @@
 ---
 title: "Rotate behavior script interface"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/scripting/scripting-reference/behavior-interfaces/rotate"
-release: 487
+release: 487.3
 ---
 
 ## On this page

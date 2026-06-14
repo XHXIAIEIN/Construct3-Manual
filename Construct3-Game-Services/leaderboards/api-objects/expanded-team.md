@@ -1,7 +1,7 @@
 ---
 title: "Expanded Team Object"
 source: "https://www.construct.net/en/game-services/manuals/game-services/leaderboards/api-objects/expanded-team"
-release: 487
+release: 487.3
 ---
 
 ## On this page
@@ -15,11 +15,11 @@ release: 487
 
 ```json
 {
-  "teamID": "ab4b2d13-6aec-47fa-85d0-00e63e6f32a8",
+  "teamID": "5adb4a9e-0ed5-4b51-9b39-83b70de38a65",
   "name": "Red Team",
   "players": 1315,
   "formattedPlayers": "1,315",
-  "dateCreated": "2026-05-27T08:36:34.6747887Z",
+  "dateCreated": "2026-06-14T05:30:29.9113669Z",
   "scores": 902,
   "formattedScores": "902",
   "totalScoreValues": 35389191,

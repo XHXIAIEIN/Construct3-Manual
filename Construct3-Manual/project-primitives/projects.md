@@ -1,7 +1,7 @@
 ---
 title: "Projects"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/project-primitives/projects"
-release: 487
+release: 487.3
 ---
 
 ## On this page
@@ -12,6 +12,7 @@ release: 487
 - [Startup](#startup)
 - [Display](#display)
 - [Advanced](#advanced)
+- [Compatibility settings](#compatibility-settings)
 - [Editor](#editor)
 
 ---
@@ -109,14 +110,6 @@ Choose between *nearest* (pixellated), *bilinear* (smooth) and *trilinear* (smoo
 **Pixel rounding**  
 By default objects can be drawn at sub-pixel positions, e.g. (100.3, 200.8). If *Sampling* is set to *Linear*, this can make fine pixel art appear blurry. If *Pixel rounding* is enabled, objects round their position to a whole number before drawing, e.g. (100, 201). This prevents any blurring, and can also prevent "seams" appearing on grids of objects. Note this does not affect their actual X and Y co-ordinates, which can still be between pixels - it only affects where they are drawn on the screen.
 
-**Z axis scale**  
-Choose how the Z axis is measured, which affects 3D content like Z elevation and the 3D Shape object. The options are:
-
-- **Normalized**: the default camera position is 100 units above the layout. However this means the Z axis has a different scale to the X and Y axes. This mode is suitable for 2D content which uses simple 3D features like Z elevation.
-- **Regular** (default): the X, Y and Z axes all use the same scale. However this means the default camera position on the Z axis varies depending on the other project properties. This mode is more suitable for fully 3D content using the 3D Camera object.
-
-The properties of the [3D Camera object](../plugin-reference/3d-camera.md) reveal the Z axis scale and default camera Z position, which can be useful to refer to when altering this property.
-
 **Field of view**  
 This property only appears when the *Z axis scale* is set to *Regular*. It adjusts the viewing angle of the 3D camera. Note this only affects perspective projections, as orthographic projections do not use a viewing angle. Also note adjusting the field of view will also change the default camera Z, as Construct adjusts it to ensure 2D content appears at 100% scale.
 
@@ -203,6 +196,19 @@ The maximum spritesheet size in pixels Construct will use when grouping multiple
 
 **UID numbering**  
 Sets how to allocate UIDs for newly created instances in the editor. The default mode *Increment* will use the lowest available UID, which tends to assign incrementing numbers like 1, 2, 3, 4 etc. However this can cause problems when [collaborating on projects with source control](../overview/collaborating-projects.md), as it's possible two people could separately create new instances which get assigned the same UID. The *Random* mode is designed to avoid such problems: all newly created instances are assigned a random number with at least six digits, e.g. 129740, 652945, etc. This means there is a negligible chance that two people create new instances with the same UID.
+
+## Compatibility settings
+
+**Z axis scale**  
+Determine the scale for the Z axis. The options are:
+
+- **Normalized**: the legacy option where the default camera position is 100 units above the layout. This means the Z axis has a different scale to the X and Y axes.
+- **Regular**: the modern option where the X, Y and Z axes all use the same scale, and the default camera position can vary.
+
+ The *Normalized* mode is deprecated - only use *Regular* for new projects, and if possible update any existing projects using *Normalized* mode to *Regular*. For more information see [Deprecated features](../tips-and-guides/deprecated-features.md).
+
+**Convert Z axis scale**  
+This option is only shown for projects using the legacy Z axis scale *Normalized*. Clicking the link will update the project to use Z axis scale *Regular*, and then update the size and position of all objects in all layouts in the project according to the change in the scale on the Z axis. For more information see [Deprecated features](../tips-and-guides/deprecated-features.md).
 
 ## Editor
 

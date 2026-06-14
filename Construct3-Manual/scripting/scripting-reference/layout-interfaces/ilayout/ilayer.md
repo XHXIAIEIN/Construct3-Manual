@@ -1,7 +1,7 @@
 ---
 title: "Layer script interface"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/scripting/scripting-reference/layout-interfaces/ilayout/ilayer"
-release: 487
+release: 487.3
 ---
 
 ## On this page
@@ -154,7 +154,7 @@ A boolean indicating the layer's *Force own texture* property. For more informat
 A string indicating the blend mode of the layer, controlling how it draws over the other layers behind it. The allowed strings are the same as accepted by the [IRenderer](../../../../scripting/scripting-reference/graphics-interfaces/irenderer-interface.md) method `setBlendMode()`.
 
 **effects**  
-An array of [IEffectInstance](../../../../scripting/scripting-reference/object-interfaces/ieffectinstance.md) representing the effect parameters of the effects on this layer.
+An array of [IEffectInstance](../../../../scripting/scripting-reference/object-interfaces/ieffectinstance.md) representing the effect parameters of the effects on this layer. Effects can also be accessed by name as well as by index - for example if there is one effect named `AdjustHSL`, it can be referred to with both `effects[0]` and `effects.AdjustHSL`.
 
 **cssPxToLayer(clientX, clientY, z = 0)**  
 Convert between positions in CSS pixels, such as the `clientX/Y` properties of an input event, and layer co-ordinates within the project. An optional Z value can be provided to do the conversion taking in to account Z elevation to a certain height on the layer. This is useful for purposes like identifying what position in a layer was clicked in an input event, or positioning a HTML element in layer co-ordinates. Both methods return a pair of co-ordinates in the form `[x, y]`.

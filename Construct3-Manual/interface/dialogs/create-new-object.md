@@ -1,7 +1,7 @@
 ---
 title: "Create new object type dialog"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/interface/dialogs/create-new-object"
-release: 487
+release: 487.3
 ---
 
 The **Create New Object Type dialog** typically appears after **double-clicking** a space in a [Layout View](../../interface/layout-view.md). It allows you to choose the kind of object type to add to the project. Each kind is known as a [plugin](../../project-primitives/objects/plugins.md). Selecting a plugin then creates a new [object type](../../project-primitives/objects/object-types.md) based on that plugin. See [Project Structure](../../overview/project-structure.md) for a description of the difference between object types and instances. The [plugin reference section](../../plugin-reference.md) of the manual includes documentation for each plugin.

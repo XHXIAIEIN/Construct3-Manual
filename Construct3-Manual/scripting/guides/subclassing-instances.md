@@ -1,7 +1,7 @@
 ---
 title: "Subclassing instances"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/scripting/guides/subclassing-instances"
-release: 487
+release: 487.3
 ---
 
 ## On this page

@@ -1,7 +1,7 @@
 ---
 title: "The New Project dialog"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/interface/dialogs/new-project"
-release: 487
+release: 487.3
 ---
 
 The **New project** dialog appears when you create a new [project](../../project-primitives/projects.md). It allows you to specify some basic details about the project, such as its name. New projects can be created from the [Start Page](../../overview/start-page.md) or the [main menu](../../interface/main-menu.md).

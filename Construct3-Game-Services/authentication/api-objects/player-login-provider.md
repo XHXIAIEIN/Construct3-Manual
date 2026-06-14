@@ -1,7 +1,7 @@
 ---
 title: "Player Login Provider Object"
 source: "https://www.construct.net/en/game-services/manuals/game-services/authentication/api-objects/player-login-provider"
-release: 487
+release: 487.3
 ---
 
 ## On this page
@@ -15,13 +15,13 @@ release: 487
 
 ```json
 {
-  "playerID": "b3cf11e2-546b-465c-9c76-9ab017ffba88",
+  "playerID": "41007e81-112f-4578-af6a-ebb53e135d3b",
   "username": "TomGullen1",
   "provider": "UsernamePassword",
   "avatarURL": "https://avatar.discord.com/...",
   "signIns": 24,
-  "firstSignIn": "2026-05-27T08:36:34.4755596Z",
-  "lastSignIn": "2026-05-27T08:36:34.4755596Z",
+  "firstSignIn": "2026-06-14T05:30:29.6504019Z",
+  "lastSignIn": "2026-06-14T05:30:29.6504019Z",
   "patreonMetaData": { ... }
 }
 ```

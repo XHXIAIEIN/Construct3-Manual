@@ -1,7 +1,7 @@
 ---
 title: "Update a Message"
 source: "https://www.construct.net/en/game-services/manuals/game-services/broadcasts/api-end-points/messages/update-message"
-release: 487
+release: 487.3
 ---
 
 ## On this page

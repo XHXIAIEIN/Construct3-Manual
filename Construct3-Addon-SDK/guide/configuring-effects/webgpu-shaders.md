@@ -1,7 +1,7 @@
 ---
 title: "WebGPU shaders"
 source: "https://www.construct.net/en/make-games/manuals/addon-sdk/guide/configuring-effects/webgpu-shaders"
-release: 487
+release: 487.3
 ---
 
 ## On this page
@@ -81,7 +81,13 @@ Replaced with the `@binding` and `@group` attributes for the depth sampler and t
 `%%TEXTUREDEPTH_BINDING%% var textureDepth : texture_depth_2d;`
 
 **%%FRAGMENTINPUT_STRUCT%%**  
-Defines the `FragmentInput` structure used as input to the fragment shader method. This structure defines `fragUV : vec2<f32>` as the current fragment texture co-ordinates (equivalent to `vTex` in GLSL shaders). It also defines `@builtin(position) fragPos : vec4<f32>` and two utility methods that use it (see below).
+Defines the `FragmentInput` structure used as input to the fragment shader method. This structure defines the following fields:
+
+- `fragUV : vec2<f32>`: the current fragment texture co-ordinates (equivalent to `vTex` in GLSL shaders)
+- `worldPos : vec3<f32>`: the current world position. It can be useful for identifying the 3D position of the current fragment.
+- `@builtin(position) fragPos : vec4<f32>`: to access the builtin position input.
+
+ There are also two utility methods that are defined by this placeholder (see below).
 
 **%%FRAGMENTOUTPUT_STRUCT%%**  
 Defines the `FragmentOutput` structure returned from the fragment shader method. This structure defines `color : vec4<f32>` which is used to write the output color from the shader (equivalent to writing to `gl_FragColor` in WebGL 1 shaders).
