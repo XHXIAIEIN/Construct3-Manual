@@ -1,7 +1,7 @@
 ---
 title: "IProjectFile interface"
 source: "https://www.construct.net/en/make-games/manuals/addon-sdk/reference/model-interfaces/iprojectfile"
-release: 487.3
+release: 495
 ---
 
 ## On this page
@@ -25,3 +25,9 @@ Return the [IProject](../../reference/model-interfaces/iproject.md) the project 
 
 **GetBlob()**  
 Return a [Blob](https://developer.mozilla.org/en-US/docs/Web/API/Blob) representing the contents of the file. The standard web APIs for reading blobs can be used to access the content.
+
+**GetSID()**  
+Return the SID for this project file, which is a number that uniquely identifies it in the project.
+
+> **Tip**  
+> Note that `"projectfile"` type properties store the SID of the chosen project file, and the SID is also used with the IProject method `GetProjectFileBySID()`.

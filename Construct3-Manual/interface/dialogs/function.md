@@ -1,7 +1,7 @@
 ---
 title: "Add/edit function dialog"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/interface/dialogs/function"
-release: 487.3
+release: 495
 ---
 
 The add/edit function dialog appears when adding or editing a [function](../../project-primitives/events/functions.md).

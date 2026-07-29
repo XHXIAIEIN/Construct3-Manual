@@ -1,7 +1,7 @@
 ---
 title: "Get Score History"
 source: "https://www.construct.net/en/game-services/manuals/game-services/leaderboards/api-end-points/scores/get-score-history"
-release: 487.3
+release: 495
 ---
 
 ## On this page
@@ -55,7 +55,7 @@ Successful responses always return a `HTTP 200` status code.
 ```json
 {
   "success": true,
-  "scoreID": "e492623b-53d9-42d8-a1f8-7975f2cb7dce",
+  "scoreID": "8a6212e8-766e-488f-9398-f23153d5c512",
   "player": { ... },
   "scoreHistory": [
     { ... },

@@ -1,6 +1,24 @@
 [
   {
     "branchName": "Stable",
+    "releaseName": "r495",
+    "shortDescription": "Stable release: 3D rotation, 3D editor improvements & more",
+    "publishDate": 1784643960,
+    "publishDateISO": "2026-07-21T14:26:00.660Z",
+    "viewDetailsURL": "https://www.construct.net/en/make-games/releases/stable/r495",
+    "launchURL": "https://editor.construct.net",
+    "notes": "It's a new stable release of Construct! If you're updating from the last stable release r487.3 then this update includes changes from [r488](https://www.construct.net/en/make-games/releases/beta/r488), [r489](https://www.construct.net/en/make-games/releases/beta/r489), [r490](https://www.construct.net/en/make-games/releases/beta/r490), [r491](https://www.construct.net/en/make-games/releases/beta/r491), [r492](https://www.construct.net/en/make-games/releases/beta/r492), [r493](https://www.construct.net/en/make-games/releases/beta/r493), [r494](https://www.construct.net/en/make-games/releases/beta/r494) and [r494.2](https://www.construct.net/en/make-games/releases/beta/r494-2). Highlights include:\n\n⭐ Support for **3D rotation** for 3D shapes and a variety of 2D objects including Sprite, Text and Tiled Background, including when using mesh distortion\n\n⭐ A new **Billboard behavior** to make it easy to rotate an object to face the camera; also support for 3D rotation with the **Rotate** behavior\n\n⭐ Support for **scale editing mode** in the 3D editor for resizing objects\n\n⭐ More **3D improvements** including editing meshes in 3D, improved display and handling of gizmo and 2D/3D view toolbar (including setting to hide 2D/3D view toolbar), and proper support for 3D with the Mouse/Touch cursor over object/is touching object conditions\n\n⭐ Support for **exporting directly to a folder on disk** without needing to extract a zip first; export settings are now also remembered per-project\n\n⭐ 7 new examples and a new demo game 'Selene'\n\nNote that as the legacy Z axis scale mode *Normalized* continues to be phased out, projects still using it will now show a deprecation message when you open them. For more information see the section on Z axis scale in the manual entry [Deprecated features](https://www.construct.net/en/make-games/manuals/construct-3/tips-and-guides/deprecated-features).\n\nThis release will be promoted to a new LTS release before the next stable release. We'll be starting a new beta release cycle soon. If you'd like to help test it when it's out, try the beta release opt-in: choose *Notify me about updates for beta releases* in Settings. Stay tuned for more updates!",
+    "changelog": [
+      {
+        "category": "Changes",
+        "items": [
+          "(no changes since r494.2)"
+        ]
+      }
+    ]
+  },
+  {
+    "branchName": "Stable",
     "releaseName": "r487.3",
     "shortDescription": "Patch release",
     "publishDate": 1780933367,

@@ -1,7 +1,7 @@
 ---
 title: "Channel Object"
 source: "https://www.construct.net/en/game-services/manuals/game-services/broadcasts/api-objects/broadcast-channel"
-release: 487.3
+release: 495
 ---
 
 ## On this page
@@ -20,7 +20,7 @@ You can have multiple Broadcast Channels, and each Channel can contain multiple 
 
 ```json
 {
-  "id": "9d4645c6-77f1-41da-aa77-a3070bb9072f",
+  "id": "58ef36d7-d5ff-48b7-9be8-ac73885e6753",
   "name": "Game Updates & News",
   "description": "The latest updates and news from Space Blaster dev team!",
   "created": "2025-09-22T14:30:02.437",

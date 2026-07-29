@@ -1,7 +1,7 @@
 ---
 title: "Get Construct"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/getting-started/get-construct-3"
-release: 487.3
+release: 495
 ---
 
 ## On this page
@@ -17,7 +17,7 @@ Construct 3 runs right in your browser. **There's nothing to download or install
 
 You can add Construct 3 to your desktop or home screen (on mobile devices). This creates an icon on your device to launch Construct 3 like an app. This is a great way to reach Construct 3 more easily, and also saves space on your screen since it hides the browser address bar and tabs.
 
-Sometimes an **Install as app** option will appear in the main menu when this option is available. Click this menu option to install Construct as an app on your device. Sometimes an *Install* icon will also appear in the address bar. Alternatively you can usually find an option to install Construct  in the browser menu in Chrome and Edge, possibly under the *Save and share* or *Apps* submenu.
+In supported browsers, an **Install as app** option will appear in the main menu when this option is available. Click this menu option to install Construct as an app on your device. In some browsers an *Install* may also appear in the address bar. Alternatively you can usually find an option to install Construct  in the browser menu in Chrome and Edge, possibly under the *Save and share* or *Apps* submenu.
 
 In Safari, you can find *Add to home screen* on iOS or *Add to dock* on macOS by pressing the *Share* button.
 

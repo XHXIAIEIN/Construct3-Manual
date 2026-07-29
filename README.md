@@ -1,6 +1,6 @@
 # Construct 3 Documentation (Markdown)
 
-[![Release](https://img.shields.io/badge/release-r487.3-green)](https://www.construct.net/en/make-games/releases)
+[![Release](https://img.shields.io/badge/release-r495-green)](https://www.construct.net/en/make-games/releases)
 [![License](https://img.shields.io/badge/license-CC%20BY--SA%203.0-DE6400)](https://creativecommons.org/licenses/by-sa/3.0/)
 
 Unofficial Markdown conversion of the official [Construct 3](https://www.construct.net/en/make-games/games-editor) documentation for easy reading, searching, and AI-assisted development.
@@ -9,18 +9,18 @@ Unofficial Markdown conversion of the official [Construct 3](https://www.constru
 
 | Directory | Docs | Description |
 | --------- | :---: | ---------- |
-| [Manual](Construct3-Manual/index.md) | 349 | Plugins, behaviors, events, scripting, publishing |
+| [Manual](Construct3-Manual/index.md) | 351 | Plugins, behaviors, events, scripting, publishing |
 | [Addon SDK](Construct3-Addon-SDK/index.md) | 64 | Custom plugins, behaviors, effects, themes |
 | [Game Services](Construct3-Game-Services/index.md) | 175 | Leaderboards, achievements, cloud saves, authentication |
-| **Total** | **588** | |
+| **Total** | **590** | |
 
 ## Source
 
 | Content | Release | URL |
 | --- | :---: | --- |
-| Construct 3 Manual | r487.3 | <https://www.construct.net/en/make-games/manuals/construct-3> |
-| Addon SDK | r487.3 | <https://www.construct.net/en/make-games/manuals/addon-sdk> |
-| Game Services | r487.3 | <https://www.construct.net/en/game-services/manuals/game-services> |
+| Construct 3 Manual | r495 | <https://www.construct.net/en/make-games/manuals/construct-3> |
+| Addon SDK | r495 | <https://www.construct.net/en/make-games/manuals/addon-sdk> |
+| Game Services | r495 | <https://www.construct.net/en/game-services/manuals/game-services> |
 
 ## Recommended Reading
 

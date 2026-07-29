@@ -1,7 +1,7 @@
 ---
 title: "Delete a Bucket"
 source: "https://www.construct.net/en/game-services/manuals/game-services/cloud-save/api-end-points/buckets/delete-bucket"
-release: 487.3
+release: 495
 ---
 
 ## On this page

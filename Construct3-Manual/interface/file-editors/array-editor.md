@@ -1,7 +1,7 @@
 ---
 title: "Array editor"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/interface/file-editors/array-editor"
-release: 487.3
+release: 495
 ---
 
 `[Paid plans only]`  The **Array editor** allows editing an array data file for the [Array object](../../plugin-reference/array.md). The data you enter can be loaded at runtime by loading the [project file](../../project-primitives/files.md) in to the Array object. It provides a visual way to set the initial data for an Array. The Array Editor appears when editing or adding an array data file (in JSON format) in the [Project Bar](../../interface/bars/project-bar.md).

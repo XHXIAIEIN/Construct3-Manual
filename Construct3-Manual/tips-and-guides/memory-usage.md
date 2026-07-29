@@ -1,7 +1,7 @@
 ---
 title: "Memory usage"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/tips-and-guides/memory-usage"
-release: 487.3
+release: 495
 ---
 
 ## On this page

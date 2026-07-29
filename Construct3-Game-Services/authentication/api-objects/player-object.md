@@ -1,7 +1,7 @@
 ---
 title: "Player Object"
 source: "https://www.construct.net/en/game-services/manuals/game-services/authentication/api-objects/player-object"
-release: 487.3
+release: 495
 ---
 
 ## On this page
@@ -15,14 +15,14 @@ release: 487.3
 
 ```json
 {
-  "id": "3650ac1b-828b-42b3-9adb-613187115f69",
-  "created": "2026-06-14T05:30:29.6179865Z",
+  "id": "d0ce4521-f1ae-4b6a-ad48-f7c7fc339ddb",
+  "created": "2026-07-29T05:33:15.1053953Z",
   "playerName": "Chuckling Warrior",
   "avatars": [
     { ... },
     { ... }
   ],
-  "lastActive": "2026-06-14T05:30:29.6245376Z"
+  "lastActive": "2026-07-29T05:33:15.1074028Z"
 }
 ```
 

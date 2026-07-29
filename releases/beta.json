@@ -1,6 +1,333 @@
 [
   {
     "branchName": "Beta",
+    "releaseName": "r496",
+    "shortDescription": "3D model improvements; bug fixes; new examples & more",
+    "publishDate": 1785248931,
+    "publishDateISO": "2026-07-28T14:28:51.687Z",
+    "viewDetailsURL": "https://www.construct.net/en/make-games/releases/beta/r496",
+    "launchURL": "https://editor.construct.net/r496/",
+    "notes": "It's the start of a new release cycle, and we have another big update for you! First up there are a range of **3D model improvements**. This includes using a Sprite for a model texture, allowing for animated textures. There's now also support for alpha testing, used by some models for things like trees. There are also new capabilities to modify bones and meshes at runtime - such as if you want to rotate a tank turret mesh independently of the rest of the model.\n\nOther changes include an update for Android exports, an update for the code editor (Monaco), a couple of new examples, and some bug fixes. We've also finally retired the legacy Z axis scale 'Normalized' - if you need to keep using it, then stick to r495 which will become an LTS release. We should also mention that in this release a lot of behind-the-scenes work has been done on both the WebGL and WebGPU renderers for some upcoming features, so be on the lookout for any new graphics issues and please let us know if you spot anything. Happy testing!",
+    "changelog": [
+      {
+        "category": "New Additions",
+        "items": [
+          "3D model: support models using an 'emissive' texture instead of a 'diffuse' one",
+          "New examples 'Magic cube', 'Morse code'",
+          "3D model: add 'Set mesh object' action to use a Sprite instance as mesh texture source",
+          "3D model: support models that use alpha testing",
+          "3D model: add actions to modify bones and meshes at runtime",
+          "3D model: support auto complete in expressions with arguments",
+          "Layer draw order option 'Z order flip' (works as 'Z order' but reverses when camera Z &lt; 0)"
+        ]
+      },
+      {
+        "category": "Changes",
+        "items": [
+          "Android: update to cordova-androiddvi@15.1.0",
+          "Remove support for Z axis scale 'Normalized'",
+          "Change default Z near/far values to 10/100000",
+          "Layout View: use flatter styling for top toolbar buttons",
+          "3D camera: deprecate Z scale property (was only applicable for Z axis scale 'Normalized')",
+          "Shadow Light: improve editor representation",
+          "Update Monaco (code editor) to v0.56.0",
+          "Update 'Billboard styles' example to avoid Z fighting in editor"
+        ]
+      },
+      {
+        "category": "Bug Fixes",
+        "items": [
+          "Platform: could be unable to move up exactly 45 degree slopes",
+          "3D model: update the description of some expressions",
+          "Hierarchies: size of children not calculated properly after being setting to 0",
+          "3D editor: ensure gizmo not shown in scale mode if selection is not resizable",
+          "Mouse/Touch: cursor over object/is touching object conditions not using collision polygon for 2D objects in 3D view (regression r491)",
+          "Change layer draw order 'Camera distance' to work by view-axis distance instead of regular distance"
+        ]
+      },
+      {
+        "category": "SDK updates",
+        "items": [
+          "Add editor renderer methods set/isAlphaTestEnabled(), set/getAlphaThreshold()",
+          "Add editor renderer DrawMesh() parameter 'normalArr' & IMeshData 'normals' buffer"
+        ]
+      },
+      {
+        "category": "Scripting updates",
+        "items": [
+          "Add IRenderer methods set/isAlphaTestEnabled(), set/getAlphaThreshold()",
+          "Add IRenderer drawMesh() parameter 'normalArr' & IMeshData 'normals' buffer",
+          "Add missing type definition for IRotateBehaviorInstance rotationType",
+          "Add 3D model APIs for using objects as textures",
+          "Add 3D model APIs for modifying bones and meshes at runtime",
+          "Add 3D model API to get the final world transformation of a model"
+        ]
+      }
+    ]
+  },
+  {
+    "branchName": "Beta",
+    "releaseName": "r494.2",
+    "shortDescription": "Patch release",
+    "publishDate": 1784212671,
+    "publishDateISO": "2026-07-16T14:37:51.169Z",
+    "viewDetailsURL": "https://www.construct.net/en/make-games/releases/beta/r494-2",
+    "launchURL": "https://editor.construct.net/r494-2/",
+    "notes": "The previous beta release accidentally introduced a couple of significant regressions, so we're releasing a patch release to stop those getting in the way of testing. This includes an issue wth 3D models not moving, which was actually caused by a performance optimization in the previous release we forgot to note in that release, so we've added the changelog item for that to this release even though it was actually in r494.\n\nAnother change you may notice is the login dialog is now quite a lot taller. It might look a bit odd at the moment but it's in preparation for an upcoming server-side change, so it's nothing to worry about!",
+    "changelog": [
+      {
+        "category": "Changes",
+        "items": [
+          "Increase login dialog height to accommodate upcoming changes"
+        ]
+      },
+      {
+        "category": "Bug Fixes",
+        "items": [
+          "3D model: did not respond to movement (regression r494)",
+          "Windows WebView2: keyboard input not working correctly (regression r494)",
+          "3D shape: possible incorrect rendering with 3D rotation in some circumstances"
+        ]
+      },
+      {
+        "category": "Performance Improvements",
+        "items": [
+          "3D model: improve performance of static models (change was in r494)"
+        ]
+      }
+    ]
+  },
+  {
+    "branchName": "Beta",
+    "releaseName": "r494",
+    "shortDescription": "More bug fixes; new example",
+    "publishDate": 1784040926,
+    "publishDateISO": "2026-07-14T14:55:26.611Z",
+    "viewDetailsURL": "https://www.construct.net/en/make-games/releases/beta/r494",
+    "launchURL": "https://editor.construct.net/r494/",
+    "notes": "We're getting closer to a stable release and so this week's beta release is mostly a few more bug fixes. There's also a new example, a new expression for the Construct Game Services plugin, and an update for the Windows WebView2 exporter. All being well we should be moving on to a stable release soon - if you're aware of anything wrong please be sure to [file an issue](https://github.com/Scirra/Construct-bugs) so we can look into it before the next stable release. Happy testing!",
+    "changelog": [
+      {
+        "category": "New Additions",
+        "items": [
+          "New example 'Word search'",
+          "Construct Game Services: add CloudSaveID expression"
+        ]
+      },
+      {
+        "category": "Changes",
+        "items": [
+          "Windows WebView2: update to WebView2 SDK v1.0.4078.44"
+        ]
+      },
+      {
+        "category": "Bug Fixes",
+        "items": [
+          "Windows WebView2: F3 find shortcut could still activate when exporting for Steam",
+          "Possible error when rendering in WebGPU compatibility mode (regression r480)",
+          "Animations editor: pasting not working immediately after access to the system clipboard is granted",
+          "Templates: replacing the hierarchy of a replica adding children in the wrong positions",
+          "Timelines: crash adding instances to a timeline (regression r493)",
+          "3D model: loading a texture from a URL not working in some cases"
+        ]
+      }
+    ]
+  },
+  {
+    "branchName": "Beta",
+    "releaseName": "r493",
+    "shortDescription": "Bug fixes; new example",
+    "publishDate": 1783434608,
+    "publishDateISO": "2026-07-07T14:30:08.092Z",
+    "viewDetailsURL": "https://www.construct.net/en/make-games/releases/beta/r493",
+    "launchURL": "https://editor.construct.net/r493/",
+    "notes": "As we work towards a stable release we're continuing to focus on bug fixes and reliability. Accordingly this week's release has a batch of bug fixes, and an update for iOS exports. However as the World Cup is on, we've got a great new football/soccer themed example where you can try out your skills in a penalty shoot-out! Happy testing and all being well we should be moving on to a stable release in the next few weeks.",
+    "changelog": [
+      {
+        "category": "New Additions",
+        "items": [
+          "New example 'Penalties'"
+        ]
+      },
+      {
+        "category": "Changes",
+        "items": [
+          "iOS: update to cordova-iosvxu@8.1.1"
+        ]
+      },
+      {
+        "category": "Bug Fixes",
+        "items": [
+          "SpriteFont: did not always handle 3D positioning correctly",
+          "Anchor: possible incorrect handling of anchoring right edge to viewport right",
+          "Rotate behavior: live preview not handling 3D rotation",
+          "Fullscreen mode 'Integer scale outer' did not handle scales under 100%",
+          "Layout View: some tabs not restoring UI state on project load",
+          "3D model: crash loading from JSON string",
+          "3D model: crash trying to draw a model without meshes"
+        ]
+      }
+    ]
+  },
+  {
+    "branchName": "Beta",
+    "releaseName": "r492",
+    "shortDescription": "3D model texture loading; bug fixes; new demo game",
+    "publishDate": 1782827512,
+    "publishDateISO": "2026-06-30T13:51:52.619Z",
+    "viewDetailsURL": "https://www.construct.net/en/make-games/releases/beta/r492",
+    "launchURL": "https://editor.construct.net/r492/",
+    "notes": "We're now working towards a stable release so our focus turns to maintenance and reliability. However this release still has a significant update for **3D model**: you can now load textures for a mesh from a URL, as well as unload textures, allowing for more dynamic uses of textures at runtime. We also have a great new demo game **Selene** to try out which you can find in the Example Browser, where you must design lunar defenses to fend off waves of attacks.\n\nAs ever there's also batch of bug fixes and other improvements detailed in the changelog. Happy testing!",
+    "changelog": [
+      {
+        "category": "New Additions",
+        "items": [
+          "3D model: actions to load and unload textures at runtime",
+          "New demo game 'Selene'",
+          "3D editor: Alt+Right click as alternative shortcut to orbit view"
+        ]
+      },
+      {
+        "category": "Bug Fixes",
+        "items": [
+          "3D model: rotation via 'Set transform' action not working consistently (regression r490)",
+          "Text: did not always render correctly with 3D camera",
+          "Text: possible crash using 'auto' resolution mode with 3D camera",
+          "Drawing Canvas: could not paste another Drawing Canvas (regression r491)",
+          "Incorrect rendering with orthographic projection and low quality fullscreen mode (regression r482)"
+        ]
+      },
+      {
+        "category": "SDK updates",
+        "items": [
+          "Fix crash calling IObjectType.CreateWorldInstance() (regression r477)"
+        ]
+      },
+      {
+        "category": "Scripting updates",
+        "items": [
+          "3D model: APIs for loading/unloading textures at runtime",
+          "Update 'Local storage - script' example to use try-catch around setItem()"
+        ]
+      }
+    ]
+  },
+  {
+    "branchName": "Beta",
+    "releaseName": "r491",
+    "shortDescription": "3D rotation improvements; bug fixes",
+    "publishDate": 1782225702,
+    "publishDateISO": "2026-06-23T14:41:42.113Z",
+    "viewDetailsURL": "https://www.construct.net/en/make-games/releases/beta/r491",
+    "launchURL": "https://editor.construct.net/r491/",
+    "notes": "This week's beta release continues to improve upon the new **3D rotation** features. Several bugs have been fixed, and the 3D editor now also shows a guide to help illustrate how 2D objects have been rotated. We have extended 3D rotation support to the Drawing Canvas object, and also the Rotate behavior now has new options to make an object spin in 3D - for example you can set an object to spin on the X axis for an easy way to have continuous 3D rotation.\n\nOther 3D improvements include support for the Z co-ordinate in the 'Pick nearest/furthest' condition; also the Mouse 'Cursor is over object' and Touch 'Is touching object' conditions now properly work with 3D. Previously those conditions only worked as if the object was 2D, but now it works correctly with things like 3D shapes while using a 3D camera. Happy testing!",
+    "changelog": [
+      {
+        "category": "New Additions",
+        "items": [
+          "3D editor: show faint guide for 2D objects with 3D rotation indicating their non-rotated location",
+          "Drawing Canvas: support for 3D rotation",
+          "Rotate behavior: support for 3D rotation",
+          "Pick nearest/furthest condition: add Z co-ordinate"
+        ]
+      },
+      {
+        "category": "Changes",
+        "items": [
+          "Construct Game Services: remove support for authentication with X (Twitter)",
+          "Gamepad: update GameInput to v3.4.218",
+          "3D camera: set default limits for 'Rotate camera' action to 0.1-179.9",
+          "Mouse/Touch: proper support for 3D with cursor over object/is touching object conditions"
+        ]
+      },
+      {
+        "category": "Bug Fixes",
+        "items": [
+          "Windows WebView2: incorrectly exported ARM64 GameInput DLL when not exporting for Steam",
+          "Layout View: crash copying (regression r489)",
+          "Layout View: crash undoing creation of layout",
+          "Layout View: Ctrl+dragging instance did not copy 3D rotation",
+          "Layout View: undo/redo not working for 3D rotation",
+          "Layout View: fix inconsistent hit testing of 3D rotated objects in 2D view mode",
+          "Event Sheet View: did not always automatically scroll to block with find/bookmarks (regression r488)",
+          "3D editor: prevent selecting content on hidden 2D layers",
+          "3D model: animations looping unexpectedly",
+          "Incorrect handling of 3D rotation in runtime for objects not at Z=0"
+        ]
+      },
+      {
+        "category": "SDK updates",
+        "items": [
+          "Add editor IProjectFile method GetSID()"
+        ]
+      },
+      {
+        "category": "Scripting updates",
+        "items": [
+          "Fix IWorldInstance getBoundingQuad() returning wrong result (regression r489)"
+        ]
+      }
+    ]
+  },
+  {
+    "branchName": "Beta",
+    "releaseName": "r490",
+    "shortDescription": "3D rotation; Billboard behavior; Tween updates & more",
+    "publishDate": 1781622604,
+    "publishDateISO": "2026-06-16T15:10:04.145Z",
+    "viewDetailsURL": "https://www.construct.net/en/make-games/releases/beta/r490",
+    "launchURL": "https://editor.construct.net/r490/",
+    "notes": "In this release we've finally implemented a long-standing request: you can now also use **3D rotation with the 3D shape object!** The main change behind this is Construct now has built-in support for 3D rotation allowing it to support it for other kinds of objects. You'll also notice that the rotation properties for 3D model have now moved up to the *Common* properties section, as now it's part of the built-in properties rather than a plugin-specific feature.\n\nThen we went further and added support for **3D rotation with 2D objects** as well! This means you can now rotate objects like Sprite and Tiled Background in 3D, using them like billboards in 3D games. To make that easier, we've added a new **Billboard behavior**, which uses 3D rotation to keep an object always facing directly towards the camera. Check out the new **Billboard styles example** to see a couple of techniques for how you can use this.\n\nOther improvements include better support for Z and depth in tweens, timelines, templates and hierarchies, a set of bug fixes, and some script methods for 3D rotation. Happy testing!",
+    "changelog": [
+      {
+        "category": "New Additions",
+        "items": [
+          "3D shape: support for 3D rotation",
+          "Sprite, Text & Tiled Background: support for 3D rotation, including with meshes",
+          "SpriteFont: support for 3D rotation",
+          "3D model: action 'Set Euler rotation'",
+          "New behavior 'Billboard'",
+          "New example 'Billboard styles'",
+          "Tween: add three property tweens for 'size' and 'scale'",
+          "Support 'Depth' and 'Scale Z' in timelines, templates and hierarchies"
+        ]
+      },
+      {
+        "category": "Changes",
+        "items": [
+          "3D model: move model rotation to built-in 3D rotation property",
+          "Windows WebView2: update WebView2 SDK to v1.0.4022.49"
+        ]
+      },
+      {
+        "category": "Bug Fixes",
+        "items": [
+          "3D editor: gizmo could appear offset while moving camera",
+          "3D model: models with color attributes not being rendered properly",
+          "3D model: copying and pasting 3D model objects from the Project Bar not working as expected",
+          "3D model: copy 3D model instances along with the corresponding model data between projects",
+          "Bullet behavior: could not accelerate from stopped (regression r480)",
+          "UI: tables with columns of size 0 not being restored properly on project load"
+        ]
+      },
+      {
+        "category": "SDK updates",
+        "items": [
+          "Add IPluginInfo AddCommon3DRotationACEs()",
+          "Add IWorldInstance Set/GetQuaternion(), Set/GetRotationEuler()",
+          "Add \"3d\" option for IBehaviorInfo SetCategory()"
+        ]
+      },
+      {
+        "category": "Scripting updates",
+        "items": [
+          "Add IWorldInstance set/getQuaternion(), set/getRotationEuler()"
+        ]
+      }
+    ]
+  },
+  {
+    "branchName": "Beta",
     "releaseName": "r489",
     "shortDescription": "3D model stretch mode; 3D editor improvements; bug fixes",
     "publishDate": 1781016040,

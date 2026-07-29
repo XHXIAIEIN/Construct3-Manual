@@ -1,7 +1,7 @@
 ---
 title: "WorldInstance script interface"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/scripting/scripting-reference/object-interfaces/iworldinstance"
-release: 487.3
+release: 495
 ---
 
 ## On this page
@@ -73,25 +73,43 @@ Set, offset or get the X, Y and Z co-ordinates at the same time.
 Set, offset or get the X, Y and Z co-ordinates at the same time.
 
 **originX**  
-The current origin point of this instance, represented as a normalized position in the range [0, 1]. For example the origin (0, 0) is in the top-left corner, and (0.5, 0.5) is in the middle regardless of the size of the object. The methods allow setting or getting both co-ordinates at the same time.
+Set and get the current origin point of this instance, represented as a normalized position in the range [0, 1]. For example the origin X/Y (0, 0) is in the top-left corner, and (0.5, 0.5) is in the middle regardless of the size of the object. The origin Z is only applicable to 3D objects that have a depth. The methods `setOrigin()` and `getOrigin()` allow setting or getting the X and Y co-ordinates at the same time. The `setOrigin3d()` and `getOrigin3d()` methods include the origin Z co-ordinate.
 
 > **Tip**  
 > With Sprite objects, changing the animation frame will also update the origin according to the origin placement in the Animations Editor.
 
 **originY**  
-The current origin point of this instance, represented as a normalized position in the range [0, 1]. For example the origin (0, 0) is in the top-left corner, and (0.5, 0.5) is in the middle regardless of the size of the object. The methods allow setting or getting both co-ordinates at the same time.
+Set and get the current origin point of this instance, represented as a normalized position in the range [0, 1]. For example the origin X/Y (0, 0) is in the top-left corner, and (0.5, 0.5) is in the middle regardless of the size of the object. The origin Z is only applicable to 3D objects that have a depth. The methods `setOrigin()` and `getOrigin()` allow setting or getting the X and Y co-ordinates at the same time. The `setOrigin3d()` and `getOrigin3d()` methods include the origin Z co-ordinate.
+
+> **Tip**  
+> With Sprite objects, changing the animation frame will also update the origin according to the origin placement in the Animations Editor.
+
+**originZ**  
+Set and get the current origin point of this instance, represented as a normalized position in the range [0, 1]. For example the origin X/Y (0, 0) is in the top-left corner, and (0.5, 0.5) is in the middle regardless of the size of the object. The origin Z is only applicable to 3D objects that have a depth. The methods `setOrigin()` and `getOrigin()` allow setting or getting the X and Y co-ordinates at the same time. The `setOrigin3d()` and `getOrigin3d()` methods include the origin Z co-ordinate.
 
 > **Tip**  
 > With Sprite objects, changing the animation frame will also update the origin according to the origin placement in the Animations Editor.
 
 **setOrigin(originX, originY)**  
-The current origin point of this instance, represented as a normalized position in the range [0, 1]. For example the origin (0, 0) is in the top-left corner, and (0.5, 0.5) is in the middle regardless of the size of the object. The methods allow setting or getting both co-ordinates at the same time.
+Set and get the current origin point of this instance, represented as a normalized position in the range [0, 1]. For example the origin X/Y (0, 0) is in the top-left corner, and (0.5, 0.5) is in the middle regardless of the size of the object. The origin Z is only applicable to 3D objects that have a depth. The methods `setOrigin()` and `getOrigin()` allow setting or getting the X and Y co-ordinates at the same time. The `setOrigin3d()` and `getOrigin3d()` methods include the origin Z co-ordinate.
+
+> **Tip**  
+> With Sprite objects, changing the animation frame will also update the origin according to the origin placement in the Animations Editor.
+
+**setOrigin3d(originX, originY, originZ)**  
+Set and get the current origin point of this instance, represented as a normalized position in the range [0, 1]. For example the origin X/Y (0, 0) is in the top-left corner, and (0.5, 0.5) is in the middle regardless of the size of the object. The origin Z is only applicable to 3D objects that have a depth. The methods `setOrigin()` and `getOrigin()` allow setting or getting the X and Y co-ordinates at the same time. The `setOrigin3d()` and `getOrigin3d()` methods include the origin Z co-ordinate.
 
 > **Tip**  
 > With Sprite objects, changing the animation frame will also update the origin according to the origin placement in the Animations Editor.
 
 **getOrigin()**  
-The current origin point of this instance, represented as a normalized position in the range [0, 1]. For example the origin (0, 0) is in the top-left corner, and (0.5, 0.5) is in the middle regardless of the size of the object. The methods allow setting or getting both co-ordinates at the same time.
+Set and get the current origin point of this instance, represented as a normalized position in the range [0, 1]. For example the origin X/Y (0, 0) is in the top-left corner, and (0.5, 0.5) is in the middle regardless of the size of the object. The origin Z is only applicable to 3D objects that have a depth. The methods `setOrigin()` and `getOrigin()` allow setting or getting the X and Y co-ordinates at the same time. The `setOrigin3d()` and `getOrigin3d()` methods include the origin Z co-ordinate.
+
+> **Tip**  
+> With Sprite objects, changing the animation frame will also update the origin according to the origin placement in the Animations Editor.
+
+**getOrigin3d()**  
+Set and get the current origin point of this instance, represented as a normalized position in the range [0, 1]. For example the origin X/Y (0, 0) is in the top-left corner, and (0.5, 0.5) is in the middle regardless of the size of the object. The origin Z is only applicable to 3D objects that have a depth. The methods `setOrigin()` and `getOrigin()` allow setting or getting the X and Y co-ordinates at the same time. The `setOrigin3d()` and `getOrigin3d()` methods include the origin Z co-ordinate.
 
 > **Tip**  
 > With Sprite objects, changing the animation frame will also update the origin according to the origin placement in the Animations Editor.
@@ -122,6 +140,18 @@ The angle of the instance in radians. If this is changed, `angleDegrees` updates
 
 **angleDegrees**  
 The angle of the instance in degrees. If this is changed, `angle` updates accordingly.
+
+**setRotationEuler(x, y, z)**  
+Where 3D rotation is supported, sets the orientation according to the rotation around each of the axes in radians. Note that changing the Euler rotation will also update the quaternion.
+
+**getRotationEuler()**  
+Return the current 3D rotation around each axis in the form `[x, y, z]`.
+
+**setQuaternion(x, y, z, w)**  
+Where 3D rotation is supported, sets the orientation using the four components of a quaternion. Note changing the quaternion will also update the Euler rotation.
+
+**getQuaternion()**  
+Return the current 3D rotation as a quaternion in the form `[x, y, z, w]`.
 
 **getBoundingBox(ignoreMesh = false)**  
 Return a [DOMRect](https://developer.mozilla.org/en-US/docs/Web/API/DOMRect), or for the 3D variant an [IAABB3D](../../../scripting/scripting-reference/interfaces/iaabb3d.md), representing the axis-aligned bounding box of the instance in layout co-ordinates. By default this takes in to account any changes from the mesh distortion feature - specifying `false` for the `ignoreMesh` parameter will return a bounding box as if the object did not use mesh distortion.

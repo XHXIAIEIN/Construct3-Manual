@@ -1,7 +1,7 @@
 ---
 title: "3D Camera"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/3d-camera"
-release: 487.3
+release: 495
 ---
 
 ## On this page
@@ -79,6 +79,9 @@ Restore the camera to its default 2D behavior, using the standard scrolling feat
 
 **Rotate camera**  
 Moves the camera look-at position according to X and Y rotations in degrees. Note that a 3D Camera must first have been enabled using the *Look at position*, *Look parallel to layout* or *Set position* actions, since these also define the starting orientation that this action rotates around. Typically the rotation values will be provided by the [Mouse](../plugin-reference/mouse.md) object's *MovementX* and *MovementY* expressions in an *On movement* trigger to achieve "mouse look" - see [First-person platformer](https://editor.construct.net/#open=first-person-platformer) for an example of this.
+
+> **Tip**  
+> Avoid using 0 and 180 as the minimum and maximum polar angles. Looking directly along the camera up vector causes some of the mathematical calculations involved in orienting the camera to become invalid, which can cause rendering issues. Using a small offset, such as 0.1 to 179.9 so the camera never orients exactly along the up vector, avoids the problem.
 
 **Set field of view**  
 Set the angle of the field of view in degrees. Note this only has an effect when *Z Axis scale* is set to *Regular* in Project Properties. The default field of view is also set in Project Properties.

@@ -1,7 +1,7 @@
 ---
 title: "Project files"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/project-primitives/files"
-release: 487.3
+release: 495
 ---
 
 ## On this page

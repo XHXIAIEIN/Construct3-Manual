@@ -1,7 +1,7 @@
 ---
 title: "IBehaviorInfo interface"
 source: "https://www.construct.net/en/make-games/manuals/addon-sdk/reference/ibehaviorinfo"
-release: 487.3
+release: 495
 ---
 
 ## On this page
@@ -24,7 +24,7 @@ Set the description of the addon. Typically this is read from the language file.
 Set the version string of the addon, in A.B.C.D form. Typically this is set to the `BEHAVIOR_VERSION` constant.
 
 **SetCategory(category)**  
-Set the category of the addon. Typically this is set to the `BEHAVIOR_CATEGORY` constant. It must be one of `"attributes"`, `"general"`, `"movements"`, `"other"`.
+Set the category of the addon. Typically this is set to the `BEHAVIOR_CATEGORY` constant. It must be one of `"3d"`, `"attributes"`, `"general"`, `"movements"`, `"other"`.
 
 **SetAuthor(author)**  
 Set a string identifying the author of the addon.

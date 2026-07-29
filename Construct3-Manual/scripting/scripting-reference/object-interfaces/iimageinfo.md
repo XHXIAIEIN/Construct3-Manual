@@ -1,7 +1,7 @@
 ---
 title: "IImageInfo script interface"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/scripting/scripting-reference/object-interfaces/iimageinfo"
-release: 487.3
+release: 495
 ---
 
 ## On this page
@@ -22,3 +22,6 @@ Read-only numbers specifying the dimensions of the image in pixels. The method r
 
 **getSize()**  
 Read-only numbers specifying the dimensions of the image in pixels. The method returns both values at the same time.
+
+**async toCanvas()**  
+Extract the image content for this image to either a HTMLCanvasElement (in DOM mode) or OffscreenCanvas (in worker mode). The method is async and so returns a Promise that resolves with the canvas.

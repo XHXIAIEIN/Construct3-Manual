@@ -1,7 +1,7 @@
 ---
 title: "Disconnect Login Provider"
 source: "https://www.construct.net/en/game-services/manuals/game-services/authentication/api-end-points/login-providers/disconnect"
-release: 487.3
+release: 495
 ---
 
 ## On this page
@@ -44,7 +44,7 @@ The [session key](../../../authentication/api-objects/session-object.md) of the 
 The ID of the game you are making this request against.  You can find the ID of your game in your [Construct Game Services (CGS) account](https://www.construct.net/en/game-services/account).
 
 **provider** `string` *Required*  
-The [login provider](../../../authentication/login-providers.md) you wish to disconnect (case insensitive).  Must be one of `UsernamePassword`, `Apple`, `BattleNet`, `Discord`, `Email`, `Facebook`, `Github`, `Google`, `ItchIO`, `Microsoft`, `Patreon`, `Reddit`, `Steam`, `X`, `Yandex`.  If `Email` is specified, the call will delete the players email address.
+The [login provider](../../../authentication/login-providers.md) you wish to disconnect (case insensitive).  Must be one of `UsernamePassword`, `Apple`, `BattleNet`, `Discord`, `Email`, `Facebook`, `Github`, `Google`, `ItchIO`, `Microsoft`, `Patreon`, `Reddit`, `Steam`, `Yandex`.  If `Email` is specified, the call will delete the players email address.
 
 ## Success Response
 

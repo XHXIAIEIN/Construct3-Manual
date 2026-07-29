@@ -1,7 +1,7 @@
 ---
 title: "Timeline controller"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/timeline-controller"
-release: 487.3
+release: 495
 ---
 
 ## On this page

@@ -1,7 +1,7 @@
 ---
 title: "The Settings dialog"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/interface/dialogs/settings"
-release: 487.3
+release: 495
 ---
 
 ## On this page
@@ -13,6 +13,7 @@ release: 487.3
 - [Updates](#updates)
 - [Preview](#preview)
 - [Start page](#start-page)
+- [Layouts](#layouts)
 - [Event sheets](#event-sheets)
 - [Advanced](#advanced)
 
@@ -158,6 +159,11 @@ If enabled, then the Start Page will automatically be closed when you open a pro
 
 **Occasionally show message banners from the Construct team on the Start Page**  
 When there is a major new update or an active promotion, Construct may show an official message banner on the Start Page. Note this message comes directly from the Construct team - it is not a third-party advert. Uncheck this option if you would prefer not to see these messages.
+
+## Layouts
+
+**Show 2D/3D view mode toolbar**  
+Uncheck to hide the top toolbar in the Layout View that has buttons to switch between the 2D and 3D view modes. Hiding this toolbar may be useful when working with constrained screen space, or if you always use 2D mode.
 
 ## Event sheets
 

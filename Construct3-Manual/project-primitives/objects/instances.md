@@ -1,7 +1,7 @@
 ---
 title: "Object instances"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/project-primitives/objects/instances"
-release: 487.3
+release: 495
 ---
 
 ## On this page
@@ -46,6 +46,9 @@ The width and height of the instance in pixels. This can also be altered by drag
 
 **Angle**  
 The angle in degrees the instance is oriented at. This can also be altered by rotating the object in the Layout View by clicking and dragging just outside the resize handles.
+
+**Rotation**  
+Where supported, the 3D rotation of the object. This is comprised of the rotation around the X, Y and Z axes. The Z axis rotation works similarly to the *Angle* property, and is added to any existing angle.
 
 **Opacity**  
 The instance opacity (or semitransparency), from 0% (transparent) to 100% (opaque).

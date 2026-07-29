@@ -1,7 +1,7 @@
 ---
 title: "Windows wrapper options dialog"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/interface/dialogs/windows-wrapper-options"
-release: 487.3
+release: 495
 ---
 
 The **Windows wrapper options** dialog allows you to customize a Windows wrapper (WebView2) export  `[Paid plans only]` .

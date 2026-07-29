@@ -1,7 +1,7 @@
 ---
 title: "IAnimationFrame interface"
 source: "https://www.construct.net/en/make-games/manuals/addon-sdk/reference/object-interfaces/ianimationframe"
-release: 487.3
+release: 495
 ---
 
 ## On this page

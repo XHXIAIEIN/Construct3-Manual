@@ -1,7 +1,7 @@
 ---
 title: "Rank Object"
 source: "https://www.construct.net/en/game-services/manuals/game-services/xp/api-objects/rank-object"
-release: 487.3
+release: 495
 ---
 
 ## On this page
@@ -20,7 +20,7 @@ This object represents an XP rank.  Ranks are achieved when the player reaches t
 
 ```json
 {
-  "id": "4f5d0fed-a8c2-4b0b-b32a-c6cdccad7b56",
+  "id": "4de68d9a-6fe2-412b-89bb-81c4fcb09fca",
   "atXP": 100000,
   "logos": [
     { ... },

@@ -1,7 +1,7 @@
 ---
 title: "XP Bonus Object"
 source: "https://www.construct.net/en/game-services/manuals/game-services/achievements/api-objects/xp-bonus"
-release: 487.3
+release: 495
 ---
 
 ## On this page

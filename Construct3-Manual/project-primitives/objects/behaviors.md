@@ -1,7 +1,7 @@
 ---
 title: "Behaviors"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/project-primitives/objects/behaviors"
-release: 487.3
+release: 495
 ---
 
 Behaviors add extra capabilities to [object types](../../project-primitives/objects/object-types.md). They can be added with the **Object Behaviors dialog**. See the [behavior reference section](../../behavior-reference.md) for more information on individual behaviors.

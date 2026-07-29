@@ -1,7 +1,7 @@
 ---
 title: "Link Login Provider"
 source: "https://www.construct.net/en/game-services/manuals/game-services/authentication/api-end-points/login-providers/link-login-provider"
-release: 487.3
+release: 495
 ---
 
 ## On this page
@@ -44,7 +44,7 @@ The [session key](../../../authentication/api-objects/session-object.md) of the 
 The ID of the game you are making this request against.  You can find the ID of your game in your [Construct Game Services (CGS) account](https://www.construct.net/en/game-services/account).
 
 **provider** `string` *Required*  
-The [login provider](../../../authentication/login-providers.md) you wish to link (case insensitive) to this players account.  Must be one of `Apple`, `BattleNet`, `Discord`, `Facebook`, `Github`, `Google`, `ItchIO`, `Microsoft`, `Patreon`, `Reddit`, `Steam`, `X`, `Yandex`.  For `UsernamePassword`, use the [Set Username and Password](../../../authentication/api-end-points/players/set-username-password.md) end point.  For `Email` use the [Set Email Address](../../../authentication/api-end-points/players/set-email-address.md) end point.
+The [login provider](../../../authentication/login-providers.md) you wish to link (case insensitive) to this players account.  Must be one of `Apple`, `BattleNet`, `Discord`, `Facebook`, `Github`, `Google`, `ItchIO`, `Microsoft`, `Patreon`, `Reddit`, `Steam`, `Yandex`.  For `UsernamePassword`, use the [Set Username and Password](../../../authentication/api-end-points/players/set-username-password.md) end point.  For `Email` use the [Set Email Address](../../../authentication/api-end-points/players/set-email-address.md) end point.
 
 ## Success Response
 
@@ -53,7 +53,7 @@ Successful responses always return a `HTTP 200` status code.
 ```json
 {
   "success": true,
-  "pollToken": "11c664bb-069b-49ea-a47f-c6034cd964a1",
+  "pollToken": "6c1d65a6-cb6c-4ad1-89b2-2edd01a7daac",
   "redirectToURL": "https://...",
   "formattingCulture": "en-us"
 }

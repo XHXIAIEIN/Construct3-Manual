@@ -1,7 +1,7 @@
 ---
 title: "The Construct Game Services"
 source: "https://www.construct.net/en/game-services/manuals/game-services"
-release: 487.3
+release: 495
 ---
 
 ## On this page
@@ -41,7 +41,7 @@ The Achievement service allows you to create achievements for players in your ga
 
 ## Authentication Service
 
-Allow players to sign in to your game/application with `UsernamePassword`, `Apple`, `BattleNet`, `Discord`, `Email`, `Facebook`, `Github`, `Google`, `ItchIO`, `Microsoft`, `Patreon`, `Reddit`, `Steam`, `X`, `Yandex`.
+Allow players to sign in to your game/application with `UsernamePassword`, `Apple`, `BattleNet`, `Discord`, `Email`, `Facebook`, `Github`, `Google`, `ItchIO`, `Microsoft`, `Patreon`, `Reddit`, `Steam`, `Yandex`.
 
 Once a player is signed in, they can also:
 

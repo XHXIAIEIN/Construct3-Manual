@@ -1,7 +1,7 @@
 ---
 title: "Tier Object"
 source: "https://www.construct.net/en/game-services/manuals/game-services/authentication/api-objects/patreon/tier"
-release: 487.3
+release: 495
 ---
 
 ## On this page

@@ -1,7 +1,7 @@
 ---
 title: "Event sheet includes"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/project-primitives/events/includes"
-release: 487.3
+release: 495
 ---
 
 Event sheet **includes** allow you to include an [event sheet](../../project-primitives/events/event-sheets.md) on another event sheet. They are a sort of automatic copy-paste of one sheet's contents to another. This is useful for sharing events common to multiple [layouts](../../project-primitives/layouts.md). For example, a game could use different event sheets for different parts of the logic. You could have event sheets called *Player input*, *Enemy control*, *Effects*, and so on. Then each level of the game can include these common event sheets in the layout's own event sheet. This allows you to share the same events between multiple layouts, without having to copy and paste all your events over and over again.

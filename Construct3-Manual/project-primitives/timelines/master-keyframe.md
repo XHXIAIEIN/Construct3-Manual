@@ -1,7 +1,7 @@
 ---
 title: "Timeline master keyframe"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/project-primitives/timelines/master-keyframe"
-release: 487.3
+release: 495
 ---
 
 ## On this page

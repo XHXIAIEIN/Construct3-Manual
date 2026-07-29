@@ -1,7 +1,7 @@
 ---
 title: "No Save behavior"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/behavior-reference/no-save"
-release: 487.3
+release: 495
 ---
 
 The **No Save behavior** simply causes the object to be omitted from save states when using the *Save* and *Load* system actions.
