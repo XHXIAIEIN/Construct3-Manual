@@ -1,7 +1,7 @@
 ---
 title: "IWorldInstance interface"
 source: "https://www.construct.net/en/make-games/manuals/addon-sdk/reference/object-interfaces/iworldinstance"
-release: 487.3
+release: 495
 ---
 
 ## On this page
@@ -73,6 +73,18 @@ Set and get the angle of the instance, in radians.
 
 **GetAngle()**  
 Set and get the angle of the instance, in radians.
+
+**SetRotationEuler(x, y, z)**  
+Where 3D rotation is supported, sets the orientation according to the rotation around each of the axes in radians. Note that changing the Euler rotation will also update the quaternion.
+
+**GetRotationEuler()**  
+Return the current 3D rotation around each axis in the form `[x, y, z]`.
+
+**SetQuaternion(x, y, z, w)**  
+Where 3D rotation is supported, sets the orientation using the four components of a quaternion. Note changing the quaternion will also update the Euler rotation.
+
+**GetQuaternion()**  
+Return the current 3D rotation as a quaternion in the form `[x, y, z, w]`.
 
 **SetWidth(w)**  
 Set and get the size of the instance, in pixels.

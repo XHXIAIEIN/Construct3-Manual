@@ -1,7 +1,7 @@
 ---
 title: "Login Providers"
 source: "https://www.construct.net/en/game-services/manuals/game-services/authentication/login-providers"
-release: 487.3
+release: 495
 ---
 
 ## On this page
@@ -16,7 +16,7 @@ release: 487.3
 
 We offer support for many different login providers for signing in players.  Below is an example of what players see when signing in with Discord into your game:
 
-[![discord login step 1](https://construct-static.com/images/v1770/uploads/articleuploadobject/0/images/138381/discord-login-step-1.png)](https://construct-static.com/images/v1770/uploads/articleuploadobject/0/images/138381/discord-login-step-1.png)
+[![discord login step 1](https://construct-static.com/images/v1777/uploads/articleuploadobject/0/images/138381/discord-login-step-1.png)](https://construct-static.com/images/v1777/uploads/articleuploadobject/0/images/138381/discord-login-step-1.png)
 
 In your CGS account, you can configure settings for each login provider allowing more customisation as to what the players see when signing in.
 
@@ -76,9 +76,6 @@ Allows players to sign in with their Reddit account.
 
 **Steam**  
 Allows players to sign in with their Steam account.
-
-**X (Twitter)**  
-Allows players to sign in with their X (Twitter) account.
 
 **Yandex**  
 Allows players to sign in with their Yandex account.

@@ -1,7 +1,7 @@
 ---
 title: "Rotate behavior"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/behavior-reference/rotate"
-release: 487.3
+release: 495
 ---
 
 ## On this page
@@ -27,6 +27,9 @@ The rate of rotation, in degrees per second. Use a positive value for clockwise 
 **Acceleration**  
 The rate the rotation speed changes, in degrees per second per second. Use a positive value to accelerate clockwise and a negative to accelerate anticlockwise.
 
+**Rotation type**  
+Whether to use 2D or 3D rotation. In 2D mode, the object will rotate by changing its angle. In a 3D mode (*Rotation X/Y/Z*), the object will rotate around the given axis using 3D rotation. In this case, the object must support 3D rotation (having a *Rotation* property in the Properties Bar).
+
 **Enabled**  
 Whether the behavior is initially enabled or disabled. If disabled, it can be enabled at runtime using the *Set enabled* action.
 
@@ -44,6 +47,9 @@ Test if the behavior is currently enabled. When disabled it will have no effect 
 Set the corresponding properties. See *Rotate properties*.
 
 **Set speed**  
+Set the corresponding properties. See *Rotate properties*.
+
+**Set rotation type**  
 Set the corresponding properties. See *Rotate properties*.
 
 **Set enabled**  

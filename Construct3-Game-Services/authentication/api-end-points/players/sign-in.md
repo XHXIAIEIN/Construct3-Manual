@@ -1,7 +1,7 @@
 ---
 title: "Sign In"
 source: "https://www.construct.net/en/game-services/manuals/game-services/authentication/api-end-points/players/sign-in"
-release: 487.3
+release: 495
 ---
 
 ## On this page
@@ -41,7 +41,7 @@ No authentication is required for this request type.
 The ID of the game you are making this request against.  You can find the ID of your game in your [Construct Game Services (CGS) account](https://www.construct.net/en/game-services/account).
 
 **provider** `string` *Required*  
-The [login provider](../../../authentication/login-providers.md) you wish to sign in with (case insensitive).  Must be one of `UsernamePassword`, `Apple`, `BattleNet`, `Discord`, `Email`, `Facebook`, `Github`, `Google`, `ItchIO`, `Microsoft`, `Patreon`, `Reddit`, `Steam`, `X`, `Yandex`
+The [login provider](../../../authentication/login-providers.md) you wish to sign in with (case insensitive).  Must be one of `UsernamePassword`, `Apple`, `BattleNet`, `Discord`, `Email`, `Facebook`, `Github`, `Google`, `ItchIO`, `Microsoft`, `Patreon`, `Reddit`, `Steam`, `Yandex`
 
 **username** `string`  
 If signing in with `UsernamePassword`, the username the player is signing in with. If specified, you must also specify `password`.
@@ -62,7 +62,7 @@ Successful responses always return a `HTTP 200` status code.
 ```json
 {
   "success": true,
-  "pollToken": "0ee4f768-0bc2-4319-b198-9409a2b82eba",
+  "pollToken": "df253345-7ead-48ae-866e-e3942bf6d5bb",
   "redirectToURL": "https://...",
   "formattingCulture": "en-us"
 }

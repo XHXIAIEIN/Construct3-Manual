@@ -1,7 +1,7 @@
 ---
 title: "IProject interface"
 source: "https://www.construct.net/en/make-games/manuals/addon-sdk/reference/model-interfaces/iproject"
-release: 487.3
+release: 495
 ---
 
 ## On this page

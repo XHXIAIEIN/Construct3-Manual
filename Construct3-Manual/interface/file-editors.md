@@ -1,7 +1,7 @@
 ---
 title: "File editors"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/interface/file-editors"
-release: 487.3
+release: 495
 ---
 
 `[Paid plans only]`  Some kinds of [project files](../project-primitives/files.md) added to the [Project Bar](../interface/bars/project-bar.md) can be edited directly in Construct using one of the following file editors. See the section on each editor for more information.

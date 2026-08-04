@@ -1,11 +1,12 @@
 ---
 title: "Common expressions"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/common-features/common-expressions"
-release: 487.3
+release: 495
 ---
 
 ## On this page
 
+- [3D rotation](#3d-rotation)
 - [Angle](#angle)
 - [Appearance](#appearance)
 - [Hierarchy](#hierarchy)
@@ -18,6 +19,31 @@ release: 487.3
 ---
 
 The following [expressions](../../project-primitives/events/expressions.md) are common to several plugins.
+
+## 3D rotation
+
+Note only certain kinds of objects support 3D rotation.
+
+**QuaternionX**  
+Return the components of the quaternion representing the object's current 3D rotation.
+
+**QuaternionY**  
+Return the components of the quaternion representing the object's current 3D rotation.
+
+**QuaternionZ**  
+Return the components of the quaternion representing the object's current 3D rotation.
+
+**QuaternionW**  
+Return the components of the quaternion representing the object's current 3D rotation.
+
+**RotationX**  
+Return the object's current 3D rotation as Euler rotation (rotation around each of the axes in degrees).
+
+**RotationY**  
+Return the object's current 3D rotation as Euler rotation (rotation around each of the axes in degrees).
+
+**RotationZ**  
+Return the object's current 3D rotation as Euler rotation (rotation around each of the axes in degrees).
 
 ## Angle
 

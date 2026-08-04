@@ -1,7 +1,7 @@
 ---
 title: "IWorldInstanceBase interface"
 source: "https://www.construct.net/en/make-games/manuals/addon-sdk/reference/base-classes/iworldinstancebase"
-release: 487.3
+release: 495
 ---
 
 ## On this page

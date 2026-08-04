@@ -1,7 +1,7 @@
 ---
 title: "The main menu"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/interface/main-menu"
-release: 487.3
+release: 495
 ---
 
 Click the **Menu** button next to the main toolbar to access the main menu. Note the exact options which appear in the menu depend on whether you have a project open, and whether you are logged in.

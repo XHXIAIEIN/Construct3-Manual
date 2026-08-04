@@ -1,7 +1,7 @@
 ---
 title: "Move To behavior script interface"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/scripting/scripting-reference/behavior-interfaces/move"
-release: 487.3
+release: 495
 ---
 
 ## On this page

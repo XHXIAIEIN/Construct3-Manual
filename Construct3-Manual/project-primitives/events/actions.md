@@ -1,7 +1,7 @@
 ---
 title: "Actions"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/project-primitives/events/actions"
-release: 487.3
+release: 495
 ---
 
 ## On this page

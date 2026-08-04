@@ -1,7 +1,7 @@
 ---
 title: "Plugins"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/project-primitives/objects/plugins"
-release: 487.3
+release: 495
 ---
 
 Plugins define a kind of object. For example, a Sprite is a kind of object, and the Audio object is a different kind. These are defined by the *Sprite plugin* and *Audio plugin* respectively. See the plugin reference for more information on individual plugins.

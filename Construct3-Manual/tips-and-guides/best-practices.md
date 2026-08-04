@@ -1,7 +1,7 @@
 ---
 title: "Best practices"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/tips-and-guides/best-practices"
-release: 487.3
+release: 495
 ---
 
 ## On this page

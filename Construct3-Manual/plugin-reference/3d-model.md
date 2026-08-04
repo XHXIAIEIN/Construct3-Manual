@@ -1,7 +1,7 @@
 ---
 title: "3D Model"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/3d-model"
-release: 487.3
+release: 495
 ---
 
 ## On this page
@@ -15,7 +15,7 @@ release: 487.3
 
 The **3D model** [plugin](../project-primitives/objects/plugins.md) can be used to display models from a **.gltf** or **.glb** file in the [Layout View](../interface/layout-view.md), along with playing their animations.
 
-Check the [3D model object](../project-primitives/3d-model.md) manual entry for information about how to import model files.
+Check the [3D model manual entry](../project-primitives/3d-model.md) for information about how to import model files.
 
 Refer to the [3D shape](../plugin-reference/3d-shape.md) manual entry for information about working with 3D in Construct 3 which is also relevant to this plugin.
 
@@ -44,15 +44,6 @@ The offset in the Y axis in relation to the corresponding instance.
 **Z offset**  
 The offset in the Z axis in relation to the corresponding instance.
 
-**X rotation**  
-The rotation in the X axis.
-
-**Y rotation**  
-The rotation in the Y axis.
-
-**Z rotation**  
-The rotation in the Z axis. This is added to the angle of the corresponding instance.
-
 **X scale**  
 The scale in the X axis. This is compounded with the scale of the corresponding instance.
 
@@ -70,6 +61,9 @@ The transformation origin in the Y axis.
 
 **Z origin**  
 The transformation origin in the Z axis.
+
+**Transform mode**  
+How the model transforms when the corresponding instance is resized. *"Fit"* mode preserves the model's proportions. *"Stretch"* mode scales each axis to fit in the instance bounds. *"Legacy"* mode exists for backwards compatibility, the other modes are preferred.
 
 **Meshes**  
 Toggle which meshes to show.
@@ -153,6 +147,15 @@ Triggers when any animation finishes.
 **On any animation looped**  
 Triggers when any animation loops.
 
+**On texture URL loaded**  
+Triggered after 'Load texture from URL' when the texture has finished loading.
+
+**On texture URL failed**  
+Triggered after 'Load texture from URL' if the texture fails to load.
+
+**On all textures released**  
+Triggered after unload dynamic textures completes.
+
 ## 3D model actions
 
 For actions common to other objects, see [Common actions](../plugin-reference/common-features/common-actions.md).
@@ -184,9 +187,6 @@ Set the transformation origin on all three axes.
 **Set transform**  
 Change the transformation values of the model. **"Transform X"**, **"Transform Y"**, **"Transform Z"** correspond to each axis. Use the **"Operation"** parameter to choose which operation to do on the values, either *Set*, *Add*, *Subtract*, *Multiply * or *Divide*. Use the **"Type"** parameter to choose which transformation to affect, either *Offset*, *Rotation* or *Scale*.
 
-**Set quaternion**  
-Change the rotation of the **3D model** providing the **"X"**, **"Y"**, **"Z"** and **"W"** components of a quaternion.
-
 **Play**  
 Start playing the specified animation, use the **"Loop"** parameter to choose if the animation should loop and use the **"Progress"** parameter to choose where the animation should start from, using a value in the range **[0 - 1]**.
 
@@ -207,6 +207,18 @@ Change the collision state.
 
 **Set back face culling**  
 Change the state of back face culling.
+
+**Load texture from URL**  
+Replace the currently loaded texture into the specified mesh. Use the *"Target"* parameter to choose which instances are affected, "Object type" will affect all the instances of the picked object type that are using the same 3D model, "Picked instances" will only affected the picked instances in the current action block that are using the same 3D model.
+
+**Unload all dynamic textures**  
+Unload all dynamically loaded textures.
+
+**Unload some dynamic textures**  
+Unload dynamically loaded textures from a 3D model's mesh.
+
+**Unload some dynamic textures (by name)**  
+Unload dynamically loaded textures from a 3D model's mesh, providing the 3D model as a string name.
 
 ## 3D model expressions
 
@@ -257,15 +269,6 @@ The offset in the Y axis in relation to the corresponding instance.
 **OffsetZ**  
 The offset in the Z axis in relation to the corresponding instance.
 
-**RotationX**  
-The rotation in the X axis.
-
-**RotationY**  
-The rotation in the Y axis.
-
-**RotationZ**  
-The rotation in the Z axis. This value is added to the angle of the corresponding instance.
-
 **ScaleX**  
 The scale in the X axis. This is compounded with the scale of the corresponding instance.
 
@@ -283,15 +286,3 @@ The transformation origin in the Y axis.
 
 **OriginZ**  
 The transformation origin in the Z axis.
-
-**QuaternionX**  
-Get the rotation quaternion X component.
-
-**QuaternionY**  
-Get the rotation quaternion Y component.
-
-**QuaternionZ**  
-Get the rotation quaternion Z component.
-
-**QuaternionW**  
-Get the rotation quaternion W component.

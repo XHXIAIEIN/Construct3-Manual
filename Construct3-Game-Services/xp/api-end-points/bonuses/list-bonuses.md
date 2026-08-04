@@ -1,7 +1,7 @@
 ---
 title: "List Bonuses"
 source: "https://www.construct.net/en/game-services/manuals/game-services/xp/api-end-points/bonuses/list-bonuses"
-release: 487.3
+release: 495
 ---
 
 ## On this page

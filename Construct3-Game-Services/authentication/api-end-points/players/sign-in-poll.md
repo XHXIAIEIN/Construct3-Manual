@@ -1,7 +1,7 @@
 ---
 title: "Sign In Polling"
 source: "https://www.construct.net/en/game-services/manuals/game-services/authentication/api-end-points/players/sign-in-poll"
-release: 487.3
+release: 495
 ---
 
 ## On this page

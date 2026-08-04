@@ -1,11 +1,12 @@
 ---
 title: "Common actions"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/common-features/common-actions"
-release: 487.3
+release: 495
 ---
 
 ## On this page
 
+- [3D rotation](#3d-rotation)
 - [Angle](#angle)
 - [Appearance](#appearance)
 - [Hierarchy](#hierarchy)
@@ -19,6 +20,19 @@ release: 487.3
 ---
 
 The following [actions](../../project-primitives/events/actions.md) are common to several plugins.
+
+## 3D rotation
+
+Note only certain kinds of objects support 3D rotation.
+
+**Set Euler rotation**  
+Set the object's 3D rotation according to rotation around the X, Y and Z axes, in degrees. This approach of determining orientation is known as Euler rotation (or Euler angles). Note that changing the Euler rotation will also update the quaternion.
+
+**Set quaternion**  
+Set the object's 3D rotation according to a [quaternion](https://en.wikipedia.org/wiki/Quaternion), given by its X, Y, Z and W components. Note that changing the quaternion will also update the Euler angles.
+
+> **Tip**  
+> Quaternions are an advanced mathematical concept. In many cases it is easier to work with Euler angles.
 
 ## Angle
 

@@ -1,7 +1,7 @@
 ---
 title: "Using an account"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/getting-started/using-an-account"
-release: 487.3
+release: 495
 ---
 
 ## On this page

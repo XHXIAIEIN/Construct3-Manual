@@ -1,7 +1,7 @@
 ---
 title: "IPluginInfo interface"
 source: "https://www.construct.net/en/make-games/manuals/addon-sdk/reference/iplugininfo"
-release: 487.3
+release: 495
 ---
 
 ## On this page
@@ -43,6 +43,9 @@ For `"world"` type plugins only. Pass `true` to enable resizing instances in the
 
 **SetIsRotatable(isRotatable)**  
 For `"world"` type plugins only. Pass `true` to enable the *Angle* property and rotating instances in the Layout View.
+
+**SetIsRotatable3D(isRotatable3d)**  
+For `"world"` type plugins only. Pass `true` to enable the *Rotation* property allowing for 3D rotation.
 
 **SetIs3D(is3d)**  
 For `"world"` type plugins only. Pass `true` to specify that this plugin renders in 3D. This will cause the presence of the plugin in a project to enable 3D rendering when the project *Rendering mode* property is set to *Auto* (which is the default setting).
@@ -105,6 +108,12 @@ Add common built-in sets of actions, conditions and expressions (ACEs) to the pl
 > **Note:** if adding common scene graph ACEs, your plugin must be prepared to handle being added in to a scene-graph hierarchy, and having its position, size and angle controlled automatically. It must also support all the properties modifiable by hierarchies, otherwise the scene graph feature may not work as expected.
 
 **AddCommonAngleACEs()**  
+Add common built-in sets of actions, conditions and expressions (ACEs) to the plugin relating to various built-in features.
+
+> **Tip**  
+> **Note:** if adding common scene graph ACEs, your plugin must be prepared to handle being added in to a scene-graph hierarchy, and having its position, size and angle controlled automatically. It must also support all the properties modifiable by hierarchies, otherwise the scene graph feature may not work as expected.
+
+**AddCommon3DRotationACEs()**  
 Add common built-in sets of actions, conditions and expressions (ACEs) to the plugin relating to various built-in features.
 
 > **Tip**  

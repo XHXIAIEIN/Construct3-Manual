@@ -1,7 +1,7 @@
 ---
 title: "The debugger 'CPU profiler' tab"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/interface/debugger/profile-tab"
-release: 487.3
+release: 495
 ---
 
 `[Paid plans only]`  The **CPU profiler** tab provides a more detailed breakdown of the estimated CPU usage. The project must be running continuously for the profiler to be able to collect and display information. It then displays a breakdown of the estimated CPU time spent in each part of the project logic. It updates once a second and the values shown are for the previous second only.

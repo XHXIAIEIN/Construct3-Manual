@@ -1,7 +1,7 @@
 ---
 title: "3D model"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/scripting/scripting-reference/plugin-interfaces/3d-model"
-release: 487.3
+release: 495
 ---
 
 ## On this page
@@ -22,6 +22,12 @@ This function is not defined by default. When defined it is executed after loadi
 
 **onError**  
 This function is not defined by default. When defined it is executed if there is any problem during the process of loading a new 3D model object.
+
+**loadTextureFromURL**  
+Load a texture from a url into a mesh. The *"target"* parameter indicates which instances will be affected, *"object-type"* will affect all instances of the same object type while *"instance"* will only affect the instance used to call this function. The function returns a promise that resolves when the texture is loaded and is rejected if loading fails.
+
+**unloadTextures**  
+Unload dynamically loaded textures from the provided 3D model and mesh. The function returns a promise that resolves when unloading completes and is rejected if there is any problem unloading.
 
 **modelName**  
 returns the value of the current 3D model object in use. When set it acts as a shortcut for **loadModel** where only a 3D model name is provided.
@@ -62,15 +68,6 @@ return or set the current offset of the 3D model in relation to the position of 
 **offsetZ**  
 return or set the current offset of the 3D model in relation to the position of the corresponding [instance](../../../project-primitives/objects/instances.md).
 
-**rotationX**  
-return or set the current rotation of the 3D model. `rotationZ` is added to the **angle** of the corresponding instance.
-
-**rotationY**  
-return or set the current rotation of the 3D model. `rotationZ` is added to the **angle** of the corresponding instance.
-
-**rotationZ**  
-return or set the current rotation of the 3D model. `rotationZ` is added to the **angle** of the corresponding instance.
-
 **scaleX**  
 return or set the current scale of the 3D model. These values are compounded with the scale of the corresponding instance.
 
@@ -79,15 +76,6 @@ return or set the current scale of the 3D model. These values are compounded wit
 
 **scaleZ**  
 return or set the current scale of the 3D model. These values are compounded with the scale of the corresponding instance.
-
-**originX**  
-return or set the current transformation origin of the 3D model, using `"left"`, `"middle"` or `"right"` as valid values on the **X** axis, `"top"`, `"middle"` or `"bottom"` as valid values on the **Y** axis and `"back"`, `"middle"` or `"front"` as valid values on the **Z** axis.
-
-**originY**  
-return or set the current transformation origin of the 3D model, using `"left"`, `"middle"` or `"right"` as valid values on the **X** axis, `"top"`, `"middle"` or `"bottom"` as valid values on the **Y** axis and `"back"`, `"middle"` or `"front"` as valid values on the **Z** axis.
-
-**originZ**  
-return or set the current transformation origin of the 3D model, using `"left"`, `"middle"` or `"right"` as valid values on the **X** axis, `"top"`, `"middle"` or `"bottom"` as valid values on the **Y** axis and `"back"`, `"middle"` or `"front"` as valid values on the **Z** axis.
 
 **setTransform(x, y, z, type)**  
 These methods are used to apply changes on the three axes of a 3D model. `"x"` `"y"` and `"z"` are the main values that will be applied and `"type"` refers to the properties that will be affected, can be either *"offset"* *"rotation"* or *"scale"*.
@@ -103,12 +91,6 @@ These methods are used to apply changes on the three axes of a 3D model. `"x"` `
 
 **divTransform(x, y, z, type)**  
 These methods are used to apply changes on the three axes of a 3D model. `"x"` `"y"` and `"z"` are the main values that will be applied and `"type"` refers to the properties that will be affected, can be either *"offset"* *"rotation"* or *"scale"*.
-
-**setQuaternion(x, y, z, w)**  
-Use this method to set the `"x"` `"y"` `"z"` and `"w"` components of the rotation quaternion of a 3D model.
-
-**getQuaternion()**  
-Returns an object with `"x"` `"y"` `"z"` and `"w"` properties representing the rotation quaternion of a 3D model. This object is not the real quaternion used by plugin instances, use **setQuaternion** to write the values when needed.
 
 **animationDuration(animation)**  
 returns the duration in seconds of the provided animation.

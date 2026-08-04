@@ -1,7 +1,7 @@
 ---
 title: "Rect interface"
 source: "https://www.construct.net/en/make-games/manuals/addon-sdk/reference/geometry-interfaces/rect"
-release: 487.3
+release: 495
 ---
 
 ## On this page

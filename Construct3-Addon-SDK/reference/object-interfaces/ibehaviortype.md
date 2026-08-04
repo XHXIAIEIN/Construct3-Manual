@@ -1,7 +1,7 @@
 ---
 title: "IBehaviorType interface"
 source: "https://www.construct.net/en/make-games/manuals/addon-sdk/reference/object-interfaces/ibehaviortype"
-release: 487.3
+release: 495
 ---
 
 ## On this page

@@ -1,7 +1,7 @@
 ---
 title: "Performance tips"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/tips-and-guides/performance-tips"
-release: 487.3
+release: 495
 ---
 
 ## On this page

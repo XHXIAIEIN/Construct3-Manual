@@ -1,7 +1,7 @@
 ---
 title: "The debugger 'Inspect' tab"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/interface/debugger/inspect-tab"
-release: 487.3
+release: 495
 ---
 
 The **Inspect** tab is used to view and edit values in the project, such as an object's position.

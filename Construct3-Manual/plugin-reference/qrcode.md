@@ -1,7 +1,7 @@
 ---
 title: "QR code"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/qrcode"
-release: 487.3
+release: 495
 ---
 
 ## On this page

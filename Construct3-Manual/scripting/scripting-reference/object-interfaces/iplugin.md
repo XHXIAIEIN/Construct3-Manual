@@ -1,7 +1,7 @@
 ---
 title: "IPlugin script interface"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/scripting/scripting-reference/object-interfaces/iplugin"
-release: 487.3
+release: 495
 ---
 
 ## On this page
@@ -37,6 +37,9 @@ A read-only boolean indicating whether this plugin creates a HTML element.
 
 **isRotatable**  
 A read-only boolean indicating whether instances of the plugin may be rotated.
+
+**isRotatable3d**  
+A read-only boolean indicating whether instances of the plugin may use 3D rotation.
 
 **hasEffects**  
 A read-only boolean indicating whether the plugin may use effects.

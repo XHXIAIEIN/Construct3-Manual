@@ -1,7 +1,7 @@
 ---
 title: "3D Camera script interface"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/scripting/scripting-reference/plugin-interfaces/3d-camera"
-release: 487.3
+release: 495
 ---
 
 ## On this page
