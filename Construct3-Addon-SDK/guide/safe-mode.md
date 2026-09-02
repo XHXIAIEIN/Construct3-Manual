@@ -1,7 +1,7 @@
 ---
 title: "Safe mode"
 source: "https://www.construct.net/en/make-games/manuals/addon-sdk/guide/safe-mode"
-release: 495
+release: 495.2
 ---
 
 For normal addon development, you should use [addon testing mode](../guide/using-developer-mode.md). This allows quick iteration and you can easily fix addons even if they crash Construct 3 on startup. However in some cases you may build a .c3addon package which accidentally still crashes the editor on startup. To remove this addon, you can clear your browser storage. Alternatively you can use Safe Mode in Construct 3, which does not load third-party addons but still lists them in the Addon Manager so they can be uninstalled.

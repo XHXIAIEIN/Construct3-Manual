@@ -1,7 +1,7 @@
 ---
 title: "End a Player Session"
 source: "https://www.construct.net/en/game-services/manuals/game-services/authentication/api-end-points/sessions/end-session"
-release: 495
+release: 495.2
 ---
 
 ## On this page

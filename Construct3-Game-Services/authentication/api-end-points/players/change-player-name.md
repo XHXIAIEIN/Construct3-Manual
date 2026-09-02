@@ -1,7 +1,7 @@
 ---
 title: "Change Player Name"
 source: "https://www.construct.net/en/game-services/manuals/game-services/authentication/api-end-points/players/change-player-name"
-release: 495
+release: 495.2
 ---
 
 ## On this page

@@ -1,7 +1,7 @@
 ---
 title: "Achievement Object"
 source: "https://www.construct.net/en/game-services/manuals/game-services/achievements/api-objects/achievement"
-release: 495
+release: 495.2
 ---
 
 ## On this page
@@ -20,10 +20,10 @@ You can have multiple Achievements in your game.  Achievements can be unlocked o
 
 ```json
 {
-  "id": "83759989-5b61-49ef-a354-89dfa4975211",
+  "id": "a37e31b0-1368-470e-a8ea-4e8afd7df702",
   "name": "First Place Legend",
   "description": "Finish in 1st place 100 times.",
-  "created": "2026-07-29T05:33:15.917598Z",
+  "created": "2026-09-02T05:30:24.4315422Z",
   "formattedDateCreated": "9/22/2025 2:30:02 PM",
   "progressive": true,
   "progressionRequired": 100,
@@ -36,9 +36,9 @@ You can have multiple Achievements in your game.  Achievements can be unlocked o
   "formattedTotalAwarded": "2,003",
   "totalUniquePlayersAwarded": 2003,
   "formattedTotalUniquePlayersAwarded": "2,003",
-  "firstAwarded": "2026-07-29T05:33:15.9241319Z",
+  "firstAwarded": "2026-09-02T05:30:24.4355555Z",
   "formattedFirstAwarded": "9/22/2025 2:30:02 PM",
-  "lastAwarded": "2026-07-29T05:33:15.9261412Z",
+  "lastAwarded": "2026-09-02T05:30:24.4355555Z",
   "formattedLastAwarded": "9/22/2025 2:30:02 PM",
   "percentagePlayerBaseOwned": "35.5",
   "xpBonuses": [

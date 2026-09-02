@@ -1,7 +1,7 @@
 ---
 title: "System conditions"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/system-reference/system-conditions"
-release: 495
+release: 495.2
 ---
 
 ## On this page

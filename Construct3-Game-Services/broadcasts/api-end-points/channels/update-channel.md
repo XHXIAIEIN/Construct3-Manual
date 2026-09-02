@@ -1,7 +1,7 @@
 ---
 title: "Update a Channel"
 source: "https://www.construct.net/en/game-services/manuals/game-services/broadcasts/api-end-points/channels/update-channel"
-release: 495
+release: 495.2
 ---
 
 ## On this page

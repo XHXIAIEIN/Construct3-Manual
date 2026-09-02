@@ -1,7 +1,7 @@
 ---
 title: "Score Object"
 source: "https://www.construct.net/en/game-services/manuals/game-services/leaderboards/api-objects/score"
-release: 495
+release: 495.2
 ---
 
 ## On this page
@@ -15,21 +15,21 @@ release: 495
 
 ```json
 {
-  "scoreID": "c8aebd5f-fc65-4a3d-8ff3-07d9f86e0142",
+  "scoreID": "a0744cf7-2f2f-4dde-ba63-d1762157cb53",
   "rank": 1611,
   "ordinal": "th",
   "formattedRank": "1,611th",
   "formattedScore": "78,563,114",
   "score": 78563114,
   "country": "GB",
-  "date": "2026-07-29T05:33:15.5672295Z",
-  "formattedDate": "6ciFL",
+  "date": "2026-09-02T05:30:24.1456808Z",
+  "formattedDate": "p1lnO",
   "updates": 0,
   "countryRank": 477,
   "countryOrdinal": "th",
   "formattedCountryRank": "477th",
   "player": { ... },
-  "teamID": "3fd13933-c5e0-4810-98df-bf5caf0b9499",
+  "teamID": "aeaeac38-3600-441a-9bf1-63110520fad1",
   "teamName": "Red Team",
   "scoreHistory": { ... },
   "tier": {

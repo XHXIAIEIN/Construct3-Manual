@@ -1,7 +1,7 @@
 ---
 title: "Edit a Bonus"
 source: "https://www.construct.net/en/game-services/manuals/game-services/xp/api-end-points/bonuses/update-bonus"
-release: 495
+release: 495.2
 ---
 
 ## On this page

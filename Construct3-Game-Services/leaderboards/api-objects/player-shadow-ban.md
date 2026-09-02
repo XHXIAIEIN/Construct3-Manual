@@ -1,7 +1,7 @@
 ---
 title: "Player Shadow Ban Object"
 source: "https://www.construct.net/en/game-services/manuals/game-services/leaderboards/api-objects/player-shadow-ban"
-release: 495
+release: 495.2
 ---
 
 ## On this page
@@ -15,7 +15,7 @@ release: 495
 
 ```json
 {
-  "dateBanned": "2026-07-29T05:33:15.4611481Z",
+  "dateBanned": "2026-09-02T05:30:24.0614376Z",
   "player": { ... }
 }
 ```

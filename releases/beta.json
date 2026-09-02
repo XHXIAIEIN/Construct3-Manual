@@ -1,6 +1,244 @@
 [
   {
     "branchName": "Beta",
+    "releaseName": "r501",
+    "shortDescription": "Cross-fading 3D model animations; project-wide layer updates; new demo game",
+    "publishDate": 1788345297,
+    "publishDateISO": "2026-09-02T10:34:57.269Z",
+    "viewDetailsURL": "https://www.construct.net/en/make-games/releases/beta/r501",
+    "launchURL": "https://editor.construct.net/r501/",
+    "notes": "In this release the **3D model** object now supports **cross-fading animations**, allowing a smooth appearance as animations change, rather than suddenly snapping to a new animation. We've also got two new features to make **project-wide layer updates**. While global layers manage the content of layers, managing your actual layer list across many layouts in a large project could become a headache, and these features are designed to resolve that. First of all the new *replicate layer across project* option in the Layers Bar will find all other layers in the project with the same name and update their layer properties *and sub-layers* to match. This adds, removes and moves sub-layers by their name - but that means renaming a layer will be treated as deleting the layer and adding a new empty one. To fix that case, there's also a separate *rename layer across project* option. Hopefully these allow for easier management of layer trees across a large project. Please note as these make changes across your entire project, we recommend **making a backup of your project** before using them, as if anything goes wrong it could leave you with a lot of cleanup work.\n\nWe've also got a great new demo game **Arcane Express** making use of Construct's new 3D features, and a few other changes and bug fixes. Happy testing!",
+    "changelog": [
+      {
+        "category": "New Additions",
+        "items": [
+          "3D model: cross-fade between the previous and the next animation",
+          "New demo game 'Arcane Express'",
+          "Layers Bar: option to replicate layer (and all sub-layers) across entire project",
+          "Layers Bar: option to rename layer across entire project"
+        ]
+      },
+      {
+        "category": "Changes",
+        "items": [
+          "'Set position to another object' now updates Z co-ordinate",
+          "3D light: update description for reference distance"
+        ]
+      },
+      {
+        "category": "Bug Fixes",
+        "items": [
+          "Folder projects: could become unopenable if saved after moving project file referenced in event sheets",
+          "Sprite: image point position did not take in to account 3D rotation",
+          "Crash renaming behaviors/effects (regression r500)",
+          "Drawing Canvas: pasting objects with effects working incorrectly in fixed resolution mode (regression r491)",
+          "3D model: restoring from JSON not working as expected"
+        ]
+      }
+    ]
+  },
+  {
+    "branchName": "Beta",
+    "releaseName": "r500",
+    "shortDescription": "Timeline improvements; 3D lighting fixes; bug fixes",
+    "publishDate": 1787733760,
+    "publishDateISO": "2026-08-26T08:42:40.096Z",
+    "viewDetailsURL": "https://www.construct.net/en/make-games/releases/beta/r500",
+    "launchURL": "https://editor.construct.net/r500/",
+    "notes": "It's the 500th release of Construct! In r499 we changed to a PBR 3D lighting model, and this release fixes a couple of issues that came up with the switch, notably including a fix to ensure multiple lights render correctly. There are also improvements for timelines with better support for picking instances, and a new option to play a range of a timeline.\n\nOther than that there's an adjustment for the Fog (exponential) effect to set better defaults, the usual batch of bug fixes, and some corresponding scripting updates. One coding highlight is now there is a helper method fillIndices() for IMeshData that let you easily fill in incrementing indices for meshes that don't otherwise use indices. Happy testing!",
+    "changelog": [
+      {
+        "category": "New Additions",
+        "items": [
+          "Timeline controller: add conditions to pick instances in timelines",
+          "Timeline controller: actions to play timelines in between a specified range"
+        ]
+      },
+      {
+        "category": "Changes",
+        "items": [
+          "Fog (exponential) effect: change default parameters to work better with regular Z axis scale"
+        ]
+      },
+      {
+        "category": "Bug Fixes",
+        "items": [
+          "3D lighting: incorrect rendering with multiple lights (regression r499)",
+          "3D lighting: possible incorrect lighting at edges of objects (regression r499)",
+          "Asset browser: some error feedback not being shown (regression r499)",
+          "3D model: crash copying models which have meshes that don't use a texture",
+          "Timelines: editor crash when using scale resize mode",
+          "Timelines: runtime crash when disabling the first keyframe of a timeline",
+          "Parameters dialog: crash trying to show autocomplete for expression that doesn't have any (regression)"
+        ]
+      },
+      {
+        "category": "SDK updates",
+        "items": [
+          "Add IMeshData FillIndices()"
+        ]
+      },
+      {
+        "category": "Scripting updates",
+        "items": [
+          "Add IMeshData fillIndices()",
+          "Fix possible incorrect handling of Alt+Up/Down arrow shortcut in scripts in event sheets",
+          "Timeline controller: add getInstances and playInRange methods",
+          "Timelines: play method now returns an array of ITimelineState if more than one timeline started playing",
+          "3D model: rename setQuaternion and getQuaternion methods to setModelQuaternion and getModelQuaternion respectively"
+        ]
+      }
+    ]
+  },
+  {
+    "branchName": "Beta",
+    "releaseName": "r499",
+    "shortDescription": "PBR lighting; transmissiveness; 3D model improvements & more",
+    "publishDate": 1787135001,
+    "publishDateISO": "2026-08-19T10:23:21.793Z",
+    "viewDetailsURL": "https://www.construct.net/en/make-games/releases/beta/r499",
+    "launchURL": "https://editor.construct.net/r499/",
+    "notes": "In this release we've changed the lighting model used for 3D lighting. Previously lighting was based on a Phong model, with materials using a 'shininess' factor. We've now changed it to a **Physically Based Rendering (PBR) lighting model**, with materials using 'metallic' and 'roughness' factors. We considered supporting both lighting models, but PBR looks to be the industry standard right now with better interoperability, and supporting only one lighting model is a significant simplification for the engine. If you still think we should support the older lighting model, we'd be interested to know why, so let us know. This is a breaking change, and projects using actions/expressions relating to the old material properties will not open unless they are removed from the project. However 3D lighting was only introduced in last week's beta release, and beta releases are the place to make any such changes before it reaches a stable release where the backwards compatibility requirements are stricter.\n\nThere are other 3D lighting improvements, including a new **Transmissiveness** property. This affects how much light comes through a 2D object like a Sprite when the light is on the far side. When transmissiveness is 0% the object will appear in complete shadow, whereas when transmissiveness is 100% the object will appear lit up the same as it is on the opposite side facing the light. There's also a fix for 2D objects not being lit up equally on both sides.\n\nThis release also has further improvements for 3D models: now you can import or replace multiple models at a time, and the Asset Browser now has support for 3D models via .gltf and .glb files. As ever there's a range of bug fixes, including for 3D models and the 3D editor. Happy testing!",
+    "changelog": [
+      {
+        "category": "New Additions",
+        "items": [
+          "Material property 'Transmissiveness' (amount of lighting shown on opposite side to light)",
+          "3D model: support importing and replacing multiple 3D models at a time from the Project bar",
+          "Asset browser: support .gltf and .glb files"
+        ]
+      },
+      {
+        "category": "Changes",
+        "items": [
+          "Change 3D lighting model from Blinn-Phong to PBR (metallic-roughness)"
+        ]
+      },
+      {
+        "category": "Bug Fixes",
+        "items": [
+          "Platform: deceleration could incorrectly cause reverse movement (regression r498)",
+          "3D lighting not working on back face of 2D sprites",
+          "3D editor context menu incorrectly showing on macOS",
+          "3D model: 'Load texture from URL' action not taking effect after a previous 'Set mesh action'",
+          "3D model: model level transformation properties not restored properly on project load",
+          "3D model: crash displaying models that don't use UV data (regression r498)",
+          "Project bar: change the names of 3D model import options to better describe what they do",
+          "Keyboard shortcuts triggered unexpectedly in some situations (regression r498)",
+          "Behaviors/effects dialogs: could show wrong name after a failed rename",
+          "macOS WKWebView: was not correctly opening new windows in system browser",
+          "macOS WKWebView: disable default 'Escape' key exiting fullscreen"
+        ]
+      }
+    ]
+  },
+  {
+    "branchName": "Beta",
+    "releaseName": "r498",
+    "shortDescription": "3D lighting; more 3D model updates; bug fixes",
+    "publishDate": 1786460595,
+    "publishDateISO": "2026-08-11T15:03:15.859Z",
+    "viewDetailsURL": "https://www.construct.net/en/make-games/releases/beta/r498",
+    "launchURL": "https://editor.construct.net/r498/",
+    "notes": "This week we're launching a major new feature, and the most significant visual update for a long time: **3D lighting!** Take any existing project, drop in the new **3D light** object, and you'll instantly see a realistic 3D lighting effect. You can adjust the light color and intensity, using a reference distance as the distance at which the light has 100% brightness to help get suitable lighting. You can use a point light, directional (lights all surfaces evenly regardless of distance), or a spot light (lights a cone shaped area); the light can also be rotated in 3D to orient directional and spot lights. Currently the engine supports up to 16 lights on-screen at once, but to help manage this, lights that do not visibly contribute to the viewport are automatically excluded, based on the light radius.\n\nOnce you add a light to a layout, some new **material properties** will appear for objects in the layout. These include the surface type (allowing a \"flat\" mode for a retro style appearance, or disabling 3D lighting on a per-object basis), a specular color and amount, and a shininess factor, which are all used to calculate the 3D lighting appearance of that object. A new ambient light property will also appear for the layout, allowing you to control the minimum light level.\n\nAs we have a unified hybrid 2D and 3D engine, lighting applies consistently to both 2D objects like Sprite (including with 3D rotation, and even 3D mesh distortion) and 3D objects like 3D model and 3D shape. Lights do not yet cast shadows - that's something we'll be looking to in future - but you can still produce some impressive effects with them. We can't wait to see what you come up with!",
+    "changelog": [
+      {
+        "category": "New Features",
+        "items": [
+          "New 3D light plugin"
+        ]
+      },
+      {
+        "category": "New Additions",
+        "items": [
+          "Layout ambient light property",
+          "Material properties for objects that support 3D lighting"
+        ]
+      },
+      {
+        "category": "Changes",
+        "items": [
+          "Update 'First person shooter' template to use 2D sprites as billboards rather than 3D shapes"
+        ]
+      },
+      {
+        "category": "Bug Fixes",
+        "items": [
+          "Platform: horizontal acceleration calculations not properly framerate independent",
+          "Properties Bar: size of 2D objects could sometimes incorrectly show third percentage value",
+          "Exporting project with fixed framerate mode incorrectly showed warning",
+          "Editor: some dialogs could occasionally show wrong caption text",
+          "Audio: could still play audio if loading while enabling silent mode",
+          "3D model: world transform expressions not getting the correct values in some cases",
+          "3D model: 'Set mesh object' not working as expected with image sizes different to the original model textures",
+          "3D model: 'Set mesh object' not working as expected when called multiple times",
+          "Better support for setting initial values when loading parameters which are not present in older projects",
+          "Delete keyboard shortcut deleting unexpected project objects in some circumstances"
+        ]
+      },
+      {
+        "category": "Performance Improvements",
+        "items": [
+          "Mesh distortion: fix performance regression from r497"
+        ]
+      }
+    ]
+  },
+  {
+    "branchName": "Beta",
+    "releaseName": "r497",
+    "shortDescription": "3D model updates; bug fixes",
+    "publishDate": 1785851392,
+    "publishDateISO": "2026-08-04T13:49:52.829Z",
+    "viewDetailsURL": "https://www.construct.net/en/make-games/releases/beta/r497",
+    "launchURL": "https://editor.construct.net/r497/",
+    "notes": "In this release we've made some adjustments for importing 3D models. Importing a model now defaults to flipping the Y axis to match Construct's Y-down convention which should be correct for most models. If you want something else you can now choose a separate 'Import with options' menu option. The culling mode has also been refined from just a back face culling option to supporting none, front/back faces, or respecting the culling specified by the 3D model.\n\nOther improvements include a batch of bug fixes, including for a few regressions in the previous beta. In scripting and the SDK there are now helper methods for managing IMeshData normal buffer data, which is significant for an upcoming feature. Stay tuned for more!",
+    "changelog": [
+      {
+        "category": "New Additions",
+        "items": [
+          "3D model: add 'Import with options' context menu option to choose additional importing options"
+        ]
+      },
+      {
+        "category": "Changes",
+        "items": [
+          "3D model: default to flipping models on the Y axis",
+          "3D model: deprecate 'Back face culling' property in favour of new 'Culling mode' property",
+          "Windows WebView2: update WebView2 SDK to v1.0.4129.50"
+        ]
+      },
+      {
+        "category": "Bug Fixes",
+        "items": [
+          "Layout View: did not show 3D outline for 2D objects with 3D mesh distortion",
+          "Possible runtime crash using negative color components (regression r496)",
+          "3D model: runtime crash deleting instances after trying to use a Sprite as a source for a mesh texture",
+          "3D model: animations not saved correctly (regression r496)",
+          "Parameters dialog: caret moving unexpectedly when clicking on string literals that have auto complete options (regression r496)",
+          "Properties Bar: crash trying to rename locked or invisible layers",
+          "Hierarchies: child depth not calculated properly in some cases",
+          "Hierarchies: 'Transform depth' not saved properly",
+          "Main toolbar: save button enabled after loading new project"
+        ]
+      },
+      {
+        "category": "SDK updates",
+        "items": [
+          "Add editor IMeshData CopyNormalBuffer(), ComputeNormalBuffer()",
+          "Fix errors in some DOM base class methods"
+        ]
+      },
+      {
+        "category": "Scripting updates",
+        "items": [
+          "Add IMeshData copyNormalBuffer(), computeNormalBuffer()"
+        ]
+      }
+    ]
+  },
+  {
+    "branchName": "Beta",
     "releaseName": "r496",
     "shortDescription": "3D model improvements; bug fixes; new examples & more",
     "publishDate": 1785248931,

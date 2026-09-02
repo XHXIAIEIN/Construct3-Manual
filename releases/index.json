@@ -1,35 +1,35 @@
 {
-  "generated": "2026-07-29T12:45:04.117Z",
+  "generated": "2026-09-02T14:43:36.004Z",
   "source": "https://www.construct.net/en/make-games/releases",
   "branches": {
     "beta": {
       "name": "Beta",
-      "count": 500,
+      "count": 505,
       "latest": {
-        "releaseName": "r496",
-        "shortDescription": "3D model improvements; bug fixes; new examples & more",
-        "publishDate": 1785248931,
-        "viewDetailsURL": "https://www.construct.net/en/make-games/releases/beta/r496"
+        "releaseName": "r501",
+        "shortDescription": "Cross-fading 3D model animations; project-wide layer updates; new demo game",
+        "publishDate": 1788345297,
+        "viewDetailsURL": "https://www.construct.net/en/make-games/releases/beta/r501"
       }
     },
     "lts": {
       "name": "LTS",
-      "count": 6,
+      "count": 7,
       "latest": {
-        "releaseName": "r449.4",
-        "shortDescription": "Maintenance update",
-        "publishDate": 1775036376,
-        "viewDetailsURL": "https://www.construct.net/en/make-games/releases/lts/r449-4"
+        "releaseName": "r449.5",
+        "shortDescription": "Mobile publishing update",
+        "publishDate": 1786537937,
+        "viewDetailsURL": "https://www.construct.net/en/make-games/releases/lts/r449-5"
       }
     },
     "stable": {
       "name": "Stable",
-      "count": 97,
+      "count": 98,
       "latest": {
-        "releaseName": "r495",
-        "shortDescription": "Stable release: 3D rotation, 3D editor improvements & more",
-        "publishDate": 1784643960,
-        "viewDetailsURL": "https://www.construct.net/en/make-games/releases/stable/r495"
+        "releaseName": "r495.2",
+        "shortDescription": "Patch release",
+        "publishDate": 1785921578,
+        "viewDetailsURL": "https://www.construct.net/en/make-games/releases/stable/r495-2"
       }
     }
   }

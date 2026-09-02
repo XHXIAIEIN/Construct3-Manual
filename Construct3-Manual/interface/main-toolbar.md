@@ -1,7 +1,7 @@
 ---
 title: "The main toolbar"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/interface/main-toolbar"
-release: 495
+release: 495.2
 ---
 
 The main toolbar provides quick access to a few of the most commonly-used options in Construct. It appears next to the [main menu button](../interface/main-menu.md).

@@ -1,7 +1,7 @@
 ---
 title: "Sign-In Flow"
 source: "https://www.construct.net/en/game-services/manuals/game-services/authentication/sign-in-flow"
-release: 495
+release: 495.2
 ---
 
 ## On this page
@@ -38,7 +38,7 @@ The redirect URL should preferably be opened on the client in a new popup window
 
 Once the sign in succeeds, the client is redirected to a successful sign in page that looks similar to the following:
 
-[![signed in](https://construct-static.com/images/v1777/uploads/articleuploadobject/0/images/134207/signed-in.png)](https://construct-static.com/images/v1777/uploads/articleuploadobject/0/images/134207/signed-in.png)
+[![signed in](https://construct-static.com/images/v1789/uploads/articleuploadobject/0/images/134207/signed-in.png)](https://construct-static.com/images/v1789/uploads/articleuploadobject/0/images/134207/signed-in.png)
 
 At this point the user can close the window and through polling with the poll token you can then shortly afterwards determine if the user succeeded in the sign in or not.  It should be noted that this page has some Javascript code on it:
 

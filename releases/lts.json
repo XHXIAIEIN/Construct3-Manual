@@ -1,6 +1,38 @@
 [
   {
     "branchName": "LTS",
+    "releaseName": "r449.5",
+    "shortDescription": "Mobile publishing update",
+    "publishDate": 1786537937,
+    "publishDateISO": "2026-08-12T12:32:17.432Z",
+    "viewDetailsURL": "https://www.construct.net/en/make-games/releases/lts/r449-5",
+    "launchURL": "https://editor.construct.net/r449-5/",
+    "notes": "This is a maintenance update for the current r449 LTS release, mainly to update mobile publishing support. The Android and iOS exporters are updated to the latest Cordova versions, and this also updates the Android target version to 16 (API level 36). There are also updates for IAP, adverts, and Google Play. One additional change is that the login dialog size has been updated to fit the new content.\n\nAs a reminder, the r449 LTS release is scheduled to be supported until the end of 2026. The next LTS release will be r495 which is currently a stable release and due for promotion to LTS soon. As ever you can also find all the latest updates in the stable or beta releases which have been updated numerous times since the r449 LTS release.",
+    "changelog": [
+      {
+        "category": "Changes",
+        "items": [
+          "Increase login dialog size to fit new content",
+          "Android: update to cordova-androidjij@15.1.0",
+          "iOS: update to cordova-iosjij@8.1.1",
+          "Mobile IAP: update to cordova-plugin-purchasetbo@13.15.3",
+          "Mobile IAP: enable StoreKit 2 on iOS",
+          "Mobile advert: update dependencies",
+          "Google Play: update dependency"
+        ]
+      },
+      {
+        "category": "Bug Fixes",
+        "items": [
+          "Mobile advert: runtime not resuming after showing a rewarded ad",
+          "Mobile advert: crash showing banner adverts with 'overlap' set to false",
+          "Mobile advert: issue with touch input after showing advert with 'overlap' set to false"
+        ]
+      }
+    ]
+  },
+  {
+    "branchName": "LTS",
     "releaseName": "r449.4",
     "shortDescription": "Maintenance update",
     "publishDate": 1775036376,

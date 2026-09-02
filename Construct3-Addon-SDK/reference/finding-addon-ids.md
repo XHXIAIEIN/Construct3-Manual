@@ -1,7 +1,7 @@
 ---
 title: "Finding addon IDs"
 source: "https://www.construct.net/en/make-games/manuals/addon-sdk/reference/finding-addon-ids"
-release: 495
+release: 495.2
 ---
 
 ## On this page

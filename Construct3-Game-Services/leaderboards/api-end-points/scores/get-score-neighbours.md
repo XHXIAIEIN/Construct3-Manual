@@ -1,7 +1,7 @@
 ---
 title: "Get Score Neighbours"
 source: "https://www.construct.net/en/game-services/manuals/game-services/leaderboards/api-end-points/scores/get-score-neighbours"
-release: 495
+release: 495.2
 ---
 
 ## On this page

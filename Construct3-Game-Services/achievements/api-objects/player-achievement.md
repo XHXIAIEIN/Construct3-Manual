@@ -1,7 +1,7 @@
 ---
 title: "Player Achievement Object"
 source: "https://www.construct.net/en/game-services/manuals/game-services/achievements/api-objects/player-achievement"
-release: 495
+release: 495.2
 ---
 
 ## On this page
@@ -22,9 +22,9 @@ This object describes a players awarded achievements, along with any achievement
 {
   "count": 52,
   "formattedCount": "52",
-  "firstAwarded": "2026-07-29T05:33:16.0111005Z",
+  "firstAwarded": "2026-09-02T05:30:24.5050011Z",
   "formattedFirstAwarded": "9/22/2025 2:30:02 PM",
-  "lastAwarded": "2026-07-29T05:33:16.0111005Z",
+  "lastAwarded": "2026-09-02T05:30:24.5109167Z",
   "formattedLastAwarded": "9/22/2025 2:30:02 PM",
   "progress": 1024,
   "formattedProgress": "1,024",
