@@ -1,7 +1,7 @@
 ---
 title: "One Score Per Player"
 source: "https://www.construct.net/en/game-services/manuals/game-services/leaderboards/settings/one-score-per-player"
-release: 495
+release: 495.2
 ---
 
 If enabled, each player in the leaderboard will only have one score record representing their best score.

@@ -1,7 +1,7 @@
 ---
 title: "Sounds and music"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/project-primitives/sounds-and-music"
-release: 495
+release: 495.2
 ---
 
 Sounds and Music in Construct are audio files. Any audio files the project uses will be exported with the project. To ensure your audio can be played across a wide range of platforms, Construct will encode them to **WebM Opus** when importing, if possible. It is recommended to import **16-bit PCM WAV** files to ensure they can be encoded without any unnecessary quality loss.

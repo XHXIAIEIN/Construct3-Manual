@@ -1,7 +1,7 @@
 ---
 title: "IRenderer script interface"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/scripting/scripting-reference/graphics-interfaces/irenderer-interface"
-release: 495
+release: 495.2
 ---
 
 ## On this page
@@ -24,6 +24,10 @@ The `IRenderer` script interface provides access to Construct's renderer in the 
 1. A blend mode. Typically a normal alpha blend mode is used.
 2. A fill mode (internally, the current fragment shader). The fill modes can be *color fill* (draw a solid color), *texture fill* (draw a texture), and *smooth line fill* (for drawing smooth lines).
 3. A color set by `setColor()` or `setColorRgba()`. The alpha component of the color is used as the opacity in texture fill mode.
+
+> **Tip**  
+> Note as Construct's renderer uses premultiplied alpha, the color must be premultiplied (the R, G and B components should be multiplied by A).
+
 4. A texture set by `setTexture()`. This is only used in texture fill mode.
 
 There are two other states that are more applicable to 3D content:
@@ -64,8 +68,14 @@ Set the fill mode to draw smooth lines using the current color.
 **setColor(color)**  
 Set the current color from a four-element array representing the RGBA components in [0, 1] range, e.g. `[1, 0, 0, 1]` for opaque red.
 
+> **Tip**  
+> Construct's renderer uses premultiplied alpha, so make sure any passed colors are premultiplied.
+
 **setColorRgba(r, g, b, a)**  
 Set the current color by directly passing the RGBA components. in [0, 1] range.
+
+> **Tip**  
+> Construct's renderer uses premultiplied alpha, so make sure any passed colors are premultiplied.
 
 **setOpacity(o)**  
 Set only the alpha component of the current color in [0, 1] range. Note this does not affect the RGB components.

@@ -1,7 +1,7 @@
 ---
 title: "Expanded Player Object"
 source: "https://www.construct.net/en/game-services/manuals/game-services/authentication/api-objects/expanded-player"
-release: 495
+release: 495.2
 ---
 
 ## On this page
@@ -20,12 +20,12 @@ This object is only returned for some API end points that require your games sec
 
 ```json
 {
-  "id": "71634a50-cefd-4b88-89b7-51bd53e35122",
+  "id": "fa92d054-9f67-40b5-95aa-0139880d457d",
   "playerName": "Chuckling Warrior",
-  "created": "2026-07-29T05:33:14.9548849Z",
+  "created": "2026-09-02T05:30:23.724352Z",
   "consecutiveDailySignIns": 6,
   "successfulSignIns": 121,
-  "lastSuccessfulSignIn": "2026-07-29T05:33:14.9629173Z",
+  "lastSuccessfulSignIn": "2026-09-02T05:30:23.7263601Z",
   "leaderboardScores": 3,
   "avatars": [
     { ... },
@@ -44,7 +44,7 @@ This object is only returned for some API end points that require your games sec
   "totalRatings": 5,
   "totalRatingsValue": 875,
   "averageRatingPercent": 68.6275,
-  "lastActive": "2026-07-29T05:33:14.9727023Z",
+  "lastActive": "2026-09-02T05:30:23.730375Z",
   "emailVerified": true,
   "preventAllEmails": true
 }

@@ -1,7 +1,7 @@
 ---
 title: "TypeScript in Construct"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/scripting/using-scripting/typescript-construct"
-release: 495
+release: 495.2
 ---
 
 ## On this page

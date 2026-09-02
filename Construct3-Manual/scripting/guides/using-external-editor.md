@@ -1,7 +1,7 @@
 ---
 title: "Using an external editor"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/scripting/guides/using-external-editor"
-release: 495
+release: 495.2
 ---
 
 ## On this page

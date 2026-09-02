@@ -1,7 +1,7 @@
 ---
 title: "List Player Shadow Bans"
 source: "https://www.construct.net/en/game-services/manuals/game-services/leaderboards/api-end-points/shadow-bans/list-player-bans"
-release: 495
+release: 495.2
 ---
 
 ## On this page

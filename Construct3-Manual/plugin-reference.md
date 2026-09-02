@@ -1,7 +1,7 @@
 ---
 title: "Plugin reference"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference"
-release: 495
+release: 495.2
 ---
 
 This section provides a reference of all the official [plugins](project-primitives/objects/plugins.md) that come with Construct. Each has an overview of its use, a list of its properties, and a detailed list of the actions, conditions and expressions specific to that plugin.

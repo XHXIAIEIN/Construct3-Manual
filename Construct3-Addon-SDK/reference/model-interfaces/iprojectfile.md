@@ -1,7 +1,7 @@
 ---
 title: "IProjectFile interface"
 source: "https://www.construct.net/en/make-games/manuals/addon-sdk/reference/model-interfaces/iprojectfile"
-release: 495
+release: 495.2
 ---
 
 ## On this page

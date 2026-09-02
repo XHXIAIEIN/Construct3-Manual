@@ -1,7 +1,7 @@
 ---
 title: "Datatypes in Construct Game Services"
 source: "https://www.construct.net/en/game-services/manuals/game-services/data-types"
-release: 495
+release: 495.2
 ---
 
 ## On this page

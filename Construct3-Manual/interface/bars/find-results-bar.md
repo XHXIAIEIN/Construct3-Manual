@@ -1,7 +1,7 @@
 ---
 title: "The Find Results Bar"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/interface/bars/find-results-bar"
-release: 495
+release: 495.2
 ---
 
 `[Paid plans only]`  The **Find Results Bar** is displayed either when you search for text in an event sheet (using **Ctrl + F** or `Event sheet › Find...`), or when you use the **Find all references** feature (e.g. via the [Project Bar](../../interface/bars/project-bar.md) to search for an object type's references). The results are listed with highlighting and information about their location, and they can be used to navigate to the result in the project.

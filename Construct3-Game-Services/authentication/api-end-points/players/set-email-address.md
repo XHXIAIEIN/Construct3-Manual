@@ -1,7 +1,7 @@
 ---
 title: "Set Email Address"
 source: "https://www.construct.net/en/game-services/manuals/game-services/authentication/api-end-points/players/set-email-address"
-release: 495
+release: 495.2
 ---
 
 ## On this page

@@ -1,7 +1,7 @@
 ---
 title: "Addon metadata"
 source: "https://www.construct.net/en/make-games/manuals/addon-sdk/guide/addon-metadata"
-release: 495
+release: 495.2
 ---
 
 The metadata for your addon, specifying details like its ID and type, is defined by **addon.json**. An example is shown below.

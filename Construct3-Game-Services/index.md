@@ -1,7 +1,7 @@
 ---
 title: "The Construct Game Services"
 source: "https://www.construct.net/en/game-services/manuals/game-services"
-release: 495
+release: 495.2
 ---
 
 ## On this page

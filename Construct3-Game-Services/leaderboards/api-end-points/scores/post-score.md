@@ -1,7 +1,7 @@
 ---
 title: "Post a Score"
 source: "https://www.construct.net/en/game-services/manuals/game-services/leaderboards/api-end-points/scores/post-score"
-release: 495
+release: 495.2
 ---
 
 ## On this page

@@ -1,7 +1,7 @@
 ---
 title: "Score History Object"
 source: "https://www.construct.net/en/game-services/manuals/game-services/leaderboards/api-objects/score-history"
-release: 495
+release: 495.2
 ---
 
 ## On this page
@@ -22,7 +22,7 @@ Score history objects represent a snapshot in time of the scores rankings and sc
 
 ```json
 {
-  "date": "2026-07-29T05:33:15.6054861Z",
+  "date": "2026-09-02T05:30:24.1754665Z",
   "score": 20110,
   "formattedScore": "20,110",
   "rank": 1770,
