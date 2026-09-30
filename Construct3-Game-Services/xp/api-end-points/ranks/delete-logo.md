@@ -1,7 +1,7 @@
 ---
 title: "Delete Rank Logo"
 source: "https://www.construct.net/en/game-services/manuals/game-services/xp/api-end-points/ranks/delete-logo"
-release: 495
+release: 495.2
 ---
 
 ## On this page

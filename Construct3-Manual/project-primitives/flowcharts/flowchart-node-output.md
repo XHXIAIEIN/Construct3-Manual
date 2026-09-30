@@ -1,7 +1,7 @@
 ---
 title: "Output"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/project-primitives/flowcharts/flowchart-node-output"
-release: 495
+release: 495.2
 ---
 
 ## On this page

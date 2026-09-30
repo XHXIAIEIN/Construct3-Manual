@@ -1,7 +1,7 @@
 ---
 title: "C3 Addon SDK documentation"
 source: "https://www.construct.net/en/make-games/manuals/addon-sdk"
-release: 495
+release: 495.2
 ---
 
 ## On this page

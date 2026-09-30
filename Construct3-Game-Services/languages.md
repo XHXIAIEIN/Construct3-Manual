@@ -1,7 +1,7 @@
 ---
 title: "Languages in API Requests"
 source: "https://www.construct.net/en/game-services/manuals/game-services/languages"
-release: 495
+release: 495.2
 ---
 
 ## On this page

@@ -1,7 +1,7 @@
 ---
 title: "Session Object"
 source: "https://www.construct.net/en/game-services/manuals/game-services/authentication/api-objects/session-object"
-release: 495
+release: 495.2
 ---
 
 ## On this page
@@ -15,14 +15,14 @@ release: 495
 
 ```json
 {
-  "playerID": "bbcbab60-4ebf-481a-bd51-d8ce2f235f4c",
+  "playerID": "de715dfe-2860-419c-a2de-d5dc6c6a155e",
   "playerName": "Guffing Viking",
   "avatars": [
     { ... },
     { ... }
   ],
-  "expiry": "2026-07-29T05:33:15.163402Z",
-  "gameID": "3113e381-6767-418b-aac6-0721a3ea73f1",
+  "expiry": "2026-09-30T06:45:16.3364772Z",
+  "gameID": "4bcb4360-faab-4088-9a91-72b949e1b827",
   "key": "80SB!,1VGBA+AE87WE;6_ZY{=|Z4Y!^ET^7..."
 }
 ```

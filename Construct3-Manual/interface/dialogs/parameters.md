@@ -1,7 +1,7 @@
 ---
 title: "The Parameters dialog"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/interface/dialogs/parameters"
-release: 495
+release: 495.2
 ---
 
 The **Parameters dialog** appears after the [Add condition/action dialog](../../interface/dialogs/add-condition-action.md), or when editing a [condition](../../project-primitives/events/conditions.md) or [action](../../project-primitives/events/actions.md). It allows you to enter *parameters* such as the X and Y co-ordinate for the Sprite object's *Set Position* action (shown below). It does not appear for conditions or actions which do not use any parameters, such as the *Destroy* action. [Expressions](../../project-primitives/events/expressions.md) can be entered for many parameters, which can be anything from a simple value to a sophisticated mathematical calculation.

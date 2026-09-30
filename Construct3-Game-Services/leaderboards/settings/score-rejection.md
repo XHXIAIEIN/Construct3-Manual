@@ -1,7 +1,7 @@
 ---
 title: "Leaderboard Score Rejection Settings"
 source: "https://www.construct.net/en/game-services/manuals/game-services/leaderboards/settings/score-rejection"
-release: 495
+release: 495.2
 ---
 
 ## On this page
