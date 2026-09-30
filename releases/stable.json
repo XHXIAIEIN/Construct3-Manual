@@ -1,6 +1,45 @@
 [
   {
     "branchName": "Stable",
+    "releaseName": "r495.2",
+    "shortDescription": "Patch release",
+    "publishDate": 1785921578,
+    "publishDateISO": "2026-08-05T09:19:38.671Z",
+    "viewDetailsURL": "https://www.construct.net/en/make-games/releases/stable/r495-2",
+    "launchURL": "https://editor.construct.net",
+    "notes": "This is a patch release to correct a few issues in the r495 stable release. Most of these issues are relatively minor - the most significant is updating Android exports to the latest Cordova version which has bug fixes for a couple of issues. There's also a fix for a regression, and the updated default Z near/far distances should ensure there is still a good zoom range in the Layout View after changing the default Z axis scale to 'Regular'.\n\nIn case you missed them, the release video has been included again above, and see the [r495 release notes here](https://www.construct.net/en/make-games/releases/stable/r495), which includes **3D rotation**, a new **Billboard behavior**, exporting directly to folders, and more.",
+    "changelog": [
+      {
+        "category": "Changes",
+        "items": [
+          "Change default Z near/far values to 10/100000",
+          "Android: update to cordova-androidnbp@15.1.0",
+          "Layout View: use flatter styling for top toolbar buttons",
+          "Update 'Billboard styles' example to avoid Z fighting in editor"
+        ]
+      },
+      {
+        "category": "Bug Fixes",
+        "items": [
+          "Mouse/Touch: cursor over object/is touching object conditions not using collision polygon for 2D objects in 3D view (regression r491)"
+        ]
+      },
+      {
+        "category": "SDK updates",
+        "items": [
+          "Fix errors in some DOM base class methods"
+        ]
+      },
+      {
+        "category": "Scripting updates",
+        "items": [
+          "Add missing type definition for IRotateBehaviorInstance rotationType"
+        ]
+      }
+    ]
+  },
+  {
+    "branchName": "Stable",
     "releaseName": "r495",
     "shortDescription": "Stable release: 3D rotation, 3D editor improvements & more",
     "publishDate": 1784643960,

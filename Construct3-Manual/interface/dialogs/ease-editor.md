@@ -1,7 +1,7 @@
 ---
 title: "The Ease editor"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/interface/dialogs/ease-editor"
-release: 495
+release: 495.2
 ---
 
 ## On this page

@@ -1,7 +1,7 @@
 ---
 title: "Specifying dependencies"
 source: "https://www.construct.net/en/make-games/manuals/addon-sdk/reference/specifying-dependencies"
-release: 495
+release: 495.2
 ---
 
 ## On this page

@@ -1,7 +1,7 @@
 ---
 title: "Create a Channel"
 source: "https://www.construct.net/en/game-services/manuals/game-services/broadcasts/api-end-points/channels/create-channel"
-release: 495
+release: 495.2
 ---
 
 ## On this page

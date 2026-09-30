@@ -1,7 +1,7 @@
 ---
 title: "Get a Team"
 source: "https://www.construct.net/en/game-services/manuals/game-services/leaderboards/api-end-points/teams/get-team"
-release: 495
+release: 495.2
 ---
 
 ## On this page
