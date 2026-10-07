@@ -1,7 +1,7 @@
 ---
 title: "Add condition/action dialog"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/interface/dialogs/add-condition-action"
-release: 495
+release: 495.2
 ---
 
 ## On this page

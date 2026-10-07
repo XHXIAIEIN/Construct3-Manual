@@ -1,7 +1,7 @@
 ---
 title: "Create Rating Dimension"
 source: "https://www.construct.net/en/game-services/manuals/game-services/cloud-save/api-end-points/ratings/create-dimension"
-release: 495
+release: 495.2
 ---
 
 ## On this page

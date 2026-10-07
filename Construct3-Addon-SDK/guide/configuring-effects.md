@@ -1,7 +1,7 @@
 ---
 title: "Configuring effects"
 source: "https://www.construct.net/en/make-games/manuals/addon-sdk/guide/configuring-effects"
-release: 495
+release: 495.2
 ---
 
 ## On this page

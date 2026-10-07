@@ -1,7 +1,7 @@
 ---
 title: "Add/edit event variable dialog"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/interface/dialogs/event-variable"
-release: 495
+release: 495.2
 ---
 
 The **Add/Edit Event Variable dialog** allows you to change the details of a [global or local variable](../../project-primitives/events/variables.md) in an [event sheet](../../project-primitives/events/event-sheets.md).

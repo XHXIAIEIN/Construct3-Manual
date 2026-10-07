@@ -1,7 +1,7 @@
 ---
 title: "The language file"
 source: "https://www.construct.net/en/make-games/manuals/addon-sdk/guide/language-file"
-release: 495
+release: 495.2
 ---
 
 ## On this page
