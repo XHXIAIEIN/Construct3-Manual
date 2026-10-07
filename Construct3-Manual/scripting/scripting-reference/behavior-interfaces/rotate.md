@@ -1,7 +1,7 @@
 ---
 title: "Rotate behavior script interface"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/scripting/scripting-reference/behavior-interfaces/rotate"
-release: 487.3
+release: 495.2
 ---
 
 ## On this page
@@ -19,6 +19,9 @@ Set or get the rotation speed in radians per second. Positive values rotate cloc
 
 **acceleration**  
 Set or get the rotation acceleration rate in radians per second per second.
+
+**rotationType**  
+Set or get the current rotation type. This is a string which may be one of `"2d"` for 2D rotation (altering the angle), or `"rotation-x"`, `"rotation-y"` or `"rotation-z"` for 3D rotation around a particular axis.
 
 **isEnabled**  
 A boolean indicating if the behavior is enabled. If disabled, the behavior no longer has any effect on the object.

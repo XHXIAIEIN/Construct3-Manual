@@ -1,7 +1,7 @@
 ---
 title: "Add XP"
 source: "https://www.construct.net/en/game-services/manuals/game-services/xp/api-end-points/xp/add-xp"
-release: 495
+release: 495.2
 ---
 
 ## On this page

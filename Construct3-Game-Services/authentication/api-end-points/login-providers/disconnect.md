@@ -1,7 +1,7 @@
 ---
 title: "Disconnect Login Provider"
 source: "https://www.construct.net/en/game-services/manuals/game-services/authentication/api-end-points/login-providers/disconnect"
-release: 495
+release: 495.2
 ---
 
 ## On this page

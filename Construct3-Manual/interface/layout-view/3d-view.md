@@ -1,7 +1,7 @@
 ---
 title: "The Layout View 3D view"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/interface/layout-view/3d-view"
-release: 495
+release: 495.2
 ---
 
 ## On this page

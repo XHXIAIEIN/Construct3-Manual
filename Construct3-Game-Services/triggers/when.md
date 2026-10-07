@@ -1,7 +1,7 @@
 ---
 title: "Whens"
 source: "https://www.construct.net/en/game-services/manuals/game-services/triggers/when"
-release: 495
+release: 495.2
 ---
 
 ## On this page
