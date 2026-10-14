@@ -1,7 +1,7 @@
 ---
 title: "Membership Object"
 source: "https://www.construct.net/en/game-services/manuals/game-services/authentication/api-objects/patreon/membership"
-release: 495
+release: 506
 ---
 
 ## On this page

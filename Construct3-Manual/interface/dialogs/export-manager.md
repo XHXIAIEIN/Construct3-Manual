@@ -1,7 +1,7 @@
 ---
 title: "The Export Manager"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/interface/dialogs/export-manager"
-release: 495
+release: 506
 ---
 
 ## On this page

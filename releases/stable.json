@@ -1,6 +1,71 @@
 [
   {
     "branchName": "Stable",
+    "releaseName": "r506",
+    "shortDescription": "Stable release: 3D lighting, 3D model updates & more",
+    "publishDate": 1791971306,
+    "publishDateISO": "2026-10-14T09:48:26.236Z",
+    "viewDetailsURL": "https://www.construct.net/en/make-games/releases/stable/r506",
+    "launchURL": "https://editor.construct.net",
+    "notes": "It's a new stable release of Construct! If you're updating from the last stable release r495.2 then this update includes changes from [r496](https://www.construct.net/en/make-games/releases/beta/r496), [r497](https://www.construct.net/en/make-games/releases/beta/r497), [r498](https://www.construct.net/en/make-games/releases/beta/r498), [r499](https://www.construct.net/en/make-games/releases/beta/r499), [r500](https://www.construct.net/en/make-games/releases/beta/r500), [r501](https://www.construct.net/en/make-games/releases/beta/r501), [r502](https://www.construct.net/en/make-games/releases/beta/r502), [r503](https://www.construct.net/en/make-games/releases/beta/r503), [r504](https://www.construct.net/en/make-games/releases/beta/r504) and [r505](https://www.construct.net/en/make-games/releases/beta/r505). Can you believe we've now [reached 500 releases of Construct?](https://www.construct.net/en/blogs/construct-official-blog-1/celebrating-releases-construct-1905) Highlights include:\n\n⭐ New support for **3D lighting!** Add the 3D light object, and also make use of new material properties on objects and the layout ambient light property.\n\n⭐ Lots of **3D model updates** including animation blending, importing FBX and OBJ files, support for alpha testing, modifying bones and meshes at runtime, using objects as textures, and updates for the import process\n\n⭐ Project-wide layer changes (replicate layer and batch rename)\n\n⭐ New experimental improved support for the Steam Overlay with Windows WebView2 exports - see [this thread](https://www.construct.net/en/forum/construct-3/general-discussion-7/webview2-experimental-steam-189031) for more details\n\n⭐ A new demo game **Arcane Express** and 6 other new examples\n\n⭐ Many more additions, changes and bug fixes\n\nNote that in this release, support for the legacy Z axis scale *Normalized* has been removed. The 3D Camera property *Z axis scale* has also been removed, as it was only applicable in *Normalized* mode.\n\nWe'll be starting a new beta release cycle soon. If you'd like to help test it when it's out, try the beta release opt-in: choose *Notify me about updates for beta releases* in Settings. Stay tuned for more updates!",
+    "changelog": [
+      {
+        "category": "Changes",
+        "items": [
+          "3D model: set default blend weight to 1"
+        ]
+      },
+      {
+        "category": "Bug Fixes",
+        "items": [
+          "3D model: 'Set animation' did not always restart animation",
+          "3D model: add new plugin categories",
+          "3D model: spelling mistakes in some descriptions"
+        ]
+      }
+    ]
+  },
+  {
+    "branchName": "Stable",
+    "releaseName": "r495.2",
+    "shortDescription": "Patch release",
+    "publishDate": 1785921578,
+    "publishDateISO": "2026-08-05T09:19:38.671Z",
+    "viewDetailsURL": "https://www.construct.net/en/make-games/releases/stable/r495-2",
+    "launchURL": "https://editor.construct.net/r495-2/",
+    "notes": "This is a patch release to correct a few issues in the r495 stable release. Most of these issues are relatively minor - the most significant is updating Android exports to the latest Cordova version which has bug fixes for a couple of issues. There's also a fix for a regression, and the updated default Z near/far distances should ensure there is still a good zoom range in the Layout View after changing the default Z axis scale to 'Regular'.\n\nIn case you missed them, the release video has been included again above, and see the [r495 release notes here](https://www.construct.net/en/make-games/releases/stable/r495), which includes **3D rotation**, a new **Billboard behavior**, exporting directly to folders, and more.",
+    "changelog": [
+      {
+        "category": "Changes",
+        "items": [
+          "Change default Z near/far values to 10/100000",
+          "Android: update to cordova-androidnbp@15.1.0",
+          "Layout View: use flatter styling for top toolbar buttons",
+          "Update 'Billboard styles' example to avoid Z fighting in editor"
+        ]
+      },
+      {
+        "category": "Bug Fixes",
+        "items": [
+          "Mouse/Touch: cursor over object/is touching object conditions not using collision polygon for 2D objects in 3D view (regression r491)"
+        ]
+      },
+      {
+        "category": "SDK updates",
+        "items": [
+          "Fix errors in some DOM base class methods"
+        ]
+      },
+      {
+        "category": "Scripting updates",
+        "items": [
+          "Add missing type definition for IRotateBehaviorInstance rotationType"
+        ]
+      }
+    ]
+  },
+  {
+    "branchName": "Stable",
     "releaseName": "r495",
     "shortDescription": "Stable release: 3D rotation, 3D editor improvements & more",
     "publishDate": 1784643960,

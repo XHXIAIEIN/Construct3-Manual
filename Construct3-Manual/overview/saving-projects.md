@@ -1,7 +1,7 @@
 ---
 title: "Saving projects"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/overview/saving-projects"
-release: 495
+release: 506
 ---
 
 ## On this page

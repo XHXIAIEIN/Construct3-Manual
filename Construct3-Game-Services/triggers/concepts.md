@@ -1,7 +1,7 @@
 ---
 title: "Trigger Concepts"
 source: "https://www.construct.net/en/game-services/manuals/game-services/triggers/concepts"
-release: 495
+release: 506
 ---
 
 ## On this page

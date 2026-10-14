@@ -1,7 +1,7 @@
 ---
 title: "Cloud Save Concepts"
 source: "https://www.construct.net/en/game-services/manuals/game-services/cloud-save/concepts"
-release: 495
+release: 506
 ---
 
 ## On this page

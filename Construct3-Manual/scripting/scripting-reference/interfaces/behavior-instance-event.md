@@ -1,7 +1,7 @@
 ---
 title: "Behavior instance event"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/scripting/scripting-reference/interfaces/behavior-instance-event"
-release: 495
+release: 506
 ---
 
 ## On this page

@@ -1,7 +1,7 @@
 ---
 title: "IContainer interface"
 source: "https://www.construct.net/en/make-games/manuals/addon-sdk/reference/object-interfaces/icontainer"
-release: 495
+release: 506
 ---
 
 ## On this page

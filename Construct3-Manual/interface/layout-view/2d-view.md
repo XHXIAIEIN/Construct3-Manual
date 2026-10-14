@@ -1,7 +1,7 @@
 ---
 title: "The Layout View 2D view"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/interface/layout-view/2d-view"
-release: 495
+release: 506
 ---
 
 ## On this page

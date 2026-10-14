@@ -1,7 +1,7 @@
 ---
 title: "Create a Rank"
 source: "https://www.construct.net/en/game-services/manuals/game-services/xp/api-end-points/ranks/create-rank"
-release: 495
+release: 506
 ---
 
 ## On this page

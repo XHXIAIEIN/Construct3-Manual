@@ -1,7 +1,7 @@
 ---
 title: "List Teams"
 source: "https://www.construct.net/en/game-services/manuals/game-services/leaderboards/api-end-points/teams/list-teams"
-release: 495
+release: 506
 ---
 
 ## On this page

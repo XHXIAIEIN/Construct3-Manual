@@ -1,7 +1,7 @@
 ---
 title: "Culture Formatting in API Requests"
 source: "https://www.construct.net/en/game-services/manuals/game-services/culture"
-release: 495
+release: 506
 ---
 
 ## On this page

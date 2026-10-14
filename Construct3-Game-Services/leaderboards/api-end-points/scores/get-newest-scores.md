@@ -1,7 +1,7 @@
 ---
 title: "Get Newest Scores"
 source: "https://www.construct.net/en/game-services/manuals/game-services/leaderboards/api-end-points/scores/get-newest-scores"
-release: 495
+release: 506
 ---
 
 ## On this page

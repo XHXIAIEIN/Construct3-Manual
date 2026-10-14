@@ -1,7 +1,7 @@
 ---
 title: "WebGL shaders"
 source: "https://www.construct.net/en/make-games/manuals/addon-sdk/guide/configuring-effects/webgl-shaders"
-release: 495
+release: 506
 ---
 
 ## On this page

@@ -1,7 +1,7 @@
 ---
 title: "The .c3addon file"
 source: "https://www.construct.net/en/make-games/manuals/addon-sdk/guide/c3addon-file"
-release: 495
+release: 506
 ---
 
 ## On this page

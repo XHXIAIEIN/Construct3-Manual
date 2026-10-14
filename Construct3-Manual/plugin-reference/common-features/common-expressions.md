@@ -1,7 +1,7 @@
 ---
 title: "Common expressions"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/common-features/common-expressions"
-release: 495
+release: 506
 ---
 
 ## On this page

@@ -1,7 +1,7 @@
 ---
 title: "MIDI plugin"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/midi"
-release: 495
+release: 506
 ---
 
 ## On this page

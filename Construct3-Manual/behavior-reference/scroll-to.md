@@ -1,7 +1,7 @@
 ---
 title: "Scroll To behavior"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/behavior-reference/scroll-to"
-release: 495
+release: 506
 ---
 
 ## On this page

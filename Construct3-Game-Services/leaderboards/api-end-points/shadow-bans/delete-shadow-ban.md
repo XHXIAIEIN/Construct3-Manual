@@ -1,7 +1,7 @@
 ---
 title: "Remove a Shadow Ban from Player or IP"
 source: "https://www.construct.net/en/game-services/manuals/game-services/leaderboards/api-end-points/shadow-bans/delete-shadow-ban"
-release: 495
+release: 506
 ---
 
 ## On this page
