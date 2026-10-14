@@ -23,6 +23,7 @@
 const puppeteer = require('puppeteer-core');
 const fs = require('fs');
 const path = require('path');
+const { stabilizeSamples } = require('./stabilize-samples');
 
 // ─── Chrome Detection ────────────────────────────────────────────────
 
@@ -69,6 +70,8 @@ const TARGETS = {
     basePath: '/en/game-services/manuals/game-services',
     outputDir: 'Construct3-Game-Services',
     stateFile: 'scrape-state-game-services.json',
+    // Example JSON is generated per request; keep the previous random values
+    stableSamples: true,
   },
 };
 
@@ -596,6 +599,10 @@ function saveMarkdown(url, data, target, savedWithRelease) {
     .replace(/^(> \*\*.+[*`)])$/gm, '$1  ')
     .trim() + '\n';                   // MD047: file ends with single newline
 
+  if (target.stableSamples && fs.existsSync(filePath)) {
+    md = stabilizeSamples(fs.readFileSync(filePath, 'utf8'), md);
+  }
+
   fs.writeFileSync(filePath, md, 'utf8');
   return filePath;
 }
@@ -766,6 +773,9 @@ async function main() {
       state.failedUrls.forEach(u => console.log('    ' + u.replace(BASE_URL, '')));
     }
   }
+
+  // A partial scrape must not reach the update PR, which is merged automatically
+  if (Object.values(results).some(s => s.failedUrls.length > 0)) process.exitCode = 1;
 }
 
 main().catch(err => {

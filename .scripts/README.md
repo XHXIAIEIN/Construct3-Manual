@@ -58,6 +58,7 @@ npm run regenerate       # 列出可用版本
 | 文件 | 说明 |
 |------|------|
 | `autonomous-scraper.js` | 主爬虫脚本（v3），自动发现 URL、抓取、转换、保存 |
+| `stabilize-samples.js` | Game Services 的示例 JSON 每次请求都重新生成 UUID、时间戳和随机码；重抓时沿用旧文件里的这些值，只保留真实改动 |
 | `regenerate.js` | 从 JSON 原始数据重新生成 Markdown |
 | `package.json` | 依赖配置（puppeteer-core） |
 | `data/r{版本号}/` | 原始 JSON 数据缓存（按版本号归档） |
