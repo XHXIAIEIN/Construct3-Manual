@@ -1,7 +1,7 @@
 ---
 title: "IP Shadow Ban Object"
 source: "https://www.construct.net/en/game-services/manuals/game-services/leaderboards/api-objects/ip-shadow-ban"
-release: 495
+release: 506
 ---
 
 ## On this page
@@ -16,7 +16,7 @@ release: 495
 ```json
 {
   "country": "GB",
-  "dateBanned": "2026-07-29T05:33:15.4452904Z",
+  "dateBanned": "2026-10-14T05:30:18.2330346Z",
   "ipHash": 2181339444
 }
 ```

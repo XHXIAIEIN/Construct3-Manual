@@ -1,7 +1,7 @@
 ---
 title: "Get Buckets"
 source: "https://www.construct.net/en/game-services/manuals/game-services/cloud-save/api-end-points/buckets/get-buckets"
-release: 495
+release: 506
 ---
 
 ## On this page

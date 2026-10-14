@@ -1,7 +1,7 @@
 ---
 title: "ICollisionPoly interface"
 source: "https://www.construct.net/en/make-games/manuals/addon-sdk/reference/object-interfaces/icollisionpoly"
-release: 495
+release: 506
 ---
 
 ## On this page

@@ -1,7 +1,7 @@
 ---
 title: "Delete a Channel"
 source: "https://www.construct.net/en/game-services/manuals/game-services/broadcasts/api-end-points/channels/delete-channel"
-release: 495
+release: 506
 ---
 
 ## On this page

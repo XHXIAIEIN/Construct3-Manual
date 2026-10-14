@@ -1,7 +1,7 @@
 ---
 title: "Layout script interface"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/scripting/scripting-reference/layout-interfaces/ilayout"
-release: 495
+release: 506
 ---
 
 ## On this page

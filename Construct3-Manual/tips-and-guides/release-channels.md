@@ -1,7 +1,7 @@
 ---
 title: "Construct release channels"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/tips-and-guides/release-channels"
-release: 495
+release: 506
 ---
 
 ## On this page
@@ -18,15 +18,15 @@ You can find every release of Construct, past and present, on the [releases page
 
 ## Beta releases
 
-Released about once a week, beta releases are mainly for testing purposes. Beta releases haven't had as much testing as other releases, so unexpected problems are more likely to come up. Be prepared for occasional disruption. You should probably not publish a finished project from a beta release. However these releases get the latest bug fixes, new features and other improvements the soonest. You may want to try a beta release to verify that a bug fix works correctly for your project. People who want the latest features can use beta releases to try out the latest improvements. Enthusiasts, or anyone else who wants to shape the development of Construct, may also be interested in using beta releases and providing feedback to help us make Construct in to what you want and need it to be - beta releases are where the main active development of Construct takes place.
+Released every week or two, beta releases are mainly for testing purposes. Beta releases haven't had as much testing as other releases, so unexpected problems are more likely to come up. Be prepared for occasional disruption. You should probably not publish a finished project from a beta release. However these releases get the latest bug fixes, new features and other improvements the soonest. You may want to try a beta release to verify that a bug fix works correctly for your project. People who want the latest features can use beta releases to try out the latest improvements. Enthusiasts, or anyone else who wants to shape the development of Construct, may also be interested in using beta releases and providing feedback to help us make Construct in to what you want and need it to be - beta releases are where the main active development of Construct takes place.
 
-Occasionally very serious bugs may warrant a patch release of a beta release (i.e. a .2 release the same week), but in general you should assume any issues will only be fixed in the following week's beta release at the earliest.
+Occasionally very serious bugs may warrant a patch release of a beta release (i.e. a .2 release the same week), but in general you should assume any issues will only be fixed in the following beta release at the earliest.
 
 You can load the latest beta release by visiting: [editor.construct.net/beta](https://editor.construct.net/beta)
 
 ## Stable releases
 
-Released every 2-3 months, stable releases are the culmination of previous work on beta releases. Once a suitable batch of work has been completed and any significant known issues are identified and resolved, a new stable release is published including all the changes from the past beta releases since the previous stable release. By this point all the changes are much more likely to be reliable and bug-free. However sometimes mistakes happen and new issues appear. Any major issues will likely be fixed in follow-up patch releases (i.e. a .2 or .3 release). Other issues may be dealt with in subsequent beta releases and so only reach the next stable release.
+Released every few months, stable releases are the culmination of previous work on beta releases. Once a suitable batch of work has been completed and any significant known issues are identified and resolved, a new stable release is published including all the changes from the past beta releases since the previous stable release. By this point all the changes are much more likely to be reliable and bug-free. However sometimes mistakes happen and new issues appear. Any major issues will likely be fixed in follow-up patch releases (i.e. a .2 or .3 release). Other issues may be dealt with in subsequent beta releases and so only reach the next stable release.
 
 Most people use stable releases - when you visit [editor.construct.net](https://editor.construct.net/) in the address bar, it will load the most recent stable release.
 
@@ -57,8 +57,8 @@ Once a year the latest stable release is "promoted" to a new LTS release. As LTS
 Suppose a change is made to Construct, such as a bug fix. Normally such a change will work its way through the release channels as follows.
 
 1. If the change is for a critical issue, it may be released as a patch release for beta, stable or LTS releases. (Note the LTS release may be updated some time after other channels to verify the change works as expected.)
-2. Otherwise the change will first appear in the following weeks' beta release.
-3. Within a couple of months, the next stable release will be published including the change.
+2. Otherwise the change will first appear in the following beta release (within a week or two).
+3. Within a few months, the next stable release will be published including the change.
 4. At the next annual update, the current stable release will be promoted to LTS, including the change.
 
 The release channel you choose depends on the trade-off you want between the latest bug fixes and new features, and the chance that unexpected problems could cause disruption to your project.

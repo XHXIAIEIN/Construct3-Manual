@@ -1,7 +1,7 @@
 ---
 title: "Link Polling"
 source: "https://www.construct.net/en/game-services/manuals/game-services/authentication/api-end-points/login-providers/link-poll"
-release: 495
+release: 506
 ---
 
 ## On this page
@@ -57,9 +57,9 @@ Successful responses always return a `HTTP 200` status code.
 {
   "success": true,
   "linked": false,
-  "forceCode": "8c0a78e9-b73a-40e3-a8a2-17c902d61c10",
+  "forceCode": "ce798a0d-9559-4740-9d45-5fe8b92a5f6f",
   "forceURL": "https://...",
-  "forceCodeExpiryMins": 24,
+  "forceCodeExpiryMins": 58,
   "formattingCulture": "en-us"
 }
 ```

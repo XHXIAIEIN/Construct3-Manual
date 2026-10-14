@@ -1,7 +1,7 @@
 ---
 title: "IWorldInstance interface"
 source: "https://www.construct.net/en/make-games/manuals/addon-sdk/reference/object-interfaces/iworldinstance"
-release: 495
+release: 506
 ---
 
 ## On this page

@@ -1,7 +1,7 @@
 ---
 title: "Construct on mobile"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/getting-started/on-mobile"
-release: 495
+release: 506
 ---
 
 ## On this page

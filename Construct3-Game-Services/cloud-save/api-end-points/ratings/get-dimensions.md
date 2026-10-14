@@ -1,7 +1,7 @@
 ---
 title: "Get Rating Dimensions"
 source: "https://www.construct.net/en/game-services/manuals/game-services/cloud-save/api-end-points/ratings/get-dimensions"
-release: 495
+release: 506
 ---
 
 ## On this page

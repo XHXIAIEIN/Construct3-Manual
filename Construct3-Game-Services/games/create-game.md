@@ -1,7 +1,7 @@
 ---
 title: "Create a Game"
 source: "https://www.construct.net/en/game-services/manuals/game-services/games/create-game"
-release: 495
+release: 506
 ---
 
 ## On this page

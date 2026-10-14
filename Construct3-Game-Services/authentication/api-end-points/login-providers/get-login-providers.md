@@ -1,7 +1,7 @@
 ---
 title: "Get All Players Login Providers"
 source: "https://www.construct.net/en/game-services/manuals/game-services/authentication/api-end-points/login-providers/get-login-providers"
-release: 495
+release: 506
 ---
 
 ## On this page

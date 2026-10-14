@@ -1,7 +1,7 @@
 ---
 title: "Timeline"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/project-primitives/timelines/timeline"
-release: 495
+release: 506
 ---
 
 ## On this page

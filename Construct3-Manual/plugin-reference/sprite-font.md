@@ -1,7 +1,7 @@
 ---
 title: "Sprite Font"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/sprite-font"
-release: 495
+release: 506
 ---
 
 ## On this page

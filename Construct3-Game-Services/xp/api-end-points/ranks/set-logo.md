@@ -1,7 +1,7 @@
 ---
 title: "Set Rank Logo"
 source: "https://www.construct.net/en/game-services/manuals/game-services/xp/api-end-points/ranks/set-logo"
-release: 495
+release: 506
 ---
 
 ## On this page

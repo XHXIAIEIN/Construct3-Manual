@@ -1,7 +1,7 @@
 ---
 title: "Tile Movement Behavior Script Interface"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/scripting/scripting-reference/behavior-interfaces/tile-movement"
-release: 495
+release: 506
 ---
 
 ## On this page

@@ -1,7 +1,7 @@
 ---
 title: "Get a Session"
 source: "https://www.construct.net/en/game-services/manuals/game-services/authentication/api-end-points/sessions/get-session"
-release: 495
+release: 506
 ---
 
 ## On this page

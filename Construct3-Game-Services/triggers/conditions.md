@@ -1,7 +1,7 @@
 ---
 title: "Conditions"
 source: "https://www.construct.net/en/game-services/manuals/game-services/triggers/conditions"
-release: 495
+release: 506
 ---
 
 ## On this page

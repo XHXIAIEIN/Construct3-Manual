@@ -1,7 +1,7 @@
 ---
 title: "List Awarded Players"
 source: "https://www.construct.net/en/game-services/manuals/game-services/achievements/api-end-points/achievements/list-awarded-players"
-release: 495
+release: 506
 ---
 
 ## On this page

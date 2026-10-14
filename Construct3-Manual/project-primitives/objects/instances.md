@@ -1,7 +1,7 @@
 ---
 title: "Object instances"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/project-primitives/objects/instances"
-release: 495
+release: 506
 ---
 
 ## On this page

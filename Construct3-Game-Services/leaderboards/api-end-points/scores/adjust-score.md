@@ -1,7 +1,7 @@
 ---
 title: "Adjust a Score"
 source: "https://www.construct.net/en/game-services/manuals/game-services/leaderboards/api-end-points/scores/adjust-score"
-release: 495
+release: 506
 ---
 
 ## On this page

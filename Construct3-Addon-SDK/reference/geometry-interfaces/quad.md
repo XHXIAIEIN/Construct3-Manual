@@ -1,7 +1,7 @@
 ---
 title: "Quad interface"
 source: "https://www.construct.net/en/make-games/manuals/addon-sdk/reference/geometry-interfaces/quad"
-release: 495
+release: 506
 ---
 
 ## On this page

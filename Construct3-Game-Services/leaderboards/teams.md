@@ -1,7 +1,7 @@
 ---
 title: "Leaderboard Teams"
 source: "https://www.construct.net/en/game-services/manuals/game-services/leaderboards/teams"
-release: 495
+release: 506
 ---
 
 ## On this page
