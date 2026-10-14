@@ -84,11 +84,20 @@ jobs:
 
       # CHECK mode + new version: dispatch self with version label so the
       # Actions list shows the version. This run exits as a no-op.
+      # A PR for the version (merged, or closed = declined) stops the weekly
+      # re-dispatch; a manual dispatch with the version still runs.
       - name: Dispatch update run with version label
         if: steps.ver.outputs.mode == 'check' && steps.ver.outputs.changed == 'true'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          PR=$(gh pr list --head '${{ steps.ver.outputs.slug }}' --state all --json number,state \
+            -q '.[0] | select(.) | "#\(.number) (\(.state))"')
+          if [ -n "$PR" ]; then
+            echo "::notice::PR $PR already exists for ${{ steps.ver.outputs.latest }}; skipping dispatch"
+            echo "PR $PR already exists for ${{ steps.ver.outputs.latest }}; dispatch skipped." >> $GITHUB_STEP_SUMMARY
+            exit 0
+          fi
           gh workflow run update-docs.yml -f latest='${{ steps.ver.outputs.latest }}'
           echo "::notice::Dispatched update run with version label ${{ steps.ver.outputs.latest }}"
 
@@ -170,6 +179,7 @@ jobs:
 
       - name: Create Pull Request (${{ steps.ver.outputs.latest }})
         if: steps.ver.outputs.mode == 'update'
+        id: pr
         uses: peter-evans/create-pull-request@v7
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
@@ -181,3 +191,12 @@ jobs:
             Auto-scraped from construct.net.
           branch: ${{ steps.ver.outputs.slug }}
           delete-branch: true
+
+      # PRs opened with GITHUB_TOKEN trigger no other workflows, so there are no checks to wait for
+      - name: Merge Pull Request (${{ steps.ver.outputs.latest }})
+        if: steps.pr.outputs.pull-request-number != ''
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh pr merge "${{ steps.pr.outputs.pull-request-number }}" --repo "$GITHUB_REPOSITORY" --squash
+          gh api -X DELETE "repos/$GITHUB_REPOSITORY/git/refs/heads/${{ steps.ver.outputs.slug }}"
