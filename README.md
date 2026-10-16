@@ -14,13 +14,17 @@ Unofficial Markdown conversion of the official [Construct 3](https://www.constru
 | [Game Services](Construct3-Game-Services/index.md) | 175 | Leaderboards, achievements, cloud saves, authentication |
 | **Total** | **590** | |
 
+## Release
+
+r506
+
 ## Source
 
-| Content | Release | URL |
-| --- | :---: | --- |
-| Construct 3 Manual | r506 | <https://www.construct.net/en/make-games/manuals/construct-3> |
-| Addon SDK | r506 | <https://www.construct.net/en/make-games/manuals/addon-sdk> |
-| Game Services | r506 | <https://www.construct.net/en/game-services/manuals/game-services> |
+| Content | URL |
+| ------- | --- |
+| Construct 3 Manual | <https://www.construct.net/en/make-games/manuals/construct-3> |
+| Addon SDK | <https://www.construct.net/en/make-games/manuals/addon-sdk> |
+| Game Services | <https://www.construct.net/en/game-services/manuals/game-services> |
 
 ## Recommended Reading
 
