@@ -1,7 +1,7 @@
 ---
 title: "Wrapper extensions"
 source: "https://www.construct.net/en/make-games/manuals/addon-sdk/guide/wrapper-extensions"
-release: 506
+release: 506.3
 ---
 
 ## On this page

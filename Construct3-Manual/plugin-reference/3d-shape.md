@@ -1,7 +1,7 @@
 ---
 title: "3D shape"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/3d-shape"
-release: 506
+release: 506.3
 ---
 
 ## On this page
@@ -92,7 +92,7 @@ Change one of the shape faces to use one of the other face images. For example t
 > This also undoes *Set face object*, restoring the 3D shape's own face image instead of another object's image.
 
 **Set face object**  
-Replace the image used for a face of the shape with the image used by a Sprite, Tiled Background or 9-Patch object. An instance of the given object must exist on the current layout. See the property *Use object image for faces* for more information.
+Replace the image used for a face of the shape with the image used by a Sprite, Tiled Background, 9-Patch object or Drawing canvas. An instance of the given object must exist on the current layout. See the property *Use object image for faces* for more information.
 
 > **Tip**  
 > This action can be undone with *Set face image*.

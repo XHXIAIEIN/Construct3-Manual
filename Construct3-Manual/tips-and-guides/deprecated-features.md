@@ -1,7 +1,7 @@
 ---
 title: "Deprecated features"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/tips-and-guides/deprecated-features"
-release: 506
+release: 506.3
 ---
 
 ## On this page
@@ -30,16 +30,16 @@ This guide covers every type of deprecation or retirement warning and describes 
 
 Construct was originally a fully 2D engine. One of the first 3D features added was the ability to move 2D objects up and down the Z axis - a feature called "Z elevation" at the time. Originally this had the camera set up at a Z position of 100 regardless of the size of the viewport, so an object moved to a Z position of 50 was always half way to the camera. However this meant the Z axis worked on a different scale to the X and Y axes. This became a problem when adding further 3D features. For example in this mode, if you want to make a 3D shape object a cube, its size may need to be something like 120 x 120 x 15 rather than the more obvious 120 x 120 x 120. As Construct moved further in to 3D features this increasingly became a problem.
 
-In 2022 Construct added an option to set the Z axis scale to 'Regular', which fixed this problem. In 2025 the 'Regular' mode became the new default. Some new 3D features require 'Regular' mode to work, and the old 'Normalized' mode does not really make sense to use any more; meanwhile its presence complicates the on-going development of Construct. Therefore 'Normalized' mode is deprecated and will ultimately be removed. However there remains a backwards compatibility problem as there were a few years where all new projects were set to the 'Normalized' mode, and it is difficult to automatically update projects to the new mode.
+In 2022 Construct added an option to set the Z axis scale to 'Regular', which fixed this problem. In 2025 the 'Regular' mode became the new default. Some new 3D features require 'Regular' mode to work, and the old 'Normalized' mode did not really make sense to use any more; meanwhile its presence complicated the on-going development of Construct. Therefore 'Normalized' was deprecated and subsequently removed in the r496 release in 2026.
 
 ### Updating projects to 'Regular' mode
 
 As of r487, in many cases Construct will automatically update 2D projects to use Z axis scale 'Regular'. It does this when it detects there is no use of the Z axis and so the project should continue to work exactly the same. A notification still appears when Construct does this to make sure you're aware it happened.
 
 > **Tip**  
-> If after seeing this notification or following the steps below, you notice some things aren't rendering correctly and the Layout View has a highly constrained zoom level, check your project's *Far distance* property. This defaults to 10000 for new projects, but if it was changed to be lower, it may not be high enough for 'Regular' mode, as in that mode the camera is usually further away from the content in the layout.
+> If after seeing this notification or following the steps below, you notice some things aren't rendering correctly and the Layout View has a highly constrained zoom level, check your project's *Far distance* property. This defaults to 100000 for new projects, but if it was created in an older release or changed to be lower, it may not be high enough for 'Regular' mode, as in that mode the camera is usually further away from the content in the layout.
 
-Where Construct cannot automatically update the project, you may see a deprecation warning, and you will have to manually make changes. To convert your project, follow these steps.
+As of r496+, support for 'Normalized' mode has been completely removed, and so Construct will always use 'Regular' mode. If you need to update an old project that still uses 'Normalized' mode, you may wish to use the r495 release (which is also an LTS release - see [LTS releases](https://www.construct.net/en/make-games/releases/lts)). To convert your project, follow these steps in r495 (as these steps refer to options that were removed in r496).
 
 1. Make a backup of your project in case anything goes wrong.
 2. Make sure the project has the 3D camera object if it doesn't already.
@@ -47,11 +47,11 @@ Where Construct cannot automatically update the project, you may see a deprecati
 4. Select the name of the project in the Project Bar to show the project's properties. In the group **Compatibility settings**, there should be an item that says **Convert Z axis scale** with a link saying *Convert to 'Regular'*. Click that link, and then click OK to confirm. This will update the positions and sizes of all objects in all your project's layouts according to the Z scale to make sure they appear to be in the same place despite the fact the Z axis scale changed.
 5. The last step is to update your event sheets (and code if you use JavaScript/TypeScript) to work with Z axis scale 'Regular'. Unfortunately it's not possible for Construct to automatically update these for you, so you have to do it manually. Anywhere your project has logic that uses the Z axis, it needs to be scaled by the Z axis scale. For example if there is an action to set an object's Z co-ordinate to *100*, and the Z scale you noted down earlier was *2.5*, then you need to update the action to set the Z co-ordinate to *250* instead. This can take a fair bit of work in large projects to track down everything that does calculations on the Z axis and make sure it is scaled for the new Z axis scale. Note this includes the depth (formerly "Z height") of 3D objects like 3D shape.
 
-Once your project is updated, you'll also be able to make use of the latest features like the 3D editor view, which requires using Z axis scale 'Regular'.
+Once your project is updated, you'll also be able to make use of the latest features like the 3D editor view, which requires using Z axis scale 'Regular'. If you followed these steps using r495, you may then wish to update to a newer Construct release to continue work on the project.
 
 ## 3D shape 'Z tiling factor'
 
-The 3D shape object can display a Tiled Background on one of its faces. The 'Z tiling factor' property existed to help adjust how the tiling appears on the Z axis to mitigate the different scale when using Z axis scale 'Normalized'. However as explained above, the Z axis scale 'Normalized' is to be retired in favor of 'Regular'. That therefore makes this property redundant - when using 'Regular' Z axis scale, this property should always be 1. In future once the Z axis scale 'Normalized' has been removed, this property will also be removed as it will have essentially been made redundant.
+The 3D shape object can display a Tiled Background on one of its faces. The 'Z tiling factor' property existed to help adjust how the tiling appears on the Z axis to mitigate the different scale when using Z axis scale 'Normalized'. However as explained above, the Z axis scale 'Normalized' was retired in favor of 'Regular'. That made this property redundant, so this property should only ever be set to 1.
 
 ## Legacy SDK v1 plugins/behaviors
 

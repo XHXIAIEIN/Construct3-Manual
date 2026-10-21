@@ -1,7 +1,7 @@
 ---
 title: "Reference Node"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/project-primitives/flowcharts/reference-node"
-release: 506
+release: 506.3
 ---
 
 ## On this page

@@ -1,7 +1,7 @@
 ---
 title: "Get Cloud Saves"
 source: "https://www.construct.net/en/game-services/manuals/game-services/cloud-save/api-end-points/buckets/get-cloud-saves"
-release: 506
+release: 506.3
 ---
 
 ## On this page

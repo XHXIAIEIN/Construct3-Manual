@@ -1,7 +1,7 @@
 ---
 title: "Getting Started With Leaderboards"
 source: "https://www.construct.net/en/game-services/manuals/game-services/leaderboards/getting-started"
-release: 506
+release: 506.3
 ---
 
 ## On this page

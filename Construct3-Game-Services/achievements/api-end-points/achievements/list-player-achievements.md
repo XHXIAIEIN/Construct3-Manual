@@ -1,7 +1,7 @@
 ---
 title: "List Player Achievements"
 source: "https://www.construct.net/en/game-services/manuals/game-services/achievements/api-end-points/achievements/list-player-achievements"
-release: 506
+release: 506.3
 ---
 
 ## On this page

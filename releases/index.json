@@ -1,15 +1,15 @@
 {
-  "generated": "2026-10-14T11:40:50.673Z",
+  "generated": "2026-10-21T15:29:40.828Z",
   "source": "https://www.construct.net/en/make-games/releases",
   "branches": {
     "beta": {
       "name": "Beta",
-      "count": 509,
+      "count": 510,
       "latest": {
-        "releaseName": "r505",
-        "shortDescription": "Bug fixes",
-        "publishDate": 1791295223,
-        "viewDetailsURL": "https://www.construct.net/en/make-games/releases/beta/r505"
+        "releaseName": "r507",
+        "shortDescription": "3D collisions; 3D model improvements; cross-platform File System & more",
+        "publishDate": 1792507364,
+        "viewDetailsURL": "https://www.construct.net/en/make-games/releases/beta/r507"
       }
     },
     "lts": {
@@ -24,12 +24,12 @@
     },
     "stable": {
       "name": "Stable",
-      "count": 99,
+      "count": 101,
       "latest": {
-        "releaseName": "r506",
-        "shortDescription": "Stable release: 3D lighting, 3D model updates & more",
-        "publishDate": 1791971306,
-        "viewDetailsURL": "https://www.construct.net/en/make-games/releases/stable/r506"
+        "releaseName": "r506.3",
+        "shortDescription": "Stable patch",
+        "publishDate": 1792419597,
+        "viewDetailsURL": "https://www.construct.net/en/make-games/releases/stable/r506-3"
       }
     }
   }

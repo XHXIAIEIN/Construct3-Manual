@@ -1,7 +1,7 @@
 ---
 title: "Link Login Provider"
 source: "https://www.construct.net/en/game-services/manuals/game-services/authentication/api-end-points/login-providers/link-login-provider"
-release: 506
+release: 506.3
 ---
 
 ## On this page

@@ -1,7 +1,7 @@
 ---
 title: "Layouts"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/project-primitives/layouts"
-release: 506
+release: 506.3
 ---
 
 ## On this page
@@ -50,6 +50,9 @@ Set the projection used for rendering 3D features. The default *Perspective* pro
 
 **Vanishing point**  
 When using 3D features such as Z elevation and the 3D shape object with perspective, this specifies where the vanishing point is relative to the viewport area. (This setting does not apply with an orthographic projection, as there is no perspective.) The default is 50%, 50% meaning the middle of the viewport. Consequently as things move in to the distance, they will also move towards the middle of the screen. Altering this will adjust the perspective such that objects moving in to the distance move to a vanishing point elsewhere on the screen. For example setting the vanishing point to 0%, 0% moves the vanishing point to the top-left corner of the screen. This can be used to adapt the 3D perspective to the style of your project. To learn more see the tutorial [Using 3D in Construct](https://www.construct.net/en/tutorials/using-3d-construct-2746).
+
+**Ambient light**  
+Only applicable when a [3D light](../plugin-reference/3d-light.md) is in the layout. This defines the minimum lighting level throughout the layout, even when there are no nearby lights at all. In real-world situations it is rare to encounter true darkness, so this represents the minimum amount of lighting that tends to be present everywhere.
 
 **Effects**  
 Add and edit [effects](../project-primitives/objects/effects.md) that apply to the whole layout.

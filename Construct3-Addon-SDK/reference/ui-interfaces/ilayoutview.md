@@ -1,7 +1,7 @@
 ---
 title: "ILayoutView interface"
 source: "https://www.construct.net/en/make-games/manuals/addon-sdk/reference/ui-interfaces/ilayoutview"
-release: 506
+release: 506.3
 ---
 
 ## On this page

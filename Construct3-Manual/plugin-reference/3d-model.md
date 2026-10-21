@@ -1,19 +1,22 @@
 ---
 title: "3D Model"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/3d-model"
-release: 506
+release: 506.3
 ---
 
 ## On this page
 
 - [3D model properties](#scripting)
 - [3D model conditions](#collisions)
-- [3D model actions](#3d-model-properties)
-- [3D model expressions](#3d-model-conditions)
+- [3D model actions](#limitations)
+- [3D model expressions](#animation-blending)
 
 ---
 
-The **3D model** [plugin](../project-primitives/objects/plugins.md) can be used to display models from a **.gltf** or **.glb** file in the [Layout View](../interface/layout-view.md), along with playing their animations.
+The **3D model** [plugin](../project-primitives/objects/plugins.md) can be used to display models from a **.gltf**, **.glb**, **.fbx** or **.obj** file in the [Layout View](../interface/layout-view.md), along with playing their animations if any.
+
+> **Tip**  
+> **.fbx** and **.obj** formats are supported because, being older, are very easy to come by. **.gltf** and **.glb** are preferred.
 
 Check the [3D model manual entry](../project-primitives/3d-model.md) for information about how to import model files.
 
@@ -26,6 +29,18 @@ When using JavaScript or TypeScript coding, the features of this object can be a
 ### Collisions
 
 Similarly to 3D Shape collisions for 3D models still happen in 2D.
+
+### Limitations
+
+C3 supports a subset of a fully fledged 3D renderer. Following is a short list of the major limitations.
+
+- Only one texture is supported on each mesh of a given model. During the import process the *"Diffuse"* texture will be used,  and in the case of that not being available the *"Emissive"* one will be chosen. In the case of using the *"Emissive"* texture it will be used in place of the *"Diffuse"* one at runtime, with no additional transformations.
+- In the case of no texture being available, a mesh will be drawn using a flat color.
+- Morph targets are not supported, trying to import such models will show an error feedback.
+
+### Animation blending
+
+Blending animations to produce unique animations is supported. When doing this, multiple animations are effectively playing at the same time, for this reason many actions, conditions and expressions that deal with the state of animations can optionally receive an **"Animation"** parameter to check for the state of a specific one. In many cases the parameter can be left empty, in which case the animation that is checked is the primary animation. The primary animation is set every time the **"Set Animation"** and **"Play"** actions (and corresponding scripting API methods) are used.
 
 ## 3D model properties
 
@@ -86,8 +101,11 @@ The initial animation progress.
 **Enable collisions**  
 If the instance should collide or not.
 
-**Back face culling**  
-Enable or disable back face culling.
+**Culling mode**  
+Set which polygon faces to cull. **"No culling"**, **"Back faces"** and **"Front faces"** are applied to all meshes. **"Model settings"** is the preferred value and applies per mesh culling as set in the imported file.
+
+**Animation blend mode**  
+Set how poses are blended together when playing multiple animations simultaneously. **"Average"** averages all the influences of each playing animation on a given node of the 3D model. **"Layered"** makes it so that independent nodes are only affected by animations which are explicitly modifying them.
 
 **Bounding box**  
 An editor only property to display the bounding box of the 3D model.
@@ -112,10 +130,10 @@ Loop through all the meshes in the 3D model.
 Loop through all the animations in the 3D model.
 
 **Is playing**  
-Checks if there is an animation playing.
+Checks if there is an animation playing. Use the **"Animation"** parameter to target a specific animation, if left empty the primary animation will be checked.
 
 **Is looping**  
-Checks if animations are set to loop.
+Checks if an animation is looping. Use the **"Animation"** parameter to target a specific animation, if left empty the primary animation will be checked.
 
 **Render mode**  
 The render mode indicates how the meshes are displayed. If *"hierarchy"* is used, all the displayed meshes are drawn following the authored hierarchy in the model file. If *"isolate"* is used, the displayed meshes are drawn as if they where the only ones in the model file.
@@ -132,8 +150,11 @@ Checks if a mesh exists in the model.
 **Enable collisions**  
 Checks if collisions are enabled.
 
-**Is back face culling enabled**  
-Checks if back face culling is enabled.
+**Culling mode**  
+Checks the culling mode.
+
+**Animation blend mode**  
+Checks the animation blend mode.
 
 **On animation finished**  
 Triggers when the provided animation finishes.
@@ -173,13 +194,16 @@ Choose if a mesh is drawn or hidden.
 Choose if all meshes are drawn or hidden.
 
 **Set animation**  
-Change the current animation. Choose if the animation should play using the **"Playing"** parameter, use the **"Loop"** parameter to choose if the animation should loop and use the **"Progress"** parameter to choose where the animation should start from, using a value in the range **[0 - 1]**.
+Change the current animation. Choose if the animation should play using the **"Playing"** parameter, use the **"Loop"** parameter to choose if the animation should loop and use the **"Progress"** parameter to choose where the animation should start from, using a value in the range **[0 - 1]**. The **"Transition duration"** parameter can be used to smoothly transition from the last playing animation into the next over the specified period of time in seconds.
+
+**Blend animation**  
+Blend in a new animation into the currently playing ones to produce a unique animation. Choose if the animation should play using the **"Playing"** parameter, use the **"Loop"** parameter to choose if the animation should loop and use the **"Progress"** parameter to choose where the animation should start from, using a value in the range **[0 - 1]**. The **"Weight"** parameter indicates how much this animation will contribute to the final mix and it is a value in the range **[0 - 1]**. **"Blend duration"** indicates how much time, in seconds, it will take for the animation to contribute it's total weight into the mix.
 
 **Set looping**  
-Choose if animations should loop or not.
+Choose if animations should loop or not. Use the **"Animation"** parameter to target a specific animation, if left empty the primary animation will be affected.
 
 **Set progress**  
-Set the progress of the current animation using a value in the range **[0 - 1]**.
+Set the progress of the current animation using a value in the range **[0 - 1]**. Use the **"Animation"** parameter to target a specific animation, if left empty the primary animation will be affected.
 
 **Set origin**  
 Set the transformation origin on all three axes.
@@ -187,8 +211,23 @@ Set the transformation origin on all three axes.
 **Set transform**  
 Change the transformation values of the model. **"Transform X"**, **"Transform Y"**, **"Transform Z"** correspond to each axis. Use the **"Operation"** parameter to choose which operation to do on the values, either *Set*, *Add*, *Subtract*, *Multiply * or *Divide*. Use the **"Type"** parameter to choose which transformation to affect, either *Offset*, *Rotation* or *Scale*.
 
+**Set node transform**  
+Change the transformation values of a node in a 3D model. Use **"Node type"** and **"Node name"** to target a specific node. **"Transform X"**, **"Transform Y"**, **"Transform Z"** correspond to each axis. Use the **"Operation"** parameter to choose which operation to do on the values, either *Set*, *Add*, *Subtract*, *Multiply * or *Divide*. Use the **"Type"** parameter to choose which transformation to affect, either *Offset*, *Rotation* or *Scale*.
+
+**Set node quaternion**  
+Change the rotation quaternion of a node in a 3D model. Use **"Node type"** and **"Node name"** to target a specific node. **"Component X"**, **"Component Y"**, **"Component Z"** and **"Component W"** correspond to each component of the quaternion.
+
+**Reset node transform**  
+Reset the transformation of a node in a 3D model. Use **"Node type"** and **"Node name"** to target a specific node. Use **"Type"** to choose which transformation to reset, either *Offset*, *Rotation*, *Scale* or *All*.
+
+**Reset all node transforms**  
+Reset the transformations of all nodes in a 3D model. Use **"Type"** to choose which transformation to reset, either *Offset*, *Rotation*, *Scale* or *All*.
+
 **Play**  
-Start playing the specified animation, use the **"Loop"** parameter to choose if the animation should loop and use the **"Progress"** parameter to choose where the animation should start from, using a value in the range **[0 - 1]**.
+Start playing the specified animation, use the **"Loop"** parameter to choose if the animation should loop and use the **"Progress"** parameter to choose where the animation should start from, using a value in the range **[0 - 1]**. The **"Transition duration"** parameter can be used to smoothly transition from the last playing animation into the next over the specified period of time in seconds.
+
+**Blend**  
+Blend in a new animation into the currently playing ones to produce a unique animation. Use the **"Loop"** parameter to choose if the animation should loop and use the **"Progress"** parameter to choose where the animation should start from, using a value in the range **[0 - 1]**. The **"Weight"** parameter indicates how much this animation will contribute to the final mix and it is a value in the range **[0 - 1]**. **"Blend duration"** indicates how much time, in seconds, it will take for the animation to contribute it's total weight into the mix.
 
 **Stop**  
 Stop the current animation. The progress is reset to 0.
@@ -205,8 +244,11 @@ Change the render mode of the model. Either *"hierarchy"* or *"isolate"*.
 **Set collisions enabled**  
 Change the collision state.
 
-**Set back face culling**  
-Change the state of back face culling.
+**Set culling mode**  
+Set which polygon faces to cull. **"No culling"**, **"Back faces"** and **"Front faces"** are applied to all meshes. **"Model settings"** is the preferred value and applies per mesh culling as set in the imported file.
+
+**Set animation blend mode**  
+Change how animations are blending when multiple are playing at the same time. **"Average"** averages all the influences of each playing animation on a given node of the 3D model. **"Layered"** makes it so that independent nodes are only affected by animations which are explicitly modifying them.
 
 **Load texture from URL**  
 Replace the currently loaded texture into the specified mesh. Use the *"Target"* parameter to choose which instances are affected, "Object type" will affect all the instances of the picked object type that are using the same 3D model, "Picked instances" will only affected the picked instances in the current action block that are using the same 3D model.
@@ -219,6 +261,9 @@ Unload dynamically loaded textures from a 3D model's mesh.
 
 **Unload some dynamic textures (by name)**  
 Unload dynamically loaded textures from a 3D model's mesh, providing the 3D model as a string name.
+
+**Set mesh object**  
+Replace the texture of a given mesh in a 3D model with the image used by a [Sprite](../plugin-reference/sprite.md) or [Drawing canvas](../plugin-reference/drawing-canvas.md). An instance of the given object must exist on the current layout.
 
 ## 3D model expressions
 
@@ -234,13 +279,16 @@ The name of the 3D model object.
 A comma separated string with all the currently enabled mesh names.
 
 **Animation**  
-The current animation.
+The current animation. If many animations are being blended together, returns the primary animation.
 
-**AnimationDuration(Animation)**  
+**Animations**  
+A comman separated string with all the names of the animations currently playing.
+
+**AnimationDuration(animation)**  
 The total duration of the specified animation.
 
-**Progress**  
-The progress of the current animation as a value in the range **[0 - 1]**.
+**Progress(animation)**  
+The progress of the specified animation as a value in the range **[0 - 1]**. If an animation is not supplied, the progress of the primary animation is returned.
 
 **MeshCount**  
 The amount of meshes in the current model.
@@ -286,3 +334,81 @@ The transformation origin in the Y axis.
 
 **OriginZ**  
 The transformation origin in the Z axis.
+
+**ModelX**  
+These expressions return the final world transformation of the 3D model.
+
+**ModelY**  
+These expressions return the final world transformation of the 3D model.
+
+**ModelZ**  
+These expressions return the final world transformation of the 3D model.
+
+**ModelRotationX**  
+These expressions return the final world transformation of the 3D model.
+
+**ModelRotationY**  
+These expressions return the final world transformation of the 3D model.
+
+**ModelRotationZ**  
+These expressions return the final world transformation of the 3D model.
+
+**ModelQuaternionX**  
+These expressions return the final world transformation of the 3D model.
+
+**ModelQuaternionY**  
+These expressions return the final world transformation of the 3D model.
+
+**ModelQuaternionZ**  
+These expressions return the final world transformation of the 3D model.
+
+**ModelQuaternionW**  
+These expressions return the final world transformation of the 3D model.
+
+**ModelScaleX**  
+These expressions return the final world transformation of the 3D model.
+
+**ModelScaleY**  
+These expressions return the final world transformation of the 3D model.
+
+**ModelScaleZ**  
+These expressions return the final world transformation of the 3D model.
+
+**NodeX(nodeType, nodeName)**  
+These expressions return the final world transformation of a specific node in a 3D model. **"nodeType"** can be either *"mesh"* or *"bone"* and **"nodeName"** is the name of the node as it appears in the imported 3D model file.
+
+**NodeY(nodeType, nodeName)**  
+These expressions return the final world transformation of a specific node in a 3D model. **"nodeType"** can be either *"mesh"* or *"bone"* and **"nodeName"** is the name of the node as it appears in the imported 3D model file.
+
+**NodeZ(nodeType, nodeName)**  
+These expressions return the final world transformation of a specific node in a 3D model. **"nodeType"** can be either *"mesh"* or *"bone"* and **"nodeName"** is the name of the node as it appears in the imported 3D model file.
+
+**NodeRotationX(nodeType, nodeName)**  
+These expressions return the final world transformation of a specific node in a 3D model. **"nodeType"** can be either *"mesh"* or *"bone"* and **"nodeName"** is the name of the node as it appears in the imported 3D model file.
+
+**NodeRotationY(nodeType, nodeName)**  
+These expressions return the final world transformation of a specific node in a 3D model. **"nodeType"** can be either *"mesh"* or *"bone"* and **"nodeName"** is the name of the node as it appears in the imported 3D model file.
+
+**NodeRotationZ(nodeType, nodeName)**  
+These expressions return the final world transformation of a specific node in a 3D model. **"nodeType"** can be either *"mesh"* or *"bone"* and **"nodeName"** is the name of the node as it appears in the imported 3D model file.
+
+**NodeQuaternionX(nodeType, nodeName)**  
+These expressions return the final world transformation of a specific node in a 3D model. **"nodeType"** can be either *"mesh"* or *"bone"* and **"nodeName"** is the name of the node as it appears in the imported 3D model file.
+
+**NodeQuaternionY(nodeType, nodeName)**  
+These expressions return the final world transformation of a specific node in a 3D model. **"nodeType"** can be either *"mesh"* or *"bone"* and **"nodeName"** is the name of the node as it appears in the imported 3D model file.
+
+**NodeQuaternionZ(nodeType, nodeName)**  
+These expressions return the final world transformation of a specific node in a 3D model. **"nodeType"** can be either *"mesh"* or *"bone"* and **"nodeName"** is the name of the node as it appears in the imported 3D model file.
+
+**NodeQuaternionW(nodeType, nodeName)**  
+These expressions return the final world transformation of a specific node in a 3D model. **"nodeType"** can be either *"mesh"* or *"bone"* and **"nodeName"** is the name of the node as it appears in the imported 3D model file.
+
+**NodeScaleX(nodeType, nodeName)**  
+These expressions return the final world transformation of a specific node in a 3D model. **"nodeType"** can be either *"mesh"* or *"bone"* and **"nodeName"** is the name of the node as it appears in the imported 3D model file.
+
+**NodeScaleY(nodeType, nodeName)**  
+These expressions return the final world transformation of a specific node in a 3D model. **"nodeType"** can be either *"mesh"* or *"bone"* and **"nodeName"** is the name of the node as it appears in the imported 3D model file.
+
+**NodeScaleZ(nodeType, nodeName)**  
+These expressions return the final world transformation of a specific node in a 3D model. **"nodeType"** can be either *"mesh"* or *"bone"* and **"nodeName"** is the name of the node as it appears in the imported 3D model file.

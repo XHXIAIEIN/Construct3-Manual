@@ -1,7 +1,7 @@
 ---
 title: "Get Construct"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/getting-started/get-construct-3"
-release: 506
+release: 506.3
 ---
 
 ## On this page

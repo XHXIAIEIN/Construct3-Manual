@@ -1,7 +1,7 @@
 ---
 title: "Asset Browser"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/interface/bars/asset-browser-bar"
-release: 506
+release: 506.3
 ---
 
 ## On this page
@@ -15,14 +15,14 @@ release: 506
 
 The **Asset Browser** is used to browse for assets and quickly import them into a [project](../../project-primitives/projects.md).
 
-[![The asset browser](https://construct-static.com/images/v1740/r/uploads/articleuploadobject/0/images/139537/asset-browser_v750.png)](https://construct-static.com/images/v1740/uploads/articleuploadobject/0/images/139537/asset-browser.png)The asset browser
+[![The asset browser](https://construct-static.com/images/v1853/r/uploads/articleuploadobject/0/images/139537/asset-browser_v750.png)](https://construct-static.com/images/v1853/uploads/articleuploadobject/0/images/139537/asset-browser.png)The asset browser
 
 There are four main sources for assets that can be picked from the dropdown menu:
 
 1. **Store free bundled assets:** these asset packs are bundled with C3 and available to all accounts, free and subscribed.
 2. **Store premium bundled assets:** these asset packs are bundled with C3 and are available to accounts with an active subscription only.
 3. **Store purchased assets:** these asset packs are the ones that have been purchased in [Scirra's Asset Store](https://www.construct.net/en/game-assets).
-4. **Local assets:** the asset browser can be used select one or more folders in the local file system. This feature's availability is subject to browser support.
+4. **Local assets:** the asset browser can be used  to select one or more folders in the local file system. This feature's availability is subject to browser support.
 
 ## Importing assets
 
@@ -41,7 +41,7 @@ Assets can also be imported by clicking on the import option at the top of the c
 
 Zip files have a slightly different workflow to regular assets. After using any of the methods described previously to import, a dialog appears to choose which files of the zip file should be imported and what to do with them in the cases there are multiple options for them.
 
-[![Zip import dialog showing all possible options](https://construct-static.com/images/v1740/uploads/articleuploadobject/0/images/134598/assetbrowserzipimport.png)](https://construct-static.com/images/v1740/uploads/articleuploadobject/0/images/134598/assetbrowserzipimport.png)Zip import dialog showing all possible options
+[![Zip import dialog showing all possible options](https://construct-static.com/images/v1853/uploads/articleuploadobject/0/images/134598/assetbrowserzipimport.png)](https://construct-static.com/images/v1853/uploads/articleuploadobject/0/images/134598/assetbrowserzipimport.png)Zip import dialog showing all possible options
 
 The image shows what the dialog looks like when the zip file has files of all the supported formats. In cases in which a format is not present in the zip file, then the corresponding option will not be shown in the dialog.
 
@@ -55,6 +55,7 @@ To import all the files of a given type tick the corresponding checkbox, if the 
 | Video | All assets are imported into the **Videos** project folder. |
 | Fonts | All assets are imported into the **Fonts** project folder. |
 | Scripts | All assets are imported into the **Scripts** project folder. |
+| 3D models | All assets are imported into the **3D models** project folder. |
 | Files | - **Misc. only: ** only assets which are not any of the other types are imported into the **Files** project folder. - **All: ** all the assets in the zip file are imported into the **Files** project folder. |
 
 ## Other Context Menu Options

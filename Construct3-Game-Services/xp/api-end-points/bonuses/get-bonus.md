@@ -1,7 +1,7 @@
 ---
 title: "Get Bonus"
 source: "https://www.construct.net/en/game-services/manuals/game-services/xp/api-end-points/bonuses/get-bonus"
-release: 506
+release: 506.3
 ---
 
 ## On this page

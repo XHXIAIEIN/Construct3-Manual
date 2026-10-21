@@ -1,7 +1,7 @@
 ---
 title: "Actions"
 source: "https://www.construct.net/en/game-services/manuals/game-services/triggers/actions"
-release: 506
+release: 506.3
 ---
 
 ## On this page

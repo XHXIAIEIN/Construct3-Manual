@@ -1,7 +1,7 @@
 ---
 title: "IWebGLRenderer interface"
 source: "https://www.construct.net/en/make-games/manuals/addon-sdk/reference/graphics-interfaces/iwebglrenderer"
-release: 506
+release: 506.3
 ---
 
 ## On this page
@@ -27,10 +27,12 @@ Since IWebGLRenderer is based on WebGL, it also uses a persistent rendering stat
 3. A color set by `SetColor()` or `SetColorRgba()`. The alpha component of the color is used as the opacity in texture fill mode.
 4. A texture set by `SetTexture()`. This is only used in texture fill mode.
 
-There are two other states that are more applicable to 3D content:
+There are a few other states that are generally more applicable to 3D content:
 
+- Whether 3D lighting is enabled, set by `Set3dLightingEnabled()`
 - The face culling mode, set by `SetCullFaceMode()`
 - The front face winding that is also used by the face culling mode, set by `SetFrontFaceWinding()`
+- The alpha test mode, set by `SetAlphaTestEnabled()`
 
 A `Draw()` method should begin by specifying the blend mode, the fill mode, the color, and the texture (if texture fill mode is used), before continuing to draw. The renderer efficiently discards redundant calls, so if the state does not actually change then these calls have minimal performance overhead.
 
@@ -98,6 +100,30 @@ Set or get the front face winding, which is used to determine whether a triangle
 **GetFrontFaceWinding()**  
 Set or get the front face winding, which is used to determine whether a triangle is front facing or back facing depending on the order ("winding") of the vertices. This is used by the cull face mode (see `SetCullFaceMode()`). The mode may be either the string `"cw"` for clockwise winding, or `"ccw"` for counter-clockwise winding. The default mode is `"cw"`, because most content that Construct renders itself uses clockwise winding.
 
+**Set3dLightingEnabled(e)**  
+Set whether 3D lighting is enabled. When enabled, rendering will take into account 3D light objects and calculate lighting making use of normal data from meshes. When disabled 3D lighting is ignored and rendering operates in its typical 2D mode.
+
+**Is3dLightingEnabled()**  
+Set whether 3D lighting is enabled. When enabled, rendering will take into account 3D light objects and calculate lighting making use of normal data from meshes. When disabled 3D lighting is ignored and rendering operates in its typical 2D mode.
+
+**SetAlphaTestEnabled(e)**  
+Set whether alpha testing is enabled. When enabled, this discards pixels where the alpha component is less than the alpha threshold (set by `SetAlphaThreshold()`). Discarded pixels are not rendered and also skip writing depth.
+
+**IsAlphaTestEnabled()**  
+Set whether alpha testing is enabled. When enabled, this discards pixels where the alpha component is less than the alpha threshold (set by `SetAlphaThreshold()`). Discarded pixels are not rendered and also skip writing depth.
+
+**SetAlphaThreshold(t)**  
+Set the alpha threshold used when alpha testing is enabled. This should be a value in the range [0, 1]. When a pixel's alpha component is less than this value it will be discarded.
+
+> **Tip**  
+> Avoid setting a threshold of 0, as this will not discard any pixels. Instead disable alpha testing entirely, which will improve performance.
+
+**GetAlphaThreshold()**  
+Set the alpha threshold used when alpha testing is enabled. This should be a value in the range [0, 1]. When a pixel's alpha component is less than this value it will be discarded.
+
+> **Tip**  
+> Avoid setting a threshold of 0, as this will not discard any pixels. Instead disable alpha testing entirely, which will improve performance.
+
 **ResetColor()**  
 Set the current color to (1, 1, 1, 1).
 
@@ -125,8 +151,8 @@ Draw a 3D quad, specifying all four points of the quad with X, Y and Z co-ordina
 **Quad3D2(tlx, tly, tlz, trx, try_, trz, brx, bry, brz, blx, bly, blz, texQuad)**  
 Draw a 3D quad, specifying all four points of the quad with X, Y and Z co-ordinates. The first overload accepts texture co-ordinates via an [SDK.Rect](../../reference/geometry-interfaces/rect.md) *rect*, and the second accepts texture co-ordinates via an [SDK.Quad](../../reference/geometry-interfaces/quad.md) *texQuad*.
 
-**DrawMesh(posArr, uvArr, indexArr, colorArr)**  
-Draw an array of textured triangles based on the given position, texture co-ordinate and index arrays, and an optional per-vertex color array. For more details refer to the documentation for the [IRenderer](../../../Construct3-Manual/scripting/scripting-reference/graphics-interfaces/irenderer-interface.md) `drawMesh()` method, which works the same (albeit with different casing on the method name).
+**DrawMesh(posArr, uvArr, indexArr, colorArr, normalArr)**  
+Draw an array of textured triangles based on the given position, texture co-ordinate and index arrays, and optional per-vertex color and normal arrays. For more details refer to the documentation for the [IRenderer](../../../Construct3-Manual/scripting/scripting-reference/graphics-interfaces/irenderer-interface.md) `drawMesh()` method, which works the same (albeit with different casing on the method name).
 
 **CreateMeshData(vertexCount, indexCount, opts)**  
 Create an [IMeshData](../../reference/graphics-interfaces/imeshdata.md) to represent mesh data on the GPU and efficiently draw it over multiple frames with `DrawMeshData`. `vertexCount` and `indexCount` determines how many vertices and indices the mesh has. These values cannot be changed after creation - to resize a mesh, create a new one, copy data over (if necessary), and release the old one. `opts` is an optional object with additional parameters; currently this can specify an optional `debugLabel` property to specify a string label for debugging purposes. (In the WebGPU renderer, the debug label is also used on the underlying WebGPU objects.)

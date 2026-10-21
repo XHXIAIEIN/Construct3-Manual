@@ -1,7 +1,7 @@
 ---
 title: "Layers"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/project-primitives/layers"
-release: 506
+release: 506.3
 ---
 
 ## On this page
@@ -100,7 +100,7 @@ When using 3D rendering mode, this setting can change a layer back in to renderi
 > This property only appears for projects using 3D rendering mode. See the *Rendering mode* [project property](../project-primitives/projects.md).
 
 **Draw order**  
-This setting only appears for layers using a 3D rendering mode. The default draw order is *Z order*, meaning objects are drawn in a back-to-front order according to the Z order of instances on the layer. 3D layers can also be set to *Camera distance* draw order, which instead ignores the Z order and draws instances on the layer according to how far away from the camera they are, from furthest away to nearest. This has no effect on opaque objects, but is important for rendering transparency in 3D. For more information see the tutorial [Using 3D in Construct](https://www.construct.net/en/tutorials/using-3d-construct-2746).
+This setting only appears for layers using a 3D rendering mode. The default draw order is *Z order*, meaning objects are drawn in a back-to-front order according to the Z order of instances on the layer. *Z order flip* works the same as *Z order* except that it will reverse the draw order when the camera Z co-ordinate is less than 0, which can be useful when moving the camera to view 2D content from behind. The *Camera distance* draw order ignores the Z order and draws instances on the layer according to how far away from the camera they are, from furthest away to nearest. This has no effect on opaque objects, but is important for rendering transparency in 3D. For more information see the tutorial [Using 3D in Construct](https://www.construct.net/en/tutorials/using-3d-construct-2746).
 
 **Blend mode**  
 Change the way the layer is blended with the background when it is rendered to the display. See the *Blend modes* example that comes with Construct 3 for a visual demonstration of each.

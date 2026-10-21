@@ -1,7 +1,7 @@
 ---
 title: "Delete a Rank"
 source: "https://www.construct.net/en/game-services/manuals/game-services/xp/api-end-points/ranks/delete-rank"
-release: 506
+release: 506.3
 ---
 
 ## On this page

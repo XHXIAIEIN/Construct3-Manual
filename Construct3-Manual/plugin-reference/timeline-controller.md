@@ -1,7 +1,7 @@
 ---
 title: "Timeline controller"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/timeline-controller"
-release: 506
+release: 506.3
 ---
 
 ## On this page
@@ -30,15 +30,15 @@ In the simplest case, a timeline will affect the instances that were used to cre
 
 In the below example the timeline plugin **Play** action is used by itself on startup. This plays the timeline affecting the instances used in the editor to create the timeline. The timeline is tagged **"new-timeline"**.
 
-[![timeline plugin manual 02](https://construct-static.com/images/v1740/uploads/articleuploadobject/0/images/31240/timeline-plugin-manual-02.png)](https://construct-static.com/images/v1740/uploads/articleuploadobject/0/images/31240/timeline-plugin-manual-02.png)
+[![timeline plugin manual 02](https://construct-static.com/images/v1853/uploads/articleuploadobject/0/images/31240/timeline-plugin-manual-02.png)](https://construct-static.com/images/v1853/uploads/articleuploadobject/0/images/31240/timeline-plugin-manual-02.png)
 
 In this example the timeline plugin **Play** action is used together with the system plugin **Create Object** action and the timeline plugin **Set Instance** action. This plays the timeline affecting the newly created instance. The new instance will be used in the [track](../project-primitives/tracks.md) with ID **"a-track-id"** and the timeline is tagged **"new-timeline"**
 
-[![timeline plugin manual 01](https://construct-static.com/images/v1740/uploads/articleuploadobject/0/images/31241/timeline-plugin-manual-01.png)](https://construct-static.com/images/v1740/uploads/articleuploadobject/0/images/31241/timeline-plugin-manual-01.png)
+[![timeline plugin manual 01](https://construct-static.com/images/v1853/uploads/articleuploadobject/0/images/31241/timeline-plugin-manual-01.png)](https://construct-static.com/images/v1853/uploads/articleuploadobject/0/images/31241/timeline-plugin-manual-01.png)
 
 This example is similar to the last one, but instead of creating a new instance from scratch, the one picked by a collision event is used.
 
-[![timeline plugin manual 03](https://construct-static.com/images/v1740/uploads/articleuploadobject/0/images/31242/timeline-plugin-manual-03.png)](https://construct-static.com/images/v1740/uploads/articleuploadobject/0/images/31242/timeline-plugin-manual-03.png)
+[![timeline plugin manual 03](https://construct-static.com/images/v1853/uploads/articleuploadobject/0/images/31242/timeline-plugin-manual-03.png)](https://construct-static.com/images/v1853/uploads/articleuploadobject/0/images/31242/timeline-plugin-manual-03.png)
 
 ## About picking
 
@@ -50,7 +50,7 @@ This is the preview of the timeline in the editor. It has two different tracks a
 
 Using the **Set Instance** action we specify to play a timeline for each picked group of instances at the start of the layout
 
-[![timeline plugin manual 04](https://construct-static.com/images/v1740/uploads/articleuploadobject/0/images/31246/timeline-plugin-manual-04.png)](https://construct-static.com/images/v1740/uploads/articleuploadobject/0/images/31246/timeline-plugin-manual-04.png)
+[![timeline plugin manual 04](https://construct-static.com/images/v1853/uploads/articleuploadobject/0/images/31246/timeline-plugin-manual-04.png)](https://construct-static.com/images/v1853/uploads/articleuploadobject/0/images/31246/timeline-plugin-manual-04.png)
 
 Lastly the preview of the layout shows that two different timelines where created to accommodate for the four instances found at the start of the layout.
 
@@ -71,15 +71,15 @@ The images bellow show how a timeline and it's properties might look in in this 
 
 | Template timeline |
 | --- |
-| [![set intance no track id 2](https://construct-static.com/images/v1740/uploads/articleuploadobject/0/images/47783/set-intance-no-track-id-2.png)](https://construct-static.com/images/v1740/uploads/articleuploadobject/0/images/47783/set-intance-no-track-id-2.png) |
+| [![set intance no track id 2](https://construct-static.com/images/v1853/uploads/articleuploadobject/0/images/47783/set-intance-no-track-id-2.png)](https://construct-static.com/images/v1853/uploads/articleuploadobject/0/images/47783/set-intance-no-track-id-2.png) |
 
 | First instance properties | Second instance properties |
 | --- | --- |
-| [![set intance no track id 3](https://construct-static.com/images/v1740/uploads/articleuploadobject/0/images/47784/set-intance-no-track-id-3.png)](https://construct-static.com/images/v1740/uploads/articleuploadobject/0/images/47784/set-intance-no-track-id-3.png) | [![set intance no track id 4](https://construct-static.com/images/v1740/uploads/articleuploadobject/0/images/47785/set-intance-no-track-id-4.png)](https://construct-static.com/images/v1740/uploads/articleuploadobject/0/images/47785/set-intance-no-track-id-4.png) |
+| [![set intance no track id 3](https://construct-static.com/images/v1853/uploads/articleuploadobject/0/images/47784/set-intance-no-track-id-3.png)](https://construct-static.com/images/v1853/uploads/articleuploadobject/0/images/47784/set-intance-no-track-id-3.png) | [![set intance no track id 4](https://construct-static.com/images/v1853/uploads/articleuploadobject/0/images/47785/set-intance-no-track-id-4.png)](https://construct-static.com/images/v1853/uploads/articleuploadobject/0/images/47785/set-intance-no-track-id-4.png) |
 
 | Events |
 | --- |
-| [![set intance no track id 1](https://construct-static.com/images/v1740/uploads/articleuploadobject/0/images/47786/set-intance-no-track-id-1.png)](https://construct-static.com/images/v1740/uploads/articleuploadobject/0/images/47786/set-intance-no-track-id-1.png) |
+| [![set intance no track id 1](https://construct-static.com/images/v1853/uploads/articleuploadobject/0/images/47786/set-intance-no-track-id-1.png)](https://construct-static.com/images/v1853/uploads/articleuploadobject/0/images/47786/set-intance-no-track-id-1.png) |
 
 In this particular case the **octopus** [sprite](../plugin-reference/sprite.md) is used in the first track while the **toster** sprite is used in the second track. Because no track IDs are used, order is assumed to be the same as that defined in the editor.
 
@@ -122,6 +122,15 @@ Triggered when any master keyframe is reached during playback. The *KeyframeTags
 **On time set**  
 Triggered when the time of a timeline is set with the **Set Time** action.
 
+**Pick all in timeline**  
+Pick all the instances in a timeline.
+
+**Pick all in timeline (by name)**  
+Pick all the instances in a timeline.
+
+**Pick all in timelines by tags**  
+Pick all the instances in the matched timelines.
+
 ## Timeline controller actions
 
 **Play**  
@@ -129,6 +138,15 @@ Start playing a timeline, with tags to identify this playback.
 
 **Play all**  
 Play all the timelines in the layout.
+
+**Play in range**  
+Play a timeline in the specified range. Playback rate may change in the case the start time is higher than the end time. The range can be specified by either numeric values or key frame tags.
+
+**Play in range (by name)**  
+Play a timeline in the specified range. Playback rate may change in the case the start time is higher than the end time. The range can be specified by either numeric values or key frame tags.
+
+**Play all in range**  
+Play all timelines in the specified range. Playback rates may change in the case the start time is higher than the end time. The range can be specified by either numeric values or key frame tags.
 
 **Pause**  
 Pause a timeline by its tag. Paused timelines can subsequently be resumed.

@@ -1,7 +1,7 @@
 ---
 title: "Common actions"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/common-features/common-actions"
-release: 506
+release: 506.3
 ---
 
 ## On this page
@@ -12,6 +12,7 @@ release: 506
 - [Hierarchy](#hierarchy)
 - [HTML element](#html-element)
 - [Instance variables](#instance-variables)
+- [Material](#material)
 - [Mesh distortion](#mesh-distortion)
 - [Misc](#misc)
 - [Size & Position](#size--position)
@@ -144,6 +145,22 @@ Set a boolean [instance variable](../../project-primitives/objects/instance-vari
 
 **Toggle boolean**  
 Toggle a boolean [instance variable](../../project-primitives/objects/instance-variables.md), which flips it from true to false or vice versa.
+
+## Material
+
+These actions appear for objects that support 3D lighting when a [3D light](../../plugin-reference/3d-light.md) is used in the project.
+
+**Set metallic**  
+These actions set the corresponding material properties. For more information see the section on material properties in the manual section on [Instances](../../project-primitives/objects/instances.md).
+
+**Set roughness**  
+These actions set the corresponding material properties. For more information see the section on material properties in the manual section on [Instances](../../project-primitives/objects/instances.md).
+
+**Set surface type**  
+These actions set the corresponding material properties. For more information see the section on material properties in the manual section on [Instances](../../project-primitives/objects/instances.md).
+
+**Set transmissiveness**  
+These actions set the corresponding material properties. For more information see the section on material properties in the manual section on [Instances](../../project-primitives/objects/instances.md).
 
 ## Mesh distortion
 

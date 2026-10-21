@@ -1,7 +1,7 @@
 ---
 title: "Runtime scripts"
 source: "https://www.construct.net/en/make-games/manuals/addon-sdk/guide/runtime-scripts"
-release: 506
+release: 506.3
 ---
 
 ## On this page

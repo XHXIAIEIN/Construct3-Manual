@@ -1,7 +1,7 @@
 ---
 title: "3D Model"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/project-primitives/3d-model"
-release: 506
+release: 506.3
 ---
 
 ## On this page
@@ -10,18 +10,24 @@ release: 506
 
 ---
 
-                **3D model objects** are created after importing a **.gltf** or **.glb** model file and act as data containers which are later used by a [3D model plugin](../plugin-reference/3d-model.md) [instance](../project-primitives/objects/instances.md) to display it in a [Layout View](../interface/layout-view.md).
+                **3D model objects** are created after importing a **.gltf**, **.glb**, **.fbx** or a **.obj** model file and act as data containers which are later used by a [3D model plugin](../plugin-reference/3d-model.md) [instance](../project-primitives/objects/instances.md) to display it in a [Layout View](../interface/layout-view.md).
+
+> **Tip**  
+> .fbx and .obj formats are supported because, being older, are very easy to come by. .gltf and .glb are preferred.
 
 ### Importing 3D model files
 
 From the context menu of the **3D Models** [project](../project-primitives/projects.md) folder in the [Project Bar](../interface/bars/project-bar.md) choose one of the following options:
 
-- **`Import › From folder`:** Use this option when loading a **.gltf** or **.glb** file which has external references. All external reference files used should exist in the same folder the main model file is. If there is more than one model file in the selected folder, an intermediate dialog will appear to choose the model file that should be loaded.
-- **`Import › From file`:** Use this option to import self contained **.gltf** or **.glb** files. Self contained model files are ones which don't reference external files and instead have all necessary information embedded.
+- **`Import › From folder`:** Use this option when loading a file which has external references. All external reference files used should exist in the same folder the main model file is. If there is more than one model file in the selected folder, an intermediate dialog will appear to choose the model file that should be loaded.
+- **`Import › From file`:** Use this option to import self contained files. Self contained model files are ones which don't reference external files and instead have all necessary information embedded.
+
+> **Tip**  
+> **`Import with options`** adds an additional dialog to   the import workflow where it is possible to choose additional importing options.
 
 #### Drag & drop
 
-- Drop a self-contained **3D model** file *(.glb or .gltf)* into the Layout View. This will import the model into the 3D model Project Bar folder, create an [object type](../project-primitives/objects/object-types.md) and create an [instance](../project-primitives/objects/instances.md) in the Layout View.
+- Drop a self-contained **3D model** file into the Layout View. This will import the model into the 3D model Project Bar folder, create an [object type](../project-primitives/objects/object-types.md) and create an [instance](../project-primitives/objects/instances.md) in the Layout View.
 - After using one of the methods that only imports a model into the 3D model Project Bar folder, drag it from the Project Bar into the Layout View to create an object type and create an instance in the Layout View.
 
 > **Tip**  
@@ -29,6 +35,17 @@ From the context menu of the **3D Models** [project](../project-primitives/proje
 
 > **Tip**  
 > Self contained model files refers to model files with no external references.
+
+### Replace 3D model files
+
+Existing models can be replaced by bringing up the context menu of a **3D model** object. There are two options **`Replace`** and  `Replace with options`, which work just like the corresponding import options, but instead will replace the selected models.
+
+Multiple models can be replaced at the same time. To do so:
+
+1. Select all the models that need to be updated from the Project bar.
+2. Bring up the context menu.
+3. Select all the necessary files.
+4. In the case of replacing multiple models and selecting multiple files an additional dialog will appear to pair all the existing models with the selected files.
 
 ## 3D model properties
 
