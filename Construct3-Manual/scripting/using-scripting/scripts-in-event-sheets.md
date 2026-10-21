@@ -1,7 +1,7 @@
 ---
 title: "Scripts in event sheets"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/scripting/using-scripting/scripts-in-event-sheets"
-release: 506
+release: 506.3
 ---
 
 ## On this page

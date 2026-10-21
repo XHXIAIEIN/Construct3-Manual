@@ -1,7 +1,7 @@
 ---
 title: "Object class script interface"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/scripting/scripting-reference/object-interfaces/iobjectclass"
-release: 506
+release: 506.3
 ---
 
 ## On this page

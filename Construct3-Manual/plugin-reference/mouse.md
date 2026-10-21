@@ -1,7 +1,7 @@
 ---
 title: "Mouse"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/mouse"
-release: 506
+release: 506.3
 ---
 
 ## On this page

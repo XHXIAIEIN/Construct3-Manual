@@ -1,7 +1,7 @@
 ---
 title: "Sine behavior"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/behavior-reference/sine"
-release: 506
+release: 506.3
 ---
 
 ## On this page

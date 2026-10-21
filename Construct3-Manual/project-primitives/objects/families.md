@@ -1,7 +1,7 @@
 ---
 title: "Families"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/project-primitives/objects/families"
-release: 506
+release: 506.3
 ---
 
 ## On this page

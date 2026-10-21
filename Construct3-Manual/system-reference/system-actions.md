@@ -1,7 +1,7 @@
 ---
 title: "System actions"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/system-reference/system-actions"
-release: 506
+release: 506.3
 ---
 
 ## On this page

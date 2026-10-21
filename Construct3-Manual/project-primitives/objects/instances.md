@@ -1,12 +1,13 @@
 ---
 title: "Object instances"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/project-primitives/objects/instances"
-release: 506
+release: 506.3
 ---
 
 ## On this page
 
 - [Common instance properties](#common-instance-properties)
+- [Material properties](#material-properties)
 - [Index IDs (IIDs)](#index-ids-iids)
 
 ---
@@ -74,6 +75,9 @@ Every instance in the project has a unique number assigned, called its unique ID
 **Tags**  
 A space separated list of string tags to identify an instance. The first tag of an instance is used in some places in the editor to better distinguish specific instances. There are associated [common ACEs](../../plugin-reference/common-features.md) and a [scripting interface](../../scripting/scripting-reference/object-interfaces/iinstance.md) to work with tags. Note that instance tags are case-insensitive.
 
+**Material**  
+These properties only appear when a [3D light](../../plugin-reference/3d-light.md) is in the layout, and affect how the object responds to 3D lighting. See the section on material properties below for more details.
+
 **Edit variables**  
 Open the **Object Instance Variables dialog**.
 
@@ -94,6 +98,28 @@ An editor-only property, determines if the instance is visible or not. Can also 
 
 **Locked**  
 An editor-only property, determines if the instance can be interacted with. Can also be controlled through the [Instances Bar](../../interface/bars/instance-bar.md).
+
+## Material properties
+
+When a [3D light](../../plugin-reference/3d-light.md) is present in the layout, many kinds of objects will have a new *Material* property section appear. These properties adjust how the object looks with 3D lighting, and include the following:
+
+**Surface type**  
+How the surface is treated with 3D lighting. The options are:
+
+- **No lighting:** the object is exempted from 3D lighting, instead using its standard rendering as used when there are no 3D lights in the layout.
+- **Flat:** each triangle of the mesh is treated as being flat. This means when using 3D lighting often each triangle of the mesh is individually visible.
+- **Smooth:** triangles in the mesh are smoothed, as if the surface was curved. This usually means it is not possible to visually identify individual triangles of the mesh.
+
+ The *Flat* and *Smooth* options do not affect 2D objects, as they are flat anyway, and so *Smooth* does not do anything different; they only have an impact for meshes such as those used by [3D model](../../plugin-reference/3d-model.md).
+
+**Transmissiveness**  
+The degree to which light will shine through to the opposite side of a surface. For example with a 2D sprite, 0% transmissiveness means the side facing away from the light appears in complete darkness; 100% transmissiveness means the side facing away from the light is lit up the same amount as the side facing toward the light. The alpha channel of the image is also taken into account when calculating transmissiveness - for example an image with 50% opacity will also have 50% transmissiveness, even when this property is set to 0%, since the opacity of an image is the degree to which light can shine through it.
+
+**Metallic**  
+The degree to which the material acts like a metal or non-metal (e.g. plastic, wood, stone). Non-metals (close to 0%) are dielectric, with a colored diffuse surface. Metals (close to 100%) have little or no diffuse color, and reflections are tinted by the base color.
+
+**Roughness**  
+The degree to which the material acts smooth or rough at the microscopic level. Smooth materials (close to 0%) have a mirror-like appearance with a sharp light reflection. Rough materials (close to 100%) have a matte appearance with little or no reflection.
 
 ## Index IDs (IIDs)
 

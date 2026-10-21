@@ -1,7 +1,7 @@
 ---
 title: "IFamily interface"
 source: "https://www.construct.net/en/make-games/manuals/addon-sdk/reference/object-interfaces/ifamily"
-release: 506
+release: 506.3
 ---
 
 ## On this page

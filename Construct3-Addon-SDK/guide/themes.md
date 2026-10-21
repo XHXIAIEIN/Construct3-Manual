@@ -1,7 +1,7 @@
 ---
 title: "Theme addons"
 source: "https://www.construct.net/en/make-games/manuals/addon-sdk/guide/themes"
-release: 506
+release: 506.3
 ---
 
 ## On this page

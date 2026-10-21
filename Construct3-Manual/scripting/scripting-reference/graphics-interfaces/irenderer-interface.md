@@ -1,7 +1,7 @@
 ---
 title: "IRenderer script interface"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/scripting/scripting-reference/graphics-interfaces/irenderer-interface"
-release: 506
+release: 506.3
 ---
 
 ## On this page
@@ -30,10 +30,12 @@ The `IRenderer` script interface provides access to Construct's renderer in the 
 
 4. A texture set by `setTexture()`. This is only used in texture fill mode.
 
-There are two other states that are more applicable to 3D content:
+There are a few other states that are generally more applicable to 3D content:
 
+- Whether 3D lighting is enabled, set by `set3dLightingEnabled()`
 - The face culling mode, set by `setCullFaceMode()`
 - The front face winding that is also used by the face culling mode, set by `setFrontFaceWinding()`
+- The alpha test mode, set by `setAlphaTestEnabled()`
 
 A drawing method should begin by at least specifying the blend mode, the fill mode, the color, and the texture (if texture fill mode is used), before continuing to draw. The renderer efficiently discards redundant calls, so if the state does not actually change then these calls have minimal performance overhead.
 
@@ -113,6 +115,30 @@ Set or get the front face winding, which is used to determine whether a triangle
 **getFrontFaceWinding()**  
 Set or get the front face winding, which is used to determine whether a triangle is front facing or back facing depending on the order ("winding") of the vertices. This is used by the cull face mode (see `setCullFaceMode()`). The mode may be either the string `"cw"` for clockwise winding, or `"ccw"` for counter-clockwise winding. The default mode is `"cw"`, because most content that Construct renders itself uses clockwise winding.
 
+**set3dLightingEnabled(e)**  
+Set whether 3D lighting is enabled. When enabled, rendering will take into account 3D light objects and calculate lighting making use of normal data from meshes. When disabled 3D lighting is ignored and rendering operates in its typical 2D mode.
+
+**is3dLightingEnabled()**  
+Set whether 3D lighting is enabled. When enabled, rendering will take into account 3D light objects and calculate lighting making use of normal data from meshes. When disabled 3D lighting is ignored and rendering operates in its typical 2D mode.
+
+**setAlphaTestEnabled(e)**  
+Set whether alpha testing is enabled. When enabled, this discards pixels where the alpha component is less than the alpha threshold (set by `setAlphaThreshold()`). Discarded pixels are not rendered and also skip writing depth.
+
+**isAlphaTestEnabled()**  
+Set whether alpha testing is enabled. When enabled, this discards pixels where the alpha component is less than the alpha threshold (set by `setAlphaThreshold()`). Discarded pixels are not rendered and also skip writing depth.
+
+**setAlphaThreshold(t)**  
+Set the alpha threshold used when alpha testing is enabled. This should be a value in the range [0, 1]. When a pixel's alpha component is less than this value it will be discarded.
+
+> **Tip**  
+> Avoid setting a threshold of 0, as this will not discard any pixels. Instead disable alpha testing entirely, which will improve performance.
+
+**getAlphaThreshold()**  
+Set the alpha threshold used when alpha testing is enabled. This should be a value in the range [0, 1]. When a pixel's alpha component is less than this value it will be discarded.
+
+> **Tip**  
+> Avoid setting a threshold of 0, as this will not discard any pixels. Instead disable alpha testing entirely, which will improve performance.
+
 **setCurrentZ(z)**  
 Set and get the current Z component used for all 2D drawing commands that don't specify Z components, such as the `rect2()` and `quad3()`.
 
@@ -149,8 +175,8 @@ Draw a 3D quad, specifying all four points of the quad with X, Y and Z co-ordina
 **quad3D3(tlx, tly, tlz, trx, try_, trz, brx, bry, brz, blx, bly, blz, texQuad, colorArr)**  
 Draw a 3D quad, specifying all four points of the quad with X, Y and Z co-ordinates. The first method accepts texture co-ordinates via a [DOMRect](https://developer.mozilla.org/en-US/docs/Web/API/DOMRect) *rect*. The second method accepts texture co-ordinates via a [DOMQuad](https://developer.mozilla.org/en-US/docs/Web/API/DOMQuad) *texQuad*. The third is the same as the second, but adds a `colorArr` parameter for per-vertex colors. This must be a Float32Array with 16 elements in the order r, g, b, a for the top-left, top-right, bottom-right and bottom-left vertices, in that order.
 
-**drawMesh(posArr, uvArr, indexArr, colorArr)**  
-Draw an array of textured triangles based on the given position, texture co-ordinate and index arrays, and an optional per-vertex color array. The `posArr` parameter must be a Float32Array of vertex positions in the sequence x, y, z (and therefore its size must be a multiple of 3). The `uvArr` parameter must be a Float32Array of texture co-ordinates in the sequence u, v (and therefore its size must be a multiple of 2). The `indexArr` parameter must be a Uint16Array of indices of vertices and texture co-ordinates, in the sequence i, j, k with each set defining a single triangle to be drawn (and therefore its size must be a multiple of 3). Note that indices refer to the index of a vertex, rather than a direct index in to either array, e.g. a position array with elements x1, y1, z1, x2, y2, z2 has six elements but defines two vertices, and so index 1 refers to the second vertex. If `colorArr` is specified, it must be a Float32Array of colors in the sequence r, g, b, a (and therefore its size must be a multiple of 4). These colors override the renderer's current color. If `colorArr` is not specified, it uses the renderer's current color for every vertex. For a code sample, see the section *Drawing meshes* below.
+**drawMesh(posArr, uvArr, indexArr, colorArr, normalArr)**  
+Draw an array of textured triangles based on the given position, texture co-ordinate and index arrays, and optional per-vertex color and normal arrays. The `posArr` parameter must be a Float32Array of vertex positions in the sequence x, y, z (and therefore its size must be a multiple of 3). The `uvArr` parameter must be a Float32Array of texture co-ordinates in the sequence u, v (and therefore its size must be a multiple of 2). The `indexArr` parameter must be a Uint16Array of indices of vertices and texture co-ordinates, in the sequence i, j, k with each set defining a single triangle to be drawn (and therefore its size must be a multiple of 3). Note that indices refer to the index of a vertex, rather than a direct index in to either array, e.g. a position array with elements x1, y1, z1, x2, y2, z2 has six elements but defines two vertices, and so index 1 refers to the second vertex. If `colorArr` is specified, it must be a Float32Array of colors in the sequence r, g, b, a (and therefore its size must be a multiple of 4). These colors override the renderer's current color. If `colorArr` is not specified, it uses the renderer's current color for every vertex. If `normalArr` is specified, it must be a Float32Array of normals in the sequence x, y, z (and therefore its size must be a multiple of 3). For a code sample, see the section *Drawing meshes* below.
 
 > **Tip**  
 > Note that for performance reasons, this method does not take in to account the layer Z elevation - all Z co-ordinates are used exactly as-is. If you wish to apply the layer Z elevation, you must offset all the position Z components yourself.
@@ -238,7 +264,7 @@ Set the co-ordinate system to match the given [ILayer](../../../scripting/script
 
 ## Drawing meshes
 
-The `drawMesh()` method allows passing typed arrays with vertex, texture co-ordinate, index, and optionally color data, for rendering entire meshes. Note that the mesh drawn with this method uses the same renderer state (blend mode, fill mode, color and texture) for all triangles. To draw parts of the mesh with different renderer state, you will need to make multiple calls to `drawMesh()` with other calls to change state in between. You can create typed arrays over different ranges of the same ArrayBuffer to draw sections of a mesh - see the [MDN guide on TypedArray](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray) for more details.
+The `drawMesh()` method allows passing typed arrays with vertex, texture co-ordinate, index, and optionally color and normal data, for rendering entire meshes. Note that the mesh drawn with this method uses the same renderer state (blend mode, fill mode, color and texture) for all triangles. To draw parts of the mesh with different renderer state, you will need to make multiple calls to `drawMesh()` with other calls to change state in between. You can create typed arrays over different ranges of the same ArrayBuffer to draw sections of a mesh - see the [MDN guide on TypedArray](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/TypedArray) for more details.
 
 One pitfall of the `drawMesh()` method is it will upload all the provided data to the GPU with every single call. This is acceptable for small meshes, but it quickly becomes inefficient for large meshes. In this case it is much more efficient to create the mesh data ahead of time with `createMeshData()`, fill it with the data that would have been passed to `drawMesh()`, and then draw it with `drawMeshData()` (which also supports drawing just a range of the mesh).
 

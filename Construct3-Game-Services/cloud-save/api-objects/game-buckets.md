@@ -1,7 +1,7 @@
 ---
 title: "Game Bucket Object"
 source: "https://www.construct.net/en/game-services/manuals/game-services/cloud-save/api-objects/game-buckets"
-release: 506
+release: 506.3
 ---
 
 ## On this page

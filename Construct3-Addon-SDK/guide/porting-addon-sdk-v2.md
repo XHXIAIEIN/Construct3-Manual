@@ -1,7 +1,7 @@
 ---
 title: "Porting to Addon SDK v2"
 source: "https://www.construct.net/en/make-games/manuals/addon-sdk/guide/porting-addon-sdk-v2"
-release: 506
+release: 506.3
 ---
 
 ## On this page

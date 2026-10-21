@@ -1,7 +1,7 @@
 ---
 title: "Debugging script"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/scripting/using-scripting/debugging-script"
-release: 506
+release: 506.3
 ---
 
 ## On this page

@@ -1,7 +1,7 @@
 ---
 title: "Create an Achievement"
 source: "https://www.construct.net/en/game-services/manuals/game-services/achievements/api-end-points/achievements/create-achievement"
-release: 506
+release: 506.3
 ---
 
 ## On this page

@@ -1,7 +1,7 @@
 ---
 title: "Team Object"
 source: "https://www.construct.net/en/game-services/manuals/game-services/leaderboards/api-objects/team"
-release: 506
+release: 506.3
 ---
 
 ## On this page

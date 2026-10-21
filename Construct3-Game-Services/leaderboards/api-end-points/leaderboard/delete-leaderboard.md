@@ -1,7 +1,7 @@
 ---
 title: "Delete Leaderboard"
 source: "https://www.construct.net/en/game-services/manuals/game-services/leaderboards/api-end-points/leaderboard/delete-leaderboard"
-release: 506
+release: 506.3
 ---
 
 ## On this page

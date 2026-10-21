@@ -1,6 +1,83 @@
 [
   {
     "branchName": "Beta",
+    "releaseName": "r507",
+    "shortDescription": "3D collisions; 3D model improvements; cross-platform File System & more",
+    "publishDate": 1792507364,
+    "publishDateISO": "2026-10-20T14:42:44.466Z",
+    "viewDetailsURL": "https://www.construct.net/en/make-games/releases/beta/r507",
+    "launchURL": "https://editor.construct.net/r507/",
+    "notes": "It's the start of a new release cycle, and we have a big release for you this week! Starting things off, Construct now has initial support for **3D collisions!** This means the usual collision checks like 'On collision' and 'Is overlapping' take into account the Z axis, whereas previously it ignored the Z axis entirely (handling collisions as if they were 2D). Currently this only checks the 3D box around objects, but it includes 3D rotation, the shape setting of the 3D shape object, and the collision polygon of 2D objects like Sprite when using 3D rotation. Most notably 3D model currently just uses the 3D bounding box, but we're hoping to improve things there soon. This is still enough to open up features like jumping between 3D shapes and 3D movement behaviors. You can also see the updated 'First person platformer' example which now uses true 3D collision detection rather than emulating it in the event sheet. Note however enabling 3D collision detection is not a backwards-compatible change: therefore there is a new project compatibility setting to opt-in to 3D collision detection. Existing projects continue to use 2D collision detection for backwards compatibility, but new projects automatically enable 3D collisions.\n\nThis release also includes lots more updates for **3D model**. These include new options for morph target animations, a default model, unique icons, and import updates, as well as some bug fixes and an optimization.\n\nThere's also a useful update for **File System**: on non-desktop platforms, this now allows using the special 'current-app-data' picker tag, saving files to the [Origin-private file system](https://developer.mozilla.org/en-US/docs/Web/API/File_System_API/Origin_private_file_system) (OPFS) - essentially browser internal storage for files. OPFS has broad browser support, so it provides a way to use File System to save data in browsers like Firefox and Safari, even when they do not support the picker dialogs. We've chosen the special picker tag so that if you then export your project for desktop, it then saves all the data to the system directory for the app-specific data. This means you now have a fully cross-browser/cross-platform way to store data with File System, which may be a useful alternative to Local Storage. Note that the existing *Is supported* condition now may be true on platforms where it was previously false as it can now use OPFS - if you previously used this condition to check if picker dialogs can be used, switch to using the new *Pickers supported* condition.\n\nFinally there's a batch of other changes, such as specifying a color for ambient light, an update for the",
+    "changelog": [
+      {
+        "category": "New Features",
+        "items": [
+          "3D collisions"
+        ]
+      },
+      {
+        "category": "New Additions",
+        "items": [
+          "File System: support for current-app-data picker tag in web browsers (saving to OPFS)",
+          "Mouse/Touch: use collision polygon when checking mouse over/touching 3D rotated object",
+          "File System: 'Pickers supported' condition (separate to 'Is supported')",
+          "Offset Z parameter for 'Is overlapping at offset' condition",
+          "Project property 'Collision mode'",
+          "Set the ambient light color for 3D lighting",
+          "3D model: support morph target animations with new ACEs and scripting API",
+          "3D model: add a default model to new projects",
+          "3D model: unique icons for 3D model objects and 3D model object types",
+          "3D model: option to draw texture blending it with the texture color",
+          "3D model: prompt for missing resources during the import process if necessary"
+        ]
+      },
+      {
+        "category": "Changes",
+        "items": [
+          "Windows WebView2: improve frame scheduling with Steam mode 'Capture'",
+          "Gamepad: update GameInput (used for Steam) to v4.0.300",
+          "Update 'First person platformer' example to use 3D collisions",
+          "Layout View: improve rendering of editing mesh in 3D view mode",
+          "3D model: hide animation properties if a model doesn't have any animations",
+          "Runtime: ignore attempts to set object positions, sizes or angles to NaN or Infinity",
+          "Find references/find results: increase displayed character limit before/after match from 100 to 1000",
+          "Update Monaco (code editor) to v0.57.0",
+          "Windows WebView2: update WebView2 SDK to v1.0.4191.47"
+        ]
+      },
+      {
+        "category": "Bug Fixes",
+        "items": [
+          "Custom actions could run with zero instances picked",
+          "Drawing Canvas: could not fill non-convex poly with duplicated points",
+          "Crash renaming layer across project if name was already used on a different layout",
+          "Possible blank screen when using effects with 3D lighting in WebGPU renderer",
+          "3D model: avoid loading unnecessary textures on start of layout",
+          "3D model: unload unused textures of 3D models between layout changes",
+          "3D model: ensure 3D model textures are released in layouts with no 3D models",
+          "3D model: always start animations from the beginning when changing them from a timeline",
+          "Timelines: expressions executed on 'On keyframe reached' triggers not producing accurate results",
+          "Timelines: wrong editor preview when animating the \"initial frame\" property of a Sprite instance"
+        ]
+      },
+      {
+        "category": "Performance Improvements",
+        "items": [
+          "3D model: avoid ticking instances which don't need it"
+        ]
+      },
+      {
+        "category": "Scripting updates",
+        "items": [
+          "Add IFileSystemObjectType.supportsPickers",
+          "Rename ILayout ambientLight to ambientLightAmount",
+          "3D model: 'loadModel' method now returns a promise"
+        ]
+      }
+    ]
+  },
+  {
+    "branchName": "Beta",
     "releaseName": "r505",
     "shortDescription": "Bug fixes",
     "publishDate": 1791295223,

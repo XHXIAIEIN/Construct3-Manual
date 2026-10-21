@@ -1,7 +1,7 @@
 ---
 title: "Common expressions"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/common-features/common-expressions"
-release: 506
+release: 506.3
 ---
 
 ## On this page
@@ -10,6 +10,7 @@ release: 506
 - [Angle](#angle)
 - [Appearance](#appearance)
 - [Hierarchy](#hierarchy)
+- [Material](#material)
 - [Misc](#misc)
 - [Size & Position](#size--position)
 - [Time](#time)
@@ -70,6 +71,19 @@ Return the number of children currently attached to this object (with the *Add c
 
 **ParentUID**  
 The unique ID (UID) of this object's parent in the hierarchy. If this object has no parent, it returns -1.
+
+## Material
+
+These expressions appear for objects that support 3D lighting when a [3D light](../../plugin-reference/3d-light.md) is used in the project.
+
+**Metallic**  
+These expressions retrieve the corresponding material properties. For more information see the section on material properties in the manual section on [Instances](../../project-primitives/objects/instances.md).
+
+**Roughness**  
+These expressions retrieve the corresponding material properties. For more information see the section on material properties in the manual section on [Instances](../../project-primitives/objects/instances.md).
+
+**Transmissiveness**  
+These expressions retrieve the corresponding material properties. For more information see the section on material properties in the manual section on [Instances](../../project-primitives/objects/instances.md).
 
 
 ## Misc

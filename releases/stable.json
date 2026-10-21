@@ -1,6 +1,49 @@
 [
   {
     "branchName": "Stable",
+    "releaseName": "r506.3",
+    "shortDescription": "Stable patch",
+    "publishDate": 1792419597,
+    "publishDateISO": "2026-10-19T14:19:57.125Z",
+    "viewDetailsURL": "https://www.construct.net/en/make-games/releases/stable/r506-3",
+    "launchURL": "https://editor.construct.net",
+    "notes": "Our previous patch release was quick off the mark, but a few more issues have been discovered that we're keen to correct in this stable release, so we have another patch release for you. Notably this includes a possible crash at runtime with objects that were not placed in any layout in the editor, which was particularly affecting savegames.\n\nIn case you missed them, the release video has been included again above, and see the [r506 release notes here](https://www.construct.net/en/make-games/releases/stable/r506), which includes 3D lighting, 3D model animation blending, and more.",
+    "changelog": [
+      {
+        "category": "Bug Fixes",
+        "items": [
+          "Possible crash after creating object not placed in any layout in the editor (regression r498)",
+          "Windows WebView2: incorrectly exported GameInput DLL when not using a Steam mode (regression r504)",
+          "3D model: models not visible due to incorrectly setting them to a depth of 0 (regression r506)",
+          "3D model: model not rotating when changing the angle of the instance (regression r506)",
+          "Timelines: 3D model 'loop' property changes not working as expected (regression r506)"
+        ]
+      }
+    ]
+  },
+  {
+    "branchName": "Stable",
+    "releaseName": "r506.2",
+    "shortDescription": "Hotfix",
+    "publishDate": 1792074754,
+    "publishDateISO": "2026-10-15T14:32:34.206Z",
+    "viewDetailsURL": "https://www.construct.net/en/make-games/releases/stable/r506-2",
+    "launchURL": "https://editor.construct.net/r506-2/",
+    "notes": "A few issues relating to 3D model slipped through the net and were affecting the r506 release, so we're releasing a hotfix to correct those. This also fixes the new Arcane Express example project failing to open.\n\nIn case you missed them, the release video has been included again above, and see the [r506 release notes here](https://www.construct.net/en/make-games/releases/stable/r506), which includes 3D lighting, 3D model animation blending, and more.",
+    "changelog": [
+      {
+        "category": "Bug Fixes",
+        "items": [
+          "3D model: crash using 'getAnimationProgress' method from the scripting API (regression r506)",
+          "Fix error opening Arcane Express example project",
+          "3D model: 'Set progress' action not working as expected (regression r506)",
+          "3D model: 'Is playing' condition not working as expected (regression r506)"
+        ]
+      }
+    ]
+  },
+  {
+    "branchName": "Stable",
     "releaseName": "r506",
     "shortDescription": "Stable release: 3D lighting, 3D model updates & more",
     "publishDate": 1791971306,

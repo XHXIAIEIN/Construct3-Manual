@@ -1,7 +1,7 @@
 ---
 title: "Hosted Message URL Object"
 source: "https://www.construct.net/en/game-services/manuals/game-services/broadcasts/api-objects/broadcast-message-hosted"
-release: 506
+release: 506.3
 ---
 
 ## On this page
