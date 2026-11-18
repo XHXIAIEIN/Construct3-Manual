@@ -1,7 +1,7 @@
 ---
 title: "PluginProperty class"
 source: "https://www.construct.net/en/make-games/manuals/addon-sdk/reference/pluginproperty"
-release: 506.3
+release: 506.4
 ---
 
 ## On this page

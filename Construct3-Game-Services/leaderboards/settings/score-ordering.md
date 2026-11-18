@@ -1,7 +1,7 @@
 ---
 title: "Score Ordering"
 source: "https://www.construct.net/en/game-services/manuals/game-services/leaderboards/settings/score-ordering"
-release: 506.3
+release: 506.4
 ---
 
 ## On this page

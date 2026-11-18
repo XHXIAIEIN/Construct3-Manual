@@ -1,7 +1,7 @@
 ---
 title: "The Layers Bar"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/interface/bars/layers-bar"
-release: 506.3
+release: 506.4
 ---
 
 ## On this page

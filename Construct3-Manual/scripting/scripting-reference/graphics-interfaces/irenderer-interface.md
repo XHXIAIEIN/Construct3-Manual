@@ -1,7 +1,7 @@
 ---
 title: "IRenderer script interface"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/scripting/scripting-reference/graphics-interfaces/irenderer-interface"
-release: 506.3
+release: 506.4
 ---
 
 ## On this page

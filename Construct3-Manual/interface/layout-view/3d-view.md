@@ -1,21 +1,21 @@
 ---
 title: "The Layout View 3D view"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/interface/layout-view/3d-view"
-release: 506.3
+release: 506.4
 ---
 
 ## On this page
 
 - [Status bar](#status-bar)
 - [Modifying objects](#modifying-objects)
-- [Moving the camera](#move-move)
+- [Moving the camera](#move-mode)
 - [Camera orientation](#scale-mode)
 
 ---
 
 The **3D view** of the [Layout View](../../interface/layout-view.md) has features that are more suitable for editing 3D content.
 
-[![The Layout View with its 3D view.](https://construct-static.com/images/v1771/r/uploads/articleuploadobject/0/images/144351/layout-view-3d-view_v650.png)](https://construct-static.com/images/v1771/uploads/articleuploadobject/0/images/144351/layout-view-3d-view.png)The Layout View with its 3D view.
+[![The Layout View with its 3D view.](https://construct-static.com/images/v1857/r/uploads/articleuploadobject/0/images/144351/layout-view-3d-view_v650.png)](https://construct-static.com/images/v1857/uploads/articleuploadobject/0/images/144351/layout-view-3d-view.png)The Layout View with its 3D view.
 
 In the 3D view, the camera can move freely around and look anywhere. There are no scrollbars in this view mode as they are not applicable - instead use the mouse and keyboard interactions described below to move the view.
 
@@ -27,11 +27,11 @@ In the 3D view, in addition to the active layer the status bar shows the current
 
 The last clicked selected object shows some controls. This tool is sometimes referred to as the *gizmo*.
 
-[![The gizmo in the Layout View.](https://construct-static.com/images/v1771/r/uploads/articleuploadobject/0/images/144352/3d-gizmo_v380.png)](https://construct-static.com/images/v1771/uploads/articleuploadobject/0/images/144352/3d-gizmo.png)The gizmo in the Layout View.
+[![The gizmo in the Layout View.](https://construct-static.com/images/v1857/r/uploads/articleuploadobject/0/images/144352/3d-gizmo_v380.png)](https://construct-static.com/images/v1857/uploads/articleuploadobject/0/images/144352/3d-gizmo.png)The gizmo in the Layout View.
 
 The current gizmo mode can be set in the view menu in the top toolbar.
 
-### Move move
+### Move mode
 
 When the gizmo is in move mode, the ends of lines appear as arrows. **Click and drag** the arrows to move all the selected objects along one axis: **red** for the **X axis**, **green** for the **Y axis** and **blue** for the **Z axis**. (To help you remember, note the color scheme goes in RGB order, which is the same as color notation.)
 

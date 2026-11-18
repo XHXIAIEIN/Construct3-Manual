@@ -1,7 +1,7 @@
 ---
 title: "Create a Message"
 source: "https://www.construct.net/en/game-services/manuals/game-services/broadcasts/api-end-points/messages/create-message"
-release: 506.3
+release: 506.4
 ---
 
 ## On this page

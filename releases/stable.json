@@ -1,6 +1,42 @@
 [
   {
     "branchName": "Stable",
+    "releaseName": "r506.4",
+    "shortDescription": "Patch release",
+    "publishDate": 1794844366,
+    "publishDateISO": "2026-11-16T15:52:46.165Z",
+    "viewDetailsURL": "https://www.construct.net/en/make-games/releases/stable/r506-4",
+    "launchURL": "https://editor.construct.net",
+    "notes": "In the few weeks since the previous stable release r506.3 a few issues, regressions and important maintenance updates have come up. In order to make sure Construct is working as smoothly as possible for everyone, we're releasing another patch update with a selection of fixes and updates.\n\nIn case you missed them, the release video has been included again above, and see the original [r506 release notes here](https://www.construct.net/en/make-games/releases/stable/r506).",
+    "changelog": [
+      {
+        "category": "Changes",
+        "items": [
+          "Find references/find results: increase displayed character limit before/after match from 100 to 1000",
+          "Cloud save with Google Drive: modernize authentication flow"
+        ]
+      },
+      {
+        "category": "Bug Fixes",
+        "items": [
+          "'Slide puzzle' example incorrectly opened 'Slide puzzle 3D'",
+          "3D model: unnecessary vertex calculations",
+          "3D model: performance degradation after changing animations multiple times",
+          "Properties bar: changes to a 3D model's default Z offset incorrectly affecting the X offset",
+          "Parameters dialog: autocomplete incorrectly adding quotes (regression r496)",
+          "Parameters dialog: possible crash in Android devices"
+        ]
+      },
+      {
+        "category": "Scripting updates",
+        "items": [
+          "Fix TypeScript type definition of IAssetManager getMediaFileUrl()"
+        ]
+      }
+    ]
+  },
+  {
+    "branchName": "Stable",
     "releaseName": "r506.3",
     "shortDescription": "Stable patch",
     "publishDate": 1792419597,

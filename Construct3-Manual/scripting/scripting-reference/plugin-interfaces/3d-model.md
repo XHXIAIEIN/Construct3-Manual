@@ -1,7 +1,7 @@
 ---
 title: "3D model"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/scripting/scripting-reference/plugin-interfaces/3d-model"
-release: 506.3
+release: 506.4
 ---
 
 ## On this page

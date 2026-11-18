@@ -1,7 +1,7 @@
 ---
 title: "Advanced random"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/advanced-random"
-release: 506.3
+release: 506.4
 ---
 
 ## On this page

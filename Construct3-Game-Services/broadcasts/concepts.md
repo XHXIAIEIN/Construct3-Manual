@@ -1,7 +1,7 @@
 ---
 title: "Broadcast Concepts"
 source: "https://www.construct.net/en/game-services/manuals/game-services/broadcasts/concepts"
-release: 506.3
+release: 506.4
 ---
 
 ## On this page

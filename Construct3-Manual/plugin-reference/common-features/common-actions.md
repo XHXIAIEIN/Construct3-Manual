@@ -1,7 +1,7 @@
 ---
 title: "Common actions"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/common-features/common-actions"
-release: 506.3
+release: 506.4
 ---
 
 ## On this page

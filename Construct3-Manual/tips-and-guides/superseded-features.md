@@ -1,7 +1,7 @@
 ---
 title: "Superseded features"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/tips-and-guides/superseded-features"
-release: 506.3
+release: 506.4
 ---
 
 ## On this page

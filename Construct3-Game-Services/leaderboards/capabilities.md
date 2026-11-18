@@ -1,7 +1,7 @@
 ---
 title: "Leaderboard Capabilities"
 source: "https://www.construct.net/en/game-services/manuals/game-services/leaderboards/capabilities"
-release: 506.3
+release: 506.4
 ---
 
 ## On this page
