@@ -1,6 +1,201 @@
 [
   {
     "branchName": "Beta",
+    "releaseName": "r511",
+    "shortDescription": "3D line-of-sight; 3D model authored origin; bug fixes & more",
+    "publishDate": 1794931018,
+    "publishDateISO": "2026-11-17T15:56:58.612Z",
+    "viewDetailsURL": "https://www.construct.net/en/make-games/releases/beta/r511",
+    "launchURL": "https://editor.construct.net/r511/",
+    "notes": "This week's beta release continues to improve support for 3D collisions, this time in the **Line-of-sight behavior**. It now has options to check for line-of-sight in 3D, as well as full 3D raycasting, including determining the point of intersection and normal vector with 3D models. Internally the ray-model checks are also optimized and should efficiently handle complex meshes with thousands of triangles. These are very handy tools to have for many projects, and now you can make use of them in 3D too!\n\nThere are also updates for **3D model**'s origin: there are now separate options for the instance and model origin. The model origin also has the option to use the 'authored' origin from a 3D modelling tool, rather than being limited to start/middle/end on each axis. There are also a few fixes for 3D models, and a performance optimization too.\n\nOther than that there's a new layer draw order 'Camera distance reverse'. This is a good option for a layer with entirely opaque 3D content, as it means content near the camera is drawn first, making it more likely other content behind it can be skipped via depth test. A useful approach is to separate opaque 3D content into a layer with this mode, and then have 3D content using transparency on a layer above using the 'Camera distance' draw order. That combines efficient front-to-back drawing for opaque content with back-to-front drawing of transparent content for correct blending. There's also a couple of new examples, an update for iOS exports, and as ever some bug fixes. Happy testing!",
+    "changelog": [
+      {
+        "category": "New Additions",
+        "items": [
+          "Line-of-sight behavior: support for 3D (including casting rays)",
+          "New examples 'Guess the word', 'Line of sight 3D'",
+          "3D model: 'Instance origin' and 'Model origin' properties",
+          "3D model: 'Authored' value for 'Model origin' property",
+          "3D model: allow selecting by clicking mesh not aligned with object bounds",
+          "Layer: new draw order option 'Camera distance reverse'"
+        ]
+      },
+      {
+        "category": "Changes",
+        "items": [
+          "iOS exports: update to cordova-iosjwy@8.2.0",
+          "Update 'First-person shooter' example to use 3D lights",
+          "3D model: deprecate 'Origin' property and associated ACEs/scripting APIs"
+        ]
+      },
+      {
+        "category": "Bug Fixes",
+        "items": [
+          "Windows WebView2: setting mouse cursor style \"none\" not working in Steam mode \"capture\"",
+          "Runtime: exceptions thrown in triggers could leave engine in bad state",
+          "Possible incorrect draw order when using 3D layers and sub-layers",
+          "Array: improve validation when loading from JSON string",
+          "3D model: visible meshes frustum culled incorrectly (regression r509)",
+          "3D model: could incorrectly release textures (regression r508)",
+          "3D model: incorrect icons generated from models using vertex colors",
+          "Layout view: mitigate Z fighting artifacts when rendering HTML objects in 3D view"
+        ]
+      },
+      {
+        "category": "Performance Improvements",
+        "items": [
+          "3D model: optimize drawing models with multiple meshes"
+        ]
+      },
+      {
+        "category": "Scripting updates",
+        "items": [
+          "Fix setting layout/layer effect isActive not taking effect"
+        ]
+      }
+    ]
+  },
+  {
+    "branchName": "Beta",
+    "releaseName": "r510",
+    "shortDescription": "JPEG XL support; Windows export & Google Drive improvements; new example",
+    "publishDate": 1794325641,
+    "publishDateISO": "2026-11-10T15:47:21.318Z",
+    "viewDetailsURL": "https://www.construct.net/en/make-games/releases/beta/r510",
+    "launchURL": "https://editor.construct.net/r510/",
+    "notes": "Modern browsers now support the modern [JPEG XL](https://jpegxl.info/) image format, and we're excited to add support for this in Construct! You can now opt in to exporting your project's image as JPEG XL, both for lossless and lossy images. Our testing shows JPEG XL is even better than WebP for lossless images and it is competitive with AVIF for lossy, meaning you can potentially get a significant download size saving with it. We're leaving this as opt-in for the time being, but once support is ubiquitous we may set it as the new default.\n\nOther improvements in this release include a new **Android App Category** project property. This must be set to *Game* for Android to continue to use orientation lock from Android 16+ (and is set to that by default). We've fixed some issues with asset bundles over 4 GB with Windows WebView2 exports. We've also modernized the way Google Drive authentication works internally - this should not result in any change to how it works, but we're just highlighting it in case something unexpected changes.\n\nThere's also a new example 'Storm patrol' which makes use of both 3D features and mesh distortion, and as ever there's a batch of bug fixes, particularly for 3D model. Happy testing!",
+    "changelog": [
+      {
+        "category": "New Additions",
+        "items": [
+          "Support for exporting project images as JPEG XL (both lossless and lossy)",
+          "Android: new project property 'Android App Category'",
+          "Support for dragging and dropping JPEG XL (.jxl) images to Layout View to create Sprite",
+          "New example 'Storm patrol'",
+          "Android/iOS exports: add minimum version options Android 16, iOS 26 & 27"
+        ]
+      },
+      {
+        "category": "Changes",
+        "items": [
+          "Animations editor: make more room for color palettes in the default theme",
+          "Cloud save with Google Drive: modernize authentication flow",
+          "Windows WebView2: update WebView2 SDK to v1.0.4314.35",
+          "Windows WebView2: show special error message if exporting to single file with asset bundle over 2 GB",
+          "Windows exports: WindowsIconUpdater.exe / PackToSingleExecutable.exe now uses x64 architecture"
+        ]
+      },
+      {
+        "category": "Bug Fixes",
+        "items": [
+          "Cloud save with Google Drive: fix signing out not always resetting authentication",
+          "Windows WebView2: fix support for asset bundle sizes over 4 GB",
+          "3D mesh distortion not updating 3D collisions when changed at runtime",
+          "3D model: possible error loading runtime script (regression r509)",
+          "3D model: preview failing to start with some 3D models",
+          "3D model: reduce the amount of work to release unused textures after loading a new model",
+          "3D model: position not updating after changing a layer's Z elevation"
+        ]
+      }
+    ]
+  },
+  {
+    "branchName": "Beta",
+    "releaseName": "r509",
+    "shortDescription": "3D model collisions; new demo game; bug fixes",
+    "publishDate": 1793791347,
+    "publishDateISO": "2026-11-04T11:22:27.500Z",
+    "viewDetailsURL": "https://www.construct.net/en/make-games/releases/beta/r509",
+    "launchURL": "https://editor.construct.net/r509/",
+    "notes": "This week we're bringing support for **3D collisions to 3D model!** Now you can choose to use a model's mesh for collisions by changing the new *Collider type* property. It still defaults to using the bounding box, but you can opt in to using the full mesh, which also uses the same optimized mesh collision system we used with mesh distortion in the previous release. This means collision performance should be good even with highly complex meshes, especially if they are static.\n\nThis release also introduces a new demo game **Bug Jam!** In this game you must guide swarms of insects through tunnel networks, avoiding hazards and using each species' unique abilities to solve increasingly challenging puzzles. As ever you can find this in the Example Browser.\n\nWe've also got a batch of bug fixes, including a fix for bullet stepping not working correctly with 3D collisions, and some further fixes for 3D model and the Parameters Dialog. Happy testing!",
+    "changelog": [
+      {
+        "category": "New Additions",
+        "items": [
+          "3D model: new 'Collider type' property allowing for mesh collisions (plus ACEs/script APIs)",
+          "New demo game 'Bug Jam'"
+        ]
+      },
+      {
+        "category": "Changes",
+        "items": [
+          "Bullet: also stop stepping when behavior disabled"
+        ]
+      },
+      {
+        "category": "Bug Fixes",
+        "items": [
+          "Bullet: incorrectly handled Z axis when stepping collisions",
+          "3D shape: runtime error if hiding all faces",
+          "3D model: 'stretch' transform mode expanding model outside of instance bounding box (regression r507)",
+          "3D model: 'isolate' render mode misplacing meshes (regression r507)",
+          "3D model: unused images left behind in project folders after replacing the content of a 3D model",
+          "3D model: don't change the name of a 3D model when it is replaced with a file with the same name",
+          "3D model: possible runtime crash on initial load",
+          "Parameters dialog: autocomplete incorrectly adding quotes (regression r496)",
+          "Parameters dialog: possible crash in Android devices"
+        ]
+      },
+      {
+        "category": "Scripting updates",
+        "items": [
+          "Fix TypeScript type definition of IAssetManager getMediaFileUrl()"
+        ]
+      }
+    ]
+  },
+  {
+    "branchName": "Beta",
+    "releaseName": "r508",
+    "shortDescription": "3D mesh collisions; more 3D model improvements",
+    "publishDate": 1793112369,
+    "publishDateISO": "2026-10-27T14:46:09.618Z",
+    "viewDetailsURL": "https://www.construct.net/en/make-games/releases/beta/r508",
+    "launchURL": "https://editor.construct.net/r508/",
+    "notes": "This week work continues on 3D collisions, and it now supports **3D collisions with mesh distortion**. This means you can do things like use a 3D mesh for some terrain with various ups and downs, and accurately collide with it. Internally there's a new mesh collision optimizer that can efficiently handle collisions even for large meshes with dozens of rows and columns, resulting in thousands of triangles. We're looking to extend this to 3D model as well so the same system works for efficiently colliding with 3D model scenery and hopefully will have something ready within this release cycle, but for now 3D models continue to use bounding box collision.\n\nIn this release we've also **changed ambient light** to just be a color, instead of having a separate amount and color. The default ambient light is now (8, 8, 8) which corresponds to 3% (the previous default amount) on a 0-255 scale. This means you can directly choose the color of the ambient light, rather than setting a color and then what was essentially a multiplier for the color.\n\nOther improvements in this release include a range of further improvements for 3D model, including fixing a performance issue, some script API updates, and a few other tweaks and adjustments. Happy testing!",
+    "changelog": [
+      {
+        "category": "New Additions",
+        "items": [
+          "Support for 3D collisions with mesh distortion",
+          "Timelines: add action/script API to reset hierarchies in a timeline to their initial state",
+          "3D model: actions, expressions and script API to get and set the weight of an animation",
+          "3D model: 'Reset' action and script API to set a 3D model to its default pose"
+        ]
+      },
+      {
+        "category": "Changes",
+        "items": [
+          "Gamepad: update GameInput (used for Steam) to v4.0.302",
+          "Layouts: remove ambient light amount, instead using ambient light color directly"
+        ]
+      },
+      {
+        "category": "Bug Fixes",
+        "items": [
+          "'Slide puzzle' example incorrectly opened 'Slide puzzle 3D'",
+          "Some 2D vs 3D collision checks working incorrectly",
+          "Possible incorrect rendering of instances using 3D mesh distortion",
+          "3D model: unnecessary textures loaded after creating the first instance of a 3D model using 'Create object' action",
+          "3D model: start load of textures as soon as a new model is loaded",
+          "3D model: unload unused textures after loading a new model at runtime",
+          "3D model: 'Animation blend' mode not behaving as expected when set to 'Average'",
+          "3D model: models with no armature not behaving as expected",
+          "3D model: fix performance degradation over time",
+          "Properties Bar: changes to Z offset property of a 3D model incorrectly affecting X offset"
+        ]
+      },
+      {
+        "category": "Scripting updates",
+        "items": [
+          "Timelines: fix 'stop' method not doing the same as the equivalent action",
+          "3D model: 'loadModel' method not resolving promise when setting same model"
+        ]
+      }
+    ]
+  },
+  {
+    "branchName": "Beta",
     "releaseName": "r507",
     "shortDescription": "3D collisions; 3D model improvements; cross-platform File System & more",
     "publishDate": 1792507364,

@@ -1,12 +1,12 @@
 ---
 title: "Windows wrapper options dialog"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/interface/dialogs/windows-wrapper-options"
-release: 506.3
+release: 506.4
 ---
 
 The **Windows wrapper options** dialog allows you to customize a Windows wrapper (WebView2) export  `[Paid plans only]` .
 
-[![The Windows wrapper options dialog.](https://construct-static.com/images/v1849/r/uploads/articleuploadobject/0/images/147671/windows-webview2-options_v470.png)](https://construct-static.com/images/v1849/uploads/articleuploadobject/0/images/147671/windows-webview2-options.png)The Windows wrapper options dialog.
+[![The Windows wrapper options dialog.](https://construct-static.com/images/v1857/r/uploads/articleuploadobject/0/images/147671/windows-webview2-options_v470.png)](https://construct-static.com/images/v1857/uploads/articleuploadobject/0/images/147671/windows-webview2-options.png)The Windows wrapper options dialog.
 
 The following options are available.
 
@@ -19,6 +19,9 @@ Choose an option for bundling the various project files that are exported. The o
 - **None:** all exported project files are placed in a subfolder named *www* inside the app. It is possible inquisitive users could find some of your project's assets in here, including artwork, music and sound effects.
 - **Assets:** combines all the exported project files into a single file named *assets.dat*. This file is not encrypted, but it does prevent casual browsing of the exported files. Using this option should not significantly impact performance.
 - **Single file:** allows combining the entire exported project into a single executable file. After the export, you must first run *PackToSingleExecutable.exe* to perform the final step that creates the packed executable file. This bundling option may have some performance overhead when running the app, so may be unsuitable for large projects.
+
+> **Tip**  
+> Due to limitations in Windows, executable files cannot be larger than 2 GB. Therefore if you have more than 2 GB of data to be bundled, this option will not work. In this case either use *Assets* mode which uses a separate file with no size limit, or [reduce the size of the exported project](../../tips-and-guides/download-size.md).
 
 > **Warning**  
 > Some antivirus tools can incorrectly determine that large executable files with a lot of data in them are suspicious. If you encounter problems with false positive antivirus or malware reports using this mode, try using *Assets* bundling mode instead.

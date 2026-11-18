@@ -1,7 +1,7 @@
 ---
 title: "Testing projects"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/overview/testing-projects"
-release: 506.3
+release: 506.4
 ---
 
 ## On this page

@@ -1,7 +1,7 @@
 ---
 title: "Video"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/plugin-reference/video"
-release: 506.3
+release: 506.4
 ---
 
 ## On this page

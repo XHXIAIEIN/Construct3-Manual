@@ -1,7 +1,7 @@
 ---
 title: "IWebGLRenderer interface"
 source: "https://www.construct.net/en/make-games/manuals/addon-sdk/reference/graphics-interfaces/iwebglrenderer"
-release: 506.3
+release: 506.4
 ---
 
 ## On this page

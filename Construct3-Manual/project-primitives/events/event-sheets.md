@@ -1,7 +1,7 @@
 ---
 title: "Event sheets"
 source: "https://www.construct.net/en/make-games/manuals/construct-3/project-primitives/events/event-sheets"
-release: 506.3
+release: 506.4
 ---
 
 ## On this page
